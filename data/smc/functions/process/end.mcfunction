@@ -1,5 +1,6 @@
+#>smc:process/end
+#@within smc:process/**
 tellraw @a "終了"
-
 
 scoreboard players set process game 0
 scoreboard players set runtime game -1
