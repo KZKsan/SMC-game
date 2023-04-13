@@ -1,7 +1,7 @@
-#>smc:player/set_spectator
-#@within smc:process/**
+#>sco:player/set_spectator
+#@within sco:process/**
 
 clear @s
 team leave @s
 scoreboard players operation @s gameID = last gameID
-function smc:tp/lobby
+function sco:tp/lobby

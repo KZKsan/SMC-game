@@ -1,7 +1,7 @@
-#>smc:process/10
-#@within smc:main
+#>sco:process/10
+#@within sco:main
 #gameIDを設定
-function smc:game_id/set
+function sco:game_id/set
 
 #チーム振り分け
 team join red @a
