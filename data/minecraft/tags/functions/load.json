@@ -1,5 +1,6 @@
 {
     "values": [
-        "smc:setup"
+        "smc:setup",
+        "setup"
     ]
 }
