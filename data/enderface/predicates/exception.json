@@ -1,0 +1,33 @@
+{
+    "condition": "alternative",
+    "terms": [
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "type": "player",
+                "equipment": {
+                    "mainhand": {
+                        "items": ["air"]
+                    },
+                    "offhand": {
+                        "items": ["air"]
+                    }
+                },
+                "flags": {
+                    "is_sneaking": true
+                }
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "type": "player",
+                "flags": {
+                    "is_sneaking": false
+                }
+            }
+        }
+    ]
+}
