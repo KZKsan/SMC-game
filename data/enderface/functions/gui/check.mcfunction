@@ -23,7 +23,5 @@ execute at @s run function enderface:gui/processing/main
 
 function enderface:gui/return_item/main
 
-#tag @s[nbt={Inventory:[{Slot:-106b,tag:{enderfaceItem:1b}}]}] add enderface_item_remove_chain
-#tag @s[] add enderface_item_remove_chain
 
 function enderface:gui_layoutes/load
