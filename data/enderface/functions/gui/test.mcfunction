@@ -9,3 +9,4 @@ tellraw @p [{"text": "操作:"},{"nbt":"gui_intaract.intaract","storage":"enderf
 tellraw @p [{"text": "クリック:"},{"nbt":"gui_intaract.click","storage":"enderface:data"}]
 tellraw @p [{"text": "動かしたアイテム:"},{"nbt":"gui_intaract.Item","storage":"enderface:data"}]
 tellraw @p [{"text": "追加したアイテム:"},{"nbt":"gui_add","storage":"enderface:data"}]
+tellraw @p [{"text": "インベントリ:"},{"nbt":"Inventory","entity":"@s"}]

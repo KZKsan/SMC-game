@@ -7,6 +7,7 @@ execute if data storage enderface:data gui_intaract.Item.tag.click_events.click_
 
 ## Other Processing
 execute if data storage enderface:data {gui_name:"shop/0"} run function enderface:gui/processing/shop/0/main
+execute if data storage enderface:data {gui_name:"shop/test"} run function enderface:gui/processing/shop/0/test
 
 
 ##Reload gui_name
