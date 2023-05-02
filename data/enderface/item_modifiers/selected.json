@@ -1,0 +1,19 @@
+[
+    {
+        "function": "minecraft:set_nbt",
+        "tag": "{Enchantments:[{}]}"
+    },
+    {
+        "function": "set_lore",
+        "lore": [
+            [
+                {
+                    "translate": "item.enderface.selected",
+                    "italic": false,
+                    "color": "white"
+                }
+            ]
+        ]
+    }
+    
+]

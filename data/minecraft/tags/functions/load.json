@@ -1,6 +1,7 @@
 {
     "values": [
         "sco:setup",
+        "enderface:setup",
         "setup"
     ]
 }

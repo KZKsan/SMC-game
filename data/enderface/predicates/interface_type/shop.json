@@ -1,0 +1,8 @@
+{
+    "condition": "entity_properties",
+    "entity": "this",
+    "predicate": {
+        "type": "marker",
+        "nbt": "{Tags:[\"enderface\",\"interface_marker\"],data:{interface_type:\"shop/0\"}}"
+    }
+}

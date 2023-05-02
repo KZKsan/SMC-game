@@ -1,0 +1,15 @@
+[
+    {
+        "function": "set_lore",
+        "lore": [
+            [
+                {
+                    "translate": "item.enderface.unselected",
+                    "italic": false,
+                    "color": "white"
+                }
+            ]
+        ]
+    }
+    
+]

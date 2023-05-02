@@ -1,0 +1,8 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+        "type": "chest_minecart",
+        "nbt": "{Tags:[\"enderface\",\"set_nbt\",\"paste_enderchest\"]}"
+    }
+}
