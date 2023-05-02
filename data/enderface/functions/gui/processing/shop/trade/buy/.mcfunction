@@ -16,6 +16,3 @@ execute store result score #len _ run data get storage enderface:data gui_intara
 execute if score #len _ matches 1.. run data modify storage enderface:data latest_inventory set value []
 execute if score #len _ matches 1.. run data modify storage enderface:data now_inventory set from entity @s Inventory
 execute if score #len _ matches 1.. run function enderface:gui/processing/shop/trade/buy/loop
-
-execute if data storage enderface:data {success:1b} run say 購入可能
-execute if data storage enderface:data {success:0b} run say 不可
