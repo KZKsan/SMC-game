@@ -1,5 +1,5 @@
 #>enderface:gui/processing/shop/trade/remove_item/
-#@within enderface:gui/processing/shop/trade/main
+#@within enderface:gui/processing/shop/trade/loop
 
 data modify storage enderface:data _ set value []
 data modify storage enderface:data _ append from storage enderface:data now_inventory[{edit:1b}]

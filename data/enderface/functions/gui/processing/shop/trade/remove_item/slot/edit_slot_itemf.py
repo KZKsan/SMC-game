@@ -46,10 +46,3 @@ fp.writelines(data)
 fp.close
 
 print("Success!!")
-
-## template
-#data modify storage enderface:data now_inventory set from entity @s Inventory
-#execute store result score #Count _ run data get storage enderface:data _[{Slot:0b}].Count
-#execute store result score @s remove_item_count run data get storage enderface:data now_inventory[{Slot:0b}].Count
-#scoreboard players operation @s remove_item_count -= #Count _
-#item modify entity @s inventory.0 remove_item

@@ -1,5 +1,5 @@
 #>enderface:gui/processing/shop/trade/buy/
-#@within enderface:gui/processing/shop/trade/main
+#@within enderface:gui/processing/shop/trade/loop
 #@private
 
 #>
