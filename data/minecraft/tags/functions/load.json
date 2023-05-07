@@ -2,6 +2,7 @@
     "values": [
         "sco:setup",
         "enderface:setup",
-        "setup"
+        "setup",
+        "sco_items:setup"
     ]
 }

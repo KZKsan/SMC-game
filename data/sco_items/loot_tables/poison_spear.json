@@ -1,0 +1,36 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "iron_shovel",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": {
+                                "text": "毒槍",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore": [
+                                {
+                                    "text": "攻撃対象に毒を付与する。",
+                                    "italic": false,
+                                    "color": "white"
+                                }
+                            ]
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{item_functions:{poison_spear:1b}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
