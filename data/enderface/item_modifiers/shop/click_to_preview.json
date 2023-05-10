@@ -1,0 +1,25 @@
+{
+    "function": "set_lore",
+    "lore": [
+        [
+            {
+                "text": "--------------------",
+                "italic": false,
+                "color": "white"
+            }
+        ],
+        [
+            {
+                "text": ">",
+                "color": "gray"
+            },
+            {
+                "keybind": "key.attack"
+            },
+            {
+                "text": "で取引内容を見る"
+            }
+        ]
+    ],
+    "replace": false
+}
