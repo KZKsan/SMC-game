@@ -2,6 +2,7 @@
     "values": [
         "sco:setup",
         "enderface:setup",
+        "#enderface:set_trade_data",
         "setup",
         "sco_items:setup"
     ]
