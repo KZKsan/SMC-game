@@ -37,127 +37,22 @@ item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with
 function enderface:gui_layoutes/shop/set_trade_data/wirite_data/buy
 data modify storage sco:shop weapons append from storage sco:shop _
 
-item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with brick 4
-function enderface:gui_layoutes/shop/set_trade_data/wirite_data/icon
-function enderface:gui_layoutes/shop/set_trade_data/wirite_data/sell
-data modify storage sco:shop sell_count set value {click:1,sneak:16}
-function enderface:gui_layoutes/shop/set_trade_data/wirite_data/sell_count
-item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with coal 5
-function enderface:gui_layoutes/shop/set_trade_data/wirite_data/buy
-item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with gold_ingot 1
-function enderface:gui_layoutes/shop/set_trade_data/wirite_data/buy
+item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with netherite_sword 1
+item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.1 with iron_sword 1
+item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.2 with diamond 5
+data modify storage sco:shop sell_count set value {click:1,sneak:1}
+function enderface:gui_layoutes/shop/set_trade_data/wirite_data/all
 data modify storage sco:shop weapons append from storage sco:shop _
 
-item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with brick 4
+item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with diamond_pickaxe 1
 function enderface:gui_layoutes/shop/set_trade_data/wirite_data/icon
 function enderface:gui_layoutes/shop/set_trade_data/wirite_data/sell
-data modify storage sco:shop sell_count set value {click:1,sneak:16}
+item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with iron_sword 1
+item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.1 with diamond 5
+function enderface:gui_layoutes/shop/set_trade_data/wirite_data/buy
+data modify storage sco:shop sell_count set value {click:1,sneak:1}
 function enderface:gui_layoutes/shop/set_trade_data/wirite_data/sell_count
-item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with coal 5
-function enderface:gui_layoutes/shop/set_trade_data/wirite_data/buy
-item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with gold_ingot 1
-function enderface:gui_layoutes/shop/set_trade_data/wirite_data/buy
 data modify storage sco:shop weapons append from storage sco:shop _
-
-item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with brick 4
-function enderface:gui_layoutes/shop/set_trade_data/wirite_data/icon
-function enderface:gui_layoutes/shop/set_trade_data/wirite_data/sell
-data modify storage sco:shop sell_count set value {click:1,sneak:16}
-function enderface:gui_layoutes/shop/set_trade_data/wirite_data/sell_count
-item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with coal 5
-function enderface:gui_layoutes/shop/set_trade_data/wirite_data/buy
-item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with gold_ingot 1
-function enderface:gui_layoutes/shop/set_trade_data/wirite_data/buy
-data modify storage sco:shop weapons append from storage sco:shop _
-
-item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with brick 4
-function enderface:gui_layoutes/shop/set_trade_data/wirite_data/icon
-function enderface:gui_layoutes/shop/set_trade_data/wirite_data/sell
-data modify storage sco:shop sell_count set value {click:1,sneak:16}
-function enderface:gui_layoutes/shop/set_trade_data/wirite_data/sell_count
-item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with coal 5
-function enderface:gui_layoutes/shop/set_trade_data/wirite_data/buy
-item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with gold_ingot 1
-function enderface:gui_layoutes/shop/set_trade_data/wirite_data/buy
-data modify storage sco:shop weapons append from storage sco:shop _
-
-item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with brick 4
-function enderface:gui_layoutes/shop/set_trade_data/wirite_data/icon
-function enderface:gui_layoutes/shop/set_trade_data/wirite_data/sell
-data modify storage sco:shop sell_count set value {click:1,sneak:16}
-function enderface:gui_layoutes/shop/set_trade_data/wirite_data/sell_count
-item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with coal 5
-function enderface:gui_layoutes/shop/set_trade_data/wirite_data/buy
-item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with gold_ingot 1
-function enderface:gui_layoutes/shop/set_trade_data/wirite_data/buy
-data modify storage sco:shop weapons append from storage sco:shop _
-
-item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with brick 4
-function enderface:gui_layoutes/shop/set_trade_data/wirite_data/icon
-function enderface:gui_layoutes/shop/set_trade_data/wirite_data/sell
-data modify storage sco:shop sell_count set value {click:1,sneak:16}
-function enderface:gui_layoutes/shop/set_trade_data/wirite_data/sell_count
-item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with coal 5
-function enderface:gui_layoutes/shop/set_trade_data/wirite_data/buy
-item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with gold_ingot 1
-function enderface:gui_layoutes/shop/set_trade_data/wirite_data/buy
-data modify storage sco:shop weapons append from storage sco:shop _
-
-item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with brick 4
-function enderface:gui_layoutes/shop/set_trade_data/wirite_data/icon
-function enderface:gui_layoutes/shop/set_trade_data/wirite_data/sell
-data modify storage sco:shop sell_count set value {click:1,sneak:16}
-function enderface:gui_layoutes/shop/set_trade_data/wirite_data/sell_count
-item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with coal 5
-function enderface:gui_layoutes/shop/set_trade_data/wirite_data/buy
-item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with gold_ingot 1
-function enderface:gui_layoutes/shop/set_trade_data/wirite_data/buy
-data modify storage sco:shop weapons append from storage sco:shop _
-
-item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with brick 4
-function enderface:gui_layoutes/shop/set_trade_data/wirite_data/icon
-function enderface:gui_layoutes/shop/set_trade_data/wirite_data/sell
-data modify storage sco:shop sell_count set value {click:1,sneak:16}
-function enderface:gui_layoutes/shop/set_trade_data/wirite_data/sell_count
-item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with coal 5
-function enderface:gui_layoutes/shop/set_trade_data/wirite_data/buy
-item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with gold_ingot 1
-function enderface:gui_layoutes/shop/set_trade_data/wirite_data/buy
-data modify storage sco:shop weapons append from storage sco:shop _
-
-item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with brick 4
-function enderface:gui_layoutes/shop/set_trade_data/wirite_data/icon
-function enderface:gui_layoutes/shop/set_trade_data/wirite_data/sell
-data modify storage sco:shop sell_count set value {click:1,sneak:16}
-function enderface:gui_layoutes/shop/set_trade_data/wirite_data/sell_count
-item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with coal 5
-function enderface:gui_layoutes/shop/set_trade_data/wirite_data/buy
-item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with gold_ingot 1
-function enderface:gui_layoutes/shop/set_trade_data/wirite_data/buy
-data modify storage sco:shop weapons append from storage sco:shop _
-
-item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with brick 4
-function enderface:gui_layoutes/shop/set_trade_data/wirite_data/icon
-function enderface:gui_layoutes/shop/set_trade_data/wirite_data/sell
-data modify storage sco:shop sell_count set value {click:1,sneak:16}
-function enderface:gui_layoutes/shop/set_trade_data/wirite_data/sell_count
-item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with coal 5
-function enderface:gui_layoutes/shop/set_trade_data/wirite_data/buy
-item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with gold_ingot 1
-function enderface:gui_layoutes/shop/set_trade_data/wirite_data/buy
-data modify storage sco:shop weapons append from storage sco:shop _
-
-item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with brick 4
-function enderface:gui_layoutes/shop/set_trade_data/wirite_data/icon
-function enderface:gui_layoutes/shop/set_trade_data/wirite_data/sell
-data modify storage sco:shop sell_count set value {click:1,sneak:16}
-function enderface:gui_layoutes/shop/set_trade_data/wirite_data/sell_count
-item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with coal 5
-function enderface:gui_layoutes/shop/set_trade_data/wirite_data/buy
-item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with gold_ingot 1
-function enderface:gui_layoutes/shop/set_trade_data/wirite_data/buy
-data modify storage sco:shop weapons append from storage sco:shop _
-
 
 data remove entity @e[tag=set_trade_data,limit=1,distance=..2] Items
 kill @e[tag=set_trade_data,distance=..2]
