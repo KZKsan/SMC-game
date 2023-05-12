@@ -1,5 +1,10 @@
 {
     "values": [
-        "enderface:gui_layoutes/shop/set_trade_data/category/weapons"
+        "enderface:gui_layoutes/shop/set_trade_data/init",
+
+        "enderface:gui_layoutes/shop/set_trade_data/category/weapons",
+        
+
+        "enderface:gui_layoutes/shop/set_trade_data/end"
     ]
 }
