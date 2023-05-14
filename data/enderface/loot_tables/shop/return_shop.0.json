@@ -1,0 +1,26 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "barrier",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name":{
+                                "text": ">カテゴリ選択へ戻る",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{click_events:{click_sounds:[{sound:\"ui.button.click\"}],change_gui:\"shop/0\"},enderfaceItem:1b}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

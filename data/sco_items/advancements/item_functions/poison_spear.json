@@ -1,0 +1,30 @@
+{
+    "parent": "sco_items:root",
+    "criteria": {
+        "hurt": {
+            "trigger": "entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "source_entity": {
+                        "equipment": {
+                            "mainhand": {
+                                "nbt": "{item_functions:{poison_spear:1b}}"
+                            }
+                        }
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "sco_items:item_functions/posion_spear/hurt"
+    }
+}

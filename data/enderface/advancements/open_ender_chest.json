@@ -1,0 +1,25 @@
+{
+    "criteria": {
+        "open": {
+            "trigger": "item_used_on_block",
+            "conditions": {
+                "location": {
+                    "block": {
+                        "blocks": [
+                            "ender_chest"
+                        ]
+                    }
+                },
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "enderface:exception"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "enderface:open/main"
+    }
+}
