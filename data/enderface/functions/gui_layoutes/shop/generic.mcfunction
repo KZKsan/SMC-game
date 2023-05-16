@@ -1,6 +1,16 @@
 #>enderface:gui_layoutes/shop/generic
 #@within enderface:gui_layoutes/shop/**
-function enderface:gui_layoutes/generic/set_air
+function enderface:gui_layoutes/generic/set_gray_pane
+
+item replace entity @s enderchest.0 with air
+item replace entity @s enderchest.1 with air
+item replace entity @s enderchest.2 with air
+item replace entity @s enderchest.9 with air
+item replace entity @s enderchest.10 with air
+item replace entity @s enderchest.11 with air
+item replace entity @s enderchest.18 with air
+item replace entity @s enderchest.19 with air
+item replace entity @s enderchest.20 with air
 
 loot replace entity @s enderchest.26 loot enderface:shop/return_shop.0
 function marker_storage/get
