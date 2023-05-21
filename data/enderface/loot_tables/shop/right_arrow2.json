@@ -1,0 +1,52 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "white_banner",
+                    "functions": [
+                        {
+                            "function": "set_banner_pattern",
+                            "append": false,
+                            "patterns": [
+                                {
+                                    "pattern": "minecraft:stripe_right",
+                                    "color": "black"
+                                },
+                                {
+                                    "pattern": "minecraft:stripe_middle",
+                                    "color": "black"
+                                },
+                                {
+                                    "pattern": "minecraft:stripe_top",
+                                    "color": "white"
+                                },
+                                {
+                                    "pattern": "minecraft:stripe_bottom",
+                                    "color": "white"
+                                },
+                                {
+                                    "pattern": "minecraft:curly_border",
+                                    "color": "white"
+                                }
+                            ]
+                        },
+                        {
+                            "function": "set_name",
+                            "name": {
+                                "text": "→",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{enderfaceItem:1b,HideFlags:32}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
