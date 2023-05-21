@@ -13,7 +13,7 @@ item replace entity @s enderchest.16 from entity @e[tag=gui_layout_item,distance
 item modify entity @s enderchest.16 enderface:enderfaceitem
 item modify entity @s enderchest.16 enderface:shop/click_to_trade
 
-loot replace entity @s enderchest.15 loot enderface:shop/right_arrow2
+loot replace entity @s enderchest.15 loot enderface:shop/right_arrow
 
 data remove entity @e[tag=gui_layout_item,distance=..2,limit=1] Items
 kill @e[tag=gui_layout_item,distance=..2]
