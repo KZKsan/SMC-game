@@ -15,15 +15,35 @@
 
 ***ショップを出すコマンド***
 
->/function enderface:set_ender_chest/shop/0
+> /function enderface:set_ender_chest/shop/0
 
 ***取引設定方法***
 
 1.data\enderface\functions\gui_layoutes\shop\set_trade_data\category\のカテゴリ設定用functionを開く
 
-2.以下の画像のとおりコマンドを書く
+2.以下のコマンドを書く
 
-![alt](https://media.discordapp.net/attachments/1099504204407648326/1106398886907613224/image.png?width=936&height=654)
+```mcfunction
+### 購入アイテム チェスト付きトロッコのcontainer.0に入れる GUI上は購入アイテムがそのままアイコンになる
+item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with diamond_pickaxe 1
+item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.1 with iron_sword 1
+item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.2 with diamond 5
+data modify storage sco:shop sell_count set value {click:<回数>,sneak:<回数>}
+function enderface:gui_layoutes/shop/set_trade_data/wirite_data/all
+data modify storage sco:shop trade_data append from storage sco:shop _
+
+## 個別に設定する方法
+item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with diamond_pickaxe 1
+function enderface:gui_layoutes/shop/set_trade_data/wirite_data/icon
+#(アイテムを変える場合使う)item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with diamond_pickaxe 1
+function enderface:gui_layoutes/shop/set_trade_data/wirite_data/sell
+item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with iron_sword 1
+item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.1 with diamond 5
+function enderface:gui_layoutes/shop/set_trade_data/wirite_data/buy
+data modify storage sco:shop sell_count set value {click:1,sneak:1}
+function enderface:gui_layoutes/shop/set_trade_data/wirite_data/sell_count
+data modify storage sco:shop trade_data append from storage sco:shop _
+```
 
 カテゴリを追加する場合
 
@@ -34,11 +54,13 @@
 ```mcfunction
 #>enderface:gui_layoutes/shop/set_trade_data/category/<カテゴリ名(このfunctionの名前)>
 #@within tag/function enderface:set_trade_data
-## 取引内容を初期化
-data modify storage sco:shop <カテゴリ名> set value []
+function enderface:gui_layoutes/shop/set_trade_data/reset_data
 
 ## ここに取引の内容を書いていく
 ## ...
+
+## 取引内容を保存
+data modify storage sco:shop <カテゴリ名> set from sco:shop trade_data
 ```
 
 3.作ったカテゴリ設定用functionのパスをdata\enderface\tags\functions\set_trade_data.jsonに追加する

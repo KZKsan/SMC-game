@@ -1,7 +1,6 @@
 #>enderface:gui_layoutes/shop/set_trade_data/category/weapons
 #@within tag/function enderface:set_trade_data
-
-data modify storage sco:shop weapons set value []
+function enderface:gui_layoutes/shop/set_trade_data/reset_data
 
 loot replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 loot sco_items:poison_spear
 function enderface:gui_layoutes/shop/set_trade_data/wirite_data/icon
@@ -11,7 +10,7 @@ function enderface:gui_layoutes/shop/set_trade_data/wirite_data/sell_count
 item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with emerald 10
 item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.1 with iron_ingot 2
 function enderface:gui_layoutes/shop/set_trade_data/wirite_data/buy
-data modify storage sco:shop weapons append from storage sco:shop _
+data modify storage sco:shop trade_data append from storage sco:shop _
 
 loot replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 loot sco_items:sample_item
 function enderface:gui_layoutes/shop/set_trade_data/wirite_data/icon
@@ -21,7 +20,7 @@ function enderface:gui_layoutes/shop/set_trade_data/wirite_data/sell_count
 item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with emerald 40
 item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.1 with diamond 5
 function enderface:gui_layoutes/shop/set_trade_data/wirite_data/buy
-data modify storage sco:shop weapons append from storage sco:shop _
+data modify storage sco:shop trade_data append from storage sco:shop _
 
 item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with brick 4
 function enderface:gui_layoutes/shop/set_trade_data/wirite_data/icon
@@ -30,7 +29,7 @@ data modify storage sco:shop sell_count set value {click:1,sneak:16}
 function enderface:gui_layoutes/shop/set_trade_data/wirite_data/sell_count
 item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with coal 16
 function enderface:gui_layoutes/shop/set_trade_data/wirite_data/buy
-data modify storage sco:shop weapons append from storage sco:shop _
+data modify storage sco:shop trade_data append from storage sco:shop _
 
 ## 一括設定する方法 必要アイテム1~2種類と購入アイテム1種類を決められる 
 ### 購入アイテム チェスト付きトロッコのcontainer.0に入れる GUI上は購入アイテムがそのままアイコンになる
@@ -43,9 +42,9 @@ data modify storage sco:shop weapons append from storage sco:shop _
 ### 連続購入設定 click:そのままクリックしたときの購入回数 sneak:シフトクリックしたときの購入回数
     data modify storage sco:shop sell_count set value {click:1,sneak:1}
 
-### 設定を反映し、取引を追加する (ここでは カテゴリ:weapons に追加している)
+### 設定を反映し、取引を追加する
 function enderface:gui_layoutes/shop/set_trade_data/wirite_data/all
-data modify storage sco:shop weapons append from storage sco:shop _
+data modify storage sco:shop trade_data append from storage sco:shop _
 
 
 ## 個別に設定する方法
@@ -67,5 +66,8 @@ data modify storage sco:shop weapons append from storage sco:shop _
     data modify storage sco:shop sell_count set value {click:1,sneak:1}
     function enderface:gui_layoutes/shop/set_trade_data/wirite_data/sell_count
 
-### 取引を追加する (ここでは カテゴリ:weapons に追加している)
-data modify storage sco:shop weapons append from storage sco:shop _
+### 取引を追加する
+data modify storage sco:shop trade_data append from storage sco:shop _
+
+
+data modify storage sco:shop weapons set from storage sco:shop trade_data

@@ -1,0 +1,27 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "diamond_sword",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": {
+                                "text": ">武器",
+                                "italic": false,
+                                "color": "#00DDAA"
+                            }
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{HideFlags:34,enderfaceItem:1b,click_events:{click_sounds:[{sound:\"ui.button.click\"}],change_gui:\"shop/weapons\"}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

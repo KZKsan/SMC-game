@@ -11,7 +11,7 @@ item replace entity @s enderchest.0 with coal{preview_trade:{buy:[{id:"minecraft
 #エメラルド{test:1b} x2 && ダイヤモンド x10
 item replace entity @s enderchest.2 with brick{preview_trade:{buy:[{id:"minecraft:emerald",Count:2b,tag:{test:1b}},{id:"minecraft:diamond",Count:10b}],sell:[{id:"minecraft:brick",Count:32b}],sell_count:{click:1,sneak:2}},enderfaceItem:1b} 32
 function marker_storage/get
-execute if data entity @e[predicate=marker_storage,limit=1] data.preview_trade run function enderface:gui_layoutes/shop/preview_trade
+execute if data entity @e[predicate=marker_storage,limit=1] data.preview_trade run function enderface:gui_layoutes/shop/preview_trade/
 
 item modify entity @s enderchest.0 enderface:shop/click_to_preview
 item modify entity @s enderchest.1 enderface:shop/click_to_preview
