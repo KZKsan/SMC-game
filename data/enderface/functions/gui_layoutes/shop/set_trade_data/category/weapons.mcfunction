@@ -31,6 +31,15 @@ item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with
 function enderface:gui_layoutes/shop/set_trade_data/wirite_data/buy
 data modify storage sco:shop trade_data append from storage sco:shop _
 
+loot replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 loot sco_items:crossbow
+function enderface:gui_layoutes/shop/set_trade_data/wirite_data/icon
+function enderface:gui_layoutes/shop/set_trade_data/wirite_data/sell
+data modify storage sco:shop sell_count set value {click:1,sneak:1}
+function enderface:gui_layoutes/shop/set_trade_data/wirite_data/sell_count
+item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with bow 1
+function enderface:gui_layoutes/shop/set_trade_data/wirite_data/buy
+data modify storage sco:shop trade_data append from storage sco:shop _
+
 ## 一括設定する方法 必要アイテム1~2種類と購入アイテム1種類を決められる 
 ### 購入アイテム チェスト付きトロッコのcontainer.0に入れる GUI上は購入アイテムがそのままアイコンになる
     item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with netherite_sword 1
