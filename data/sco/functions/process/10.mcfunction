@@ -9,3 +9,6 @@ team join red @a
 #プロセス終了
 scoreboard players set process game 11
 scoreboard players set runtime game 0
+data merge storage timer: {time:30,mode:1,name:'{"text":"ステージ見学中 残り時間 "}'}
+execute store result storage timer: time int 1 run scoreboard players get $stage_timer game
+function timer:input
