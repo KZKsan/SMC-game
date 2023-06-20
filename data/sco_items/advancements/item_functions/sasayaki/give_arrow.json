@@ -1,0 +1,19 @@
+{
+    "parent": "sco_items:root",
+    "criteria": {
+        "sasayaki": {
+            "trigger": "item_durability_changed",
+            "conditions": {
+                "durability": 1,
+                "item": {
+                    "items": [
+                        "bow"
+                    ]
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "sco_items:item_functions/sasayaki/durability_1"
+    }
+}
