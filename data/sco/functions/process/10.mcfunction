@@ -4,7 +4,7 @@
 function sco:game_id/set
 
 #チーム振り分け
-team join red @a
+execute as @a[] run function sco:player/random_team
 
 #プロセス終了
 scoreboard players set process game 11
