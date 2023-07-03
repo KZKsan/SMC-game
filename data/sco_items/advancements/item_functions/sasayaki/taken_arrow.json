@@ -5,10 +5,11 @@
             "trigger": "entity_hurt_player",
             "conditions": {
                 "damage": {
-                    "source_entity": {
-                        "type": "arrow",
-                        "nbt": "{CustomPotionEffects:[{Id:7,Amplifier:1b,Duration:0,ShowParticles:1b}]}}]"
-                    }
+                    "type": {
+                        "direct_entity": {
+                            "nbt": "{SLastArrow:1b}"
+                        }
+                    } 
                 }
             }
         }

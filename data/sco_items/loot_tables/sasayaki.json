@@ -23,7 +23,11 @@
                         },
                         {
                             "function": "minecraft:set_damage",
-                            "damage": 380
+                            "damage": 0.01
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{item_functions:{sasayaki:1b}}"
                         }
                     ]
                 }
