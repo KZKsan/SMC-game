@@ -7,7 +7,7 @@
                 "damage": {
                     "type": {
                         "direct_entity": {
-                            "nbt": "{SLastArrow:1b}"
+                            "nbt": "{CustomPotionEffects:[{Id:7,Amplifier:1b,Duration:0,ShowParticles:1b}]}"
                         }
                     } 
                 }
