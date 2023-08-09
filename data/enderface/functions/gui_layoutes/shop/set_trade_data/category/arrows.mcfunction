@@ -5,6 +5,8 @@ function enderface:gui_layoutes/shop/set_trade_data/reset_data
 function enderface:gui_layoutes/shop/set_trade_data/single_data/crossbow
 function enderface:gui_layoutes/shop/set_trade_data/single_data/multishot_crossbow
 function enderface:gui_layoutes/shop/set_trade_data/single_data/light_crossbow
+function enderface:gui_layoutes/shop/set_trade_data/single_data/arbalest
+function enderface:gui_layoutes/shop/set_trade_data/single_data/yoichis_bow
 function enderface:gui_layoutes/shop/set_trade_data/single_data/composite_bow
 
 
