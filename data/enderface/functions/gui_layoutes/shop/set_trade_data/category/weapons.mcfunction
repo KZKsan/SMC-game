@@ -80,6 +80,7 @@ function enderface:gui_layoutes/shop/set_trade_data/single_data/poison_spear
 function enderface:gui_layoutes/shop/set_trade_data/single_data/crystal_sword
 function enderface:gui_layoutes/shop/set_trade_data/single_data/leg_scraping_axe
 function enderface:gui_layoutes/shop/set_trade_data/single_data/dimensional_sword
+function enderface:gui_layoutes/shop/set_trade_data/single_data/steel_war_hammer
 
 
 data modify storage sco:shop weapons set from storage sco:shop trade_data
