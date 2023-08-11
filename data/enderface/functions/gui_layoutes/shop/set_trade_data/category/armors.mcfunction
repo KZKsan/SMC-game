@@ -5,6 +5,7 @@ function enderface:gui_layoutes/shop/set_trade_data/reset_data
 function enderface:gui_layoutes/shop/set_trade_data/single_data/light_armor
 function enderface:gui_layoutes/shop/set_trade_data/single_data/robe_of_regeneration
 function enderface:gui_layoutes/shop/set_trade_data/single_data/diamond_armor
+function enderface:gui_layoutes/shop/set_trade_data/single_data/gargoyle_plate
 function enderface:gui_layoutes/shop/set_trade_data/single_data/shield
 function enderface:gui_layoutes/shop/set_trade_data/single_data/iron_shield
 
