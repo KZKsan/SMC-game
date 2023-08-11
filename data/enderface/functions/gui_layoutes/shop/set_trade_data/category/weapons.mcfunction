@@ -76,6 +76,7 @@ function enderface:gui_layoutes/shop/set_trade_data/single_data/magic_book_of_wi
 function enderface:gui_layoutes/shop/set_trade_data/single_data/smash_pickaxe
 function enderface:gui_layoutes/shop/set_trade_data/single_data/poison_spear
 function enderface:gui_layoutes/shop/set_trade_data/single_data/crystal_sword
+function enderface:gui_layoutes/shop/set_trade_data/single_data/leg_scraping_axe
 
 
 data modify storage sco:shop weapons set from storage sco:shop trade_data
