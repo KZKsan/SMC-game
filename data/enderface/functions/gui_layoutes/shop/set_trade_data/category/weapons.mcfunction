@@ -2,15 +2,7 @@
 #@within tag/function enderface:set_trade_data
 function enderface:gui_layoutes/shop/set_trade_data/reset_data
 
-loot replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 loot sco_items:poison_spear
-function enderface:gui_layoutes/shop/set_trade_data/wirite_data/icon
-function enderface:gui_layoutes/shop/set_trade_data/wirite_data/sell
-data modify storage sco:shop sell_count set value {click:1,sneak:1}
-function enderface:gui_layoutes/shop/set_trade_data/wirite_data/sell_count
-item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with emerald 10
-item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.1 with iron_ingot 2
-function enderface:gui_layoutes/shop/set_trade_data/wirite_data/buy
-data modify storage sco:shop trade_data append from storage sco:shop _
+
 
 loot replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 loot sco_items:sample_item
 function enderface:gui_layoutes/shop/set_trade_data/wirite_data/icon
@@ -82,6 +74,7 @@ function enderface:gui_layoutes/shop/set_trade_data/single_data/clau_solas
 function enderface:gui_layoutes/shop/set_trade_data/single_data/magic_book
 function enderface:gui_layoutes/shop/set_trade_data/single_data/magic_book_of_wind
 function enderface:gui_layoutes/shop/set_trade_data/single_data/smash_pickaxe
+function enderface:gui_layoutes/shop/set_trade_data/single_data/poison_spear
 
 
 data modify storage sco:shop weapons set from storage sco:shop trade_data
