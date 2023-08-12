@@ -1,0 +1,31 @@
+{
+    "parent": "sco_items:root",
+    "criteria": {
+        "chest": {
+            "trigger": "tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "equipment": {
+                                "chest": {
+                                    "nbt": "{item_functions:{idaten_armor:1b}}"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "chest"
+        ]
+    ],
+    "rewards": {
+        "function": "sco_items:item_functions/idaten_armor"
+    }
+}

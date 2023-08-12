@@ -1,0 +1,96 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "iron_chestplate",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": {
+                                "text": "韋駄天の鎧",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore": [
+                                "伝説の軽歩兵が使っていたとされる鎧。",
+                                "",
+                                [   
+                                    {
+                                        "translate": "effect.minecraft.jump_boost",
+                                        "italic": false,
+                                        "color": "#00CCAA"
+                                    },
+                                    " A:0, D:2s"
+                                ],
+                                "",
+                                {
+                                    "translate": "item.modifiers.chest",
+                                    "color": "gray",
+                                    "italic": false
+                                },
+                                [
+                                    {
+                                        "translate": "attribute.name.generic.movement_speed",
+                                        "color": "blue",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": " +10%",
+                                        "color": "blue",
+                                        "italic": false
+                                    }
+                                ],
+                                [
+                                    {
+                                        "translate": "attribute.name.generic.armor",
+                                        "color": "blue",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": " +6",
+                                        "color": "blue",
+                                        "italic": false
+                                    }
+                                ]
+                            ]
+                        },
+                        {
+                            "function": "set_attributes",
+                            "modifiers": [
+                                {
+                                    "slot": "chest",
+                                    "amount": 6,
+                                    "operation": "addition",
+                                    "attribute": "generic.armor",
+                                    "name": ""
+                                },
+                                {
+                                    "slot": "chest",
+                                    "amount": 0.1,
+                                    "operation": "multiply_total",
+                                    "attribute": "generic.movement_speed",
+                                    "name": ""
+                                }
+                            ]
+                        },
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "binding_curse": 1
+                            }
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{HideFlags:2,item_functions:{idaten_armor:1b}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
