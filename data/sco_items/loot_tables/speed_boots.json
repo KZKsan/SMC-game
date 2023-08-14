@@ -45,7 +45,7 @@
                                     "name": "",
                                     "amount": 0.05,
                                     "operation": "multiply_total",
-                                    "slot": "mainhand"
+                                    "slot": "feet"
                                 }
                             ]
                         },
