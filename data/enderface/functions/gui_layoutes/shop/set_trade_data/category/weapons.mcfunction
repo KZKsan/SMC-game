@@ -21,6 +21,7 @@ function enderface:gui_layoutes/shop/set_trade_data/single_data/wind_blade
 function enderface:gui_layoutes/shop/set_trade_data/single_data/clau_solas
 function enderface:gui_layoutes/shop/set_trade_data/single_data/magic_book
 function enderface:gui_layoutes/shop/set_trade_data/single_data/magic_book_of_wind
+function enderface:gui_layoutes/shop/set_trade_data/single_data/magic_book_of_flame
 
 
 data modify storage sco:shop weapons set from storage sco:shop trade_data
