@@ -1,0 +1,105 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "iron_sword",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": {
+                                "text": "風切りの刃",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore": [
+                                "",
+                                {
+                                    "translate": "item.modifiers.mainhand",
+                                    "color": "gray",
+                                    "italic": false
+                                },
+                                [
+                                    {
+                                        "translate": "attribute.name.generic.movement_speed",
+                                        "color": "blue",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": " +20%",
+                                        "color": "blue",
+                                        "italic": false
+                                    }
+                                ],
+                                [
+                                    {
+                                        "translate": "attribute.name.generic.attack_speed",
+                                        "color": "red",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": " -40%",
+                                        "color": "red",
+                                        "italic": false
+                                    }
+                                ],
+                                [
+                                    {
+                                        "translate": "attribute.name.generic.attack_damage",
+                                        "color": "blue",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": " +5",
+                                        "color": "blue",
+                                        "italic": false
+                                    }
+                                ]
+                            ]
+                        },
+                        {
+                            "function": "set_attributes",
+                            "modifiers": [
+                                {
+                                    "attribute": "generic.movement_speed",
+                                    "name": "",
+                                    "amount": 0.2,
+                                    "operation": "multiply_total",
+                                    "slot": "mainhand"
+                                },
+                                {
+                                    "attribute": "generic.attack_speed",
+                                    "name": "",
+                                    "amount": -0.4,
+                                    "operation": "multiply_total",
+                                    "slot": "mainhand"
+                                },
+                                {
+                                    "attribute": "generic.attack_damage",
+                                    "name": "",
+                                    "amount": 5,
+                                    "operation": "addition",
+                                    "slot": "mainhand"
+                                }
+                            ]
+                        },
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "knockback": 1
+                            }
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{HideFlags:2}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

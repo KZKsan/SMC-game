@@ -16,6 +16,7 @@ function enderface:gui_layoutes/shop/set_trade_data/single_data/leg_scraping_axe
 function enderface:gui_layoutes/shop/set_trade_data/single_data/dimensional_sword
 function enderface:gui_layoutes/shop/set_trade_data/single_data/steel_war_hammer
 function enderface:gui_layoutes/shop/set_trade_data/single_data/trishula
+function enderface:gui_layoutes/shop/set_trade_data/single_data/wind_blade
 
 function enderface:gui_layoutes/shop/set_trade_data/single_data/clau_solas
 function enderface:gui_layoutes/shop/set_trade_data/single_data/magic_book
