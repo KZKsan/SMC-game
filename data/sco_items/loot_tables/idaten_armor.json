@@ -5,7 +5,7 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "iron_chestplate",
+                    "name": "leather_chestplate",
                     "functions": [
                         {
                             "function": "set_name",
@@ -17,7 +17,7 @@
                         {
                             "function": "set_lore",
                             "lore": [
-                                "伝説の軽歩兵が使っていたとされる鎧。",
+                                "伝説の軽歩兵が使っていたとされる鎧",
                                 "",
                                 [   
                                     {
@@ -81,12 +81,12 @@
                         {
                             "function": "set_enchantments",
                             "enchantments": {
-                                "binding_curse": 1
+                                "unbreaking": 10
                             }
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{HideFlags:2,item_functions:{idaten_armor:1b}}"
+                            "tag": "{HideFlags:66,item_functions:{idaten_armor:1b},display:{color:6599860}}"
                         }
                     ]
                 }
