@@ -101,7 +101,7 @@
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{HideFlags:2,item_functions:{healing:1b}}"
+                            "tag": "{HideFlags:2,item_functions:{healing:1b},display:{color:15086200}}"
                         }
                     ]
                 }

@@ -2,16 +2,22 @@
     "parent": "sco_items:root",
     "criteria": {
         "hurt": {
-            "trigger": "entity_hurt_player",
+            "trigger": "player_hurt_entity",
             "conditions": {
-                "damage": {
-                    "source_entity": {
-                        "equipment": {
-                            "mainhand": {
-                                "nbt": "{item_functions:{dimensional_sword:1b}}"
+                "player": [
+                    {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "equipment": {
+                                "mainhand": {
+                                    "nbt": "{item_functions:{dimensional_sword:1b}}"
+                                }
                             }
                         }
-                    },
+                    }
+                ],
+                "damage": {
                     "type": {
                         "tags": [
                             {

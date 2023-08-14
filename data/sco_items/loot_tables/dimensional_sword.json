@@ -77,7 +77,7 @@
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{HideFlags:2,itme_functions:{dimensional_sword:1b}}"
+                            "tag": "{HideFlags:2,item_functions:{dimensional_sword:1b}}"
                         }
                     ]
                 }
