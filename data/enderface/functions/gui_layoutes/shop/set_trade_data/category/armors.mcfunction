@@ -8,6 +8,7 @@ function enderface:gui_layoutes/shop/set_trade_data/single_data/diamond_armor
 function enderface:gui_layoutes/shop/set_trade_data/single_data/gargoyle_plate
 function enderface:gui_layoutes/shop/set_trade_data/single_data/idaten_armor
 function enderface:gui_layoutes/shop/set_trade_data/single_data/power_boots
+function enderface:gui_layoutes/shop/set_trade_data/single_data/speed_boots
 
 function enderface:gui_layoutes/shop/set_trade_data/single_data/shield
 function enderface:gui_layoutes/shop/set_trade_data/single_data/iron_shield
