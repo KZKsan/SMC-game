@@ -1,2 +1,3 @@
 #>sco:tp/stage/test
-tp @s 9 -60 18
+teleport @s[team=blue] 201 -36 -88
+teleport @s[team=!blue] 117 -36 -44

@@ -1,4 +1,4 @@
 #>sco:tp/shop
-tp @s[team=red] 0 -60 4
-tp @s[team=blue] 0 -60 10
-#tp @s[team=!]
+teleport @s[team=blue] -24 -57 25
+teleport @s[team=!blue] -24 -57 19
+#teleport @s[team=!]
