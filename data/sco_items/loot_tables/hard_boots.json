@@ -1,0 +1,67 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "leather_boots",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": {
+                                "text": "ハードブーツ",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore": [
+                                "",
+                                {
+                                    "translate": "item.modifiers.feet",
+                                    "color": "gray",
+                                    "italic": false
+                                },
+                                [
+                                    {
+                                        "translate": "attribute.name.generic.knockback_resistance",
+                                        "color": "blue",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": " +0.3",
+                                        "color": "blue",
+                                        "italic": false
+                                    }
+                                ]
+                            ]
+                        },
+                        {
+                            "function": "set_attributes",
+                            "modifiers": [
+                                {
+                                    "attribute": "generic.knockback_resistance",
+                                    "name": "",
+                                    "amount": 0.3,
+                                    "operation": "addition",
+                                    "slot": "feet"
+                                }
+                            ]
+                        },
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "unbreaking": 10
+                            }
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{HideFlags:66,display:{color:3342130}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

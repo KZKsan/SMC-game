@@ -1,0 +1,87 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "diamond_sword",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": {
+                                "text": "クリスタルソード",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore": [
+                                "鋭く、そして儚い",
+                                "",
+                                {
+                                    "translate": "item.modifiers.mainhand",
+                                    "color": "gray",
+                                    "italic": false
+                                },
+                                [
+                                    {
+                                        "translate": "attribute.name.generic.attack_speed",
+                                        "color": "blue",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": " +500%",
+                                        "color": "blue",
+                                        "italic": false
+                                    }
+                                ],
+                                [
+                                    {
+                                        "translate": "attribute.name.generic.attack_damage",
+                                        "color": "blue",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": " +12",
+                                        "color": "blue",
+                                        "italic": false
+                                    }
+                                ]
+                            ]
+                        },
+                        {
+                            "function": "set_attributes",
+                            "modifiers": [
+                                {
+                                    "attribute": "generic.attack_damage",
+                                    "name": "",
+                                    "amount": 12,
+                                    "operation": "addition",
+                                    "slot": "mainhand"
+                                },
+                                {
+                                    "attribute": "generic.attack_speed",
+                                    "name": "",
+                                    "amount": 5,
+                                    "operation": "multiply_base",
+                                    "slot": "mainhand"
+                                }
+                            ]
+                        },
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "sweeping": 3
+                            }
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{HideFlags:2,itme_functions:{crystal_sword:1b},Damage:1560}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

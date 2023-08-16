@@ -1,0 +1,36 @@
+{
+    "parent": "sco_items:root",
+    "criteria": {
+        "hurt": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "equipment": {
+                                "mainhand": {
+                                    "nbt": "{item_functions:{dimensional_sword:1b}}"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "sco_items:item_functions/dimensional_sword/hurt"
+    }
+}

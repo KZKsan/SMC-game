@@ -1,0 +1,127 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "netherite_pickaxe",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": {
+                                "text": "鋼鉄の戦鎚",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore": [
+                                "圧倒的な攻撃力を誇るが",
+                                "まともに扱える者は限られている",
+                                "",
+                                {
+                                    "translate": "item.modifiers.mainhand",
+                                    "color": "gray",
+                                    "italic": false
+                                },
+                                [
+                                    {
+                                        "translate": "attribute.name.generic.movement_speed",
+                                        "color": "red",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": " -40%",
+                                        "color": "red",
+                                        "italic": false
+                                    }
+                                ],
+                                [
+                                    {
+                                        "translate": "attribute.name.generic.attack_speed",
+                                        "color": "red",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": " -95%",
+                                        "color": "red",
+                                        "italic": false
+                                    }
+                                ],
+                                [
+                                    {
+                                        "translate": "attribute.name.generic.attack_damage",
+                                        "color": "blue",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": " +14",
+                                        "color": "blue",
+                                        "italic": false
+                                    }
+                                ],
+                                [
+                                    {
+                                        "translate": "attribute.name.generic.knockback_resistance",
+                                        "color": "blue",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": " +0.3",
+                                        "color": "blue",
+                                        "italic": false
+                                    }
+                                ]
+                            ]
+                        },
+                        {
+                            "function": "set_attributes",
+                            "modifiers": [
+                                {
+                                    "attribute": "generic.movement_speed",
+                                    "name": "",
+                                    "amount": -0.4,
+                                    "operation": "multiply_total",
+                                    "slot": "mainhand"
+                                },
+                                {
+                                    "attribute": "generic.attack_speed",
+                                    "name": "",
+                                    "amount": -0.95,
+                                    "operation": "multiply_total",
+                                    "slot": "mainhand"
+                                },
+                                {
+                                    "attribute": "generic.attack_damage",
+                                    "name": "",
+                                    "amount": 14,
+                                    "operation": "addition",
+                                    "slot": "mainhand"
+                                },
+                                {
+                                    "attribute": "generic.knockback_resistance",
+                                    "name": "",
+                                    "amount": 0.3,
+                                    "operation": "addition",
+                                    "slot": "mainhand"
+                                }
+                            ]
+                        },
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "knockback": 2,
+                                "unbreaking": 3
+                            }
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{HideFlags:2,itme_functions:{steel_war_hammer:1b}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

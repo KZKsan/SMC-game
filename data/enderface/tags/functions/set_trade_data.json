@@ -1,0 +1,14 @@
+{
+    "values": [
+        "enderface:gui_layoutes/shop/set_trade_data/init",
+
+        "enderface:gui_layoutes/shop/set_trade_data/category/weapons",
+        "enderface:gui_layoutes/shop/set_trade_data/category/armors",
+        "enderface:gui_layoutes/shop/set_trade_data/category/arrows",
+        "enderface:gui_layoutes/shop/set_trade_data/category/potions",
+        "enderface:gui_layoutes/shop/set_trade_data/category/others",
+        
+
+        "enderface:gui_layoutes/shop/set_trade_data/end"
+    ]
+}

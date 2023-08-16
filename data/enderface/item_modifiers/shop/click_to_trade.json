@@ -1,0 +1,43 @@
+{
+    "function": "set_lore",
+    "lore": [
+        [
+            {
+                "text": "--------------------",
+                "italic": false,
+                "color": "white"
+            }
+        ],
+        [
+            {
+                "text": ">",
+                "color": "gray"
+            },
+            {
+                "keybind": "key.attack"
+            },
+            {
+                "text": "で購入"
+            }
+        ],
+        [
+            {
+                "text": ">",
+                "color": "gray"
+            },
+            {
+                "keybind": "key.sneak"
+            },
+            {
+                "text": " + "
+            },
+            {
+                "keybind": "key.attack"
+            },
+            {
+                "text": "で連続購入"
+            }
+        ]
+    ],
+    "replace": false
+}
