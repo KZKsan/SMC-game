@@ -5,7 +5,7 @@
 #@private
 #declare loot_table sco_items:yoichis_bow
 loot replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 loot sco_items:yoichis_bow
-function enderface:gui_layoutes/shop/set_trade_data/wirite_data/icon
+function enderface:gui_layoutes/shop/set_trade_data/wirite_data/icon/preview
 function enderface:gui_layoutes/shop/set_trade_data/wirite_data/sell
 item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with bow 1
 item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.1 with emerald 10

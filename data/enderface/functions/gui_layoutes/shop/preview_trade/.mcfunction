@@ -8,8 +8,8 @@ execute if data entity @e[predicate=marker_storage,limit=1] data.preview_trade.b
 execute if data entity @e[predicate=marker_storage,limit=1] data.preview_trade.buy[0] if score # _ matches 0 run function enderface:gui_layoutes/shop/preview_trade/buy_items/0-1
 
 
-
 data modify entity @e[tag=gui_layout_item,distance=..2,limit=1] Items[0] set from entity @e[predicate=marker_storage,limit=1] data.preview_trade.trade
+execute if data entity @e[predicate=marker_storage,limit=1] data.preview_trade.trade.tag.trade.trade_icon run function enderface:gui_layoutes/shop/preview_trade/trade_icon
 item replace entity @s enderchest.16 from entity @e[tag=gui_layout_item,distance=..2,limit=1] container.0
 item modify entity @s enderchest.16 enderface:enderfaceitem
 item modify entity @s enderchest.16 enderface:shop/click_to_trade
