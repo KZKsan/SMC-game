@@ -1,7 +1,7 @@
 {
     "parent": "sco_items:root",
     "criteria": {
-        "mainhand" :{
+        "mainhand": {
             "trigger": "tick",
             "conditions": {
                 "player": [
@@ -11,7 +11,7 @@
                         "predicate": {
                             "equipment": {
                                 "mainhand": {
-                                    "nbt": "{item_functions:{clau_solas:1b}}"
+                                    "nbt": "{item_functions:{lightning_hammer:1b}}"
                                 }
                             }
                         }
@@ -29,7 +29,7 @@
                         "predicate": {
                             "equipment": {
                                 "offhand": {
-                                    "nbt": "{item_functions:{clau_solas:1b}}"
+                                    "nbt": "{item_functions:{lightning_hammer:1b}}"
                                 }
                             }
                         }
@@ -38,8 +38,13 @@
             }
         }
     },
-    "requirements": [["mainhand","offhand"]],
+    "requirements": [
+        [
+            "mainhand",
+            "offhand"
+        ]
+    ],
     "rewards": {
-        "function": "sco_items:item_functions/clau_solas/holding"
+        "function": "sco_items:item_functions/lightning_hammer/holding"
     }
 }
