@@ -19,6 +19,15 @@
                             "lore": [
                                 "攻撃後、時空の影響を受けている敵にはダメージが通らない。",
                                 "",
+                                [
+                                    {
+                                        "translate": "effect.minecraft.absorption",
+                                        "italic": false,
+                                        "color": "#AA0000"
+                                    },
+                                    " A:4, D:3s"
+                                ],
+                                "",
                                 {
                                     "translate": "item.modifiers.mainhand",
                                     "color": "gray",

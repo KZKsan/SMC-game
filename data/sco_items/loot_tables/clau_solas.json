@@ -24,6 +24,40 @@
                                 "持っている間は自分も光る",
                                 "(魔法剣はもろい)",
                                 "",
+                                [
+                                    {
+                                        "translate": "effect.minecraft.glowing",
+                                        "italic": false,
+                                        "color": "#00CCAA"
+                                    },
+                                    " A:0, D:1s"
+                                ],
+                                "",
+                                [
+                                    {
+                                        "translate": "effect.minecraft.glowing",
+                                        "italic": false,
+                                        "color": "#AA0000"
+                                    },
+                                    " A:0, D:20s"
+                                ],
+                                [
+                                    {
+                                        "translate": "effect.minecraft.blindness",
+                                        "italic": false,
+                                        "color": "#AA0000"
+                                    },
+                                    " A:0, D:5s"
+                                ],
+                                [
+                                    {
+                                        "translate": "effect.minecraft.weakness",
+                                        "italic": false,
+                                        "color": "#AA0000"
+                                    },
+                                    " A:0, D:1s"
+                                ],
+                                "",
                                 {
                                     "translate": "item.modifiers.mainhand",
                                     "color": "gray",

@@ -19,6 +19,15 @@
                             "lore": [
                                 "短時間相手にスロー効果を与える",
                                 "",
+                                [
+                                    {
+                                        "translate": "effect.minecraft.slowness",
+                                        "italic": false,
+                                        "color": "#AA0000"
+                                    },
+                                    " A:3, D:5s"
+                                ],
+                                "",
                                 {
                                     "translate": "item.modifiers.mainhand",
                                     "color": "gray",
