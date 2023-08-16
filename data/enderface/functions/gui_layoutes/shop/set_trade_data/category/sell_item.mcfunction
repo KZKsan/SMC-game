@@ -2,36 +2,13 @@
 #@within tag/function enderface:set_trade_data
 function enderface:gui_layoutes/shop/set_trade_data/reset_data
 
-item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with arrow 32
-function enderface:gui_layoutes/shop/set_trade_data/wirite_data/icon/preview
-function enderface:gui_layoutes/shop/set_trade_data/wirite_data/buy
-item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with emerald 4
-function enderface:gui_layoutes/shop/set_trade_data/wirite_data/icon/trade
-function enderface:gui_layoutes/shop/set_trade_data/wirite_data/sell
-data modify storage sco:shop sell_count set value {click:1,sneak:1}
-function enderface:gui_layoutes/shop/set_trade_data/wirite_data/sell_count
-data modify storage sco:shop trade_data append from storage sco:shop _
-
-
-item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with arrow 16
-function enderface:gui_layoutes/shop/set_trade_data/wirite_data/icon/preview
-function enderface:gui_layoutes/shop/set_trade_data/wirite_data/buy
-item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with emerald 2
-function enderface:gui_layoutes/shop/set_trade_data/wirite_data/icon/trade
-function enderface:gui_layoutes/shop/set_trade_data/wirite_data/sell
-data modify storage sco:shop sell_count set value {click:1,sneak:1}
-function enderface:gui_layoutes/shop/set_trade_data/wirite_data/sell_count
-data modify storage sco:shop trade_data append from storage sco:shop _
-
-
-
 item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with arrow 8
 function enderface:gui_layoutes/shop/set_trade_data/wirite_data/icon/preview
 function enderface:gui_layoutes/shop/set_trade_data/wirite_data/buy
 item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with emerald 1
 function enderface:gui_layoutes/shop/set_trade_data/wirite_data/icon/trade
 function enderface:gui_layoutes/shop/set_trade_data/wirite_data/sell
-data modify storage sco:shop sell_count set value {click:1,sneak:1}
+data modify storage sco:shop sell_count set value {click:1,sneak:8}
 function enderface:gui_layoutes/shop/set_trade_data/wirite_data/sell_count
 data modify storage sco:shop trade_data append from storage sco:shop _
 
