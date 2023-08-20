@@ -17,6 +17,8 @@ function enderface:gui_layoutes/shop/set_trade_data/single_data/dimensional_swor
 function enderface:gui_layoutes/shop/set_trade_data/single_data/steel_war_hammer
 function enderface:gui_layoutes/shop/set_trade_data/single_data/trishula
 function enderface:gui_layoutes/shop/set_trade_data/single_data/wind_blade
+function enderface:gui_layoutes/shop/set_trade_data/single_data/crows_sorrow
+
 
 function enderface:gui_layoutes/shop/set_trade_data/single_data/clau_solas
 function enderface:gui_layoutes/shop/set_trade_data/single_data/lightning_hammer

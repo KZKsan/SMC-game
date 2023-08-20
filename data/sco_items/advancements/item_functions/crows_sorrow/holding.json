@@ -1,0 +1,31 @@
+{
+    "parent": "sco_items:root",
+    "criteria": {
+        "mainhand": {
+            "trigger": "tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "equipment": {
+                                "mainhand": {
+                                    "nbt": "{item_functions:{crows_sorrow:1b}}"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "mainhand"
+        ]
+    ],
+    "rewards": {
+        "function": "sco_items:item_functions/crows_sorrow/holding"
+    }
+}
