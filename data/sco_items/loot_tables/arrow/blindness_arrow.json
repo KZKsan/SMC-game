@@ -1,0 +1,26 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "tipped_arrow",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": {
+                                "text": "暗雲の矢",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{CustomPotionColor:2490460,CustomPotionEffects:[{Amplifier:4b,Duration:80,Id:15}]}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "parent": "sco_items:root",
+    "criteria": {
+        "blindness": {
+            "trigger": "tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "nbt": "{ActiveEffects:[{Id:15,Amplifier:4b}]}"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "blindness"
+        ]
+    ],
+    "rewards": {
+        "function": "sco_items:item_functions/blindness/"
+    }
+}
