@@ -24,6 +24,7 @@ execute if score process game matches 20 run function sco:process/20
 execute if score process game matches 30 run function sco:process/30
 
 #5.サドンデス
+execute if score process game matches 31 run function sco:process/31
 
 #6.終了
 execute if score process game matches 40 run function sco:process/40

@@ -1,6 +1,7 @@
 #>sco:process/11
 #@within sco:main
 execute if score runtime game matches 5 run tellraw @a "すてーじけんがく"
+execute if score runtime game matches 1 run team join red @a[team=!]
 #てれぽーと
 execute if score runtime game matches 1 as @a[team=!] run function sco:tp/stage/test
 
