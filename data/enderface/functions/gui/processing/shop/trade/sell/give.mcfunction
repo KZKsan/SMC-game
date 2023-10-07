@@ -1,3 +1,3 @@
 #>enderface:gui/processing/shop/trade/sell/give
-#@api
+#@within enderface:gui/processing/shop/trade/sell/loop
 $give @s $(id)$(tag) $(Count)
