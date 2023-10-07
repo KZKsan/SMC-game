@@ -1,19 +1,24 @@
 {
     "criteria": {
         "open": {
-            "trigger": "item_used_on_block",
+            "trigger": "minecraft:item_used_on_block",
             "conditions": {
-                "location": {
-                    "block": {
-                        "blocks": [
-                            "ender_chest"
-                        ]
-                    }
-                },
                 "player": [
                     {
-                        "condition": "reference",
+                        "condition": "minecraft:reference",
                         "name": "enderface:exception"
+                    }
+                ],
+                "location": [
+                    {
+                        "condition": "minecraft:location_check",
+                        "predicate": {
+                            "block": {
+                                "blocks": [
+                                    "minecraft:ender_chest"
+                                ]
+                            }
+                        }
                     }
                 ]
             }
