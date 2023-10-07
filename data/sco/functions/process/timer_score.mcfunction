@@ -27,8 +27,6 @@ scoreboard players set # _ 20
 scoreboard players operation $stage game *= # _
 scoreboard players operation $shop game *= # _
 scoreboard players operation $game game *= # _
-scoreboard players operation $additional game *= # _
 scoreboard players add $stage game 20
 scoreboard players add $shop game 20
 scoreboard players add $game game 20
-scoreboard players add $additional game 20

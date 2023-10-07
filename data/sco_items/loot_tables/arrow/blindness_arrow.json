@@ -16,7 +16,7 @@
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{CustomPotionColor:2490460,CustomPotionEffects:[{Amplifier:4b,Duration:80,Id:15}]}"
+                            "tag": "{CustomPotionColor:2490460,custom_potion_effects:[{amplifier:4b,duration:80,id:\"blindness\"}]}"
                         }
                     ]
                 }

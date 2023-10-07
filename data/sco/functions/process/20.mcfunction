@@ -1,6 +1,8 @@
 #>sco:process/20
 #@within sco:main
 execute if score runtime game matches 5 run tellraw @a "ショップ"
+execute if score runtime game matches 1 run team join red @a[tag=join_red]
+execute if score runtime game matches 1 run team join blue @a[tag=join_blue]
 #テレポート
 execute if score runtime game matches 1 as @a[team=!] run function sco:tp/shop
 
