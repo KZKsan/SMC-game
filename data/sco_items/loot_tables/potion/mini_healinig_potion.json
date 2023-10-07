@@ -22,7 +22,7 @@
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{CustomPotionColor:16719310,CustomPotionEffects:[{Amplifier:2b,Duration:25,Id:10}]}"
+                            "tag": "{CustomPotionColor:16719310,custom_potion_effects:[{amplifier:2b,duration:25,id:\"Regeneration\"}]}"
                         }
                     ]
                 }
