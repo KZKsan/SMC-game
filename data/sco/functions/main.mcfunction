@@ -29,3 +29,5 @@ execute if score process game matches 31 run function sco:process/31
 #6.終了
 execute if score process game matches 40 run function sco:process/40
 
+#アイテムドロップ制限
+execute as @e[type=item,tag=] unless score @s dropped_item matches 0 run function sco:regine/item_drop/
