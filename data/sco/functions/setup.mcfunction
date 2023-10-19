@@ -10,3 +10,9 @@ scoreboard objectives add dropped_item dummy
 
 team add red
 team add blue
+team add random_team
+team add spectator
+
+#>
+#@public
+#declare storage sco:data

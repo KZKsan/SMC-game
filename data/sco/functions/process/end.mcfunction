@@ -8,4 +8,6 @@ scoreboard players reset last gameID
 scoreboard players reset @a gameID
 tag @a remove join_red
 tag @a remove join_blue
+tag @a[tag=rg_drop_item] remove rg_drop_item
+effect clear @a[predicate=sco:team_join]
 execute as @a[team=!] run function sco:player/retune_lobby

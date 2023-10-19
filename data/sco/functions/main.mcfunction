@@ -29,5 +29,14 @@ execute if score process game matches 31 run function sco:process/31
 #6.終了
 execute if score process game matches 40 run function sco:process/40
 
-#アイテムドロップ制限
+#rg
+
+##lobby
+effect give @a[team=,predicate=gamemode/as] instant_health 10 50 true
+effect give @a[team=,predicate=gamemode/as] resistance 1 50 true
+effect give @a[team=,predicate=gamemode/as] weakness 1 120 true
+effect give @a[team=,predicate=gamemode/as] saturation 10 120 true
+effect give @a[team=,predicate=gamemode/as] water_breathing 1 10 true
+
+##アイテムドロップ制限
 execute as @e[type=item,tag=] unless score @s dropped_item matches 0 run function sco:regine/item_drop/

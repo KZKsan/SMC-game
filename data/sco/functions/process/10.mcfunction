@@ -4,7 +4,9 @@
 function sco:game_id/set
 
 #チーム振り分け
-execute as @a[] run function sco:player/random_team
+execute as @a[team=random_team] run function sco:player/random_team
+tag @a[team=red] add join_red
+tag @a[team=blue] add join_blue
 
 #プロセス終了
 scoreboard players set process game 11
