@@ -40,3 +40,7 @@ effect give @a[team=,predicate=gamemode/as] water_breathing 1 10 true
 
 ##アイテムドロップ制限
 execute as @e[type=item,tag=] unless score @s dropped_item matches 0 run function sco:regine/item_drop/
+
+##矢
+execute as @e[type=#arrows,nbt=!{pickup:0b}] store success entity @s pickup byte 1 unless entity @s[nbt={pickup:0b}]
+execute as @e[type=#arrows,nbt={inGround:1b,life:1s}] run data modify entity @s life set value 1100s
