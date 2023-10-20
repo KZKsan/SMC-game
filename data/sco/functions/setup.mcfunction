@@ -16,3 +16,14 @@ team add spectator
 #>
 #@public
 #declare storage sco:data
+
+#>
+#@public
+#declare storage sco:config
+
+execute unless data storage sco:config game.can_team_select run data modify storage sco:config game.can_team_select set value 0b
+execute unless data storage sco:config game.join run data modify storage sco:config game.join set value 0b
+
+#>
+#@public
+#declare storage sco:input
