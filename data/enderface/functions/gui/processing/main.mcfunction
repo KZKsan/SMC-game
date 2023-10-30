@@ -10,6 +10,7 @@ execute if data storage enderface:data gui_intaract{click:1b} if data storage en
 ## Other Processing
 execute if data storage enderface:data {gui_name:"shop/0"} run function enderface:gui/processing/shop/0/main
 execute if data storage enderface:data {gui_name:"join_the_game/"} run function enderface:gui/processing/join_the_game/
+execute if data storage enderface:data {gui_name:"game_settings/"} run function enderface:gui/processing/game_settings/
 #execute if data storage enderface:data {gui_name:"shop/test"} run function enderface:gui/processing/shop/0/test
 
 execute if data storage enderface:data gui_intaract{click:1b} if data storage enderface:data gui_intaract.Item.tag.preview_trade run function enderface:gui/processing/shop/preview_trade/
