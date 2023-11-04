@@ -6,7 +6,7 @@
 #declare loot_table sco_items:wind_blade
 #declare loot_table sco_items:shield
 loot replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 loot sco_items:wind_blade
-function enderface:gui_layoutes/shop/set_trade_data/wirite_data/icon
+function enderface:gui_layoutes/shop/set_trade_data/wirite_data/icon/preview
 function enderface:gui_layoutes/shop/set_trade_data/wirite_data/sell
 item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with iron_sword 1
 item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.1 with bow

@@ -8,7 +8,7 @@
         "lore": [
             [
                 {
-                    "translate": "item.enderface.selected",
+                    "text": "選択中",
                     "italic": false,
                     "color": "white"
                 }

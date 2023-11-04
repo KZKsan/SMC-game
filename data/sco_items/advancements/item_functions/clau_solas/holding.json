@@ -11,7 +11,7 @@
                         "predicate": {
                             "equipment": {
                                 "mainhand": {
-                                    "nbt": "{clau_solas:1b}"
+                                    "nbt": "{item_functions:{clau_solas:1b}}"
                                 }
                             }
                         }

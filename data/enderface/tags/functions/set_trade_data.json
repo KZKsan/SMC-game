@@ -7,6 +7,7 @@
         "enderface:gui_layoutes/shop/set_trade_data/category/arrows",
         "enderface:gui_layoutes/shop/set_trade_data/category/potions",
         "enderface:gui_layoutes/shop/set_trade_data/category/others",
+        "enderface:gui_layoutes/shop/set_trade_data/category/sell_item",
         
 
         "enderface:gui_layoutes/shop/set_trade_data/end"

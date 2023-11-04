@@ -1,19 +1,55 @@
 {
     "criteria": {
-        "open": {
+        "requirement": {
             "trigger": "item_used_on_block",
             "conditions": {
-                "location": {
-                    "block": {
-                        "blocks": [
-                            "ender_chest"
-                        ]
-                    }
-                },
-                "player": [
+                "location": [
                     {
-                        "condition": "reference",
-                        "name": "enderface:exception"
+                        "condition": "any_of",
+                        "terms": [
+                            {
+                                "condition": "entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "type": "player",
+                                    "flags": {
+                                        "is_sneaking": false
+                                    }
+                                }
+                            },
+                            {
+                                "condition": "entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "type": "player",
+                                    "flags": {
+                                        "is_sneaking": true
+                                    },
+                                    "equipment": {
+                                        "mainhand": {
+                                            "items": [
+                                                "air"
+                                            ]
+                                        },
+                                        "offhand": {
+                                            "items": [
+                                                "air"
+                                            ]
+                                        }
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "condition": "location_check",
+                        "predicate": {
+                            "block": {
+                                "blocks": [
+                                    "ender_chest"
+                                ]
+                            }
+                        }
                     }
                 ]
             }

@@ -18,7 +18,15 @@
                             "function": "set_lore",
                             "lore": [
                                 "着ると治癒力が上がる魔法のローブ",
-                                "(再生能力1永続付与)",
+                                "",
+                                [
+                                    {
+                                        "translate": "effect.minecraft.regeneration",
+                                        "italic": false,
+                                        "color": "#00CCAA"
+                                    },
+                                    " A:0, D:3s"
+                                ],
                                 "",
                                 {
                                     "translate": "item.modifiers.chest",

@@ -1,4 +1,3 @@
 #>sco:game_id/set
-function random/int_uuid
-scoreboard players operation last gameID = random _
+execute store result score last gameID run random value -2147483648..2147483647
 scoreboard players operation @a gameID = last gameID
