@@ -1,0 +1,41 @@
+{
+    "parent": "sco_items:root",
+    "criteria": {
+        "chest": {
+            "trigger": "tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "equipment": {
+                                "chest": {
+                                    "nbt": "{item_functions:{healing:1b}}"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "condition": "inverted",
+                        "term": {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "nbt": "{active_effects:[{id:\"minecraft:regeneration\"}]}"
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "chest"
+        ]
+    ],
+    "rewards": {
+        "function": "sco_items:item_functions/healing/"
+    }
+}

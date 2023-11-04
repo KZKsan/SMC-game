@@ -1,2 +1,2 @@
 #>sco:tp/lobby
-teleport @s -39 -57 17
+teleport @s -8 -51 -86 180 0

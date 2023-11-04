@@ -3,11 +3,13 @@
 
 function enderface:gui_layoutes/generic/set_air
 
-item replace entity @s enderchest.0 with iron_sword{click_events:{click_sounds:[{sound:"ui.button.click"}],change_gui:"shop/weapons"}}
-item modify entity @s enderchest.0 enderface:enderfaceitem
+loot replace entity @s enderchest.0 loot enderface:shop/category_icon/weapons
+loot replace entity @s enderchest.1 loot enderface:shop/category_icon/armors
+loot replace entity @s enderchest.2 loot enderface:shop/category_icon/arrows
+loot replace entity @s enderchest.3 loot enderface:shop/category_icon/potions
+loot replace entity @s enderchest.4 loot enderface:shop/category_icon/others
+loot replace entity @s enderchest.18 loot enderface:shop/category_icon/sell_item
 
-item replace entity @s enderchest.1 with music_disc_5{display:{Name:'{"text": ">テスト","italic": false}'},click_events:{click_sounds:[{sound:"ui.button.click"}],change_gui:"shop/test"}}
-item modify entity @s enderchest.1 enderface:enderfaceitem
 
 function marker_storage/get
 data remove entity @e[predicate=marker_storage,limit=1] data.preview_trade

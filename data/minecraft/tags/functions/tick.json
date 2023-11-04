@@ -1,7 +1,8 @@
 {
     "values": [
-        "sco:main",
+        "timer:",
         "enderface:main",
+        "sco:main",
         "sco_items:main"
     ]
 }

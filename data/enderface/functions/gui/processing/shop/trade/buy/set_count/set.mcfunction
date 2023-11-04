@@ -6,4 +6,3 @@ execute if score #have_count _ >= #Count _ run function enderface:gui/processing
 execute if score #have_count _ < #Count _ run function enderface:gui/processing/shop/trade/buy/set_count/over_count
 
 execute store result storage enderface:data _.Count byte 1 run scoreboard players get #have_count _
-data modify storage enderface:data _.edit set value 1b

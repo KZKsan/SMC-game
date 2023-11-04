@@ -15,6 +15,8 @@ scoreboard objectives add Owner.3 dummy
 
 scoreboard objectives add remove_item_count dummy
 
+function blast_motion/lib
+
 #declare score_holder $random
 #declare score_holder $ranmin
 #declare score_holder $ranmax

@@ -1,0 +1,50 @@
+{
+    "parent": "sco_items:root",
+    "criteria": {
+        "mainhand": {
+            "trigger": "tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "equipment": {
+                                "mainhand": {
+                                    "nbt": "{item_functions:{lightning_hammer:1b}}"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "offhand": {
+            "trigger": "tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "equipment": {
+                                "offhand": {
+                                    "nbt": "{item_functions:{lightning_hammer:1b}}"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "mainhand",
+            "offhand"
+        ]
+    ],
+    "rewards": {
+        "function": "sco_items:item_functions/lightning_hammer/holding"
+    }
+}

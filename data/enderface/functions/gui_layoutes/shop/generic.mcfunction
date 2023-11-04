@@ -20,7 +20,7 @@ execute store result score #line _ run data get storage sco:shop _
 execute if score # _ matches 1.. run loot replace entity @s enderchest.3 loot enderface:shop/up_arrow
 execute if score #line _ matches 10.. run loot replace entity @s enderchest.21 loot enderface:shop/down_arrow
 
-execute if data entity @e[predicate=marker_storage,limit=1] data.preview_trade run function enderface:gui_layoutes/shop/preview_trade
+execute if data entity @e[predicate=marker_storage,limit=1] data.preview_trade run function enderface:gui_layoutes/shop/preview_trade/
 
 item modify entity @s enderchest.0 enderface:shop/click_to_preview
 item modify entity @s enderchest.1 enderface:shop/click_to_preview

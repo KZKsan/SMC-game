@@ -1,6 +1,5 @@
 #>enderface:main
 #@within tick
-execute as @e[tag=give_item] run function enderface:gui/processing/shop/trade/sell/drop_item
 execute as @e[predicate=enderface:interface_type/all,tag=!unbreakable] at @s unless block ~ ~ ~ ender_chest run kill @s
 execute as @e[predicate=enderface:interface_type/all,tag=unbreakable] at @s unless block ~ ~ ~ ender_chest run function enderface:set_ender_chest/replace
 

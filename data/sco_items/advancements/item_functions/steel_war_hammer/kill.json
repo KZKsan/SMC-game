@@ -1,0 +1,28 @@
+{
+    "parent": "sco_items:root",
+    "criteria": {
+        "hurt": {
+            "trigger": "entity_killed_player",
+            "conditions": {
+                "entity": {
+                    "equipment": {
+                        "mainhand": {
+                            "nbt": "{item_functions:{steel_war_hammer:1b}}"
+                        }
+                    }
+                },
+                "killing_blow": {
+                    "tags": [
+                        {
+                            "id": "is_attack",
+                            "expected": true
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "sco_items:item_functions/steel_war_hammer/kill"
+    }
+}

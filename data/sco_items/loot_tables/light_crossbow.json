@@ -1,0 +1,28 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "crossbow",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": {
+                                "text": "ライトクロスボウ",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "quick_charge": 2
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
