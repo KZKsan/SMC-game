@@ -4,7 +4,7 @@ give @s iron_sword
 give @s bow
 give @s iron_helmet
 give @s iron_chestplate
-give @s diamond_leggings{Enchantments:[{id:"minecraft:projectile_protection",lvl:1s}]}
+loot give @s loot sco_items:diamond_leggings
 give @s iron_boots
 loot give @s loot sco_items:shield
 give @s arrow 32

@@ -6,6 +6,7 @@
 scoreboard objectives add game dummy
 scoreboard objectives add gameID dummy
 scoreboard objectives add dropped_item dummy
+scoreboard objectives add respawnTime minecraft.custom:minecraft.time_since_death
 #declare score_holder last gameID
 
 team add red
