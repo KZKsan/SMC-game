@@ -7,8 +7,8 @@ execute if score runtime game matches 1 run team join blue @a[tag=join_blue]
 execute if score runtime game matches 1 run gamemode adventure @a[gamemode=!adventure,predicate=sco:team_join,team=!spectator]
 execute if score runtime game matches 1 as @a[predicate=sco:team_join,team=!spectator] run function sco_items:kit/default
 #rg
-tag @a[team=red,tag=!rg_drop_item] add rg_drop_item
-tag @a[team=blue,tag=!rg_drop_item] add rg_drop_item
+tag @a[predicate=sco:team_join,team=!spectator,tag=!rg_drop_item] add rg_drop_item
+tag @a[predicate=sco:team_join,team=!spectator,tag=!rg_shot_projectiles] add rg_shot_projectiles
 effect give @a[predicate=sco:team_join,team=!spectator,predicate=gamemode/as] instant_health 10 50 true
 effect give @a[predicate=sco:team_join,team=!spectator,predicate=gamemode/as] resistance 1 50 true
 effect give @a[predicate=sco:team_join,team=!spectator,predicate=gamemode/as] weakness 1 120 true

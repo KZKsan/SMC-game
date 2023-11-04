@@ -1,9 +1,8 @@
 #>sco:regine/item_drop/
 #@within sco:main
-tag @s add execute
+#declare tag rg_drop_item
 execute on origin store success score # _ if entity @s[tag=rg_drop_item]
 scoreboard players set @s dropped_item 0
-tag @s remove execute
 execute if score # _ matches 0 run return 0
 data modify storage _ _ set from entity @s Item
 execute unless data storage _ _.tag run data modify storage _ _.tag set value ""

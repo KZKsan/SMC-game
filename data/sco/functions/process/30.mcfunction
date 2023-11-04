@@ -9,6 +9,7 @@ execute if score runtime game matches 1 run gamemode adventure @a[predicate=sco:
 
 #rg
 tag @a[predicate=sco:team_join,tag=!rg_drop_item,team=!spectator] add rg_drop_item
+tag @a[predicate=sco:team_join,tag=rg_shot_projectiles,team=!spectator] remove rg_shot_projectiles
 
 #テレポート
 execute if score runtime game matches 1 run function sco:tp/stage/macro/all_player with storage sco:data
