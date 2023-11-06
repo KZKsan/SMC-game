@@ -1,7 +1,6 @@
 #>sco_items:item_functions/crows_sorrow/step/slow
 #@wihtin sco_items:main
-effect give @s slowness 1 9
-effect give @s strength 1 0
-effect give @s haste 1 9
-effect clear @s speed
-effect clear @s levitation
+attribute @s generic.movement_speed modifier remove 1000-20-0-0-1
+attribute @s generic.movement_speed modifier add 1000-20-0-0-1 "crows_sorrow_slow" -100 add
+attribute @s generic.attack_damage modifier add 1000-20-0-0-1 "crows_sorrow_attack_damage" 3 add
+attribute @s generic.attack_speed modifier add 1000-20-0-0-1 "crows_sorrow_haste" 100 add

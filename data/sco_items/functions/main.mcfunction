@@ -9,6 +9,7 @@
     scoreboard players remove @a[scores={crows_sorrow_cooldown=1..}] crows_sorrow_cooldown 1
     execute as @a[scores={crows_sorrow_cooldown=56..60}] at @s run function sco_items:item_functions/crows_sorrow/step/particle
     execute as @a[scores={crows_sorrow_cooldown=56}] run function sco_items:item_functions/crows_sorrow/step/slow
+    execute as @a[scores={crows_sorrow_cooldown=36}] run function sco_items:item_functions/crows_sorrow/step/reset
 
 
 # score
