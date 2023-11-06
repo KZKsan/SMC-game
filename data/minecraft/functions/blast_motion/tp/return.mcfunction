@@ -9,8 +9,8 @@ data modify entity @e[tag=tp_pointer,limit=1,distance=..1] Pos set from storage 
 execute positioned as @e[tag=tp_pointer,limit=1] run teleport @s ~ ~ ~
 kill @e[tag=tp_pointer,limit=1]
 scoreboard players remove @s blast_motion 1
-execute at @s run playsound entity.wither.shoot record @s ~ ~ ~ 1 1 1
-execute at @s run playsound entity.generic.explode record @s ~ ~ ~ 1 1 1
+#execute at @s run playsound entity.wither.shoot record @s ~ ~ ~ 1 1 1
+#execute at @s run playsound entity.generic.explode record @s ~ ~ ~ 4 0.7
 gamemode adventure @s[scores={last_gamemode=2}]
 gamemode spectator @s[scores={last_gamemode=3}]
 gamemode survival @s[scores={last_gamemode=0}]

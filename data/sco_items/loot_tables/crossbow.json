@@ -14,6 +14,10 @@
                                 "color": "white",
                                 "italic": false
                             }
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{Unbreakable:1b}"
                         }
                     ]
                 }

@@ -33,8 +33,7 @@ function enderface:gui_layoutes/shop/set_trade_data/wirite_data/sell_count
 data modify storage sco:shop trade_data append from storage sco:shop _
 
 
-
-item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with diamond_leggings{Enchantments:[{id:"projectile_protection",lvl:1s}]}
+loot replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 loot sco_items:diamond_leggings
 function enderface:gui_layoutes/shop/set_trade_data/wirite_data/icon/preview
 function enderface:gui_layoutes/shop/set_trade_data/wirite_data/buy
 item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with emerald 4

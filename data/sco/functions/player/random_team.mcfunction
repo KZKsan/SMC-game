@@ -4,6 +4,5 @@ execute store result score # _ if entity @a[team=red]
 execute store result score #_ _ if entity @a[team=blue]
 execute if score # _ < #_ _ run team join red
 execute if score # _ = #_ _ run team join red @s[predicate=5050]
-team join blue @s[team=!]
-tag @a[team=red] add join_red
-tag @a[team=blue] add join_blue
+execute if score # _ > #_ _ run team join blue
+team join blue @s[team=!red]

@@ -1,21 +1,52 @@
 {
     "criteria": {
-        "open": {
-            "trigger": "minecraft:item_used_on_block",
+        "requirement": {
+            "trigger": "item_used_on_block",
             "conditions": {
-                "player": [
-                    {
-                        "condition": "minecraft:reference",
-                        "name": "enderface:exception"
-                    }
-                ],
                 "location": [
                     {
-                        "condition": "minecraft:location_check",
+                        "condition": "any_of",
+                        "terms": [
+                            {
+                                "condition": "entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "type": "player",
+                                    "flags": {
+                                        "is_sneaking": false
+                                    }
+                                }
+                            },
+                            {
+                                "condition": "entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "type": "player",
+                                    "flags": {
+                                        "is_sneaking": true
+                                    },
+                                    "equipment": {
+                                        "mainhand": {
+                                            "items": [
+                                                "air"
+                                            ]
+                                        },
+                                        "offhand": {
+                                            "items": [
+                                                "air"
+                                            ]
+                                        }
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "condition": "location_check",
                         "predicate": {
                             "block": {
                                 "blocks": [
-                                    "minecraft:ender_chest"
+                                    "ender_chest"
                                 ]
                             }
                         }
