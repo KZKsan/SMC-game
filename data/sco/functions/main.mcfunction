@@ -28,6 +28,8 @@ execute if score process game matches 31 run function sco:process/31
 #6.終了
 execute if score process game matches 40 run function sco:process/40
 
+scoreboard players set @a[scores={leave_game=1..}] leave_game 0
+
 #rg
 
 ##lobby

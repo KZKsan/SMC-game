@@ -7,6 +7,9 @@ execute if score runtime game matches 1 run function sco:process/game_reset
 execute if score runtime game matches 5 run tellraw @a "開始"
 execute if score runtime game matches 1 run gamemode adventure @a[predicate=sco:team_join,team=!spectator]
 
+#切断処理
+execute as @a[predicate=sco:team_join,team=!spectator,scores={leave_game=1..}] run function sco:player/retune_lobby
+
 #rg
 tag @a[predicate=sco:team_join,tag=!rg_drop_item,team=!spectator] add rg_drop_item
 tag @a[predicate=sco:team_join,tag=rg_shot_projectiles,team=!spectator] remove rg_shot_projectiles
