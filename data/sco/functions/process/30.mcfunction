@@ -13,6 +13,7 @@ execute as @a[predicate=sco:team_join,team=!spectator,scores={leave_game=1..}] r
 #rg
 tag @a[predicate=sco:team_join,tag=!rg_drop_item,team=!spectator] add rg_drop_item
 tag @a[predicate=sco:team_join,tag=rg_shot_projectiles,team=!spectator] remove rg_shot_projectiles
+tag @a[predicate=sco:team_join,team=!spectator,tag=!rg_food_limit] add rg_food_limit
 
 #テレポート
 execute if score runtime game matches 1 run function sco:tp/stage/macro/all_player with storage sco:data

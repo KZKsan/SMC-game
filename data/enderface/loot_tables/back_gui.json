@@ -1,0 +1,27 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "barrier",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": {
+                                "text": ">戻る",
+                                "italic": false,
+                                "color": "white"
+                            }
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{click_events:{click_sounds:[{sound:\"ui.button.click\"}],back_gui:1b},enderfaceItem:1b}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

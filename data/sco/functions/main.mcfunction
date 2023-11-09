@@ -48,3 +48,7 @@ execute as @e[type=#projectiles] unless score @s shot_projectiles matches 0 run 
 ##矢
 execute as @e[type=#arrows,nbt=!{pickup:0b}] store success entity @s pickup byte 1 if entity @s[nbt={pickup:0b}]
 execute as @e[type=#arrows,nbt={inGround:1b,life:1s}] run data modify entity @s life set value 1100s
+
+##満腹度
+execute as @a store result score @s food_saturation_level run data get entity @s foodSaturationLevel
+execute as @a[tag=rg_food_limit] run function sco:regine/food_limit/

@@ -18,6 +18,7 @@ effect give @a[predicate=sco:team_join,predicate=gamemode/as] water_breathing 1 
 execute if score runtime game matches 1 run function sco:tp/stage/macro/all_player with storage sco:data
 
 #ステージギミック
+execute if score runtime game matches 2 unless data storage sco:data options{reset:true} run function sco:stage_data/generic_settings
 execute if score runtime game matches 2 if data storage sco:data options{reset:true} run function sco:stage_data/reset
 execute if score runtime game matches 3.. if data storage sco:data options{gimmick:true} run function sco:stage_data/gimmick
 

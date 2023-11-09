@@ -2,6 +2,10 @@
 #@within enderface:gui_layoutes/load
 
 function enderface:gui_layoutes/generic/set_air
+
+execute if entity @s[predicate=sneaking,tag=gm] run data modify storage enderface:data gui_name set value "game_settings/"
+execute if entity @s[predicate=sneaking,tag=gm] run return 0
+
 item replace entity @s enderchest.10 with red_wool{display:{Name:'[{"text":"Redチームに参加","color":"#FF0000","bold":false,"italic":false}]'},enderfaceItem:1b}
 item replace entity @s enderchest.11 with blue_wool{display:{Name:'[{"text":"Blueチームに参加","color":"blue","bold":false,"italic":false}]'},enderfaceItem:1b}
 execute if data storage sco:config game{can_team_select:0b} run item replace entity @s enderchest.9 with white_wool{display:{Name:'[{"text":"ゲームに参加","color":"#AA5555","bold":false,"italic":false}]'},enderfaceItem:1b}
