@@ -11,3 +11,4 @@ execute unless score last gameID matches -2147483648..2147483647 run scoreboard 
 execute if score last gameID matches -2147483648..2147483647 run scoreboard players operation @s gameID = last gameID
 function sco:tp/lobby
 gamemode adventure
+function sco:player/team/remove_team_tag

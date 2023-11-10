@@ -17,6 +17,10 @@ tag @a[predicate=sco:team_join,team=!spectator,tag=!rg_food_limit] add rg_food_l
 
 #テレポート
 execute if score runtime game matches 1 run function sco:tp/stage/macro/all_player with storage sco:data
+execute as @a[team=spectator,tag=!spectator] run function sco:player/team/spectator
+execute as @a[team=spectator,tag=!spectator] run function sco:tp/stage/macro/single_player with storage sco:data
+execute as @a[team=spectator,tag=!spectator] run function sco:player/team/remove_team_tag
+tag @a[team=spectator,tag=!spectator] add spectator
 
 #ステージギミック
 execute if score runtime game matches 2 if data storage sco:data options{reset:true} run function sco:stage_data/reset

@@ -17,6 +17,10 @@ tag @a[predicate=sco:team_join,team=!spectator,tag=!rg_food_limit] add rg_food_l
 #テレポート
 execute if score runtime game matches 1.. as @a[predicate=sco:team_join,team=!spectator] run function sco:player/respawn/
 execute if score runtime game matches 1 as @a[team=!] run function sco:tp/stage/sudden_death
+execute as @a[team=spectator,tag=!spectator] run function sco:player/team/spectator
+execute as @a[team=spectator,tag=!spectator] run function sco:tp/stage/sudden_death
+execute as @a[team=spectator,tag=!spectator] run function sco:player/team/remove_team_tag
+tag @a[team=spectator,tag=!spectator] add spectator
 
 #プロセス終了
 function sco:process/game_flag/winner/

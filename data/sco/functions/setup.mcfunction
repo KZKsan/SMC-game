@@ -28,7 +28,7 @@ team add spectator
 
 execute unless data storage sco:config game.can_team_select run data modify storage sco:config game.can_team_select set value 0b
 execute unless data storage sco:config game.join run data modify storage sco:config game.join set value 0b
-execute unless data storage sco:config game.stage run data modify storage sco:config game.stage set value "test"
+execute unless data storage sco:config stage run data modify storage sco:config stage set value "sco_random"
 
 #>
 #@public
