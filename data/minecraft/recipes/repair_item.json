@@ -1,0 +1,8 @@
+{
+    "type": "stonecutting",
+    "ingredient": {
+        "item": "debug_stick"
+    },
+    "count": 0,
+    "result": "debug_stick"
+}
