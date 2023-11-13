@@ -5,6 +5,7 @@ execute if score runtime game matches 5 run tellraw @a "ショップ"
 execute if score runtime game matches 1 run team join red @a[tag=join_red]
 execute if score runtime game matches 1 run team join blue @a[tag=join_blue]
 execute if score runtime game matches 1 run gamemode adventure @a[gamemode=!adventure,predicate=sco:team_join,team=!spectator]
+execute if score runtime game matches 1 run clear @a[predicate=sco:team_join,team=!spectator] 
 execute if score runtime game matches 1 as @a[predicate=sco:team_join,team=!spectator] run function sco_items:kit/default
 #rg
 tag @a[predicate=sco:team_join,team=!spectator,tag=!rg_drop_item] add rg_drop_item

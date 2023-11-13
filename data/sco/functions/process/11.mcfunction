@@ -4,6 +4,7 @@ scoreboard players add runtime game 1
 execute if score runtime game matches 5 run tellraw @a "すてーじけんがく"
 execute if score runtime game matches 1 run team join red @a[team=blue]
 execute if score runtime game matches 1 run gamemode adventure @a[team=red]
+execute if score runtime game matches 1 as @a[predicate=sco:team_join,team=!spectator] run function sco_items:kit/visit
 
 #rg
 tag @a[team=red,tag=!rg_drop_item] add rg_drop_item
@@ -19,6 +20,8 @@ execute as @a[team=spectator,tag=!spectator] run function sco:player/team/specta
 execute as @a[team=spectator,tag=!spectator] run function sco:tp/stage/macro/single_player with storage sco:data
 execute as @a[team=spectator,tag=!spectator] run function sco:player/team/remove_team_tag
 tag @a[team=spectator,tag=!spectator] add spectator
+
+#アイテム配布
 
 #ステージギミック
 execute if score runtime game matches 2 unless data storage sco:data options{reset:true} run function sco:stage_data/generic_settings
