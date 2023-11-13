@@ -13,6 +13,7 @@ execute as @a[predicate=sco:team_join,team=!spectator,scores={leave_game=1..}] r
 tag @a[predicate=sco:team_join,tag=!rg_drop_item,team=!spectator] add rg_drop_item
 tag @a[predicate=sco:team_join,tag=rg_shot_projectiles,team=!spectator] remove rg_shot_projectiles
 tag @a[predicate=sco:team_join,team=!spectator,tag=!rg_food_limit] add rg_food_limit
+tag @a[predicate=sco:team_join,tag=rg_item_function_limit,team=!spectator] remove rg_item_function_limit
 
 #テレポート
 execute if score runtime game matches 1.. as @a[predicate=sco:team_join,team=!spectator] run function sco:player/respawn/
