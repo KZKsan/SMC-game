@@ -4,7 +4,7 @@ scoreboard players add runtime game 1
 execute if score runtime game matches 5 run tellraw @a "すてーじけんがく"
 execute if score runtime game matches 1 run team join red @a[team=blue]
 execute if score runtime game matches 1 run gamemode adventure @a[team=red]
-execute if score runtime game matches 1 as @a[predicate=sco:team_join,team=!spectator] run function sco_items:kit/visit
+execute if score runtime game matches 1 as @a[predicate=sco:team_join,team=!spectator] run function sco:process/give_visit_kit
 
 #rg
 tag @a[team=red,tag=!rg_drop_item] add rg_drop_item

@@ -1,6 +1,6 @@
 #>sco:player/retune_lobby
 #@internal
-clear @s
+function sco:player/inventory_histories/pop/
 team leave @s
 tag @s remove join_red
 tag @s remove join_blue
