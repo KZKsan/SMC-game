@@ -15,6 +15,19 @@
                                 }
                             }
                         }
+                    },
+                    {
+                        "condition": "inverted",
+                        "term": {
+                            "condition": "entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "type_specific": {
+                                    "type": "player",
+                                    "gamemode": "spectator"
+                                }
+                            }
+                        }
                     }
                 ]
             }
@@ -30,6 +43,19 @@
                             "equipment": {
                                 "offhand": {
                                     "nbt": "{item_functions:{lightning_hammer:1b}}"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "condition": "inverted",
+                        "term": {
+                            "condition": "entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "type_specific": {
+                                    "type": "player",
+                                    "gamemode": "spectator"
                                 }
                             }
                         }
