@@ -13,6 +13,15 @@ scoreboard objectives add food_level food
 scoreboard objectives add food_saturation_level dummy
 #declare score_holder last gameID
 
+
+#>
+#@within sco:player/result/**
+scoreboard objectives add score_kill_count playerKillCount
+scoreboard objectives add score_death_count deathCount
+scoreboard objectives add score_damage_dealt custom:damage_dealt
+scoreboard objectives add score_shot_projectiles dummy
+scoreboard objectives add score_hit_projectiles dummy
+
 team add red
 team add blue
 team add random_team
