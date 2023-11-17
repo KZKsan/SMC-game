@@ -9,6 +9,7 @@ execute if data storage enderface:data {gui_name:"shop/arrows"} run function end
 execute if data storage enderface:data {gui_name:"shop/potions"} run function enderface:gui_layoutes/shop/category/potions
 execute if data storage enderface:data {gui_name:"shop/others"} run function enderface:gui_layoutes/shop/category/others
 execute if data storage enderface:data {gui_name:"shop/sell_item"} run function enderface:gui_layoutes/shop/category/sell_item
+execute if data storage enderface:data {gui_name:"shop/reset_item_gui"} run function enderface:gui_layoutes/shop/reset_item_gui
 execute if data storage enderface:data {gui_name:"join_the_game/"} run function enderface:gui_layoutes/join_the_game/
 execute if data storage enderface:data {gui_name:"game_settings/"} run function enderface:gui_layoutes/game_settings/
 execute if data storage enderface:data {gui_name:"game_settings/stage_select"} run function enderface:gui_layoutes/game_settings/stage_select/
