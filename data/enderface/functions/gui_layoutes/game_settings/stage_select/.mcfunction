@@ -2,7 +2,9 @@
 #@within enderface:gui_layoutes/load
 function enderface:gui_layoutes/generic/set_air
 item replace entity @s enderchest.0 with grass_block{enderfaceItem:1b,display:{Name:'{"text": "ラクエン","italic": false,"color":"#55AADD"}'},click_events:{click_sounds:[{sound:"ui.button.click"}],set_stage:"paradise"}}
-item replace entity @s enderchest.1 with salmon{enderfaceItem:1b,display:{Name:'{"text": "shekenadam","italic": false,"color":"#55AADD"}'},click_events:{click_sounds:[{sound:"ui.button.click"}],set_stage:"shekenadam"}}
+item replace entity @s enderchest.1 with salmon{enderfaceItem:1b,display:{Name:'{"text": "シェケナダム","italic": false,"color":"#55AADD"}'},click_events:{click_sounds:[{sound:"ui.button.click"}],set_stage:"shekenadam"}}
+item replace entity @s enderchest.2 with cherry_sapling{enderfaceItem:1b,display:{Name:'{"text": "桜邸","italic": false,"color":"#55AADD"}'},click_events:{click_sounds:[{sound:"ui.button.click"}],set_stage:"sakura_mansion"}}
+item replace entity @s enderchest.3 with minecart{enderfaceItem:1b,display:{Name:'{"text": "都心な駅","italic": false,"color":"#55AADD"}'},click_events:{click_sounds:[{sound:"ui.button.click"}],set_stage:"station"}}
 item replace entity @s enderchest.8 with jigsaw{enderfaceItem:1b,display:{Name:'{"text": "ランダム","italic": false,"color":"#55AADD"}'},click_events:{click_sounds:[{sound:"ui.button.click"}],set_stage:"sco_random"}}
 
 function enderface:gui_layoutes/game_settings/stage_select/selected_icon/ with storage sco:config

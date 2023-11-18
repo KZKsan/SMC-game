@@ -1,7 +1,7 @@
 #>sco:stage_data/stage/sakura_mansion/reset
 #@within sco:stage_data/reset
 time set noon
-
+forceload add -384 -268 -247 -426
 fill -366 -47 -283 -263 -49 -412 minecraft:oak_trapdoor[facing=north,half=bottom,open=true] replace minecraft:oak_trapdoor[facing=north]
 fill -366 -47 -283 -263 -49 -412 minecraft:oak_trapdoor[facing=south,half=bottom,open=true] replace minecraft:oak_trapdoor[facing=south]
 fill -366 -47 -283 -263 -49 -412 minecraft:oak_trapdoor[facing=east,half=bottom,open=true] replace minecraft:oak_trapdoor[facing=east]
@@ -84,3 +84,4 @@ fill -262 -49 -411 -365 -42 -284 minecraft:birch_door[facing=west,open=false,hin
 fill -262 -49 -411 -365 -42 -284 minecraft:birch_door[facing=west,open=false,hinge=left,half=upper] replace minecraft:birch_door[facing=west,hinge=left,half=upper]
 fill -262 -49 -411 -365 -42 -284 minecraft:birch_door[facing=west,open=false,hinge=right,half=lower] replace minecraft:birch_door[facing=west,hinge=right,half=lower]
 fill -262 -49 -411 -365 -42 -284 minecraft:birch_door[facing=west,open=false,hinge=right,half=upper] replace minecraft:birch_door[facing=west,hinge=right,half=upper]
+forceload remove -384 -268 -247 -426

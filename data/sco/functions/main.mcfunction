@@ -33,11 +33,11 @@ scoreboard players set @a[scores={leave_game=1..}] leave_game 0
 #rg
 
 ##lobby
-effect give @a[team=,predicate=gamemode/as] instant_health 10 50 true
-effect give @a[team=,predicate=gamemode/as] resistance 1 50 true
-effect give @a[team=,predicate=gamemode/as] weakness 1 120 true
-effect give @a[team=,predicate=gamemode/as] saturation 10 120 true
-effect give @a[team=,predicate=gamemode/as] water_breathing 1 10 true
+effect give @a[team=,predicate=gamemode/as,tag=!rg_off] instant_health 10 50 true
+effect give @a[team=,predicate=gamemode/as,tag=!rg_off] resistance 1 50 true
+effect give @a[team=,predicate=gamemode/as,tag=!rg_off] weakness 1 120 true
+effect give @a[team=,predicate=gamemode/as,tag=!rg_off] saturation 10 120 true
+effect give @a[team=,predicate=gamemode/as,tag=!rg_off] water_breathing 1 10 true
 
 ##アイテムドロップ制限
 execute as @e[type=item,tag=] unless score @s dropped_item matches 0 run function sco:regine/item_drop/
