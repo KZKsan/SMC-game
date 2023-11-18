@@ -1,0 +1,27 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "splash_potion",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": {
+                                "text": "ステルスポーション",
+                                "color": "white",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{CustomPotionColor:12582399,custom_potion_effects:[{id:\"minecraft:speed\",amplifier:0b,duration:140},{id:\"minecraft:glowing\",amplifier:0b,duration:100},{id:'minecraft:invisibility',amplifier:0b,duration:200}]}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
