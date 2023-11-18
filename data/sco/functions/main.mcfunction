@@ -52,3 +52,6 @@ execute as @e[type=#arrows,nbt={inGround:1b,life:1s}] run data modify entity @s 
 ##満腹度
 execute as @a store result score @s food_saturation_level run data get entity @s foodSaturationLevel
 execute as @a[tag=rg_food_limit] run function sco:regine/food_limit/
+
+##ロビー
+place template sco:lobby/farm 14 -53 -74
