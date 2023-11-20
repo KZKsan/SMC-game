@@ -1,0 +1,19 @@
+{
+    "criteria": {
+        "arrows_hit":{
+            "trigger": "entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "source_entity": {
+                            "type": "#arrows"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "sco:player/result/arrows/hit"
+    }
+}
