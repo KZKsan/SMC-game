@@ -5,7 +5,7 @@
             "conditions": {
                 "damage": {
                     "type": {
-                        "source_entity": {
+                        "direct_entity": {
                             "type": "#arrows"
                         }
                     }
