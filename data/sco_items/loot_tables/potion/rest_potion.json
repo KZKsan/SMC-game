@@ -1,0 +1,27 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "potion",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": {
+                                "text": "休息のポーション",
+                                "italic": false,
+                                "color": "white"
+                            }
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{CustomPotionColor:16756471,custom_potion_effects:[{amplifier:2b,duration:200,id:\"regeneration\"},{amplifier:0b,duration:200,id:\"blindness\"},{amplifier:1b,duration:300,id:\"weakness\"},{amplifier:0b,duration:100,id:\"absorption\"}]}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

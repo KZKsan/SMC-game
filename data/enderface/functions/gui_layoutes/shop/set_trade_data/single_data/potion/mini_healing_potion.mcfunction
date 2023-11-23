@@ -1,10 +1,10 @@
-#>enderface:gui_layoutes/shop/set_trade_data/single_data/potion/mini_healinig_potion
+#>enderface:gui_layoutes/shop/set_trade_data/single_data/potion/mini_healing_potion
 #@within enderface:gui_layoutes/shop/set_trade_data/category/potions
 
 #>
 #@private
-#declare loot_table sco_items:potion/mini_healinig_potion
-loot replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 loot sco_items:potion/mini_healinig_potion
+#declare loot_table sco_items:potion/mini_healing_potion
+loot replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 loot sco_items:potion/mini_healing_potion
 function enderface:gui_layoutes/shop/set_trade_data/wirite_data/icon/preview
 function enderface:gui_layoutes/shop/set_trade_data/wirite_data/sell
 item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with emerald
