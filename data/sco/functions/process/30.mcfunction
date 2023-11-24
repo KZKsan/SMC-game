@@ -7,6 +7,9 @@ execute if score runtime game matches 1 run function sco:process/game_reset
 execute if score runtime game matches 5 run tellraw @a {"text": "対戦開始！5分後にサドンデスモードになります。","bold": true}
 execute if score runtime game matches 1 run gamemode adventure @a[predicate=sco:team_join,team=!spectator]
 execute if score runtime game matches 1 run function sco:player/result/reset_scores/all
+#player_count
+execute if score runtime game matches 1.. run function sco:player/team/team_info/player_count/
+
 
 #切断処理
 execute as @a[predicate=sco:team_join,scores={leave_game=1..}] run function sco:player/retune_lobby

@@ -8,6 +8,9 @@ execute if score runtime game matches 5 run tellraw @a {"text": "サドンデス
 execute if score runtime game matches 1 run data modify storage sco:data regine_area_new set from storage sco:data regine_area.sudden_death
 execute if score runtime game matches 1 as @a[team=spectator] run function sco:regine/block_area/set_score
 execute if score runtime game matches 1.. as @a[team=spectator,predicate=!sco:regine/block_area/scores] run function sco:regine/block_area/set_score
+#player_count
+execute if score runtime game matches 1.. run function sco:player/team/team_info/player_count/
+
 #切断処理
 execute as @a[predicate=sco:team_join,scores={leave_game=1..}] run function sco:player/retune_lobby
 
