@@ -1,0 +1,26 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "potion",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": {
+                                "text": "バリアポーション",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{CustomPotionColor:16777215,custom_potion_effects:[{amplifier:2b,duration:220,id:\"absorption\"}]}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

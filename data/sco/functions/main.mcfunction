@@ -48,10 +48,15 @@ execute as @e[type=#projectiles] unless score @s shot_projectiles matches 0 run 
 ##矢
 execute as @e[type=#arrows,nbt=!{pickup:0b}] store success entity @s pickup byte 1 if entity @s[nbt={pickup:0b}]
 execute as @e[type=#arrows,nbt={inGround:1b,life:1s}] run data modify entity @s life set value 1100s
+execute as @e[type=#arrows] unless score @s shot_arrow matches 0 run function sco:player/result/arrows/shot
+
 
 ##満腹度
 execute as @a store result score @s food_saturation_level run data get entity @s foodSaturationLevel
 execute as @a[tag=rg_food_limit] run function sco:regine/food_limit/
+
+##進入禁止
+execute as @a[tag=rg_block_area,predicate=sco:regine/block_area/scores,tag=!rg_off] at @s run function sco:regine/block_area/
 
 ##ロビー
 place template sco:lobby/farm 14 -53 -74

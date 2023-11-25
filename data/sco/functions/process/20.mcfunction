@@ -1,12 +1,26 @@
 #>sco:process/20
 #@within sco:main
 scoreboard players add runtime game 1
-execute if score runtime game matches 5 run tellraw @a "ショップ"
+execute if score runtime game matches 5 run function sco:messeges/shop
 execute if score runtime game matches 1 run team join red @a[tag=join_red]
 execute if score runtime game matches 1 run team join blue @a[tag=join_blue]
 execute if score runtime game matches 1 run gamemode adventure @a[gamemode=!adventure,predicate=sco:team_join,team=!spectator]
 execute if score runtime game matches 1 run clear @a[predicate=sco:team_join,team=!spectator] 
 execute if score runtime game matches 1 as @a[predicate=sco:team_join,team=!spectator] run function sco_items:kit/default
+execute if score runtime game matches 1 run data modify storage sco:data regine_area_new set from storage sco:data regine_area.shop
+execute if score runtime game matches 1 as @a[team=spectator] run function sco:regine/block_area/set_score
+execute if score runtime game matches 1.. as @a[team=spectator,predicate=!sco:regine/block_area/scores] run function sco:regine/block_area/set_score
+execute if score runtime game matches 1 run function sco:player/team/team_info/player_count/set_display
+execute if score runtime game matches 1.. run function sco:player/team/team_info/player_count/
+
+#プロセスID
+execute if score runtime game matches 1 run scoreboard players set @a[predicate=sco:team_join] processID 20
+
+#切断処理
+execute as @a[team=spectator,scores={leave_game=1..}] run function sco:player/retune_lobby
+execute as @a[predicate=sco:team_join,team=!spectator] if score @s processID matches 11 run function sco_items:kit/default
+execute as @a[predicate=sco:team_join,team=!spectator] if score @s processID matches 11 run function sco:tp/shop/macro/single_player with storage sco:data
+execute as @a[predicate=sco:team_join,team=!spectator] if score @s processID matches 11 run scoreboard players set @s processID 20
 #rg
 tag @a[predicate=sco:team_join,team=!spectator,tag=!rg_drop_item] add rg_drop_item
 tag @a[predicate=sco:team_join,team=!spectator,tag=!rg_shot_projectiles] add rg_shot_projectiles
@@ -19,6 +33,9 @@ effect give @a[predicate=sco:team_join,team=!spectator,predicate=gamemode/as] wa
 
 #テレポート
 execute if score runtime game matches 1 run function sco:tp/shop/macro/all_player with storage sco:data
+execute if score runtime game matches 1 run data modify storage sco:data regine_area_new set from storage sco:data regine_area.shop
+execute if score runtime game matches 1 as @a[team=spectator] run function sco:regine/block_area/set_score
+execute as @a[team=spectator,tag=!spectator] run function sco:regine/block_area/set_score
 execute as @a[team=spectator,tag=!spectator] run function sco:player/team/spectator
 execute as @a[team=spectator,tag=!spectator] run function sco:tp/shop/macro/single_player with storage sco:data
 execute as @a[team=spectator,tag=!spectator] run function sco:player/team/remove_team_tag

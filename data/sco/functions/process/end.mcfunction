@@ -1,6 +1,5 @@
 #>sco:process/end
 #@within sco:process/**
-tellraw @a "終了"
 
 scoreboard players set process game 0
 scoreboard players set runtime game -1
@@ -16,3 +15,4 @@ effect clear @a[predicate=sco:team_join]
 execute as @a[team=!] run function sco:player/retune_lobby
 function sco:stage_data/generic_settings
 function timer:stop
+function sco:player/team/team_info/off

@@ -7,8 +7,8 @@
 #declare score_holder $additional_timer
 
 scoreboard players set $stage_timer game 15
-scoreboard players set $shop_timer game 120
-scoreboard players set $game_timer game 600
+scoreboard players set $shop_timer game 85
+scoreboard players set $game_timer game 300
 scoreboard players set $additional_timer game 9999999
 
 #>

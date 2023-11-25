@@ -10,6 +10,10 @@ tag @s remove rg_shot_projectiles
 tag @s remove rg_item_function_limit
 execute unless score last gameID matches -2147483648..2147483647 run scoreboard players reset @s gameID
 execute if score last gameID matches -2147483648..2147483647 run scoreboard players operation @s gameID = last gameID
+scoreboard players reset @s processID
+
 function sco:tp/lobby
 gamemode adventure
 function sco:player/team/remove_team_tag
+function sco:regine/block_area/reset_score
+function sco:player/result/reset_scores/single

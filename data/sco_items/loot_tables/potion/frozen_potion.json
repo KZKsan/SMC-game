@@ -1,0 +1,26 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "splash_potion",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": {
+                                "text": "フローズンポーション",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{CustomPotionColor:2074589,custom_potion_effects:[{amplifier:5b,duration:60,id:\"slowness\"},{amplifier:5b,duration:60,id:\"resistance\"}]}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
