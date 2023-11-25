@@ -11,7 +11,7 @@
                         "predicate": {
                             "equipment": {
                                 "mainhand": {
-                                    "nbt": "{itme_functions:{steel_war_hammer:1b}}"
+                                    "nbt": "{item_functions:{steel_war_hammer:1b}}"
                                 }
                             }
                         }

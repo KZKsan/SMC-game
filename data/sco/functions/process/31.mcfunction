@@ -29,6 +29,7 @@ execute as @a[team=spectator,tag=!spectator] run function sco:regine/block_area/
 execute as @a[team=spectator,tag=!spectator] run function sco:player/team/spectator
 execute as @a[team=spectator,tag=!spectator] run function sco:tp/stage/sudden_death
 execute as @a[team=spectator,tag=!spectator] run function sco:player/team/remove_team_tag
+tag @a[team=spectator,tag=!spectator] add rg_block_area
 tag @a[team=spectator,tag=!spectator] add spectator
 
 #プロセス終了

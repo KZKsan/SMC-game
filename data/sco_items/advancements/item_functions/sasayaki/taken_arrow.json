@@ -7,7 +7,7 @@
                 "damage": {
                     "type": {
                         "direct_entity": {
-                            "nbt": "{CustomPotionEffects:[{Id:7,Amplifier:1b,Duration:0,ShowParticles:1b}]}"
+                            "nbt": "{custom_potion_effects:[{id:\"minecraft:unluck\",amplifier:1b,duration:0,show_particles:1b}]}"
                         }
                     } 
                 }

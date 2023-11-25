@@ -7,6 +7,7 @@ execute if score runtime game matches 1 run function sco:process/game_reset
 execute if score runtime game matches 5 run tellraw @a {"text": "対戦開始！5分後にサドンデスモードになります。","bold": true}
 execute if score runtime game matches 1 run gamemode adventure @a[predicate=sco:team_join,team=!spectator]
 execute if score runtime game matches 1 run function sco:player/result/reset_scores/all
+execute if score runtime game matches 1 run effect give @a regeneration 5 100
 #player_count
 execute if score runtime game matches 1.. run function sco:player/team/team_info/player_count/
 
@@ -28,6 +29,7 @@ execute as @a[team=spectator,tag=!spectator] run function sco:regine/block_area/
 execute as @a[team=spectator,tag=!spectator] run function sco:player/team/spectator
 execute as @a[team=spectator,tag=!spectator] run function sco:tp/stage/macro/single_player with storage sco:data
 execute as @a[team=spectator,tag=!spectator] run function sco:player/team/remove_team_tag
+tag @a[team=spectator,tag=!spectator] add rg_block_area
 tag @a[team=spectator,tag=!spectator] add spectator
 
 #ステージギミック

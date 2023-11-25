@@ -18,6 +18,7 @@ execute if score runtime game matches 1 run scoreboard players set @a[predicate=
 
 #切断処理
 execute as @a[team=spectator,scores={leave_game=1..}] run function sco:player/retune_lobby
+execute as @a[predicate=sco:team_join,team=!spectator] if score @s processID matches 11 run clear @s
 execute as @a[predicate=sco:team_join,team=!spectator] if score @s processID matches 11 run function sco_items:kit/default
 execute as @a[predicate=sco:team_join,team=!spectator] if score @s processID matches 11 run function sco:tp/shop/macro/single_player with storage sco:data
 execute as @a[predicate=sco:team_join,team=!spectator] if score @s processID matches 11 run scoreboard players set @s processID 20
@@ -39,6 +40,7 @@ execute as @a[team=spectator,tag=!spectator] run function sco:regine/block_area/
 execute as @a[team=spectator,tag=!spectator] run function sco:player/team/spectator
 execute as @a[team=spectator,tag=!spectator] run function sco:tp/shop/macro/single_player with storage sco:data
 execute as @a[team=spectator,tag=!spectator] run function sco:player/team/remove_team_tag
+tag @a[team=spectator,tag=!spectator] add rg_block_area
 tag @a[team=spectator,tag=!spectator] add spectator
 
 #プロセス終了
