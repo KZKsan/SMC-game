@@ -5,6 +5,4 @@ execute store result score s timer run scoreboard players operation m timer = s_
 scoreboard players operation m timer /= #60 _
 scoreboard players operation s timer %= #60 _
 
-function timer:process/get_mst_time
-
 execute if score mode timer matches 1 run function timer:process/bossbar/count_down

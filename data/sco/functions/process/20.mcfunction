@@ -44,6 +44,12 @@ tag @a[team=spectator,tag=!spectator] add rg_block_area
 tag @a[team=spectator,tag=!spectator] add spectator
 
 #プロセス終了
+execute if score #mst_time timer matches 003000 run function sco:messeges/shop_end
+execute if score #mst_time timer matches 003000 as @a[predicate=sco:team_join] at @s run playsound block.note_block.bell record @s ~ ~ ~ 0.6 1 1
+execute if score #mst_time timer matches 003002 as @a[predicate=sco:team_join] at @s run playsound block.note_block.bell record @s ~ ~ ~ 0.6 1 1
+execute if score #mst_time timer matches 003004 as @a[predicate=sco:team_join] at @s run playsound block.note_block.bell record @s ~ ~ ~ 0.6 1 1
+
+
 execute if score runtime game >= $shop game run data merge storage timer: {time:120,mode:1,name:'{"text":"残り時間 "}'}
 execute if score runtime game >= $shop game store result storage timer: time int 1 run scoreboard players get $game_timer game
 execute if score runtime game >= $shop game run function timer:input
