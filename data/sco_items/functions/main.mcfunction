@@ -15,5 +15,8 @@
     execute as @a[scores={crows_sorrow_cooldown=36..60},nbt={OnGround:0b},tag=crows_sorrow_step,tag=!crows_sorrow_step_jump] at @s unless block ~ ~-1 ~ #crows_sorrow/flying run function sco_items:item_functions/crows_sorrow/step/knockback
     execute as @a[scores={crows_sorrow_cooldown=36}] run function sco_items:item_functions/crows_sorrow/step/reset
 
+# hidden_cover
+    execute as @e[tag=hidden_cover] at @s run function sco_items:item_functions/hidden_cover/leaves/
+
 # score
 
