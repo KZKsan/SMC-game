@@ -2,19 +2,19 @@
     "condition": "entity_scores",
     "entity": "this",
     "scores": {
-        "UUID_0": {
+        "UUID.0": {
             "min": -2147483648,
             "max": 2147483647
         },
-        "UUID_1": {
+        "UUID.1": {
             "min": -2147483648,
             "max": 2147483647
         },
-        "UUID_2": {
+        "UUID.2": {
             "min": -2147483648,
             "max": 2147483647
         },
-        "UUID_3": {
+        "UUID.3": {
             "min": -2147483648,
             "max": 2147483647
         }
