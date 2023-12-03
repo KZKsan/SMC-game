@@ -1,11 +1,9 @@
 #>marker_storage/get
 #@api
-execute as @s[predicate=!have_uuid_score] run function set_uuid_score
-#tag @e[tag=Owner] remove Owner
-tag @s add Owner
-scoreboard players set # _ 0
-execute as @e[predicate=marker_storage,limit=1] if score @s Owner.0 = @p[tag=Owner] UUID.0 if score @s Owner.1 = @p[tag=Owner] UUID.1 if score @s Owner.2 = @p[tag=Owner] UUID.2 if score @s Owner.3 = @p[tag=Owner] UUID.3 run scoreboard players set # _ 1
-execute if score # _ matches 0 run function marker_storage/register
-tag @s remove Owner
+data modify storage _ data.UUID set from entity @s UUID
+tag @e[predicate=marker_storage] remove target
+function minecraft:marker_storage/macro with storage _ data
+execute unless entity @e[predicate=marker_storage] positioned 0 0 0 run function marker_storage/create
+#tag @s remove Owner
 
 ## data get entity @e[predicate=marker_storage,limit=1] data
