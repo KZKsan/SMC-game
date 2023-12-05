@@ -1,8 +1,8 @@
 #>enderface:open/paste_enderchest_data
 #@internal
-function marker_storage/get
+function p-storage/get
 summon chest_minecart ~ ~ ~ {Tags:["enderface","set_nbt","paste_enderchest"]}
-data modify entity @e[predicate=enderface:paste_enderchest,limit=1] Items set from entity @e[predicate=marker_storage,limit=1] data.enderchest
+data modify entity @e[predicate=enderface:paste_enderchest,limit=1] Items set from storage p-storage _[0].data.enderchest
 item replace entity @s enderchest.0 from entity @e[predicate=enderface:paste_enderchest,limit=1] container.0
 item replace entity @s enderchest.1 from entity @e[predicate=enderface:paste_enderchest,limit=1] container.1
 item replace entity @s enderchest.2 from entity @e[predicate=enderface:paste_enderchest,limit=1] container.2

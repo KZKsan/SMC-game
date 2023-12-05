@@ -1,9 +1,8 @@
 #>enderface:gui/check/slot
 #@within enderface:gui/check
 data modify storage enderface:data new_gui set from entity @s EnderItems
-function marker_storage/get
 
-data modify storage enderface:data _ set from entity @e[predicate=marker_storage,limit=1] data.gui
+data modify storage enderface:data _ set from storage p-storage _[0].data.gui
 data modify storage enderface:data gui_add set value []
 data modify storage enderface:data gui_intaract.Item set value {}
 

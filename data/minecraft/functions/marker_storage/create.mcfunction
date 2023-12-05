@@ -5,4 +5,4 @@ scoreboard players operation @e[predicate=marker_storage,limit=1] Owner.0 = @s U
 scoreboard players operation @e[predicate=marker_storage,limit=1] Owner.1 = @s UUID.1
 scoreboard players operation @e[predicate=marker_storage,limit=1] Owner.2 = @s UUID.2
 scoreboard players operation @e[predicate=marker_storage,limit=1] Owner.3 = @s UUID.3
-data modify entity @e[predicate=marker_storage,limit=1] data.Owner set from entity @s UUID
+data modify storage p-storage _[0].data.Owner set from entity @s UUID
