@@ -44,7 +44,7 @@
                                         "italic": false
                                     },
                                     {
-                                        "text": " -90%",
+                                        "text": " -95%",
                                         "color": "red",
                                         "italic": false
                                     }
@@ -88,7 +88,7 @@
                                 {
                                     "attribute": "generic.attack_speed",
                                     "name": "",
-                                    "amount": -0.9,
+                                    "amount": -0.95,
                                     "operation": "multiply_base",
                                     "slot": "mainhand"
                                 },
