@@ -11,6 +11,5 @@ loot replace entity @s enderchest.4 loot enderface:shop/category_icon/others
 loot replace entity @s enderchest.18 loot enderface:shop/category_icon/sell_item
 loot replace entity @s enderchest.8 loot enderface:shop/category_icon/reset_item/first
 
-function marker_storage/get
-data remove entity @e[predicate=marker_storage,limit=1] data.preview_trade
-data modify entity @e[predicate=marker_storage,limit=1] data.page set value 0
+data remove storage p-storage _[0].data.preview_trade
+data modify storage p-storage _[0].data.page set value 0

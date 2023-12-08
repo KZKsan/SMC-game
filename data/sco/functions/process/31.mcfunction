@@ -27,6 +27,7 @@ execute if score runtime game matches 1.. run tag @a[predicate=sco:team_join,tea
 execute if score runtime game matches 1 as @a[team=!] run function sco:tp/stage/sudden_death
 execute if score runtime game matches 1 run data modify storage sco:data regine_area_new set from storage sco:data regine_area.sudden_death
 execute if score runtime game matches 1 as @a[team=spectator] run function sco:regine/block_area/set_score
+execute if score runtime game matches 1 as @a[predicate=sco:team_join,team=!spectator,gamemode=spectator] run function sco:regine/block_area/set_score
 execute as @a[team=spectator,tag=!spectator] run function sco:regine/block_area/set_score
 execute as @a[team=spectator,tag=!spectator] run function sco:player/team/spectator
 execute as @a[team=spectator,tag=!spectator] run function sco:tp/stage/sudden_death

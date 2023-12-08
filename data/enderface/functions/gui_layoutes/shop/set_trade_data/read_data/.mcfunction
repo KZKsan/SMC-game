@@ -1,7 +1,7 @@
 #>enderface:gui_layoutes/shop/set_trade_data/read_data/
 #@within enderface:gui_layoutes/shop/generic
 
-execute store result score # _ run data get entity @e[predicate=marker_storage,limit=1] data.page
+execute store result score # _ run data get storage p-storage _[0].data.page
 execute store result score #line _ run data get storage sco:shop _
 execute if score # _ matches 1.. if score #line _ matches 4.. run function enderface:gui_layoutes/shop/set_trade_data/read_data/remove_top_items
 summon chest_minecart ~ ~ ~ {Tags:[set_trade_data],Items:[{id:"stick",Count:1b}]}

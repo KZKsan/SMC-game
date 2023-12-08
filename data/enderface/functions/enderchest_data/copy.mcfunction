@@ -1,4 +1,3 @@
 #>enderface:enderchest_data/copy
 #@within enderface:**
-function marker_storage/get
-data modify entity @e[predicate=marker_storage,limit=1] data.enderchest set from entity @s EnderItems
+data modify storage p-storage _[0].data.enderchest set from entity @s EnderItems

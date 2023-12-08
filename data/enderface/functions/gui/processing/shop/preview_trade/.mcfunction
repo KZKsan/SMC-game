@@ -8,6 +8,5 @@ data remove storage enderface:data _.trade.tag.preview_trade
 data remove storage enderface:data _.trade.Slot
 data remove storage enderface:data _.trade.tag.display.Lore[-1]
 data remove storage enderface:data _.trade.tag.display.Lore[-1]
-function marker_storage/get
-data modify entity @e[predicate=marker_storage,limit=1] data.preview_trade set from storage enderface:data _
+data modify storage p-storage _[0].data.preview_trade set from storage enderface:data _
 playsound ui.button.click record @s ~ ~ ~ 1 1

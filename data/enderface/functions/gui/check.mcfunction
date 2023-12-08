@@ -18,7 +18,7 @@ function enderface:gui/check/slot
 #function enderface:gui/test
 
 ## 
-data modify storage enderface:data gui_name set from entity @e[predicate=marker_storage,limit=1] data.gui_name
+data modify storage enderface:data gui_name set from storage p-storage _[0].data.gui_name
 execute at @s run function enderface:gui/processing/main
 
 function enderface:gui/return_item/main
