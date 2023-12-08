@@ -20,6 +20,7 @@ scoreboard objectives add regine.z1 dummy
 scoreboard objectives add regine.z2 dummy
 scoreboard objectives add team_info.red dummy
 scoreboard objectives add team_info.blue dummy
+scoreboard objectives add team_info.spectator dummy
 #declare score_holder last gameID
 
 
@@ -38,6 +39,11 @@ team add red
 team add blue
 team add random_team
 team add spectator
+
+team modify red color red
+team modify blue color blue
+team modify spectator color gray
+team modify random_team prefix "[参加中]"
 
 #>
 #@public
