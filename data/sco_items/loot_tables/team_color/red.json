@@ -1,0 +1,35 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "poppy",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": [
+                                {
+                                    "text": "あなたは",
+                                    "italic": false,
+                                    "color": "white"
+                                },
+                                {
+                                    "text": "赤red",
+                                    "italic": false,
+                                    "color": "red"
+                                },
+                                {
+                                    "text": "チームです。",
+                                    "italic": false,
+                                    "color": "white"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

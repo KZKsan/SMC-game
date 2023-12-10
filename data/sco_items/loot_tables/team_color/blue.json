@@ -1,0 +1,35 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "cornflower",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": [
+                                {
+                                    "text": "あなたは",
+                                    "italic": false,
+                                    "color": "white"
+                                },
+                                {
+                                    "text": "青blue",
+                                    "italic": false,
+                                    "color": "blue"
+                                },
+                                {
+                                    "text": "チームです。",
+                                    "italic": false,
+                                    "color": "white"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

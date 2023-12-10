@@ -9,7 +9,7 @@ tag @a[team=red] add join_red
 tag @a[team=blue] add join_blue
 experience set @a 0 levels
 experience set @a 0 points
-
+gamemode adventure @a[predicate=sco:team_join,team=!spectator]
 function sco:player/team/team_info/player_count/set_display
 function sco:player/team/team_info/player_count/
 
