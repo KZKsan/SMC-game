@@ -5,45 +5,40 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "leather_chestplate",
+                    "name": "iron_hoe",
                     "functions": [
                         {
                             "function": "set_name",
-                            "name": {
-                                "text": "リーパーローブ",
-                                "italic": false
-                            }
+                            "name": [
+                                {
+                                    "text": "死神のカマ",
+                                    "italic": false
+                                }
+                            ]
                         },
                         {
                             "function": "set_lore",
                             "lore": [
-                                "死の淵へ誘うローブ",
-                                "",
-                                {
-                                    "translate": "item.modifiers.chest",
-                                    "color": "gray",
-                                    "italic": false
-                                },
                                 [
                                     {
-                                        "translate": "attribute.name.generic.max_health",
+                                        "translate": "attribute.name.generic.attack_speed",
                                         "color": "red",
                                         "italic": false
                                     },
                                     {
-                                        "text": " -14",
+                                        "text": " -65%",
                                         "color": "red",
                                         "italic": false
                                     }
                                 ],
                                 [
                                     {
-                                        "translate": "attribute.name.generic.armor",
+                                        "translate": "attribute.name.generic.attack_damage",
                                         "color": "blue",
                                         "italic": false
                                     },
                                     {
-                                        "text": " +18",
+                                        "text": " +11",
                                         "color": "blue",
                                         "italic": false
                                     }
@@ -54,34 +49,24 @@
                             "function": "set_attributes",
                             "modifiers": [
                                 {
-                                    "slot": "chest",
-                                    "amount": 18,
-                                    "operation": "addition",
-                                    "attribute": "generic.armor",
+                                    "slot": "mainhand",
+                                    "amount": -0.65,
+                                    "operation": "multiply_total",
+                                    "attribute": "generic.attack_speed",
                                     "name": ""
                                 },
                                 {
-                                    "slot": "chest",
-                                    "amount": -14,
+                                    "slot": "mainhand",
+                                    "amount": 11,
                                     "operation": "addition",
-                                    "attribute": "generic.max_health",
+                                    "attribute": "generic.attack_damage",
                                     "name": ""
                                 }
                             ]
                         },
                         {
-                            "function": "set_enchantments",
-                            "enchantments": {
-                                "binding_curse": 1,
-                                "feather_falling": 4,
-                                "projectile_protection": 7,
-                                "thorns": 4,
-                                "unbreaking": 10
-                            }
-                        },
-                        {
                             "function": "set_nbt",
-                            "tag": "{HideFlags:2,display:{color:1908001}}"
+                            "tag": "{HideFlags:2,Unbreakable:1b}"
                         }
                     ]
                 }
