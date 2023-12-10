@@ -42,7 +42,9 @@ team add random_team
 team add spectator
 
 team modify red color red
+team modify red friendlyFire false
 team modify blue color blue
+team modify blue friendlyFire false
 team modify spectator color gray
 team modify random_team prefix "[参加中]"
 
