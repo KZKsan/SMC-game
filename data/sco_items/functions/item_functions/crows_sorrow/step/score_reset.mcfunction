@@ -2,3 +2,4 @@
 #@within tag/function sco_items:trigger/death
 function sco_items:item_functions/crows_sorrow/step/reset
 scoreboard players set @s crows_sorrow_cooldown 0
+scoreboard players set @s crows_sorrow_count 0
