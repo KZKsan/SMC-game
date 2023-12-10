@@ -10,7 +10,6 @@ execute if score runtime game matches 1 as @a[predicate=sco:team_join,team=!spec
 execute if score runtime game matches 1 run data modify storage sco:data regine_area_new set from storage sco:data regine_area.shop
 execute if score runtime game matches 1 as @a[team=spectator] run function sco:regine/block_area/set_score
 execute if score runtime game matches 1.. as @a[team=spectator,predicate=!sco:regine/block_area/scores] run function sco:regine/block_area/set_score
-execute if score runtime game matches 1 run function sco:player/team/team_info/player_count/set_display
 execute if score runtime game matches 1.. run function sco:player/team/team_info/player_count/
 
 #プロセスID

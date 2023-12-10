@@ -10,6 +10,9 @@ tag @a[team=blue] add join_blue
 experience set @a 0 levels
 experience set @a 0 points
 
+function sco:player/team/team_info/player_count/set_display
+function sco:player/team/team_info/player_count/
+
 #プロセス終了
 scoreboard players set process game 11
 scoreboard players set runtime game 0
