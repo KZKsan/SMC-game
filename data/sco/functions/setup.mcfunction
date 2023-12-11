@@ -3,6 +3,7 @@
 
 #>
 #@internal
+scoreboard objectives add age dummy
 scoreboard objectives add game dummy
 scoreboard objectives add gameID dummy
 scoreboard objectives add processID dummy

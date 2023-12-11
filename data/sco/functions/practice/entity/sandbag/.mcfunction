@@ -1,0 +1,1 @@
+execute if entity @s[nbt={HurtTime:10s}] run function sco:practice/entity/health/

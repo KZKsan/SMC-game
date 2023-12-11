@@ -23,4 +23,3 @@
 
 # score
 
-    scoreboard players set @a moving 0

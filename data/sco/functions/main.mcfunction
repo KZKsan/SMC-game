@@ -60,3 +60,8 @@ execute as @a[tag=rg_block_area,predicate=sco:regine/block_area/scores,tag=!rg_o
 
 ##ロビー
 place template sco:lobby/farm 14 -53 -74
+
+
+## practice
+execute as @e[type=text_display,tag=health_pop] at @s run function sco:practice/entity/health_pop
+execute as @e[type=creeper,tag=sandbag] at @s run function sco:practice/entity/sandbag/
