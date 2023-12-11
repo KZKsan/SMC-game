@@ -9,11 +9,7 @@
                         "condition": "entity_properties",
                         "entity": "this",
                         "predicate": {
-                            "equipment": {
-                                "mainhand": {
-                                    "nbt": "{item_functions:{clau_solas:1b}}"
-                                }
-                            }
+                            "nbt": "{SelectedItem:{tag:{item_functions:{clau_solas:1b}}}}"
                         }
                     }
                 ]

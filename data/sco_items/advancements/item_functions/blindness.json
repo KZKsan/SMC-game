@@ -9,7 +9,7 @@
                         "condition": "minecraft:entity_properties",
                         "entity": "this",
                         "predicate": {
-                            "nbt": "{active_effects:[{id:\"minecraft:tblindness\",amplifier:4b}]}"
+                            "nbt": "{active_effects:[{id:\"minecraft:blindness\",amplifier:4b}]}"
                         }
                     }
                 ]

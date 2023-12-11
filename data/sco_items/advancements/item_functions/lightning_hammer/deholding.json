@@ -14,11 +14,7 @@
                                     "condition": "entity_properties",
                                     "entity": "this",
                                     "predicate": {
-                                        "equipment": {
-                                            "mainhand": {
-                                                "nbt": "{item_functions:{lightning_hammer:1b}}"
-                                            }
-                                        }
+                                        "nbt": "{SelectedItem:{tag:{item_functions:{lightning_hammer:1b}}}}"
                                     }
                                 },
                                 {

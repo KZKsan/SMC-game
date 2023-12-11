@@ -11,11 +11,7 @@
                                 "condition": "entity_properties",
                                 "entity": "this",
                                 "predicate": {
-                                    "equipment": {
-                                        "mainhand": {
-                                            "nbt": "{item_functions:{hidden_cover:1b}}"
-                                        }
-                                    }
+                                    "nbt": "{SelectedItem:{tag:{item_functions:{hidden_cover:1b}}}}"
                                 }
                             },
                             {

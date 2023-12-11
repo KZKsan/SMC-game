@@ -6,11 +6,7 @@
             "conditions": {
                 "damage": {
                     "source_entity": {
-                        "equipment": {
-                            "mainhand": {
-                                "nbt": "{item_functions:{clau_solas:1b}}"
-                            }
-                        }
+                        "nbt": "{SelectedItem:{tag:{item_functions:{clau_solas:1b}}}}"
                     },
                     "type": {
                         "tags": [

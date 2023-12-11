@@ -9,11 +9,7 @@
                         "condition": "entity_properties",
                         "entity": "this",
                         "predicate": {
-                            "equipment": {
-                                "mainhand": {
-                                    "nbt": "{item_functions:{dimensional_sword:1b}}"
-                                }
-                            }
+                            "nbt": "{SelectedItem:{tag:{item_functions:{dimensional_sword:1b}}}}"
                         }
                     }
                 ],

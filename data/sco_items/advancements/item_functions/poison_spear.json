@@ -6,11 +6,7 @@
             "conditions": {
                 "damage": {
                     "source_entity": {
-                        "equipment": {
-                            "mainhand": {
-                                "nbt": "{item_functions:{poison_spear:1b}}"
-                            }
-                        }
+                        "nbt": "{SelectedItem:{tag:{item_functions:{poison_spear:1b}}}}"
                     },
                     "type": {
                         "tags": [
