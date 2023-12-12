@@ -2,12 +2,18 @@
     "parent": "sco_items:root",
     "criteria": {
         "hurt": {
-            "trigger": "entity_hurt_player",
+            "trigger": "player_hurt_entity",
             "conditions": {
+                "player": [
+                    {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "nbt": "{SelectedItem:{tag:{item_functions:{poison_spear:1b}}}}"
+                        }
+                    }
+                ],
                 "damage": {
-                    "source_entity": {
-                        "nbt": "{SelectedItem:{tag:{item_functions:{poison_spear:1b}}}}"
-                    },
                     "type": {
                         "tags": [
                             {

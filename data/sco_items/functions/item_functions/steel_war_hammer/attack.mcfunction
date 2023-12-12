@@ -1,11 +1,9 @@
 #>sco_items:item_functions/steel_war_hammer/attack
 #@wihtin advancement sco_items:item_functions/steel_war_hammer/attack
+tag @s add origin
+execute as @e[distance=..16,tag=!origin,nbt={HurtTime:10s}] run function hurt_entity_test
+execute as @e[tag=hurt_entity,distance=..17,nbt={HurtTime:10s}] at @s run function sco_items:item_functions/steel_war_hammer/particle/attack
+tag @s remove origin
+tag @e[tag=hurt_entity,distance=..17] remove hurt_entity
+
 advancement revoke @s only sco_items:item_functions/steel_war_hammer/attack
-#playsound block.bell.use record @a[distance=..16] ~ ~ ~ 0.5 0.5 0.2
-playsound entity.iron_golem.hurt record @a[distance=..16] ~ ~ ~ 0.8 0.5 0.2
-playsound block.netherite_block.break record @a[distance=..16] ~ ~ ~ 0.7 0.5 0.2
-playsound entity.generic.explode record @a[distance=..16] ~ ~ ~ 0.6 0.5 0.01
-playsound entity.generic.explode record @a[distance=..16] ~ ~ ~ 0.6 1 0.01
-playsound entity.generic.explode record @a[distance=..16] ~ ~ ~ 0.6 1.5 0.01
-particle flash ^ ^ ^1 0 0 0 0 1 normal
-particle explosion ^ ^ ^1 0 0 0 0 1 normal

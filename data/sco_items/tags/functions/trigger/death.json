@@ -1,5 +1,6 @@
 {
     "values": [
-        "sco_items:item_functions/crows_sorrow/step/score_reset"
+        "sco_items:item_functions/crows_sorrow/step/score_reset",
+        "sco_items:item_functions/lightning_hammer/score_reset"
     ]
 }

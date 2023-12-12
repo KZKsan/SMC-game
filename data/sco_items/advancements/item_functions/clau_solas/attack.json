@@ -1,7 +1,7 @@
 {
     "parent": "sco_items:root",
     "criteria": {
-        "hurt": {
+        "attack": {
             "trigger": "player_hurt_entity",
             "conditions": {
                 "player": [
@@ -9,7 +9,7 @@
                         "condition": "entity_properties",
                         "entity": "this",
                         "predicate": {
-                            "nbt": "{SelectedItem:{tag:{item_functions:{leg_scraping_axe:1b}}}}"
+                            "nbt": "{SelectedItem:{tag:{item_functions:{clau_solas:1b}}}}"
                         }
                     }
                 ],
@@ -27,6 +27,6 @@
         }
     },
     "rewards": {
-        "function": "sco_items:item_functions/leg_scraping_axe/hurt"
+        "function": "sco_items:item_functions/clau_solas/attack"
     }
 }

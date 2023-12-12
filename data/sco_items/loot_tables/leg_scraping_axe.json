@@ -99,7 +99,7 @@
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{HideFlags:2,itme_functions:{leg_scraping_axe:1b}}"
+                            "tag": "{HideFlags:2,item_functions:{leg_scraping_axe:1b}}"
                         }
                     ]
                 }
