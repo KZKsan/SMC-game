@@ -1,0 +1,44 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "lingering_potion",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": {
+                                "text": "光の魔弾",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore": [
+                                [
+                                    {
+                                        "translate": "effect.minecraft.glowing",
+                                        "color": "blue",
+                                        "italic": false
+                                    },
+                                    " ",
+                                    {
+                                        "translate": "( 00:10 )",
+                                        "color": "blue",
+                                        "italic": false
+                                    }
+                                ]
+                            ]
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{CustomPotionColor:16774363,custom_potion_effects:[{id:\"glowing\",amplifier:49b,duration:200,show_particles:1b}],item_functions:{magic_bullet:1b},HideFlags:32}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
