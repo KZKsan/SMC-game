@@ -1,0 +1,27 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "bucket",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": {
+                                "text": "centrifuge",
+                                "italic": false,
+                                "color": "#55AADD"
+                            }
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{click_events:{click_sounds:[{sound:\"ui.button.click\"}]},enderfaceItem:true}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

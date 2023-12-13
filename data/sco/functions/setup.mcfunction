@@ -57,6 +57,7 @@ team modify random_team prefix "[参加中]"
 #@public
 #declare storage sco:config
 
+execute unless data storage sco:config game.rule run data modify storage sco:config game.rule set value "death_match"
 execute unless data storage sco:config game.can_team_select run data modify storage sco:config game.can_team_select set value 0b
 execute unless data storage sco:config game.join run data modify storage sco:config game.join set value 0b
 execute unless data storage sco:config stage run data modify storage sco:config stage set value "sco_random"
@@ -64,3 +65,8 @@ execute unless data storage sco:config stage run data modify storage sco:config 
 #>
 #@public
 #declare storage sco:input
+
+
+#>
+# reset stage_tables
+function sco:stage_data/stage_tables/death_match

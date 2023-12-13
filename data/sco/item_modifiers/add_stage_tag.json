@@ -1,0 +1,14 @@
+{
+    "function": "copy_nbt",
+    "source": {
+        "type": "storage",
+        "source": "_"
+    },
+    "ops": [
+        {
+            "op": "replace",
+            "source": "data_fetch.name",
+            "target": "click_events.set_stage"
+        }
+    ]
+}

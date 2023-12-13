@@ -1,7 +1,7 @@
 #>enderface:gui/processing/game_settings/start_game/random_stage/
 #@within enderface:gui/processing/game_settings/start_game/
-function sco:stage_data/stage/random_tables/death_match
-execute store result score $ranmax _ run data get storage sco:data random
+data modify storage _ _ set from storage sco:data stage_tables.death_match
+execute store result score $ranmax _ run data get storage _ _
 scoreboard players remove $ranmax _ 1
 scoreboard players set $ranmin _ 0
 function random/int_range
