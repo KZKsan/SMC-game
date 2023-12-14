@@ -5,12 +5,12 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "lingering_potion",
+                    "name": "splash_potion",
                     "functions": [
                         {
                             "function": "set_name",
                             "name": {
-                                "text": "光の魔弾",
+                                "text": "反重力の魔弾[WIP]",
                                 "italic": false
                             }
                         },
@@ -19,22 +19,21 @@
                             "lore": [
                                 [
                                     {
-                                        "translate": "effect.minecraft.glowing",
-                                        "color": "blue",
-                                        "italic": false
+                                        "translate": "effect.minecraft.levitation",
+                                        "italic": false,
+                                        "color": "red"
                                     },
-                                    " ",
                                     {
-                                        "translate": "( 00:10 )",
-                                        "color": "blue",
-                                        "italic": false
+                                        "text": "（00:08）",
+                                        "italic": false,
+                                        "color": "red"
                                     }
                                 ]
                             ]
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{CustomPotionColor:16774363,custom_potion_effects:[{id:\"glowing\",amplifier:49b,duration:200,show_particles:1b}],item_functions:{magic_bullet:1b},HideFlags:32}"
+                            "tag": "{CustomPotionColor:7484337,custom_potion_effects:[{id:\"levitation\",amplifier:0b,duration:160,show_particles:1b}],item_functions:{magic_bullet:1b},HideFlags:32}"
                         }
                     ]
                 }

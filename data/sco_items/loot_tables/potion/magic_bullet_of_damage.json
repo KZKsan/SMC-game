@@ -1,0 +1,30 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "splash_potion",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": {
+                                "text": "負傷の魔弾",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "set_potion",
+                            "id": "harming"
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{item_functions:{magic_bullet:1b},HideFlags:32}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

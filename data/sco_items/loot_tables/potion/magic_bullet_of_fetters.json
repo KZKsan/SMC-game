@@ -1,0 +1,26 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "splash_potion",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": {
+                                "text": "足枷の魔弾",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{CustomPotionColor:2424905,custom_potion_effects:[{id:\"slowness\",amplifier:0b,duration:300,show_particles:1b},{id:\"slow_falling\",amplifier:0b,duration:300,show_particles:1b}],item_functions:{magic_bullet:1b}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

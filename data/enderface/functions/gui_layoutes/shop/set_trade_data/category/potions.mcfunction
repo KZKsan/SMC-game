@@ -7,7 +7,7 @@ function enderface:gui_layoutes/shop/set_trade_data/single_data/potion/stealth_p
 function enderface:gui_layoutes/shop/set_trade_data/single_data/potion/sports_drink
 function enderface:gui_layoutes/shop/set_trade_data/single_data/potion/healing_potion
 function enderface:gui_layoutes/shop/set_trade_data/single_data/potion/rege_potion
-function enderface:gui_layoutes/shop/set_trade_data/single_data/potion/light_magic_bullet
+function enderface:gui_layoutes/shop/set_trade_data/single_data/potion/magic_bullet_of_light
 function enderface:gui_layoutes/shop/set_trade_data/single_data/potion/rest_potion
 function enderface:gui_layoutes/shop/set_trade_data/single_data/potion/lingering_slow_potion
 function enderface:gui_layoutes/shop/set_trade_data/single_data/potion/barrier_potion
