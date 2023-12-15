@@ -16,3 +16,4 @@ execute as @a[team=!] run function sco:player/retune_lobby
 function sco:stage_data/generic_settings
 function timer:stop
 function sco:player/team/team_info/off
+scoreboard objectives setdisplay below_name
