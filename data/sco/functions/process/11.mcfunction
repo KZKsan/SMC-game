@@ -19,6 +19,7 @@ effect give @a[predicate=sco:team_join,predicate=gamemode/as] resistance 1 50 tr
 effect give @a[predicate=sco:team_join,predicate=gamemode/as] weakness 1 120 true
 effect give @a[predicate=sco:team_join,predicate=gamemode/as] saturation 10 120 true
 effect give @a[predicate=sco:team_join,predicate=gamemode/as] water_breathing 1 10 true
+effect give @a[predicate=sco:team_join,predicate=gamemode/as] fire_resistance 1 10 true
 
 #てれぽーと
 execute if score runtime game matches 1 run function sco:tp/stage/macro/all_player with storage sco:data

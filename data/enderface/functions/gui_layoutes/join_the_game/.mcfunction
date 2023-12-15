@@ -10,6 +10,8 @@ item replace entity @s enderchest.10 with red_wool{display:{Name:'[{"text":"Red�
 item replace entity @s enderchest.11 with blue_wool{display:{Name:'[{"text":"Blueチームに参加","color":"blue","bold":false,"italic":false}]'},enderfaceItem:1b}
 execute if data storage sco:config game{can_team_select:0b} run item replace entity @s enderchest.9 with white_wool{display:{Name:'[{"text":"ゲームに参加","color":"#AA5555","bold":false,"italic":false}]'},enderfaceItem:1b}
 execute if data storage sco:config game{can_team_select:1b} run item replace entity @s enderchest.9 with white_wool{display:{Name:'[{"text":"ランダムなチームに参加","color":"#AA5555","bold":false,"italic":false}]'},enderfaceItem:1b}
+item replace entity @s enderchest.15 with wooden_sword{display:{Name:'[{"text":"訓練所","color":"#00CC00","bold":false,"italic":false}]',Lore:['{"text": "[注意] チーム・観戦から自動的に退出します", "italic": false, "color": "dark_red"}']},enderfaceItem:1b,HideFlags:2}
+item replace entity @s[predicate=!sco:game_join,team=!spectator] enderchest.15 with wooden_sword{display:{Name:'[{"text":"訓練所","color":"#00CC00","bold":false,"italic":false}]'},enderfaceItem:1b,HideFlags:2}
 item replace entity @s enderchest.17 with ender_pearl{display:{Name:'[{"text":"観戦","color":"#808080","bold":false,"italic":false}]'},enderfaceItem:1b}
 
 

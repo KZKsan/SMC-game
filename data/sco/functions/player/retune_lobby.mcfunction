@@ -2,6 +2,7 @@
 #@internal
 function sco:player/inventory_histories/pop/
 team leave @s
+effect clear @s
 tag @s remove join_red
 tag @s remove join_blue
 tag @s remove rg_drop_item
