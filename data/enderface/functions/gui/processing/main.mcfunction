@@ -16,7 +16,10 @@ execute if data storage enderface:data {gui_name:"shop/reset_item_gui"} run func
 execute if data storage enderface:data {gui_name:"join_the_game/"} run function enderface:gui/processing/join_the_game/
 execute if data storage enderface:data {gui_name:"game_settings/"} run function enderface:gui/processing/game_settings/
 execute if data storage enderface:data {gui_name:"game_settings/stage_select"} run function enderface:gui/processing/game_settings/stage_select
-#execute if data storage enderface:data {gui_name:"shop/test"} run function enderface:gui/processing/shop/0/test
+## return_item
+function enderface:gui/return_item/main
+## Other Processing 2
+execute if data storage enderface:data {gui_name:"kit_memory/"} run function enderface:gui/processing/kit_memory/
 
 execute if data storage enderface:data gui_intaract{click:1b} if data storage enderface:data gui_intaract.Item.tag.preview_trade run function enderface:gui/processing/shop/preview_trade/
 execute if data storage enderface:data gui_intaract{click:1b} if data storage enderface:data gui_intaract.Item.tag.trade run function enderface:gui/processing/shop/trade/

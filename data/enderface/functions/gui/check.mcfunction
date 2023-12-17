@@ -21,7 +21,6 @@ function enderface:gui/check/slot
 data modify storage enderface:data gui_name set from storage p-storage _[0].data.gui_name
 execute at @s run function enderface:gui/processing/main
 
-function enderface:gui/return_item/main
 
 
 function enderface:gui_layoutes/load

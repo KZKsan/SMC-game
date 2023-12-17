@@ -1,0 +1,27 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "item_frame",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": {
+                                "text": ">保存したKit",
+                                "italic": false,
+                                "color": "#AA00DD"
+                            }
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{HideFlags:32,enderfaceItem:1b,click_events:{click_sounds:[{sound:\"ui.button.click\"}],change_gui:\"kit_memory/\"}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

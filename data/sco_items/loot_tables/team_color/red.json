@@ -26,6 +26,10 @@
                                     "color": "white"
                                 }
                             ]
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{team_color:1b}"
                         }
                     ]
                 }
