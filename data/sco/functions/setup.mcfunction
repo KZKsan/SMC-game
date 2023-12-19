@@ -76,3 +76,9 @@ execute unless data storage sco:config stage run data modify storage sco:config 
 #>
 # reset stage_tables
 function sco:stage_data/stage_tables/death_match
+
+# 互換性を切る処理
+execute as @a[team=mode.practice] run teleport @s 70 -59 10 0 0
+clear @a[team=mode.practice]
+execute as @a[team=mode.practice] run function sco_items:kit/default
+execute as @a run function sco:player/kit_memory/delete
