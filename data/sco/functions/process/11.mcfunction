@@ -1,13 +1,13 @@
 #>sco:process/11
 #@within sco:main
-scoreboard players add runtime game 1
-execute if score runtime game matches 5 run function sco:messeges/stage
-execute if score runtime game matches 1 run team join red @a[team=blue]
-execute if score runtime game matches 1 run gamemode adventure @a[team=red]
+scoreboard players add #runtime game 1
+execute if score #runtime game matches 5 run function sco:messeges/stage
+execute if score #runtime game matches 1 run team join red @a[team=blue]
+execute if score #runtime game matches 1 run gamemode adventure @a[team=red]
 #アイテム配布
-execute if score runtime game matches 1 as @a[predicate=sco:team_join,team=!spectator] run function sco:process/give_visit_kit
+execute if score #runtime game matches 1 as @a[predicate=sco:team_join,team=!spectator] run function sco:process/give_visit_kit
 #プロセスID
-execute if score runtime game matches 1 run scoreboard players set @a[predicate=sco:team_join] processID 11
+execute if score #runtime game matches 1 run scoreboard players set @a[predicate=sco:team_join] processID 11
 #切断処理
 execute as @a[team=spectator,scores={leave_game=1..}] run function sco:player/retune_lobby
 
@@ -22,9 +22,9 @@ effect give @a[predicate=sco:team_join,predicate=gamemode/as] water_breathing 1 
 effect give @a[predicate=sco:team_join,predicate=gamemode/as] fire_resistance 1 10 true
 
 #てれぽーと
-execute if score runtime game matches 1 run function sco:tp/stage/macro/all_player with storage sco:data
-execute if score runtime game matches 1 run data modify storage sco:data regine_area_new set from storage sco:data regine_area.stage
-execute if score runtime game matches 1 as @a[team=spectator] run function sco:regine/block_area/set_score
+execute if score #runtime game matches 1 run function sco:tp/stage/macro/all_player with storage sco:data
+execute if score #runtime game matches 1 run data modify storage sco:data regine_area_new set from storage sco:data regine_area.stage
+execute if score #runtime game matches 1 as @a[team=spectator] run function sco:regine/block_area/set_score
 execute as @a[team=spectator,tag=!spectator] run function sco:regine/block_area/set_score
 execute as @a[team=spectator,tag=!spectator] run function sco:player/team/spectator
 execute as @a[team=spectator,tag=!spectator] run function sco:tp/stage/macro/single_player with storage sco:data
@@ -33,13 +33,13 @@ tag @a[team=spectator,tag=!spectator] add spectator
 
 
 #ステージギミック
-execute if score runtime game matches 2 unless data storage sco:data options{reset:true} run function sco:stage_data/generic_settings
-execute if score runtime game matches 2 if data storage sco:data options{reset:true} run function sco:stage_data/reset
-execute if score runtime game matches 3.. if data storage sco:data options{gimmick:true} run function sco:stage_data/gimmick
+execute if score #runtime game matches 2 unless data storage sco:data options{reset:true} run function sco:stage_data/generic_settings
+execute if score #runtime game matches 2 if data storage sco:data options{reset:true} run function sco:stage_data/reset
+execute if score #runtime game matches 3.. if data storage sco:data options{gimmick:true} run function sco:stage_data/gimmick
 
 #プロセス終了
-execute if score runtime game >= $stage game run data merge storage timer: {time:120,mode:1,name:'{"text":"装備準備時間 残り時間 "}'}
-execute if score runtime game >= $stage game store result storage timer: time int 1 run scoreboard players get $shop_timer game
-execute if score runtime game >= $stage game run function timer:input
-execute if score runtime game >= $stage game run scoreboard players set process game 20
-execute if score runtime game >= $stage game run scoreboard players set runtime game 0
+execute if score #runtime game >= #stage game run data merge storage timer: {time:120,mode:1,name:'{"text":"装備準備時間 残り時間 "}'}
+execute if score #runtime game >= #stage game store result storage timer: time int 1 run scoreboard players get #shop_timer game
+execute if score #runtime game >= #stage game run function timer:input
+execute if score #runtime game >= #stage game run scoreboard players set #process game 20
+execute if score #runtime game >= #stage game run scoreboard players set #runtime game 0

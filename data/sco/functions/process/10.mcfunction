@@ -14,8 +14,8 @@ function sco:player/team/team_info/player_count/set_display
 function sco:player/team/team_info/player_count/
 
 #プロセス終了
-scoreboard players set process game 11
-scoreboard players set runtime game 0
+scoreboard players set #process game 11
+scoreboard players set #runtime game 0
 data merge storage timer: {time:30,mode:1,name:'{"text":"ステージ下見時間 残り時間 "}'}
-execute store result storage timer: time int 1 run scoreboard players get $stage_timer game
+execute store result storage timer: time int 1 run scoreboard players get #stage_timer game
 function timer:input

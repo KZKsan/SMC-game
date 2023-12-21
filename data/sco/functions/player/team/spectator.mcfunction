@@ -3,7 +3,7 @@
 gamemode spectator
 
 clear @s
-execute if score runtime game matches 1 run function sco:tp/stage/macro/all_player with storage sco:data
+execute if score #runtime game matches 1 run function sco:tp/stage/macro/all_player with storage sco:data
 
 effect give @s instant_health 1 49
 

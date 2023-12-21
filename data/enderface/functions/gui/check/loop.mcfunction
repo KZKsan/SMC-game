@@ -19,6 +19,6 @@ execute if data storage enderface:data slot_test.changed{Slot:1b,Item:1b} run fu
 
 #tellraw @p {"nbt":"slot_test.changed","storage":"enderface:data"}
 
-execute store success score $test _ if data storage enderface:data _[0]
-execute if score $test _ matches 0 store success score $test _ if data storage enderface:data new_gui[0]
-execute if score $test _ matches 1 run function enderface:gui/check/loop
+execute store success score #test _ if data storage enderface:data _[0]
+execute if score #test _ matches 0 store success score #test _ if data storage enderface:data new_gui[0]
+execute if score #test _ matches 1 run function enderface:gui/check/loop
