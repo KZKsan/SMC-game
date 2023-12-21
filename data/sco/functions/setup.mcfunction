@@ -27,6 +27,7 @@ scoreboard objectives add player.HP health
 
 scoreboard objectives modify player.HP displayname "HP"
 
+execute unless score #process game matches -2147483648..2147483647 run scoreboard players set #process game 0
 
 #>
 #@within sco:player/result/**
