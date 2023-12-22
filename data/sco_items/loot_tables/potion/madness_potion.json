@@ -10,13 +10,13 @@
                         {
                             "function": "set_name",
                             "name": {
-                                "text": "鬼化のポーション",
+                                "text": "狂化のポーション",
                                 "italic": false
                             }
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{CustomPotionColor:8397608,custom_potion_effects:[{amplifier:0b,duration:300,id:\"strength\"},{amplifier:0b,duration:300,id:\"wither\"}]}"
+                            "tag": "{CustomPotionColor:9899582,custom_potion_effects:[{amplifier:1b,duration:300,id:\"strength\"},{amplifier:0b,duration:80,id:\"regeneration\"},{amplifier:2b,duration:-1,id:\"wither\"}]}"
                         }
                     ]
                 }
