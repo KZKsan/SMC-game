@@ -15,7 +15,8 @@ item replace entity @s[predicate=!sco:game_join,team=!spectator] enderchest.15 w
 item replace entity @s enderchest.17 with ender_pearl{display:{Name:'[{"text":"観戦","color":"#808080","bold":false,"italic":false}]'},enderfaceItem:1b}
 
 
-item modify entity @s[team=random_team] enderchest.9 enderface:selected
+execute if data storage sco:config game{can_team_select:0b} run item modify entity @s[predicate=sco:game_join] enderchest.9 enderface:selected
+execute if data storage sco:config game{can_team_select:1b} run item modify entity @s[team=random_team] enderchest.9 enderface:selected
 item modify entity @s[team=red] enderchest.10 enderface:selected
 item modify entity @s[team=blue] enderchest.11 enderface:selected
 item modify entity @s[team=spectator] enderchest.17 enderface:selected
