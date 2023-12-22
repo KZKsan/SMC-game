@@ -14,6 +14,7 @@ function enderface:gui_layoutes/shop/set_trade_data/single_data/potion/exciting_
 function enderface:gui_layoutes/shop/set_trade_data/single_data/potion/frozen_potion
 function enderface:gui_layoutes/shop/set_trade_data/single_data/potion/strong_turtle_master_potion
 function enderface:gui_layoutes/shop/set_trade_data/single_data/potion/lingering_speed_potion
+function enderface:gui_layoutes/shop/set_trade_data/single_data/potion/demonization_potion
 
 function enderface:gui_layoutes/shop/set_trade_data/single_data/potion/magic_bullet_of_flare
 function enderface:gui_layoutes/shop/set_trade_data/single_data/potion/magic_bullet_of_light

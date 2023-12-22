@@ -1,0 +1,26 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "potion",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": {
+                                "text": "鬼化のポーション",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{CustomPotionColor:8397635,custom_potion_effects:[{amplifier:1b,duration:300,id:\"strength\"},{amplifier:0b,duration:80,id:\"regeneration\"},{amplifier:2b,duration:-1,id:\"wither\"}]}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
