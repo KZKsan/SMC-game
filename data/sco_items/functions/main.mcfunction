@@ -9,7 +9,7 @@
     execute as @e[type=potion,tag=!already,nbt={Item:{tag:{item_functions:{magic_bullet:1b}}}}] run function sco_items:item_functions/magic_bullet/
 
     execute as @e[type=area_effect_cloud,tag=!already,nbt={effects:[{id:"minecraft:glowing",amplifier:49b}]}] run function sco_items:item_functions/others/magic_bullet_of_light
-    execute as @e[type=potion,nbt={Item:{tag:{item_functions:{mini_healing_potion:1b}}}}] run function sco_items:item_functions/others/mini_healing_potion
+    execute as @e[type=potion,nbt={Item:{tag:{item_functions:{mini_healing_potion:1b}}}}] positioned as @s run function sco_items:item_functions/others/mini_healing_potion
 
 # crows_sorrow
     execute as @a unless score @s crows_sorrow_count matches 0.. run scoreboard players set @s crows_sorrow_count 0
