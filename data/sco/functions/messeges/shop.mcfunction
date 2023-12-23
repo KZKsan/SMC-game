@@ -7,7 +7,7 @@ tellraw @a[team=red] [{"text": "あなたは","bold": true,"color": "white"},{"t
 execute store result score # _ if entity @a[team=red]
 execute store result score #_ _ if entity @a[team=blue]
 
-tellraw @a[predicate=sco:team_join] [{"text": "=== Team Menber Information ===","color": "purple","bold": true}]
+tellraw @a[predicate=sco:team_join] [{"text": "=== Team Menber Information ===","color": "light_purple","bold": true}]
 tellraw @a[predicate=sco:team_join] [{"text": "*","color": "red","bold": true},{"text": "赤red","color": "red","bold": true},{"text": " - ","color": "red","bold": true},{"score":{"name": "#","objective": "_"}}]
 tellraw @a[predicate=sco:team_join] {"selector":"@a[team=red]"}
 tellraw @a[predicate=sco:team_join] [{"text": "*","color": "red","bold": true},{"text": "青blue","color": "blue","bold": true},{"text": " - ","color": "red","bold": true},{"score":{"name": "#_","objective": "_"}}]

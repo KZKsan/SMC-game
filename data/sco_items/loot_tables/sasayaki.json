@@ -11,7 +11,7 @@
                             "function": "minecraft:set_name",
                             "name": {
                                 "text": "囁き",
-                                "color": "purple",
+                                "color": "light_purple",
                                 "italic": false
                             }
                         },
