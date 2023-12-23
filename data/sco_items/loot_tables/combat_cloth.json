@@ -1,0 +1,58 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:iron_horse_armor"
+          }
+        ],
+        "functions": [
+          {
+            "function": "minecraft:set_name",
+            "name": {
+              "text": "戦闘服",
+              "color": "gray",
+              "bold": true,
+              "italic": false
+            }
+          },
+          {
+            "function": "minecraft:set_lore",
+            "lore": [
+              {
+                "text": "重ね着をして強くなる",
+                "color": "white",
+                "italic": false
+              },
+              "",
+              {
+                "text": "インベントリにあるとき:",
+                "color": "gray",
+                "italic": false
+              },
+              [
+                {
+                  "translate": "generic.armor",
+                  "fallback": "防具",
+                  "color": "blue",
+                  "italic": false
+                },
+                {
+                  "text": " +3",
+                  "color": "blue",
+                  "italic": false
+                }
+              ]
+            ]
+          },
+          {
+            "function": "minecraft:set_nbt",
+            "tag": "{item_functions:{combat_cloth:1b}}"
+          }
+        ]
+      }
+    ]
+  }
+  

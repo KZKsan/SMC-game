@@ -1,0 +1,28 @@
+{
+    "parent": "sco_items:root",
+    "criteria": {
+      "have": {
+        "trigger": "minecraft:tick",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "nbt": "{Inventory:[{tag:{item_functions:{combat_cloth:1b}}}]}"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "requirements": [
+      [
+        "have"
+      ]
+    ],
+    "rewards": {
+      "function": "sco_items:item_functions/combat_cloth/have"
+    }
+  }
+  

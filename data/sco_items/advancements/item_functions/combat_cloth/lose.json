@@ -1,0 +1,30 @@
+{
+    "parent": "sco_items:root",
+    "criteria": {
+      "lose": {
+        "trigger": "minecraft:tick",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "nbt": "{Inventory:[{tag:{item_functions:{combat_cloth:1b}}}]}"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "requirements": [
+      [
+        "lose"
+      ]
+    ],
+    "rewards": {
+      "function": "sco_items:item_functions/combat_cloth/lose"
+    }
+  }
