@@ -1,0 +1,26 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:tipped_arrow"
+          }
+        ],
+        "functions": [
+          {
+            "function": "minecraft:set_nbt",
+            "tag": "{custom_potion_effects:[{duration: 5, amplifier: 20b, id: \"minecraft: levitation\"}], CustomPotionColor:16777215}"
+          },
+          {
+            "function": "minecraft:set_name",
+            "name": {
+              "text": "浮遊の矢",
+              "italic": true
+            }
+          }
+        ]
+      }
+    ]
+  }
