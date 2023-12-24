@@ -1,7 +1,7 @@
 {
     "parent": "sco_items:root",
     "criteria": {
-      "lose": {
+      "requirement": {
         "trigger": "minecraft:tick",
         "conditions": {
           "player": [
@@ -19,11 +19,6 @@
         }
       }
     },
-    "requirements": [
-      [
-        "lose"
-      ]
-    ],
     "rewards": {
       "function": "sco_items:item_functions/combat_cloth/lose"
     }

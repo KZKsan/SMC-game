@@ -1,7 +1,7 @@
 {
     "parent": "sco_items:root",
     "criteria": {
-      "have": {
+      "requirement": {
         "trigger": "minecraft:tick",
         "conditions": {
           "player": [
@@ -16,11 +16,6 @@
         }
       }
     },
-    "requirements": [
-      [
-        "have"
-      ]
-    ],
     "rewards": {
       "function": "sco_items:item_functions/combat_cloth/have"
     }
