@@ -4,10 +4,10 @@
 execute if score #runtime game < #game game run scoreboard players add #runtime game 1
 #初期化
 execute if score #runtime game matches 1 run function sco:process/game_reset
-execute if score #runtime game matches 5 run tellraw @a {"text": "対戦開始！4分後にサドンデスモードになります。","bold": true}
+execute if score #runtime game matches 5 run tellraw @a[predicate=sco:team_join] {"text": "対戦開始！4分後にサドンデスモードになります。","bold": true}
 execute if score #runtime game matches 1 run gamemode adventure @a[predicate=sco:team_join,team=!spectator]
 execute if score #runtime game matches 1 run function sco:player/result/reset_scores/all
-execute if score #runtime game matches 1 run effect give @a regeneration 5 100
+execute if score #runtime game matches 1 run effect give @a[predicate=sco:team_join,team=!spectator] regeneration 5 100
 #player_count
 execute if score #runtime game matches 1.. run function sco:player/team/team_info/player_count/
 
