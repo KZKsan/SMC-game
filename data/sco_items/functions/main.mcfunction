@@ -27,6 +27,13 @@
 # hidden_cover
     execute as @e[tag=hidden_cover] at @s run function sco_items:item_functions/hidden_cover/leaves/
 
+# breeake_shield
+    execute as @a[scores={breake_shield_hit=1..},nbt={SelectedItem:{tag:{item_functions:{breake_shield:1b}}}}] run effect give @s speed 1 1
+    execute as @a[scores={breake_shield_hit=1..},nbt={SelectedItem:{tag:{item_functions:{breake_shield:1b}}}}] run effect give @s strength 3 0
+    execute as @a[scores={breake_shield_hit=1..},nbt={Inventory:[{Slot:-106b,tag:{item_functions:{breake_shield:1b}}}]}] run effect give @s speed 1 1
+    execute as @a[scores={breake_shield_hit=1..},nbt={Inventory:[{Slot:-106b,tag:{item_functions:{breake_shield:1b}}}]}] run effect give @s strength 3 0
+    scoreboard players set @a breake_shield_hit 0
+
 # score
     execute as @a unless score @s lightning_hammer_holding_time matches -2147483648..2147483647 run scoreboard players set @s lightning_hammer_holding_time 0
     scoreboard players add @a[scores={lightning_hammer_holding_time=..-1}] lightning_hammer_holding_time 1
