@@ -30,7 +30,7 @@ execute as @a[team=spectator,tag=!spectator] run function sco:player/team/specta
 execute as @a[team=spectator,tag=!spectator] run function sco:tp/stage/macro/single_player with storage sco:data
 execute as @a[team=spectator,tag=!spectator] run function sco:player/team/remove_team_tag
 tag @a[team=spectator,tag=!spectator] add spectator
-
+execute if score #runtime game matches 1.. as @a[predicate=sco:team_join,scores={respawnTime=1}] run function sco:tp/stage/macro/single_player with storage sco:data
 
 #ステージギミック
 execute if score #runtime game matches 2 unless data storage sco:data options{reset:true} run function sco:stage_data/generic_settings
