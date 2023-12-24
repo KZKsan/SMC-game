@@ -8,4 +8,5 @@ data modify storage _ _ append value "station"
 data modify storage _ _ append value "jungle"
 data modify storage _ _ append value "centrifuge"
 data modify storage _ _ append value "deep_cave"
+data modify storage _ _ append value "endroll"
 data modify storage sco:data stage_tables.death_match set from storage _ _
