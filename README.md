@@ -58,6 +58,14 @@ function enderface:gui_layoutes/shop/set_trade_data/wirite_data/sell_count
 data modify storage sco:shop trade_data append from storage sco:shop _
 ```
 
+
+
+
+
+
+
+
+
 カテゴリを追加する場合
 
 1.data\enderface\functions\gui_layoutes\shop\set_trade_data\category\のカテゴリ設定用functionを作る
