@@ -25,7 +25,7 @@ scoreboard objectives add team_info.spectator dummy
 scoreboard objectives add player.HP health
 #declare score_holder last gameID
 
-scoreboard objectives modify player.HP displayname "HP"
+scoreboard objectives modify player.HP displayname {"text":"HP","color":"yellow"}
 
 execute unless score #process game matches -2147483648..2147483647 run scoreboard players set #process game 0
 
@@ -65,6 +65,7 @@ team modify mode.practice friendlyFire false
 execute unless data storage sco:config game.rule run data modify storage sco:config game.rule set value "death_match"
 execute unless data storage sco:config game.friendlyfire run data modify storage sco:config game.friendlyfire set value false
 execute unless data storage sco:config game.show_hp run data modify storage sco:config game.show_hp set value false
+execute unless data storage sco:config game.show_enemy_team_name run data modify storage sco:config game.show_enemy_team_name set value true
 execute unless data storage sco:config game.can_team_select run data modify storage sco:config game.can_team_select set value 0b
 execute unless data storage sco:config game.join run data modify storage sco:config game.join set value 0b
 execute unless data storage sco:config stage run data modify storage sco:config stage set value "sco_random"

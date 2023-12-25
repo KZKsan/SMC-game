@@ -17,3 +17,4 @@ function sco:stage_data/generic_settings
 function timer:stop
 function sco:player/team/team_info/off
 scoreboard objectives setdisplay below_name
+function sco:player/team/show_enemy_team_name/true

@@ -8,3 +8,5 @@ execute if data storage sco:input game{friendlyfire:false} run function sco:play
 execute if data storage sco:input game{friendlyfire:true} run function sco:player/team/friendlyfire/true
 execute if data storage sco:input game{show_hp:false} run scoreboard objectives setdisplay below_name
 execute if data storage sco:input game{show_hp:true} run scoreboard objectives setdisplay below_name player.HP
+execute if data storage sco:input game{show_enemy_team_name:false} run function sco:player/team/show_enemy_team_name/false
+execute if data storage sco:input game{show_enemy_team_name:true} run function sco:player/team/show_enemy_team_name/true
