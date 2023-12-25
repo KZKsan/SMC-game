@@ -18,6 +18,7 @@
                         {
                             "function": "set_lore",
                             "lore": [
+                                "",
                                 {
                                     "translate": "item.modifiers.head",
                                     "color": "gray",
@@ -41,7 +42,7 @@
                             "function": "set_attributes",
                             "modifiers": [
                                 {
-                                    "attribute": "generic.attack_speed",
+                                    "attribute": "generic.attack_damage",
                                     "name": "safety_helmet.generic.attack_damage",
                                     "amount": -0.2,
                                     "operation": "multiply_total",
@@ -57,7 +58,7 @@
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{display:{color:5395026},Unbreakable:1b}"
+                            "tag": "{display:{color:5395026},Unbreakable:1b,HideFlags:66}"
                         }
                     ]
                 }
