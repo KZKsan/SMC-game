@@ -1,6 +1,6 @@
 #>sco:process/20
 #@within sco:main
-scoreboard players add #runtime game 1
+execute if score #runtime game matches ..5 run scoreboard players add #runtime game 1
 execute if score #runtime game matches 5 run function sco:messeges/shop
 execute if score #runtime game matches 1 run team join red @a[tag=join_red]
 execute if score #runtime game matches 1 run team join blue @a[tag=join_blue]
@@ -44,14 +44,14 @@ tag @a[team=spectator,tag=!spectator] add rg_block_area
 tag @a[team=spectator,tag=!spectator] add spectator
 
 #プロセス終了
-execute if score #mst_time timer matches 003000 run function sco:messeges/shop_end
-execute if score #mst_time timer matches 003000 as @a[predicate=sco:team_join] at @s run playsound block.note_block.bell record @s ~ ~ ~ 0.6 1 1
-execute if score #mst_time timer matches 003002 as @a[predicate=sco:team_join] at @s run playsound block.note_block.bell record @s ~ ~ ~ 0.6 1 1
-execute if score #mst_time timer matches 003004 as @a[predicate=sco:team_join] at @s run playsound block.note_block.bell record @s ~ ~ ~ 0.6 1 1
+execute if score #mst_time timer matches 003001 run function sco:messeges/shop_end
+execute if score #mst_time timer matches 003001 as @a[predicate=sco:team_join] at @s run playsound block.note_block.bell record @s ~ ~ ~ 0.6 1 1
+execute if score #mst_time timer matches 003003 as @a[predicate=sco:team_join] at @s run playsound block.note_block.bell record @s ~ ~ ~ 0.6 1 1
+execute if score #mst_time timer matches 003005 as @a[predicate=sco:team_join] at @s run playsound block.note_block.bell record @s ~ ~ ~ 0.6 1 1
 
 
-execute if score #runtime game >= #shop game run data merge storage timer: {time:120,mode:1,name:'{"text":"残り時間 "}'}
-execute if score #runtime game >= #shop game store result storage timer: time int 1 run scoreboard players get #game_timer game
-execute if score #runtime game >= #shop game run function timer:input
-execute if score #runtime game >= #shop game run scoreboard players set #process game 30
-execute if score #runtime game >= #shop game run scoreboard players set #runtime game 0
+execute if score #mst_time timer matches -110 run scoreboard players set #process game 30
+execute if score #mst_time timer matches -110 run scoreboard players set #runtime game 0
+execute if score #mst_time timer matches -110 run data merge storage timer: {time:120,mode:1,name:'{"text":"残り時間 "}'}
+execute if score #mst_time timer matches -110 store result storage timer: time int 1 run scoreboard players get #game_timer game
+execute if score #mst_time timer matches -110 run function timer:input

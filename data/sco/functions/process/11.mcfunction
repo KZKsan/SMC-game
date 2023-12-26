@@ -1,6 +1,6 @@
 #>sco:process/11
 #@within sco:main
-scoreboard players add #runtime game 1
+execute if score #runtime game matches ..5 run scoreboard players add #runtime game 1
 execute if score #runtime game matches 5 run function sco:messeges/stage
 execute if score #runtime game matches 1 run team join red @a[team=blue]
 execute if score #runtime game matches 1 run gamemode adventure @a[team=red]
@@ -38,8 +38,8 @@ execute if score #runtime game matches 2 if data storage sco:data options{reset:
 execute if score #runtime game matches 3.. if data storage sco:data options{gimmick:true} run function sco:stage_data/gimmick
 
 #プロセス終了
-execute if score #runtime game >= #stage game run data merge storage timer: {time:120,mode:1,name:'{"text":"装備準備時間 残り時間 "}'}
-execute if score #runtime game >= #stage game store result storage timer: time int 1 run scoreboard players get #shop_timer game
-execute if score #runtime game >= #stage game run function timer:input
-execute if score #runtime game >= #stage game run scoreboard players set #process game 20
-execute if score #runtime game >= #stage game run scoreboard players set #runtime game 0
+execute if score #mst_time timer matches -110 run scoreboard players set #process game 20
+execute if score #mst_time timer matches -110 run scoreboard players set #runtime game 0
+execute if score #mst_time timer matches -110 run data merge storage timer: {time:120,mode:1,name:'{"text":"装備準備時間 残り時間 "}'}
+execute if score #mst_time timer matches -110 store result storage timer: time int 1 run scoreboard players get #shop_timer game
+execute if score #mst_time timer matches -110 run function timer:input
