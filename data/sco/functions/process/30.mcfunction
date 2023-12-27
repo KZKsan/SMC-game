@@ -4,7 +4,7 @@
 execute if score #runtime game matches ..9 run scoreboard players add #runtime game 1
 #初期化
 execute if score #runtime game matches 1 run function sco:process/game_reset
-execute if score #runtime game matches 5 run tellraw @a[predicate=sco:team_join] {"text": "対戦開始！3分後にサドンデスモードになります。","bold": true}
+execute if score #runtime game matches 5 run tellraw @a[predicate=sco:team_join] [{"text": "対戦開始！","bold": true},{"score":{"name": "#m","objective": "timer"},"bold": true},{"text":"分後にサドンデスモードになります。","bold": true}]
 execute if score #runtime game matches 1 run gamemode adventure @a[predicate=sco:team_join,team=!spectator]
 execute if score #runtime game matches 1 run function sco:player/result/reset_scores/all
 execute if score #runtime game matches 1 run effect give @a[predicate=sco:team_join,team=!spectator] regeneration 5 100
@@ -31,6 +31,8 @@ execute as @a[team=spectator,tag=!spectator] run function sco:tp/stage/macro/sin
 execute as @a[team=spectator,tag=!spectator] run function sco:player/team/remove_team_tag
 tag @a[team=spectator,tag=!spectator] add rg_block_area
 tag @a[team=spectator,tag=!spectator] add spectator
+execute if score #runtime game matches 5 as @a[predicate=sco:team_join] at @s run playsound block.note_block.pling record @s ~ ~ ~ 0.5 1
+
 
 #ステージギミック
 execute if score #runtime game matches 2 if data storage sco:data options{reset:true} run function sco:stage_data/reset

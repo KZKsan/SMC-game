@@ -48,7 +48,10 @@ execute if score #mst_time timer matches 003001 run function sco:messeges/shop_e
 execute if score #mst_time timer matches 003001 as @a[predicate=sco:team_join] at @s run playsound block.note_block.bell record @s ~ ~ ~ 0.6 1 1
 execute if score #mst_time timer matches 003003 as @a[predicate=sco:team_join] at @s run playsound block.note_block.bell record @s ~ ~ ~ 0.6 1 1
 execute if score #mst_time timer matches 003005 as @a[predicate=sco:team_join] at @s run playsound block.note_block.bell record @s ~ ~ ~ 0.6 1 1
-
+execute if score #mst_time timer matches 001501 run function sco:messeges/shop_end
+execute if score #mst_time timer matches 001501 as @a[predicate=sco:team_join] at @s run playsound block.note_block.bell record @s ~ ~ ~ 0.6 1 1
+execute if score #mst_time timer matches 001503 as @a[predicate=sco:team_join] at @s run playsound block.note_block.bell record @s ~ ~ ~ 0.6 1 1
+execute if score #mst_time timer matches 001505 as @a[predicate=sco:team_join] at @s run playsound block.note_block.bell record @s ~ ~ ~ 0.6 1 1
 
 execute if score #mst_time timer matches -110 run scoreboard players set #process game 30
 execute if score #mst_time timer matches -110 run scoreboard players set #runtime game 0
