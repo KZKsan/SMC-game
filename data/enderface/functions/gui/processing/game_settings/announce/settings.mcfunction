@@ -5,7 +5,7 @@ tellraw @a "----------------------------"
 execute if data storage sco:config game{rule:"death_match"} run tellraw @a [{"text": "ルール: ","bold": true},{"text": "デスマッチ","bold": true,"color": "red"}]
 execute if data storage sco:config {stage:"sco_random"} run tellraw @a [{"text": "ステージ: ","bold": true},{"text": "ランダム","color": "green"}]
 execute unless data storage sco:config {stage:"sco_random"} run function sco:stage_data/data_fetch with storage sco:config
-execute unless data storage sco:config {stage:"sco_random"} run tellraw @a [{"text": "ステージ: ","bold": true},{"nbt":"stage_name","storage": "sco:data","interpret": true}]
+execute unless data storage sco:config {stage:"sco_random"} run tellraw @a [{"text": "ステージ: ","bold": true},{"nbt":"stage_name","storage": "sco:input","interpret": true}]
 tellraw @a [{"text": "その他: ","bold": true}]
 execute if data storage sco:config game{show_hp:false} run tellraw @a [{"text": "・HPの表示: "},{"text": "OFF","color": "gray"}]
 execute if data storage sco:config game{show_hp:true} run tellraw @a [{"text": "・HPの表示: "},{"text": "ON","color": "green"}]
