@@ -7,6 +7,10 @@
 execute as @a if score last gameID matches -2147483648..2147483647 unless score @s gameID = last gameID run function sco:player/retune_lobby
 execute as @a unless score last gameID matches -2147483648..2147483647 if score @s gameID matches -2147483648..2147483647 run function sco:player/retune_lobby
 
+# score reset
+execute unless score #process game matches -2147483648..2147483647 run scoreboard players set #process game 0
+execute unless score #runtime game matches -2147483648..2147483647 run scoreboard players set #runtime game -1
+
 #0. none
 execute if score #process game matches 0 run function sco:process/0
 
