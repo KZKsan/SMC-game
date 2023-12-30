@@ -12,8 +12,9 @@ execute if score #runtime game matches 1 run scoreboard players set @a[predicate
 execute as @a[team=spectator,scores={leave_game=1..}] run function sco:player/retune_lobby
 
 #rg
-tag @a[team=red,tag=!rg_drop_item] add rg_drop_item
-tag @a[team=spectator,tag=!spectator] add rg_block_area
+tag @a[team=red,tag=!rg.drop_item] add rg.drop_item
+tag @a[team=red,tag=!rg.penalty_area] add rg.penalty_area
+tag @a[team=spectator,tag=!spectator] add rg.block_area
 effect give @a[predicate=sco:team_join,predicate=gamemode/as] instant_health 10 50 true
 effect give @a[predicate=sco:team_join,predicate=gamemode/as] resistance 1 50 true
 effect give @a[predicate=sco:team_join,predicate=gamemode/as] weakness 1 120 true
