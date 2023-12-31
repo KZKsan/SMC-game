@@ -8,8 +8,10 @@ execute if score #runtime game matches 5 run tellraw @a[predicate=sco:team_join]
 execute if score #runtime game matches 1 run gamemode adventure @a[predicate=sco:team_join,team=!spectator]
 execute if score #runtime game matches 1 run function sco:player/result/reset_scores/all
 execute if score #runtime game matches 1 run effect give @a[predicate=sco:team_join,team=!spectator] regeneration 5 100
+execute if score #runtime game matches 1 as @a[scores={regione.penalty_area.penalty.time=1..}] run function sco:regine/penalty_area/reset_flag/single
 #player_count
 execute if score #runtime game matches 1.. run function sco:player/team/team_info/player_count/
+
 
 
 #切断処理
@@ -20,6 +22,7 @@ tag @a[predicate=sco:team_join,tag=!rg.drop_item,team=!spectator] add rg.drop_it
 tag @a[predicate=sco:team_join,tag=rg.shot_projectiles,team=!spectator] remove rg.shot_projectiles
 tag @a[predicate=sco:team_join,team=!spectator,tag=!rg.food_limit] add rg.food_limit
 tag @a[predicate=sco:team_join,tag=rg.item_function_limit,team=!spectator] remove rg.item_function_limit
+tag @a[predicate=sco:team_join,tag=!rg.penalty_area,team=!spectator] add rg.penalty_area
 
 #テレポート
 execute if score #runtime game matches 1 run function sco:tp/stage/macro/all_player with storage sco:data

@@ -8,6 +8,7 @@ execute if score #runtime game matches 5 run tellraw @a[predicate=sco:team_join]
 execute if score #runtime game matches 1 run data modify storage sco:data regine_area_new set from storage sco:data regine_area.sudden_death
 execute if score #runtime game matches 1 as @a[team=spectator] run function sco:regine/block_area/set_score
 execute if score #runtime game matches 1.. as @a[team=spectator,predicate=!sco:regine/block_area/scores] run function sco:regine/block_area/set_score
+execute if score #runtime game matches 1 as @a[scores={regione.penalty_area.penalty.time=1..}] run function sco:regine/penalty_area/reset_flag/single
 #player_count
 execute if score #runtime game matches 1.. run function sco:player/team/team_info/player_count/
 
@@ -19,12 +20,14 @@ tag @a[predicate=sco:team_join,tag=!rg.drop_item,team=!spectator] add rg.drop_it
 tag @a[predicate=sco:team_join,tag=rg.shot_projectiles,team=!spectator] remove rg.shot_projectiles
 tag @a[predicate=sco:team_join,team=!spectator,tag=!rg.food_limit] add rg.food_limit
 tag @a[predicate=sco:team_join,tag=rg.item_function_limit,team=!spectator] remove rg.item_function_limit
+tag @a[predicate=sco:team_join,tag=rg.penalty_area,team=!spectator] remove rg.penalty_area
+
 
 #テレポート
 execute if score #runtime game matches 1.. as @a[predicate=sco:team_join,team=!spectator] run function sco:player/respawn/
 execute if score #runtime game matches 1.. as @a[predicate=sco:team_join,team=!spectator,gamemode=spectator,tag=!rg.block_area] run function sco:regine/block_area/set_score
 execute if score #runtime game matches 1.. run tag @a[predicate=sco:team_join,team=!spectator,gamemode=spectator,tag=!rg.block_area] add rg.block_area
-execute if score #runtime game matches 1 as @a[team=!] run function sco:tp/stage/sudden_death
+execute if score #runtime game matches 1 as @a[predicate=sco:team_join] run function sco:tp/stage/sudden_death
 execute if score #runtime game matches 1 run data modify storage sco:data regine_area_new set from storage sco:data regine_area.sudden_death
 execute if score #runtime game matches 1 as @a[team=spectator] run function sco:regine/block_area/set_score
 execute if score #runtime game matches 1 as @a[predicate=sco:team_join,team=!spectator,gamemode=spectator] run function sco:regine/block_area/set_score
@@ -37,4 +40,4 @@ tag @a[team=spectator,tag=!spectator] add spectator
 execute if score #runtime game matches 5 as @a[predicate=sco:team_join] at @s run playsound block.note_block.pling record @s ~ ~ ~ 0.5 1
 
 #プロセス終了
-function sco:process/game_flag/winner/
+execute if score #runtime game matches 5.. run function sco:process/game_flag/winner/

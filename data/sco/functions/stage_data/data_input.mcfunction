@@ -5,5 +5,6 @@ data modify storage sco:data shop set from storage sco:input shop
 data modify storage sco:data options set from storage sco:input options
 data modify storage sco:data regine_area set from storage sco:input regine_area
 data modify storage sco:data regine_area_new set from storage sco:input regine_area_new
+data modify storage sco:data penalty_area_new set from storage sco:input penalty_area_new
 data modify storage sco:data stage_name set from storage sco:input stage_name
 data modify storage sco:data stage_description set from storage sco:input stage_description
