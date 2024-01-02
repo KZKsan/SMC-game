@@ -10,6 +10,7 @@ execute as @a unless score last gameID matches -2147483648..2147483647 if score 
 # score reset
 execute unless score #process game matches -2147483648..2147483647 run scoreboard players set #process game 0
 execute unless score #runtime game matches -2147483648..2147483647 run scoreboard players set #runtime game -1
+scoreboard players set @a[scores={respawnTime=2147483647}] respawnTime 30
 
 #0. none
 execute if score #process game matches 0 run function sco:process/0
@@ -73,8 +74,8 @@ execute as @a[tag=rg.food_limit] run function sco:regine/food_limit/
 execute as @a[tag=rg.block_area,predicate=sco:regine/block_area/scores,tag=!rg.off] at @s run function sco:regine/block_area/
 
 ##ステージ範囲外
-execute as @a[tag=rg.penalty_area,tag=!rg.off,predicate=gamemode/as] at @s if data storage sco:data penalty_area.penalty run function sco:regine/penalty_area/penalty/ with storage sco:data penalty_area.penalty
-execute as @a[tag=rg.penalty_area,tag=!rg.off,predicate=gamemode/as] at @s if data storage sco:data penalty_area.death run function sco:regine/penalty_area/death/ with storage sco:data penalty_area.death
+execute as @a[tag=rg.penalty_area.penalty,tag=!rg.off,predicate=gamemode/as] at @s if data storage sco:data penalty_area.struct.penalty run function sco:regine/penalty_area/penalty/ with storage sco:data penalty_area.struct
+execute as @a[tag=rg.penalty_area.death,tag=!rg.off,predicate=gamemode/as] at @s if data storage sco:data penalty_area.struct.death run function sco:regine/penalty_area/death/ with storage sco:data penalty_area.struct
 
 ##ロビー
 place template sco:lobby/farm 14 -53 -74

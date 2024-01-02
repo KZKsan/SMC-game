@@ -10,7 +10,8 @@ tag @s remove rg.food_limit
 tag @s remove rg.shot_projectiles
 tag @s remove rg.item_function_limit
 tag @s remove rg.block_area
-tag @s remove rg.penalty_area
+tag @s remove rg.penalty_area.penalty
+tag @s remove rg.penalty_area.death
 execute unless score last gameID matches -2147483648..2147483647 run scoreboard players reset @s gameID
 execute if score last gameID matches -2147483648..2147483647 run scoreboard players operation @s gameID = last gameID
 scoreboard players reset @s processID

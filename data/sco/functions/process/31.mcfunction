@@ -20,7 +20,7 @@ tag @a[predicate=sco:team_join,tag=!rg.drop_item,team=!spectator] add rg.drop_it
 tag @a[predicate=sco:team_join,tag=rg.shot_projectiles,team=!spectator] remove rg.shot_projectiles
 tag @a[predicate=sco:team_join,team=!spectator,tag=!rg.food_limit] add rg.food_limit
 tag @a[predicate=sco:team_join,tag=rg.item_function_limit,team=!spectator] remove rg.item_function_limit
-tag @a[predicate=sco:team_join,tag=rg.penalty_area,team=!spectator] remove rg.penalty_area
+function sco:process/penalty_area/sudden_death
 
 
 #テレポート

@@ -13,7 +13,7 @@ execute as @a[team=spectator,scores={leave_game=1..}] run function sco:player/re
 
 #rg
 tag @a[team=red,tag=!rg.drop_item] add rg.drop_item
-tag @a[team=red,tag=!rg.penalty_area] add rg.penalty_area
+function sco:process/penalty_area/stage
 tag @a[team=spectator,tag=!spectator] add rg.block_area
 effect give @a[predicate=sco:team_join,predicate=gamemode/as] instant_health 10 50 true
 effect give @a[predicate=sco:team_join,predicate=gamemode/as] resistance 1 50 true

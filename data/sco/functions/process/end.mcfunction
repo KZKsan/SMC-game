@@ -11,7 +11,8 @@ tag @a[predicate=sco:team_join,team=!spectator,tag=rg.drop_item] remove rg.drop_
 tag @a[predicate=sco:team_join,team=!spectator,tag=rg.shot_projectiles] remove rg.shot_projectiles
 tag @a[predicate=sco:team_join,team=!spectator,tag=rg.food_limit] remove rg.food_limit
 tag @a[predicate=sco:team_join,team=!spectator,tag=rg.item_function_limit] remove rg.item_function_limit
-tag @a[predicate=sco:team_join,team=!spectator,tag=rg.penalty_area] remove rg.penalty_area
+tag @a[predicate=sco:team_join,team=!spectator,tag=rg.penalty_area.penalty] remove rg.penalty_area.penalty
+tag @a[predicate=sco:team_join,team=!spectator,tag=rg.penalty_area.death] remove rg.penalty_area.death
 effect clear @a[predicate=sco:team_join]
 execute as @a[predicate=sco:team_join] run function sco:player/retune_lobby
 function sco:stage_data/generic_settings
@@ -19,4 +20,4 @@ function timer:stop
 function sco:player/team/team_info/off
 scoreboard objectives setdisplay below_name
 function sco:player/team/show_enemy_team_name/true
-data remove storage sco:data penalty_area
+data remove storage sco:data penalty_area.struct
