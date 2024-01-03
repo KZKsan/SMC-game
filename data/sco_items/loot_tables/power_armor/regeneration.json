@@ -1,0 +1,69 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "iron_chestplate",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": {
+                                "text": "パワーアーマー[Regeneration]",
+                                "italic": false,
+                                "color": "green"
+                            }
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore": [
+                                "着用者の力をアシストする装備",
+                                "",
+                                {
+                                    "translate": "item.modifiers.chest",
+                                    "color": "gray",
+                                    "italic": false
+                                },
+                                [
+                                    {
+                                        "translate": "attribute.name.generic.movement_speed",
+                                        "color": "red",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": " -40%",
+                                        "color": "red",
+                                        "italic": false
+                                    }
+                                ]
+                            ]
+                        },
+                        {
+                            "function": "set_attributes",
+                            "modifiers": [
+                                {
+                                    "slot": "chest",
+                                    "amount": -0.4,
+                                    "operation": "multiply_total",
+                                    "attribute": "generic.movement_speed",
+                                    "name": ""
+                                }
+                            ]
+                        },
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "unbreaking" :3
+                            }
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{item_functions:{using_damage:{active:1b,tick:0,interval:5,damage:5,max_damage:240}},Trim: {material: \"emerald\", pattern: \"raiser\"},HideFlags:130}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

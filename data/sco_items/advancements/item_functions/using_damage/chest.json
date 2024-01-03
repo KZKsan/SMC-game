@@ -1,0 +1,25 @@
+{
+    "criteria": {
+        "chest": {
+            "trigger": "tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "equipment": {
+                                "chest": {
+                                    "nbt": "{item_functions:{using_damage:{active:1b}}}"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "sco_items:item_functions/using_damage/chest"
+    }
+}
