@@ -19,6 +19,7 @@ scoreboard objectives add regine.y1 dummy
 scoreboard objectives add regine.y2 dummy
 scoreboard objectives add regine.z1 dummy
 scoreboard objectives add regine.z2 dummy
+scoreboard objectives add regione.penalty_area.penalty.time dummy
 scoreboard objectives add team_info.red dummy
 scoreboard objectives add team_info.blue dummy
 scoreboard objectives add team_info.spectator dummy
