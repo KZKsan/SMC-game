@@ -23,6 +23,7 @@ function enderface:gui_layoutes/shop/set_trade_data/single_data/potion/magic_bul
 function enderface:gui_layoutes/shop/set_trade_data/single_data/potion/magic_bullet_of_fetters
 function enderface:gui_layoutes/shop/set_trade_data/single_data/potion/magic_bullet_of_darkness
 function enderface:gui_layoutes/shop/set_trade_data/single_data/potion/magic_bullet_of_anti_gravity
+function enderface:gui_layoutes/shop/set_trade_data/single_data/potion/magic_bullet_of_confusion
 
 
 data modify storage sco:shop potions set from storage sco:shop trade_data
