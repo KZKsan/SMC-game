@@ -11,6 +11,8 @@ execute if score #runtime game matches 1 run data modify storage sco:data regine
 execute if score #runtime game matches 1 as @a[team=spectator] run function sco:regine/block_area/set_score
 execute if score #runtime game matches 1.. as @a[team=spectator,predicate=!sco:regine/block_area/scores] run function sco:regine/block_area/set_score
 execute if score #runtime game matches 1.. run function sco:player/team/team_info/player_count/
+execute if score #runtime game matches 1.. as @a[scores={regione.penalty_area.penalty.time=1..}] run function sco:regine/penalty_area/reset_flag/single
+
 
 #プロセスID
 execute if score #runtime game matches 1 run scoreboard players set @a[predicate=sco:team_join] processID 20
@@ -22,10 +24,11 @@ execute as @a[predicate=sco:team_join,team=!spectator] if score @s processID mat
 execute as @a[predicate=sco:team_join,team=!spectator] if score @s processID matches 11 run function sco:tp/shop/macro/single_player with storage sco:data
 execute as @a[predicate=sco:team_join,team=!spectator] if score @s processID matches 11 run scoreboard players set @s processID 20
 #rg
-tag @a[predicate=sco:team_join,team=!spectator,tag=!rg_drop_item] add rg_drop_item
-tag @a[predicate=sco:team_join,team=!spectator,tag=!rg_shot_projectiles] add rg_shot_projectiles
-tag @a[predicate=sco:team_join,team=!spectator,tag=!rg_food_limit] add rg_food_limit
-tag @a[predicate=sco:team_join,team=!spectator,tag=!rg_item_function_limit] add rg_item_function_limit
+function sco:process/penalty_area/shop
+tag @a[predicate=sco:team_join,team=!spectator,tag=!rg.drop_item] add rg.drop_item
+tag @a[predicate=sco:team_join,team=!spectator,tag=!rg.shot_projectiles] add rg.shot_projectiles
+tag @a[predicate=sco:team_join,team=!spectator,tag=!rg.food_limit] add rg.food_limit
+tag @a[predicate=sco:team_join,team=!spectator,tag=!rg.item_function_limit] add rg.item_function_limit
 effect give @a[predicate=sco:team_join,team=!spectator,predicate=gamemode/as] instant_health 10 50 true
 effect give @a[predicate=sco:team_join,team=!spectator,predicate=gamemode/as] resistance 1 50 true
 effect give @a[predicate=sco:team_join,team=!spectator,predicate=gamemode/as] weakness 1 120 true
@@ -40,7 +43,7 @@ execute as @a[team=spectator,tag=!spectator] run function sco:regine/block_area/
 execute as @a[team=spectator,tag=!spectator] run function sco:player/team/spectator
 execute as @a[team=spectator,tag=!spectator] run function sco:tp/shop/macro/single_player with storage sco:data
 execute as @a[team=spectator,tag=!spectator] run function sco:player/team/remove_team_tag
-tag @a[team=spectator,tag=!spectator] add rg_block_area
+tag @a[team=spectator,tag=!spectator] add rg.block_area
 tag @a[team=spectator,tag=!spectator] add spectator
 
 #プロセス終了
