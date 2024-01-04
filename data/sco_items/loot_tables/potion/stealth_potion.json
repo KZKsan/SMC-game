@@ -17,7 +17,7 @@
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{CustomPotionColor:12582399,custom_potion_effects:[{id:\"minecraft:speed\",amplifier:0b,duration:140},{id:\"minecraft:glowing\",amplifier:0b,duration:100},{id:'minecraft:invisibility',amplifier:0b,duration:200}]}"
+                            "tag": "{CustomPotionColor:12582399,custom_potion_effects:[{id:\"minecraft:speed\",amplifier:0b,duration:140},{id:\"minecraft:glowing\",amplifier:0b,duration:100},{id:\"minecraft:invisibility\",amplifier:0b,duration:200}]}"
                         }
                     ]
                 }
