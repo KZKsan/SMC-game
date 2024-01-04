@@ -37,10 +37,16 @@
                                 "condition": "entity_properties",
                                 "entity": "this",
                                 "predicate": {
-                                    "nbt": "{Tags:[\"hidden_cover.run\"]}",
                                     "flags": {
                                         "is_sneaking": false
                                     }
+                                }
+                            },
+                            {
+                                "condition": "entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "nbt": "{Tags:[\"hidden_cover.lock\"]}"
                                 }
                             },
                             {
@@ -54,12 +60,19 @@
                                 }
                             }
                         ]
+                    },
+                    {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "nbt": "{Tags:[\"hidden_cover.run\"]}"
+                        }
                     }
                 ]
             }
         }
     },
     "rewards": {
-        "function": "sco_items:item_functions/hidden_cover/reset"
+        "function": "sco_items:item_functions/hidden_cover/release"
     }
 }
