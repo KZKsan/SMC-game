@@ -1,0 +1,32 @@
+{
+    "parent": "sco_items:root",
+    "criteria": {
+        "attack": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "nbt": "{SelectedItem:{tag:{Enchantments:[{id:\"minecraft:smite\"}]}}}"
+                        }
+                    }
+                ],
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "sco_items:item_functions/enchant/smite/attack"
+    }
+}
