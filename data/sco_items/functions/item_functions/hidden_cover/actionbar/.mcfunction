@@ -6,5 +6,6 @@ scoreboard players set # _ 1500
 scoreboard players operation # _ -= @s hidden_cover.time
 scoreboard players operation # _ *= #21 _
 scoreboard players operation # _ /= #1500 _
+function sco_items:actionbar/set_str
 execute if entity @s[tag=!hidden_cover.lock] run function sco_items:item_functions/hidden_cover/actionbar/run
 execute if entity @s[tag=hidden_cover.lock] run function sco_items:item_functions/hidden_cover/actionbar/lock

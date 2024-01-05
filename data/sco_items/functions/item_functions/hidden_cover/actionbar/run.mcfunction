@@ -1,23 +1,23 @@
 #>sco_items:item_functions/hidden_cover/actionbar/run
 #@within sco_items:item_functions/hidden_cover/actionbar/
-execute if score # _ matches 20.. run title @s actionbar [{"text":"[","color": "white"},{"text":"■■■■■■■■■■■■■■■■■■■■","color": "green"},{"text":"]","color": "white"}]
-execute if score # _ matches 19 run title @s actionbar [{"text":"[","color": "white"},{"text":"■■■■■■■■■■■■■■■■■■■_","color": "green"},{"text":"]","color": "white"}]
-execute if score # _ matches 18 run title @s actionbar [{"text":"[","color": "white"},{"text":"■■■■■■■■■■■■■■■■■■__","color": "green"},{"text":"]","color": "white"}]
-execute if score # _ matches 17 run title @s actionbar [{"text":"[","color": "white"},{"text":"■■■■■■■■■■■■■■■■■___","color": "green"},{"text":"]","color": "white"}]
-execute if score # _ matches 16 run title @s actionbar [{"text":"[","color": "white"},{"text":"■■■■■■■■■■■■■■■■____","color": "green"},{"text":"]","color": "white"}]
-execute if score # _ matches 15 run title @s actionbar [{"text":"[","color": "white"},{"text":"■■■■■■■■■■■■■■■_____","color": "green"},{"text":"]","color": "white"}]
-execute if score # _ matches 14 run title @s actionbar [{"text":"[","color": "white"},{"text":"■■■■■■■■■■■■■■______","color": "green"},{"text":"]","color": "white"}]
-execute if score # _ matches 13 run title @s actionbar [{"text":"[","color": "white"},{"text":"■■■■■■■■■■■■■_______","color": "green"},{"text":"]","color": "white"}]
-execute if score # _ matches 12 run title @s actionbar [{"text":"[","color": "white"},{"text":"■■■■■■■■■■■■________","color": "green"},{"text":"]","color": "white"}]
-execute if score # _ matches 11 run title @s actionbar [{"text":"[","color": "white"},{"text":"■■■■■■■■■■■_________","color": "green"},{"text":"]","color": "white"}]
-execute if score # _ matches 10 run title @s actionbar [{"text":"[","color": "white"},{"text":"■■■■■■■■■■__________","color": "green"},{"text":"]","color": "white"}]
-execute if score # _ matches 9 run title @s actionbar [{"text":"[","color": "white"},{"text":"■■■■■■■■■___________","color": "yellow"},{"text":"]","color": "white"}]
-execute if score # _ matches 8 run title @s actionbar [{"text":"[","color": "white"},{"text":"■■■■■■■■____________","color": "yellow"},{"text":"]","color": "white"}]
-execute if score # _ matches 7 run title @s actionbar [{"text":"[","color": "white"},{"text":"■■■■■■■_____________","color": "yellow"},{"text":"]","color": "white"}]
-execute if score # _ matches 6 run title @s actionbar [{"text":"[","color": "white"},{"text":"■■■■■■______________","color": "yellow"},{"text":"]","color": "white"}]
-execute if score # _ matches 5 run title @s actionbar [{"text":"[","color": "white"},{"text":"■■■■■_______________","color": "yellow"},{"text":"]","color": "white"}]
-execute if score # _ matches 4 run title @s actionbar [{"text":"[","color": "white"},{"text":"■■■■________________","color": "red"},{"text":"]","color": "white"}]
-execute if score # _ matches 3 run title @s actionbar [{"text":"[","color": "white"},{"text":"■■■_________________","color": "red"},{"text":"]","color": "white"}]
-execute if score # _ matches 2 run title @s actionbar [{"text":"[","color": "white"},{"text":"■■__________________","color": "red"},{"text":"]","color": "white"}]
-execute if score # _ matches 1 run title @s actionbar [{"text":"[","color": "white"},{"text":"■___________________","color": "red"},{"text":"]","color": "white"}]
-execute if score # _ matches 0 run title @s actionbar [{"text":"[","color": "white"},{"text":"____________________","color": "gray"},{"text":"]","color": "white"}]
+execute if score # _ matches 20.. run data modify storage p-storage _[0].data.item_actionbar append value '[{"text":"[","color": "white"},{"text":"■■■■■■■■■■■■■■■■■■■■","color": "green"},{"text":"]","color": "white"}]'
+execute if score # _ matches 19 run data modify storage p-storage _[0].data.item_actionbar append value '[{"text":"[","color": "white"},{"text":"■■■■■■■■■■■■■■■■■■■_","color": "green"},{"text":"]","color": "white"}]'
+execute if score # _ matches 18 run data modify storage p-storage _[0].data.item_actionbar append value '[{"text":"[","color": "white"},{"text":"■■■■■■■■■■■■■■■■■■__","color": "green"},{"text":"]","color": "white"}]'
+execute if score # _ matches 17 run data modify storage p-storage _[0].data.item_actionbar append value '[{"text":"[","color": "white"},{"text":"■■■■■■■■■■■■■■■■■___","color": "green"},{"text":"]","color": "white"}]'
+execute if score # _ matches 16 run data modify storage p-storage _[0].data.item_actionbar append value '[{"text":"[","color": "white"},{"text":"■■■■■■■■■■■■■■■■____","color": "green"},{"text":"]","color": "white"}]'
+execute if score # _ matches 15 run data modify storage p-storage _[0].data.item_actionbar append value '[{"text":"[","color": "white"},{"text":"■■■■■■■■■■■■■■■_____","color": "green"},{"text":"]","color": "white"}]'
+execute if score # _ matches 14 run data modify storage p-storage _[0].data.item_actionbar append value '[{"text":"[","color": "white"},{"text":"■■■■■■■■■■■■■■______","color": "green"},{"text":"]","color": "white"}]'
+execute if score # _ matches 13 run data modify storage p-storage _[0].data.item_actionbar append value '[{"text":"[","color": "white"},{"text":"■■■■■■■■■■■■■_______","color": "green"},{"text":"]","color": "white"}]'
+execute if score # _ matches 12 run data modify storage p-storage _[0].data.item_actionbar append value '[{"text":"[","color": "white"},{"text":"■■■■■■■■■■■■________","color": "green"},{"text":"]","color": "white"}]'
+execute if score # _ matches 11 run data modify storage p-storage _[0].data.item_actionbar append value '[{"text":"[","color": "white"},{"text":"■■■■■■■■■■■_________","color": "green"},{"text":"]","color": "white"}]'
+execute if score # _ matches 10 run data modify storage p-storage _[0].data.item_actionbar append value '[{"text":"[","color": "white"},{"text":"■■■■■■■■■■__________","color": "green"},{"text":"]","color": "white"}]'
+execute if score # _ matches 9 run data modify storage p-storage _[0].data.item_actionbar append value '[{"text":"[","color": "white"},{"text":"■■■■■■■■■___________","color": "yellow"},{"text":"]","color": "white"}]'
+execute if score # _ matches 8 run data modify storage p-storage _[0].data.item_actionbar append value '[{"text":"[","color": "white"},{"text":"■■■■■■■■____________","color": "yellow"},{"text":"]","color": "white"}]'
+execute if score # _ matches 7 run data modify storage p-storage _[0].data.item_actionbar append value '[{"text":"[","color": "white"},{"text":"■■■■■■■_____________","color": "yellow"},{"text":"]","color": "white"}]'
+execute if score # _ matches 6 run data modify storage p-storage _[0].data.item_actionbar append value '[{"text":"[","color": "white"},{"text":"■■■■■■______________","color": "yellow"},{"text":"]","color": "white"}]'
+execute if score # _ matches 5 run data modify storage p-storage _[0].data.item_actionbar append value '[{"text":"[","color": "white"},{"text":"■■■■■_______________","color": "yellow"},{"text":"]","color": "white"}]'
+execute if score # _ matches 4 run data modify storage p-storage _[0].data.item_actionbar append value '[{"text":"[","color": "white"},{"text":"■■■■________________","color": "red"},{"text":"]","color": "white"}]'
+execute if score # _ matches 3 run data modify storage p-storage _[0].data.item_actionbar append value '[{"text":"[","color": "white"},{"text":"■■■_________________","color": "red"},{"text":"]","color": "white"}]'
+execute if score # _ matches 2 run data modify storage p-storage _[0].data.item_actionbar append value '[{"text":"[","color": "white"},{"text":"■■__________________","color": "red"},{"text":"]","color": "white"}]'
+execute if score # _ matches 1 run data modify storage p-storage _[0].data.item_actionbar append value '[{"text":"[","color": "white"},{"text":"■___________________","color": "red"},{"text":"]","color": "white"}]'
+execute if score # _ matches 0 run data modify storage p-storage _[0].data.item_actionbar append value '[{"text":"[","color": "white"},{"text":"____________________","color": "gray"},{"text":"]","color": "white"}]'
