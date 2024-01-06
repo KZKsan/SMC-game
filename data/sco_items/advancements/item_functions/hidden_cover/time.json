@@ -1,0 +1,33 @@
+{
+    "criteria": {
+        "time": {
+            "trigger": "tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "inverted",
+                        "term": {
+                            "condition": "entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "nbt": "{Tags:[\"hidden_cover.run\"]}"
+                            }
+                        }
+                    },
+                    {
+                        "condition": "entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "hidden_cover.time": {
+                                "min": 1
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "sco_items:item_functions/hidden_cover/time"
+    }
+}

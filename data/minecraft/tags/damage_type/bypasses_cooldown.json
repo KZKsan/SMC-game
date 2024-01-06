@@ -1,5 +1,6 @@
 {
     "values": [
-        "wither"
+        "wither",
+        "sco_items:item_functions/enchant/smite"
     ]
 }

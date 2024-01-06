@@ -1,0 +1,126 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "iron_chestplate",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": {
+                                "text": "パワーアーマー[Attack]",
+                                "italic": false,
+                                "color": "red"
+                            }
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore": [
+                                "着用者の力をアシストする装備",
+                                "",
+                                {
+                                    "translate": "item.modifiers.chest",
+                                    "color": "gray",
+                                    "italic": false
+                                },
+                                [
+                                    {
+                                        "translate": "attribute.name.generic.armor",
+                                        "color": "blue",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": " +6",
+                                        "color": "blue",
+                                        "italic": false
+                                    }
+                                ],
+                                [
+                                    {
+                                        "translate": "attribute.name.generic.attack_damage",
+                                        "color": "blue",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": " +40%",
+                                        "color": "blue",
+                                        "italic": false
+                                    }
+                                ],
+                                [
+                                    {
+                                        "translate": "attribute.name.generic.attack_speed",
+                                        "color": "blue",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": " +40%",
+                                        "color": "blue",
+                                        "italic": false
+                                    }
+                                ],
+                                [
+                                    {
+                                        "translate": "attribute.name.generic.movement_speed",
+                                        "color": "red",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": " -100%",
+                                        "color": "red",
+                                        "italic": false
+                                    }
+                                ]
+                            ]
+                        },
+                        {
+                            "function": "set_attributes",
+                            "modifiers": [
+                                {
+                                    "slot": "chest",
+                                    "amount": 6,
+                                    "operation": "addition",
+                                    "attribute": "generic.armor",
+                                    "name": ""
+                                },
+                                {
+                                    "slot": "chest",
+                                    "amount": 0.4,
+                                    "operation": "multiply_total",
+                                    "attribute": "generic.attack_damage",
+                                    "name": ""
+                                },
+                                {
+                                    "slot": "chest",
+                                    "amount": 0.3,
+                                    "operation": "multiply_total",
+                                    "attribute": "generic.attack_speed",
+                                    "name": ""
+                                },
+                                {
+                                    "slot": "chest",
+                                    "amount": -1,
+                                    "operation": "multiply_total",
+                                    "attribute": "generic.movement_speed",
+                                    "name": ""
+                                }
+                            ]
+                        },
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "unbreaking" :3
+                            }
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{item_functions:{using_damage:{active:1b,tick:0,interval:5,damage:5,max_damage:240}},Trim: {material: \"redstone\", pattern: \"dune\"},HideFlags:130}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

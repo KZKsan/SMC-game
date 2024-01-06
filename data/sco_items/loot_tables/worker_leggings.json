@@ -5,54 +5,50 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "diamond_sword",
+                    "name": "leather_leggings",
                     "functions": [
                         {
                             "function": "set_name",
                             "name": {
-                                "text": "次元剣",
-                                "italic": false
+                                "text": "勤労のズボン",
+                                "italic": false,
+                                "color": "white"
                             }
                         },
                         {
                             "function": "set_lore",
                             "lore": [
-                                "攻撃後、時空の影響を受けている敵にはダメージが通らない。",
-                                "",
-                                [
-                                    {
-                                        "translate": "effect.minecraft.absorption",
-                                        "italic": false,
-                                        "color": "#AA0000"
-                                    },
-                                    " A:5, D:3s"
-                                ],
+                                {
+                                    "text": "不死者の呪い",
+                                    "color": "red",
+                                    "italic": false
+                                },
                                 "",
                                 {
-                                    "translate": "item.modifiers.mainhand",
+                                    "translate": "item.modifiers.chest",
                                     "color": "gray",
                                     "italic": false
                                 },
                                 [
                                     {
-                                        "translate": "attribute.name.generic.attack_speed",
-                                        "color": "red",
+                                        "translate": "attribute.name.generic.armor",
+                                        "color": "blue",
                                         "italic": false
                                     },
                                     {
-                                        "text": " -60%",
-                                        "color": "red",
+                                        "text": " +3",
+                                        "color": "blue",
                                         "italic": false
                                     }
                                 ],
                                 [
                                     {
-                                        "translate": "attribute.name.generic.attack_damage",
+                                        "translate": "attribute.name.generic.movement_speed",
                                         "color": "blue",
                                         "italic": false
                                     },
                                     {
-                                        "text": " +12",
+                                        "text": " +50%",
                                         "color": "blue",
                                         "italic": false
                                     }
@@ -63,18 +59,18 @@
                             "function": "set_attributes",
                             "modifiers": [
                                 {
-                                    "attribute": "generic.attack_speed",
-                                    "name": "",
-                                    "amount": -0.6,
-                                    "operation": "multiply_total",
-                                    "slot": "mainhand"
+                                    "slot": "legs",
+                                    "amount": 3,
+                                    "operation": "addition",
+                                    "attribute": "generic.armor",
+                                    "name": ""
                                 },
                                 {
-                                    "attribute": "generic.attack_damage",
-                                    "name": "",
-                                    "amount": 12,
-                                    "operation": "addition",
-                                    "slot": "mainhand"
+                                    "slot": "legs",
+                                    "amount": 0.5,
+                                    "operation": "multiply_total",
+                                    "attribute": "generic.movement_speed",
+                                    "name": ""
                                 }
                             ]
                         },
@@ -86,7 +82,7 @@
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{HideFlags:2,item_functions:{dimensional_sword:1b}}"
+                            "tag": "{item_functions:{undead:1b},HideFlags:66,display:{color:4144722}}"
                         }
                     ]
                 }

@@ -1,0 +1,151 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "iron_chestplate",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": {
+                                "text": "黒霊騎士の鎧",
+                                "italic": false,
+                                "color": "dark_purple"
+                            }
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore": [
+                                {
+                                    "text": "不死者の呪い",
+                                    "color": "red",
+                                    "italic": false
+                                },
+                                "",
+                                "何か不気味な雰囲気をまとう鎧",
+                                "",
+                                {
+                                    "translate": "item.modifiers.chest",
+                                    "color": "gray",
+                                    "italic": false
+                                },
+                                [
+                                    {
+                                        "translate": "attribute.name.generic.armor",
+                                        "color": "blue",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": " +10",
+                                        "color": "blue",
+                                        "italic": false
+                                    }
+                                ],
+                                [
+                                    {
+                                        "translate": "attribute.name.generic.armor_toughness",
+                                        "color": "blue",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": " +8",
+                                        "color": "blue",
+                                        "italic": false
+                                    }
+                                ],
+                                [
+                                    {
+                                        "translate": "attribute.name.generic.max_health",
+                                        "color": "blue",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": " +16",
+                                        "color": "blue",
+                                        "italic": false
+                                    }
+                                ],
+                                [
+                                    {
+                                        "translate": "attribute.name.generic.knockback_resistance",
+                                        "color": "blue",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": " +0.5",
+                                        "color": "blue",
+                                        "italic": false
+                                    }
+                                ],
+                                [
+                                    {
+                                        "translate": "attribute.name.generic.movement_speed",
+                                        "color": "red",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": " -10%",
+                                        "color": "red",
+                                        "italic": false
+                                    }
+                                ]
+                            ]
+                        },
+                        {
+                            "function": "set_attributes",
+                            "modifiers": [
+                                {
+                                    "slot": "chest",
+                                    "amount": 10,
+                                    "operation": "addition",
+                                    "attribute": "generic.armor",
+                                    "name": ""
+                                },
+                                {
+                                    "slot": "chest",
+                                    "amount": 8,
+                                    "operation": "addition",
+                                    "attribute": "generic.armor_toughness",
+                                    "name": ""
+                                },
+                                {
+                                    "slot": "chest",
+                                    "amount": 16,
+                                    "operation": "addition",
+                                    "attribute": "generic.max_health",
+                                    "name": ""
+                                },
+                                {
+                                    "slot": "chest",
+                                    "amount": 0.5,
+                                    "operation": "addition",
+                                    "attribute": "generic.knockback_resistance",
+                                    "name": ""
+                                },
+                                {
+                                    "slot": "chest",
+                                    "amount": -0.1,
+                                    "operation": "multiply_total",
+                                    "attribute": "generic.movement_speed",
+                                    "name": ""
+                                }
+                            ]
+                        },
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "projectile_protection": 7
+                            }
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{item_functions:{undead:1b},HideFlags:130,Trim: {material: \"minecraft:netherite\", pattern: \"minecraft:silence\"}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
