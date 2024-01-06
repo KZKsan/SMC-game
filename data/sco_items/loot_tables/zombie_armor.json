@@ -5,43 +5,39 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "diamond_sword",
+                    "name": "leather_chestplate",
                     "functions": [
                         {
                             "function": "set_name",
                             "name": {
-                                "text": "次元剣",
-                                "italic": false
+                                "text": "ゾンビの鎧",
+                                "italic": false,
+                                "color": "dark_green"
                             }
                         },
                         {
                             "function": "set_lore",
                             "lore": [
-                                "攻撃後、時空の影響を受けている敵にはダメージが通らない。",
-                                "",
-                                [
-                                    {
-                                        "translate": "effect.minecraft.absorption",
-                                        "italic": false,
-                                        "color": "#AA0000"
-                                    },
-                                    " A:5, D:3s"
-                                ],
+                                {
+                                    "text": "不死者の呪い",
+                                    "color": "red",
+                                    "italic": false
+                                },
                                 "",
                                 {
-                                    "translate": "item.modifiers.mainhand",
+                                    "translate": "item.modifiers.chest",
                                     "color": "gray",
                                     "italic": false
                                 },
                                 [
                                     {
-                                        "translate": "attribute.name.generic.attack_speed",
-                                        "color": "red",
+                                        "translate": "attribute.name.generic.armor",
+                                        "color": "blue",
                                         "italic": false
                                     },
                                     {
-                                        "text": " -60%",
-                                        "color": "red",
+                                        "text": " +6",
+                                        "color": "blue",
                                         "italic": false
                                     }
                                 ],
@@ -52,7 +48,19 @@
                                         "italic": false
                                     },
                                     {
-                                        "text": " +12",
+                                        "text": " +10%",
+                                        "color": "blue",
+                                        "italic": false
+                                    }
+                                ],
+                                [
+                                    {
+                                        "translate": "attribute.name.generic.attack_speed",
+                                        "color": "blue",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": " +5%",
                                         "color": "blue",
                                         "italic": false
                                     }
@@ -63,18 +71,25 @@
                             "function": "set_attributes",
                             "modifiers": [
                                 {
-                                    "attribute": "generic.attack_speed",
-                                    "name": "",
-                                    "amount": -0.6,
-                                    "operation": "multiply_total",
-                                    "slot": "mainhand"
+                                    "slot": "chest",
+                                    "amount": 6,
+                                    "operation": "addition",
+                                    "attribute": "generic.armor",
+                                    "name": ""
                                 },
                                 {
+                                    "slot": "chest",
+                                    "amount": 0.1,
+                                    "operation": "multiply_total",
                                     "attribute": "generic.attack_damage",
-                                    "name": "",
-                                    "amount": 12,
-                                    "operation": "addition",
-                                    "slot": "mainhand"
+                                    "name": ""
+                                },
+                                {
+                                    "slot": "chest",
+                                    "amount": 0.05,
+                                    "operation": "multiply_total",
+                                    "attribute": "generic.attack_speed",
+                                    "name": ""
                                 }
                             ]
                         },
@@ -86,7 +101,7 @@
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{HideFlags:2,item_functions:{dimensional_sword:1b}}"
+                            "tag": "{item_functions:{undead:1b},HideFlags:66,display:{color:13830}}"
                         }
                     ]
                 }

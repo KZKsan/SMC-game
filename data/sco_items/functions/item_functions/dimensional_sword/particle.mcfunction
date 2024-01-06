@@ -1,6 +1,6 @@
 #>sco_items:item_functions/dimensional_sword/particle
 #@within sco_items:item_functions/dimensional_sword/hurt
-effect give @e[tag=hurt_entity,distance=..17] absorption 3 4
+effect give @e[tag=hurt_entity,distance=..17] absorption 3 5
 particle block obsidian ~ ~1 ~ 0.1 1 0.1 0.1 20
 particle item ender_eye ~ ~1 ~ 0.1 0.3 0.1 0.1 5
 particle block black_stained_glass ~ ~1 ~ 0.1 1 0.1 0.2 10
