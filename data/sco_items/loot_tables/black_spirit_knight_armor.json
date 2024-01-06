@@ -50,7 +50,7 @@
                                         "italic": false
                                     },
                                     {
-                                        "text": " +3",
+                                        "text": " +8",
                                         "color": "blue",
                                         "italic": false
                                     }
@@ -62,7 +62,7 @@
                                         "italic": false
                                     },
                                     {
-                                        "text": " +20",
+                                        "text": " +16",
                                         "color": "blue",
                                         "italic": false
                                     }
@@ -105,14 +105,14 @@
                                 },
                                 {
                                     "slot": "chest",
-                                    "amount": 3,
+                                    "amount": 8,
                                     "operation": "addition",
                                     "attribute": "generic.armor_toughness",
                                     "name": ""
                                 },
                                 {
                                     "slot": "chest",
-                                    "amount": 20,
+                                    "amount": 16,
                                     "operation": "addition",
                                     "attribute": "generic.max_health",
                                     "name": ""
@@ -136,7 +136,7 @@
                         {
                             "function": "set_enchantments",
                             "enchantments": {
-                                "projectile_protection": 4
+                                "projectile_protection": 7
                             }
                         },
                         {

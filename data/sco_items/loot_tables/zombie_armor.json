@@ -60,7 +60,7 @@
                                         "italic": false
                                     },
                                     {
-                                        "text": " +5%",
+                                        "text": " +20%",
                                         "color": "blue",
                                         "italic": false
                                     }
@@ -86,7 +86,7 @@
                                 },
                                 {
                                     "slot": "chest",
-                                    "amount": 0.05,
+                                    "amount": 0.2,
                                     "operation": "multiply_total",
                                     "attribute": "generic.attack_speed",
                                     "name": ""
@@ -96,6 +96,7 @@
                         {
                             "function": "set_enchantments",
                             "enchantments": {
+                                "protection": 3,
                                 "unbreaking": 10
                             }
                         },
