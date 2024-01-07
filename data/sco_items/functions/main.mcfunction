@@ -11,6 +11,11 @@
     execute as @e[type=area_effect_cloud,tag=!already,nbt={effects:[{id:"minecraft:glowing",amplifier:49b}]}] run function sco_items:item_functions/others/magic_bullet_of_light
     execute as @e[type=potion,nbt={Item:{tag:{item_functions:{mini_healing_potion:1b}}}}] positioned as @s run function sco_items:item_functions/others/mini_healing_potion
 
+# custom_effect
+
+    ##不幸の効果はここで消去する    
+    effect clear @e[nbt={active_effects:[{id:"minecraft:unluck"}]}] unluck
+
 # crows_sorrow
     execute as @a unless score @s crows_sorrow_count matches 0.. run scoreboard players set @s crows_sorrow_count 0
     execute as @a unless score @s crows_sorrow_cooldown matches 0.. run scoreboard players set @s crows_sorrow_cooldown 0

@@ -53,6 +53,12 @@ fill -366 -46 -283 -263 -49 -412 minecraft:jungle_trapdoor[facing=south,half=bot
 fill -366 -46 -283 -263 -49 -412 minecraft:jungle_trapdoor[facing=east,half=bottom,open=true] replace minecraft:jungle_trapdoor[facing=east]
 fill -366 -46 -283 -263 -49 -412 minecraft:jungle_trapdoor[facing=west,half=bottom,open=true] replace minecraft:jungle_trapdoor[facing=west]
 
+setblock -278 -46 -374 minecraft:campfire[facing=west,lit=true,signal_fire=false,waterlogged=false]{CookingTimes:[I;0,0,0,0],CookingTotalTimes:[I;0,0,0,0],Items:[]}
+setblock -255 -47 -355 minecraft:campfire[facing=north,lit=true,signal_fire=false,waterlogged=false]{CookingTimes:[I;0,0,0,0],CookingTotalTimes:[I;0,0,0,0],Items:[]}
+setblock -255 -47 -339 minecraft:campfire[facing=east,lit=true,signal_fire=false,waterlogged=false]{CookingTimes:[I;0,0,0,0],CookingTotalTimes:[I;0,0,0,0],Items:[]}
+setblock -285 -47 -336 minecraft:campfire[facing=south,lit=true,signal_fire=false,waterlogged=false]{CookingTimes:[I;0,0,0,0],CookingTotalTimes:[I;0,0,0,0],Items:[]}
+setblock -302 -47 -359 minecraft:campfire[facing=south,lit=true,signal_fire=false,waterlogged=false]{CookingTimes:[I;0,0,0,0],CookingTotalTimes:[I;0,0,0,0],Items:[]}
+
 place template sco:stage_data/sakura_mansion/0 -357 -46 -316
 place template sco:stage_data/sakura_mansion/1 -357 -46 -361
 place template sco:stage_data/sakura_mansion/2 -357 -46 -394
