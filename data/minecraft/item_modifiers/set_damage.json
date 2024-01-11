@@ -1,0 +1,14 @@
+{
+    "function": "copy_nbt",
+    "ops": [
+        {
+            "op": "replace",
+            "source": "_",
+            "target": "Damage"
+        }
+    ],
+    "source": {
+        "type": "storage",
+        "source": "_"
+    }
+}
