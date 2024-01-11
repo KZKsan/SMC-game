@@ -11,6 +11,18 @@
                         "predicate": {
                             "nbt": "{SelectedItem:{tag:{Enchantments:[{id:\"minecraft:smite\"}]}}}"
                         }
+                    },
+                    {
+                        "condition": "inverted",
+                        "term": {
+                            "condition": "entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "effects": {
+                                    "weakness":{}
+                                }
+                            }
+                        }
                     }
                 ],
                 "damage": {
