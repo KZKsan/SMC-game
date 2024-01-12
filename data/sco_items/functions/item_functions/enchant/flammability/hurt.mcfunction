@@ -1,5 +1,7 @@
 #>sco_items:item_functions/enchant/flammability/hurt
 #@within advancement sco_items:item_functions/enchant/flammability/hurt
+execute unless data entity @s Inventory[{Slot:100b}].tag.item_functions.enchant[{id:"flammability"}] unless data entity @s Inventory[{Slot:101b}].tag.item_functions.enchant[{id:"flammability"}] unless data entity @s Inventory[{Slot:102b}].tag.item_functions.enchant[{id:"flammability"}] unless data entity @s Inventory[{Slot:103b}].tag.item_functions.enchant[{id:"flammability"}] run return run advancement revoke @s only sco_items:item_functions/enchant/flammability/hurt
+
 scoreboard players set #lvl _ 1
 scoreboard players set # _ 0
 execute if data entity @s Inventory[{Slot:100b}].tag.item_functions.enchant[{id:"flammability"}] store result score # _ run data get entity @s Inventory[{Slot:100b}].tag.item_functions.enchant[{id:"flammability"}].lvl
@@ -24,10 +26,6 @@ execute if entity @s[advancements={sco_items:item_functions/enchant/flammability
 execute if entity @s[advancements={sco_items:item_functions/enchant/flammability/hurt={in_soul_fire=true}}] run data modify storage _ data_fetch.id set value "in_fire"
 execute if entity @s[advancements={sco_items:item_functions/enchant/flammability/hurt={hot_floor=true}}] run data modify storage _ data_fetch.id set value "hot_floor"
 execute if entity @s[advancements={sco_items:item_functions/enchant/flammability/hurt={lava=true}}] run data modify storage _ data_fetch.id set value "lava"
-
-execute if entity @s[advancements={sco_items:item_functions/enchant/flammability/hurt={in_fire=true}}] run say in
-execute if entity @s[advancements={sco_items:item_functions/enchant/flammability/hurt={on_fire=true}}] run say on
-execute if entity @s[advancements={sco_items:item_functions/enchant/flammability/hurt={in_soul_fire=true}}] run say soul
 
 function sco_items:item_functions/enchant/flammability/macro with storage _ data_fetch
 
