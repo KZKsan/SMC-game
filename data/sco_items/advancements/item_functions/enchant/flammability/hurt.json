@@ -15,6 +15,33 @@
                 }
             }
         },
+        "in_soul_fire": {
+            "trigger": "entity_hurt_player",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "location_check",
+                        "predicate": {
+                            "block": {
+                                "blocks": [
+                                    "soul_fire","soul_campfire"
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "sco_items:flammability/in_fire",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
         "on_fire": {
             "trigger": "entity_hurt_player",
             "conditions": {
@@ -62,7 +89,7 @@
         }
     },
     "requirements": [
-        ["in_fire","on_fire","hot_floor","lava"]
+        ["in_fire","in_soul_fire","on_fire","hot_floor","lava"]
     ],
     "rewards": {
         "function": "sco_items:item_functions/enchant/flammability/hurt"
