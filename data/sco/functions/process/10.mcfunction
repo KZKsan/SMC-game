@@ -14,9 +14,9 @@ function sco:player/team/team_info/player_count/set_display
 function sco:player/team/team_info/player_count/
 
 data remove storage sco:data penalty_area.struct
-execute if data storage sco:data penalty_area.input.death run function sco:regine/penalty_area/death/input
-execute unless data storage sco:data penalty_area.input.penalty if data storage sco:data penalty_area.input.death run data modify storage sco:data penalty_area.input.penalty set from storage sco:data penalty_area.input.death
-execute if data storage sco:data penalty_area.input.penalty run function sco:regine/penalty_area/penalty/input
+execute if data storage sco:data penalty_area.input.death[0] run function sco:regine/penalty_area/death/input/
+execute unless data storage sco:data penalty_area.input.penalty[0] if data storage sco:data penalty_area.input.death[0] run data modify storage sco:data penalty_area.input.penalty set from storage sco:data penalty_area.input.death
+execute if data storage sco:data penalty_area.input.penalty[0] run function sco:regine/penalty_area/penalty/input/
 function sco:regine/penalty_area/reset_flag/all
 
 #プロセス終了
