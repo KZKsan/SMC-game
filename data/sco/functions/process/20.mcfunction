@@ -11,7 +11,7 @@ execute if score #runtime game matches 1 run data modify storage sco:data regine
 execute if score #runtime game matches 1 as @a[team=spectator] run function sco:regine/block_area/set_score
 execute if score #runtime game matches 1.. as @a[team=spectator,predicate=!sco:regine/block_area/scores] run function sco:regine/block_area/set_score
 execute if score #runtime game matches 1.. run function sco:player/team/team_info/player_count/
-execute if score #runtime game matches 1.. as @a[scores={regione.penalty_area.penalty.time=1..}] run function sco:regine/penalty_area/reset_flag/single
+execute if score #runtime game matches 1 as @a[scores={regione.penalty_area.penalty.time=1..}] run function sco:regine/penalty_area/reset_flag/single
 
 
 #プロセスID
@@ -22,6 +22,7 @@ execute as @a[team=spectator,scores={leave_game=1..}] run function sco:player/re
 execute as @a[predicate=sco:team_join,team=!spectator] if score @s processID matches 11 run clear @s
 execute as @a[predicate=sco:team_join,team=!spectator] if score @s processID matches 11 run function sco_items:kit/default
 execute as @a[predicate=sco:team_join,team=!spectator] if score @s processID matches 11 run function sco:tp/shop/macro/single_player with storage sco:data
+execute as @a[scores={regione.penalty_area.penalty.time=1..}] if score @s processID matches 11 run function sco:regine/penalty_area/reset_flag/single
 execute as @a[predicate=sco:team_join,team=!spectator] if score @s processID matches 11 run scoreboard players set @s processID 20
 #rg
 function sco:process/penalty_area/shop

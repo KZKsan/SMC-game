@@ -3,8 +3,8 @@
 data modify storage sco:input stage set value "deep_cave"
 data modify storage sco:input shop set value ""
 data modify storage sco:input options set value {reset:1b}
-data modify storage sco:input penalty_area.input.flags.penalty set value {stage:0b,shop:0b,sudden_death:1b}
-data modify storage sco:input penalty_area.input.flags.death set value {stage:0b,shop:0b,sudden_death:1b}
+data modify storage sco:input penalty_area.input.flags.penalty set value {stage:0b,shop:1b,sudden_death:1b}
+data modify storage sco:input penalty_area.input.flags.death set value {stage:0b,shop:1b,sudden_death:1b}
 data modify storage sco:input regine_area.stage set value {1:[-460, -2, -677],2:[-357, -57, -578]}
 data modify storage sco:input stage_name set value '{"text":"deep_cave"}'
 data modify storage sco:input stage_description set value '{"text":"地下空洞"}'
