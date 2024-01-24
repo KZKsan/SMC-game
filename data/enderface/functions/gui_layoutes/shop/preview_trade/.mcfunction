@@ -13,6 +13,7 @@ execute if data storage p-storage _[0].data.preview_trade.trade.tag.trade.trade_
 item replace entity @s enderchest.16 from entity @e[tag=gui_layout_item,distance=..2,limit=1] container.0
 item modify entity @s enderchest.16 enderface:enderfaceitem
 item modify entity @s enderchest.16 enderface:shop/click_to_trade
+execute if data storage p-storage _[0].data.preview_trade.trade.tag.trade.sell[1] run function enderface:gui_layoutes/shop/preview_trade/add_sell_icon/
 
 loot replace entity @s enderchest.15 loot enderface:shop/right_arrow
 
