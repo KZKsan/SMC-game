@@ -20,6 +20,15 @@
                             "lore": [
                                 "着用者の力をアシストする装備",
                                 "",
+                                [
+                                    {
+                                        "translate": "effect.minecraft.dolphins_grace",
+                                        "italic": false,
+                                        "color": "#00CCAA"
+                                    },
+                                    " A:9, D:1s"
+                                ],
+                                "",
                                 {
                                     "translate": "item.modifiers.chest",
                                     "color": "gray",
@@ -32,7 +41,7 @@
                                         "italic": false
                                     },
                                     {
-                                        "text": " +300%",
+                                        "text": " +200%",
                                         "color": "blue",
                                         "italic": false
                                     }
@@ -44,7 +53,7 @@
                             "modifiers": [
                                 {
                                     "slot": "chest",
-                                    "amount": 3,
+                                    "amount": 2,
                                     "operation": "multiply_total",
                                     "attribute": "generic.movement_speed",
                                     "name": ""
@@ -59,7 +68,7 @@
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{item_functions:{using_damage:{active:1b,tick:0,interval:5,damage:2,max_damage:240},power_armor:\"speed\"},Trim: {material: \"lapis\", pattern: \"rib\"},HideFlags:130}"
+                            "tag": "{item_functions:{using_damage:{active:1b,tick:0,interval:3,damage:4,max_damage:240},power_armor:\"speed\"},Trim: {material: \"lapis\", pattern: \"rib\"},HideFlags:130}"
                         }
                     ]
                 }
