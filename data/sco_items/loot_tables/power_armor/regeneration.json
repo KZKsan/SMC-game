@@ -20,6 +20,15 @@
                             "lore": [
                                 "着用者の力をアシストする装備",
                                 "",
+                                [
+                                    {
+                                        "translate": "effect.minecraft.regeneration",
+                                        "italic": false,
+                                        "color": "#00CCAA"
+                                    },
+                                    " A:4, D:1s"
+                                ],
+                                "",
                                 {
                                     "translate": "item.modifiers.chest",
                                     "color": "gray",
@@ -59,7 +68,7 @@
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{item_functions:{using_damage:{active:1b,tick:0,interval:5,damage:5,max_damage:240}},Trim: {material: \"emerald\", pattern: \"raiser\"},HideFlags:130}"
+                            "tag": "{item_functions:{using_damage:{active:1b,tick:0,interval:5,damage:8,max_damage:240},power_armor:\"regeneration\"},Trim: {material: \"emerald\", pattern: \"raiser\"},HideFlags:130}"
                         }
                     ]
                 }
