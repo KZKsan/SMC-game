@@ -5,19 +5,18 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "ender_eye",
+                    "name": "flower_banner_pattern",
                     "functions": [
                         {
                             "function": "set_name",
                             "name": {
-                                "text": "魔弾の素",
-                                "italic": false,
-                                "color": "white"
+                                "text": "・付属",
+                                "italic": false
                             }
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{Enchantments:[{}]}"
+                            "tag":"{enderfaceItem:1b,HideFlags:32}"
                         }
                     ]
                 }

@@ -1,13 +1,13 @@
-#>enderface:gui_layoutes/shop/set_trade_data/single_data/reaper_robe
+#>enderface:gui_layoutes/shop/set_trade_data/single_data/reaper_scythe
 #@within enderface:gui_layoutes/shop/set_trade_data/category/**
 
 #>
 #@private
 #declare loot_table sco_items:reaper_robe
 #declare loot_table sco_items:reaper_scythe
-loot replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 loot sco_items:reaper_robe
+loot replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 loot sco_items:reaper_scythe
 function enderface:gui_layoutes/shop/set_trade_data/wirite_data/icon/preview
-loot replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.1 loot sco_items:reaper_scythe
+loot replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.1 loot sco_items:reaper_robe
 function enderface:gui_layoutes/shop/set_trade_data/wirite_data/sell
 function enderface:gui_layoutes/shop/set_trade_data/single_data/reaper_item
 data modify storage sco:shop sell_count set value {click:1,sneak:1}

@@ -5,62 +5,60 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "trident",
+                    "name": "leather_boots",
                     "functions": [
                         {
                             "function": "set_name",
                             "name": {
-                                "text": "トリシューラ",
+                                "text": "フォールブーツ",
                                 "italic": false
                             }
                         },
                         {
                             "function": "set_lore",
                             "lore": [
-                                "呪いのおまけつき",
                                 "",
                                 {
-                                    "translate": "item.modifiers.mainhand",
+                                    "translate": "item.modifiers.feet",
                                     "color": "gray",
                                     "italic": false
                                 },
                                 [
-                                    " ",
                                     {
-                                        "translate": "attribute.name.generic.attack_damage",
-                                        "color": "dark_green",
+                                        "translate": "attribute.name.generic.movement_speed",
+                                        "color": "blue",
                                         "italic": false
                                     },
                                     {
-                                        "text": " 9",
-                                        "color": "dark_green",
-                                        "italic": false
-                                    }
-                                ],
-                                [
-                                    " ",
-                                    {
-                                        "translate": "attribute.name.generic.attack_speed",
-                                        "color": "dark_green",
-                                        "italic": false
-                                    },
-                                    {
-                                        "text": " 1.1",
-                                        "color": "dark_green",
+                                        "text": " +1%",
+                                        "color": "blue",
                                         "italic": false
                                     }
                                 ]
                             ]
                         },
                         {
+                            "function": "set_attributes",
+                            "modifiers": [
+                                {
+                                    "attribute": "generic.movement_speed",
+                                    "name": "",
+                                    "amount": 0.01,
+                                    "operation": "multiply_total",
+                                    "slot": "feet"
+                                }
+                            ]
+                        },
+                        {
                             "function": "set_enchantments",
                             "enchantments": {
-                                "riptide": 2
+                                "unbreaking": 10,
+                                "feather_falling": 3
                             }
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{HideFlags:34}"
+                            "tag": "{HideFlags:66,display:{color:16777215}}"
                         }
                     ]
                 }
