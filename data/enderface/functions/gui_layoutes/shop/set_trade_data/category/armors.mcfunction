@@ -8,6 +8,7 @@ function enderface:gui_layoutes/shop/set_trade_data/single_data/robe_of_regenera
 function enderface:gui_layoutes/shop/set_trade_data/single_data/diamond_armor
 function enderface:gui_layoutes/shop/set_trade_data/single_data/gargoyle_plate
 function enderface:gui_layoutes/shop/set_trade_data/single_data/idaten_armor
+function enderface:gui_layoutes/shop/set_trade_data/single_data/power_armor
 function enderface:gui_layoutes/shop/set_trade_data/single_data/black_spirit_knight_armor
 function enderface:gui_layoutes/shop/set_trade_data/single_data/zombie_armor
 function enderface:gui_layoutes/shop/set_trade_data/single_data/worker_leggings
