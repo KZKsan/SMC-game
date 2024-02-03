@@ -27,9 +27,8 @@ function sco:process/penalty_area/stage
 
 #テレポート
 execute if score #runtime game matches 1 run function sco:tp/stage/macro/all_player with storage sco:data
-execute if score #runtime game matches 1 run data modify storage sco:data regine_area_new set from storage sco:data regine_area.stage
-execute if score #runtime game matches 1 as @a[team=spectator] run function sco:regine/block_area/set_score
-execute as @a[team=spectator,tag=!spectator] run function sco:regine/block_area/set_score
+execute if score #runtime game matches 1 as @a[team=spectator] run function sco:regine/block_area/reset_score
+execute as @a[team=spectator,tag=!spectator] run function sco:regine/block_area/reset_score
 execute as @a[team=spectator,tag=!spectator] run function sco:player/team/spectator
 execute as @a[team=spectator,tag=!spectator] run function sco:tp/stage/macro/single_player with storage sco:data
 execute as @a[team=spectator,tag=!spectator] run function sco:player/team/remove_team_tag
