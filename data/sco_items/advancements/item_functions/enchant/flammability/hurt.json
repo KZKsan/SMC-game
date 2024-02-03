@@ -1,0 +1,97 @@
+{
+    "criteria": {
+        "in_fire": {
+            "trigger": "entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "sco_items:flammability/in_fire",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "in_soul_fire": {
+            "trigger": "entity_hurt_player",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "location_check",
+                        "predicate": {
+                            "block": {
+                                "blocks": [
+                                    "soul_fire","soul_campfire"
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "sco_items:flammability/in_fire",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "on_fire": {
+            "trigger": "entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "sco_items:flammability/on_fire",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "hot_floor": {
+            "trigger": "entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "sco_items:flammability/hot_floor",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "lava": {
+            "trigger": "entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "sco_items:flammability/lava",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "requirements": [
+        ["in_fire","in_soul_fire","on_fire","hot_floor","lava"]
+    ],
+    "rewards": {
+        "function": "sco_items:item_functions/enchant/flammability/hurt"
+    }
+}

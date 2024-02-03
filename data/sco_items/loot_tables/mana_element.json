@@ -1,0 +1,27 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "ghast_tear",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": {
+                                "text": "マナの素",
+                                "italic": false,
+                                "color": "white"
+                            }
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{Enchantments:[{}]}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

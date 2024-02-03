@@ -25,5 +25,6 @@ function enderface:gui_layoutes/shop/set_trade_data/single_data/potion/magic_bul
 function enderface:gui_layoutes/shop/set_trade_data/single_data/potion/magic_bullet_of_anti_gravity
 function enderface:gui_layoutes/shop/set_trade_data/single_data/potion/magic_bullet_of_confusion
 
+function enderface:gui_layoutes/shop/set_trade_data/single_data/potion/mana_kits
 
 data modify storage sco:shop potions set from storage sco:shop trade_data
