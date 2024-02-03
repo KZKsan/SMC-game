@@ -3,7 +3,7 @@
 data modify storage sco:input stage set value "shekenadam"
 data modify storage sco:input shop set value ""
 data modify storage sco:input options set value {reset:1b}
-data modify storage sco:input regine_area.stage set value {1:[-271, -7, -131],2:[-346, -49, -235]}
+data modify storage sco:input block_area.input append value {name:"stage",1:[-271, -7, -131],2:[-346, -49, -235]}
 data modify storage sco:input penalty_area.input.flags.penalty set value {stage:1b,shop:1b,sudden_death:1b}
 data modify storage sco:input penalty_area.input.flags.death set value {stage:1b,shop:1b,sudden_death:1b}
 data modify storage sco:input penalty_area.input.death append value {name:"stage",1:[-346, -7, -235],2:[-271, -49, -131]}

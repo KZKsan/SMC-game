@@ -3,7 +3,8 @@
 data modify storage sco:input stage set value "endroll"
 data modify storage sco:input shop set value "endroll"
 data modify storage sco:input options set value {reset:1b,gimmick:true}
-data modify storage sco:input regine_area.stage set value {1:[-466, 15, -210],2:[-575, -64, -319]}
+data modify storage sco:input block_area.input append value {name:"stage",1:[-466, 15, -210],2:[-575, -64, -319]}
+data modify storage sco:input block_area.input append value {name:"shop",1:[-466, 15, -210],2:[-575, -64, -319]}
 data modify storage sco:input penalty_area.input.flags.penalty set value {stage:1b,shop:1b,sudden_death:1b}
 data modify storage sco:input penalty_area.input.flags.death set value {stage:1b,shop:1b,sudden_death:1b}
 data modify storage sco:input penalty_area.input.death append value {name:"stage",1:[-463, 15, -322],2:[-578, -84, -207]}
@@ -11,7 +12,6 @@ data modify storage sco:input penalty_area.input.penalty append value {name:"sta
 data modify storage sco:input penalty_area.input.death append value {name:"shop",1:[-463, 15, -322],2:[-578, -84, -207]}
 data modify storage sco:input penalty_area.input.penalty append value {name:"shop",1:[-463, 15, -322],2:[-578, -84, -207]}
 data modify storage sco:input stage_name set value '{"text":"エンドロール"}'
-data modify storage sco:input regine_area.shop set from storage sco:input regine_area.stage
 function sco:stage_data/sudden_death/
 
 execute store result storage sco:input options.time byte 1 run random value 0..2

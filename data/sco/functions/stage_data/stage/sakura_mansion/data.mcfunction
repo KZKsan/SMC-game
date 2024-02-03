@@ -3,7 +3,7 @@
 data modify storage sco:input stage set value "sakura_mansion"
 data modify storage sco:input shop set value ""
 data modify storage sco:input options set value {reset:1b}
-data modify storage sco:input regine_area.stage set value {1:[-246, -7, -427],2:[-385, -55, -267]}
+data modify storage sco:input block_area.input append value {name:"stage",1:[-246, -7, -427],2:[-385, -55, -267]}
 data modify storage sco:input penalty_area.input.flags.penalty set value {stage:1b,shop:1b,sudden_death:1b}
 data modify storage sco:input penalty_area.input.flags.death set value {stage:1b,shop:1b,sudden_death:1b}
 data modify storage sco:input penalty_area.input.death append value {name:"stage",1:[-246, -7, -427],2:[-385, -55, -267]}

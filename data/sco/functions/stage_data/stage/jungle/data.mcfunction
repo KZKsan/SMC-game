@@ -2,7 +2,7 @@
 #@within sco:stage_data/data_fetch
 data modify storage sco:input stage set value "jungle"
 data modify storage sco:input shop set value ""
-data modify storage sco:input regine_area.stage set value {1:[-404, -64, -57],2:[-451, -23, -104]}
+data modify storage sco:input block_area.input append value {name:"stage",1:[-404, -63, -57],2:[-451, -24, -104]}
 data modify storage sco:input penalty_area.input.flags.penalty set value {stage:1b,shop:1b,sudden_death:1b}
 data modify storage sco:input penalty_area.input.flags.death set value {stage:1b,shop:1b,sudden_death:1b}
 data modify storage sco:input penalty_area.input.death append value {name:"stage",1:[-403, -23, -56],2:[-452, -64, -105]}
