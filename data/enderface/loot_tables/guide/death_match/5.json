@@ -5,15 +5,18 @@
 			"entries": [
 				{
 					"type": "item",
-					"name": "paper",
+					"name": "flower_banner_pattern",
 					"functions": [
 						{
 							"function": "set_name",
 							"name": {
 								"text": "購入した装備やアイテムで敵と戦います",
-								"color": "white",
 								"italic": false
 							}
+						},
+						{
+							"function": "set_nbt",
+							"tag": "{enderfaceItem:1b,HideFlags:32}"
 						}
 					]
 				}

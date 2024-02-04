@@ -5,15 +5,18 @@
 			"entries": [
 				{
 					"type": "item",
-					"name": "paper",
+					"name": "flower_banner_pattern",
 					"functions": [
 						{
 							"function": "set_name",
 							"name": {
 								"text": "ショップで装備を購入します",
-								"color": "white",
 								"italic": false
 							}
+						},
+						{
+							"function": "set_nbt",
+							"tag": "{enderfaceItem:1b,HideFlags:32}"
 						}
 					]
 				}

@@ -5,7 +5,7 @@
 			"entries": [
 				{
 					"type": "item",
-					"name": "player_head",
+					"name": "netherite_axe",
 					"functions": [
 						{
 							"function": "set_name",
@@ -18,7 +18,7 @@
 						},
 						{
 							"function": "set_nbt",
-							"tag": "{SkullOwner:{Id:[I;844155936,1926123988,-1599649807,-1325986176],Properties:{textures:[{Value:\"e3RleHR1cmVzOntTS0lOOnt1cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzg2ZTgyNjM0ZmIyNTNiMjgwZjhiNTk4MTc3MmJlYjg0MGMyMzk1OGZhZjcwZDVkNjFjZTQ1YzQ5OWM0OGI4NCJ9fX0=\"}]}}}"
+							"tag": "{enderfaceItem:1b}"
 						}
 					]
 				}

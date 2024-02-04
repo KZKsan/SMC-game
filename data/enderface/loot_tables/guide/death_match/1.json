@@ -5,7 +5,7 @@
 			"entries": [
 				{
 					"type": "item",
-					"name": "player_head",
+					"name": "emerald",
 					"functions": [
 						{
 							"function": "set_name",
@@ -18,7 +18,7 @@
 						},
 						{
 							"function": "set_nbt",
-							"tag": "{SkullOwner:{Id:[I;485214324,-304261930,-1964876643,652915146],Properties:{textures:[{Value:\"e3RleHR1cmVzOntTS0lOOnt1cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODA4NjI4ODZlNDQ1NzMwOGJiZmQyYmRlYjgyMTJkYzY2ODcwYjcyOWQ4Mjk4NTcyY2JjNzcyMTNjY2Q2ZTJhYSJ9fX0=\"}]}}}"
+							"tag": "{enderfaceItem:1b}"
 						}
 					]
 				}
