@@ -17,6 +17,7 @@ function enderface:gui_layoutes/shop/set_trade_data/single_data/worker_leggings
 function enderface:gui_layoutes/shop/set_trade_data/single_data/power_boots
 function enderface:gui_layoutes/shop/set_trade_data/single_data/speed_boots
 function enderface:gui_layoutes/shop/set_trade_data/single_data/hard_boots
+function enderface:gui_layoutes/shop/set_trade_data/single_data/fall_boots
 function enderface:gui_layoutes/shop/set_trade_data/single_data/putuo_boots
 
 function enderface:gui_layoutes/shop/set_trade_data/single_data/shield
