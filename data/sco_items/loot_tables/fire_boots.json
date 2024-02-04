@@ -10,7 +10,7 @@
                         {
                             "function": "set_name",
                             "name": {
-                                "text": "フォールブーツ",
+                                "text": "ファイヤブーツ",
                                 "italic": false
                             }
                         },
@@ -25,12 +25,12 @@
                                 },
                                 [
                                     {
-                                        "translate": "attribute.name.generic.movement_speed",
+                                        "translate": "attribute.name.generic.armor",
                                         "color": "blue",
                                         "italic": false
                                     },
                                     {
-                                        "text": " +1%",
+                                        "text": " +0.2",
                                         "color": "blue",
                                         "italic": false
                                     }
@@ -41,10 +41,10 @@
                             "function": "set_attributes",
                             "modifiers": [
                                 {
-                                    "attribute": "generic.movement_speed",
+                                    "attribute": "generic.armor",
                                     "name": "",
-                                    "amount": 0.01,
-                                    "operation": "multiply_total",
+                                    "amount": 0.2,
+                                    "operation": "addition",
                                     "slot": "feet"
                                 }
                             ]
@@ -53,12 +53,12 @@
                             "function": "set_enchantments",
                             "enchantments": {
                                 "unbreaking": 10,
-                                "feather_falling": 2
+                                "fire_protection": 1
                             }
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{HideFlags:66,display:{color:16777215}}"
+                            "tag": "{HideFlags:66,display:{color:16751107}}"
                         }
                     ]
                 }
