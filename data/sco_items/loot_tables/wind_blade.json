@@ -90,7 +90,8 @@
                         {
                             "function": "set_enchantments",
                             "enchantments": {
-                                "knockback": 1
+                                "knockback": 1,
+                                "minecraft:smite": 2
                             }
                         },
                         {
