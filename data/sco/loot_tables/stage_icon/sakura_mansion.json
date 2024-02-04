@@ -17,7 +17,7 @@
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{click_events:{click_sounds:[{sound:\"ui.button.click\"}]},enderfaceItem:true}"
+                            "tag": "{enderfaceItem:true}"
                         }
                     ]
                 }

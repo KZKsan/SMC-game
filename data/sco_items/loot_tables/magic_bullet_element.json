@@ -11,8 +11,13 @@
                             "function": "set_name",
                             "name": {
                                 "text": "魔弾の素",
-                                "italic": false
+                                "italic": false,
+                                "color": "white"
                             }
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{Enchantments:[{}]}"
                         }
                     ]
                 }

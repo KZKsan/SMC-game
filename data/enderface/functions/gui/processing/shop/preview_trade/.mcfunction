@@ -9,4 +9,4 @@ data remove storage enderface:data _.trade.Slot
 data remove storage enderface:data _.trade.tag.display.Lore[-1]
 data remove storage enderface:data _.trade.tag.display.Lore[-1]
 data modify storage p-storage _[0].data.preview_trade set from storage enderface:data _
-playsound ui.button.click record @s ~ ~ ~ 1 1
+playsound ui.button.click record @s ~ ~ ~ 0.5 1

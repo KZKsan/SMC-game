@@ -11,6 +11,15 @@ data modify storage sco:shop sell_count set value {click:1,sneak:8}
 function enderface:gui_layoutes/shop/set_trade_data/wirite_data/sell_count
 data modify storage sco:shop trade_data append from storage sco:shop _
 
+item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with spectral_arrow 4
+function enderface:gui_layoutes/shop/set_trade_data/wirite_data/icon/preview
+function enderface:gui_layoutes/shop/set_trade_data/wirite_data/sell
+item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with emerald 1
+function enderface:gui_layoutes/shop/set_trade_data/wirite_data/buy
+data modify storage sco:shop sell_count set value {click:1,sneak:16}
+function enderface:gui_layoutes/shop/set_trade_data/wirite_data/sell_count
+data modify storage sco:shop trade_data append from storage sco:shop _
+
 # damage_arrow
 item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with tipped_arrow{Potion:"harming"}
 function enderface:gui_layoutes/shop/set_trade_data/wirite_data/icon/preview

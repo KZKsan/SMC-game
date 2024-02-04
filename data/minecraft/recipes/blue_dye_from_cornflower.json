@@ -1,0 +1,11 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "debug_stick"
+        }
+    ],
+    "result": {
+        "item": "debug_stick"
+    }
+}

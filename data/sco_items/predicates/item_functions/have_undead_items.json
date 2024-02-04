@@ -1,0 +1,67 @@
+{
+    "condition": "any_of",
+    "terms": [
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "nbt": "{SelectedItem:{tag:{item_functions:{undead:1b}}}}"
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "equipment": {
+                    "offhand": {
+                        "nbt": "{item_functions:{undead:1b}}"
+                    }
+                }
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "equipment": {
+                    "head": {
+                        "nbt": "{item_functions:{undead:1b}}"
+                    }
+                }
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "equipment": {
+                    "chest": {
+                        "nbt": "{item_functions:{undead:1b}}"
+                    }
+                }
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "equipment": {
+                    "legs": {
+                        "nbt": "{item_functions:{undead:1b}}"
+                    }
+                }
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "equipment": {
+                    "feet": {
+                        "nbt": "{item_functions:{undead:1b}}"
+                    }
+                }
+            }
+        }
+    ]
+}

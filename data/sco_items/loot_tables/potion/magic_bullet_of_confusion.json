@@ -10,7 +10,7 @@
                         {
                             "function": "set_name",
                             "name": {
-                                "text": "混乱の魔弾[WIP]",
+                                "text": "混乱の魔弾",
                                 "italic": false
                             }
                         },
@@ -25,7 +25,7 @@
                                     },
                                     "",
                                     {
-                                        "translate": "effect.level.2",
+                                        "translate": "potion.potency.2",
                                         "italic": false
                                     }, 
                                     {
@@ -42,7 +42,7 @@
                                     },
                                     "",
                                     {
-                                        "translate": "effect.level.1",
+                                        "translate": "potion.potency.1",
                                         "italic": false
                                     },
                                     {

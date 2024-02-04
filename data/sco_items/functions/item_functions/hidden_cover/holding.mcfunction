@@ -1,5 +1,5 @@
 #>sco_items:item_functions/hidden_cover/holding
-#
-execute if entity @s[predicate=sneak,tag=!hidden_cover.run,gamemode=!spectator] run function sco_items:item_functions/hidden_cover/leaves/set
-tag @s[predicate=sneak,tag=!hidden_cover.run,gamemode=!spectator] add hidden_cover.run
+#@within advancement sco_items:item_functions/hidden_cover/holding
+execute if entity @s[tag=!hidden_cover.lock] run function sco_items:item_functions/hidden_cover/run
+execute if entity @s[gamemode=!spectator] run function sco_items:item_functions/hidden_cover/actionbar/flag
 advancement revoke @s only sco_items:item_functions/hidden_cover/holding

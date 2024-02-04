@@ -13,6 +13,15 @@ gamemode adventure @a[predicate=sco:team_join,team=!spectator]
 function sco:player/team/team_info/player_count/set_display
 function sco:player/team/team_info/player_count/
 
+data remove storage sco:data penalty_area.struct
+execute if data storage sco:data penalty_area.input.death[0] run function sco:regine/penalty_area/death/input/
+execute unless data storage sco:data penalty_area.input.penalty[0] if data storage sco:data penalty_area.input.death[0] run data modify storage sco:data penalty_area.input.penalty set from storage sco:data penalty_area.input.death
+execute if data storage sco:data penalty_area.input.penalty[0] run function sco:regine/penalty_area/penalty/input/
+function sco:regine/penalty_area/reset_flag/all
+
+data remove storage sco:data block_area.struct
+execute if data storage sco:data block_area.input[0] run function sco:regine/block_area/input/
+
 #プロセス終了
 scoreboard players set #process game 11
 scoreboard players set #runtime game 0

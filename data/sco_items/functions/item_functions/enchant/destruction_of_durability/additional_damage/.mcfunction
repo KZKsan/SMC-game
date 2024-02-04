@@ -1,0 +1,7 @@
+#>sco_items:item_functions/enchant/destruction_of_durability/additional_damage/
+#@within sco_items:item_functions/enchant/destruction_of_durability/attack
+execute store result score #damage _ run data get entity @p[tag=origin] SelectedItem.tag.item_functions.enchant[{id:"destruction_of_durability"}].lvl 5
+execute if data entity @s Inventory[{Slot:100b}].tag.Damage unless data entity @s Inventory[{Slot:100b}].tag{Unbreakable:1b} run function sco_items:item_functions/enchant/destruction_of_durability/additional_damage/math {Slot:"100b",name:"armor.feet"}
+execute if data entity @s Inventory[{Slot:101b}].tag.Damage unless data entity @s Inventory[{Slot:101b}].tag{Unbreakable:1b} run function sco_items:item_functions/enchant/destruction_of_durability/additional_damage/math {Slot:"101b",name:"armor.legs"}
+execute if data entity @s Inventory[{Slot:102b}].tag.Damage unless data entity @s Inventory[{Slot:102b}].tag{Unbreakable:1b} run function sco_items:item_functions/enchant/destruction_of_durability/additional_damage/math {Slot:"102b",name:"armor.chest"}
+execute if data entity @s Inventory[{Slot:103b}].tag.Damage unless data entity @s Inventory[{Slot:103b}].tag{Unbreakable:1b} run function sco_items:item_functions/enchant/destruction_of_durability/additional_damage/math {Slot:"103b",name:"armor.head"}

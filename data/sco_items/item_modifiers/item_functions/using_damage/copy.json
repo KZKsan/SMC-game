@@ -1,0 +1,21 @@
+[
+    {
+        "function": "copy_nbt",
+        "ops": [
+            {
+                "op": "replace",
+                "source": "__",
+                "target": "Damage"
+            },
+            {
+                "op": "replace",
+                "source": "_.tick",
+                "target": "item_functions.using_damage.tick"
+            }
+        ],
+        "source": {
+            "type": "storage",
+            "source": "_"
+        }
+    }
+]

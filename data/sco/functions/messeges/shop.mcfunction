@@ -12,3 +12,4 @@ tellraw @a[predicate=sco:team_join] [{"text": "*","color": "red","bold": true},{
 tellraw @a[predicate=sco:team_join] {"selector":"@a[team=red]"}
 tellraw @a[predicate=sco:team_join] [{"text": "*","color": "red","bold": true},{"text": "青blue","color": "blue","bold": true},{"text": " - ","color": "red","bold": true},{"score":{"name": "#_","objective": "_"}}]
 tellraw @a[predicate=sco:team_join] {"selector":"@a[team=blue]"}
+execute as @a[predicate=sco:team_join] at @s run playsound ui.toast.in record @s ~ ~ ~ 1 1
