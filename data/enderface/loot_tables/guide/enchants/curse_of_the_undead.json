@@ -1,0 +1,36 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "rotten_flesh",
+					"functions": [
+						{
+							"function": "set_name",
+							"name": {
+								"text": "不死者の呪い",
+								"italic": false,
+								"color": "light_purple"
+							}
+						},
+						{
+							"function": "set_lore",
+							"lore": [
+								{
+									"text": "アンデッド特攻が付いた武器からのダメージが増える。",
+									"color": "white"
+								}
+							]
+						},
+						{
+							"function": "set_nbt",
+							"tag": "{HideFlags:34,enderfaceItem:1b}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
