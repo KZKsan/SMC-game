@@ -1,0 +1,23 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "paper",
+					"functions": [
+						{
+							"function": "set_name",
+							"name": {
+								"text": "狭いステージに移動し、敵と最後の決着をつけます",
+								"color": "white",
+								"italic": false
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

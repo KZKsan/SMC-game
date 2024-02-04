@@ -1,0 +1,23 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "paper",
+					"functions": [
+						{
+							"function": "set_name",
+							"name": {
+								"text": "購入した装備やアイテムで敵と戦います",
+								"color": "white",
+								"italic": false
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
