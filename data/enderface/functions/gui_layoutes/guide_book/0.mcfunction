@@ -4,7 +4,4 @@
 function enderface:gui_layoutes/generic/set_air
 
 loot replace entity @s enderchest.1 loot enderface:guide/death_match/icon
-
-
-data remove storage p-storage _[0].data.preview_trade
-data modify storage p-storage _[0].data.page set value 0
+loot replace entity @s enderchest.2 loot enderface:guide/enchants/icon
