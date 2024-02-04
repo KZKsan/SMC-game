@@ -15,4 +15,4 @@ loot replace entity @s enderchest.14 loot enderface:guide/death_match/6
 loot replace entity @s enderchest.7 loot enderface:guide/death_match/7
 loot replace entity @s enderchest.16 loot enderface:guide/death_match/8
 
-item replace entity @s enderchest.26 with barrier{enderfaceItem:1b,HideFlags:32,click_events:{click_sounds:[{sound:"ui.button.click"}],change_gui:"guide"},display:{Name:'{"text": ">戻る","italic": false}'}}
+item replace entity @s enderchest.26 with barrier{enderfaceItem:1b,HideFlags:32,click_events:{click_sounds:[{sound:"ui.button.click"}],change_gui:"guide/"},display:{Name:'{"text": ">戻る","italic": false}'}}
