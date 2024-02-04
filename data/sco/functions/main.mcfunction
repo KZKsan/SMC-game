@@ -71,7 +71,9 @@ execute as @a store result score @s food_saturation_level run data get entity @s
 execute as @a[tag=rg.food_limit] run function sco:regine/food_limit/
 
 ##進入禁止
-execute as @a[tag=rg.block_area,predicate=sco:regine/block_area/scores,tag=!rg.off] at @s run function sco:regine/block_area/
+#execute as @a[tag=rg.block_area,predicate=sco:regine/block_area/scores,tag=!rg.off] at @s run function sco:regine/block_area/
+execute as @a[tag=rg.block_area,tag=!rg.off] at @s if data storage sco:data block_area.struct run function sco:regine/block_area/ with storage sco:data block_area
+execute if entity @p[tag=rg.block_area] run function sco:regine/block_area/updata_pos
 
 ##ステージ範囲外
 execute as @a[tag=rg.penalty_area.penalty,tag=!rg.off,predicate=gamemode/as] at @s if data storage sco:data penalty_area.struct.penalty run function sco:regine/penalty_area/penalty/ with storage sco:data penalty_area.struct
