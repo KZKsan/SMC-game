@@ -2,27 +2,15 @@
     "condition": "entity_scores",
     "entity": "this",
     "scores": {
-        "regine.x1": {
+        "regine.block_area.pos.x": {
             "max": 2147483647,
             "min": -2147483648
         },
-        "regine.x2": {
+        "regine.block_area.pos.y": {
             "max": 2147483647,
             "min": -2147483648
         },
-        "regine.y1": {
-            "max": 2147483647,
-            "min": -2147483648
-        },
-        "regine.y2": {
-            "max": 2147483647,
-            "min": -2147483648
-        },
-        "regine.z1": {
-            "max": 2147483647,
-            "min": -2147483648
-        },
-        "regine.z2": {
+        "regine.block_area.pos.z": {
             "max": 2147483647,
             "min": -2147483648
         }
