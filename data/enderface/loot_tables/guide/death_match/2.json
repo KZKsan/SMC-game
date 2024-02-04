@@ -1,0 +1,26 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "flower_banner_pattern",
+					"functions": [
+						{
+							"function": "set_name",
+							"name": {
+								"text": "ショップで装備を購入します",
+								"italic": false
+							}
+						},
+						{
+							"function": "set_nbt",
+							"tag": "{enderfaceItem:1b,HideFlags:32}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

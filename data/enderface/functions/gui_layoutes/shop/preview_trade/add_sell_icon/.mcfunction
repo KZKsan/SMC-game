@@ -4,7 +4,17 @@ loot replace entity @e[tag=gui_layout_item,distance=..2,limit=1] container.0 loo
 data modify storage _ data_fetch.sell set from storage p-storage _[0].data.preview_trade.trade.tag.trade.sell
 data remove storage _ data_fetch.sell[0]
 
-function enderface:gui_layoutes/shop/preview_trade/add_sell_icon/loop
+data remove storage c_str str
+data modify storage c_str str append value '[{"text":"その他 ","color":white,"italic":false},"'
+execute store result storage _ data_fetch.count int 1 run data get storage _ data_fetch.sell
+data modify storage c_str str append string storage _ data_fetch.count
+data modify storage c_str str append value '"'
+data modify storage c_str str append value ","
+data modify storage c_str str append value '{"text":"コ のアイテム"}]'
+function c_str/
+data modify entity @e[tag=gui_layout_item,distance=..2,limit=1] Items[0].tag.display.Lore append from storage c_str str[0]
+item modify entity @e[tag=gui_layout_item,distance=..2,limit=1] container.0 enderface:shop/click_to_sell
+
 
 data remove storage _ data_fetch
 

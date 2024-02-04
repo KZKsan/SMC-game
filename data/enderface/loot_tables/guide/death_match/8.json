@@ -1,0 +1,26 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "flower_banner_pattern",
+					"functions": [
+						{
+							"function": "set_name",
+							"name": {
+								"text": "狭いステージに移動し、敵と最後の決着をつけます",
+								"italic": false
+							}
+						},
+						{
+							"function": "set_nbt",
+							"tag": "{enderfaceItem:1b,HideFlags:32}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

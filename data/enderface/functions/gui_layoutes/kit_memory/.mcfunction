@@ -15,4 +15,4 @@ execute if data storage p-storage _[0].data{page:1} run function enderface:gui_l
 execute if data storage p-storage _[0].data{page:2} run function enderface:gui_layoutes/kit_memory/slot/2
 execute if data storage p-storage _[0].data{page:3} run function enderface:gui_layoutes/kit_memory/slot/3
 
-loot replace entity @s enderchest.26 loot enderface:back_gui
+loot replace entity @s enderchest.26 loot enderface:shop/return_shop.0

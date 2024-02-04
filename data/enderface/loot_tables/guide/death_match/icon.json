@@ -5,18 +5,19 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "chest",
+                    "name": "iron_sword",
                     "functions": [
                         {
                             "function": "set_name",
                             "name": {
-                                "text": "・付属",
-                                "italic": false
+                                "text": ">デスマッチ",
+                                "italic": false,
+                                "color": "aqua"
                             }
                         },
                         {
                             "function": "set_nbt",
-                            "tag":"{enderfaceItem:1b,HideFlags:32,click_events:{click_sounds:[{sound:\"ui.button.click\"}],change_gui:\"shop/preview_add_sell\"}}"
+                            "tag": "{HideFlags:34,enderfaceItem:1b,click_events:{click_sounds:[{sound:\"ui.button.click\"}],change_gui:\"guide/death_match\"}}"
                         }
                     ]
                 }
