@@ -1,0 +1,27 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "iron_sword",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": {
+                                "text": ">デスマッチ",
+                                "italic": false,
+                                "color": "#0066DD"
+                            }
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{HideFlags:34,enderfaceItem:1b,click_events:{click_sounds:[{sound:\"ui.button.click\"}],change_gui:\"guide/death_match\"}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,10 +1,10 @@
-#>enderface:gui_layoutes/guid_book/0
+#>enderface:gui_layoutes/guide_book/0
 #@within enderface:gui_layoutes/load
 
 function enderface:gui_layoutes/generic/set_air
 
-loot replace entity @s enderchest.0 loot enderface:shop/category_icon/weapons
-loot replace entity @s enderchest.1 loot enderface:shop/category_icon/armors
+loot replace entity @s enderchest.1 loot enderface:guide/death_match
+loot replace entity @s enderchest.11 loot enderface:shop/category_icon/armors
 
 
 loot replace entity @s enderchest.22 loot enderface:shop/category_icon/kit_memory

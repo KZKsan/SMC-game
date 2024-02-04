@@ -15,6 +15,7 @@ execute if data storage enderface:data {gui_name:"game_settings/"} run function 
 execute if data storage enderface:data {gui_name:"game_settings/stage_select"} run function enderface:gui_layoutes/game_settings/stage_select/
 execute if data storage enderface:data {gui_name:"kit_memory/"} run function enderface:gui_layoutes/kit_memory/
 execute if data storage enderface:data {gui_name:"guide/"} run function enderface:gui_layoutes/guide_book/0
+execute if data storage enderface:data {gui_name:"guide/death_match"} run function enderface:gui_layoutes/guide_book/battle/death_match
 
 
 
