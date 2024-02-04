@@ -19,6 +19,7 @@ function enderface:gui/check/slot
 
 ## 
 data modify storage enderface:data gui_name set from storage p-storage _[0].data.gui_name
+data modify storage enderface:data gui_history set from storage p-storage _[0].data.gui_history
 execute at @s run function enderface:gui/processing/main
 
 
