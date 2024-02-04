@@ -3,6 +3,6 @@
     "entity": "this",
     "predicate": {
         "type": "marker",
-        "nbt": "{Tags:[\"enderface\",\"interface_marker\"],data:{interface_type:\"guid/\"}}"
+        "nbt": "{Tags:[\"enderface\",\"interface_marker\"],data:{interface_type:\"guide/\"}}"
     }
 }
