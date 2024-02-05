@@ -4,6 +4,7 @@
 #@private
 ## check inventory items
 function enderface:gui/processing/shop/trade/buy/
+execute if data storage enderface:data {success:1b} run function enderface:gui/processing/shop/trade/inventory_test
 ## buy
 execute if data storage enderface:data {success:1b} run function enderface:gui/processing/shop/trade/remove_item/
 ## sell
