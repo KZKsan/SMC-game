@@ -20,4 +20,5 @@ tag @a[team=spectator,tag=!spectator] add spectator
 execute if score #runtime game matches ..199 if data storage sco:data options{gimmick:true} run function sco:stage_data/gimmick
 
 #ゲーム終了
+execute if score #runtime game matches 200 as @e[type=#arrows] if function sco:regine/can_pickup_arrows/test run kill
 execute if score #runtime game matches 200 run function sco:process/end

@@ -61,7 +61,7 @@ execute as @e[type=item,tag=] unless score @s dropped_item matches 0 run functio
 execute as @e[type=#projectiles] unless score @s shot_projectiles matches 0 run function sco:regine/shot_projectiles/
 
 ##矢
-execute as @e[type=#arrows] unless score @s shot_arrow matches 0 if function sco:regine/can_pickup_arrows/test run scoreboard players set @s can_pickup_arrow 0
+execute as @e[type=#arrows] unless score @s shot_arrow matches 0 if data storage sco:input game{can_pickup_arrows:true} if function sco:regine/can_pickup_arrows/test run scoreboard players set @s can_pickup_arrow 0
 execute as @e[type=#arrows] unless score @s shot_arrow matches 0 run function sco:player/result/arrows/shot
 execute as @e[type=#arrows,nbt=!{pickup:0b}] unless score @s can_pickup_arrow matches 0 store success entity @s pickup byte 1 if entity @s[nbt={pickup:0b}]
 execute as @e[type=#arrows,nbt={inGround:1b,life:1s}] unless score @s can_pickup_arrow matches 0 run data modify entity @s life set value 1100s

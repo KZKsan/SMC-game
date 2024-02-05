@@ -48,5 +48,6 @@ execute if score #runtime game matches 10 run tag @a[predicate=sco:team_join,tea
 execute if score #runtime game matches 10 run function sco:process/game_flag/winner/
 
 #さどんです
+execute if score #mst_time timer matches -110 as @e[type=#arrows] if function sco:regine/can_pickup_arrows/test run kill
 execute if score #mst_time timer matches -110 run scoreboard players set #process game 31
 execute if score #mst_time timer matches -110 run scoreboard players set #runtime game 0

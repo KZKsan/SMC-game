@@ -41,6 +41,7 @@ execute if score #runtime game matches 3.. if data storage sco:data options{gimm
 #プロセス終了
 execute if score #mst_time timer matches -110 run scoreboard players set #process game 20
 execute if score #mst_time timer matches -110 run scoreboard players set #runtime game 0
+execute if score #mst_time timer matches -110 as @e[type=#arrows] if function sco:regine/can_pickup_arrows/test run kill
 execute if score #mst_time timer matches -110 run data merge storage timer: {time:120,mode:1,name:'{"text":"装備準備時間 残り時間 "}'}
 execute if score #mst_time timer matches -110 store result storage timer: time int 1 run scoreboard players get #shop_timer game
 execute if score #mst_time timer matches -110 run function timer:input
