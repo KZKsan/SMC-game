@@ -29,6 +29,7 @@
             }
         }
     },
+    "parent": "sco_items:item_functions/show_durability/chest",
     "rewards": {
         "function": "sco_items:item_functions/using_damage/chest"
     }
