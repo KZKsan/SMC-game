@@ -4,6 +4,7 @@ function p-storage/get
 
 execute if data storage p-storage _[0].data.item_actionbar_flag{crows_sorrow:1b} run function sco_items:item_functions/crows_sorrow/actionbar
 execute if data storage p-storage _[0].data.item_actionbar_flag{hidden_cover:1b} run function sco_items:item_functions/hidden_cover/actionbar/
+execute if data storage p-storage _[0].data.item_actionbar_flag{show_durability:["chest"]} run function sco_items:item_functions/show_durability/chest/actionbar
 
 data modify storage c_str str set from storage p-storage _[0].data.item_actionbar
 function c_str/
