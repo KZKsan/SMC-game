@@ -3,6 +3,7 @@
 data remove storage _ _
 data modify storage _ _ set from entity @s Inventory[{Slot:102b}].tag.item_functions.using_damage
 data modify storage _ data_fetch.id set from entity @s Inventory[{Slot:102b}].id
+execute store result storage _ _.max_damage int 1 run function item/damage_data
 data remove storage _ __
 data modify storage _ __ set from entity @s Inventory[{Slot:102b}].tag.Damage
 execute store success score # _ if function sco_items:item_functions/using_damage/check_nbt run function sco_items:item_functions/using_damage/math/tick
