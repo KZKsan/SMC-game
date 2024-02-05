@@ -43,6 +43,7 @@ scoreboard objectives add score_shot_arrows dummy
 scoreboard objectives add score_hit_arrows dummy
 scoreboard objectives add score_hit_rate dummy
 scoreboard objectives add shot_arrow dummy
+scoreboard objectives add can_pickup_arrow dummy
 
 
 team add red
@@ -71,6 +72,7 @@ execute unless data storage sco:config game.friendlyfire run data modify storage
 execute unless data storage sco:config game.show_hp run data modify storage sco:config game.show_hp set value false
 execute unless data storage sco:config game.show_enemy_team_name run data modify storage sco:config game.show_enemy_team_name set value true
 execute unless data storage sco:config game.can_team_select run data modify storage sco:config game.can_team_select set value 0b
+execute unless data storage sco:config game.can_pickup_arrows run data modify storage sco:config game.can_pickup_arrows set value 0b
 execute unless data storage sco:config game.join run data modify storage sco:config game.join set value 0b
 execute unless data storage sco:config stage run data modify storage sco:config stage set value "sco_random"
 
