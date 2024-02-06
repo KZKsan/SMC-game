@@ -1,4 +1,4 @@
-#>sco:process/40
+#>sco:process/death_match/040
 #@within sco:main
 scoreboard players add #runtime game 1
 function timer:stop
@@ -6,7 +6,7 @@ function timer:stop
 #player_count
 execute if score #runtime game matches 1.. run function sco:player/team/team_info/player_count/
 
-execute as @a[predicate=sco:team_join,team=!spectator] run function sco:player/respawn/
+execute as @a[predicate=sco:team_join,team=!spectator] run function sco:process/death_match/respawn/
 execute as @a[predicate=sco:team_join,team=!spectator,gamemode=spectator,tag=!rg.block_area] run function sco:regine/block_area/reset_score
 tag @a[predicate=sco:team_join,team=!spectator,gamemode=spectator,tag=!rg.block_area] add rg.block_area
 execute as @a[team=spectator,tag=!spectator] run function sco:regine/block_area/reset_score

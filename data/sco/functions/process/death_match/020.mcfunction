@@ -1,4 +1,4 @@
-#>sco:process/20
+#>sco:process/death_match/020
 #@within sco:main
 execute if score #runtime game matches ..5 run scoreboard players add #runtime game 1
 execute if score #runtime game matches 5 run function sco:messeges/shop

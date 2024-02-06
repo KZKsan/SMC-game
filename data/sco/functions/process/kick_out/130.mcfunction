@@ -1,4 +1,4 @@
-#>sco:process/30
+#>sco:process/kick_out/130
 #@within sco:main
 #if (runtime >= 0) runtime++;
 execute if score #runtime game matches ..9 run scoreboard players add #runtime game 1
@@ -42,9 +42,7 @@ execute if score #runtime game matches 2 if data storage sco:data options{reset:
 execute if score #runtime game matches 3.. if data storage sco:data options{gimmick:true} run function sco:stage_data/gimmick
 
 #プロセス終了
-execute if score #runtime game matches 10 as @a[predicate=sco:team_join,team=!spectator] run function sco:player/respawn/
-execute if score #runtime game matches 10 as @a[predicate=sco:team_join,team=!spectator,gamemode=spectator,tag=!rg.block_area] run function sco:regine/block_area/set_score
-execute if score #runtime game matches 10 run tag @a[predicate=sco:team_join,team=!spectator,gamemode=spectator,tag=!rg.block_area] add rg.block_area
+execute if score #runtime game matches 10 as @a[predicate=sco:team_join,team=!spectator,scores={respawnTime=1}] run function sco:process/kick_out/respawn/
 execute if score #runtime game matches 10 run function sco:process/game_flag/winner/
 
 #さどんです

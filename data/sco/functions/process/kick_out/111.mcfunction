@@ -1,4 +1,4 @@
-#>sco:process/11
+#>sco:process/kick_out/111
 #@within sco:main
 execute if score #runtime game matches ..5 run scoreboard players add #runtime game 1
 execute if score #runtime game matches 5 run function sco:messeges/stage
@@ -7,7 +7,7 @@ execute if score #runtime game matches 1 run gamemode adventure @a[team=red]
 #アイテム配布
 execute if score #runtime game matches 1 as @a[predicate=sco:team_join,team=!spectator] run function sco:process/give_visit_kit
 #プロセスID
-execute if score #runtime game matches 1 run scoreboard players set @a[predicate=sco:team_join] processID 11
+execute if score #runtime game matches 1 run scoreboard players set @a[predicate=sco:team_join] processID 111
 #切断処理
 execute as @a[team=spectator,scores={leave_game=1..}] run function sco:player/retune_lobby
 
@@ -39,7 +39,7 @@ execute if score #runtime game matches 2 if data storage sco:data options{reset:
 execute if score #runtime game matches 3.. if data storage sco:data options{gimmick:true} run function sco:stage_data/gimmick
 
 #プロセス終了
-execute if score #mst_time timer matches -110 run scoreboard players set #process game 20
+execute if score #mst_time timer matches -110 run scoreboard players set #process game 120
 execute if score #mst_time timer matches -110 run scoreboard players set #runtime game 0
 execute if score #mst_time timer matches -110 as @e[type=#arrows] if function sco:regine/can_pickup_arrows/test run kill
 execute if score #mst_time timer matches -110 run data merge storage timer: {time:120,mode:1,name:'{"text":"装備準備時間 残り時間 "}'}

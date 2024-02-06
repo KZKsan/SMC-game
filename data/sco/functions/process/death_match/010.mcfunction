@@ -1,4 +1,4 @@
-#>sco:process/10
+#>sco:process/death_match/010
 #@within sco:main
 #gameIDを設定
 function sco:game_id/set
