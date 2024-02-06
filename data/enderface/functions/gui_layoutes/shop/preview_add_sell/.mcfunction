@@ -1,20 +1,11 @@
-#>enderface:gui_layoutes/shop/preview_add_sell
+#>enderface:gui_layoutes/shop/preview_add_sell/
 #@within enderface:gui_layoutes/load
 
 function enderface:gui_layoutes/generic/set_air
 summon chest_minecart ~ ~ ~ {Items:[],Tags:["gui_layout_item"]}
-execute if data storage p-storage _[0].data.preview_trade.trade.tag.trade.sell[0] run data modify storage _ _ set from storage p-storage _[0].data.preview_trade.trade.tag.trade.sell[0]
-execute if data storage p-storage _[0].data.preview_trade.trade.tag.trade.sell[0] run data modify storage _ _.Slot set value 0b
-execute if data storage p-storage _[0].data.preview_trade.trade.tag.trade.sell[0] run data modify entity @e[tag=gui_layout_item,distance=..2,limit=1] Items append from storage _ _
-execute if data storage p-storage _[0].data.preview_trade.trade.tag.trade.sell[1] run data modify storage _ _ set from storage p-storage _[0].data.preview_trade.trade.tag.trade.sell[1]
-execute if data storage p-storage _[0].data.preview_trade.trade.tag.trade.sell[1] run data modify storage _ _.Slot set value 1b
-execute if data storage p-storage _[0].data.preview_trade.trade.tag.trade.sell[1] run data modify entity @e[tag=gui_layout_item,distance=..2,limit=1] Items append from storage _ _
-execute if data storage p-storage _[0].data.preview_trade.trade.tag.trade.sell[2] run data modify storage _ _ set from storage p-storage _[0].data.preview_trade.trade.tag.trade.sell[2]
-execute if data storage p-storage _[0].data.preview_trade.trade.tag.trade.sell[2] run data modify storage _ _.Slot set value 2b
-execute if data storage p-storage _[0].data.preview_trade.trade.tag.trade.sell[2] run data modify entity @e[tag=gui_layout_item,distance=..2,limit=1] Items append from storage _ _
-execute if data storage p-storage _[0].data.preview_trade.trade.tag.trade.sell[3] run data modify storage _ _ set from storage p-storage _[0].data.preview_trade.trade.tag.trade.sell[3]
-execute if data storage p-storage _[0].data.preview_trade.trade.tag.trade.sell[3] run data modify storage _ _.Slot set value 3b
-execute if data storage p-storage _[0].data.preview_trade.trade.tag.trade.sell[3] run data modify entity @e[tag=gui_layout_item,distance=..2,limit=1] Items append from storage _ _
+data modify storage _ _ set from storage p-storage _[0].data.preview_trade.trade.tag.trade.sell
+scoreboard players set #i _ 0
+function enderface:gui_layoutes/shop/preview_add_sell/loop
 data modify entity @e[tag=gui_layout_item,distance=..2,limit=1] Items[{}].tag.enderfaceItem set value 1b
 
 item replace entity @s enderchest.0 from entity @e[tag=gui_layout_item,distance=..2,limit=1] container.0
