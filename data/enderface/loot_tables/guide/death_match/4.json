@@ -10,7 +10,7 @@
 						{
 							"function": "set_name",
 							"name": {
-								"text": "・準備フェーズ",
+								"text": "・戦闘フェーズ",
 								"bold": true,
 								"color": "white",
 								"italic": false
