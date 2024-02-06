@@ -8,7 +8,7 @@ execute if score #runtime game matches 1 run gamemode adventure @a[gamemode=!adv
 execute if score #runtime game matches 1 run clear @a[predicate=sco:team_join,team=!spectator] 
 execute if score #runtime game matches 1 as @a[predicate=sco:team_join,team=!spectator] run function sco_items:kit/default
 execute if score #runtime game matches 1 as @a[team=spectator] run function sco:regine/block_area/reset_score
-execute if score #runtime game matches 1.. run function sco:player/team/team_info/player_count/
+execute if score #runtime game matches 1.. run function sco:player/team/team_info/joined_count/
 execute if score #runtime game matches 1 as @a[scores={regione.penalty_area.penalty.time=1..}] run function sco:regine/penalty_area/reset_flag/single
 
 

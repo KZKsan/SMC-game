@@ -15,6 +15,11 @@ execute as @a[team=spectator,tag=!spectator] run function sco:tp/stage/macro/sin
 execute as @a[team=spectator,tag=!spectator] run function sco:player/team/remove_team_tag
 tag @a[team=spectator,tag=!spectator] add rg.block_area
 tag @a[team=spectator,tag=!spectator] add spectator
+effect give @a[predicate=sco:team_join,team=!spectator,predicate=gamemode/as] instant_health 10 50 true
+effect give @a[predicate=sco:team_join,team=!spectator,predicate=gamemode/as] resistance 1 50 true
+effect give @a[predicate=sco:team_join,team=!spectator,predicate=gamemode/as] weakness 1 120 true
+effect give @a[predicate=sco:team_join,team=!spectator,predicate=gamemode/as] water_breathing 1 10 true
+effect give @a[predicate=sco:team_join,team=!spectator,predicate=gamemode/as] fire_resistance 1 10 true
 
 #ステージギミック
 execute if score #runtime game matches ..199 if data storage sco:data options{gimmick:true} run function sco:stage_data/gimmick

@@ -6,4 +6,5 @@ tellraw @a[predicate=sco:team_join] {"text": "対戦終了！10秒後にロビ�
 execute as @a[predicate=sco:team_join] at @s run playsound entity.player.levelup record @s ~ ~ ~ 0.5 2
 
 scoreboard players set #runtime game 0
-scoreboard players set #process game 40
+execute if score #process game matches 30..31 run scoreboard players set #process game 40
+execute if score #process game matches 130..131 run scoreboard players set #process game 140

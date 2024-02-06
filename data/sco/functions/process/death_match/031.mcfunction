@@ -3,7 +3,7 @@
 #if (runtime >= 0) runtime++;
 execute if score #runtime game matches 0..6 run scoreboard players add #runtime game 1
 #初期化
-execute if score #runtime game matches 1 run function sco:process/game_reset
+execute if score #runtime game matches 1 run function sco:process/death_match/game_reset
 execute if score #runtime game matches 5 run tellraw @a[predicate=sco:team_join] {"text": "サドンデスモード開始！","bold": true}
 execute if score #runtime game matches 1 as @a[team=spectator] run function sco:regine/block_area/reset_score
 execute if score #runtime game matches 1.. as @a[team=spectator,predicate=!sco:regine/block_area/scores] run function sco:regine/block_area/reset_score
@@ -38,4 +38,4 @@ tag @a[team=spectator,tag=!spectator] add spectator
 execute if score #runtime game matches 5 as @a[predicate=sco:team_join] at @s run playsound block.note_block.pling record @s ~ ~ ~ 0.5 1
 
 #プロセス終了
-execute if score #runtime game matches 5.. run function sco:process/game_flag/winner/
+execute if score #runtime game matches 5.. run function sco:process/death_match/game_flag/winner/
