@@ -1,4 +1,4 @@
-#>sco:process/kick_out/respawn/
+#>sco:process/kick_out/respawn/normal
 #@within sco:process/kick_out/**
 function sco:regine/penalty_area/reset_flag/single
 effect give @s instant_health 1 49

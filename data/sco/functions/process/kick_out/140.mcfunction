@@ -21,6 +21,9 @@ effect give @a[predicate=sco:team_join,team=!spectator,predicate=gamemode/as] we
 effect give @a[predicate=sco:team_join,team=!spectator,predicate=gamemode/as] water_breathing 1 10 true
 effect give @a[predicate=sco:team_join,team=!spectator,predicate=gamemode/as] fire_resistance 1 10 true
 
+execute if score #score_time game matches 1.. run scoreboard players remove #score_time game 1
+execute if score #score_time game matches 1 run function sco:player/team/team_info/team_score/empty
+
 #ステージギミック
 execute if score #runtime game matches ..199 if data storage sco:data options{gimmick:true} run function sco:stage_data/gimmick
 

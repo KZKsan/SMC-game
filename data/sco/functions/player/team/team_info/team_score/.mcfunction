@@ -1,8 +1,6 @@
 #>sco:player/team/team_info/team_score/
-#@public 
-scoreboard players operation §c§l赤red team_info.red = #red_score game
-scoreboard players operation §9§l青blue team_info.red = #blue_score game
-scoreboard players operation §c§l赤red team_info.blue = §c§l赤red team_info.red
-scoreboard players operation §9§l青blue team_info.blue = §9§l青blue team_info.red
-scoreboard players operation §c§l赤red team_info.spectator = §c§l赤red team_info.red
-scoreboard players operation §9§l青blue team_info.spectator = §9§l青blue team_info.red
+#@public
+execute store result storage sco:data team_info.red_score int 1 run scoreboard players get #red_score game
+execute store result storage sco:data team_info.blue_score int 1 run scoreboard players get #blue_score game
+
+function sco:player/team/team_info/team_score/macro with storage sco:data team_info

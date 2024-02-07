@@ -43,10 +43,13 @@ execute if score #runtime game matches 2 if data storage sco:data options{reset:
 execute if score #runtime game matches 3.. if data storage sco:data options{gimmick:true} run function sco:stage_data/gimmick
 
 #プロセス終了
-execute if score #runtime game matches 10 as @a[predicate=sco:team_join,team=!spectator,scores={respawnTime=1}] run function sco:process/kick_out/respawn/
+execute if score #runtime game matches 10 as @a[predicate=sco:team_join,team=!spectator,scores={respawnTime=1}] run function sco:process/kick_out/respawn/normal
 execute if score #runtime game matches 10 run function sco:process/kick_out/game_flag/winner/scored
+execute if score #score_time game matches 1.. run scoreboard players remove #score_time game 1
+execute if score #score_time game matches 1 run function sco:player/team/team_info/team_score/empty
 
 #さどんです
+execute if score #mst_time timer matches -109 run function sco:process/kick_out/game_flag/winner/top
 execute if score #mst_time timer matches -110 as @e[type=#arrows] if function sco:regine/can_pickup_arrows/test run kill
 execute if score #mst_time timer matches -110 run scoreboard players set #process game 131
 execute if score #mst_time timer matches -110 run scoreboard players set #runtime game 0
