@@ -37,3 +37,4 @@ execute if score #score_time game matches 1 run function sco:player/team/team_in
 
 #プロセス終了
 execute if score #runtime game matches 5.. run function sco:process/kick_out/game_flag/winner/top
+execute if score #runtime game matches 5.. if score #flag game matches 0 run function sco:process/kick_out/game_flag/winner/no_player
