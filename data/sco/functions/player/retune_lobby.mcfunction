@@ -1,6 +1,7 @@
 #>sco:player/retune_lobby
 #@internal
-function sco:player/inventory_histories/pop/
+function sco:player/inventory_histories/pop/fetch_load_data {name:"defalut"}
+data remove storage p-storage _[0].data.inventory_histories[{name:"respawn"}]
 team leave @s
 effect clear @s
 tag @s remove join_red

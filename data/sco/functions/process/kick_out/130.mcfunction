@@ -6,6 +6,7 @@ execute if score #runtime game matches ..9 run scoreboard players add #runtime g
 execute if score #runtime game matches 1 run function sco:process/kick_out/game_reset
 execute if score #runtime game matches 5 run tellraw @a[predicate=sco:team_join] [{"text": "対戦開始！","bold": true},{"score":{"name": "#m","objective": "timer"},"bold": true},{"text":"分後にサドンデスモードになります。","bold": true}]
 execute if score #runtime game matches 1 run gamemode adventure @a[predicate=sco:team_join,team=!spectator]
+execute if score #runtime game matches 1 as @a[predicate=sco:team_join,team=!spectator] run function sco:player/save_respawn_item
 execute if score #runtime game matches 1 run function sco:player/result/reset_scores/all
 execute if score #runtime game matches 1 run effect give @a[predicate=sco:team_join,team=!spectator] regeneration 5 100
 execute if score #runtime game matches 1 as @a[scores={regione.penalty_area.penalty.time=1..}] run function sco:regine/penalty_area/reset_flag/single
@@ -45,7 +46,7 @@ execute if score #runtime game matches 3.. if data storage sco:data options{gimm
 #プロセス終了
 execute if score #runtime game matches 10 as @a[predicate=sco:team_join,team=!spectator,scores={respawnTime=1}] run function sco:process/kick_out/respawn/normal
 execute if score #runtime game matches 10 run function sco:process/kick_out/game_flag/winner/scored
-execute if score #runtime game matches 10 if score #flag game matches 0 run function sco:process/kick_out/game_flag/winner/no_player
+#execute if score #runtime game matches 10 if score #flag game matches 0 run function sco:process/kick_out/game_flag/winner/no_player
 execute if score #score_time game matches 1.. run scoreboard players remove #score_time game 1
 execute if score #score_time game matches 1 run function sco:player/team/team_info/team_score/empty
 
