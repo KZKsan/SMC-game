@@ -9,3 +9,4 @@ data modify storage sco:data regine_area_new set from storage sco:input regine_a
 data modify storage sco:data penalty_area.input set from storage sco:input penalty_area.input
 data modify storage sco:data stage_name set from storage sco:input stage_name
 data modify storage sco:data stage_description set from storage sco:input stage_description
+data modify storage sco:data respawn set from storage sco:input respawn

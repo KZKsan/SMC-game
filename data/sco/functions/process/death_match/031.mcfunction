@@ -8,6 +8,8 @@ execute if score #runtime game matches 5 run tellraw @a[predicate=sco:team_join]
 execute if score #runtime game matches 1 as @a[team=spectator] run function sco:regine/block_area/reset_score
 execute if score #runtime game matches 1.. as @a[team=spectator,predicate=!sco:regine/block_area/scores] run function sco:regine/block_area/reset_score
 execute if score #runtime game matches 1 as @a[scores={regione.penalty_area.penalty.time=1..}] run function sco:regine/penalty_area/reset_flag/single
+execute if score #runtime game matches 1 as @a[predicate=sco:team_join,team=!blue] run function sco:tp/respawn/save {name:"sudden_death_red"}
+execute if score #runtime game matches 1 as @a[team=blue] run function sco:tp/respawn/save {name:"sudden_death_blue"}
 #player_count
 execute if score #runtime game matches 1.. run function sco:player/team/team_info/player_count/
 
@@ -26,12 +28,13 @@ function sco:process/penalty_area/sudden_death
 execute if score #runtime game matches 1.. as @a[predicate=sco:team_join,team=!spectator] run function sco:process/death_match/respawn/
 execute if score #runtime game matches 1.. as @a[predicate=sco:team_join,team=!spectator,gamemode=spectator,tag=!rg.block_area] run function sco:regine/block_area/reset_score
 execute if score #runtime game matches 1.. run tag @a[predicate=sco:team_join,team=!spectator,gamemode=spectator,tag=!rg.block_area] add rg.block_area
-execute if score #runtime game matches 1 as @a[predicate=sco:team_join] run function sco:tp/stage/sudden_death
+execute if score #runtime game matches 1 as @a[predicate=sco:team_join] run function sco:tp/respawn/
 execute if score #runtime game matches 1 as @a[team=spectator] run function sco:regine/block_area/reset_score
 execute if score #runtime game matches 1 as @a[predicate=sco:team_join,team=!spectator,gamemode=spectator] run function sco:regine/block_area/set_score
 execute as @a[team=spectator,tag=!spectator] run function sco:regine/block_area/set_score
 execute as @a[team=spectator,tag=!spectator] run function sco:player/team/spectator
-execute as @a[team=spectator,tag=!spectator] run function sco:tp/stage/sudden_death
+execute as @a[team=spectator,tag=!spectator] run function sco:tp/respawn/save {name:"sudden_death_red"}
+execute as @a[team=spectator,tag=!spectator] run function sco:tp/respawn/
 execute as @a[team=spectator,tag=!spectator] run function sco:player/team/remove_team_tag
 tag @a[team=spectator,tag=!spectator] add rg.block_area
 tag @a[team=spectator,tag=!spectator] add spectator

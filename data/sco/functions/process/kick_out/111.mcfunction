@@ -6,6 +6,7 @@ execute if score #runtime game matches 1 run team join red @a[team=blue]
 execute if score #runtime game matches 1 run gamemode adventure @a[team=red]
 #アイテム配布
 execute if score #runtime game matches 1 as @a[predicate=sco:team_join,team=!spectator] run function sco:process/give_visit_kit
+execute if score #runtime game matches 1 as @a[predicate=sco:team_join] run function sco:tp/respawn/save {name:"stage_red"}
 #プロセスID
 execute if score #runtime game matches 1 run scoreboard players set @a[predicate=sco:team_join] processID 111
 #切断処理
@@ -23,11 +24,11 @@ effect give @a[predicate=sco:team_join,predicate=gamemode/as] water_breathing 1 
 effect give @a[predicate=sco:team_join,predicate=gamemode/as] fire_resistance 1 10 true
 
 #てれぽーと
-execute if score #runtime game matches 1 run function sco:tp/stage/macro/all_player with storage sco:data
+execute if score #runtime game matches 1 as @a[predicate=sco:team_join] run function sco:tp/macro with storage sco:data respawn[{name:"stage_red"}]
 execute if score #runtime game matches 1 as @a[team=spectator] run function sco:regine/block_area/reset_score
 execute as @a[team=spectator,tag=!spectator] run function sco:regine/block_area/reset_score
 execute as @a[team=spectator,tag=!spectator] run function sco:player/team/spectator
-execute as @a[team=spectator,tag=!spectator] run function sco:tp/stage/macro/single_player with storage sco:data
+execute as @a[team=spectator,tag=!spectator] run function sco:tp/macro with storage sco:data respawn[{name:"stage_red"}]
 execute as @a[team=spectator,tag=!spectator] run function sco:player/team/remove_team_tag
 tag @a[team=spectator,tag=!spectator] add spectator
 execute if score #runtime game matches 1.. as @a[predicate=sco:team_join,scores={respawnTime=1}] run function sco:tp/stage/macro/single_player with storage sco:data
