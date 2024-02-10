@@ -1,4 +1,4 @@
-#>sco:regine/block_area/input_pos/new_area
+#>sco:regine/block_area/input_pos/updata_area/new_area
 #@public
 
 execute store result score #pos.1 _ run data get storage sco:data block_area_new.1[0]
