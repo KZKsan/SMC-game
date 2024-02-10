@@ -1,15 +1,18 @@
-#>sco:process/30
+#>sco:process/death_match/030
 #@within sco:main
 #if (runtime >= 0) runtime++;
 execute if score #runtime game matches ..9 run scoreboard players add #runtime game 1
 #初期化
-execute if score #runtime game matches 1 run function sco:process/game_reset
+execute if score #runtime game matches 1 run function sco:process/death_match/game_reset
 execute if score #runtime game matches 5 run tellraw @a[predicate=sco:team_join] [{"text": "対戦開始！","bold": true},{"score":{"name": "#m","objective": "timer"},"bold": true},{"text":"分後にサドンデスモードになります。","bold": true}]
 execute if score #runtime game matches 1 run gamemode adventure @a[predicate=sco:team_join,team=!spectator]
 execute if score #runtime game matches 1 run function sco:player/result/reset_scores/all
 execute if score #runtime game matches 1 run effect give @a[predicate=sco:team_join,team=!spectator] regeneration 5 100
 execute if score #runtime game matches 1 as @a[scores={regione.penalty_area.penalty.time=1..}] run function sco:regine/penalty_area/reset_flag/single
+execute if score #runtime game matches 1 as @a[predicate=sco:team_join,team=!blue] run function sco:tp/respawn/save {name:"stage_red"}
+execute if score #runtime game matches 1 as @a[team=blue] run function sco:tp/respawn/save {name:"stage_blue"}
 #player_count
+execute if score #runtime game matches 1 run function sco:player/team/team_info/player_count/set_display
 execute if score #runtime game matches 1.. run function sco:player/team/team_info/player_count/
 
 
@@ -26,11 +29,12 @@ function sco:process/penalty_area/stage
 
 
 #テレポート
-execute if score #runtime game matches 1 run function sco:tp/stage/macro/all_player with storage sco:data
+execute if score #runtime game matches 1 as @a[predicate=sco:team_join] run function sco:tp/respawn/
 execute if score #runtime game matches 1 as @a[team=spectator] run function sco:regine/block_area/reset_score
 execute as @a[team=spectator,tag=!spectator] run function sco:regine/block_area/reset_score
 execute as @a[team=spectator,tag=!spectator] run function sco:player/team/spectator
-execute as @a[team=spectator,tag=!spectator] run function sco:tp/stage/macro/single_player with storage sco:data
+execute as @a[team=spectator,tag=!spectator] run function sco:tp/respawn/save {name:"stage_red"}
+execute as @a[team=spectator,tag=!spectator] run function sco:tp/respawn/
 execute as @a[team=spectator,tag=!spectator] run function sco:player/team/remove_team_tag
 tag @a[team=spectator,tag=!spectator] add rg.block_area
 tag @a[team=spectator,tag=!spectator] add spectator
@@ -42,10 +46,10 @@ execute if score #runtime game matches 2 if data storage sco:data options{reset:
 execute if score #runtime game matches 3.. if data storage sco:data options{gimmick:true} run function sco:stage_data/gimmick
 
 #プロセス終了
-execute if score #runtime game matches 10 as @a[predicate=sco:team_join,team=!spectator] run function sco:player/respawn/
+execute if score #runtime game matches 10 as @a[predicate=sco:team_join,team=!spectator] run function sco:process/death_match/respawn/
 execute if score #runtime game matches 10 as @a[predicate=sco:team_join,team=!spectator,gamemode=spectator,tag=!rg.block_area] run function sco:regine/block_area/set_score
 execute if score #runtime game matches 10 run tag @a[predicate=sco:team_join,team=!spectator,gamemode=spectator,tag=!rg.block_area] add rg.block_area
-execute if score #runtime game matches 10 run function sco:process/game_flag/winner/
+execute if score #runtime game matches 10 run function sco:process/death_match/game_flag/winner/
 
 #さどんです
 execute if score #mst_time timer matches -110 as @e[type=#arrows] if function sco:regine/can_pickup_arrows/test run kill

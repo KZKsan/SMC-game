@@ -12,8 +12,11 @@ data modify storage sco:input penalty_area.input.penalty append value {name:"sta
 data modify storage sco:input penalty_area.input.death append value {name:"shop",1:[-463, 15, -322],2:[-578, -84, -207]}
 data modify storage sco:input penalty_area.input.penalty append value {name:"shop",1:[-463, 15, -322],2:[-578, -84, -207]}
 data modify storage sco:input stage_name set value '{"text":"エンドロール"}'
+data modify storage sco:input respawn append value {name:"stage_red",pos:"-551 -30 -234 -135 0"}
+data modify storage sco:input respawn append value {name:"stage_blue",pos:"-491 -30 -294 45 0"}
+data modify storage sco:input respawn append value {name:"shop_red",pos:"-573 -26 -277 -70 0"}
+data modify storage sco:input respawn append value {name:"shop_blue",pos:"-469 -26 -252 110 0"}
 function sco:stage_data/sudden_death/
-
 execute store result storage sco:input options.time byte 1 run random value 0..2
 execute store result score # _ run random value 0..9
 execute if score # _ matches 0 run data modify storage sco:input stage_description set value '[{"text":"「---さん、あなた恨みます。」"}]'

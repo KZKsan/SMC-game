@@ -1,4 +1,4 @@
-#>sco:process/0
+#>sco:process/death_match/000
 #@within sco:main
 effect give @a[predicate=gamemode/as,tag=!rg.off,team=!mode.practice] instant_health 10 50 true
 effect give @a[predicate=gamemode/as,tag=!rg.off,team=!mode.practice] resistance 1 50 true

@@ -1,4 +1,4 @@
-#>sco:process/10
+#>sco:process/death_match/010
 #@within sco:main
 #gameIDを設定
 function sco:game_id/set
@@ -10,8 +10,8 @@ tag @a[team=blue] add join_blue
 experience set @a 0 levels
 experience set @a 0 points
 gamemode adventure @a[predicate=sco:team_join,team=!spectator]
-function sco:player/team/team_info/player_count/set_display
-function sco:player/team/team_info/player_count/
+function sco:player/team/team_info/joined_count/set_display
+function sco:player/team/team_info/joined_count/
 
 data remove storage sco:data penalty_area.struct
 execute if data storage sco:data penalty_area.input.death[0] run function sco:regine/penalty_area/death/input/
