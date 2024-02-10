@@ -10,6 +10,19 @@
                         "predicate": {
                             "nbt": "{Inventory:[{Slot:102b,tag:{item_functions:{show_durability:1b}}}]}"
                         }
+                    },
+                    {
+                        "condition": "inverted",
+                        "term": {
+                            "condition": "entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "type_specific": {
+                                    "type": "player",
+                                    "gamemode": "spectator"
+                                }
+                            }
+                        }
                     }
                 ]
             }

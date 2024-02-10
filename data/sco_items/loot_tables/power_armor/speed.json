@@ -63,7 +63,8 @@
                         {
                             "function": "set_enchantments",
                             "enchantments": {
-                                "unbreaking" :3
+                                "unbreaking" :3,
+                                "depth_strider": 1
                             }
                         },
                         {

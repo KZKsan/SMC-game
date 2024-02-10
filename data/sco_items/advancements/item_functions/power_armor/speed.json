@@ -8,11 +8,7 @@
                         "condition": "entity_properties",
                         "entity": "this",
                         "predicate": {
-                            "equipment": {
-                                "chest": {
-                                    "nbt": "{item_functions:{power_armor:\"speed\"}}"
-                                }
-                            }
+                            "nbt": "{Inventory:[{Slot:102b,tag:{item_functions:{power_armor:\"speed\"}}}]}"
                         }
                     }
                 ]
