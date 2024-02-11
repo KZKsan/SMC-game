@@ -25,7 +25,7 @@
                                 },
                                 "",
                                 {
-                                    "translate": "item.modifiers.chest",
+                                    "translate": "item.modifiers.legs",
                                     "color": "gray",
                                     "italic": false
                                 },
