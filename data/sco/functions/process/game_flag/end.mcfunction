@@ -7,4 +7,5 @@ execute as @a[predicate=sco:team_join] at @s run playsound entity.player.levelup
 
 scoreboard players set #runtime game 0
 execute if score #process game matches 30..31 run scoreboard players set #process game 40
+execute if score #process game matches 130..131 run scoreboard players set #score_time game 3
 execute if score #process game matches 130..131 run scoreboard players set #process game 140
