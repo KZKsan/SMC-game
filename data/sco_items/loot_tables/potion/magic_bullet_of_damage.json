@@ -20,7 +20,7 @@
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{item_functions:{set_p_vector:{type:\"set\",vector:\"^ ^ ^3\"}}}"
+                            "tag": "{item_functions:{set_p_vector:{type:\"set\",vector:\"^ ^ ^2.5\"}}}"
                         }
                     ]
                 }
