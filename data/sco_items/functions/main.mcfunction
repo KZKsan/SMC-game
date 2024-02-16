@@ -5,6 +5,10 @@
 
 ## ここにアイテムのコマンドを作っていく(進捗を使う場合も "sco_items:" で作る)
 
+# arrow
+    execute as @e[type=#arrows,nbt={item:{tag:{item_functions:{no_gravity_arrow:1b}}}},tag=!item_function.no_gravity_arrow] run function sco_items:item_functions/no_gravity_arrow/set_data
+    execute as @e[type=#arrows,nbt={item:{tag:{item_functions:{no_gravity_arrow:1b}}}},tag=item_function.no_gravity_arrow] at @s run function sco_items:item_functions/no_gravity_arrow/
+    execute as @e[type=#arrows,nbt={item:{tag:{item_functions:{no_gravity_arrow:1b}}},inGround:1b}] at @s run function sco_items:item_functions/no_gravity_arrow/hit_block
 # magic_bullet
     execute as @e[type=potion,tag=!already] if data entity @s Item.tag.item_functions.set_p_vector run function #sco_items:item_functions/set_p_vector/generic
 
@@ -12,6 +16,8 @@
     execute as @e[type=potion,nbt={Item:{tag:{item_functions:{mini_healing_potion:1b}}}}] positioned as @s run function sco_items:item_functions/others/mini_healing_potion
 
 # custom_effect
+
+    execute as @e[nbt={active_effects:[{id:"minecraft:unluck",amplifier:49b}]}] run function sco_items:item_functions/no_gravity_arrow/hit_entity
 
     ##不幸の効果はここで消去する    
     effect clear @e[nbt={active_effects:[{id:"minecraft:unluck"}]}] unluck
