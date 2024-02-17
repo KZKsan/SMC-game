@@ -1,4 +1,4 @@
-#>sco:process/timer_score
+#>sco:process/kick_out/timer_score
 #@reads
 
 #declare score_holder #stage_timer

@@ -10,4 +10,5 @@ execute if data storage sco:input game{show_hp:false} run scoreboard objectives 
 execute if data storage sco:input game{show_hp:true} run scoreboard objectives setdisplay below_name player.HP
 execute if data storage sco:input game{show_enemy_team_name:false} run function sco:player/team/show_enemy_team_name/false
 execute if data storage sco:input game{show_enemy_team_name:true} run function sco:player/team/show_enemy_team_name/true
-function sco:process/timer_score
+execute if data storage sco:input game{rule:"death_match"} run function sco:process/death_match/timer_score
+execute if data storage sco:input game{rule:"kick_out"} run function sco:process/kick_out/timer_score
