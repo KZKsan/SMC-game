@@ -43,6 +43,18 @@
                                 ],
                                 [
                                     {
+                                        "translate": "attribute.name.generic.armor_toughness",
+                                        "color": "blue",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": " +3",
+                                        "color": "blue",
+                                        "italic": false
+                                    }
+                                ],
+                                [
+                                    {
                                         "translate": "attribute.name.generic.attack_damage",
                                         "color": "blue",
                                         "italic": false
@@ -75,6 +87,13 @@
                                     "amount": 6,
                                     "operation": "addition",
                                     "attribute": "generic.armor",
+                                    "name": ""
+                                },
+                                {
+                                    "slot": "chest",
+                                    "amount": 3,
+                                    "operation": "addition",
+                                    "attribute": "generic.armor_toughness",
                                     "name": ""
                                 },
                                 {
