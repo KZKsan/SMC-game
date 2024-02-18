@@ -24,7 +24,7 @@ execute if score # _ matches 1 run data modify storage sco:input stage_descripti
 execute if score # _ matches 2 run data modify storage sco:input stage_description set value '[{"text":"「---後の最------大---吐きや---ってっ！」"}]'
 execute if score # _ matches 3 run data modify storage sco:input stage_description set value '[{"text":"「......し...る...」"}]'
 execute if score # _ matches 4 run data modify storage sco:input stage_description set value '[{"text":"「------が！お------が悪いんだ！---あひゃひゃははははハはは-------------！！！」"}]'
-execute if score # _ matches 5 run data modify storage sco:input stage_description set value '[{"text":"「......し...る...」"}]'
+execute if score # _ matches 5 run data modify storage sco:input stage_description set value '[{"text":"「...いし...る...」"}]'
 execute if score # _ matches 6 run data modify storage sco:input stage_description set value '[{"text":"「こ------魔め！---------------！」"}]'
 execute if score # _ matches 7 run data modify storage sco:input stage_description set value '[{"text":"「...こ......や......ため...泣......よ...」"}]'
 execute if score # _ matches 8 run data modify storage sco:input stage_description set value '[{"text":"「...がだ......。はや......迎.........か.........」"}]'
