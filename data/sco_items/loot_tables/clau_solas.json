@@ -95,7 +95,7 @@
                             "function": "set_enchantments",
                             "enchantments": {
                                 "sharpness": 1,
-                                "smite": 7
+                                "smite": 6
                             }
                         },
                         {
