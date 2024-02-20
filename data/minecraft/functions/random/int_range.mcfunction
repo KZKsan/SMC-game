@@ -5,7 +5,7 @@
 #       $ranmin _
 #       $ranmax _
 #@output score $random _
-function random/int_uuid
+execute store result score $randmo _ run random value -2147483648..2147483647
 execute if score $ranmax _ < $ranmin _ run scoreboard players operation $ranmax _ >< $ranmin _
 scoreboard players operation $ranmax _ -= $ranmin _
 scoreboard players add $ranmax _ 1
