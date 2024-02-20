@@ -18,6 +18,7 @@
 # custom_effect
 
     execute as @e[nbt={active_effects:[{id:"minecraft:unluck",amplifier:49b}]}] run function sco_items:item_functions/no_gravity_arrow/hit_entity
+    execute as @e[nbt={active_effects:[{id:"minecraft:unluck",amplifier:119b},{id:"minecraft:absorption",amplifier:9b}]}] run effect clear @s absorption
 
     ##不幸の効果はここで消去する    
     effect clear @e[nbt={active_effects:[{id:"minecraft:unluck"}]}] unluck
