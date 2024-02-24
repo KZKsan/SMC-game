@@ -10,9 +10,21 @@
 						{
 							"function": "set_name",
 							"name": {
-								"text": "エメラルドは最初に配布されたものや装備を売ることで手に入れることができます",
-								"italic": false
+								"text": "　"
 							}
+						},
+						{
+							"function": "set_lore",
+							"lore": [
+								{
+									"text": "制限時間内に敵が残っていた場合、",
+									"color": "gold"
+								},
+								{
+									"text": "サドンデスモードに移行します。",
+									"color": "gold"
+								}
+							]
 						},
 						{
 							"function": "set_nbt",

@@ -10,9 +10,17 @@
 						{
 							"function": "set_name",
 							"name": {
-								"text": "ショップで装備を購入します",
-								"italic": false
+								"text": "　"
 							}
+						},
+						{
+							"function": "set_lore",
+							"lore": [
+								{
+									"text": "勝利条件は「敵を殲滅」です。",
+									"color": "gold"
+								}
+							]
 						},
 						{
 							"function": "set_nbt",

@@ -10,11 +10,16 @@
 						{
 							"function": "set_name",
 							"name": {
-								"text": "・戦闘フェーズ",
-								"bold": true,
-								"color": "white",
-								"italic": false
+								"text": "　"
 							}
+						},
+						{
+							"function": "set_lore",
+							"lore": [
+								{
+									"text": "狭いステージに移動し、最後の決着をつけます。"
+								}
+							]
 						},
 						{
 							"function": "set_nbt",
