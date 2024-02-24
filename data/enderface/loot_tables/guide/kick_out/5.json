@@ -1,0 +1,34 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "flower_banner_pattern",
+					"functions": [
+						{
+							"function": "set_name",
+							"name": {
+								"text": "　",
+								"italic": false
+							}
+						},
+						{
+							"function": "set_lore",
+							"lore": [
+								{
+									"text": "制限時間時、相手と同じ得点だった場合サドンデスモードに移行します。\n先に1キルが発生したチームの勝利です。"
+								}
+							]
+						},
+						{
+							"function": "set_nbt",
+							"tag": "{enderfaceItem:1b,HideFlags:32}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

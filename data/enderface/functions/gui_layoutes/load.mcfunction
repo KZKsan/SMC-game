@@ -18,6 +18,7 @@ execute if data storage enderface:data {gui_name:"game_settings/rule_settings"} 
 execute if data storage enderface:data {gui_name:"kit_memory/"} run function enderface:gui_layoutes/kit_memory/
 execute if data storage enderface:data {gui_name:"guide/"} run function enderface:gui_layoutes/guide_book/0
 execute if data storage enderface:data {gui_name:"guide/death_match"} run function enderface:gui_layoutes/guide_book/battle/death_match
+execute if data storage enderface:data {gui_name:"guide/kick_out"} run function enderface:gui_layoutes/guide_book/battle/kick_out
 execute if data storage enderface:data {gui_name:"guide/enchant"} run function enderface:gui_layoutes/guide_book/enchants/0
 
 
