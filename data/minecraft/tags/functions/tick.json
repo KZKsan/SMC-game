@@ -5,6 +5,7 @@
         "enderface:main",
         "sco:main",
         "sco_items:main",
-        "moving_block/"
+        "moving_block/",
+        "chair/"
     ]
 }
