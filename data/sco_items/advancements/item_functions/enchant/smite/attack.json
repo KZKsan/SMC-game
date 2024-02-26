@@ -19,8 +19,18 @@
                             "entity": "this",
                             "predicate": {
                                 "effects": {
-                                    "weakness":{}
+                                    "weakness": {}
                                 }
+                            }
+                        }
+                    },
+                    {
+                        "condition": "inverted",
+                        "term": {
+                            "condition": "entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "nbt": "{SelectedItem:{tag:{item_functions:{smite_attack:0b}}}}"
                             }
                         }
                     }
