@@ -92,4 +92,5 @@ place template sco:lobby/farm 14 -53 -74
 
 ## practice
 execute as @e[type=text_display,tag=health_pop] at @s run function sco:practice/entity/health_pop
-execute as @e[type=creeper,tag=sandbag] at @s run function sco:practice/entity/sandbag/
+execute as @e[tag=sandbag] at @s run function sco:practice/entity/sandbag/
+execute as @e[type=item_display,tag=sandbag.display] if function sco:practice/entity/sandbag/display run kill
