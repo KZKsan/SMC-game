@@ -13,6 +13,7 @@ loot replace entity @s enderchest.8 loot enderface:shop/category_icon/reset_item
 
 loot replace entity @s enderchest.22 loot enderface:shop/category_icon/kit_memory
 
+item replace entity @s[team=mode.practice] enderchest.26 with glistering_melon_slice{display:{Name:'{"text": ">体力を全回復する","italic": false,"color": "gold"}',Lore:['{"text": ">クリックでリセットする。","color": "gray"}']},click_events:{click_sounds:[{sound:"ui.button.bell"}],healing:1b},enderfaceItem:1b}
 
 data remove storage p-storage _[0].data.preview_trade
 data modify storage p-storage _[0].data.page set value 0
