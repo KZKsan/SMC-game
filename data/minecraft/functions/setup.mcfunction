@@ -4,6 +4,7 @@
 scoreboard objectives add _ dummy
 
 scoreboard objectives add sneaked dummy
+scoreboard objectives add sitting dummy
 
 scoreboard objectives add UUID.0 dummy
 scoreboard objectives add UUID.1 dummy

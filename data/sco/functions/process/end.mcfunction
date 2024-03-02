@@ -1,6 +1,5 @@
 #>sco:process/end
 #@within sco:process/**
-
 scoreboard players set #process game 0
 scoreboard players set #runtime game -1
 scoreboard players reset last gameID
@@ -13,6 +12,7 @@ tag @a[predicate=sco:team_join,team=!spectator,tag=rg.food_limit] remove rg.food
 tag @a[predicate=sco:team_join,team=!spectator,tag=rg.item_function_limit] remove rg.item_function_limit
 tag @a[predicate=sco:team_join,team=!spectator,tag=rg.penalty_area.penalty] remove rg.penalty_area.penalty
 tag @a[predicate=sco:team_join,team=!spectator,tag=rg.penalty_area.death] remove rg.penalty_area.death
+execute as @e[type=#arrows] if function sco:regine/can_pickup_arrows/test run kill
 effect clear @a[predicate=sco:team_join]
 execute as @a[predicate=sco:team_join] run function sco:player/retune_lobby
 function sco:stage_data/generic_settings
@@ -21,3 +21,4 @@ function sco:player/team/team_info/off
 scoreboard objectives setdisplay below_name
 function sco:player/team/show_enemy_team_name/true
 data remove storage sco:data penalty_area.struct
+data remove storage sco:input game

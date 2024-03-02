@@ -1,0 +1,38 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "flower_banner_pattern",
+					"functions": [
+						{
+							"function": "set_name",
+							"name": {
+								"text": "　"
+							}
+						},
+						{
+							"function": "set_lore",
+							"lore": [
+								{
+									"text": "復活時、試合開始時の相手を持って復活します。",
+									"color": "gold"
+								},
+								{
+									"text": "なお、復活後数秒はしばらくバフがかかります。",
+									"color": "gold"
+								}
+							]
+						},
+						{
+							"function": "set_nbt",
+							"tag": "{enderfaceItem:1b,HideFlags:34}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

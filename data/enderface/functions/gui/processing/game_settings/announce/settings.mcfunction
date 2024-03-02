@@ -3,6 +3,7 @@
 execute as @a at @s run playsound item.book.page_turn record @s ~ ~ ~ 1 1
 tellraw @a "----------------------------"
 execute if data storage sco:config game{rule:"death_match"} run tellraw @a [{"text": "ルール: ","bold": true},{"text": "デスマッチ","bold": true,"color": "red"}]
+execute if data storage sco:config game{rule:"kick_out"} run tellraw @a [{"text": "ルール: ","bold": true},{"text": "キックアウト","bold": true,"color": "yellow"}]
 execute if data storage sco:config {stage:"sco_random"} run tellraw @a [{"text": "ステージ: ","bold": true},{"text": "ランダム","color": "green"}]
 execute unless data storage sco:config {stage:"sco_random"} run function sco:stage_data/data_fetch with storage sco:config
 execute unless data storage sco:config {stage:"sco_random"} run tellraw @a [{"text": "ステージ: ","bold": true},{"nbt":"stage_name","storage": "sco:input","interpret": true}]
@@ -13,4 +14,6 @@ execute if data storage sco:config game{show_enemy_team_name:false} run tellraw 
 execute if data storage sco:config game{show_enemy_team_name:true} run tellraw @a [{"text": "・敵チームの名前の表示: "},{"text": "ON","color": "green"}]
 execute if data storage sco:config game{friendlyfire:false} run tellraw @a [{"text": "・フレンドリーファイア: "},{"text": "OFF","color": "gray"}]
 execute if data storage sco:config game{friendlyfire:true} run tellraw @a [{"text": "・フレンドリーファイア: "},{"text": "ON","color": "green"}]
+execute if data storage sco:config game{can_pickup_arrows:false} run tellraw @a [{"text": "・矢の回収: "},{"text": "OFF","color": "gray"}]
+execute if data storage sco:config game{can_pickup_arrows:true} run tellraw @a [{"text": "・矢の回収: "},{"text": "ON","color": "green"}]
 tellraw @a "----------------------------"

@@ -16,7 +16,7 @@
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{CustomPotionColor:8397608,custom_potion_effects:[{amplifier:0b,duration:300,id:\"strength\"},{amplifier:0b,duration:300,id:\"wither\"}]}"
+                            "tag": "{CustomPotionColor:8397608,custom_potion_effects:[{amplifier:0b,duration:300,id:\"strength\"},{amplifier:0b,duration:300,id:\"wither\"},{amplifier:119b,duration:10,id:\"unluck\"}]}"
                         }
                     ]
                 }

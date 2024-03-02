@@ -13,10 +13,13 @@ function enderface:gui_layoutes/shop/set_trade_data/single_data/reaper_robe
 function enderface:gui_layoutes/shop/set_trade_data/single_data/magic_robe
 function enderface:gui_layoutes/shop/set_trade_data/single_data/black_spirit_knight_armor
 function enderface:gui_layoutes/shop/set_trade_data/single_data/zombie_armor
+function enderface:gui_layoutes/shop/set_trade_data/single_data/worker_chestplate
 function enderface:gui_layoutes/shop/set_trade_data/single_data/worker_leggings
 function enderface:gui_layoutes/shop/set_trade_data/single_data/power_boots
 function enderface:gui_layoutes/shop/set_trade_data/single_data/speed_boots
 function enderface:gui_layoutes/shop/set_trade_data/single_data/hard_boots
+function enderface:gui_layoutes/shop/set_trade_data/single_data/fire_boots
+function enderface:gui_layoutes/shop/set_trade_data/single_data/fall_boots
 function enderface:gui_layoutes/shop/set_trade_data/single_data/putuo_boots
 
 function enderface:gui_layoutes/shop/set_trade_data/single_data/shield

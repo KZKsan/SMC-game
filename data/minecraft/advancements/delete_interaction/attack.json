@@ -1,0 +1,30 @@
+{
+    "criteria": {
+        "attack": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "nbt": "{SelectedItem:{tag:{delete_interaction:1b}}}"
+                        }
+                    }
+                ],
+                "entity": [
+                    {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type":"interaction"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "delete_interaction/attack/"
+    }
+}

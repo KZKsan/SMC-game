@@ -24,11 +24,25 @@
                                 "nbt": "{Tags:[\"rg.item_function_limit\"]}"
                             }
                         }
+                    },
+                    {
+                        "condition": "inverted",
+                        "term": {
+                            "condition": "entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "type_specific": {
+                                    "type": "player",
+                                    "gamemode": "spectator"
+                                }
+                            }
+                        }
                     }
                 ]
             }
         }
     },
+    "parent": "sco_items:item_functions/show_durability/chest",
     "rewards": {
         "function": "sco_items:item_functions/using_damage/chest"
     }

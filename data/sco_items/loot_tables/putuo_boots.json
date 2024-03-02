@@ -52,7 +52,7 @@
                                         "italic": false
                                     },
                                     {
-                                        "text": " -6",
+                                        "text": " -2",
                                         "color": "red",
                                         "italic": false
                                     }
@@ -72,7 +72,7 @@
                                 {
                                     "attribute": "generic.armor",
                                     "name": "",
-                                    "amount": -6,
+                                    "amount": -2,
                                     "operation": "addition",
                                     "slot": "feet"
                                 }

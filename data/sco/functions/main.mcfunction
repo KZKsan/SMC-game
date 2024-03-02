@@ -13,25 +13,31 @@ execute unless score #runtime game matches -2147483648..2147483647 run scoreboar
 scoreboard players set @a[scores={respawnTime=2147483647}] respawnTime 30
 
 #0. none
-execute if score #process game matches 0 run function sco:process/0
+execute if score #process game matches 000 run function sco:process/death_match/000
 
 #1.マップ用意
-execute if score #process game matches 10 run function sco:process/10
+execute if score #process game matches 010 run function sco:process/death_match/010
+execute if score #process game matches 110 run function sco:process/kick_out/110
 
 #2.マップ確認
-execute if score #process game matches 11 run function sco:process/11
+execute if score #process game matches 011 run function sco:process/death_match/011
+execute if score #process game matches 111 run function sco:process/kick_out/111
 
 #3.ショップ
-execute if score #process game matches 20 run function sco:process/20
+execute if score #process game matches 020 run function sco:process/death_match/020
+execute if score #process game matches 120 run function sco:process/kick_out/120
 
 #4.ゲーム
-execute if score #process game matches 30 run function sco:process/30
+execute if score #process game matches 030 run function sco:process/death_match/030
+execute if score #process game matches 130 run function sco:process/kick_out/130
 
 #5.サドンデス
-execute if score #process game matches 31 run function sco:process/31
+execute if score #process game matches 031 run function sco:process/death_match/031
+execute if score #process game matches 131 run function sco:process/kick_out/131
 
 #6.終了
-execute if score #process game matches 40 run function sco:process/40
+execute if score #process game matches 040 run function sco:process/death_match/040
+execute if score #process game matches 140 run function sco:process/kick_out/140
 
 execute as @a[team=mode.practice,scores={leave_game=1..}] run function sco:player/retune_lobby
 
@@ -61,9 +67,11 @@ execute as @e[type=item,tag=] unless score @s dropped_item matches 0 run functio
 execute as @e[type=#projectiles] unless score @s shot_projectiles matches 0 run function sco:regine/shot_projectiles/
 
 ##矢
-execute as @e[type=#arrows,nbt=!{pickup:0b}] store success entity @s pickup byte 1 if entity @s[nbt={pickup:0b}]
-execute as @e[type=#arrows,nbt={inGround:1b,life:1s}] run data modify entity @s life set value 1100s
+execute as @e[type=#arrows] unless score @s shot_arrow matches 0 if data storage sco:input game{can_pickup_arrows:true} if function sco:regine/can_pickup_arrows/test run scoreboard players set @s can_pickup_arrow 0
 execute as @e[type=#arrows] unless score @s shot_arrow matches 0 run function sco:player/result/arrows/shot
+execute as @e[type=#arrows,nbt=!{pickup:0b}] unless score @s can_pickup_arrow matches 0 store success entity @s pickup byte 1 if entity @s[nbt={pickup:0b}]
+execute as @e[type=#arrows,nbt={inGround:1b,life:1s}] unless score @s can_pickup_arrow matches 0 run data modify entity @s life set value 1100s
+execute as @e[type=#arrows,nbt={inGround:1b,life:1s},scores={can_pickup_arrow=0}] run data modify entity @s life set value 900s
 
 
 ##満腹度
@@ -71,8 +79,7 @@ execute as @a store result score @s food_saturation_level run data get entity @s
 execute as @a[tag=rg.food_limit] run function sco:regine/food_limit/
 
 ##進入禁止
-#execute as @a[tag=rg.block_area,predicate=sco:regine/block_area/scores,tag=!rg.off] at @s run function sco:regine/block_area/
-execute as @a[tag=rg.block_area,tag=!rg.off] at @s if data storage sco:data block_area.struct run function sco:regine/block_area/ with storage sco:data block_area
+execute as @a[tag=rg.block_area,tag=!rg.off] at @s if data storage sco:data block_area.struct run function sco:regine/block_area/ with storage sco:data block_area.struct
 execute if entity @p[tag=rg.block_area] run function sco:regine/block_area/updata_pos
 
 ##ステージ範囲外
@@ -85,4 +92,5 @@ place template sco:lobby/farm 14 -53 -74
 
 ## practice
 execute as @e[type=text_display,tag=health_pop] at @s run function sco:practice/entity/health_pop
-execute as @e[type=creeper,tag=sandbag] at @s run function sco:practice/entity/sandbag/
+execute as @e[tag=sandbag] at @s run function sco:practice/entity/sandbag/
+execute as @e[type=item_display,tag=sandbag.display] if function sco:practice/entity/sandbag/display run kill

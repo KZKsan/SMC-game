@@ -1,0 +1,26 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "tipped_arrow",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": {
+                                "text": "無重力の矢",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{CustomPotionColor:10394523,custom_potion_effects:[{amplifier:49b,duration:1,id:\"unluck\",show_particles:0b}],HideFlags:32,item_functions:{no_gravity_arrow:1b}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

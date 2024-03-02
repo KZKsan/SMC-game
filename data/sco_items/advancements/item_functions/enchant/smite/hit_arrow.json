@@ -1,0 +1,19 @@
+{
+    "criteria": {
+        "hit_arrow": {
+            "trigger": "entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "direct_entity": {
+                            "nbt": "{item:{tag:{Enchantments:[{id:\"minecraft:smite\"}]}}}"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "sco_items:item_functions/enchant/smite/hit_arrow/"
+    }
+}
