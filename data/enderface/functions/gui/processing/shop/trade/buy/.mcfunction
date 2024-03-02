@@ -8,7 +8,7 @@
 #declare score_holder #Count
 #declare score_holder #have_count
 
-data modify storage enderface:data success set value 1b
+
 data modify storage enderface:data trade.buy set from storage enderface:data gui_intaract.Item.tag.trade.buy
 
 execute store result score #len _ run data get storage enderface:data gui_intaract.Item.tag.trade.buy
