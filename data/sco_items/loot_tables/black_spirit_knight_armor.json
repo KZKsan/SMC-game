@@ -50,7 +50,7 @@
                                         "italic": false
                                     },
                                     {
-                                        "text": " +8",
+                                        "text": " +2",
                                         "color": "blue",
                                         "italic": false
                                     }
@@ -105,7 +105,7 @@
                                 },
                                 {
                                     "slot": "chest",
-                                    "amount": 8,
+                                    "amount": 2,
                                     "operation": "addition",
                                     "attribute": "generic.armor_toughness",
                                     "name": ""
@@ -136,7 +136,7 @@
                         {
                             "function": "set_enchantments",
                             "enchantments": {
-                                "projectile_protection": 7
+                                "projectile_protection": 5
                             }
                         },
                         {
