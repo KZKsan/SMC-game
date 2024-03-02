@@ -60,7 +60,7 @@
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{HideFlags:34}"
+                            "tag": "{HideFlags:34,trishula:1b}"
                         }
                     ]
                 }
