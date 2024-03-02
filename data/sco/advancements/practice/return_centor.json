@@ -1,0 +1,139 @@
+{
+    "criteria": {
+        "button1": {
+            "trigger": "item_used_on_block",
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "location_check",
+                        "predicate": {
+                            "position": {
+                                "x": 285.5,
+                                "y": -44.5,
+                                "z": -107.5
+                            },
+                            "block": {
+                                "blocks": [
+                                    "stone_button"
+                                ],
+                                "state": {
+                                    "powered": "true"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "button2": {
+            "trigger": "item_used_on_block",
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "location_check",
+                        "predicate": {
+                            "position": {
+                                "x": 369.5,
+                                "y": -48.5,
+                                "z": -114.5
+                            },
+                            "block": {
+                                "blocks": [
+                                    "stone_button"
+                                ],
+                                "state": {
+                                    "powered": "true"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "button3": {
+            "trigger": "item_used_on_block",
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "location_check",
+                        "predicate": {
+                            "position": {
+                                "x": 355.5,
+                                "y": -48.5,
+                                "z": -186.5
+                            },
+                            "block": {
+                                "blocks": [
+                                    "stone_button"
+                                ],
+                                "state": {
+                                    "powered": "true"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "button4": {
+            "trigger": "item_used_on_block",
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "location_check",
+                        "predicate": {
+                            "position": {
+                                "x": 376.5,
+                                "y": -48.5,
+                                "z": -147.5
+                            },
+                            "block": {
+                                "blocks": [
+                                    "stone_button"
+                                ],
+                                "state": {
+                                    "powered": "true"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "button5": {
+            "trigger": "item_used_on_block",
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "location_check",
+                        "predicate": {
+                            "position": {
+                                "x":296.5, "y":-48.5, "z":-161.5
+                            },
+                            "block": {
+                                "blocks": [
+                                    "stone_button"
+                                ],
+                                "state": {
+                                    "powered": "true"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "button1",
+            "button2",
+            "button3",
+            "button4",
+            "button5"
+        ]
+    ],
+    "rewards": {
+        "function": "sco:process/mode/practice/return_centor"
+    }
+}
