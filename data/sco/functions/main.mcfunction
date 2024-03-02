@@ -54,11 +54,7 @@ effect give @a[team=,predicate=gamemode/as,tag=!rg.off] water_breathing 1 10 tru
 effect give @a[team=,predicate=gamemode/as,tag=!rg.off] fire_resistance 1 10 true
 
 ##mode.practice
-effect give @a[predicate=gamemode/as,tag=!rg.off,team=mode.practice] instant_health 10 50 true
-effect give @a[predicate=gamemode/as,tag=!rg.off,team=mode.practice] resistance 1 50 true
-effect give @a[predicate=gamemode/as,tag=!rg.off,team=mode.practice] saturation 10 120 true
-effect give @a[predicate=gamemode/as,tag=!rg.off,team=mode.practice] water_breathing 1 10 true
-effect give @a[predicate=gamemode/as,tag=!rg.off,team=mode.practice] fire_resistance 1 10 true
+function sco:process/mode/practice/
 
 ##アイテムドロップ制限
 execute as @e[type=item,tag=] unless score @s dropped_item matches 0 run function sco:regine/item_drop/
