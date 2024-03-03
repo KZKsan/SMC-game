@@ -41,7 +41,7 @@
                                         "italic": false
                                     },
                                     {
-                                        "text": " +200%",
+                                        "text": " +140%",
                                         "color": "blue",
                                         "italic": false
                                     }
@@ -53,7 +53,7 @@
                             "modifiers": [
                                 {
                                     "slot": "chest",
-                                    "amount": 2,
+                                    "amount": 1.4,
                                     "operation": "multiply_total",
                                     "attribute": "generic.movement_speed",
                                     "name": ""
