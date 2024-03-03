@@ -1,0 +1,20 @@
+{
+    "parent": "sco_items:root",
+    "criteria": {
+        "taken_arrow": {
+            "trigger": "entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "direct_entity": {
+                            "nbt": "{item:{tag:{cure_arrow:1b}}}"
+                        }
+                    } 
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "sco_items:item_functions/cure_arrow"
+    }
+}

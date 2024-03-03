@@ -1,0 +1,35 @@
+{
+    "criteria": {
+        "button1": {
+            "trigger": "item_used_on_block",
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "location_check",
+                        "predicate": {
+                            "position": {
+                                "x":344.5, "y":-48.5, "z":-130.5
+                            },
+                            "block": {
+                                "blocks": [
+                                    "stone_button"
+                                ],
+                                "state": {
+                                    "powered": "true"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "button1"
+        ]
+    ],
+    "rewards": {
+        "function": "sco:process/mode/practice/return_lobby"
+    }
+}

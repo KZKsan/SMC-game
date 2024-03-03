@@ -32,19 +32,7 @@
                                         "italic": false
                                     },
                                     {
-                                        "text": " +6",
-                                        "color": "blue",
-                                        "italic": false
-                                    }
-                                ],
-                                [
-                                    {
-                                        "translate": "attribute.name.generic.knockback_resistance",
-                                        "color": "blue",
-                                        "italic": false
-                                    },
-                                    {
-                                        "text": " +100%",
+                                        "text": " +4",
                                         "color": "blue",
                                         "italic": false
                                     }
@@ -68,7 +56,7 @@
                                         "italic": false
                                     },
                                     {
-                                        "text": " +40%",
+                                        "text": " +30%",
                                         "color": "blue",
                                         "italic": false
                                     }
@@ -80,7 +68,7 @@
                                         "italic": false
                                     },
                                     {
-                                        "text": " -100%",
+                                        "text": " -50%",
                                         "color": "red",
                                         "italic": false
                                     }
@@ -92,16 +80,9 @@
                             "modifiers": [
                                 {
                                     "slot": "chest",
-                                    "amount": 6,
+                                    "amount": 4,
                                     "operation": "addition",
                                     "attribute": "generic.armor",
-                                    "name": ""
-                                },
-                                {
-                                    "slot": "chest",
-                                    "amount": 1,
-                                    "operation": "multiply_total",
-                                    "attribute": "generic.knockback_resistance",
                                     "name": ""
                                 },
                                 {
@@ -120,7 +101,7 @@
                                 },
                                 {
                                     "slot": "chest",
-                                    "amount": -1,
+                                    "amount": -0.5,
                                     "operation": "multiply_total",
                                     "attribute": "generic.movement_speed",
                                     "name": ""

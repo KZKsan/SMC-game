@@ -11,7 +11,7 @@
 							"function": "set_name",
 							"name": [
 								{
-									"text": "聖なる矢",
+									"text": "浄化の矢",
 									"color": "white",
 									"italic": false
 								}
@@ -20,18 +20,18 @@
 						{
 							"function": "set_lore",
 							"lore": [
-								"死した存在を抹消する矢"
+								{
+									"text": "浄化の力",
+									"color": "gray",
+									"italic": false
+								},
+								"",
+								"対象のバフ・デバフをキュアする"
 							]
 						},
 						{
-							"function": "set_enchantments",
-							"enchantments": {
-								"smite": 4
-							}
-						},
-						{
 							"function": "set_nbt",
-							"tag": "{CustomPotionColor:15657130,HideFlags:32}"
+							"tag": "{CustomPotionColor:11393254,cure_arrow:true,HideFlags:32}"
 						}
 					]
 				}

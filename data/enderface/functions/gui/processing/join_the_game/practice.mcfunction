@@ -6,5 +6,8 @@ clear
 effect clear @s
 function sco_items:kit/default
 tag @s add rg.drop_item
-teleport @s 70 -59 10 0 0
+tag @s add rg.food_limit
+teleport @s 344 -50 -135 0 0
+function p-storage/get
+data modify storage p-storage _[0].data.respawn set value {pos:"344 -50 -135 0 0"}
 execute positioned as @s run playsound entity.player.levelup record @s ~ ~ ~ 0.5 1

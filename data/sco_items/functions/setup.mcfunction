@@ -10,3 +10,4 @@ scoreboard objectives add hidden_cover.time dummy
 scoreboard objectives add sneak_moving custom:crouch_one_cm
 scoreboard objectives add moving custom:walk_one_cm
 scoreboard objectives add trigger_death deathCount
+scoreboard objectives add cure_arrow dummy
