@@ -34,7 +34,7 @@
               },
               [
                 {
-                  "translate": "generic.armor",
+                  "translate": "attribute.name.generic.armor",
                   "fallback": "防具",
                   "color": "blue",
                   "italic": false

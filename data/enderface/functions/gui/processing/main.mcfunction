@@ -17,6 +17,7 @@ execute if data storage enderface:data {gui_name:"join_the_game/"} run function 
 execute if data storage enderface:data {gui_name:"game_settings/"} run function enderface:gui/processing/game_settings/
 execute if data storage enderface:data {gui_name:"game_settings/stage_select"} run function enderface:gui/processing/game_settings/stage_select/
 execute if data storage enderface:data {gui_name:"game_settings/rule_settings"} run function enderface:gui/processing/game_settings/rule_settings/
+execute if data storage enderface:data gui_intaract{click:1b} if data storage enderface:data gui_intaract.Item.tag.click_events{healing:1b} run effect give @s instant_health 5 120
 ## return_item
 function enderface:gui/return_item/main
 ## Other Processing 2

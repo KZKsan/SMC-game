@@ -10,9 +10,9 @@
                         {
                             "function": "set_name",
                             "name": {
-                                "text": "黒霊騎士の鎧",
+                                "text": "タイラントプレート",
                                 "italic": false,
-                                "color": "dark_purple"
+                                "color": "red"
                             }
                         },
                         {
@@ -24,7 +24,7 @@
                                     "italic": false
                                 },
                                 "",
-                                "何か不気味な雰囲気をまとう鎧",
+                                "巨体になれる",
                                 "",
                                 {
                                     "translate": "item.modifiers.chest",
@@ -38,7 +38,7 @@
                                         "italic": false
                                     },
                                     {
-                                        "text": " +10",
+                                        "text": " +5",
                                         "color": "blue",
                                         "italic": false
                                     }
@@ -50,7 +50,7 @@
                                         "italic": false
                                     },
                                     {
-                                        "text": " +2",
+                                        "text": " +5",
                                         "color": "blue",
                                         "italic": false
                                     }
@@ -62,7 +62,7 @@
                                         "italic": false
                                     },
                                     {
-                                        "text": " +16",
+                                        "text": " +80",
                                         "color": "blue",
                                         "italic": false
                                     }
@@ -74,7 +74,7 @@
                                         "italic": false
                                     },
                                     {
-                                        "text": " +0.5",
+                                        "text": " +0.3",
                                         "color": "blue",
                                         "italic": false
                                     }
@@ -86,7 +86,7 @@
                                         "italic": false
                                     },
                                     {
-                                        "text": " -10%",
+                                        "text": " -20%",
                                         "color": "red",
                                         "italic": false
                                     }
@@ -98,35 +98,35 @@
                             "modifiers": [
                                 {
                                     "slot": "chest",
-                                    "amount": 10,
+                                    "amount": 5,
                                     "operation": "addition",
                                     "attribute": "generic.armor",
                                     "name": ""
                                 },
                                 {
                                     "slot": "chest",
-                                    "amount": 2,
+                                    "amount": 5,
                                     "operation": "addition",
                                     "attribute": "generic.armor_toughness",
                                     "name": ""
                                 },
                                 {
                                     "slot": "chest",
-                                    "amount": 16,
+                                    "amount": 80,
                                     "operation": "addition",
                                     "attribute": "generic.max_health",
                                     "name": ""
                                 },
                                 {
                                     "slot": "chest",
-                                    "amount": 0.5,
+                                    "amount": 0.3,
                                     "operation": "addition",
                                     "attribute": "generic.knockback_resistance",
                                     "name": ""
                                 },
                                 {
                                     "slot": "chest",
-                                    "amount": -0.1,
+                                    "amount": -0.2,
                                     "operation": "multiply_total",
                                     "attribute": "generic.movement_speed",
                                     "name": ""
@@ -134,14 +134,8 @@
                             ]
                         },
                         {
-                            "function": "set_enchantments",
-                            "enchantments": {
-                                "projectile_protection": 5
-                            }
-                        },
-                        {
                             "function": "set_nbt",
-                            "tag": "{item_functions:{undead:1b},HideFlags:130,Trim: {material: \"minecraft:netherite\", pattern: \"minecraft:silence\"}}"
+                            "tag": "{item_functions:{undead:1b},HideFlags:130,Trim: {material: \"minecraft:netherite\", pattern: \"minecraft:silence\"},Enchantments:[{}]}"
                         }
                     ]
                 }

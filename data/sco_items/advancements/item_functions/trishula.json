@@ -10,6 +10,16 @@
                         "predicate": {
                             "nbt": "{SelectedItem:{tag:{item_functions:{trishula:1b}}}}"
                         }
+                    },
+                    {
+                        "condition": "inverted",
+                        "term": {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "nbt": "{active_effects:[{id:\"minecraft:poison\"}]}"
+                            }
+                        }
                     }
                 ]
             }
