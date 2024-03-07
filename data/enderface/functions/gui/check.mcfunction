@@ -20,6 +20,7 @@ function enderface:gui/check/slot
 ## 
 clear @s #all{enderfaceItem:1b}
 data modify storage enderface:data gui_name set from storage p-storage _[0].data.gui_name
+execute unless data storage p-storage _[0].data.gui_history run data modify storage p-storage _[0].data.gui_history set value []
 data modify storage enderface:data gui_history set from storage p-storage _[0].data.gui_history
 execute at @s run function enderface:gui/processing/main
 

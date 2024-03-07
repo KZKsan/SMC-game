@@ -31,7 +31,7 @@ execute as @a[team=spectator,tag=!spectator] run function sco:player/team/specta
 execute as @a[team=spectator,tag=!spectator] run function sco:tp/macro with storage sco:data respawn[{name:"stage_red"}]
 execute as @a[team=spectator,tag=!spectator] run function sco:player/team/remove_team_tag
 tag @a[team=spectator,tag=!spectator] add spectator
-execute if score #runtime game matches 1.. as @a[predicate=sco:team_join,scores={respawnTime=1}] run function sco:tp/stage/macro/single_player with storage sco:data
+execute if score #runtime game matches 1.. as @a[predicate=sco:team_join,scores={respawnTime=1}] run function sco:tp/macro with storage sco:data respawn[{name:"stage_red"}]
 execute if score #runtime game matches 5 as @a[predicate=sco:team_join] at @s run playsound entity.player.levelup record @s ~ ~ ~ 0.5 1
 
 #ステージギミック

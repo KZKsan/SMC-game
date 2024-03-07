@@ -54,8 +54,7 @@
                         {
                             "function": "set_enchantments",
                             "enchantments": {
-                                "projectile_protection" :3,
-                                "protection": 3
+                                "projectile_protection" :3
                             }
                         },
                         {
