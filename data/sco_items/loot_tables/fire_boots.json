@@ -53,7 +53,7 @@
                             "function": "set_enchantments",
                             "enchantments": {
                                 "unbreaking": 10,
-                                "fire_protection": 1
+                                "fire_protection": 4
                             }
                         },
                         {
