@@ -19,6 +19,15 @@
                             "lore": [
                                 "死の淵へ誘うローブ",
                                 "",
+                                [
+                                    {
+                                        "translate": "effect.minecraft.resistance",
+                                        "italic": false,
+                                        "color": "#00CCAA"
+                                    },
+                                    " A:2, D:1s"
+                                ],
+                                "",
                                 {
                                     "translate": "item.modifiers.chest",
                                     "color": "gray",
@@ -43,7 +52,7 @@
                                         "italic": false
                                     },
                                     {
-                                        "text": " +18",
+                                        "text": " +3",
                                         "color": "blue",
                                         "italic": false
                                     }
@@ -55,7 +64,7 @@
                             "modifiers": [
                                 {
                                     "slot": "chest",
-                                    "amount": 18,
+                                    "amount": 3,
                                     "operation": "addition",
                                     "attribute": "generic.armor",
                                     "name": ""
@@ -73,15 +82,15 @@
                             "function": "set_enchantments",
                             "enchantments": {
                                 "binding_curse": 1,
-                                "feather_falling": 4,
-                                "projectile_protection": 7,
+                                "feather_falling": 2,
+                                "projectile_protection": 3,
                                 "thorns": 4,
                                 "unbreaking": 10
                             }
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{HideFlags:2,display:{color:1908001}}"
+                            "tag": "{HideFlags:66,display:{color:1908001},item_functions:{passive_effects:[{id:\"resistance\",duration:1,amplifier:2,hide_particle:\"false\"}]}}"
                         }
                     ]
                 }

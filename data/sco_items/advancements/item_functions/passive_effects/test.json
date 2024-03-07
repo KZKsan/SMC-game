@@ -1,0 +1,26 @@
+{
+    "criteria": {
+        "chest": {
+            "trigger": "tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "nbt": "{Inventory:[{Slot:102b}]}"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "chest"
+        ]
+    ],
+    "rewards": {
+        "function": "sco_items:item_functions/passive_effects/"
+    }
+}
