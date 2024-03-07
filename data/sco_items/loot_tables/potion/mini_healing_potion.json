@@ -17,12 +17,12 @@
                         {
                             "function": "set_lore",
                             "lore": [
-                                "高速でHPを1回復する"
+                                "高速でHPを3回復する"
                             ]
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{CustomPotionColor:16719310,custom_potion_effects:[{amplifier:2b,duration:25,id:\"regeneration\"}],item_functions:{mini_healing_potion:1b}}"
+                            "tag": "{CustomPotionColor:16719310,custom_potion_effects:[{amplifier:3b,duration:20,id:\"regeneration\"}],item_functions:{mini_healing_potion:1b}}"
                         }
                     ]
                 }
