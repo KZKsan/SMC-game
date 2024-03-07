@@ -39,7 +39,7 @@ execute if score #process game matches 131 run function sco:process/kick_out/131
 execute if score #process game matches 040 run function sco:process/death_match/040
 execute if score #process game matches 140 run function sco:process/kick_out/140
 
-execute as @a[team=mode.practice,scores={leave_game=1..}] run function sco:player/retune_lobby
+execute as @a[predicate=sco:practice_join,scores={leave_game=1..}] run function sco:player/retune_lobby
 
 scoreboard players set @a[scores={leave_game=1..}] leave_game 0
 
@@ -55,6 +55,7 @@ effect give @a[team=,predicate=gamemode/as,tag=!rg.off] fire_resistance 1 10 tru
 
 ##mode.practice
 function sco:process/mode/practice/
+function sco:process/mode/pvp/
 
 ##アイテムドロップ制限
 execute as @e[type=item,tag=] unless score @s dropped_item matches 0 run function sco:regine/item_drop/
