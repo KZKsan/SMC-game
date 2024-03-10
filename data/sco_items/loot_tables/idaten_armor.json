@@ -86,7 +86,7 @@
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{HideFlags:66,item_functions:{idaten_armor:1b},display:{color:6599860}}"
+                            "tag": "{HideFlags:66,item_functions:{passive_effects:[{id:\"jump_boost\",duration:2,amplifier:0,hide_particle:\"false\"}]},display:{color:6599860}}"
                         }
                     ]
                 }
