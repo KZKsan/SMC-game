@@ -30,7 +30,7 @@
                                         "italic": false
                                     },
                                     {
-                                        "text": " +0.5",
+                                        "text": " +1.5",
                                         "color": "blue",
                                         "italic": false
                                     }
@@ -43,7 +43,7 @@
                                 {
                                     "attribute": "generic.attack_damage",
                                     "name": "",
-                                    "amount": 0.5,
+                                    "amount": 1,
                                     "operation": "addition",
                                     "slot": "feet"
                                 }
