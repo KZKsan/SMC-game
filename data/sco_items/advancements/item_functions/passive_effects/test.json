@@ -13,11 +13,26 @@
                     }
                 ]
             }
+        },
+        "feet": {
+            "trigger": "tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "nbt": "{Inventory:[{Slot:100b}]}"
+                        }
+                    }
+                ]
+            }
         }
     },
     "requirements": [
         [
-            "chest"
+            "chest",
+            "feet"
         ]
     ],
     "rewards": {
