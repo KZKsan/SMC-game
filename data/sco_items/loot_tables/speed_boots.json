@@ -30,7 +30,7 @@
                                         "italic": false
                                     },
                                     {
-                                        "text": " +5%",
+                                        "text": " +10%",
                                         "color": "blue",
                                         "italic": false
                                     }
@@ -43,7 +43,7 @@
                                 {
                                     "attribute": "generic.movement_speed",
                                     "name": "",
-                                    "amount": 0.05,
+                                    "amount": 0.1,
                                     "operation": "multiply_total",
                                     "slot": "feet"
                                 }
