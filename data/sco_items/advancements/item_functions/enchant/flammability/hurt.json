@@ -4,6 +4,7 @@
             "trigger": "entity_hurt_player",
             "conditions": {
                 "damage": {
+                    "dealt": 1,
                     "type": {
                         "tags": [
                             {
@@ -18,19 +19,8 @@
         "in_soul_fire": {
             "trigger": "entity_hurt_player",
             "conditions": {
-                "player": [
-                    {
-                        "condition": "location_check",
-                        "predicate": {
-                            "block": {
-                                "blocks": [
-                                    "soul_fire","soul_campfire"
-                                ]
-                            }
-                        }
-                    }
-                ],
                 "damage": {
+                    "dealt": 2,
                     "type": {
                         "tags": [
                             {
