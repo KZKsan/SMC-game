@@ -1,8 +1,14 @@
 {
     "criteria": {
         "hit_arrow": {
-            "trigger": "entity_hurt_player",
+            "trigger": "player_hurt_entity",
             "conditions": {
+                "entity": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/have_undead_items"
+                    }
+                ],
                 "damage": {
                     "type": {
                         "direct_entity": {
