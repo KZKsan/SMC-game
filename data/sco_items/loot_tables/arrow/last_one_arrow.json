@@ -1,0 +1,38 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "tipped_arrow",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": [
+                                {
+                                    "text": "最後の一撃",
+                                    "color": "dark_red",
+                                    "bold": true,
+                                    "italic": false
+                                }
+                            ]
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore": [
+                                {
+                                    "text": "とてつもない火力で敵を撃ち滅ぼす"
+                                }
+                            ]
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{item_functions:{last_one_arrow:1b},cant_pickup:true}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

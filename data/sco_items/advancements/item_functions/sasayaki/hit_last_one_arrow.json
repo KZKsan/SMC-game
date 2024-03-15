@@ -2,12 +2,12 @@
     "parent": "sco_items:root",
     "criteria": {
         "taken_arrow": {
-            "trigger": "entity_hurt_player",
+            "trigger": "player_hurt_entity",
             "conditions": {
                 "damage": {
                     "type": {
                         "direct_entity": {
-                            "nbt": "{item:{tag:{SLastArrow:1b}}}"
+                            "nbt": "{item:{tag:{item_functions:{last_one_arrow:1b}}}}"
                         }
                     } 
                 }
@@ -15,6 +15,6 @@
         }
     },
     "rewards": {
-        "function": "sco_items:item_functions/sasayaki/hurt"
+        "function": "sco_items:item_functions/sasayaki/hit_last_one_arrow/"
     }
 }
