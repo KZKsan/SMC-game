@@ -21,5 +21,5 @@ execute if block ~ ~ ~ stone_brick_wall[east=low,west=low,north=none,south=none]
 
 execute if block ~ ~ ~ stone_brick_wall[east=low,west=low,north=low,south=low] run data modify storage _ data_fetch.command set value "sco:stage_data/blank_fortress/walls/cross/0 ~ ~ ~ none none"
 
-execute if block ~ ~ ~ stone_brick_wall[east=none,west=none,north=none,south=none] run data modify storage _ data_fetch.command set value "sco:stage_data/blank_fortress/walls/straight/0 ~15 ~ ~ clockwise_90 none"
+execute if block ~ ~ ~ stone_brick_wall[east=none,west=none,north=none,south=none] run data modify storage _ data_fetch.command set value "sco:stage_data/blank_fortress/walls/tower/0 ~ ~ ~ none none"
 execute if block ~ ~ ~ air run data modify storage _ data_fetch.command set value "air"
