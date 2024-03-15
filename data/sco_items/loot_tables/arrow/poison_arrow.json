@@ -1,0 +1,48 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "tipped_arrow",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": {
+                                "text": "毒の矢",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore": [
+                                [
+                                    {
+                                        "translate": "effect.minecraft.poison",
+                                        "color": "red",
+                                        "italic": false
+                                    },
+                                    " ",
+                                    {
+                                        "translate": "potion.potency.1",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "（00:10）",
+                                        "italic": false,
+                                        "color": "red"
+                                    }
+                                ]
+                            ]
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{CustomPotionColor:8889187,custom_potion_effects:[{amplifier:1b,duration:200,id:\"poison\"}],HideFlags:32}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
