@@ -25,7 +25,7 @@
                                         "italic": false,
                                         "color": "#AA0000"
                                     },
-                                    " A:3, D:5s"
+                                    " A:3, D:3s"
                                 ],
                                 "",
                                 {
@@ -52,7 +52,7 @@
                                         "italic": false
                                     },
                                     {
-                                        "text": " -80%",
+                                        "text": " -88%",
                                         "color": "red",
                                         "italic": false
                                     }
@@ -84,7 +84,7 @@
                                 {
                                     "attribute": "generic.attack_speed",
                                     "name": "",
-                                    "amount": -0.8,
+                                    "amount": -0.88,
                                     "operation": "multiply_total",
                                     "slot": "mainhand"
                                 },
