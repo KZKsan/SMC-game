@@ -66,6 +66,8 @@ team modify mode.pvp friendlyFire true
 #@public
 #declare storage sco:data
 
+data modify storage sco:data stage_tables.random set value []
+
 #>
 #@public
 #declare storage sco:config
