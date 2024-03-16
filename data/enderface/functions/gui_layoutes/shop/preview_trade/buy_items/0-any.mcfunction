@@ -1,6 +1,5 @@
-#>enderface:gui_layoutes/shop/preview_trade/buy_items/0-5
+#>enderface:gui_layoutes/shop/preview_trade/buy_items/0-any
 #@within enderface:gui_layoutes/shop/preview_trade/
-item replace entity @s enderchest.23 with air
 
 data modify entity @e[tag=gui_layout_item,distance=..2,limit=1] Items[0] set from storage p-storage _[0].data.preview_trade.buy[0]
 item replace entity @s enderchest.4 from entity @e[tag=gui_layout_item,distance=..2,limit=1] container.0
@@ -18,6 +17,5 @@ data modify entity @e[tag=gui_layout_item,distance=..2,limit=1] Items[0] set fro
 execute if data storage p-storage _[0].data.preview_trade.buy[4] run item replace entity @s enderchest.22 from entity @e[tag=gui_layout_item,distance=..2,limit=1] container.0
 item modify entity @s enderchest.22 enderface:enderfaceitem
 data modify entity @e[tag=gui_layout_item,distance=..2,limit=1] Items[0] set from storage p-storage _[0].data.preview_trade.buy[5]
-execute if data storage p-storage _[0].data.preview_trade.buy[5] run item replace entity @s enderchest.23 from entity @e[tag=gui_layout_item,distance=..2,limit=1] container.0
-item modify entity @s enderchest.23 enderface:enderfaceitem
+function enderface:gui_layoutes/shop/preview_trade/add_items_icon/buy
 scoreboard players set # _ 1

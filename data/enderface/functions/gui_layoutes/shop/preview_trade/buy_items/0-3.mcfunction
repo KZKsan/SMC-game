@@ -1,6 +1,5 @@
 #>enderface:gui_layoutes/shop/preview_trade/buy_items/0-3
 #@within enderface:gui_layoutes/shop/preview_trade/
-item replace entity @s enderchest.5 with air
 item replace entity @s enderchest.14 with air
 data modify entity @e[tag=gui_layout_item,distance=..2,limit=1] Items[0] set from storage p-storage _[0].data.preview_trade.buy[0]
 item replace entity @s enderchest.4 from entity @e[tag=gui_layout_item,distance=..2,limit=1] container.0

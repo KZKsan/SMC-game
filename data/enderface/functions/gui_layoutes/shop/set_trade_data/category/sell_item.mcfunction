@@ -73,5 +73,23 @@ data modify storage sco:shop sell_count set value {click:1,sneak:1}
 function enderface:gui_layoutes/shop/set_trade_data/wirite_data/sell_count
 data modify storage sco:shop trade_data append from storage sco:shop _
 
+loot replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 loot sco_items:all_items
+data modify entity @e[tag=set_trade_data,limit=1,distance=..2] Items[0].Count set value 19b
+function enderface:gui_layoutes/shop/set_trade_data/wirite_data/icon/preview
+item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with iron_sword
+loot replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.1 loot sco_items:shield
+item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.2 with iron_helmet
+item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.3 with iron_chestplate
+loot replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.4 loot sco_items:diamond_leggings
+item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.5 with iron_boots
+item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.6 with arrow 32
+function enderface:gui_layoutes/shop/set_trade_data/wirite_data/buy
+item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with emerald 19
+function enderface:gui_layoutes/shop/set_trade_data/wirite_data/icon/trade
+function enderface:gui_layoutes/shop/set_trade_data/wirite_data/sell
+data modify storage sco:shop sell_count set value {click:1,sneak:1}
+function enderface:gui_layoutes/shop/set_trade_data/wirite_data/sell_count
+data modify storage sco:shop trade_data append from storage sco:shop _
+
 
 data modify storage sco:shop sell_item set from storage sco:shop trade_data
