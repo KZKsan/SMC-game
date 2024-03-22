@@ -45,6 +45,8 @@ scoreboard objectives add score_hit_rate dummy
 scoreboard objectives add shot_arrow dummy
 scoreboard objectives add can_pickup_arrow dummy
 
+scoreboard objectives add result_mvp dummy
+
 
 team add red
 team add blue
