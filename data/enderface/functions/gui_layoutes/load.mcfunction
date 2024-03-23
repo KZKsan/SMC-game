@@ -1,7 +1,7 @@
 #>enderface:gui_layoutes/load
 #@within enderface:**
 #@input p-storage
-
+function p-storage/get
 execute if data storage enderface:data {gui_name:"shop/0"} run function enderface:gui_layoutes/shop/0
 execute if data storage enderface:data {gui_name:"shop/weapons"} run function enderface:gui_layoutes/shop/category/weapons
 execute if data storage enderface:data {gui_name:"shop/armors"} run function enderface:gui_layoutes/shop/category/armors
