@@ -1,0 +1,1 @@
+$place template sco:stage_data/blank_fortress/$(stage_type)/$(name)/$(type)/$(num) $(pos) $(facing)

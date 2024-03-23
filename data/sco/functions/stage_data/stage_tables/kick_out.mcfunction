@@ -9,4 +9,5 @@ data modify storage _ _ append value "station"
 data modify storage _ _ append value "centrifuge"
 data modify storage _ _ append value "deep_cave"
 data modify storage _ _ append value "endroll"
+data modify storage _ _ append value "blank_fortress"
 data modify storage sco:data stage_tables.kick_out set from storage _ _
