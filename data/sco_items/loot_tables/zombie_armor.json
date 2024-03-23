@@ -72,7 +72,7 @@
                                         "italic": false
                                     },
                                     {
-                                        "text": " +40%",
+                                        "text": " +30%",
                                         "color": "blue",
                                         "italic": false
                                     }
@@ -105,7 +105,7 @@
                                 },
                                 {
                                     "slot": "chest",
-                                    "amount": 0.4,
+                                    "amount": 0.3,
                                     "operation": "multiply_total",
                                     "attribute": "generic.attack_speed",
                                     "name": ""
