@@ -1,0 +1,14 @@
+{
+    "criteria": {
+        "arrows_hit": {
+            "trigger": "entity_hurt_player",
+            "conditions": {
+                
+            }
+        }
+    },
+    "parent": "sco:arrows/hit",
+    "rewards": {
+        "function": "sco:player/result/arrows/reset"
+    }
+}
