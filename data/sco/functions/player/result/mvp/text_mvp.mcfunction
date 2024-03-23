@@ -1,4 +1,4 @@
-scoreboard players set _ result_mvp 100
+
 function sco:player/result/mvp/rank_make
 
 execute as @a if score @s score_kill_count = #MVP_kill result_mvp run tellraw @a [{"text": "殺戮の王者：","color": "gold","bold": true},{"selector":"@s","bold": true,"color": "aqua"},{"text": "　キル数：","color": "gold"},{"score": {"name": "@s","objective": "score_kill_count"},"color": "aqua"}]
