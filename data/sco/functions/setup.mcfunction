@@ -42,8 +42,17 @@ scoreboard objectives add score_damage_teaken custom:damage_taken
 scoreboard objectives add score_shot_arrows dummy
 scoreboard objectives add score_hit_arrows dummy
 scoreboard objectives add score_hit_rate dummy
+scoreboard objectives add score_jump_count custom:jump
+scoreboard objectives add score_fall_one_cm custom:fall_one_cm
+scoreboard objectives add score_walk_cm custom:walk_one_cm
+scoreboard objectives add score_sprint_cm custom:sprint_one_cm
+scoreboard objectives add score_sneak_time custom:sneak_time
+scoreboard objectives add score_damage_blocked_by_shield custom:damage_blocked_by_shield
 scoreboard objectives add shot_arrow dummy
 scoreboard objectives add can_pickup_arrow dummy
+
+data modify storage sco:data mvp_result.score_names set value ["score_jump_count","score_fall_one_cm","score_walk_cm","score_sprint_cm","score_sneak_time","score_damage_blocked_by_shield"]
+data modify storage sco:data mvp_result.text_tables set value [{name:'{"text":"跳王"}',objective:'{"text":"Jump"}'},{name:'{"text":"落王"}',objective:'{"text":"Fall Distance"}'},{name:'{"text":"と金"}',objective:'{"text":"Walk"}'},{name:'{"text":"No.1 ランナー"}',objective:'{"text":"Running"}'},{name:'{"text":"潜伏王"}',objective:'{"text":"Time of Sneak"}'},{name:'{"text":"ブロック王"}',objective:'{"text":"Block Damage with Sheild"}'}]
 
 scoreboard objectives add result_mvp dummy
 
