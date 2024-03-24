@@ -208,7 +208,7 @@ execute if data storage _ data_fetch{facing:"clockwise_90"} run data modify stor
 execute if data storage _ data_fetch{facing:"180"} run data modify storage _ data_fetch.pos set value "~7 ~ ~7"
 execute if data storage _ data_fetch{facing:"counterclockwise_90"} run data modify storage _ data_fetch.pos set value "~ ~ ~7"
 
-execute store result storage _ data_fetch.num int 1 run random value 0..7
+execute store result storage _ data_fetch.num int 1 run random value 0..7 sco:builder_seed
 data modify storage _ _ prepend from storage _ data_fetch
 execute if data storage _ data_fetch{facing:"none"} run data modify storage _ _[0] merge value {facing:"180",pos:"~7 ~ ~7"}
 execute if data storage _ data_fetch{facing:"clockwise_90"} run data modify storage _ _[0] merge value {facing:"counterclockwise_90",pos:"~ ~ ~7"}

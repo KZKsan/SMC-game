@@ -1,4 +1,8 @@
+#>sco:stage_data/stage/blank_fortress/generate/build/
+#@within 
 #kill @e[tag=sco-object,x=-784, y=-63, z=-304,dx=159,dy=63,dz=79]
+
+function sco:stage_data/stage/blank_fortress/generate/build/random_seed with storage sco:data stage_generate
 
 scoreboard players set #allow_tower0 _ 1
 data modify storage _ _ set value []
