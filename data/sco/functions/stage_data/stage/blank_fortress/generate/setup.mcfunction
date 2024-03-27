@@ -322,3 +322,4 @@ execute positioned ^-3 ^-1 ^-1 positioned ^-4 ^ ^9 run function sco:stage_data/s
 execute positioned ^-3 ^-1 ^-1 positioned ^-5 ^ ^9 run function sco:stage_data/stage/blank_fortress/generate/set_field/mapping/2
 execute positioned ^-3 ^-1 ^-1 positioned ^-6 ^ ^9 run function sco:stage_data/stage/blank_fortress/generate/set_field/mapping/2
 kill @e[type=marker,tag=sco_builder,limit=1]
+function sco:stage_data/stage/blank_fortress/generate/seed/

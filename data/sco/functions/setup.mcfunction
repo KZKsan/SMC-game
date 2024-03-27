@@ -27,6 +27,13 @@ scoreboard objectives add team_info.red dummy
 scoreboard objectives add team_info.blue dummy
 scoreboard objectives add team_info.spectator dummy
 scoreboard objectives add player.HP health
+scoreboard objectives add stage_object.match.0 dummy
+scoreboard objectives add stage_object.match.1 dummy
+scoreboard objectives add stage_object.match.2 dummy
+scoreboard objectives add stage_object.match.3 dummy
+scoreboard objectives add stage_object.lock dummy
+scoreboard objectives add stage_object.count.0 dummy
+scoreboard objectives add stage_object.count.1 dummy
 #declare score_holder last gameID
 
 scoreboard objectives modify player.HP displayname {"text":"HP","color":"yellow"}

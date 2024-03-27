@@ -1,0 +1,42 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "coal",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": {
+                                "text": "燃料",
+                                "italic": false,
+                                "color": "#DD00AA"
+                            }
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore": [
+                                {
+                                    "text": "装置を動かすための燃料。",
+                                    "italic": false,
+                                    "color": "white"
+                                },
+                                {
+                                    "text": "一つずつしか運べない。",
+                                    "italic": false,
+                                    "color": "gray"
+                                }
+                            ]
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{item_functions:{stage_item:{fuel:1b}}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
