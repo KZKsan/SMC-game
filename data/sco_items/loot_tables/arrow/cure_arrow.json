@@ -31,7 +31,7 @@
 						},
 						{
 							"function": "set_nbt",
-							"tag": "{CustomPotionColor:11393254,cure_arrow:true,HideFlags:32}"
+							"tag": "{CustomPotionColor:11393254,item_functions:{cure_arrow:true},HideFlags:32}"
 						}
 					]
 				}

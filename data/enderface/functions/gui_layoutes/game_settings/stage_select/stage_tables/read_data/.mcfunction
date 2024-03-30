@@ -6,6 +6,7 @@ execute store result score # _ run data get storage p-storage _[0].data.page
 execute store result score #line _ run data get storage _ _
 execute if score # _ matches 1.. if score #line _ matches 7.. run function enderface:gui_layoutes/game_settings/stage_select/stage_tables/read_data/remove_top_items
 summon chest_minecart ~ ~ ~ {Tags:[set_data],Items:[{id:"stick",Count:1b}]}
+data remove storage _ data_fetch
 execute if data storage _ _[0] run function enderface:gui_layoutes/game_settings/stage_select/stage_tables/read_data/slot/0
 execute if data storage _ _[1] run function enderface:gui_layoutes/game_settings/stage_select/stage_tables/read_data/slot/1
 execute if data storage _ _[2] run function enderface:gui_layoutes/game_settings/stage_select/stage_tables/read_data/slot/2

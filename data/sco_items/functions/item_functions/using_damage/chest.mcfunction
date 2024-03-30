@@ -6,6 +6,7 @@ data modify storage _ data_fetch.id set from entity @s Inventory[{Slot:102b}].id
 execute store result storage _ _.max_damage int 1 run function item/damage_data
 data remove storage _ __
 data modify storage _ __ set from entity @s Inventory[{Slot:102b}].tag.Damage
+scoreboard players set # _ 0
 execute store success score # _ if function sco_items:item_functions/using_damage/check_nbt run function sco_items:item_functions/using_damage/math/tick
 execute if score # _ matches 1 run item modify entity @s armor.chest sco_items:item_functions/using_damage/copy
 execute if score # _ matches 1 run function item/stop_change_sounds

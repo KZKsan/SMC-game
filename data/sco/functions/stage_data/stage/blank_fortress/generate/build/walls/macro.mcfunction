@@ -1,1 +1,1 @@
-$place template $(command)
+$place template sco:stage_data/blank_fortress/$(stage_type)/$(name)/$(num) $(pos)

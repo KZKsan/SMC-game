@@ -1,6 +1,8 @@
 #>sco:stage_data/stage/blank_fortress/generate/set_pattern/additional
 #@within sco:stage_data/stage/blank_fortress/generate/setup
 data modify storage _ _ set value []
+execute if block ^-1 ^ ^ air run data modify storage _ _ append value "^-1 ^ ^"
+execute if block ^1 ^ ^ air run data modify storage _ _ append value "^1 ^ ^"
 execute if block ^-2 ^ ^ air run data modify storage _ _ append value "^-2 ^ ^"
 execute if block ^2 ^ ^ air run data modify storage _ _ append value "^2 ^ ^"
 execute if block ^-3 ^ ^ air run data modify storage _ _ append value "^-3 ^ ^"

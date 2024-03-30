@@ -5,7 +5,7 @@ tellraw @a "----------------------------"
 tellraw @a {"text": "まもなく開始します！","bold": true,"color": "aqua"}
 tellraw @a {"text": "ロビー中央のエンダーチェストから参加しましょう！","bold": true,"color": "green"}
 tellraw @a[team=] {"text": "!! 現在ゲームに参加していません !!","bold": true,"color": "dark_red"}
-tellraw @a[team=mode.practice] {"text": "!! 訓練所にいる間は参加できません !!","bold": true,"color": "dark_red"}
+tellraw @a[predicate=sco:practice_join] {"text": "!! 訓練所にいる間は参加できません !!","bold": true,"color": "dark_red"}
 tellraw @s "----------------------------"
 execute store result score # _ if entity @a[predicate=sco:game_join]
 execute store result score #_ _ if entity @a[team=spectator]

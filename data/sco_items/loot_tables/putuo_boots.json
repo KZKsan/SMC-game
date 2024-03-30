@@ -87,7 +87,7 @@
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{HideFlags:66,display:{color:3289650},item_functions:{putuo_boots:1b}}"
+                            "tag": "{HideFlags:66,display:{color:3289650},item_functions:{passive_effects:[{id:\"jump_boost\",duration:2,amplifier:3,hide_particle:\"false\"}]}}"
                         }
                     ]
                 }

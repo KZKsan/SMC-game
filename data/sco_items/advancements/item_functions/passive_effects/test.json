@@ -1,0 +1,41 @@
+{
+    "criteria": {
+        "chest": {
+            "trigger": "tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "nbt": "{Inventory:[{Slot:102b}]}"
+                        }
+                    }
+                ]
+            }
+        },
+        "feet": {
+            "trigger": "tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "nbt": "{Inventory:[{Slot:100b}]}"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "chest",
+            "feet"
+        ]
+    ],
+    "rewards": {
+        "function": "sco_items:item_functions/passive_effects/"
+    }
+}

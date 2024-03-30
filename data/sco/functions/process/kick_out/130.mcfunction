@@ -43,8 +43,8 @@ execute if score #runtime game matches 5 as @a[predicate=sco:team_join] at @s ru
 
 
 #ステージギミック
-execute if score #runtime game matches 2 if data storage sco:data options{reset:true} run function sco:stage_data/reset
-execute if score #runtime game matches 3.. if data storage sco:data options{gimmick:true} run function sco:stage_data/gimmick
+execute if score #runtime game matches 3 if data storage sco:data options{reset:true} run function sco:stage_data/reset
+execute if score #runtime game matches 4.. if data storage sco:data options{gimmick:true} run function sco:stage_data/gimmick
 
 #プロセス終了
 execute if score #runtime game matches 10 as @a[predicate=sco:team_join,team=!spectator,scores={respawnTime=1}] run function sco:process/kick_out/respawn/normal

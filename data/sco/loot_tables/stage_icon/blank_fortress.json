@@ -1,0 +1,27 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "polished_blackstone_brick_wall",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": {
+                                "text": "ウツロヨウサイ",
+                                "italic": false,
+                                "color": "#55AADD"
+                            }
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{enderfaceItem:true}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

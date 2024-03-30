@@ -53,7 +53,7 @@
                             "function": "set_enchantments",
                             "enchantments": {
                                 "unbreaking": 10,
-                                "feather_falling": 2
+                                "feather_falling": 4
                             }
                         },
                         {

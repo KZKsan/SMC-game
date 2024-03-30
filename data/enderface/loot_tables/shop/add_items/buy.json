@@ -1,0 +1,26 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "chest",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": {
+                                "text": "・その他",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{enderfaceItem:1b,HideFlags:32,click_events:{click_sounds:[{sound:\"ui.button.click\"}],change_gui:\"shop/preview_add_items/buy\"}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

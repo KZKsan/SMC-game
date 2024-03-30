@@ -5,7 +5,7 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "iron_chestplate",
+                    "name": "diamond_chestplate",
                     "functions": [
                         {
                             "function": "set_name",
@@ -19,7 +19,7 @@
                             "function": "set_lore",
                             "lore": [
                                 {
-                                    "text": "不死者の呪い",
+                                    "text": "可燃性",
                                     "color": "red",
                                     "italic": false
                                 },
@@ -38,19 +38,7 @@
                                         "italic": false
                                     },
                                     {
-                                        "text": " +5",
-                                        "color": "blue",
-                                        "italic": false
-                                    }
-                                ],
-                                [
-                                    {
-                                        "translate": "attribute.name.generic.armor_toughness",
-                                        "color": "blue",
-                                        "italic": false
-                                    },
-                                    {
-                                        "text": " +5",
+                                        "text": " -10",
                                         "color": "blue",
                                         "italic": false
                                     }
@@ -74,7 +62,7 @@
                                         "italic": false
                                     },
                                     {
-                                        "text": " +0.3",
+                                        "text": " +0.6",
                                         "color": "blue",
                                         "italic": false
                                     }
@@ -86,7 +74,7 @@
                                         "italic": false
                                     },
                                     {
-                                        "text": " -20%",
+                                        "text": " -55%",
                                         "color": "red",
                                         "italic": false
                                     }
@@ -98,16 +86,9 @@
                             "modifiers": [
                                 {
                                     "slot": "chest",
-                                    "amount": 5,
+                                    "amount": -10,
                                     "operation": "addition",
                                     "attribute": "generic.armor",
-                                    "name": ""
-                                },
-                                {
-                                    "slot": "chest",
-                                    "amount": 5,
-                                    "operation": "addition",
-                                    "attribute": "generic.armor_toughness",
                                     "name": ""
                                 },
                                 {
@@ -119,14 +100,14 @@
                                 },
                                 {
                                     "slot": "chest",
-                                    "amount": 0.3,
+                                    "amount": 0.6,
                                     "operation": "addition",
                                     "attribute": "generic.knockback_resistance",
                                     "name": ""
                                 },
                                 {
                                     "slot": "chest",
-                                    "amount": -0.2,
+                                    "amount": -0.55,
                                     "operation": "multiply_total",
                                     "attribute": "generic.movement_speed",
                                     "name": ""
@@ -135,7 +116,7 @@
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{item_functions:{undead:1b},HideFlags:130,Trim: {material: \"minecraft:netherite\", pattern: \"minecraft:silence\"},Enchantments:[{}]}"
+                            "tag": "{item_functions:{enchant:[{id:\"flammability\",lvl:5s}]},HideFlags:130,Trim: {material: \"minecraft:emerald\", pattern: \"minecraft:silence\"},Enchantments:[{}]}"
                         }
                     ]
                 }

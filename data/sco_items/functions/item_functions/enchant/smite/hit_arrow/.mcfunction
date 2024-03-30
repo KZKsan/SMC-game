@@ -1,9 +1,10 @@
 #>sco_items:item_functions/enchant/smite/hit_arrow/
 #@within 
-execute on attacker run tag @s add origin
-execute as @e[type=#arrows,distance=..10,sort=nearest] if function sco_items:item_functions/enchant/smite/hit_arrow/test run tag @s add hit_arrow
-tag @s add hurt_entity
-execute if predicate sco_items:item_functions/have_undead_items run function sco_items:item_functions/enchant/smite/additional_damage/arrow
-execute on attacker run tag @s remove origin
-tag @s remove hurt_entity
+tag @s add origin
+execute as @e[type=#arrows,distance=..1000] if function sco_items:item_functions/enchant/smite/hit_arrow/test run tag @s add hit_arrow
+execute as @e[distance=..1000,nbt={HurtTime:10s}] run function hurt_entity_test
+execute as @e[tag=hurt_entity] at @s if predicate sco_items:item_functions/have_undead_items run function sco_items:item_functions/enchant/smite/additional_damage/arrow
+tag @s remove origin
+tag @e[tag=hurt_entity] remove hurt_entity
+tag @e[type=#arrows,tag=hit_arrow] remove hit_arrow
 advancement revoke @s only sco_items:item_functions/enchant/smite/hit_arrow

@@ -14,6 +14,9 @@ tag @a[predicate=sco:team_join,team=!spectator,tag=rg.penalty_area.penalty] remo
 tag @a[predicate=sco:team_join,team=!spectator,tag=rg.penalty_area.death] remove rg.penalty_area.death
 execute as @e[type=#arrows] if function sco:regine/can_pickup_arrows/test run kill
 effect clear @a[predicate=sco:team_join]
+
+# function sco:player/result/mvp/text_mvp
+
 execute as @a[predicate=sco:team_join] run function sco:player/retune_lobby
 function sco:stage_data/generic_settings
 function timer:stop
@@ -22,3 +25,4 @@ scoreboard objectives setdisplay below_name
 function sco:player/team/show_enemy_team_name/true
 data remove storage sco:data penalty_area.struct
 data remove storage sco:input game
+fill -64 -55 48 15 -37 127 air

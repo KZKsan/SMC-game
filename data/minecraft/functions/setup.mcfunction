@@ -24,4 +24,6 @@ function blast_motion/lib
 #declare score_holder $ranmin
 #declare score_holder $ranmax
 
+#>
+#@public
 #declare storage _

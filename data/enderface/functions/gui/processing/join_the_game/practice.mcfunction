@@ -2,6 +2,7 @@
 #@within enderface:gui/processing/join_the_game/
 team join mode.practice @s
 function sco:player/inventory_histories/save
+data modify storage p-storage _[0].data.inventory_histories[-1].name set value "defalut"
 clear
 effect clear @s
 function sco_items:kit/default
