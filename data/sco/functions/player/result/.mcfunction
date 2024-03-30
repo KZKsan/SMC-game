@@ -14,6 +14,8 @@ scoreboard players operation #hit_rate_0.1 _ = @s score_hit_rate
 scoreboard players operation #hit_rate_1 _ /= #10 _
 scoreboard players operation #hit_rate_0.1 _ %= #10 _
 
+function sco:player/result/mvp/text_mvp
+
 tellraw @s "----------------------------"
 
 tellraw @s [{"selector":"@s"},{"text": "'s results\n","color": "white"}]
