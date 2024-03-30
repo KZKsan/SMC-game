@@ -52,7 +52,7 @@
                                         "italic": false
                                     },
                                     {
-                                        "text": " +3",
+                                        "text": " +6",
                                         "color": "blue",
                                         "italic": false
                                     }
@@ -64,7 +64,7 @@
                             "modifiers": [
                                 {
                                     "slot": "chest",
-                                    "amount": 3,
+                                    "amount": 6,
                                     "operation": "addition",
                                     "attribute": "generic.armor",
                                     "name": ""
