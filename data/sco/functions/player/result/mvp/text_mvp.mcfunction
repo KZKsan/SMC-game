@@ -11,7 +11,7 @@ execute unless entity @p[scores={score_hit_arrows=1..},predicate=sco:team_join,t
 tellraw @a [{"text": "Most damage inflicted: ","color": "white"},{"selector":"@a[tag=mvp_damage]","bold": true,"color": "gold"},{"text": " ダメージ量： ","color": "white"},{"score": {"name": "@p[tag=mvp_damage]","objective": "score_damage_dealt"},"color": "gold"}]
 tellraw @a "----------------------------"
 
-execute if score #MVP_other result_mvp matches 1.. run tellraw @a [{"nbt":"mvp_result.text.name","storage":"sco:data","interpret": true},": ",{"selector":"@a[tag=mvp_damage]"}," (",{"nbt":"mvp_result.text.objective","storage":"sco:data","color": "gold","bold": false,"interpret": true},": ",{"score": {"name": "#MVP_other","objective": "result_mvp"}},{"text":")","color": "white"}]
+execute if score #MVP_other result_mvp matches 1.. run tellraw @a [{"nbt":"mvp_result.text.name","storage":"sco:data","interpret": true},": ",{"selector":"@a[tag=mvp_other]"}," (",{"nbt":"mvp_result.text.objective","storage":"sco:data","color": "gold","bold": false,"interpret": true},": ",{"score": {"name": "#MVP_other","objective": "result_mvp"}},{"text":")","color": "white"}]
 execute unless score #MVP_other result_mvp matches 1.. run tellraw @a [{"nbt":"mvp_result.text.name","storage":"sco:data","interpret": true},{"text":": None.","color": "white"}]
 
 
