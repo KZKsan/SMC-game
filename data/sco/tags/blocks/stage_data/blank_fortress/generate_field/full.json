@@ -1,7 +1,6 @@
 {
     "values": [
         "emerald_block",
-        "redstone_block",
-        "netherite_block"
+        "#sco:stage_data/blank_fortress/generate_buildings/all"
     ]
 }

@@ -4,6 +4,8 @@
 
 function sco:stage_data/stage/blank_fortress/generate/build/random_seed with storage sco:data stage_generate
 
+function sco:stage_data/stage/blank_fortress/generate/build/respawn
+
 scoreboard players set #allow_tower0 _ 1
 data modify storage _ _ set value []
 execute positioned ~ ~ ~0 run function sco:stage_data/stage/blank_fortress/generate/build/walls/

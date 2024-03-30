@@ -4,3 +4,7 @@
 execute as @e[type=interaction, tag=blank_fortress, tag=pickup_coal] at @s run function sco:stage_data/stage/blank_fortress/object/pickup_coal/
 execute as @e[type=interaction, tag=blank_fortress, tag=cannon] at @s run function sco:stage_data/stage/blank_fortress/object/cannon/
 execute as @e[type=block_display, tag=blank_fortress, tag=bomb] at @s run function sco:stage_data/stage/blank_fortress/object/bomb/
+execute as @e[type=interaction, tag=blank_fortress, tag=thunder] at @s run function sco:stage_data/stage/blank_fortress/object/thunder/
+execute as @e[type=interaction, tag=blank_fortress, tag=power_bullet] at @s run function sco:stage_data/stage/blank_fortress/object/power_bullet/
+execute as @e[type=marker, tag=blank_fortress, tag=power_bullet_ammo] at @s run function sco:stage_data/stage/blank_fortress/object/power_bullet_ammo/
+execute as @e[type=block_display, tag=blank_fortress, tag=crystal] at @s unless score @s stage_object.lock matches -2147483648..2147483647 run function sco:stage_data/stage/blank_fortress/object/crystal/

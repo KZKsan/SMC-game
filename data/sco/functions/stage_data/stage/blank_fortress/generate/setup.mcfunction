@@ -63,8 +63,11 @@ execute if score $add_set _ matches 0 positioned ^-4 ^ ^3 run function sco:stage
 execute if score $add_set _ matches 0 run scoreboard players add #generate_count _ 1
 
 
-execute positioned ^-4 ^-1 ^ run function sco:stage_data/stage/blank_fortress/generate/set_field/cannon
 execute positioned ^-4 ^-1 ^ run function sco:stage_data/stage/blank_fortress/generate/set_field/storage
+execute if predicate 5050 positioned ^-4 ^-1 ^ run function sco:stage_data/stage/blank_fortress/generate/set_field/storage
+
+function sco:stage_data/stage/blank_fortress/generate/set_field/set_buildings/
+
 
 function sco:stage_data/stage/blank_fortress/generate/set_field/copy
 execute positioned ^-4 ^-1 ^ run function sco:stage_data/stage/blank_fortress/generate/set_field/smooth/
@@ -153,7 +156,7 @@ execute positioned ^-3 ^-1 ^-1 positioned ^-3 ^ ^9 run function sco:stage_data/s
 execute positioned ^-3 ^-1 ^-1 positioned ^-4 ^ ^9 run function sco:stage_data/stage/blank_fortress/generate/set_field/mapping/0
 execute positioned ^-3 ^-1 ^-1 positioned ^-5 ^ ^9 run function sco:stage_data/stage/blank_fortress/generate/set_field/mapping/0
 execute positioned ^-3 ^-1 ^-1 positioned ^-6 ^ ^9 run function sco:stage_data/stage/blank_fortress/generate/set_field/mapping/0
-kill @e[type=marker,tag=sco_builder,limit=1]
+kill @e[type=marker,tag=sco_builder]
 
 
 
@@ -237,9 +240,7 @@ execute positioned ^-3 ^-1 ^-1 positioned ^-3 ^ ^9 run function sco:stage_data/s
 execute positioned ^-3 ^-1 ^-1 positioned ^-4 ^ ^9 run function sco:stage_data/stage/blank_fortress/generate/set_field/mapping/1
 execute positioned ^-3 ^-1 ^-1 positioned ^-5 ^ ^9 run function sco:stage_data/stage/blank_fortress/generate/set_field/mapping/1
 execute positioned ^-3 ^-1 ^-1 positioned ^-6 ^ ^9 run function sco:stage_data/stage/blank_fortress/generate/set_field/mapping/1
-kill @e[type=marker,tag=sco_builder,limit=1]
-
-
+kill @e[type=marker,tag=sco_builder]
 
 summon marker ^-1 ^2 ^-1 {Tags:[sco_builder]}
 execute positioned ^-3 ^-1 ^-1 positioned ^-0 ^ ^ run function sco:stage_data/stage/blank_fortress/generate/set_field/mapping/2
@@ -321,5 +322,5 @@ execute positioned ^-3 ^-1 ^-1 positioned ^-3 ^ ^9 run function sco:stage_data/s
 execute positioned ^-3 ^-1 ^-1 positioned ^-4 ^ ^9 run function sco:stage_data/stage/blank_fortress/generate/set_field/mapping/2
 execute positioned ^-3 ^-1 ^-1 positioned ^-5 ^ ^9 run function sco:stage_data/stage/blank_fortress/generate/set_field/mapping/2
 execute positioned ^-3 ^-1 ^-1 positioned ^-6 ^ ^9 run function sco:stage_data/stage/blank_fortress/generate/set_field/mapping/2
-kill @e[type=marker,tag=sco_builder,limit=1]
+kill @e[type=marker,tag=sco_builder]
 function sco:stage_data/stage/blank_fortress/generate/seed/
