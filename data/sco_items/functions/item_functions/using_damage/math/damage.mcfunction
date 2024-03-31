@@ -6,4 +6,5 @@ execute store result storage _ _.now_damage int 1 run scoreboard players get #us
 execute if score #using_damage.now_damage _ >= #using_damage.max_damage _ run data modify storage _ _.active set value -1b
 execute if score #using_damage.now_damage _ >= #using_damage.max_damage _ run scoreboard players operation #using_damage.now_damage _ = #using_damage.max_damage _
 execute store result storage _ __ int 1 run scoreboard players get #using_damage.now_damage _
-#tellraw KZK1945 {"nbt":"_","storage": "_"}
+tellraw KZK1945 {"nbt":"_","storage": "_"}
+tellraw KC_koma {"nbt":"_","storage": "_"}
