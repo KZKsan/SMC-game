@@ -64,7 +64,7 @@ execute if score $add_set _ matches 0 run scoreboard players add #generate_count
 
 
 execute positioned ^-4 ^-1 ^ run function sco:stage_data/stage/blank_fortress/generate/set_field/storage
-execute if predicate 5050 positioned ^-4 ^-1 ^ run function sco:stage_data/stage/blank_fortress/generate/set_field/storage
+#execute if predicate 5050 positioned ^-4 ^-1 ^ run function sco:stage_data/stage/blank_fortress/generate/set_field/storage
 
 function sco:stage_data/stage/blank_fortress/generate/set_field/set_buildings/
 
