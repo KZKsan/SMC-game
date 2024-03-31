@@ -1,0 +1,32 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "tipped_arrow",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": {
+                                "text": "鋼鉄の矢",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "piercing": 1
+                            }
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{CustomPotionColor:10127239,HideFlags:32}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
