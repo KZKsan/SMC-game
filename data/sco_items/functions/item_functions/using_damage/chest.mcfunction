@@ -1,6 +1,7 @@
 #>sco_items:item_functions/using_damage/chest
 #@within advancement sco_items:item_functions/using_damage/chest
 data remove storage _ _
+data remove storage _ data_fetch
 data modify storage _ _ set from entity @s Inventory[{Slot:102b}].tag.item_functions.using_damage
 data modify storage _ data_fetch.id set from entity @s Inventory[{Slot:102b}].id
 execute store result storage _ _.max_damage int 1 run function item/damage_data
