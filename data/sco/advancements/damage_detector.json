@@ -1,0 +1,11 @@
+{
+    "criteria": {
+        "damage_detector": {
+            "trigger": "entity_hurt_player",
+            "conditions": {}
+        }
+    },
+    "rewards": {
+        "function": "sco:player/damage_detector/"
+    }
+}

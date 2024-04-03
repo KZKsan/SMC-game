@@ -48,6 +48,7 @@ scoreboard objectives add score_kill_count playerKillCount
 scoreboard objectives add score_death_count deathCount
 scoreboard objectives add score_damage_dealt custom:damage_dealt
 scoreboard objectives add score_damage_teaken custom:damage_taken
+scoreboard objectives add score_damage_detected dummy
 scoreboard objectives add score_shot_arrows dummy
 scoreboard objectives add score_hit_arrows dummy
 scoreboard objectives add score_hit_rate dummy
