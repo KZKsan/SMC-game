@@ -1,0 +1,22 @@
+{
+    "criteria": {
+        "hit_sandbag": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"sandbag\"]}"
+                },
+                "damage": {
+                    "type": {
+                        "direct_entity": {
+                            "type": "#arrows"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "sco:practice/entity/sandbag/hit_sandbag"
+    }
+}
