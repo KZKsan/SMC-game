@@ -1,0 +1,35 @@
+{
+    "parent": "sco_items:root",
+    "criteria": {
+        "attack": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "nbt": "{SelectedItem:{tag:{item_functions:{corpse_daemon:1b}}}}"
+                        }
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 4
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "sco_items:item_functions/corpse_daemon/attack"
+    }
+}

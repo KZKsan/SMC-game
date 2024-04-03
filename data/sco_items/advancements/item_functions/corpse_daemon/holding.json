@@ -1,0 +1,42 @@
+{
+    "parent": "sco_items:root",
+    "criteria": {
+        "mainhand": {
+            "trigger": "tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "nbt": "{SelectedItem:{tag:{item_functions:{corpse_daemon:1b}}}}"
+                        }
+                    }
+                ]
+            }
+        },
+        "offhand": {
+            "trigger": "tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "nbt": "{Inventory:[{Slot:-106b,tag:{item_functions:{corpse_daemon:1b}}}]}"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "mainhand",
+            "offhand"
+        ]
+    ],
+    "rewards": {
+        "function": "sco_items:item_functions/corpse_daemon/holding"
+    }
+}
