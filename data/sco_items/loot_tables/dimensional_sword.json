@@ -81,7 +81,8 @@
                         {
                             "function": "set_enchantments",
                             "enchantments": {
-                                "unbreaking": 10
+                                "unbreaking": 10,
+                                "sweeping": 3
                             }
                         },
                         {
