@@ -72,25 +72,25 @@
                                 },
                                 [
                                     {
-                                        "text": " 6 ",
-                                        "color": "dark_green",
+                                        "translate": "attribute.name.generic.attack_speed",
+                                        "color": "red",
                                         "italic": false
                                     },
                                     {
-                                        "translate": "attribute.name.generic.attack_damage",
-                                        "color": "dark_green",
+                                        "text": " -70%",
+                                        "color": "red",
                                         "italic": false
                                     }
                                 ],
                                 [
                                     {
-                                        "text": " 1.6 ",
-                                        "color": "dark_green",
+                                        "translate": "attribute.name.generic.attack_damage",
+                                        "color": "blue",
                                         "italic": false
                                     },
                                     {
-                                        "translate": "attribute.name.generic.attack_speed",
-                                        "color": "dark_green",
+                                        "text": " +2",
+                                        "color": "blue",
                                         "italic": false
                                     }
                                 ],
@@ -100,7 +100,7 @@
                                         "italic": false,
                                         "color": "#00CCAA"
                                     },
-                                    " A:0, D:5s"
+                                    " A:0, D:8s"
                                 ],
                                 [
                                     {
@@ -108,20 +108,47 @@
                                         "italic": false,
                                         "color": "#00CCAA"
                                     },
-                                    " A:9, D:5s"
+                                    " A:9, D:8s"
+                                ],
+                                [
+                                    {
+                                        "translate": "effect.minecraft.slowness",
+                                        "italic": false,
+                                        "color": "#00CCAA"
+                                    },
+                                    " A:1, D:8s"
                                 ]
+                            ]
+                        },
+                        {
+                            "function": "set_attributes",
+                            "modifiers": [
+                                {
+                                    "attribute": "generic.attack_speed",
+                                    "name": "",
+                                    "amount": -0.7,
+                                    "operation": "multiply_total",
+                                    "slot": "mainhand"
+                                },
+                                {
+                                    "attribute": "generic.attack_damage",
+                                    "name": "",
+                                    "amount": 2,
+                                    "operation": "addition",
+                                    "slot": "mainhand"
+                                }
                             ]
                         },
                         {
                             "function": "set_enchantments",
                             "enchantments": {
                                 "sharpness": 1,
-                                "sweeping": 2
+                                "sweeping": 1
                             }
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{HideFlags:34,Damage:111,item_functions:{corpse_daemon:1b}}"
+                            "tag": "{HideFlags:34,Damage:118,item_functions:{corpse_daemon:1b}}"
                         }
                     ]
                 }

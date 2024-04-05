@@ -22,6 +22,7 @@ function enderface:gui_layoutes/shop/set_trade_data/single_data/crows_sorrow
 
 
 function enderface:gui_layoutes/shop/set_trade_data/single_data/clau_solas
+function enderface:gui_layoutes/shop/set_trade_data/single_data/corpse_daemon
 function enderface:gui_layoutes/shop/set_trade_data/single_data/lightning_hammer
 function enderface:gui_layoutes/shop/set_trade_data/single_data/reaper_scythe
 function enderface:gui_layoutes/shop/set_trade_data/single_data/magic_book
