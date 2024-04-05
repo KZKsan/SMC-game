@@ -11,7 +11,15 @@ scoreboard objectives add sneak_moving custom:crouch_one_cm
 scoreboard objectives add moving custom:walk_one_cm
 scoreboard objectives add trigger_death deathCount
 scoreboard objectives add cure_arrow dummy
+scoreboard objectives add sco_items.configs dummy
 
 #>
 #@within sco_items:**
 #declare tag item_function.
+
+#>
+#@wihtin sco_items:item_functions/lightning_hammer/**
+    #declare score_holder #lightning_hammer.charge_time
+    #declare score_holder #lightning_hammer.set_cooltime
+scoreboard players set #lightning_hammer.charge_time sco_items.configs 40
+scoreboard players set #lightning_hammer.set_cooltime sco_items.configs -80

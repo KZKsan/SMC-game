@@ -51,6 +51,7 @@
 # score
     execute as @a unless score @s lightning_hammer_holding_time matches -2147483648..2147483647 run scoreboard players set @s lightning_hammer_holding_time 0
     scoreboard players add @a[scores={lightning_hammer_holding_time=..-1}] lightning_hammer_holding_time 1
+    execute as @a[scores={lightning_hammer_holding_time=..-1}] run function sco_items:item_functions/lightning_hammer/actionbar/flag
 
 #actionbar
     execute as @a[tag=item_actionbar] run function sco_items:actionbar/
