@@ -24,7 +24,7 @@
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{CustomPotionColor:13696942,item_functions:{small_arrow:1b}}"
+                            "tag": "{HideFlags:32,CustomPotionColor:13696942,item_functions:{small_arrow:1b}}"
                         }
                     ]
                 }
