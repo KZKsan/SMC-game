@@ -1,6 +1,7 @@
 #>sco_items:item_functions/show_durability/chest/actionbar
 #@within sco_items:item_functions/show_durability/chest/
 function sco_items:actionbar/set_str
+data remove storage _ data_fetch
 data modify storage _ data_fetch.id set from entity @s Inventory[{Slot:102b}].id
 execute store result score # _ run data get entity @s Inventory[{Slot:102b}].tag.Damage
 execute store result score #_ _ run function item/damage_data
