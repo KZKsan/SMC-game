@@ -7,6 +7,7 @@
         "sco_items:item_functions/enchant/flammability/on_fire",
         "sco_items:item_functions/enchant/flammability/hot_floor",
         "sco_items:item_functions/enchant/flammability/lava",
-        "sco:explosion"
+        "sco:explosion",
+        "sco:magic"
     ]
 }

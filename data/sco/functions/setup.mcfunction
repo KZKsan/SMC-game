@@ -34,6 +34,11 @@ scoreboard objectives add stage_object.match.3 dummy
 scoreboard objectives add stage_object.lock dummy
 scoreboard objectives add stage_object.count.0 dummy
 scoreboard objectives add stage_object.count.1 dummy
+scoreboard objectives add stage_object.cooldown dummy
+scoreboard objectives add stage_object.configs dummy
+scoreboard objectives add stage_object.power_bullet.hit_count dummy
+scoreboard objectives add stage_object.power_bullet.last_hit_count dummy
+scoreboard objectives add stage_object.configs dummy
 scoreboard objectives add player_speed.x dummy
 scoreboard objectives add player_speed.z dummy
 #declare score_holder last gameID
@@ -114,3 +119,6 @@ function sco:stage_data/stage_tables/kick_out
 
 #生成用予約エリア
 forceload add -64 48 15 127
+
+#その他設定
+function sco:stage_data/stage/blank_fortress/object/configs

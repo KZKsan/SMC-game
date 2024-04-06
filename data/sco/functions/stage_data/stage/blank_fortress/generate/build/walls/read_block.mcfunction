@@ -37,6 +37,8 @@ execute if block ~ ~-1 ~ redstone_block run data modify storage _ data_fetch mer
 execute if block ~ ~-1 ~ netherite_block run data modify storage _ data_fetch merge value {name:"buildings/storage", num:0}
 execute if block ~ ~-1 ~ gold_block run data modify storage _ data_fetch merge value {name:"buildings/thunder", num:0}
 execute if block ~ ~-1 ~ purple_wool run data modify storage _ data_fetch merge value {name:"buildings/power_bullet", num:0}
+execute if block ~ ~-1 ~ iron_block run data modify storage _ data_fetch merge value {name:"buildings/shield", num:0}
+execute if block ~ ~-1 ~ red_stained_glass run data modify storage _ data_fetch merge value {name:"buildings/boost", num:0}
 execute if block ~ ~-1 ~ #sco:stage_data/blank_fortress/generate_buildings/all if score $random _ matches 0 run data modify storage _ data_fetch.pos set value "~ ~ ~ none none"
 execute if block ~ ~-1 ~ #sco:stage_data/blank_fortress/generate_buildings/all if score $random _ matches 1 run data modify storage _ data_fetch.pos set value "~15 ~ ~ clockwise_90 none"
 execute if block ~ ~-1 ~ #sco:stage_data/blank_fortress/generate_buildings/all if score $random _ matches 2 run data modify storage _ data_fetch.pos set value "~15 ~ ~15 180 none"

@@ -2,6 +2,7 @@
 #@within sco:stage_data/stage/blank_fortress/object/power_bullet_ammo/
 playsound block.note_block.pling record @s ~ ~ ~ 0.5 1 1
 scoreboard players set # _ 11
+effect give @s glowing 2 0
 execute if entity @e[type=marker,tag=origin,distance=..100] run scoreboard players set # _ 10
 execute if entity @e[type=marker,tag=origin,distance=..80] run scoreboard players set # _ 9
 execute if entity @e[type=marker,tag=origin,distance=..60] run scoreboard players set # _ 8

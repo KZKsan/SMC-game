@@ -3,6 +3,8 @@
         "netherite_block",
         "redstone_block",
         "gold_block",
-        "purple_wool"
+        "purple_wool",
+        "iron_block",
+        "red_stained_glass"
     ]
 }

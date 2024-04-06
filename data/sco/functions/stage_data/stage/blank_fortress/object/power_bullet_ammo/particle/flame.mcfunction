@@ -40,5 +40,5 @@ particle flame ^ ^ ^18.5 0 0 0 0 1 force @a[distance=..80]
 particle flame ^ ^ ^19.0 0 0 0 0 1 force @a[distance=..80]
 particle flame ^ ^ ^19.5 0 0 0 0 1 force @a[distance=..80]
 
-execute positioned ~ ~-1 ~ positioned ^ ^ ^10 if entity @p[distance=..10] run function sco:stage_data/stage/blank_fortress/object/power_bullet_ammo/hit/r-10
-execute positioned ~ ~ ~ positioned ^ ^ ^10 if entity @p[distance=..10] run function sco:stage_data/stage/blank_fortress/object/power_bullet_ammo/hit/r-10
+#execute positioned ~ ~-1 ~ positioned ^ ^ ^10 if entity @p[distance=..10] run function sco:stage_data/stage/blank_fortress/object/power_bullet_ammo/hit/r-10
+tag @s add hit_player
