@@ -15,6 +15,6 @@
     },
     "parent": "sco:damage_detector",
     "rewards": {
-        "function": "sco:player/result/arrows/hit"
+        "function": "sco:player/result/arrows/hit/"
     }
 }

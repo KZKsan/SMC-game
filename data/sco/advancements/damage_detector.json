@@ -1,8 +1,7 @@
 {
     "criteria": {
         "damage_detector": {
-            "trigger": "entity_hurt_player",
-            "conditions": {}
+            "trigger": "entity_hurt_player"
         }
     },
     "rewards": {
