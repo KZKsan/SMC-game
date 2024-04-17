@@ -16,8 +16,14 @@
                             }
                         },
                         {
-                            "function": "set_nbt",
-                            "tag": "{HideFlags:34,enderfaceItem:1b,click_events:{click_sounds:[{sound:\"ui.button.click\"}],change_gui:\"shop/armors\"}}"
+                            "function": "set_custom_data",
+                            "tag": "{enderface_item:1b,click_events:{click_sounds:[{sound:\"ui.button.click\"}],change_gui:\"shop/armors\"}}"
+                        },
+                        {
+                            "function": "toggle_tooltips",
+                            "toggles": {
+                                "attribute_modifiers": false
+                            }
                         }
                     ]
                 }

@@ -29,4 +29,4 @@ function enderface:gui_layoutes/shop/set_trade_data/single_data/breake_shield
 function enderface:gui_layoutes/shop/set_trade_data/single_data/combat_cloth
 
 
-data modify storage sco:shop armors set from storage sco:shop trade_data
+data modify storage enderface:shop armors set from storage enderface:shop trade_data

@@ -41,8 +41,14 @@
                             }
                         },
                         {
-                            "function": "set_nbt",
-                            "tag": "{enderfaceItem:1b,HideFlags:32}"
+                            "function": "set_custom_data",
+                            "tag": "{enderface_item:1b}"
+                        },
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "hide_tooltip": {}
+                            }
                         }
                     ]
                 }

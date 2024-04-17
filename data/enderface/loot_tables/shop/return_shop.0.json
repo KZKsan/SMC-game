@@ -11,12 +11,13 @@
                             "function": "set_name",
                             "name":{
                                 "text": ">カテゴリ選択へ戻る",
-                                "italic": false
+                                "italic": false,
+                                "color": "white"
                             }
                         },
                         {
-                            "function": "set_nbt",
-                            "tag": "{click_events:{click_sounds:[{sound:\"ui.button.click\"}],change_gui:\"shop/0\"},enderfaceItem:1b}"
+                            "function": "set_custom_data",
+                            "tag": "{click_events:{click_sounds:[{sound:\"ui.button.click\"}],change_gui:\"shop/0\"},enderface_item:1b}"
                         }
                     ]
                 }

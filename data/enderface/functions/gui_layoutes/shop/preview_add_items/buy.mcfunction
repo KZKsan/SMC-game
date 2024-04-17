@@ -3,10 +3,10 @@
 
 function enderface:gui_layoutes/generic/set_air
 summon chest_minecart ~ ~ ~ {Items:[],Tags:["gui_layout_item"]}
-data modify storage _ _ set from storage p-storage _[0].data.preview_trade.trade.tag.trade.buy
+data modify storage enderface:shop preview_trade.add_buy_items set from storage p-storage _[0].data.preview_trade.trade.components."minecraft:custom_data".trade.buy
 scoreboard players set #i _ 0
 function enderface:gui_layoutes/shop/preview_add_items/loop
-data modify entity @e[tag=gui_layout_item,distance=..2,limit=1] Items[{}].tag.enderfaceItem set value 1b
+data modify entity @e[tag=gui_layout_item,distance=..2,limit=1] Items[{}].components."minecraft:custom_data".enderface_item set value 1b
 
 item replace entity @s enderchest.0 from entity @e[tag=gui_layout_item,distance=..2,limit=1] container.0
 item replace entity @s enderchest.1 from entity @e[tag=gui_layout_item,distance=..2,limit=1] container.1

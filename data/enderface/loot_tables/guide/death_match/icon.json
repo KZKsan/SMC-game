@@ -17,7 +17,7 @@
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{HideFlags:34,enderfaceItem:1b,click_events:{click_sounds:[{sound:\"ui.button.click\"}],change_gui:\"guide/death_match\"}}"
+                            "tag": "{HideFlags:34,enderface_item:1b,click_events:{click_sounds:[{sound:\"ui.button.click\"}],change_gui:\"guide/death_match\"}}"
                         }
                     ]
                 }

@@ -1,7 +1,7 @@
 [
     {
-        "function": "minecraft:set_nbt",
-        "tag": "{Enchantments:[{}]}"
+        "function": "reference",
+        "name": "enderface:glint"
     },
     {
         "function": "set_lore",
@@ -15,5 +15,4 @@
             ]
         ]
     }
-    
 ]

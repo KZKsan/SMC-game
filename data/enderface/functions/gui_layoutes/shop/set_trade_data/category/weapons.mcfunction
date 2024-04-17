@@ -3,6 +3,7 @@
 function enderface:gui_layoutes/shop/set_trade_data/reset_data
 
 
+function enderface:gui_layoutes/shop/set_trade_data/single_data/test
 
 function enderface:gui_layoutes/shop/set_trade_data/single_data/stick
 function enderface:gui_layoutes/shop/set_trade_data/single_data/stone_sword
@@ -31,4 +32,4 @@ function enderface:gui_layoutes/shop/set_trade_data/single_data/magic_book_of_fl
 function enderface:gui_layoutes/shop/set_trade_data/single_data/torch
 
 
-data modify storage sco:shop weapons set from storage sco:shop trade_data
+data modify storage enderface:shop weapons set from storage enderface:shop trade_data

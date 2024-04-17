@@ -27,14 +27,21 @@
                         },
                         {
                             "function": "set_name",
+                            "target": "item_name",
                             "name": {
                                 "text": "↑",
                                 "italic": false
                             }
                         },
                         {
-                            "function": "set_nbt",
-                            "tag": "{enderfaceItem:1b,click_events:{click_sounds:[{sound:\"ui.button.click\"}],page:{operation:\"add\",number:-1}},HideFlags:32}"
+                            "function": "set_custom_data",
+                            "tag": "{enderface_item:1b,click_events:{click_sounds:[{sound:\"ui.button.click\"}],page:{operation:\"add\",number:-1}}}"
+                        },
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "hide_tooltip": {}
+                            }
                         }
                     ]
                 }

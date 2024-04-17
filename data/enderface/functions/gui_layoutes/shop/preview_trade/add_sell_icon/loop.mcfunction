@@ -9,7 +9,7 @@ execute unless data storage _ data_fetch.sell[0].tag.display.Name run data modif
 execute unless data storage _ data_fetch.sell[0].tag.display.Name run data modify storage c_str str append value '"'
 data modify storage c_str str append value ","
 data modify storage c_str str append value '{"text":" ---x"},"'
-data modify storage c_str str append string storage _ data_fetch.sell[0].Count 0 1
+data modify storage c_str str append string storage _ data_fetch.sell[0].count 0 1
 data modify storage c_str str append value '"]'
 function c_str/
 data modify entity @e[tag=gui_layout_item,distance=..2,limit=1] Items[0].tag.display.Lore append from storage c_str str[0]

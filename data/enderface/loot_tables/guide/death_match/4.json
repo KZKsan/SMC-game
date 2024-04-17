@@ -24,7 +24,7 @@
 						},
 						{
 							"function": "set_nbt",
-							"tag": "{enderfaceItem:1b,HideFlags:34}"
+							"tag": "{enderface_item:1b,HideFlags:34}"
 						}
 					]
 				}

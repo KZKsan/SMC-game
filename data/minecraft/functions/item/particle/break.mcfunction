@@ -3,4 +3,4 @@
 #@input nbt id,tag
 #
 #@api
-$particle item $(id)$(tag) ~ ~ ~ 0 0 0 0.05 4
+$particle item{item:$(id)} ~ ~ ~ 0 0 0 0.05 4
