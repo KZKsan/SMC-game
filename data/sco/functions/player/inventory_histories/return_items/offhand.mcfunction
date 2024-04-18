@@ -1,4 +1,6 @@
 #>sco:player/inventory_histories/return_items/offhand
 #@within sco:player/inventory_histories/return_items/
-$item replace entity @s weapon.offhand with $(id)$(tag) $(Count)
-data remove storage _ _[{Slot:-106b}]
+data modify storage _ item_data set from storage sco:inventory_histories inventory_data.input[{Slot:-106b}]
+data modify storage _ item_data.Slot set value "weapon.offhand"
+function item/macro/replace/
+data remove storage sco:inventory_histories inventory_data.input[{Slot:-106b}]

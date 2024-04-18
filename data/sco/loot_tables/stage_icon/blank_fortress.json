@@ -17,7 +17,7 @@
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{enderfaceItem:true}"
+                            "tag": "{enderface_item:true}"
                         }
                     ]
                 }

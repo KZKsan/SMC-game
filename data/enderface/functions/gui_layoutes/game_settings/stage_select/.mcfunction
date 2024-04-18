@@ -9,7 +9,7 @@ execute if data storage sco:config game{rule:"kick_out"} run data modify storage
 
 function enderface:gui_layoutes/game_settings/stage_select/stage_tables/generic
 
-item replace entity @s enderchest.8 with jigsaw{enderfaceItem:1b,display:{Name:'{"text": "ランダム","italic": false,"color":"#55AADD"}'},click_events:{click_sounds:[{sound:"ui.button.click"}],set_stage:"sco_random"}}
+item replace entity @s enderchest.8 with jigsaw{enderface_item:1b,display:{Name:'{"text": "ランダム","italic": false,"color":"#55AADD"}'},click_events:{click_sounds:[{sound:"ui.button.click"}],set_stage:"sco_random"}}
 
 function enderface:gui_layoutes/game_settings/stage_select/selected_icon/ with storage sco:config
 

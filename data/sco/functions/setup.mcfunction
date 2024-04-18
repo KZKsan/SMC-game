@@ -110,6 +110,7 @@ execute unless data storage sco:config stage run data modify storage sco:config 
 #>
 #@public
 #declare storage sco:input
+#declare storage sco:inventory_histories
 
 
 #>

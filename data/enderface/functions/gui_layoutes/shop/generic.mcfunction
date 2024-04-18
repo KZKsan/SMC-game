@@ -13,6 +13,7 @@ item replace entity @s enderchest.19 with air
 item replace entity @s enderchest.20 with air
 
 loot replace entity @s enderchest.26 loot enderface:shop/return_shop.0
+execute unless data storage enderface:shop _[0] run return 0
 function enderface:gui_layoutes/shop/set_trade_data/read_data/
 execute store result score # _ run data get storage p-storage _[0].data.page
 execute store result score #line _ run data get storage enderface:shop _
