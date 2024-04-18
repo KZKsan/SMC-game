@@ -8,8 +8,10 @@
                     "name": "shield",
                     "functions": [
                         {
-                            "function": "set_nbt",
-                            "tag": "{Damage:276}"
+                            "function": "set_components",
+                            "components": {
+                                "damage": 276
+                            }
                         }
                     ]
                 }
