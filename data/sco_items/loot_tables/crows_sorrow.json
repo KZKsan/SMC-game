@@ -10,7 +10,8 @@
                         {
                             "function": "set_name",
                             "name": {
-                                "text": "カラスの哀刀",
+                                "translate": "item.sco_items.crows_sorrow", 
+                                "fallback":"カラスの哀刀",
                                 "italic": false,
                                 "color": "#AA0000"
                             }
@@ -18,8 +19,14 @@
                         {
                             "function": "set_lore",
                             "lore": [
-                                "_____に捧ぐ。",
-                                "迅速に間合いを詰め、__できる。",
+                                {
+                                    "translate": "item.sco_items.crows_sorrow.description.0",
+                                    "fallback": "_____に捧ぐ。"
+                                },
+                                {
+                                    "translate": "item.sco_items.crows_sorrow.description.1",
+                                    "fallback": "迅速に間合いを詰め、__できる。"
+                                },
                                 "",
                                 {
                                     "translate": "item.modifiers.mainhand",
@@ -61,13 +68,69 @@
                                         "color": "blue",
                                         "italic": false
                                     }
+                                ],
+                                "",
+                                {
+                                    "translate": "item.modifiers.blink",
+                                    "fallback": "ブリンクをしたとき：",
+                                    "color": "gray",
+                                    "italic": false
+                                },
+                                [
+                                    {
+                                        "translate": "attribute.name.generic.attack_speed",
+                                        "color": "blue",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": " +100%",
+                                        "color": "blue",
+                                        "italic": false
+                                    }
+                                ],
+                                [
+                                    {
+                                        "translate": "attribute.name.generic.armor",
+                                        "color": "red",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": " -2",
+                                        "color": "red",
+                                        "italic": false
+                                    }
+                                ],
+                                [
+                                    {
+                                        "translate": "attribute.name.generic.attack_damage",
+                                        "color": "blue",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": " +15",
+                                        "color": "blue",
+                                        "italic": false
+                                    }
+                                ],
+                                [
+                                    {
+                                        "translate": "attribute.name.generic.knockback_resistance",
+                                        "color": "blue",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": " +1000%",
+                                        "color": "blue",
+                                        "italic": false
+                                    }
                                 ]
-                            ]
+                            ],
+                            "mode": "replace_all"
                         },
                         {
                             "function": "set_enchantments",
                             "enchantments": {
-                                "sweeping": 1
+                                "sweeping_edge": 1
                             }
                         },
                         {
@@ -76,29 +139,35 @@
                                 {
                                     "name": "",
                                     "amount": -2,
-                                    "operation": "addition",
+                                    "operation": "add_value",
                                     "attribute": "generic.armor",
                                     "slot": "mainhand"
                                 },
                                 {
                                     "name": "",
                                     "amount": -0.6,
-                                    "operation": "multiply_total",
+                                    "operation": "add_multiplied_total",
                                     "attribute": "generic.attack_speed",
                                     "slot": "mainhand"
                                 },
                                 {
                                     "name": "",
                                     "amount": 5,
-                                    "operation": "addition",
+                                    "operation": "add_value",
                                     "attribute": "generic.attack_damage",
                                     "slot": "mainhand"
                                 }
                             ]
                         },
                         {
-                            "function": "set_nbt",
-                            "tag": "{HideFlags:2,item_functions:{crows_sorrow:1b}}"
+                            "function": "set_custom_data",
+                            "tag": "{item_functions:{crows_sorrow:1b}}"
+                        },
+                        {
+                            "function": "toggle_tooltips",
+                            "toggles": {
+                                "attribute_modifiers": false
+                            }
                         }
                     ]
                 }
