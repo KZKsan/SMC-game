@@ -25,10 +25,11 @@
                                         }
                                     ]
                                 }
-                            ]
+                            ],
+                            "mode": "replace_all"
                         },
                         {
-                            "function": "set_nbt",
+                            "function": "set_custom_data",
                             "tag": "{item_functions:{hidden_cover:1b}}"
                         }
                     ]
