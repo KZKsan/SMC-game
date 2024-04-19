@@ -6,5 +6,5 @@ effect give @s absorption 5 9
 execute if entity @s[team=red] run function sco:process/kick_out/game_flag/score/blue
 execute if entity @s[team=blue] run function sco:process/kick_out/game_flag/score/red
 function sco:tp/respawn/
-data modify storage _ _ set from storage p-storage _[0].data.inventory_histories[{name:"respawn"}].Items
+data modify storage sco:inventory_histories inventory_data.input set from storage p-storage _[0].data.inventory_histories[{name:"respawn"}].Items
 function sco:player/inventory_histories/return_items/

@@ -2,7 +2,7 @@
 #@within advancement sco:pvp/leave_pvp
 team join mode.practice @s
 function p-storage/get
-data modify storage _ _ set from storage p-storage _[0].data.inventory_histories[{name:"respawn"}].Items
+data modify storage sco:inventory_histories inventory_data.input set from storage p-storage _[0].data.inventory_histories[{name:"respawn"}].Items
 function sco:player/inventory_histories/return_items/
 data remove storage p-storage _[0].data.inventory_histories[{name:"respawn"}]
 effect clear @s
