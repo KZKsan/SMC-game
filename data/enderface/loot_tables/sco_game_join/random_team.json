@@ -5,19 +5,20 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "grass_block",
+                    "name": "white_wool",
                     "functions": [
                         {
                             "function": "set_name",
                             "name": {
-                                "text": "ラクエン",
-                                "italic": false,
-                                "color": "#55AADD"
+                                "text": "ランダムなチームに参加",
+                                "color": "#AA5555",
+                                "bold": false,
+                                "italic": false
                             }
                         },
                         {
                             "function": "set_custom_data",
-                            "tag": "{enderface_item:true}"
+                            "tag": "{enderface_item:1b}"
                         }
                     ]
                 }

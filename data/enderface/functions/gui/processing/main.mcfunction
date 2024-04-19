@@ -12,10 +12,10 @@ execute if data storage enderface:data gui_intaract{click:1b} if data storage en
 ## Other Processing
 #execute if data storage enderface:data {gui_name:"shop/0"} run function enderface:gui/processing/shop/0/main
 execute if data storage enderface:data {gui_name:"shop/reset_item_gui"} run function enderface:gui/processing/shop/0/reset_item_gui/
-#execute if data storage enderface:data {gui_name:"join_the_game/"} run function enderface:gui/processing/join_the_game/
-#execute if data storage enderface:data {gui_name:"game_settings/"} run function enderface:gui/processing/game_settings/
-#execute if data storage enderface:data {gui_name:"game_settings/stage_select"} run function enderface:gui/processing/game_settings/stage_select/
-#execute if data storage enderface:data {gui_name:"game_settings/rule_settings"} run function enderface:gui/processing/game_settings/rule_settings/
+execute if data storage enderface:data {gui_name:"join_the_game/"} run function enderface:gui/processing/join_the_game/
+execute if data storage enderface:data {gui_name:"game_settings/"} run function enderface:gui/processing/game_settings/
+execute if data storage enderface:data {gui_name:"game_settings/stage_select"} run function enderface:gui/processing/game_settings/stage_select/
+execute if data storage enderface:data {gui_name:"game_settings/rule_settings"} run function enderface:gui/processing/game_settings/rule_settings/
 execute if data storage enderface:data gui_intaract{click:1b} if data storage enderface:data gui_intaract.Item.components."minecraft:custom_data".click_events{healing:1b} run effect give @s instant_health 5 120
 ## return_item
 function enderface:gui/return_item/main

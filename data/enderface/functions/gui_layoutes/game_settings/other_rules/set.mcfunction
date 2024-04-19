@@ -1,0 +1,4 @@
+#>enderface:gui_layoutes/game_settings/other_rules/set
+#@within enderface:gui_layoutes/game_settings/
+$execute if data storage sco:config game{$(rule_id):false} run item replace entity @s enderchest.$(slot) with gray_dye[item_name='{"text": "$(rule_name)","italic": false}',lore=['{"text": "|OFF|","color": "gray","italic": false}'],custom_data={enderface_item:1b,click_events:{click_sounds:[{sound:"ui.button.toggle"}]}}]
+$execute if data storage sco:config game{$(rule_id):true} run item replace entity @s enderchest.$(slot) with lime_dye[item_name='{"text": "$(rule_name)","italic": false}',lore=['{"text": "|ON|","color": "green","italic": false}'],custom_data={enderface_item:1b,click_events:{click_sounds:[{sound:"ui.button.toggle"}]}}]

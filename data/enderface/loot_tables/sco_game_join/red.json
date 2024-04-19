@@ -5,19 +5,20 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "grass_block",
+                    "name": "red_wool",
                     "functions": [
                         {
                             "function": "set_name",
                             "name": {
-                                "text": "ラクエン",
-                                "italic": false,
-                                "color": "#55AADD"
+                                "text": "Redチームに参加",
+                                "color": "#FF0000",
+                                "bold": false,
+                                "italic": false
                             }
                         },
                         {
                             "function": "set_custom_data",
-                            "tag": "{enderface_item:true}"
+                            "tag": "{enderface_item:1b}"
                         }
                     ]
                 }
