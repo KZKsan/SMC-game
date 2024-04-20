@@ -1,61 +1,71 @@
 {
     "pools": [
-        {
-            "rolls": 1,
-            "entries": [
-                {
-                    "type": "item",
-                    "name": "diamond_sword",
-                    "functions": [
-                        {
-                            "function": "set_name",
-                            "name": {
-                                "text": "ダイヤモンドソード",
-                                "italic": false
-                            }
-                        },
-                        {
-                            "function": "set_lore",
-                            "lore": [
-                                "",
-                                {
-                                    "translate": "item.modifiers.mainhand",
-                                    "color": "gray",
-                                    "italic": false
-                                },
-                                [
-                                    {
-                                        "text": " 7 ",
-                                        "color": "dark_green",
-                                        "italic": false
-                                    },
-                                    {
-                                        "translate": "attribute.name.generic.attack_damage",
-                                        "color": "dark_green",
-                                        "italic": false
-                                    }
-                                ],
-                                [
-                                    {
-                                        "text": " 1.6 ",
-                                        "color": "dark_green",
-                                        "italic": false
-                                    },
-                                    {
-                                        "translate": "attribute.name.generic.attack_speed",
-                                        "color": "dark_green",
-                                        "italic": false
-                                    }
-                                ]
-                            ]
-                        },
-                        {
-                            "function": "set_nbt",
-                            "tag": "{HideFlags:34}"
-                        }
-                    ]
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:diamond_sword",
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "name": {
+                  "text": "ダイヤモンドソード",
+                  "italic": false
                 }
+              },
+              {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  "",
+                  {
+                    "translate": "item.modifiers.mainhand",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  [
+                    {
+                      "text": " 7 ",
+                      "color": "dark_green",
+                      "italic": false
+                    },
+                    {
+                      "translate": "attribute.name.generic.attack_damage",
+                      "color": "dark_green",
+                      "italic": false
+                    }
+                  ],
+                  [
+                    {
+                      "text": " 1.6 ",
+                      "color": "dark_green",
+                      "italic": false
+                    },
+                    {
+                      "translate": "attribute.name.generic.attack_speed",
+                      "color": "dark_green",
+                      "italic": false
+                    }
+                  ]
+                ],
+                "mode": "replace_all"
+              },
+              {
+                "function": "minecraft:toggle_tooltips",
+                "toggles": {
+                  "minecraft:attribute_modifiers": false
+                }
+              },
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:hide_additional_tooltip": {}
+                }
+              }
             ]
-        }
+          }
+        ]
+      }
     ]
-}
+  }
+  
