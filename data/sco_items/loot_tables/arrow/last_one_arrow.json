@@ -24,10 +24,11 @@
                                 {
                                     "text": "とてつもない火力で敵を撃ち滅ぼす"
                                 }
-                            ]
+                            ],
+                            "mode": "replace_all"
                         },
                         {
-                            "function": "set_nbt",
+                            "function": "set_custom_data",
                             "tag": "{item_functions:{last_one_arrow:1b},cant_pickup:true}"
                         }
                     ]
