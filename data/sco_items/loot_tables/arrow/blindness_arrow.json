@@ -15,8 +15,19 @@
                             }
                         },
                         {
-                            "function": "set_nbt",
-                            "tag": "{CustomPotionColor:2490460,custom_potion_effects:[{amplifier:4b,duration:80,id:\"blindness\"}]}"
+                            "function": "set_components",
+                            "components": {
+                                "potion_contents": {
+                                    "custom_color": 2490460,
+                                    "custom_effects": [
+                                        {
+                                            "id": "blindness",
+                                            "amplifier": 4,
+                                            "duration": 80
+                                        }
+                                    ]
+                                }
+                            }
                         }
                     ]
                 }
