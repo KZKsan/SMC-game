@@ -1,201 +1,215 @@
 {
     "pools": [
-        {
-            "rolls": 1,
-            "entries": [
-                {
-                    "type": "item",
-                    "name": "golden_pickaxe",
-                    "functions": [
-                        {
-                            "function": "set_name",
-                            "name": [
-                                {
-                                    "text": "雷鎚ニョルニル",
-                                    "italic": false
-                                }
-                            ]
-                        },
-                        {
-                            "function": "set_lore",
-                            "lore": [
-                                "手にすると付近の敵に雷を落とす",
-                                "味方にも当たってしまうので注意しよう",
-                                "",
-                                [
-                                    {
-                                        "translate": "effect.minecraft.slowness",
-                                        "italic": false,
-                                        "color": "#AA0000"
-                                    },
-                                    " A:1, D:1s"
-                                ],
-                                [
-                                    {
-                                        "translate": "effect.minecraft.mining_fatigue",
-                                        "italic": false,
-                                        "color": "#AA0000"
-                                    },
-                                    " A:0, D:1s"
-                                ],
-                                "",
-                                {
-                                    "text": "手に持ったとき：",
-                                    "color": "gray",
-                                    "italic": false
-                                },
-                                [
-                                    {
-                                        "translate": "attribute.name.generic.movement_speed",
-                                        "color": "red",
-                                        "italic": false
-                                    },
-                                    {
-                                        "text": " -40%",
-                                        "color": "red",
-                                        "italic": false
-                                    }
-                                ],
-                                [
-                                    {
-                                        "translate": "attribute.name.generic.attack_speed",
-                                        "color": "red",
-                                        "italic": false
-                                    },
-                                    {
-                                        "text": " -70%",
-                                        "color": "red",
-                                        "italic": false
-                                    }
-                                ],
-                                [
-                                    {
-                                        "translate": "attribute.name.generic.attack_damage",
-                                        "color": "blue",
-                                        "italic": false
-                                    },
-                                    {
-                                        "text": " +7",
-                                        "color": "blue",
-                                        "italic": false
-                                    }
-                                ],
-                                [
-                                    {
-                                        "translate": "attribute.name.generic.armor_toughness",
-                                        "color": "red",
-                                        "italic": false
-                                    },
-                                    {
-                                        "text": " -2",
-                                        "color": "red",
-                                        "italic": false
-                                    }
-                                ],
-                                [
-                                    {
-                                        "translate": "attribute.name.generic.armor",
-                                        "color": "red",
-                                        "italic": false
-                                    },
-                                    {
-                                        "text": " -6",
-                                        "color": "red",
-                                        "italic": false
-                                    }
-                                ]
-                            ]
-                        },
-                        {
-                            "function": "set_attributes",
-                            "modifiers": [
-                                {
-                                    "slot": "mainhand",
-                                    "amount": -0.4,
-                                    "operation": "multiply_total",
-                                    "attribute": "generic.movement_speed",
-                                    "name": ""
-                                },
-                                {
-                                    "slot": "mainhand",
-                                    "amount": -0.7,
-                                    "operation": "multiply_total",
-                                    "attribute": "generic.attack_speed",
-                                    "name": ""
-                                },
-                                {
-                                    "slot": "mainhand",
-                                    "amount": -6,
-                                    "operation": "addition",
-                                    "attribute": "generic.armor",
-                                    "name": ""
-                                },
-                                {
-                                    "slot": "mainhand",
-                                    "amount": 7,
-                                    "operation": "addition",
-                                    "attribute": "generic.attack_damage",
-                                    "name": ""
-                                },
-                                {
-                                    "slot": "mainhand",
-                                    "amount": -2,
-                                    "operation": "addition",
-                                    "attribute": "generic.armor_toughness",
-                                    "name": ""
-                                },
-                                {
-                                    "slot": "offhand",
-                                    "amount": -0.4,
-                                    "operation": "multiply_total",
-                                    "attribute": "generic.movement_speed",
-                                    "name": ""
-                                },
-                                {
-                                    "slot": "offhand",
-                                    "amount": -0.7,
-                                    "operation": "multiply_total",
-                                    "attribute": "generic.attack_speed",
-                                    "name": ""
-                                },
-                                {
-                                    "slot": "offhand",
-                                    "amount": -6,
-                                    "operation": "addition",
-                                    "attribute": "generic.armor",
-                                    "name": ""
-                                },
-                                {
-                                    "slot": "offhand",
-                                    "amount": 7,
-                                    "operation": "addition",
-                                    "attribute": "generic.attack_damage",
-                                    "name": ""
-                                },
-                                {
-                                    "slot": "offhand",
-                                    "amount": -2,
-                                    "operation": "addition",
-                                    "attribute": "generic.armor_toughness",
-                                    "name": ""
-                                }
-                            ]
-                        },
-                        {
-                            "function": "set_enchantments",
-                            "enchantments": {
-                                "channeling": 10,
-                                "knockback":1,
-                                "sharpness": 1
-                            }
-                        },
-                        {
-                            "function": "set_nbt",
-                            "tag": "{HideFlags:2,Unbreakable:1b,item_functions:{lightning_hammer:1b}}"
-                        }
-                    ]
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:golden_pickaxe",
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "name": [
+                  {
+                    "text": "雷鎚ニョルニル",
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  "手にすると付近の敵に雷を落とす",
+                  "味方にも当たってしまうので注意しよう",
+                  "",
+                  [
+                    {
+                      "translate": "effect.minecraft.slowness",
+                      "color": "#AA0000",
+                      "italic": false
+                    },
+                    " A:1, D:1s"
+                  ],
+                  [
+                    {
+                      "translate": "effect.minecraft.mining_fatigue",
+                      "color": "#AA0000",
+                      "italic": false
+                    },
+                    " A:0, D:1s"
+                  ],
+                  "",
+                  {
+                    "text": "手に持ったとき：",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  [
+                    {
+                      "translate": "attribute.name.generic.movement_speed",
+                      "color": "red",
+                      "italic": false
+                    },
+                    {
+                      "text": " -40%",
+                      "color": "red",
+                      "italic": false
+                    }
+                  ],
+                  [
+                    {
+                      "translate": "attribute.name.generic.attack_speed",
+                      "color": "red",
+                      "italic": false
+                    },
+                    {
+                      "text": " -70%",
+                      "color": "red",
+                      "italic": false
+                    }
+                  ],
+                  [
+                    {
+                      "translate": "attribute.name.generic.attack_damage",
+                      "color": "blue",
+                      "italic": false
+                    },
+                    {
+                      "text": " +7",
+                      "color": "blue",
+                      "italic": false
+                    }
+                  ],
+                  [
+                    {
+                      "translate": "attribute.name.generic.armor_toughness",
+                      "color": "red",
+                      "italic": false
+                    },
+                    {
+                      "text": " -2",
+                      "color": "red",
+                      "italic": false
+                    }
+                  ],
+                  [
+                    {
+                      "translate": "attribute.name.generic.armor",
+                      "color": "red",
+                      "italic": false
+                    },
+                    {
+                      "text": " -6",
+                      "color": "red",
+                      "italic": false
+                    }
+                  ]
+                ],
+                "mode": "replace_all"
+              },
+              {
+                "function": "minecraft:set_attributes",
+                "modifiers": [
+                  {
+                    "attribute": "minecraft:generic.movement_speed",
+                    "name": "",
+                    "amount": -0.4,
+                    "operation": "add_multiplied_total",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "attribute": "minecraft:generic.attack_speed",
+                    "name": "",
+                    "amount": -0.7,
+                    "operation": "add_multiplied_total",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "attribute": "minecraft:generic.armor",
+                    "name": "",
+                    "amount": -6,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "attribute": "minecraft:generic.attack_damage",
+                    "name": "",
+                    "amount": 7,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "attribute": "minecraft:generic.armor_toughness",
+                    "name": "",
+                    "amount": -2,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "attribute": "minecraft:generic.movement_speed",
+                    "name": "",
+                    "amount": -0.4,
+                    "operation": "add_multiplied_total",
+                    "slot": "offhand"
+                  },
+                  {
+                    "attribute": "minecraft:generic.attack_speed",
+                    "name": "",
+                    "amount": -0.7,
+                    "operation": "add_multiplied_total",
+                    "slot": "offhand"
+                  },
+                  {
+                    "attribute": "minecraft:generic.armor",
+                    "name": "",
+                    "amount": -6,
+                    "operation": "add_value",
+                    "slot": "offhand"
+                  },
+                  {
+                    "attribute": "minecraft:generic.attack_damage",
+                    "name": "",
+                    "amount": 7,
+                    "operation": "add_value",
+                    "slot": "offhand"
+                  },
+                  {
+                    "attribute": "minecraft:generic.armor_toughness",
+                    "name": "",
+                    "amount": -2,
+                    "operation": "add_value",
+                    "slot": "offhand"
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_enchantments",
+                "enchantments": {
+                  "channeling": 10,
+                  "knockback": 1,
+                  "sharpness": 1
                 }
+              },
+              {
+                "function": "minecraft:toggle_tooltips",
+                "toggles": {
+                  "minecraft:attribute_modifiers": false
+                }
+              },
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:unbreakable": {}
+                }
+              },
+              {
+                "function": "minecraft:set_custom_data",
+                "tag": "{item_functions:{lightning_hammer:1b}}"
+              }
             ]
-        }
+          }
+        ]
+      }
     ]
-}
+  }
+  
