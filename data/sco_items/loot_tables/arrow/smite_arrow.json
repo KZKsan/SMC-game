@@ -21,7 +21,8 @@
 							"function": "set_lore",
 							"lore": [
 								"死した存在を抹消する矢"
-							]
+							],
+							"mode": "replace_all"
 						},
 						{
 							"function": "set_enchantments",
