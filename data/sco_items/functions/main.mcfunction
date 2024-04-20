@@ -10,7 +10,7 @@
     execute as @e[type=#arrows,nbt={item:{tag:{item_functions:{no_gravity_arrow:1b}}}},tag=item_function.no_gravity_arrow] at @s run function sco_items:item_functions/no_gravity_arrow/
     execute as @e[type=#arrows,nbt={item:{tag:{item_functions:{no_gravity_arrow:1b}}},inGround:1b}] at @s run function sco_items:item_functions/no_gravity_arrow/hit_block
     execute as @e[type=#arrows,nbt={item:{tag:{item_functions:{small_arrow:1b}}}},tag=!item_function.small_arrow] run function sco_items:item_functions/small_arrow/set_data
-    execute as @e[type=#arrows,nbt={item:{tag:{Enchantments:[{id:"minecraft:piercing"}]}}},tag=!item_function.piercing_arrow] run function sco_items:item_functions/enchant/piercing/set_nbt
+    execute as @e[type=#arrows,tag=!item_function.piercing_arrow] if data entity @s item.components."minecraft:enchantments".levels."minecraft:piercing" run function sco_items:item_functions/enchant/piercing/set_nbt
 # magic_bullet
     execute as @e[type=potion,tag=!already] if data entity @s Item.tag.item_functions.set_p_vector run function #sco_items:item_functions/set_p_vector/generic
 
