@@ -9,7 +9,7 @@
                         "condition": "entity_properties",
                         "entity": "this",
                         "predicate": {
-                            "nbt": "{SelectedItem:{tag:{item_functions:{enchant:[{id:\"destruction_of_durability\"}]}}}}"
+                            "nbt": "{SelectedItem:{components:{\"minecraft:custom_data\":{item_functions:{enchant:[{id:\"destruction_of_durability\"}]}}}}}"
                         }
                     }
                 ],

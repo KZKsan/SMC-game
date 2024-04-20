@@ -1,5 +1,5 @@
 #>sco_items:item_functions/set_p_vector/
 #@within tag/function sco_items:item_functions/set_p_vector/**
-execute if data storage _ data_fetch{type:"multiply"} run function sco_items:item_functions/set_p_vector/operation/multiply with storage _ data_fetch
-execute if data storage _ data_fetch{type:"set"} run function sco_items:item_functions/set_p_vector/operation/set/ with storage _ data_fetch
+execute if data storage sco_items:data set_p_vector{type:"multiply"} run function sco_items:item_functions/set_p_vector/operation/multiply with storage sco_items:data set_p_vector
+execute if data storage sco_items:data set_p_vector{type:"set"} run function sco_items:item_functions/set_p_vector/operation/set/ with storage sco_items:data set_p_vector
 tag @s add already
