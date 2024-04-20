@@ -125,7 +125,7 @@
               },
               {
                 "function": "minecraft:set_custom_data",
-                "tag": "{item_functions:{healing:1b}}"
+                "tag": "{item_functions:{passive_effects:[{id:\"regeneration\",duration:3,amplifier:0,hide_particle:\"false\",pass_effect:1b}]}}"
               }
             ]
           }

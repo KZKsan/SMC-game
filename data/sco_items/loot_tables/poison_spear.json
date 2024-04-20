@@ -1,88 +1,77 @@
 {
-    "pools": [
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:diamond_shovel",
-            "functions": [
-              {
-                "function": "minecraft:set_name",
-                "name": {
-                  "text": "毒槍",
-                  "italic": false
-                }
-              },
-              {
-                "function": "minecraft:set_lore",
-                "lore": [
-                  {
-                    "text": "先端に毒を塗り込んだ短槍",
-                    "italic": false
-                  },
-                  "",
-                  [
-                    {
-                      "translate": "effect.minecraft.poison",
-                      "color": "#AA0000",
-                      "italic": false
-                    },
-                    " A:0, D:5s"
-                  ],
-                  "",
-                  {
-                    "translate": "item.modifiers.mainhand",
-                    "color": "gray",
-                    "italic": false
-                  },
-                  [
-                    {
-                      "text": " 5.5 ",
-                      "color": "dark_green",
-                      "italic": false
-                    },
-                    {
-                      "translate": "attribute.name.generic.attack_damage",
-                      "color": "dark_green",
-                      "italic": false
-                    }
-                  ],
-                  [
-                    {
-                      "text": " 1 ",
-                      "color": "dark_green",
-                      "italic": false
-                    },
-                    {
-                      "translate": "attribute.name.generic.attack_speed",
-                      "color": "dark_green",
-                      "italic": false
-                    }
-                  ]
-                ],
-                "mode": "replace_all"
-              },
-              {
-                "function": "minecraft:set_enchantments",
-                "enchantments": {
-                  "unbreaking": 3
-                }
-              },
-              {
-                "function": "minecraft:toggle_tooltips",
-                "toggles": {
-                  "minecraft:attribute_modifiers": false
-                }
-              },
-              {
-                "function": "minecraft:set_custom_data",
-                "tag": "{item_functions:{poison_spear:1b}}"
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_shovel",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "毒槍",
+                "italic": false
               }
-            ]
-          }
-        ]
-      }
-    ]
-  }
-  
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "先端に毒を塗り込んだ短槍",
+                  "italic": false
+                },
+                "",
+                [
+                  {
+                    "translate": "effect.minecraft.poison",
+                    "color": "#AA0000",
+                    "italic": false
+                  },
+                  " A:0, D:5s"
+                ]
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.attack_speed",
+                  "name": "",
+                  "amount": -3,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                },
+                {
+                  "attribute": "generic.attack_damage",
+                  "name": "",
+                  "amount": 4.5,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                },
+                {
+                  "attribute": "player.entity_interaction_range",
+                  "name": "",
+                  "amount": 2,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "unbreaking": 3
+              }
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{item_functions:{poison_spear:1b}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
