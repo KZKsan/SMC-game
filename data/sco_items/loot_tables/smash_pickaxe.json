@@ -4,18 +4,18 @@
             "rolls": 1,
             "entries": [
                 {
-                    "type": "item",
-                    "name": "wooden_pickaxe",
+                    "type": "minecraft:item",
+                    "name": "minecraft:wooden_pickaxe",
                     "functions": [
                         {
-                            "function": "set_name",
+                            "function": "minecraft:set_name",
                             "name": {
                                 "text": "スマッシュピッケル",
                                 "italic": false
                             }
                         },
                         {
-                            "function": "set_lore",
+                            "function": "minecraft:set_lore",
                             "lore": [
                                 "スマッシュ!",
                                 "",
@@ -36,29 +36,36 @@
                                         "italic": false
                                     }
                                 ]
-                            ]
+                            ],
+                            "mode": "replace_all"
                         },
                         {
-                            "function": "set_attributes",
+                            "function": "minecraft:set_attributes",
                             "modifiers": [
                                 {
-                                    "attribute": "generic.attack_damage",
+                                    "attribute": "minecraft:generic.attack_damage",
                                     "name": "",
                                     "amount": -0.79,
-                                    "operation": "multiply_total",
+                                    "operation": "add_multiplied_total",
                                     "slot": "mainhand"
                                 }
                             ]
                         },
                         {
-                            "function": "set_enchantments",
+                            "function": "minecraft:set_enchantments",
                             "enchantments": {
                                 "knockback": 3
                             }
                         },
                         {
-                            "function": "set_nbt",
-                            "tag": "{HideFlags:2,itme_functions:{particle:{explode:1b}}}"
+                            "function": "minecraft:toggle_tooltips",
+                            "toggles": {
+                                "minecraft:attribute_modifiers": false
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_custom_data",
+                            "tag": "{itme_functions:{particle:{explode:1b}}}"
                         }
                     ]
                 }

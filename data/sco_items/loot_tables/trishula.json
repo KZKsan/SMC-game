@@ -4,26 +4,26 @@
             "rolls": 1,
             "entries": [
                 {
-                    "type": "item",
-                    "name": "trident",
+                    "type": "minecraft:item",
+                    "name": "minecraft:trident",
                     "functions": [
                         {
-                            "function": "set_name",
+                            "function": "minecraft:set_name",
                             "name": {
                                 "text": "トリシューラ",
                                 "italic": false
                             }
                         },
                         {
-                            "function": "set_lore",
+                            "function": "minecraft:set_lore",
                             "lore": [
                                 "呪いのおまけつき",
                                 "",
                                 [
                                     {
                                         "translate": "effect.minecraft.poison",
-                                        "italic": false,
-                                        "color": "#00CCAA"
+                                        "color": "#00CCAA",
+                                        "italic": false
                                     },
                                     " A:0, D:2s"
                                 ],
@@ -57,17 +57,30 @@
                                         "italic": false
                                     }
                                 ]
-                            ]
+                            ],
+                            "mode": "replace_all"
                         },
                         {
-                            "function": "set_enchantments",
+                            "function": "minecraft:set_enchantments",
                             "enchantments": {
                                 "riptide": 2
                             }
                         },
                         {
-                            "function": "set_nbt",
-                            "tag": "{HideFlags:34,item_functions:{trishula:1b}}"
+                            "function": "minecraft:toggle_tooltips",
+                            "toggles": {
+                                "minecraft:attribute_modifiers": false
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_custom_data",
+                            "tag": "{item_functions:{trishula:1b}}"
+                        },
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:hide_additional_tooltip": {}
+                            }
                         }
                     ]
                 }

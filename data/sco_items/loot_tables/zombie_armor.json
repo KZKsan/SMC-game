@@ -4,19 +4,19 @@
             "rolls": 1,
             "entries": [
                 {
-                    "type": "item",
-                    "name": "leather_chestplate",
+                    "type": "minecraft:item",
+                    "name": "minecraft:leather_chestplate",
                     "functions": [
                         {
-                            "function": "set_name",
+                            "function": "minecraft:set_name",
                             "name": {
                                 "text": "ゾンビの鎧",
-                                "italic": false,
-                                "color": "dark_green"
+                                "color": "dark_green",
+                                "italic": false
                             }
                         },
                         {
-                            "function": "set_lore",
+                            "function": "minecraft:set_lore",
                             "lore": [
                                 {
                                     "text": "不死者の呪い",
@@ -77,51 +77,67 @@
                                         "italic": false
                                     }
                                 ]
-                            ]
+                            ],
+                            "mode": "replace_all"
                         },
                         {
-                            "function": "set_attributes",
+                            "function": "minecraft:set_attributes",
                             "modifiers": [
                                 {
-                                    "slot": "chest",
+                                    "attribute": "minecraft:generic.armor",
+                                    "name": "",
                                     "amount": 6,
-                                    "operation": "addition",
-                                    "attribute": "generic.armor",
-                                    "name": ""
+                                    "operation": "add_value",
+                                    "slot": "chest"
                                 },
                                 {
-                                    "slot": "chest",
+                                    "attribute": "minecraft:generic.armor_toughness",
+                                    "name": "",
                                     "amount": 3,
-                                    "operation": "addition",
-                                    "attribute": "generic.armor_toughness",
-                                    "name": ""
+                                    "operation": "add_value",
+                                    "slot": "chest"
                                 },
                                 {
-                                    "slot": "chest",
+                                    "attribute": "minecraft:generic.attack_damage",
+                                    "name": "",
                                     "amount": 0.1,
-                                    "operation": "multiply_total",
-                                    "attribute": "generic.attack_damage",
-                                    "name": ""
+                                    "operation": "add_multiplied_total",
+                                    "slot": "chest"
                                 },
                                 {
-                                    "slot": "chest",
+                                    "attribute": "minecraft:generic.attack_speed",
+                                    "name": "",
                                     "amount": 0.3,
-                                    "operation": "multiply_total",
-                                    "attribute": "generic.attack_speed",
-                                    "name": ""
+                                    "operation": "add_multiplied_total",
+                                    "slot": "chest"
                                 }
                             ]
                         },
                         {
-                            "function": "set_enchantments",
+                            "function": "minecraft:set_enchantments",
                             "enchantments": {
                                 "protection": 3,
                                 "unbreaking": 10
                             }
                         },
                         {
-                            "function": "set_nbt",
-                            "tag": "{item_functions:{undead:1b},HideFlags:66,display:{color:13830}}"
+                            "function": "minecraft:toggle_tooltips",
+                            "toggles": {
+                                "minecraft:attribute_modifiers": false
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:dyed_color": {
+                                    "rgb": 13830,
+                                    "show_in_tooltip": false
+                                }
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_custom_data",
+                            "tag": "{item_functions:{undead:1b}}"
                         }
                     ]
                 }

@@ -4,18 +4,18 @@
             "rolls": 1,
             "entries": [
                 {
-                    "type": "item",
-                    "name": "netherite_pickaxe",
+                    "type": "minecraft:item",
+                    "name": "minecraft:netherite_pickaxe",
                     "functions": [
                         {
-                            "function": "set_name",
+                            "function": "minecraft:set_name",
                             "name": {
                                 "text": "鋼鉄の戦鎚",
                                 "italic": false
                             }
                         },
                         {
-                            "function": "set_lore",
+                            "function": "minecraft:set_lore",
                             "lore": [
                                 "圧倒的な攻撃力を誇るが",
                                 "まともに扱える者は限られている",
@@ -73,51 +73,58 @@
                                         "italic": false
                                     }
                                 ]
-                            ]
+                            ],
+                            "mode": "replace_all"
                         },
                         {
-                            "function": "set_attributes",
+                            "function": "minecraft:set_attributes",
                             "modifiers": [
                                 {
-                                    "attribute": "generic.movement_speed",
+                                    "attribute": "minecraft:generic.movement_speed",
                                     "name": "",
                                     "amount": -0.4,
-                                    "operation": "multiply_total",
+                                    "operation": "add_multiplied_total",
                                     "slot": "mainhand"
                                 },
                                 {
-                                    "attribute": "generic.attack_speed",
+                                    "attribute": "minecraft:generic.attack_speed",
                                     "name": "",
                                     "amount": -0.9,
-                                    "operation": "multiply_base",
+                                    "operation": "add_multiplied_base",
                                     "slot": "mainhand"
                                 },
                                 {
-                                    "attribute": "generic.attack_damage",
+                                    "attribute": "minecraft:generic.attack_damage",
                                     "name": "",
                                     "amount": 14,
-                                    "operation": "addition",
+                                    "operation": "add_value",
                                     "slot": "mainhand"
                                 },
                                 {
-                                    "attribute": "generic.knockback_resistance",
+                                    "attribute": "minecraft:generic.knockback_resistance",
                                     "name": "",
                                     "amount": 0.3,
-                                    "operation": "addition",
+                                    "operation": "add_value",
                                     "slot": "mainhand"
                                 }
                             ]
                         },
                         {
-                            "function": "set_enchantments",
+                            "function": "minecraft:set_enchantments",
                             "enchantments": {
                                 "knockback": 2,
                                 "unbreaking": 3
                             }
                         },
                         {
-                            "function": "set_nbt",
-                            "tag": "{HideFlags:2,item_functions:{steel_war_hammer:1b}}"
+                            "function": "minecraft:toggle_tooltips",
+                            "toggles": {
+                                "minecraft:attribute_modifiers": false
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_custom_data",
+                            "tag": "{item_functions:{steel_war_hammer:1b}}"
                         }
                     ]
                 }

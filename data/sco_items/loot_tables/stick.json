@@ -4,18 +4,18 @@
             "rolls": 1,
             "entries": [
                 {
-                    "type": "item",
-                    "name": "wooden_shovel",
+                    "type": "minecraft:item",
+                    "name": "minecraft:wooden_shovel",
                     "functions": [
                         {
-                            "function": "set_name",
+                            "function": "minecraft:set_name",
                             "name": {
                                 "text": "木の棍棒",
                                 "italic": false
                             }
                         },
                         {
-                            "function": "set_lore",
+                            "function": "minecraft:set_lore",
                             "lore": [
                                 "無いよりは、なしよりのあり。",
                                 "",
@@ -48,30 +48,37 @@
                                         "italic": false
                                     }
                                 ]
-                            ]
+                            ],
+                            "mode": "replace_all"
                         },
                         {
-                            "function": "set_attributes",
+                            "function": "minecraft:set_attributes",
                             "modifiers": [
                                 {
-                                    "attribute": "generic.attack_damage",
+                                    "attribute": "minecraft:generic.attack_damage",
                                     "name": "",
                                     "amount": 2,
-                                    "operation": "addition",
+                                    "operation": "add_value",
                                     "slot": "mainhand"
                                 },
                                 {
-                                    "attribute": "generic.attack_speed",
+                                    "attribute": "minecraft:generic.attack_speed",
                                     "name": "",
                                     "amount": -0.25,
-                                    "operation": "multiply_total",
+                                    "operation": "add_multiplied_total",
                                     "slot": "mainhand"
                                 }
                             ]
                         },
                         {
-                            "function": "set_nbt",
-                            "tag": "{HideFlags:2,itme_functions:{particle:{explode:1b}}}"
+                            "function": "minecraft:toggle_tooltips",
+                            "toggles": {
+                                "minecraft:attribute_modifiers": false
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_custom_data",
+                            "tag": "{itme_functions:{particle:{explode:1b}}}"
                         }
                     ]
                 }

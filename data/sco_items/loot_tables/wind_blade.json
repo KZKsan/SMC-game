@@ -4,18 +4,18 @@
             "rolls": 1,
             "entries": [
                 {
-                    "type": "item",
-                    "name": "iron_sword",
+                    "type": "minecraft:item",
+                    "name": "minecraft:iron_sword",
                     "functions": [
                         {
-                            "function": "set_name",
+                            "function": "minecraft:set_name",
                             "name": {
                                 "text": "風切りの刃",
                                 "italic": false
                             }
                         },
                         {
-                            "function": "set_lore",
+                            "function": "minecraft:set_lore",
                             "lore": [
                                 "",
                                 {
@@ -59,44 +59,47 @@
                                         "italic": false
                                     }
                                 ]
-                            ]
+                            ],
+                            "mode": "replace_all"
                         },
                         {
-                            "function": "set_attributes",
+                            "function": "minecraft:set_attributes",
                             "modifiers": [
                                 {
-                                    "attribute": "generic.movement_speed",
+                                    "attribute": "minecraft:generic.movement_speed",
                                     "name": "",
                                     "amount": 0.2,
-                                    "operation": "multiply_total",
+                                    "operation": "add_multiplied_total",
                                     "slot": "mainhand"
                                 },
                                 {
-                                    "attribute": "generic.attack_speed",
+                                    "attribute": "minecraft:generic.attack_speed",
                                     "name": "",
                                     "amount": -0.4,
-                                    "operation": "multiply_total",
+                                    "operation": "add_multiplied_total",
                                     "slot": "mainhand"
                                 },
                                 {
-                                    "attribute": "generic.attack_damage",
+                                    "attribute": "minecraft:generic.attack_damage",
                                     "name": "",
                                     "amount": 5,
-                                    "operation": "addition",
+                                    "operation": "add_value",
                                     "slot": "mainhand"
                                 }
                             ]
                         },
                         {
-                            "function": "set_enchantments",
+                            "function": "minecraft:set_enchantments",
                             "enchantments": {
                                 "knockback": 1,
                                 "smite": 2
                             }
                         },
                         {
-                            "function": "set_nbt",
-                            "tag": "{HideFlags:2}"
+                            "function": "minecraft:toggle_tooltips",
+                            "toggles": {
+                                "minecraft:attribute_modifiers": false
+                            }
                         }
                     ]
                 }
