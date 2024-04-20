@@ -21,7 +21,7 @@ function enderface:gui_layoutes/shop/set_trade_data/wirite_data/sell_count
 data modify storage enderface:shop trade_data append from storage enderface:shop _
 
 # damage_arrow
-item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with tipped_arrow{Potion:"harming"}
+item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with tipped_arrow[potion_contents={potion:"harming"}]
 data modify entity @e[tag=set_trade_data,limit=1,distance=..2] Items[0].count set value 3
 function enderface:gui_layoutes/shop/set_trade_data/wirite_data/icon/preview
 function enderface:gui_layoutes/shop/set_trade_data/wirite_data/sell
@@ -32,7 +32,7 @@ function enderface:gui_layoutes/shop/set_trade_data/wirite_data/sell_count
 data modify storage enderface:shop trade_data append from storage enderface:shop _
 
 # slowness_arrow lv4
-item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with tipped_arrow{Potion:"strong_slowness"}
+item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with tipped_arrow[potion_contents={potion:"strong_slowness"}]
 data modify entity @e[tag=set_trade_data,limit=1,distance=..2] Items[0].count set value 3
 function enderface:gui_layoutes/shop/set_trade_data/wirite_data/icon/preview
 function enderface:gui_layoutes/shop/set_trade_data/wirite_data/sell
@@ -42,7 +42,7 @@ data modify storage enderface:shop sell_count set value {click:1,sneak:21}
 function enderface:gui_layoutes/shop/set_trade_data/wirite_data/sell_count
 data modify storage enderface:shop trade_data append from storage enderface:shop _
 # slowness_arrow
-item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with tipped_arrow{Potion:"slowness"}
+item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with tipped_arrow[potion_contents={potion:"slowness"}]
 data modify entity @e[tag=set_trade_data,limit=1,distance=..2] Items[0].count set value 8
 function enderface:gui_layoutes/shop/set_trade_data/wirite_data/icon/preview
 function enderface:gui_layoutes/shop/set_trade_data/wirite_data/sell
@@ -53,7 +53,7 @@ function enderface:gui_layoutes/shop/set_trade_data/wirite_data/sell_count
 data modify storage enderface:shop trade_data append from storage enderface:shop _
 
 # weakness_arrow
-item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with tipped_arrow{Potion:"weakness"}
+item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with tipped_arrow[potion_contents={potion:"weakness"}]
 function enderface:gui_layoutes/shop/set_trade_data/wirite_data/icon/preview
 function enderface:gui_layoutes/shop/set_trade_data/wirite_data/sell
 item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with emerald 1
