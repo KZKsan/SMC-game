@@ -9,7 +9,13 @@
                         "condition": "entity_properties",
                         "entity": "this",
                         "predicate": {
-                            "nbt": "{SelectedItem:{tag:{Enchantments:[{id:\"minecraft:smite\"}]}}}"
+                            "equipment": {
+                                "mainhand": {
+                                    "predicates": {
+                                        "custom_data": "{item_functions:{smite_attack:{active:1b}}}"
+                                    }
+                                }
+                            }
                         }
                     },
                     {
@@ -21,16 +27,6 @@
                                 "effects": {
                                     "weakness": {}
                                 }
-                            }
-                        }
-                    },
-                    {
-                        "condition": "inverted",
-                        "term": {
-                            "condition": "entity_properties",
-                            "entity": "this",
-                            "predicate": {
-                                "nbt": "{SelectedItem:{tag:{item_functions:{smite_attack:0b}}}}"
                             }
                         }
                     }

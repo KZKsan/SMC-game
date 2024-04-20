@@ -15,6 +15,10 @@ scoreboard objectives add corpse_daemon.cooldown dummy
 scoreboard objectives add sco_items.configs dummy
 
 #>
+#@internal
+#declare storage sco_items:data
+
+#>
 #@within sco_items:**
 #declare tag item_function.
 
