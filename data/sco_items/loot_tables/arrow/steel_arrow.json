@@ -21,8 +21,13 @@
                             }
                         },
                         {
-                            "function": "set_nbt",
-                            "tag": "{CustomPotionColor:10127239,HideFlags:32}"
+                            "function": "set_components",
+                            "components": {
+                                "potion_contents": {
+                                    "custom_color": 10127239
+                                },
+                                "hide_additional_tooltip": {}
+                            }
                         }
                     ]
                 }
