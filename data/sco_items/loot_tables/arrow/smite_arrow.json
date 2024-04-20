@@ -30,8 +30,17 @@
 							}
 						},
 						{
-							"function": "set_nbt",
-							"tag": "{CustomPotionColor:15657130,HideFlags:32,item_functions:{smite_attack:0b}}"
+							"function": "set_components",
+							"components": {
+								"potion_contents": {
+									"custom_color": 15657130
+								},
+								"hide_additional_tooltip": {}
+							}
+						},
+						{
+							"function": "set_custom_data",
+							"tag": "{item_functions:{smite_attack:0b}}"
 						}
 					]
 				}
