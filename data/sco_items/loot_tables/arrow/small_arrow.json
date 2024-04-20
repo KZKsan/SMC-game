@@ -20,11 +20,21 @@
                                 {
                                     "text": "威力は控えめだが、遠くにまで飛ばせる。"
                                 }
-                            ]
+                            ],
+                            "mode": "replace_all"
                         },
                         {
-                            "function": "set_nbt",
-                            "tag": "{HideFlags:32,CustomPotionColor:13696942,item_functions:{small_arrow:1b}}"
+                            "function": "set_components",
+                            "components": {
+                                "potion_contents": {
+                                    "custom_color": 13696942
+                                },
+                                "hide_additional_tooltip": {}
+                            }
+                        },
+                        {
+                            "function": "set_custom_data",
+                            "tag": "{item_functions:{small_arrow:true}}"
                         }
                     ]
                 }
