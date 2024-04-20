@@ -1,100 +1,117 @@
 {
     "pools": [
-        {
-            "rolls": 1,
-            "entries": [
-                {
-                    "type": "item",
-                    "name": "leather_chestplate",
-                    "functions": [
-                        {
-                            "function": "set_name",
-                            "name": {
-                                "text": "リーパーローブ",
-                                "italic": false
-                            }
-                        },
-                        {
-                            "function": "set_lore",
-                            "lore": [
-                                "死の淵へ誘うローブ",
-                                "",
-                                [
-                                    {
-                                        "translate": "effect.minecraft.resistance",
-                                        "italic": false,
-                                        "color": "#00CCAA"
-                                    },
-                                    " A:3, D:1s"
-                                ],
-                                "",
-                                {
-                                    "translate": "item.modifiers.chest",
-                                    "color": "gray",
-                                    "italic": false
-                                },
-                                [
-                                    {
-                                        "translate": "attribute.name.generic.max_health",
-                                        "color": "red",
-                                        "italic": false
-                                    },
-                                    {
-                                        "text": " -14",
-                                        "color": "red",
-                                        "italic": false
-                                    }
-                                ],
-                                [
-                                    {
-                                        "translate": "attribute.name.generic.armor",
-                                        "color": "blue",
-                                        "italic": false
-                                    },
-                                    {
-                                        "text": " +4",
-                                        "color": "blue",
-                                        "italic": false
-                                    }
-                                ]
-                            ]
-                        },
-                        {
-                            "function": "set_attributes",
-                            "modifiers": [
-                                {
-                                    "slot": "chest",
-                                    "amount": 4,
-                                    "operation": "addition",
-                                    "attribute": "generic.armor",
-                                    "name": ""
-                                },
-                                {
-                                    "slot": "chest",
-                                    "amount": -14,
-                                    "operation": "addition",
-                                    "attribute": "generic.max_health",
-                                    "name": ""
-                                }
-                            ]
-                        },
-                        {
-                            "function": "set_enchantments",
-                            "enchantments": {
-                                "binding_curse": 1,
-                                "feather_falling": 2,
-                                "projectile_protection": 3,
-                                "thorns": 4,
-                                "unbreaking": 10
-                            }
-                        },
-                        {
-                            "function": "set_nbt",
-                            "tag": "{HideFlags:66,display:{color:1908001},item_functions:{passive_effects:[{id:\"resistance\",duration:1,amplifier:3,hide_particle:\"false\"}]}}"
-                        }
-                    ]
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:leather_chestplate",
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "name": {
+                  "text": "リーパーローブ",
+                  "italic": false
                 }
+              },
+              {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  "死の淵へ誘うローブ",
+                  "",
+                  [
+                    {
+                      "translate": "effect.minecraft.resistance",
+                      "color": "#00CCAA",
+                      "italic": false
+                    },
+                    " A:3, D:1s"
+                  ],
+                  "",
+                  {
+                    "translate": "item.modifiers.chest",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  [
+                    {
+                      "translate": "attribute.name.generic.max_health",
+                      "color": "red",
+                      "italic": false
+                    },
+                    {
+                      "text": " -14",
+                      "color": "red",
+                      "italic": false
+                    }
+                  ],
+                  [
+                    {
+                      "translate": "attribute.name.generic.armor",
+                      "color": "blue",
+                      "italic": false
+                    },
+                    {
+                      "text": " +4",
+                      "color": "blue",
+                      "italic": false
+                    }
+                  ]
+                ],
+                "mode": "replace_all"
+              },
+              {
+                "function": "minecraft:set_attributes",
+                "modifiers": [
+                  {
+                    "attribute": "minecraft:generic.armor",
+                    "name": "",
+                    "amount": 4,
+                    "operation": "add_value",
+                    "slot": "chest"
+                  },
+                  {
+                    "attribute": "minecraft:generic.max_health",
+                    "name": "",
+                    "amount": -14,
+                    "operation": "add_value",
+                    "slot": "chest"
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_enchantments",
+                "enchantments": {
+                  "binding_curse": 1,
+                  "feather_falling": 2,
+                  "projectile_protection": 3,
+                  "thorns": 4,
+                  "unbreaking": 10
+                }
+              },
+              {
+                "function": "minecraft:toggle_tooltips",
+                "toggles": {
+                  "minecraft:attribute_modifiers": false
+                }
+              },
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:dyed_color": {
+                    "rgb": 1908001,
+                    "show_in_tooltip": false
+                  }
+                }
+              },
+              {
+                "function": "minecraft:set_custom_data",
+                "tag": "{item_functions:{passive_effects:[{id:\"resistance\",duration:1,amplifier:3,hide_particle:\"false\"}]}}"
+              }
             ]
-        }
+          }
+        ]
+      }
     ]
-}
+  }
+  

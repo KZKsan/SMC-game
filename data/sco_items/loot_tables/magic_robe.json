@@ -1,87 +1,100 @@
 {
     "pools": [
-        {
-            "rolls": 1,
-            "entries": [
-                {
-                    "type": "item",
-                    "name": "leather_chestplate",
-                    "functions": [
-                        {
-                            "function": "set_name",
-                            "name": {
-                                "text": "魔導ローブ",
-                                "italic": false
-                            }
-                        },
-                        {
-                            "function": "set_lore",
-                            "lore": [
-                                "",
-                                {
-                                    "translate": "item.modifiers.chest",
-                                    "color": "gray",
-                                    "italic": false
-                                },
-                                [
-                                    {
-                                        "translate": "attribute.name.generic.movement_speed",
-                                        "color": "blue",
-                                        "italic": false
-                                    },
-                                    {
-                                        "text": " +15%",
-                                        "color": "blue",
-                                        "italic": false
-                                    }
-                                ],
-                                [
-                                    {
-                                        "translate": "attribute.name.generic.armor",
-                                        "color": "blue",
-                                        "italic": false
-                                    },
-                                    {
-                                        "text": " +3",
-                                        "color": "blue",
-                                        "italic": false
-                                    }
-                                ]
-                            ]
-                        },
-                        {
-                            "function": "set_attributes",
-                            "modifiers": [
-                                {
-                                    "slot": "chest",
-                                    "amount": 3,
-                                    "operation": "addition",
-                                    "attribute": "generic.armor",
-                                    "name": ""
-                                },
-                                {
-                                    "slot": "chest",
-                                    "amount": 0.15,
-                                    "operation": "multiply_total",
-                                    "attribute": "generic.movement_speed",
-                                    "name": ""
-                                }
-                            ]
-                        },
-                        {
-                            "function": "set_enchantments",
-                            "enchantments": {
-                                "binding_curse": 1,
-                                "unbreaking": 10
-                            }
-                        },
-                        {
-                            "function": "set_nbt",
-                            "tag": "{HideFlags:2,display:{color:14474460}}"
-                        }
-                    ]
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:leather_chestplate",
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "name": {
+                  "text": "魔導ローブ",
+                  "italic": false
                 }
+              },
+              {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  "",
+                  {
+                    "translate": "item.modifiers.chest",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  [
+                    {
+                      "translate": "attribute.name.generic.movement_speed",
+                      "color": "blue",
+                      "italic": false
+                    },
+                    {
+                      "text": " +15%",
+                      "color": "blue",
+                      "italic": false
+                    }
+                  ],
+                  [
+                    {
+                      "translate": "attribute.name.generic.armor",
+                      "color": "blue",
+                      "italic": false
+                    },
+                    {
+                      "text": " +3",
+                      "color": "blue",
+                      "italic": false
+                    }
+                  ]
+                ],
+                "mode": "replace_all"
+              },
+              {
+                "function": "minecraft:set_attributes",
+                "modifiers": [
+                  {
+                    "attribute": "minecraft:generic.armor",
+                    "name": "",
+                    "amount": 3,
+                    "operation": "add_value",
+                    "slot": "chest"
+                  },
+                  {
+                    "attribute": "minecraft:generic.movement_speed",
+                    "name": "",
+                    "amount": 0.15,
+                    "operation": "add_multiplied_total",
+                    "slot": "chest"
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_enchantments",
+                "enchantments": {
+                  "binding_curse": 1,
+                  "unbreaking": 10
+                }
+              },
+              {
+                "function": "minecraft:toggle_tooltips",
+                "toggles": {
+                  "minecraft:attribute_modifiers": false
+                }
+              },
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:dyed_color": {
+                    "rgb": 14474460,
+                    "show_in_tooltip": false
+                  }
+                }
+              }
             ]
-        }
+          }
+        ]
+      }
     ]
-}
+  }
+  

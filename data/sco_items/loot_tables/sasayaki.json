@@ -1,46 +1,48 @@
 {
     "pools": [
-        {
-            "rolls": 1,
-            "entries": [
-                {
-                    "type": "minecraft:item",
-                    "name": "minecraft:bow",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_name",
-                            "name": {
-                                "text": "囁き",
-                                "color": "light_purple",
-                                "italic": false
-                            }
-                        },
-                        {
-                            "function": "set_lore",
-                            "lore": [
-                                {
-                                    "text": "４発撃てるが、最後の1発は凄まじい威力で放つことができる",
-                                    "color": "dark_purple"
-                                }
-                            ]
-                        },
-                        {
-                            "function": "minecraft:set_enchantments",
-                            "enchantments": {
-                                "minecraft:power": 5
-                            }
-                        },
-                        {
-                            "function": "minecraft:set_damage",
-                            "damage": 0.01
-                        },
-                        {
-                            "function": "set_nbt",
-                            "tag": "{item_functions:{sasayaki:1b}}"
-                        }
-                    ]
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:bow",
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "name": {
+                  "text": "囁き",
+                  "color": "light_purple",
+                  "italic": false
                 }
+              },
+              {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {
+                    "text": "４発撃てるが、最後の1発は凄まじい威力で放つことができる",
+                    "color": "dark_purple"
+                  }
+                ],
+                "mode": "replace_all"
+              },
+              {
+                "function": "minecraft:set_enchantments",
+                "enchantments": {
+                  "minecraft:power": 5
+                }
+              },
+              {
+                "function": "minecraft:set_damage",
+                "damage": 0.01
+              },
+              {
+                "function": "minecraft:set_custom_data",
+                "tag": "{item_functions:{sasayaki:1b}}"
+              }
             ]
-        }
+          }
+        ]
+      }
     ]
-}
+  }
+  
