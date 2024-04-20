@@ -1,96 +1,113 @@
 {
     "pools": [
-        {
-            "rolls": 1,
-            "entries": [
-                {
-                    "type": "item",
-                    "name": "leather_chestplate",
-                    "functions": [
-                        {
-                            "function": "set_name",
-                            "name": {
-                                "text": "韋駄天の鎧",
-                                "italic": false
-                            }
-                        },
-                        {
-                            "function": "set_lore",
-                            "lore": [
-                                "伝説の軽歩兵が使っていたとされる鎧",
-                                "",
-                                [   
-                                    {
-                                        "translate": "effect.minecraft.jump_boost",
-                                        "italic": false,
-                                        "color": "#00CCAA"
-                                    },
-                                    " A:0, D:2s"
-                                ],
-                                "",
-                                {
-                                    "translate": "item.modifiers.chest",
-                                    "color": "gray",
-                                    "italic": false
-                                },
-                                [
-                                    {
-                                        "translate": "attribute.name.generic.movement_speed",
-                                        "color": "blue",
-                                        "italic": false
-                                    },
-                                    {
-                                        "text": " +10%",
-                                        "color": "blue",
-                                        "italic": false
-                                    }
-                                ],
-                                [
-                                    {
-                                        "translate": "attribute.name.generic.armor",
-                                        "color": "blue",
-                                        "italic": false
-                                    },
-                                    {
-                                        "text": " +6",
-                                        "color": "blue",
-                                        "italic": false
-                                    }
-                                ]
-                            ]
-                        },
-                        {
-                            "function": "set_attributes",
-                            "modifiers": [
-                                {
-                                    "slot": "chest",
-                                    "amount": 6,
-                                    "operation": "addition",
-                                    "attribute": "generic.armor",
-                                    "name": ""
-                                },
-                                {
-                                    "slot": "chest",
-                                    "amount": 0.1,
-                                    "operation": "multiply_total",
-                                    "attribute": "generic.movement_speed",
-                                    "name": ""
-                                }
-                            ]
-                        },
-                        {
-                            "function": "set_enchantments",
-                            "enchantments": {
-                                "unbreaking": 10
-                            }
-                        },
-                        {
-                            "function": "set_nbt",
-                            "tag": "{HideFlags:66,item_functions:{passive_effects:[{id:\"jump_boost\",duration:2,amplifier:0,hide_particle:\"false\"}]},display:{color:6599860}}"
-                        }
-                    ]
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:leather_chestplate",
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "name": {
+                  "text": "韋駄天の鎧",
+                  "italic": false
                 }
+              },
+              {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  "伝説の軽歩兵が使っていたとされる鎧",
+                  "",
+                  [
+                    {
+                      "translate": "effect.minecraft.jump_boost",
+                      "color": "#00CCAA",
+                      "italic": false
+                    },
+                    " A:0, D:2s"
+                  ],
+                  "",
+                  {
+                    "translate": "item.modifiers.chest",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  [
+                    {
+                      "translate": "attribute.name.generic.movement_speed",
+                      "color": "blue",
+                      "italic": false
+                    },
+                    {
+                      "text": " +10%",
+                      "color": "blue",
+                      "italic": false
+                    }
+                  ],
+                  [
+                    {
+                      "translate": "attribute.name.generic.armor",
+                      "color": "blue",
+                      "italic": false
+                    },
+                    {
+                      "text": " +6",
+                      "color": "blue",
+                      "italic": false
+                    }
+                  ]
+                ],
+                "mode": "replace_all"
+              },
+              {
+                "function": "minecraft:set_attributes",
+                "modifiers": [
+                  {
+                    "attribute": "minecraft:generic.armor",
+                    "name": "",
+                    "amount": 6,
+                    "operation": "add_value",
+                    "slot": "chest"
+                  },
+                  {
+                    "attribute": "minecraft:generic.movement_speed",
+                    "name": "",
+                    "amount": 0.1,
+                    "operation": "add_multiplied_total",
+                    "slot": "chest"
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_enchantments",
+                "enchantments": {
+                  "unbreaking": 10
+                }
+              },
+              {
+                "function": "minecraft:toggle_tooltips",
+                "toggles": {
+                  "minecraft:attribute_modifiers": false
+                }
+              },
+              {
+                "function": "minecraft:set_custom_data",
+                "tag": "{item_functions:{passive_effects:[{id:\"jump_boost\",duration:2,amplifier:0,hide_particle:\"false\"}]}}"
+              },
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:dyed_color": {
+                    "rgb": 6599860,
+                    "show_in_tooltip": false
+                  }
+                }
+              }
             ]
-        }
+          }
+        ]
+      }
     ]
-}
+  }
+  
