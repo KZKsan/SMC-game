@@ -44,6 +44,11 @@
     execute as @a[scores={breake_shield_hit=1..},nbt={Inventory:[{Slot:-106b,tag:{item_functions:{breake_shield:1b}}}]}] run effect give @s strength 3 0
     scoreboard players set @a breake_shield_hit 0
 
+# cure_arrow
+    scoreboard players remove @a[scores={cure_arrow=1..}] cure_arrow 1
+    scoreboard players reset @a[scores={cure_arrow=..0}] cure_arrow
+    execute as @a[scores={cure_arrow=0..},gamemode=!spectator] run effect clear
+
 # score
     ##lightning_hammer
     execute as @a unless score @s lightning_hammer_holding_time matches -2147483648..2147483647 run scoreboard players set @s lightning_hammer_holding_time 0
@@ -55,8 +60,3 @@
 #actionbar
     execute as @a[tag=item_actionbar.end_flag,tag=!item_actionbar] run function sco_items:actionbar/end
     execute as @a[tag=item_actionbar] run function sco_items:actionbar/
-
-# cure_arrow
-    scoreboard players remove @a[scores={cure_arrow=1..}] cure_arrow 1
-    scoreboard players reset @a[scores={cure_arrow=..0}] cure_arrow
-    execute as @a[scores={cure_arrow=0..},gamemode=!spectator] run effect clear
