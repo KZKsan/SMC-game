@@ -50,11 +50,34 @@
                   },
                   " A:0, D:3s"
                 ]
-              ]
+              ],
+              "mode": "replace_all"
             },
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{HideFlags:34,Damage:306,item_functions:{breake_shield:1b},BlockEntityTag:{Base:14,Patterns:[{Color:7,Pattern:\"ss\"},{Color:7,Pattern:\"bri\"},{Color:7,Pattern:\"gra\"}]}}"
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:hide_additional_tooltip": {},
+                "minecraft:damage": 296,
+                "minecraft:base_color": "red",
+                "minecraft:banner_patterns": [
+                  {
+                    "pattern": "minecraft:small_stripes",
+                    "color": "gray"
+                  },
+                  {
+                    "pattern": "minecraft:bricks",
+                    "color": "gray"
+                  },
+                  {
+                    "pattern": "minecraft:gradient",
+                    "color": "gray"
+                  }
+                ]
+              }
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{item_functions:{breake_shield:1b}"
             }
           ]
         }

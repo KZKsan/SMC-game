@@ -1,158 +1,172 @@
 {
     "pools": [
-        {
-            "rolls": 1,
-            "entries": [
-                {
-                    "type": "item",
-                    "name": "stone_sword",
-                    "functions": [
-                        {
-                            "function": "set_name",
-                            "name": [
-                                {
-                                    "text": "腐敗の剣コープ・ディーモ",
-                                    "italic": false,
-                                    "color": "dark_purple"
-                                }
-                            ]
-                        },
-                        {
-                            "function": "set_lore",
-                            "lore": [
-                                "攻撃した相手を干からびさせる。",
-                                "生きている者は使用できない。",
-                                "",
-                                [
-                                    {
-                                        "translate": "effect.minecraft.wither",
-                                        "italic": false,
-                                        "color": "#00CCAA"
-                                    },
-                                    " A:3, D:1s"
-                                ],
-                                "",
-                                [
-                                    {
-                                        "translate": "effect.minecraft.wither",
-                                        "italic": false,
-                                        "color": "#AA0000"
-                                    },
-                                    " A:2, D:2s"
-                                ],
-                                [
-                                    {
-                                        "translate": "effect.minecraft.blindness",
-                                        "italic": false,
-                                        "color": "#AA0000"
-                                    },
-                                    " A:0, D:5s"
-                                ],
-                                [
-                                    {
-                                        "translate": "effect.minecraft.nausea",
-                                        "italic": false,
-                                        "color": "#AA0000"
-                                    },
-                                    " A:0, D:2s"
-                                ],
-                                [
-                                    {
-                                        "translate": "effect.minecraft.weakness",
-                                        "italic": false,
-                                        "color": "#AA0000"
-                                    },
-                                    " A:0, D:3s"
-                                ],
-                                "",
-                                {
-                                    "translate": "item.modifiers.mainhand",
-                                    "color": "gray",
-                                    "italic": false
-                                },
-                                [
-                                    {
-                                        "translate": "attribute.name.generic.attack_speed",
-                                        "color": "red",
-                                        "italic": false
-                                    },
-                                    {
-                                        "text": " -70%",
-                                        "color": "red",
-                                        "italic": false
-                                    }
-                                ],
-                                [
-                                    {
-                                        "translate": "attribute.name.generic.attack_damage",
-                                        "color": "blue",
-                                        "italic": false
-                                    },
-                                    {
-                                        "text": " +2",
-                                        "color": "blue",
-                                        "italic": false
-                                    }
-                                ],
-                                [
-                                    {
-                                        "translate": "effect.minecraft.blindness",
-                                        "italic": false,
-                                        "color": "#00CCAA"
-                                    },
-                                    " A:0, D:8s"
-                                ],
-                                [
-                                    {
-                                        "translate": "effect.minecraft.mining_fatigue",
-                                        "italic": false,
-                                        "color": "#00CCAA"
-                                    },
-                                    " A:9, D:8s"
-                                ],
-                                [
-                                    {
-                                        "translate": "effect.minecraft.slowness",
-                                        "italic": false,
-                                        "color": "#00CCAA"
-                                    },
-                                    " A:1, D:8s"
-                                ]
-                            ]
-                        },
-                        {
-                            "function": "set_attributes",
-                            "modifiers": [
-                                {
-                                    "attribute": "generic.attack_speed",
-                                    "name": "",
-                                    "amount": -0.7,
-                                    "operation": "multiply_total",
-                                    "slot": "mainhand"
-                                },
-                                {
-                                    "attribute": "generic.attack_damage",
-                                    "name": "",
-                                    "amount": 2,
-                                    "operation": "addition",
-                                    "slot": "mainhand"
-                                }
-                            ]
-                        },
-                        {
-                            "function": "set_enchantments",
-                            "enchantments": {
-                                "sharpness": 1,
-                                "sweeping": 1
-                            }
-                        },
-                        {
-                            "function": "set_nbt",
-                            "tag": "{HideFlags:34,Damage:118,item_functions:{corpse_daemon:1b}}"
-                        }
-                    ]
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:stone_sword",
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "name": [
+                  {
+                    "text": "腐敗の剣コープ・ディーモ",
+                    "color": "dark_purple",
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  "攻撃した相手を干からびさせる。",
+                  "生きている者は使用できない。",
+                  "",
+                  [
+                    {
+                      "translate": "effect.minecraft.wither",
+                      "color": "#00CCAA",
+                      "italic": false
+                    },
+                    " A:3, D:1s"
+                  ],
+                  "",
+                  [
+                    {
+                      "translate": "effect.minecraft.wither",
+                      "color": "#AA0000",
+                      "italic": false
+                    },
+                    " A:2, D:2s"
+                  ],
+                  [
+                    {
+                      "translate": "effect.minecraft.blindness",
+                      "color": "#AA0000",
+                      "italic": false
+                    },
+                    " A:0, D:5s"
+                  ],
+                  [
+                    {
+                      "translate": "effect.minecraft.nausea",
+                      "color": "#AA0000",
+                      "italic": false
+                    },
+                    " A:0, D:2s"
+                  ],
+                  [
+                    {
+                      "translate": "effect.minecraft.weakness",
+                      "color": "#AA0000",
+                      "italic": false
+                    },
+                    " A:0, D:3s"
+                  ],
+                  "",
+                  {
+                    "translate": "item.modifiers.mainhand",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  [
+                    {
+                      "translate": "attribute.name.generic.attack_speed",
+                      "color": "red",
+                      "italic": false
+                    },
+                    {
+                      "text": " -70%",
+                      "color": "red",
+                      "italic": false
+                    }
+                  ],
+                  [
+                    {
+                      "translate": "attribute.name.generic.attack_damage",
+                      "color": "blue",
+                      "italic": false
+                    },
+                    {
+                      "text": " +2",
+                      "color": "blue",
+                      "italic": false
+                    }
+                  ],
+                  [
+                    {
+                      "translate": "effect.minecraft.blindness",
+                      "color": "#00CCAA",
+                      "italic": false
+                    },
+                    " A:0, D:8s"
+                  ],
+                  [
+                    {
+                      "translate": "effect.minecraft.mining_fatigue",
+                      "color": "#00CCAA",
+                      "italic": false
+                    },
+                    " A:9, D:8s"
+                  ],
+                  [
+                    {
+                      "translate": "effect.minecraft.slowness",
+                      "color": "#00CCAA",
+                      "italic": false
+                    },
+                    " A:1, D:8s"
+                  ]
+                ],
+                "mode": "replace_all"
+              },
+              {
+                "function": "minecraft:set_attributes",
+                "modifiers": [
+                  {
+                    "attribute": "minecraft:generic.attack_speed",
+                    "name": "",
+                    "amount": -0.7,
+                    "operation": "add_multiplied_total",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "attribute": "minecraft:generic.attack_damage",
+                    "name": "",
+                    "amount": 2,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_enchantments",
+                "enchantments": {
+                  "sharpness": 1,
+                  "sweeping_edge": 1
                 }
+              },
+              {
+                "function": "minecraft:toggle_tooltips",
+                "toggles": {
+                  "minecraft:attribute_modifiers": false
+                }
+              },
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:hide_additional_tooltip": {}
+                }
+              },
+              {
+                "function": "minecraft:set_custom_data",
+                "tag": "{item_functions:{corpse_daemon:1b}}"
+              }
             ]
-        }
+          }
+        ]
+      }
     ]
-}
+  }
+  

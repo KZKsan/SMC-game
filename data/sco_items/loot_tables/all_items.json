@@ -23,7 +23,8 @@
                                     "italic": false,
                                     "color": "white"
                                 }
-                            ]
+                            ],
+                            "mode": "replace_all"
                         }
                     ]
                 }

@@ -1,108 +1,116 @@
 {
     "pools": [
-        {
-            "rolls": 1,
-            "entries": [
-                {
-                    "type": "item",
-                    "name": "golden_sword",
-                    "functions": [
-                        {
-                            "function": "set_name",
-                            "name": [
-                                {
-                                    "text": "光の剣クラウ・ソラス",
-                                    "italic": false,
-                                    "color": "aqua"
-                                }
-                            ]
-                        },
-                        {
-                            "function": "set_lore",
-                            "lore": [
-                                "攻撃すると相手は発光し盲目になり少し弱体化するが",
-                                "持っている間は自分も光る",
-                                "(魔法剣はもろい)",
-                                "",
-                                [
-                                    {
-                                        "translate": "effect.minecraft.glowing",
-                                        "italic": false,
-                                        "color": "#00CCAA"
-                                    },
-                                    " A:0, D:1s"
-                                ],
-                                "",
-                                [
-                                    {
-                                        "translate": "effect.minecraft.glowing",
-                                        "italic": false,
-                                        "color": "#AA0000"
-                                    },
-                                    " A:0, D:20s"
-                                ],
-                                [
-                                    {
-                                        "translate": "effect.minecraft.blindness",
-                                        "italic": false,
-                                        "color": "#AA0000"
-                                    },
-                                    " A:0, D:5s"
-                                ],
-                                [
-                                    {
-                                        "translate": "effect.minecraft.weakness",
-                                        "italic": false,
-                                        "color": "#AA0000"
-                                    },
-                                    " A:0, D:1s"
-                                ],
-                                "",
-                                {
-                                    "translate": "item.modifiers.mainhand",
-                                    "color": "gray",
-                                    "italic": false
-                                },
-                                [
-                                    {
-                                        "text": " 5 ",
-                                        "color": "dark_green",
-                                        "italic": false
-                                    },
-                                    {
-                                        "translate": "attribute.name.generic.attack_damage",
-                                        "color": "dark_green",
-                                        "italic": false
-                                    }
-                                ],
-                                [
-                                    {
-                                        "text": " 1.6 ",
-                                        "color": "dark_green",
-                                        "italic": false
-                                    },
-                                    {
-                                        "translate": "attribute.name.generic.attack_speed",
-                                        "color": "dark_green",
-                                        "italic": false
-                                    }
-                                ]
-                            ]
-                        },
-                        {
-                            "function": "set_enchantments",
-                            "enchantments": {
-                                "sharpness": 1,
-                                "smite": 6
-                            }
-                        },
-                        {
-                            "function": "set_nbt",
-                            "tag": "{HideFlags:34,Damage:12,item_functions:{clau_solas:1b}}"
-                        }
-                    ]
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:golden_sword",
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "name": [
+                  {
+                    "text": "光の剣クラウ・ソラス",
+                    "color": "aqua",
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  "攻撃すると相手は発光し盲目になり少し弱体化するが",
+                  "持っている間は自分も光る",
+                  "(魔法剣はもろい)",
+                  "",
+                  [
+                    {
+                      "translate": "effect.minecraft.glowing",
+                      "color": "#00CCAA",
+                      "italic": false
+                    },
+                    " A:0, D:1s"
+                  ],
+                  "",
+                  [
+                    {
+                      "translate": "effect.minecraft.glowing",
+                      "color": "#AA0000",
+                      "italic": false
+                    },
+                    " A:0, D:20s"
+                  ],
+                  [
+                    {
+                      "translate": "effect.minecraft.blindness",
+                      "color": "#AA0000",
+                      "italic": false
+                    },
+                    " A:0, D:5s"
+                  ],
+                  [
+                    {
+                      "translate": "effect.minecraft.weakness",
+                      "color": "#AA0000",
+                      "italic": false
+                    },
+                    " A:0, D:1s"
+                  ],
+                  "",
+                  {
+                    "translate": "item.modifiers.mainhand",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  [
+                    {
+                      "text": " 5 ",
+                      "color": "dark_green",
+                      "italic": false
+                    },
+                    {
+                      "translate": "attribute.name.generic.attack_damage",
+                      "color": "dark_green",
+                      "italic": false
+                    }
+                  ],
+                  [
+                    {
+                      "text": " 1.6 ",
+                      "color": "dark_green",
+                      "italic": false
+                    },
+                    {
+                      "translate": "attribute.name.generic.attack_speed",
+                      "color": "dark_green",
+                      "italic": false
+                    }
+                  ]
+                ],
+                "mode": "replace_all"
+              },
+              {
+                "function": "minecraft:set_enchantments",
+                "enchantments": {
+                  "sharpness": 1,
+                  "smite": 6
                 }
+              },
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:damage": 12
+                }
+              },
+              {
+                "function": "minecraft:set_custom_data",
+                "tag": "{item_functions:{clau_solas:1b,smite_attack:{active:1b,min_damage:0.0f}}}"
+              }
             ]
-        }
+          }
+        ]
+      }
     ]
-}
+  }
+  
