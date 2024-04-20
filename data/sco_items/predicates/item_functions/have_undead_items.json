@@ -5,56 +5,78 @@
             "condition": "entity_properties",
             "entity": "this",
             "predicate": {
-                "nbt": "{SelectedItem:{tag:{item_functions:{undead:1b}}}}"
+                "equipment": {
+                    "mainhand": {
+                        "predicates": {
+                            "custom_data": "{item_functions:{undead:1b}}"
+                        }
+                    }
+                }
             }
         },
         {
             "condition": "entity_properties",
             "entity": "this",
             "predicate": {
-                "nbt": "{Inventory:[{Slot:-106b,tag:{item_functions:{undead:1b}}}]}"
+                "equipment": {
+                    "offhand": {
+                        "predicates": {
+                            "custom_data": "{item_functions:{undead:1b}}"
+                        }
+                    }
+                }
             }
         },
         {
             "condition": "entity_properties",
             "entity": "this",
             "predicate": {
-                "nbt": "{Inventory:[{Slot:103b,tag:{item_functions:{undead:1b}}}]}"
+                "equipment": {
+                    "head": {
+                        "predicates": {
+                            "custom_data": "{item_functions:{undead:1b}}"
+                        }
+                    }
+                }
             }
         },
         {
             "condition": "entity_properties",
             "entity": "this",
             "predicate": {
-                "nbt": "{Inventory:[{Slot:102b,tag:{item_functions:{undead:1b}}}]}"
+                "equipment": {
+                    "chest": {
+                        "predicates": {
+                            "custom_data": "{item_functions:{undead:1b}}"
+                        }
+                    }
+                }
             }
         },
         {
             "condition": "entity_properties",
             "entity": "this",
             "predicate": {
-                "nbt": "{Inventory:[{Slot:101b,tag:{item_functions:{undead:1b}}}]}"
+                "equipment": {
+                    "legs": {
+                        "predicates": {
+                            "custom_data": "{item_functions:{undead:1b}}"
+                        }
+                    }
+                }
             }
         },
         {
             "condition": "entity_properties",
             "entity": "this",
             "predicate": {
-                "nbt": "{Inventory:[{Slot:100b,tag:{item_functions:{undead:1b}}}]}"
-            }
-        },
-        {
-            "condition": "entity_properties",
-            "entity": "this",
-            "predicate": {
-                "nbt": "{ArmorItems:[{tag:{item_functions:{undead:1b}}}]}"
-            }
-        },
-        {
-            "condition": "entity_properties",
-            "entity": "this",
-            "predicate": {
-                "nbt": "{HandItems:[{tag:{item_functions:{undead:1b}}}]}"
+                "equipment": {
+                    "feet": {
+                        "predicates": {
+                            "custom_data": "{item_functions:{undead:1b}}"
+                        }
+                    }
+                }
             }
         }
     ]
