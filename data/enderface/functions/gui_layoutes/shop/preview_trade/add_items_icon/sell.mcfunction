@@ -12,7 +12,7 @@ data modify storage c_str str append value '"'
 data modify storage c_str str append value ","
 data modify storage c_str str append value '{"text":"コ のアイテム"}]'
 function c_str/
-data modify entity @e[tag=gui_layout_item,distance=..2,limit=1] Items[0].components."minecraft:custom_data".lore.predicte append from storage c_str str[0]
+data modify entity @e[tag=gui_layout_item,distance=..2,limit=1] Items[0].components."minecraft:lore" append from storage c_str str[0]
 item modify entity @e[tag=gui_layout_item,distance=..2,limit=1] container.0 enderface:shop/click_to_others
 
 
