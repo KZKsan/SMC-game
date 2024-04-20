@@ -34,11 +34,24 @@
                                         "color": "red"
                                     }
                                 ]
-                            ]
+                            ],
+                            "mode": "replace_all"
                         },
                         {
-                            "function": "set_nbt",
-                            "tag": "{CustomPotionColor:8889187,custom_potion_effects:[{amplifier:1b,duration:200,id:\"poison\"}],HideFlags:32}"
+                            "function": "set_components",
+                            "components": {
+                                "potion_contents": {
+                                    "custom_color": 8889187,
+                                    "custom_effects": [
+                                        {
+                                            "id": "poison",
+                                            "amplifier": 1,
+                                            "duration": 200
+                                        }
+                                    ]
+                                },
+                                "hide_additional_tooltip": {}
+                            }
                         }
                     ]
                 }
