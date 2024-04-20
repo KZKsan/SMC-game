@@ -28,10 +28,11 @@
                                     "italic": false,
                                     "color": "gray"
                                 }
-                            ]
+                            ],
+                            "mode": "replace_all"
                         },
                         {
-                            "function": "set_nbt",
+                            "function": "set_custom_data",
                             "tag": "{item_functions:{stage_item:{fuel:1b}}}"
                         }
                     ]
