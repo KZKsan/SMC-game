@@ -128,16 +128,18 @@
                 ]
               },
               {
-                "function": "minecraft:set_enchantments",
-                "enchantments": {
-                  "minecraft:knockback": 1,
-                  "minecraft:sharpness": 5
-                }
-              },
-              {
                 "function": "minecraft:toggle_tooltips",
                 "toggles": {
                   "minecraft:attribute_modifiers": false
+                }
+              },
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:enchantments": {
+                    "minecraft:knockback": 1,
+                    "minecraft:sharpness": 5
+                  }
                 }
               }
             ]

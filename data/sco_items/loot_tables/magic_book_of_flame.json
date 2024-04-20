@@ -109,17 +109,19 @@
                 ]
               },
               {
-                "function": "minecraft:set_enchantments",
-                "enchantments": {
-                  "minecraft:fire_aspect": 3,
-                  "minecraft:knockback": 1,
-                  "minecraft:sharpness": 1
-                }
-              },
-              {
                 "function": "minecraft:toggle_tooltips",
                 "toggles": {
                   "minecraft:attribute_modifiers": false
+                }
+              },
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:enchantments": {
+                    "minecraft:fire_aspect": 3,
+                    "minecraft:knockback": 1,
+                    "minecraft:sharpness": 1
+                  }
                 }
               }
             ]

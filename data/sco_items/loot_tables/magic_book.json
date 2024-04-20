@@ -24,10 +24,12 @@
                 "mode": "replace_all"
               },
               {
-                "function": "minecraft:set_enchantments",
-                "enchantments": {
-                  "minecraft:knockback": 1,
-                  "minecraft:sharpness": 1
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:enchantments": {
+                    "minecraft:knockback": 1,
+                    "minecraft:sharpness": 1
+                  }
                 }
               }
             ]
