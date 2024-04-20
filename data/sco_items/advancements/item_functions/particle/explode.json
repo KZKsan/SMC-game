@@ -8,7 +8,13 @@
                         "condition": "entity_properties",
                         "entity": "this",
                         "predicate": {
-                            "nbt": "{SelectedItem:{tag:{item_functions:{particle:{explode:1b}}}}}"
+                            "equipment": {
+                                "mainhand": {
+                                    "predicates": {
+                                        "custom_data": "{item_functions:{particle:{explode:1b}}}"
+                                    }
+                                }
+                            }
                         }
                     }
                 ]
