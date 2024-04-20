@@ -1,26 +1,37 @@
 {
-    "pools": [
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:tipped_arrow"
-          }
-        ],
-        "functions": [
-          {
-            "function": "minecraft:set_nbt",
-            "tag": "{custom_potion_effects:[{duration: 5, amplifier: 20b, id: \"minecraft:levitation\"}], CustomPotionColor:16777215}"
-          },
-          {
-            "function": "minecraft:set_name",
-            "name": {
-              "text": "浮遊の矢",
-              "italic": true
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "tipped_arrow"
+        }
+      ],
+      "functions": [
+        {
+          "function": "set_components",
+          "components": {
+            "potion_contents": {
+              "custom_color": 16777215,
+              "custom_effects": [
+                {
+                  "id": "levitation",
+                  "amplifier": 20,
+                  "duration": 5
+                }
+              ]
             }
           }
-        ]
-      }
-    ]
-  }
+        },
+        {
+          "function": "set_name",
+          "name": {
+            "text": "浮遊の矢",
+            "italic": true
+          }
+        }
+      ]
+    }
+  ]
+}
