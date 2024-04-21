@@ -77,7 +77,7 @@
             },
             {
               "function": "set_custom_data",
-              "tag": "{item_functions:{breake_shield:1b}"
+              "tag": "{item_functions:{breake_shield:1b}}"
             }
           ]
         }
