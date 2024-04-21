@@ -2,9 +2,6 @@
 #@within tag/function enderface:set_trade_data
 function enderface:gui_layoutes/shop/set_trade_data/reset_data
 
-
-function enderface:gui_layoutes/shop/set_trade_data/single_data/test
-
 function enderface:gui_layoutes/shop/set_trade_data/single_data/stick
 function enderface:gui_layoutes/shop/set_trade_data/single_data/stone_sword
 function enderface:gui_layoutes/shop/set_trade_data/single_data/shield_breaker
