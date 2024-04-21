@@ -26,36 +26,6 @@
                       "italic": false
                     },
                     " A:3, D:2s"
-                  ],
-                  "",
-                  {
-                    "translate": "item.modifiers.feet",
-                    "color": "gray",
-                    "italic": false
-                  },
-                  [
-                    {
-                      "translate": "attribute.name.generic.movement_speed",
-                      "color": "blue",
-                      "italic": false
-                    },
-                    {
-                      "text": " +10%",
-                      "color": "blue",
-                      "italic": false
-                    }
-                  ],
-                  [
-                    {
-                      "translate": "attribute.name.generic.armor",
-                      "color": "red",
-                      "italic": false
-                    },
-                    {
-                      "text": " -2",
-                      "color": "red",
-                      "italic": false
-                    }
                   ]
                 ],
                 "mode": "replace_all"
@@ -84,12 +54,6 @@
                 "enchantments": {
                   "feather_falling": 4,
                   "unbreaking": 10
-                }
-              },
-              {
-                "function": "toggle_tooltips",
-                "toggles": {
-                  "attribute_modifiers": false
                 }
               },
               {

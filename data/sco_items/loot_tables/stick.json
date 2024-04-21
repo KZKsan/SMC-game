@@ -17,37 +17,7 @@
                         {
                             "function": "set_lore",
                             "lore": [
-                                "無いよりは、なしよりのあり。",
-                                "",
-                                {
-                                    "translate": "item.modifiers.mainhand",
-                                    "color": "gray",
-                                    "italic": false
-                                },
-                                [
-                                    {
-                                        "translate": "attribute.name.generic.attack_damage",
-                                        "color": "blue",
-                                        "italic": false
-                                    },
-                                    {
-                                        "text": " +2",
-                                        "color": "blue",
-                                        "italic": false
-                                    }
-                                ],
-                                [
-                                    {
-                                        "translate": "attribute.name.generic.attack_speed",
-                                        "color": "red",
-                                        "italic": false
-                                    },
-                                    {
-                                        "text": " -25%",
-                                        "color": "red",
-                                        "italic": false
-                                    }
-                                ]
+                                "無いよりは、なしよりのあり。"
                             ],
                             "mode": "replace_all"
                         },
@@ -69,12 +39,6 @@
                                     "slot": "mainhand"
                                 }
                             ]
-                        },
-                        {
-                            "function": "toggle_tooltips",
-                            "toggles": {
-                                "attribute_modifiers": false
-                            }
                         },
                         {
                             "function": "set_custom_data",

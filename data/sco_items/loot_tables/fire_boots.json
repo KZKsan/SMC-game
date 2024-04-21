@@ -15,30 +15,6 @@
                 }
               },
               {
-                "function": "set_lore",
-                "lore": [
-                  "",
-                  {
-                    "translate": "item.modifiers.feet",
-                    "color": "gray",
-                    "italic": false
-                  },
-                  [
-                    {
-                      "translate": "attribute.name.generic.armor",
-                      "color": "blue",
-                      "italic": false
-                    },
-                    {
-                      "text": " +0.2",
-                      "color": "blue",
-                      "italic": false
-                    }
-                  ]
-                ],
-                "mode": "replace_all"
-              },
-              {
                 "function": "set_attributes",
                 "modifiers": [
                   {
@@ -60,8 +36,7 @@
               {
                 "function": "toggle_tooltips",
                 "toggles": {
-                  "dyed_color": false,
-                  "attribute_modifiers": false
+                  "dyed_color": false
                 }
               },
               {

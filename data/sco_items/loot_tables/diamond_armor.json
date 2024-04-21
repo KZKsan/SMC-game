@@ -15,52 +15,10 @@
                 }
               },
               {
-                "function": "set_lore",
-                "lore": [
-                  "",
-                  {
-                    "translate": "item.modifiers.chest",
-                    "color": "gray",
-                    "italic": false
-                  },
-                  [
-                    {
-                      "translate": "attribute.name.generic.armor",
-                      "color": "blue",
-                      "italic": false
-                    },
-                    {
-                      "text": " +8",
-                      "color": "blue",
-                      "italic": false
-                    }
-                  ],
-                  [
-                    {
-                      "translate": "attribute.name.generic.armor_toughness",
-                      "color": "blue",
-                      "italic": false
-                    },
-                    {
-                      "text": " +2",
-                      "color": "blue",
-                      "italic": false
-                    }
-                  ]
-                ],
-                "mode": "replace_all"
-              },
-              {
                 "function": "set_enchantments",
                 "enchantments": {
                   "blast_protection": 1,
                   "unbreaking": 3
-                }
-              },
-              {
-                "function": "toggle_tooltips",
-                "toggles": {
-                  "attribute_modifiers": false
                 }
               }
             ]

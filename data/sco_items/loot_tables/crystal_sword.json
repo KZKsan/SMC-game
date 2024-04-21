@@ -17,37 +17,7 @@
               {
                 "function": "set_lore",
                 "lore": [
-                  "鋭く、そして儚い",
-                  "",
-                  {
-                    "translate": "item.modifiers.mainhand",
-                    "color": "gray",
-                    "italic": false
-                  },
-                  [
-                    {
-                      "translate": "attribute.name.generic.attack_speed",
-                      "color": "blue",
-                      "italic": false
-                    },
-                    {
-                      "text": " +500%",
-                      "color": "blue",
-                      "italic": false
-                    }
-                  ],
-                  [
-                    {
-                      "translate": "attribute.name.generic.attack_damage",
-                      "color": "blue",
-                      "italic": false
-                    },
-                    {
-                      "text": " +12",
-                      "color": "blue",
-                      "italic": false
-                    }
-                  ]
+                  "鋭く、そして儚い"
                 ],
                 "mode": "replace_all"
               },
@@ -74,12 +44,6 @@
                 "function": "set_enchantments",
                 "enchantments": {
                   "sweeping_edge": 3
-                }
-              },
-              {
-                "function": "toggle_tooltips",
-                "toggles": {
-                  "attribute_modifiers": false
                 }
               },
               {

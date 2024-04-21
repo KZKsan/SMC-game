@@ -24,73 +24,7 @@
                   "italic": false
                 },
                 "",
-                "何か不気味な雰囲気をまとう鎧",
-                "",
-                {
-                  "translate": "item.modifiers.chest",
-                  "color": "gray",
-                  "italic": false
-                },
-                [
-                  {
-                    "translate": "attribute.name.generic.armor",
-                    "color": "blue",
-                    "italic": false
-                  },
-                  {
-                    "text": " +10",
-                    "color": "blue",
-                    "italic": false
-                  }
-                ],
-                [
-                  {
-                    "translate": "attribute.name.generic.armor_toughness",
-                    "color": "blue",
-                    "italic": false
-                  },
-                  {
-                    "text": " +2",
-                    "color": "blue",
-                    "italic": false
-                  }
-                ],
-                [
-                  {
-                    "translate": "attribute.name.generic.max_health",
-                    "color": "blue",
-                    "italic": false
-                  },
-                  {
-                    "text": " +16",
-                    "color": "blue",
-                    "italic": false
-                  }
-                ],
-                [
-                  {
-                    "translate": "attribute.name.generic.knockback_resistance",
-                    "color": "blue",
-                    "italic": false
-                  },
-                  {
-                    "text": " +0.5",
-                    "color": "blue",
-                    "italic": false
-                  }
-                ],
-                [
-                  {
-                    "translate": "attribute.name.generic.movement_speed",
-                    "color": "red",
-                    "italic": false
-                  },
-                  {
-                    "text": " -10%",
-                    "color": "red",
-                    "italic": false
-                  }
-                ]
+                "何か不気味な雰囲気をまとう鎧"
               ],
               "mode": "replace_all"
             },
@@ -143,7 +77,6 @@
             {
               "function": "toggle_tooltips",
               "toggles": {
-                "attribute_modifiers": false,
                 "trim": false
               }
             },

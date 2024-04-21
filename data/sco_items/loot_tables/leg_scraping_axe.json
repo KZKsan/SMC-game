@@ -26,48 +26,6 @@
                       "italic": false
                     },
                     " A:3, D:3s"
-                  ],
-                  "",
-                  {
-                    "translate": "item.modifiers.mainhand",
-                    "color": "gray",
-                    "italic": false
-                  },
-                  [
-                    {
-                      "translate": "attribute.name.generic.movement_speed",
-                      "color": "red",
-                      "italic": false
-                    },
-                    {
-                      "text": " -40%",
-                      "color": "red",
-                      "italic": false
-                    }
-                  ],
-                  [
-                    {
-                      "translate": "attribute.name.generic.attack_speed",
-                      "color": "red",
-                      "italic": false
-                    },
-                    {
-                      "text": " -88%",
-                      "color": "red",
-                      "italic": false
-                    }
-                  ],
-                  [
-                    {
-                      "translate": "attribute.name.generic.attack_damage",
-                      "color": "blue",
-                      "italic": false
-                    },
-                    {
-                      "text": " +9",
-                      "color": "blue",
-                      "italic": false
-                    }
                   ]
                 ],
                 "mode": "replace_all"
@@ -97,12 +55,6 @@
                     "slot": "mainhand"
                   }
                 ]
-              },
-              {
-                "function": "toggle_tooltips",
-                "toggles": {
-                  "attribute_modifiers": false
-                }
               },
               {
                 "function": "set_custom_data",

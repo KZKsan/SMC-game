@@ -17,61 +17,7 @@
               {
                 "function": "set_lore",
                 "lore": [
-                  "魔力を宿した軽防具",
-                  "",
-                  {
-                    "translate": "item.modifiers.chest",
-                    "color": "gray",
-                    "italic": false
-                  },
-                  [
-                    {
-                      "translate": "attribute.name.generic.max_health",
-                      "color": "red",
-                      "italic": false
-                    },
-                    {
-                      "text": " -4",
-                      "color": "red",
-                      "italic": false
-                    }
-                  ],
-                  [
-                    {
-                      "translate": "attribute.name.generic.movement_speed",
-                      "color": "blue",
-                      "italic": false
-                    },
-                    {
-                      "text": " +35%",
-                      "color": "blue",
-                      "italic": false
-                    }
-                  ],
-                  [
-                    {
-                      "translate": "attribute.name.generic.attack_damage",
-                      "color": "blue",
-                      "italic": false
-                    },
-                    {
-                      "text": " +0.5",
-                      "color": "blue",
-                      "italic": false
-                    }
-                  ],
-                  [
-                    {
-                      "translate": "attribute.name.generic.armor",
-                      "color": "blue",
-                      "italic": false
-                    },
-                    {
-                      "text": " +3.5",
-                      "color": "blue",
-                      "italic": false
-                    }
-                  ]
+                  "魔力を宿した軽防具"
                 ],
                 "mode": "replace_all"
               },

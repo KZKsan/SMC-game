@@ -17,61 +17,7 @@
               {
                 "function": "set_lore",
                 "lore": [
-                  "詠唱中は無防備になる",
-                  "",
-                  {
-                    "translate": "item.modifiers.mainhand",
-                    "color": "gray",
-                    "italic": false
-                  },
-                  [
-                    {
-                      "translate": "attribute.name.generic.movement_speed",
-                      "color": "red",
-                      "italic": false
-                    },
-                    {
-                      "text": " -20%",
-                      "color": "red",
-                      "italic": false
-                    }
-                  ],
-                  [
-                    {
-                      "translate": "attribute.name.generic.attack_speed",
-                      "color": "red",
-                      "italic": false
-                    },
-                    {
-                      "text": " -80%",
-                      "color": "red",
-                      "italic": false
-                    }
-                  ],
-                  [
-                    {
-                      "translate": "attribute.name.generic.armor",
-                      "color": "red",
-                      "italic": false
-                    },
-                    {
-                      "text": " -8",
-                      "color": "red",
-                      "italic": false
-                    }
-                  ],
-                  [
-                    {
-                      "translate": "attribute.name.generic.armor_toughness",
-                      "color": "red",
-                      "italic": false
-                    },
-                    {
-                      "text": " -2",
-                      "color": "red",
-                      "italic": false
-                    }
-                  ]
+                  "詠唱中は無防備になる"
                 ],
                 "mode": "replace_all"
               },
@@ -107,12 +53,6 @@
                     "slot": "mainhand"
                   }
                 ]
-              },
-              {
-                "function": "toggle_tooltips",
-                "toggles": {
-                  "attribute_modifiers": false
-                }
               },
               {
                 "function": "set_components",

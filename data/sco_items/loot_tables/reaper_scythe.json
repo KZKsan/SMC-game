@@ -17,36 +17,6 @@
                 ]
               },
               {
-                "function": "set_lore",
-                "lore": [
-                  [
-                    {
-                      "translate": "attribute.name.generic.attack_speed",
-                      "color": "red",
-                      "italic": false
-                    },
-                    {
-                      "text": " -65%",
-                      "color": "red",
-                      "italic": false
-                    }
-                  ],
-                  [
-                    {
-                      "translate": "attribute.name.generic.attack_damage",
-                      "color": "blue",
-                      "italic": false
-                    },
-                    {
-                      "text": " +11",
-                      "color": "blue",
-                      "italic": false
-                    }
-                  ]
-                ],
-                "mode": "replace_all"
-              },
-              {
                 "function": "set_attributes",
                 "modifiers": [
                   {
@@ -64,12 +34,6 @@
                     "slot": "mainhand"
                   }
                 ]
-              },
-              {
-                "function": "toggle_tooltips",
-                "toggles": {
-                  "attribute_modifiers": false
-                }
               },
               {
                 "function": "set_components",

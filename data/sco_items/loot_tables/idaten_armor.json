@@ -26,36 +26,6 @@
                       "italic": false
                     },
                     " A:0, D:2s"
-                  ],
-                  "",
-                  {
-                    "translate": "item.modifiers.chest",
-                    "color": "gray",
-                    "italic": false
-                  },
-                  [
-                    {
-                      "translate": "attribute.name.generic.movement_speed",
-                      "color": "blue",
-                      "italic": false
-                    },
-                    {
-                      "text": " +10%",
-                      "color": "blue",
-                      "italic": false
-                    }
-                  ],
-                  [
-                    {
-                      "translate": "attribute.name.generic.armor",
-                      "color": "blue",
-                      "italic": false
-                    },
-                    {
-                      "text": " +6",
-                      "color": "blue",
-                      "italic": false
-                    }
                   ]
                 ],
                 "mode": "replace_all"
@@ -83,12 +53,6 @@
                 "function": "set_enchantments",
                 "enchantments": {
                   "unbreaking": 10
-                }
-              },
-              {
-                "function": "toggle_tooltips",
-                "toggles": {
-                  "attribute_modifiers": false
                 }
               },
               {

@@ -15,30 +15,6 @@
                 }
               },
               {
-                "function": "set_lore",
-                "lore": [
-                  "",
-                  {
-                    "translate": "item.modifiers.feet",
-                    "color": "gray",
-                    "italic": false
-                  },
-                  [
-                    {
-                      "translate": "attribute.name.generic.attack_damage",
-                      "color": "blue",
-                      "italic": false
-                    },
-                    {
-                      "text": " +1.5",
-                      "color": "blue",
-                      "italic": false
-                    }
-                  ]
-                ],
-                "mode": "replace_all"
-              },
-              {
                 "function": "set_attributes",
                 "modifiers": [
                   {
@@ -54,12 +30,6 @@
                 "function": "set_enchantments",
                 "enchantments": {
                   "unbreaking": 10
-                }
-              },
-              {
-                "function": "toggle_tooltips",
-                "toggles": {
-                  "attribute_modifiers": false
                 }
               },
               {

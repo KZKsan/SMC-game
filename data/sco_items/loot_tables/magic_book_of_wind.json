@@ -17,73 +17,7 @@
               {
                 "function": "set_lore",
                 "lore": [
-                  "詠唱すると風の力を得ることができるが風邪になる",
-                  "",
-                  {
-                    "translate": "item.modifiers.mainhand",
-                    "color": "gray",
-                    "italic": false
-                  },
-                  [
-                    {
-                      "translate": "attribute.name.generic.movement_speed",
-                      "color": "blue",
-                      "italic": false
-                    },
-                    {
-                      "text": " +50%",
-                      "color": "blue",
-                      "italic": false
-                    }
-                  ],
-                  [
-                    {
-                      "translate": "attribute.name.generic.attack_speed",
-                      "color": "red",
-                      "italic": false
-                    },
-                    {
-                      "text": " -70%",
-                      "color": "red",
-                      "italic": false
-                    }
-                  ],
-                  [
-                    {
-                      "translate": "attribute.name.generic.armor",
-                      "color": "blue",
-                      "italic": false
-                    },
-                    {
-                      "text": " +3",
-                      "color": "blue",
-                      "italic": false
-                    }
-                  ],
-                  [
-                    {
-                      "translate": "attribute.name.generic.armor_toughness",
-                      "color": "blue",
-                      "italic": false
-                    },
-                    {
-                      "text": " +2",
-                      "color": "blue",
-                      "italic": false
-                    }
-                  ],
-                  [
-                    {
-                      "translate": "attribute.name.generic.knockback_resistance",
-                      "color": "blue",
-                      "italic": false
-                    },
-                    {
-                      "text": " +0.5",
-                      "color": "blue",
-                      "italic": false
-                    }
-                  ]
+                  "詠唱すると風の力を得ることができるが風邪になる"
                 ],
                 "mode": "replace_all"
               },
@@ -126,12 +60,6 @@
                     "slot": "mainhand"
                   }
                 ]
-              },
-              {
-                "function": "toggle_tooltips",
-                "toggles": {
-                  "attribute_modifiers": false
-                }
               },
               {
                 "function": "set_components",

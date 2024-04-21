@@ -17,25 +17,7 @@
                         {
                             "function": "set_lore",
                             "lore": [
-                                "スマッシュ!",
-                                "",
-                                {
-                                    "translate": "item.modifiers.mainhand",
-                                    "color": "gray",
-                                    "italic": false
-                                },
-                                [
-                                    {
-                                        "translate": "attribute.name.generic.attack_damage",
-                                        "color": "red",
-                                        "italic": false
-                                    },
-                                    {
-                                        "text": " -79%",
-                                        "color": "red",
-                                        "italic": false
-                                    }
-                                ]
+                                "スマッシュ!"
                             ],
                             "mode": "replace_all"
                         },
@@ -55,12 +37,6 @@
                             "function": "set_enchantments",
                             "enchantments": {
                                 "knockback": 3
-                            }
-                        },
-                        {
-                            "function": "toggle_tooltips",
-                            "toggles": {
-                                "attribute_modifiers": false
                             }
                         },
                         {

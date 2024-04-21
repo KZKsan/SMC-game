@@ -34,12 +34,6 @@
                 }
               },
               {
-                "function": "toggle_tooltips",
-                "toggles": {
-                  "attribute_modifiers": false
-                }
-              },
-              {
                 "function": "set_components",
                 "components": {
                   "dyed_color": {

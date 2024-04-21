@@ -22,49 +22,7 @@
                                     "text": "不死者の呪い",
                                     "color": "red",
                                     "italic": false
-                                },
-                                "",
-                                {
-                                    "translate": "item.modifiers.chest",
-                                    "color": "gray",
-                                    "italic": false
-                                },
-                                [
-                                    {
-                                        "translate": "attribute.name.generic.armor",
-                                        "color": "blue",
-                                        "italic": false
-                                    },
-                                    {
-                                        "text": " +5",
-                                        "color": "blue",
-                                        "italic": false
-                                    }
-                                ],
-                                [
-                                    {
-                                        "translate": "attribute.name.generic.armor_toughness",
-                                        "color": "blue",
-                                        "italic": false
-                                    },
-                                    {
-                                        "text": " +3",
-                                        "color": "blue",
-                                        "italic": false
-                                    }
-                                ],
-                                [
-                                    {
-                                        "translate": "attribute.name.generic.attack_speed",
-                                        "color": "blue",
-                                        "italic": false
-                                    },
-                                    {
-                                        "text": " +60%",
-                                        "color": "blue",
-                                        "italic": false
-                                    }
-                                ]
+                                }
                             ],
                             "mode": "replace_all"
                         },
@@ -98,12 +56,6 @@
                             "function": "set_enchantments",
                             "enchantments": {
                                 "unbreaking": 10
-                            }
-                        },
-                        {
-                            "function": "toggle_tooltips",
-                            "toggles": {
-                                "attribute_modifiers": false
                             }
                         },
                         {

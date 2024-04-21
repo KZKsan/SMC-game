@@ -17,49 +17,7 @@
               {
                 "function": "set_lore",
                 "lore": [
-                  "高い攻撃力を誇るが、重い。",
-                  "",
-                  {
-                    "translate": "item.modifiers.mainhand",
-                    "color": "gray",
-                    "italic": false
-                  },
-                  [
-                    {
-                      "translate": "attribute.name.generic.movement_speed",
-                      "color": "red",
-                      "italic": false
-                    },
-                    {
-                      "text": " -20%",
-                      "color": "red",
-                      "italic": false
-                    }
-                  ],
-                  [
-                    {
-                      "translate": "attribute.name.generic.attack_speed",
-                      "color": "red",
-                      "italic": false
-                    },
-                    {
-                      "text": " -88%",
-                      "color": "red",
-                      "italic": false
-                    }
-                  ],
-                  [
-                    {
-                      "translate": "attribute.name.generic.attack_damage",
-                      "color": "blue",
-                      "italic": false
-                    },
-                    {
-                      "text": " +11",
-                      "color": "blue",
-                      "italic": false
-                    }
-                  ]
+                  "高い攻撃力を誇るが、重い。"
                 ],
                 "mode": "replace_all"
               },
@@ -88,12 +46,6 @@
                     "slot": "mainhand"
                   }
                 ]
-              },
-              {
-                "function": "toggle_tooltips",
-                "toggles": {
-                  "attribute_modifiers": false
-                }
               }
             ]
           }

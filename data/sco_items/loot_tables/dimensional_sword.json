@@ -26,36 +26,6 @@
                       "italic": false
                     },
                     " A:5, D:3s"
-                  ],
-                  "",
-                  {
-                    "translate": "item.modifiers.mainhand",
-                    "color": "gray",
-                    "italic": false
-                  },
-                  [
-                    {
-                      "translate": "attribute.name.generic.attack_speed",
-                      "color": "red",
-                      "italic": false
-                    },
-                    {
-                      "text": " -60%",
-                      "color": "red",
-                      "italic": false
-                    }
-                  ],
-                  [
-                    {
-                      "translate": "attribute.name.generic.attack_damage",
-                      "color": "blue",
-                      "italic": false
-                    },
-                    {
-                      "text": " +12",
-                      "color": "blue",
-                      "italic": false
-                    }
                   ]
                 ],
                 "mode": "replace_all"
@@ -84,12 +54,6 @@
                 "enchantments": {
                   "unbreaking": 10,
                   "sweeping_edge": 3
-                }
-              },
-              {
-                "function": "toggle_tooltips",
-                "toggles": {
-                  "attribute_modifiers": false
                 }
               },
               {

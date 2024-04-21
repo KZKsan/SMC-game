@@ -18,25 +18,7 @@
               {
                 "function": "set_lore",
                 "lore": [
-                  "盾の破壊破壊することだけに特化した戦斧",
-                  "",
-                  {
-                    "translate": "item.modifiers.mainhand",
-                    "color": "gray",
-                    "italic": false
-                  },
-                  [
-                    {
-                      "translate": "attribute.name.generic.attack_speed",
-                      "color": "blue",
-                      "italic": false
-                    },
-                    {
-                      "text": " +500%",
-                      "color": "blue",
-                      "italic": false
-                    }
-                  ]
+                  "盾の破壊破壊することだけに特化した戦斧"
                 ],
                 "mode": "replace_all"
               },

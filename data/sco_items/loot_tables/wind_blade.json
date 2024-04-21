@@ -15,54 +15,6 @@
                             }
                         },
                         {
-                            "function": "set_lore",
-                            "lore": [
-                                "",
-                                {
-                                    "translate": "item.modifiers.mainhand",
-                                    "color": "gray",
-                                    "italic": false
-                                },
-                                [
-                                    {
-                                        "translate": "attribute.name.generic.movement_speed",
-                                        "color": "blue",
-                                        "italic": false
-                                    },
-                                    {
-                                        "text": " +20%",
-                                        "color": "blue",
-                                        "italic": false
-                                    }
-                                ],
-                                [
-                                    {
-                                        "translate": "attribute.name.generic.attack_speed",
-                                        "color": "red",
-                                        "italic": false
-                                    },
-                                    {
-                                        "text": " -40%",
-                                        "color": "red",
-                                        "italic": false
-                                    }
-                                ],
-                                [
-                                    {
-                                        "translate": "attribute.name.generic.attack_damage",
-                                        "color": "blue",
-                                        "italic": false
-                                    },
-                                    {
-                                        "text": " +5",
-                                        "color": "blue",
-                                        "italic": false
-                                    }
-                                ]
-                            ],
-                            "mode": "replace_all"
-                        },
-                        {
                             "function": "set_attributes",
                             "modifiers": [
                                 {
@@ -93,12 +45,6 @@
                             "enchantments": {
                                 "knockback": 1,
                                 "smite": 2
-                            }
-                        },
-                        {
-                            "function": "toggle_tooltips",
-                            "toggles": {
-                                "attribute_modifiers": false
                             }
                         }
                     ]

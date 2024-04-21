@@ -26,36 +26,6 @@
                                         "italic": false
                                     },
                                     " A:0, D:2s"
-                                ],
-                                "",
-                                {
-                                    "translate": "item.modifiers.mainhand",
-                                    "color": "gray",
-                                    "italic": false
-                                },
-                                [
-                                    {
-                                        "text": " 9 ",
-                                        "color": "dark_green",
-                                        "italic": false
-                                    },
-                                    {
-                                        "translate": "attribute.name.generic.attack_damage",
-                                        "color": "dark_green",
-                                        "italic": false
-                                    }
-                                ],
-                                [
-                                    {
-                                        "text": " 1.1 ",
-                                        "color": "dark_green",
-                                        "italic": false
-                                    },
-                                    {
-                                        "translate": "attribute.name.generic.attack_speed",
-                                        "color": "dark_green",
-                                        "italic": false
-                                    }
                                 ]
                             ],
                             "mode": "replace_all"
@@ -64,12 +34,6 @@
                             "function": "set_enchantments",
                             "enchantments": {
                                 "riptide": 2
-                            }
-                        },
-                        {
-                            "function": "toggle_tooltips",
-                            "toggles": {
-                                "attribute_modifiers": false
                             }
                         },
                         {

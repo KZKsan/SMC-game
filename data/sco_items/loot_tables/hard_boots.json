@@ -15,30 +15,6 @@
                 }
               },
               {
-                "function": "set_lore",
-                "lore": [
-                  "",
-                  {
-                    "translate": "item.modifiers.feet",
-                    "color": "gray",
-                    "italic": false
-                  },
-                  [
-                    {
-                      "translate": "attribute.name.generic.knockback_resistance",
-                      "color": "blue",
-                      "italic": false
-                    },
-                    {
-                      "text": " +0.3",
-                      "color": "blue",
-                      "italic": false
-                    }
-                  ]
-                ],
-                "mode": "replace_all"
-              },
-              {
                 "function": "set_attributes",
                 "modifiers": [
                   {
@@ -63,12 +39,6 @@
                     "rgb": 3342130,
                     "show_in_tooltip": false
                   }
-                }
-              },
-              {
-                "function": "toggle_tooltips",
-                "toggles": {
-                  "attribute_modifiers": false
                 }
               }
             ]

@@ -26,48 +26,6 @@
                       "italic": false
                     },
                     " A:0, D:3s"
-                  ],
-                  "",
-                  {
-                    "translate": "item.modifiers.chest",
-                    "color": "gray",
-                    "italic": false
-                  },
-                  [
-                    {
-                      "translate": "attribute.name.generic.max_health",
-                      "color": "red",
-                      "italic": false
-                    },
-                    {
-                      "text": " -4",
-                      "color": "red",
-                      "italic": false
-                    }
-                  ],
-                  [
-                    {
-                      "translate": "attribute.name.generic.attack_damage",
-                      "color": "red",
-                      "italic": false
-                    },
-                    {
-                      "text": " -1",
-                      "color": "red",
-                      "italic": false
-                    }
-                  ],
-                  [
-                    {
-                      "translate": "attribute.name.generic.armor",
-                      "color": "blue",
-                      "italic": false
-                    },
-                    {
-                      "text": " +5",
-                      "color": "blue",
-                      "italic": false
-                    }
                   ]
                 ],
                 "mode": "replace_all"
@@ -106,12 +64,6 @@
                   "fire_protection": 1,
                   "projectile_protection": 1,
                   "unbreaking": 10
-                }
-              },
-              {
-                "function": "toggle_tooltips",
-                "toggles": {
-                  "attribute_modifiers": false
                 }
               },
               {
