@@ -5,7 +5,13 @@
             "trigger": "entity_killed_player",
             "conditions": {
                 "entity": {
-                    "nbt": "{SelectedItem:{tag:{item_functions:{steel_war_hammer:1b}}}}"
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "custom_data": "{item_functions:{steel_war_hammer:1b}}"
+                            }
+                        }
+                    }
                 },
                 "killing_blow": {
                     "tags": [
