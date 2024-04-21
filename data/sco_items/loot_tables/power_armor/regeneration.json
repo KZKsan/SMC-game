@@ -27,26 +27,19 @@
                                         "color": "#00CCAA"
                                     },
                                     " A:3, D:1s"
-                                ],
-                                "",
-                                {
-                                    "translate": "item.modifiers.chest",
-                                    "color": "gray",
-                                    "italic": false
-                                },
-                                [
-                                    {
-                                        "translate": "attribute.name.generic.movement_speed",
-                                        "color": "red",
-                                        "italic": false
-                                    },
-                                    {
-                                        "text": " -40%",
-                                        "color": "red",
-                                        "italic": false
-                                    }
                                 ]
-                            ]
+                            ],
+                            "mode": "replace_all"
+                        },
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "trim": {
+                                    "material": "emerald",
+                                    "pattern": "raiser",
+                                    "show_in_tooltip": false
+                                }
+                            }
                         },
                         {
                             "function": "set_attributes",
@@ -54,7 +47,7 @@
                                 {
                                     "slot": "chest",
                                     "amount": -0.4,
-                                    "operation": "multiply_total",
+                                    "operation": "add_multiplied_total",
                                     "attribute": "generic.movement_speed",
                                     "name": ""
                                 }
@@ -67,8 +60,8 @@
                             }
                         },
                         {
-                            "function": "set_nbt",
-                            "tag": "{item_functions:{show_durability:1b,using_damage:{active:1b,tick:0,interval:5,damage:8},power_armor:\"regeneration\"},Trim: {material: \"emerald\", pattern: \"raiser\"},HideFlags:130}"
+                            "function": "set_custom_data",
+                            "tag": "{item_functions:{show_durability:1b,using_damage:{active:1b,tick:0,interval:5,damage:0.0333333},passive_effects:[{id:\"regeneration\",duration:1,amplifier:3,hide_particle:\"false\",pass_effect:1b}]}}"
                         }
                     ]
                 }
