@@ -4,18 +4,18 @@
         "rolls": 1,
         "entries": [
           {
-            "type": "minecraft:item",
-            "name": "minecraft:book",
+            "type": "item",
+            "name": "book",
             "functions": [
               {
-                "function": "minecraft:set_name",
+                "function": "set_name",
                 "name": {
                   "text": "魔導書",
                   "italic": false
                 }
               },
               {
-                "function": "minecraft:set_lore",
+                "function": "set_lore",
                 "lore": [
                   {
                     "text": "魔導書の原本"
@@ -24,11 +24,11 @@
                 "mode": "replace_all"
               },
               {
-                "function": "minecraft:set_components",
+                "function": "set_components",
                 "components": {
-                  "minecraft:enchantments": {
-                    "minecraft:knockback": 1,
-                    "minecraft:sharpness": 1
+                  "enchantments": {
+                    "knockback": 1,
+                    "sharpness": 1
                   }
                 }
               }

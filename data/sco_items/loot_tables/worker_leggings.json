@@ -4,11 +4,11 @@
             "rolls": 1,
             "entries": [
                 {
-                    "type": "minecraft:item",
-                    "name": "minecraft:leather_leggings",
+                    "type": "item",
+                    "name": "leather_leggings",
                     "functions": [
                         {
-                            "function": "minecraft:set_name",
+                            "function": "set_name",
                             "name": {
                                 "text": "勤労のズボン",
                                 "color": "white",
@@ -16,7 +16,7 @@
                             }
                         },
                         {
-                            "function": "minecraft:set_lore",
+                            "function": "set_lore",
                             "lore": [
                                 {
                                     "text": "不死者の呪い",
@@ -69,24 +69,24 @@
                             "mode": "replace_all"
                         },
                         {
-                            "function": "minecraft:set_attributes",
+                            "function": "set_attributes",
                             "modifiers": [
                                 {
-                                    "attribute": "minecraft:generic.armor",
+                                    "attribute": "generic.armor",
                                     "name": "",
                                     "amount": 3,
                                     "operation": "add_value",
                                     "slot": "legs"
                                 },
                                 {
-                                    "attribute": "minecraft:generic.armor_toughness",
+                                    "attribute": "generic.armor_toughness",
                                     "name": "",
                                     "amount": 3,
                                     "operation": "add_value",
                                     "slot": "legs"
                                 },
                                 {
-                                    "attribute": "minecraft:generic.movement_speed",
+                                    "attribute": "generic.movement_speed",
                                     "name": "",
                                     "amount": 0.5,
                                     "operation": "add_multiplied_total",
@@ -95,29 +95,29 @@
                             ]
                         },
                         {
-                            "function": "minecraft:set_enchantments",
+                            "function": "set_enchantments",
                             "enchantments": {
                                 "unbreaking": 10
                             }
                         },
                         {
-                            "function": "minecraft:toggle_tooltips",
+                            "function": "toggle_tooltips",
                             "toggles": {
-                                "minecraft:attribute_modifiers": false
+                                "attribute_modifiers": false
                             }
                         },
                         {
-                            "function": "minecraft:set_components",
+                            "function": "set_components",
                             "components": {
-                                "minecraft:hide_additional_tooltip": {},
-                                "minecraft:dyed_color": {
+                                "hide_additional_tooltip": {},
+                                "dyed_color": {
                                     "rgb": 4144722,
                                     "show_in_tooltip": false
                                 }
                             }
                         },
                         {
-                            "function": "minecraft:set_custom_data",
+                            "function": "set_custom_data",
                             "tag": "{item_functions:{undead:1b}}"
                         }
                     ]

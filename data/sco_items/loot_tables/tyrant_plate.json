@@ -4,11 +4,11 @@
             "rolls": 1,
             "entries": [
                 {
-                    "type": "minecraft:item",
-                    "name": "minecraft:diamond_chestplate",
+                    "type": "item",
+                    "name": "diamond_chestplate",
                     "functions": [
                         {
-                            "function": "minecraft:set_name",
+                            "function": "set_name",
                             "name": {
                                 "text": "タイラントプレート",
                                 "color": "red",
@@ -16,7 +16,7 @@
                             }
                         },
                         {
-                            "function": "minecraft:set_lore",
+                            "function": "set_lore",
                             "lore": [
                                 {
                                     "text": "可燃性",
@@ -83,31 +83,31 @@
                             "mode": "replace_all"
                         },
                         {
-                            "function": "minecraft:set_attributes",
+                            "function": "set_attributes",
                             "modifiers": [
                                 {
-                                    "attribute": "minecraft:generic.armor",
+                                    "attribute": "generic.armor",
                                     "name": "",
                                     "amount": -10,
                                     "operation": "add_value",
                                     "slot": "chest"
                                 },
                                 {
-                                    "attribute": "minecraft:generic.max_health",
+                                    "attribute": "generic.max_health",
                                     "name": "",
                                     "amount": 80,
                                     "operation": "add_value",
                                     "slot": "chest"
                                 },
                                 {
-                                    "attribute": "minecraft:generic.knockback_resistance",
+                                    "attribute": "generic.knockback_resistance",
                                     "name": "",
                                     "amount": 0.6,
                                     "operation": "add_value",
                                     "slot": "chest"
                                 },
                                 {
-                                    "attribute": "minecraft:generic.movement_speed",
+                                    "attribute": "generic.movement_speed",
                                     "name": "",
                                     "amount": -0.55,
                                     "operation": "add_multiplied_total",
@@ -116,22 +116,22 @@
                             ]
                         },
                         {
-                            "function": "minecraft:toggle_tooltips",
+                            "function": "toggle_tooltips",
                             "toggles": {
-                                "minecraft:attribute_modifiers": false
+                                "attribute_modifiers": false
                             }
                         },
                         {
-                            "function": "minecraft:set_components",
+                            "function": "set_components",
                             "components": {
-                                "minecraft:trim": {
-                                    "material": "minecraft:emerald",
-                                    "pattern": "minecraft:silence"
+                                "trim": {
+                                    "material": "emerald",
+                                    "pattern": "silence"
                                 }
                             }
                         },
                         {
-                            "function": "minecraft:set_custom_data",
+                            "function": "set_custom_data",
                             "tag": "{item_functions:{enchant:[{id:\"flammability\",lvl:5s}]}}"
                         }
                     ]

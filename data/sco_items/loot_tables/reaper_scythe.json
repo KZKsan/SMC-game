@@ -4,11 +4,11 @@
         "rolls": 1,
         "entries": [
           {
-            "type": "minecraft:item",
-            "name": "minecraft:iron_hoe",
+            "type": "item",
+            "name": "iron_hoe",
             "functions": [
               {
-                "function": "minecraft:set_name",
+                "function": "set_name",
                 "name": [
                   {
                     "text": "死神のカマ",
@@ -17,7 +17,7 @@
                 ]
               },
               {
-                "function": "minecraft:set_lore",
+                "function": "set_lore",
                 "lore": [
                   [
                     {
@@ -47,17 +47,17 @@
                 "mode": "replace_all"
               },
               {
-                "function": "minecraft:set_attributes",
+                "function": "set_attributes",
                 "modifiers": [
                   {
-                    "attribute": "minecraft:generic.attack_speed",
+                    "attribute": "generic.attack_speed",
                     "name": "",
                     "amount": -0.65,
                     "operation": "add_multiplied_total",
                     "slot": "mainhand"
                   },
                   {
-                    "attribute": "minecraft:generic.attack_damage",
+                    "attribute": "generic.attack_damage",
                     "name": "",
                     "amount": 11,
                     "operation": "add_value",
@@ -66,15 +66,15 @@
                 ]
               },
               {
-                "function": "minecraft:toggle_tooltips",
+                "function": "toggle_tooltips",
                 "toggles": {
-                  "minecraft:attribute_modifiers": false
+                  "attribute_modifiers": false
                 }
               },
               {
-                "function": "minecraft:set_components",
+                "function": "set_components",
                 "components": {
-                  "minecraft:unbreakable": {}
+                  "unbreakable": {}
                 }
               }
             ]

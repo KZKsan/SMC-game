@@ -4,18 +4,18 @@
         "rolls": 1,
         "entries": [
           {
-            "type": "minecraft:item",
-            "name": "minecraft:book",
+            "type": "item",
+            "name": "book",
             "functions": [
               {
-                "function": "minecraft:set_name",
+                "function": "set_name",
                 "name": {
                   "text": "炎の魔導書",
                   "italic": false
                 }
               },
               {
-                "function": "minecraft:set_lore",
+                "function": "set_lore",
                 "lore": [
                   "詠唱中は無防備になる",
                   "",
@@ -76,31 +76,31 @@
                 "mode": "replace_all"
               },
               {
-                "function": "minecraft:set_attributes",
+                "function": "set_attributes",
                 "modifiers": [
                   {
-                    "attribute": "minecraft:generic.movement_speed",
+                    "attribute": "generic.movement_speed",
                     "name": "",
                     "amount": -0.2,
                     "operation": "add_multiplied_total",
                     "slot": "mainhand"
                   },
                   {
-                    "attribute": "minecraft:generic.armor",
+                    "attribute": "generic.armor",
                     "name": "",
                     "amount": -8,
                     "operation": "add_value",
                     "slot": "mainhand"
                   },
                   {
-                    "attribute": "minecraft:generic.armor_toughness",
+                    "attribute": "generic.armor_toughness",
                     "name": "",
                     "amount": -2,
                     "operation": "add_value",
                     "slot": "mainhand"
                   },
                   {
-                    "attribute": "minecraft:generic.attack_speed",
+                    "attribute": "generic.attack_speed",
                     "name": "",
                     "amount": -0.8,
                     "operation": "add_multiplied_total",
@@ -109,18 +109,18 @@
                 ]
               },
               {
-                "function": "minecraft:toggle_tooltips",
+                "function": "toggle_tooltips",
                 "toggles": {
-                  "minecraft:attribute_modifiers": false
+                  "attribute_modifiers": false
                 }
               },
               {
-                "function": "minecraft:set_components",
+                "function": "set_components",
                 "components": {
-                  "minecraft:enchantments": {
-                    "minecraft:fire_aspect": 3,
-                    "minecraft:knockback": 1,
-                    "minecraft:sharpness": 1
+                  "enchantments": {
+                    "fire_aspect": 3,
+                    "knockback": 1,
+                    "sharpness": 1
                   }
                 }
               }

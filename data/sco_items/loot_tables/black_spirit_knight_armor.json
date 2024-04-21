@@ -4,11 +4,11 @@
       "rolls": 1,
       "entries": [
         {
-          "type": "minecraft:item",
-          "name": "minecraft:iron_chestplate",
+          "type": "item",
+          "name": "iron_chestplate",
           "functions": [
             {
-              "function": "minecraft:set_name",
+              "function": "set_name",
               "name": {
                 "text": "黒霊騎士の鎧",
                 "color": "dark_purple",
@@ -16,7 +16,7 @@
               }
             },
             {
-              "function": "minecraft:set_lore",
+              "function": "set_lore",
               "lore": [
                 {
                   "text": "不死者の呪い",
@@ -95,38 +95,38 @@
               "mode": "replace_all"
             },
             {
-              "function": "minecraft:set_attributes",
+              "function": "set_attributes",
               "modifiers": [
                 {
-                  "attribute": "minecraft:generic.armor",
+                  "attribute": "generic.armor",
                   "name": "",
                   "amount": 10,
                   "operation": "add_value",
                   "slot": "chest"
                 },
                 {
-                  "attribute": "minecraft:generic.armor_toughness",
+                  "attribute": "generic.armor_toughness",
                   "name": "",
                   "amount": 2,
                   "operation": "add_value",
                   "slot": "chest"
                 },
                 {
-                  "attribute": "minecraft:generic.max_health",
+                  "attribute": "generic.max_health",
                   "name": "",
                   "amount": 16,
                   "operation": "add_value",
                   "slot": "chest"
                 },
                 {
-                  "attribute": "minecraft:generic.knockback_resistance",
+                  "attribute": "generic.knockback_resistance",
                   "name": "",
                   "amount": 0.5,
                   "operation": "add_value",
                   "slot": "chest"
                 },
                 {
-                  "attribute": "minecraft:generic.movement_speed",
+                  "attribute": "generic.movement_speed",
                   "name": "",
                   "amount": -0.1,
                   "operation": "add_multiplied_total",
@@ -135,30 +135,30 @@
               ]
             },
             {
-              "function": "minecraft:set_enchantments",
+              "function": "set_enchantments",
               "enchantments": {
                 "projectile_protection": 5
               }
             },
             {
-              "function": "minecraft:toggle_tooltips",
+              "function": "toggle_tooltips",
               "toggles": {
-                "minecraft:attribute_modifiers": false,
-                "minecraft:trim": false
+                "attribute_modifiers": false,
+                "trim": false
               }
             },
             {
-              "function": "minecraft:set_components",
+              "function": "set_components",
               "components": {
                 "trim": {
-                  "material": "minecraft:netherite",
-                  "pattern": "minecraft:silence",
+                  "material": "netherite",
+                  "pattern": "silence",
                   "show_in_tooltip": false
                 }
               }
             },
         {
-          "function": "minecraft:set_custom_data",
+          "function": "set_custom_data",
           "tag": "{item_functions:{undead:1b}}"
         }
           ]

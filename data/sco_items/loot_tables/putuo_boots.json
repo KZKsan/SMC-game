@@ -4,18 +4,18 @@
         "rolls": 1,
         "entries": [
           {
-            "type": "minecraft:item",
-            "name": "minecraft:leather_boots",
+            "type": "item",
+            "name": "leather_boots",
             "functions": [
               {
-                "function": "minecraft:set_name",
+                "function": "set_name",
                 "name": {
                   "text": "プツオブーツ",
                   "italic": false
                 }
               },
               {
-                "function": "minecraft:set_lore",
+                "function": "set_lore",
                 "lore": [
                   "跳躍力が大幅に上昇する伝説のブーツ",
                   "",
@@ -61,17 +61,17 @@
                 "mode": "replace_all"
               },
               {
-                "function": "minecraft:set_attributes",
+                "function": "set_attributes",
                 "modifiers": [
                   {
-                    "attribute": "minecraft:generic.movement_speed",
+                    "attribute": "generic.movement_speed",
                     "name": "",
                     "amount": 0.1,
                     "operation": "add_multiplied_total",
                     "slot": "feet"
                   },
                   {
-                    "attribute": "minecraft:generic.armor",
+                    "attribute": "generic.armor",
                     "name": "",
                     "amount": -2,
                     "operation": "add_value",
@@ -80,29 +80,29 @@
                 ]
               },
               {
-                "function": "minecraft:set_enchantments",
+                "function": "set_enchantments",
                 "enchantments": {
                   "feather_falling": 4,
                   "unbreaking": 10
                 }
               },
               {
-                "function": "minecraft:toggle_tooltips",
+                "function": "toggle_tooltips",
                 "toggles": {
-                  "minecraft:attribute_modifiers": false
+                  "attribute_modifiers": false
                 }
               },
               {
-                "function": "minecraft:set_components",
+                "function": "set_components",
                 "components": {
-                  "minecraft:dyed_color": {
+                  "dyed_color": {
                     "rgb": 3289650,
                     "show_in_tooltip": false
                   }
                 }
               },
               {
-                "function": "minecraft:set_custom_data",
+                "function": "set_custom_data",
                 "tag": "{item_functions:{passive_effects:[{id:\"jump_boost\",duration:2,amplifier:3,hide_particle:\"false\"}]}}"
               }
             ]

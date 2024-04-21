@@ -4,18 +4,18 @@
         "rolls": 1,
         "entries": [
           {
-            "type": "minecraft:item",
-            "name": "minecraft:chainmail_chestplate",
+            "type": "item",
+            "name": "chainmail_chestplate",
             "functions": [
               {
-                "function": "minecraft:set_name",
+                "function": "set_name",
                 "name": {
                   "text": "ライトアーマー",
                   "italic": false
                 }
               },
               {
-                "function": "minecraft:set_lore",
+                "function": "set_lore",
                 "lore": [
                   "魔力を宿した軽防具",
                   "",
@@ -76,31 +76,31 @@
                 "mode": "replace_all"
               },
               {
-                "function": "minecraft:set_attributes",
+                "function": "set_attributes",
                 "modifiers": [
                   {
-                    "attribute": "minecraft:generic.movement_speed",
+                    "attribute": "generic.movement_speed",
                     "name": "",
                     "amount": 0.35,
                     "operation": "add_multiplied_base",
                     "slot": "chest"
                   },
                   {
-                    "attribute": "minecraft:generic.armor",
+                    "attribute": "generic.armor",
                     "name": "",
                     "amount": 3.5,
                     "operation": "add_value",
                     "slot": "chest"
                   },
                   {
-                    "attribute": "minecraft:generic.attack_damage",
+                    "attribute": "generic.attack_damage",
                     "name": "",
                     "amount": 0.5,
                     "operation": "add_value",
                     "slot": "chest"
                   },
                   {
-                    "attribute": "minecraft:generic.max_health",
+                    "attribute": "generic.max_health",
                     "name": "",
                     "amount": -4,
                     "operation": "add_value",
@@ -109,10 +109,10 @@
                 ]
               },
               {
-                "function": "minecraft:set_enchantments",
+                "function": "set_enchantments",
                 "enchantments": {
-                  "minecraft:binding_curse": 1,
-                  "minecraft:feather_falling": 1
+                  "binding_curse": 1,
+                  "feather_falling": 1
                 }
               }
             ]

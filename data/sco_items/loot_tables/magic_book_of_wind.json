@@ -4,18 +4,18 @@
         "rolls": 1,
         "entries": [
           {
-            "type": "minecraft:item",
-            "name": "minecraft:book",
+            "type": "item",
+            "name": "book",
             "functions": [
               {
-                "function": "minecraft:set_name",
+                "function": "set_name",
                 "name": {
                   "text": "風の魔導書",
                   "italic": false
                 }
               },
               {
-                "function": "minecraft:set_lore",
+                "function": "set_lore",
                 "lore": [
                   "詠唱すると風の力を得ることができるが風邪になる",
                   "",
@@ -88,38 +88,38 @@
                 "mode": "replace_all"
               },
               {
-                "function": "minecraft:set_attributes",
+                "function": "set_attributes",
                 "modifiers": [
                   {
-                    "attribute": "minecraft:generic.movement_speed",
+                    "attribute": "generic.movement_speed",
                     "name": "",
                     "amount": 0.5,
                     "operation": "add_multiplied_base",
                     "slot": "mainhand"
                   },
                   {
-                    "attribute": "minecraft:generic.armor",
+                    "attribute": "generic.armor",
                     "name": "",
                     "amount": 3,
                     "operation": "add_value",
                     "slot": "mainhand"
                   },
                   {
-                    "attribute": "minecraft:generic.armor_toughness",
+                    "attribute": "generic.armor_toughness",
                     "name": "",
                     "amount": 2,
                     "operation": "add_value",
                     "slot": "mainhand"
                   },
                   {
-                    "attribute": "minecraft:generic.knockback_resistance",
+                    "attribute": "generic.knockback_resistance",
                     "name": "",
                     "amount": 0.5,
                     "operation": "add_value",
                     "slot": "mainhand"
                   },
                   {
-                    "attribute": "minecraft:generic.attack_speed",
+                    "attribute": "generic.attack_speed",
                     "name": "",
                     "amount": -0.7,
                     "operation": "add_multiplied_base",
@@ -128,17 +128,17 @@
                 ]
               },
               {
-                "function": "minecraft:toggle_tooltips",
+                "function": "toggle_tooltips",
                 "toggles": {
-                  "minecraft:attribute_modifiers": false
+                  "attribute_modifiers": false
                 }
               },
               {
-                "function": "minecraft:set_components",
+                "function": "set_components",
                 "components": {
-                  "minecraft:enchantments": {
-                    "minecraft:knockback": 1,
-                    "minecraft:sharpness": 5
+                  "enchantments": {
+                    "knockback": 1,
+                    "sharpness": 5
                   }
                 }
               }

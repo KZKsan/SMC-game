@@ -4,11 +4,11 @@
         "rolls": 1,
         "entries": [
           {
-            "type": "minecraft:item",
-            "name": "minecraft:golden_sword",
+            "type": "item",
+            "name": "golden_sword",
             "functions": [
               {
-                "function": "minecraft:set_name",
+                "function": "set_name",
                 "name": [
                   {
                     "text": "光の剣クラウ・ソラス",
@@ -18,7 +18,7 @@
                 ]
               },
               {
-                "function": "minecraft:set_lore",
+                "function": "set_lore",
                 "lore": [
                   "攻撃すると相手は発光し盲目になり少し弱体化するが",
                   "持っている間は自分も光る",
@@ -91,20 +91,20 @@
                 "mode": "replace_all"
               },
               {
-                "function": "minecraft:set_enchantments",
+                "function": "set_enchantments",
                 "enchantments": {
                   "sharpness": 1,
                   "smite": 6
                 }
               },
               {
-                "function": "minecraft:set_components",
+                "function": "set_components",
                 "components": {
-                  "minecraft:damage": 12
+                  "damage": 12
                 }
               },
               {
-                "function": "minecraft:set_custom_data",
+                "function": "set_custom_data",
                 "tag": "{item_functions:{clau_solas:1b,smite_attack:{active:1b,min_damage:0.0f}}}"
               }
             ]

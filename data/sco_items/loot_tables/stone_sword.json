@@ -4,18 +4,18 @@
             "rolls": 1,
             "entries": [
                 {
-                    "type": "minecraft:item",
-                    "name": "minecraft:stone_sword",
+                    "type": "item",
+                    "name": "stone_sword",
                     "functions": [
                         {
-                            "function": "minecraft:set_name",
+                            "function": "set_name",
                             "name": {
                                 "text": "ストーンソード",
                                 "italic": false
                             }
                         },
                         {
-                            "function": "minecraft:set_lore",
+                            "function": "set_lore",
                             "lore": [
                                 "",
                                 {
@@ -51,15 +51,15 @@
                             "mode": "replace_all"
                         },
                         {
-                            "function": "minecraft:toggle_tooltips",
+                            "function": "toggle_tooltips",
                             "toggles": {
-                                "minecraft:attribute_modifiers": false
+                                "attribute_modifiers": false
                             }
                         },
                         {
-                            "function": "minecraft:set_components",
+                            "function": "set_components",
                             "components": {
-                                "minecraft:hide_additional_tooltip": {}
+                                "hide_additional_tooltip": {}
                             }
                         }
                     ]

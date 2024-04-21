@@ -4,18 +4,18 @@
         "rolls": 1,
         "entries": [
           {
-            "type": "minecraft:item",
-            "name": "minecraft:leather_chestplate",
+            "type": "item",
+            "name": "leather_chestplate",
             "functions": [
               {
-                "function": "minecraft:set_name",
+                "function": "set_name",
                 "name": {
                   "text": "韋駄天の鎧",
                   "italic": false
                 }
               },
               {
-                "function": "minecraft:set_lore",
+                "function": "set_lore",
                 "lore": [
                   "伝説の軽歩兵が使っていたとされる鎧",
                   "",
@@ -61,17 +61,17 @@
                 "mode": "replace_all"
               },
               {
-                "function": "minecraft:set_attributes",
+                "function": "set_attributes",
                 "modifiers": [
                   {
-                    "attribute": "minecraft:generic.armor",
+                    "attribute": "generic.armor",
                     "name": "",
                     "amount": 6,
                     "operation": "add_value",
                     "slot": "chest"
                   },
                   {
-                    "attribute": "minecraft:generic.movement_speed",
+                    "attribute": "generic.movement_speed",
                     "name": "",
                     "amount": 0.1,
                     "operation": "add_multiplied_total",
@@ -80,25 +80,25 @@
                 ]
               },
               {
-                "function": "minecraft:set_enchantments",
+                "function": "set_enchantments",
                 "enchantments": {
                   "unbreaking": 10
                 }
               },
               {
-                "function": "minecraft:toggle_tooltips",
+                "function": "toggle_tooltips",
                 "toggles": {
-                  "minecraft:attribute_modifiers": false
+                  "attribute_modifiers": false
                 }
               },
               {
-                "function": "minecraft:set_custom_data",
+                "function": "set_custom_data",
                 "tag": "{item_functions:{passive_effects:[{id:\"jump_boost\",duration:2,amplifier:0,hide_particle:\"false\"}]}}"
               },
               {
-                "function": "minecraft:set_components",
+                "function": "set_components",
                 "components": {
-                  "minecraft:dyed_color": {
+                  "dyed_color": {
                     "rgb": 6599860,
                     "show_in_tooltip": false
                   }

@@ -4,11 +4,11 @@
         "rolls": 1,
         "entries": [
           {
-            "type": "minecraft:item",
-            "name": "minecraft:bow",
+            "type": "item",
+            "name": "bow",
             "functions": [
               {
-                "function": "minecraft:set_name",
+                "function": "set_name",
                 "name": {
                   "text": "囁き",
                   "color": "light_purple",
@@ -16,7 +16,7 @@
                 }
               },
               {
-                "function": "minecraft:set_lore",
+                "function": "set_lore",
                 "lore": [
                   {
                     "text": "４発撃てるが、最後の1発は凄まじい威力で放つことができる",
@@ -26,17 +26,17 @@
                 "mode": "replace_all"
               },
               {
-                "function": "minecraft:set_enchantments",
+                "function": "set_enchantments",
                 "enchantments": {
-                  "minecraft:power": 5
+                  "power": 5
                 }
               },
               {
-                "function": "minecraft:set_damage",
+                "function": "set_damage",
                 "damage": 0.01
               },
               {
-                "function": "minecraft:set_custom_data",
+                "function": "set_custom_data",
                 "tag": "{item_functions:{sasayaki:1b}}"
               }
             ]

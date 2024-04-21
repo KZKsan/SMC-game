@@ -4,18 +4,18 @@
       "rolls": 1,
       "entries": [
         {
-          "type": "minecraft:item",
-          "name": "minecraft:bow",
+          "type": "item",
+          "name": "bow",
           "functions": [
             {
-              "function": "minecraft:set_name",
+              "function": "set_name",
               "name": {
                 "text": "ブラフマダッタ",
                 "italic": false
               }
             },
             {
-              "function": "minecraft:set_lore",
+              "function": "set_lore",
               "lore": [
                 "ダイヤモンドを散りばめた黄金の弓",
                 "使用時に目が眩んでしまうので注意",
@@ -53,31 +53,31 @@
               "mode": "replace_all"
             },
             {
-              "function": "minecraft:set_attributes",
+              "function": "set_attributes",
               "modifiers": [
                 {
-                  "attribute": "minecraft:generic.armor",
+                  "attribute": "generic.armor",
                   "name": "",
                   "amount": -4,
                   "operation": "add_value",
                   "slot": "mainhand"
                 },
                 {
-                  "attribute": "minecraft:generic.movement_speed",
+                  "attribute": "generic.movement_speed",
                   "name": "",
                   "amount": 0.05,
                   "operation": "add_multiplied_total",
                   "slot": "mainhand"
                 },
                 {
-                  "attribute": "minecraft:generic.armor",
+                  "attribute": "generic.armor",
                   "name": "",
                   "amount": -4,
                   "operation": "add_value",
                   "slot": "offhand"
                 },
                 {
-                  "attribute": "minecraft:generic.movement_speed",
+                  "attribute": "generic.movement_speed",
                   "name": "",
                   "amount": 0.05,
                   "operation": "add_multiplied_total",
@@ -86,21 +86,21 @@
               ]
             },
             {
-              "function": "minecraft:set_enchantments",
+              "function": "set_enchantments",
               "enchantments": {
                 "flame": 1
               }
             },
             {
-              "function": "minecraft:toggle_tooltips",
+              "function": "toggle_tooltips",
               "toggles": {
-                "minecraft:attribute_modifiers": false
+                "attribute_modifiers": false
               }
             },
             {
-              "function": "minecraft:set_components",
+              "function": "set_components",
               "components": {
-                "minecraft:damage": 360
+                "damage": 360
               }
             }
           ]

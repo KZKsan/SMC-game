@@ -4,18 +4,18 @@
             "rolls": 1,
             "entries": [
                 {
-                    "type": "minecraft:item",
-                    "name": "minecraft:trident",
+                    "type": "item",
+                    "name": "trident",
                     "functions": [
                         {
-                            "function": "minecraft:set_name",
+                            "function": "set_name",
                             "name": {
                                 "text": "トリシューラ",
                                 "italic": false
                             }
                         },
                         {
-                            "function": "minecraft:set_lore",
+                            "function": "set_lore",
                             "lore": [
                                 "呪いのおまけつき",
                                 "",
@@ -61,25 +61,25 @@
                             "mode": "replace_all"
                         },
                         {
-                            "function": "minecraft:set_enchantments",
+                            "function": "set_enchantments",
                             "enchantments": {
                                 "riptide": 2
                             }
                         },
                         {
-                            "function": "minecraft:toggle_tooltips",
+                            "function": "toggle_tooltips",
                             "toggles": {
-                                "minecraft:attribute_modifiers": false
+                                "attribute_modifiers": false
                             }
                         },
                         {
-                            "function": "minecraft:set_custom_data",
+                            "function": "set_custom_data",
                             "tag": "{item_functions:{trishula:1b}}"
                         },
                         {
-                            "function": "minecraft:set_components",
+                            "function": "set_components",
                             "components": {
-                                "minecraft:hide_additional_tooltip": {}
+                                "hide_additional_tooltip": {}
                             }
                         }
                     ]

@@ -4,11 +4,11 @@
         "rolls": 1,
         "entries": [
           {
-            "type": "minecraft:item",
-            "name": "minecraft:wooden_sword",
+            "type": "item",
+            "name": "wooden_sword",
             "functions": [
               {
-                "function": "minecraft:set_name",
+                "function": "set_name",
                 "name": [
                   {
                     "text": "すごーい剣",
@@ -17,15 +17,15 @@
                 ]
               },
               {
-                "function": "minecraft:set_enchantments",
+                "function": "set_enchantments",
                 "enchantments": {
                   "sharpness": 10
                 }
               },
               {
-                "function": "minecraft:set_components",
+                "function": "set_components",
                 "components": {
-                  "minecraft:unbreakable": {}
+                  "unbreakable": {}
                 }
               }
             ]

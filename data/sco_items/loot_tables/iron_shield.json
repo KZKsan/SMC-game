@@ -4,18 +4,18 @@
         "rolls": 1,
         "entries": [
           {
-            "type": "minecraft:item",
-            "name": "minecraft:shield",
+            "type": "item",
+            "name": "shield",
             "functions": [
               {
-                "function": "minecraft:set_name",
+                "function": "set_name",
                 "name": {
                   "text": "アイアンシールド",
                   "italic": false
                 }
               },
               {
-                "function": "minecraft:set_lore",
+                "function": "set_lore",
                 "lore": [
                   "",
                   {
@@ -51,31 +51,31 @@
                 "mode": "replace_all"
               },
               {
-                "function": "minecraft:set_attributes",
+                "function": "set_attributes",
                 "modifiers": [
                   {
-                    "attribute": "minecraft:generic.movement_speed",
+                    "attribute": "generic.movement_speed",
                     "name": "",
                     "amount": -0.6,
                     "operation": "add_multiplied_total",
                     "slot": "mainhand"
                   },
                   {
-                    "attribute": "minecraft:generic.knockback_resistance",
+                    "attribute": "generic.knockback_resistance",
                     "name": "composite_bow.kogeneric.knockback_resistance",
                     "amount": 0.6,
                     "operation": "add_value",
                     "slot": "mainhand"
                   },
                   {
-                    "attribute": "minecraft:generic.movement_speed",
+                    "attribute": "generic.movement_speed",
                     "name": "",
                     "amount": -0.6,
                     "operation": "add_multiplied_total",
                     "slot": "offhand"
                   },
                   {
-                    "attribute": "minecraft:generic.knockback_resistance",
+                    "attribute": "generic.knockback_resistance",
                     "name": "composite_bow.kogeneric.knockback_resistance",
                     "amount": 0.6,
                     "operation": "add_value",
@@ -84,37 +84,37 @@
                 ]
               },
               {
-                "function": "minecraft:set_enchantments",
+                "function": "set_enchantments",
                 "enchantments": {
                   "unbreaking": 1
                 }
               },
               {
-                "function": "minecraft:toggle_tooltips",
+                "function": "toggle_tooltips",
                 "toggles": {
-                  "minecraft:attribute_modifiers": false
+                  "attribute_modifiers": false
                 }
               },
               {
-                "function": "minecraft:set_components",
+                "function": "set_components",
                 "components": {
-                  "minecraft:damage": 246,
-                  "minecraft:base_color": "gray",
-                  "minecraft:banner_patterns": [
+                  "damage": 246,
+                  "base_color": "gray",
+                  "banner_patterns": [
                     {
-                      "pattern": "minecraft:small_stripes",
+                      "pattern": "small_stripes",
                       "color": "white"
                     },
                     {
-                      "pattern": "minecraft:gradient",
+                      "pattern": "gradient",
                       "color": "white"
                     },
                     {
-                      "pattern": "minecraft:gradient_up",
+                      "pattern": "gradient_up",
                       "color": "white"
                     }
                   ],
-                  "minecraft:hide_additional_tooltip": {}
+                  "hide_additional_tooltip": {}
                 }
               }
             ]

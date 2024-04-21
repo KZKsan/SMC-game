@@ -4,18 +4,18 @@
       "rolls": 1,
       "entries": [
         {
-          "type": "minecraft:item",
-          "name": "minecraft:diamond_shovel",
+          "type": "item",
+          "name": "diamond_shovel",
           "functions": [
             {
-              "function": "minecraft:set_name",
+              "function": "set_name",
               "name": {
                 "text": "毒槍",
                 "italic": false
               }
             },
             {
-              "function": "minecraft:set_lore",
+              "function": "set_lore",
               "lore": [
                 {
                   "text": "先端に毒を塗り込んだ短槍",
@@ -60,13 +60,13 @@
               ]
             },
             {
-              "function": "minecraft:set_enchantments",
+              "function": "set_enchantments",
               "enchantments": {
                 "unbreaking": 3
               }
             },
             {
-              "function": "minecraft:set_custom_data",
+              "function": "set_custom_data",
               "tag": "{item_functions:{poison_spear:1b}}"
             }
           ]

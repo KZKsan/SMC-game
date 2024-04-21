@@ -23,7 +23,7 @@
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{CustomPotionColor:2077951,custom_potion_effects:[{id:\"minecraft:speed\",amplifier:0b,duration:200}]}"
+                            "tag": "{CustomPotionColor:2077951,custom_potion_effects:[{id:\"speed\",amplifier:0b,duration:200}]}"
                         }
                     ]
                 }

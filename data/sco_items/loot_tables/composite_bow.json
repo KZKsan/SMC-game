@@ -4,11 +4,11 @@
         "rolls": 1,
         "entries": [
           {
-            "type": "minecraft:item",
-            "name": "minecraft:bow",
+            "type": "item",
+            "name": "bow",
             "functions": [
               {
-                "function": "minecraft:set_name",
+                "function": "set_name",
                 "name": {
                   "text": "コンポジットボウ",
                   "color": "green",
@@ -16,7 +16,7 @@
                 }
               },
               {
-                "function": "minecraft:set_lore",
+                "function": "set_lore",
                 "lore": [
                   "非常に重い高火力の弓",
                   "構えている間は無防備になる",
@@ -66,45 +66,45 @@
                 "mode": "replace_all"
               },
               {
-                "function": "minecraft:set_attributes",
+                "function": "set_attributes",
                 "modifiers": [
                   {
-                    "attribute": "minecraft:generic.armor",
+                    "attribute": "generic.armor",
                     "name": "composite_bow.armor",
                     "amount": -6,
                     "operation": "add_value",
                     "slot": "mainhand"
                   },
                   {
-                    "attribute": "minecraft:generic.knockback_resistance",
+                    "attribute": "generic.knockback_resistance",
                     "name": "composite_bow.kogeneric.knockback_resistance",
                     "amount": 0.6,
                     "operation": "add_value",
                     "slot": "mainhand"
                   },
                   {
-                    "attribute": "minecraft:generic.movement_speed",
+                    "attribute": "generic.movement_speed",
                     "name": "composite_bow.kogeneric.movement_speed",
                     "amount": -0.9,
                     "operation": "add_multiplied_total",
                     "slot": "mainhand"
                   },
                   {
-                    "attribute": "minecraft:generic.armor",
+                    "attribute": "generic.armor",
                     "name": "composite_bow.armor",
                     "amount": -6,
                     "operation": "add_value",
                     "slot": "offhand"
                   },
                   {
-                    "attribute": "minecraft:generic.knockback_resistance",
+                    "attribute": "generic.knockback_resistance",
                     "name": "composite_bow.kogeneric.knockback_resistance",
                     "amount": 0.6,
                     "operation": "add_value",
                     "slot": "offhand"
                   },
                   {
-                    "attribute": "minecraft:generic.movement_speed",
+                    "attribute": "generic.movement_speed",
                     "name": "composite_bow.kogeneric.movement_speed",
                     "amount": -0.9,
                     "operation": "add_multiplied_total",
@@ -113,15 +113,15 @@
                 ]
               },
               {
-                "function": "minecraft:set_enchantments",
+                "function": "set_enchantments",
                 "enchantments": {
                   "power": 1
                 }
               },
               {
-                "function": "minecraft:toggle_tooltips",
+                "function": "toggle_tooltips",
                 "toggles": {
-                  "minecraft:attribute_modifiers": false
+                  "attribute_modifiers": false
                 }
               }
             ]
