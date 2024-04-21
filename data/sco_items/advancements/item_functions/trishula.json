@@ -8,13 +8,19 @@
                         "condition": "entity_properties",
                         "entity": "this",
                         "predicate": {
-                            "nbt": "{SelectedItem:{tag:{item_functions:{trishula:1b}}}}"
+                            "equipment": {
+                                "mainhand": {
+                                    "predicates": {
+                                        "custom_data": "{item_functions:{trishula:1b}}"
+                                    }
+                                }
+                            }
                         }
                     },
                     {
                         "condition": "inverted",
                         "term": {
-                            "condition": "minecraft:entity_properties",
+                            "condition": "entity_properties",
                             "entity": "this",
                             "predicate": {
                                 "nbt": "{active_effects:[{id:\"minecraft:poison\"}]}"
