@@ -84,7 +84,7 @@
               },
               {
                 "function": "minecraft:set_custom_data",
-                "tag": "{itme_functions:{crystal_sword:1b}}"
+                "tag": "{item_functions:{crystal_sword:1b}}"
               },
               {
                 "function": "minecraft:set_components",
