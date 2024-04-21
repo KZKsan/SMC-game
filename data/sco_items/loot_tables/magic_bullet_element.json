@@ -4,11 +4,11 @@
         "rolls": 1,
         "entries": [
           {
-            "type": "minecraft:item",
-            "name": "minecraft:ender_eye",
+            "type": "item",
+            "name": "ender_eye",
             "functions": [
               {
-                "function": "minecraft:set_name",
+                "function": "set_name",
                 "name": {
                   "text": "魔弾の素",
                   "color": "white",
@@ -16,9 +16,9 @@
                 }
               },
               {
-                "function": "minecraft:set_components",
+                "function": "set_components",
                 "components": {
-                    "enchantment_glint_override":{}
+                    "enchantment_glint_override": true
                 }
               }
             ]
