@@ -46,6 +46,10 @@
                                 "knockback": 1,
                                 "smite": 2
                             }
+                        },
+                        {
+                            "function": "set_custom_data",
+                            "tag": "{item_functions:{smite_attack:{active:1b,min_damage:0.0f}}}"
                         }
                     ]
                 }
