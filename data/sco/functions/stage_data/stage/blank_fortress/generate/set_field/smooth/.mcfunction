@@ -1,7 +1,7 @@
 #>sco:stage_data/stage/blank_fortress/generate/set_field/smooth/
 #@within sco:stage_data/stage/blank_fortress/generate/setup
 
-data modify storage _ _ set value [\
+data modify storage sco:data stage_generate.select_pos set value [\
     "^-0 ^ ^0",\
     "^-1 ^ ^0",\
     "^-2 ^ ^0",\

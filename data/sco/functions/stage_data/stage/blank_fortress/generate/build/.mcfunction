@@ -7,7 +7,7 @@ function sco:stage_data/stage/blank_fortress/generate/build/random_seed with sto
 function sco:stage_data/stage/blank_fortress/generate/build/respawn
 
 scoreboard players set #allow_tower0 _ 1
-data modify storage _ _ set value []
+data modify storage sco:data stage_generate.generate_memory set value []
 execute positioned ~ ~ ~0 run function sco:stage_data/stage/blank_fortress/generate/build/walls/
 execute positioned ~ ~ ~16 run function sco:stage_data/stage/blank_fortress/generate/build/walls/
 execute positioned ~ ~ ~32 run function sco:stage_data/stage/blank_fortress/generate/build/walls/
@@ -66,7 +66,7 @@ execute positioned ~112 ~ ~64 run function sco:stage_data/stage/blank_fortress/g
 
 
 execute as @e[type=marker,limit=1,tag=sco_builder] at @s run teleport @s ~-4 ~2 ~-4
-data modify storage _ _ set value []
+data modify storage sco:data stage_generate.generate_memory set value []
 execute positioned ~ ~-8 ~00 run function sco:stage_data/stage/blank_fortress/generate/build/field/
 execute positioned ~ ~-8 ~08 run function sco:stage_data/stage/blank_fortress/generate/build/field/
 execute positioned ~ ~-8 ~16 run function sco:stage_data/stage/blank_fortress/generate/build/field/
