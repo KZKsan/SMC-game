@@ -75,7 +75,7 @@
               },
               {
                 "function": "set_custom_data",
-                "tag": "{item_functions:{clau_solas:1b,smite_attack:{active:1b,min_damage:0.0f}}}"
+                "tag": "{item_functions:{clau_solas:1b,smite_attack:{active:1b,min_damage:5.0f}}}"
               }
             ]
           }
