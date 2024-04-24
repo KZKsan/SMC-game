@@ -6,7 +6,14 @@
             "equipment": {
                 "mainhand": {
                     "predicates": {
-                        "custom_data": "{item_functions:{smite_attack:{active:1b}}}"
+                        "enchantments": [
+                            {
+                                "enchantment": "smite",
+                                "levels": {
+                                    "min": 1
+                                }
+                            }
+                        ]
                     }
                 }
             }
