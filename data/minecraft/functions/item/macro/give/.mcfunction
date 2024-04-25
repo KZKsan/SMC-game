@@ -8,6 +8,7 @@ function item/macro/give/run with storage _ item_data_str
 data remove storage _ item_data_str
 
 #minecraft:attribute_modifiers=
+#minecraft:banner_patterns=
 #minecraft:base_color=
 #minecraft:bees=
 #minecraft:block_entity_data=
