@@ -30,7 +30,7 @@
                       "italic": false
                     },
                     {
-                      "text": " -60%",
+                      "text": " -30%",
                       "color": "red",
                       "italic": false
                     }
@@ -42,7 +42,7 @@
                       "italic": false
                     },
                     {
-                      "text": " 0.6",
+                      "text": " +0.6",
                       "color": "blue",
                       "italic": false
                     }
@@ -56,30 +56,16 @@
                   {
                     "attribute": "generic.movement_speed",
                     "name": "",
-                    "amount": -0.6,
-                    "operation": "add_multiplied_total",
-                    "slot": "mainhand"
+                    "amount": -0.3,
+                    "operation": "add_multiplied_base",
+                    "slot": "hand"
                   },
                   {
                     "attribute": "generic.knockback_resistance",
                     "name": "composite_bow.kogeneric.knockback_resistance",
                     "amount": 0.6,
                     "operation": "add_value",
-                    "slot": "mainhand"
-                  },
-                  {
-                    "attribute": "generic.movement_speed",
-                    "name": "",
-                    "amount": -0.6,
-                    "operation": "add_multiplied_total",
-                    "slot": "offhand"
-                  },
-                  {
-                    "attribute": "generic.knockback_resistance",
-                    "name": "composite_bow.kogeneric.knockback_resistance",
-                    "amount": 0.6,
-                    "operation": "add_value",
-                    "slot": "offhand"
+                    "slot": "hand"
                   }
                 ]
               },
