@@ -18,11 +18,18 @@
                         {
                             "function": "set_lore",
                             "lore": [
-                                {
-                                    "text": "可燃性",
-                                    "color": "red",
-                                    "italic": false
-                                },
+                                [
+                                    {
+                                        "text": "可燃性 ",
+                                        "color": "red",
+                                        "italic": false
+                                    },
+                                    {
+                                        "translate": "enchantment.level.5",
+                                        "color": "red",
+                                        "italic": false
+                                    }
+                                ],
                                 "",
                                 "巨体になれる"
                             ],
@@ -48,15 +55,50 @@
                                 {
                                     "attribute": "generic.knockback_resistance",
                                     "name": "",
-                                    "amount": 0.6,
+                                    "amount": 1,
                                     "operation": "add_value",
                                     "slot": "chest"
                                 },
                                 {
                                     "attribute": "generic.movement_speed",
                                     "name": "",
-                                    "amount": -0.55,
+                                    "amount": -0.4,
                                     "operation": "add_multiplied_total",
+                                    "slot": "chest"
+                                },
+                                {
+                                    "attribute": "generic.scale",
+                                    "name": "",
+                                    "amount": 1.5,
+                                    "operation": "add_value",
+                                    "slot": "chest"
+                                },
+                                {
+                                    "attribute": "generic.jump_strength",
+                                    "name": "",
+                                    "amount": 0.35,
+                                    "operation": "add_value",
+                                    "slot": "chest"
+                                },
+                                {
+                                    "attribute": "generic.safe_fall_distance",
+                                    "name": "",
+                                    "amount": 3,
+                                    "operation": "add_value",
+                                    "slot": "chest"
+                                },
+                                {
+                                    "attribute": "generic.step_height",
+                                    "name": "",
+                                    "amount": 1.1,
+                                    "operation": "add_value",
+                                    "slot": "chest"
+                                },
+                                {
+                                    "attribute": "player.entity_interaction_range",
+                                    "name": "",
+                                    "amount": 3,
+                                    "operation": "add_value",
                                     "slot": "chest"
                                 }
                             ]
@@ -68,6 +110,12 @@
                                     "material": "emerald",
                                     "pattern": "silence"
                                 }
+                            }
+                        },
+                        {
+                            "function": "toggle_tooltips",
+                            "toggles": {
+                                "trim": false
                             }
                         },
                         {
