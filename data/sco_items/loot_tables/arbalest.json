@@ -52,14 +52,7 @@
                     "name": "",
                     "amount": -2,
                     "operation": "add_value",
-                    "slot": "mainhand"
-                  },
-                  {
-                    "attribute": "generic.armor",
-                    "name": "",
-                    "amount": -2,
-                    "operation": "add_value",
-                    "slot": "offhand"
+                    "slot": "hand"
                   }
                 ]
               },

@@ -46,24 +46,24 @@
                   },
                   [
                     {
-                      "translate": "attribute.name.generic.movement_speed",
+                      "text": " -40%",
                       "color": "red",
                       "italic": false
                     },
                     {
-                      "text": " -40%",
+                      "translate": "attribute.name.generic.movement_speed",
                       "color": "red",
                       "italic": false
                     }
                   ],
                   [
                     {
-                      "translate": "attribute.name.generic.attack_speed",
+                      "text": " -70%",
                       "color": "red",
                       "italic": false
                     },
                     {
-                      "text": " -70%",
+                      "translate": "attribute.name.generic.attack_speed",
                       "color": "red",
                       "italic": false
                     }
@@ -144,41 +144,6 @@
                     "amount": -2,
                     "operation": "add_value",
                     "slot": "mainhand"
-                  },
-                  {
-                    "attribute": "generic.movement_speed",
-                    "name": "",
-                    "amount": -0.4,
-                    "operation": "add_multiplied_total",
-                    "slot": "offhand"
-                  },
-                  {
-                    "attribute": "generic.attack_speed",
-                    "name": "",
-                    "amount": -0.7,
-                    "operation": "add_multiplied_total",
-                    "slot": "offhand"
-                  },
-                  {
-                    "attribute": "generic.armor",
-                    "name": "",
-                    "amount": -6,
-                    "operation": "add_value",
-                    "slot": "offhand"
-                  },
-                  {
-                    "attribute": "generic.attack_damage",
-                    "name": "",
-                    "amount": 7,
-                    "operation": "add_value",
-                    "slot": "offhand"
-                  },
-                  {
-                    "attribute": "generic.armor_toughness",
-                    "name": "",
-                    "amount": -2,
-                    "operation": "add_value",
-                    "slot": "offhand"
                   }
                 ]
               },

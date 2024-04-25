@@ -17,37 +17,7 @@
               {
                 "function": "set_lore",
                 "lore": [
-                  "伝説の弓兵が使っていたとされる弓",
-                  "",
-                  {
-                    "translate": "item.modifiers.offhand",
-                    "color": "gray",
-                    "italic": false
-                  },
-                  [
-                    {
-                      "translate": "attribute.name.generic.movement_speed",
-                      "color": "blue",
-                      "italic": false
-                    },
-                    {
-                      "text": " +20%",
-                      "color": "blue",
-                      "italic": false
-                    }
-                  ],
-                  [
-                    {
-                      "translate": "attribute.name.generic.attack_damage",
-                      "color": "red",
-                      "italic": false
-                    },
-                    {
-                      "text": " -0.5",
-                      "color": "red",
-                      "italic": false
-                    }
-                  ]
+                  "伝説の弓兵が使っていたとされる弓"
                 ],
                 "mode": "replace_all"
               },
@@ -74,12 +44,6 @@
                 "function": "set_enchantments",
                 "enchantments": {
                   "punch": 1
-                }
-              },
-              {
-                "function": "toggle_tooltips",
-                "toggles": {
-                  "attribute_modifiers": false
                 }
               }
             ]

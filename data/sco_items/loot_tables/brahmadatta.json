@@ -27,12 +27,12 @@
                 },
                 [
                   {
-                    "translate": "attribute.name.generic.movement_speed",
+                    "text": " +5%",
                     "color": "blue",
                     "italic": false
                   },
                   {
-                    "text": " +5%",
+                    "translate": "attribute.name.generic.movement_speed",
                     "color": "blue",
                     "italic": false
                   }
@@ -60,28 +60,14 @@
                   "name": "",
                   "amount": -4,
                   "operation": "add_value",
-                  "slot": "mainhand"
+                  "slot": "hand"
                 },
                 {
                   "attribute": "generic.movement_speed",
                   "name": "",
                   "amount": 0.05,
                   "operation": "add_multiplied_total",
-                  "slot": "mainhand"
-                },
-                {
-                  "attribute": "generic.armor",
-                  "name": "",
-                  "amount": -4,
-                  "operation": "add_value",
-                  "slot": "offhand"
-                },
-                {
-                  "attribute": "generic.movement_speed",
-                  "name": "",
-                  "amount": 0.05,
-                  "operation": "add_multiplied_total",
-                  "slot": "offhand"
+                  "slot": "hand"
                 }
               ]
             },
