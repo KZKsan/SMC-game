@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "guard": {
+            "trigger": "using_item",
+            "conditions": {
+                "item": {
+                    "predicates": {
+                        "custom_data": "{item_functions:{netherite_plating_shield:1b}}"
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "sco_items:item_functions/netherite_plating_shield/guard"
+    }
+}
