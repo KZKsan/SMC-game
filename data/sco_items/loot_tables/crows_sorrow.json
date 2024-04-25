@@ -40,7 +40,7 @@
                                         "italic": false
                                     },
                                     {
-                                        "text": " -60%",
+                                        "text": " -2.4",
                                         "color": "red",
                                         "italic": false
                                     }
@@ -83,7 +83,7 @@
                                         "italic": false
                                     },
                                     {
-                                        "text": " +100%",
+                                        "text": " +4",
                                         "color": "blue",
                                         "italic": false
                                     }
@@ -119,7 +119,7 @@
                                         "italic": false
                                     },
                                     {
-                                        "text": " +1000%",
+                                        "text": " +10",
                                         "color": "blue",
                                         "italic": false
                                     }
@@ -145,8 +145,8 @@
                                 },
                                 {
                                     "name": "",
-                                    "amount": -0.6,
-                                    "operation": "add_multiplied_total",
+                                    "amount": -2.4,
+                                    "operation": "add_value",
                                     "attribute": "generic.attack_speed",
                                     "slot": "mainhand"
                                 },
