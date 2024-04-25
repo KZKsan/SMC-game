@@ -18,9 +18,9 @@
                 "function": "set_attributes",
                 "modifiers": [
                   {
-                    "attribute": "generic.movement_speed",
+                    "attribute": "generic.safe_fall_distance",
                     "name": "",
-                    "amount": 0.01,
+                    "amount": 1024,
                     "operation": "add_value",
                     "slot": "feet"
                   }
@@ -29,8 +29,7 @@
               {
                 "function": "set_enchantments",
                 "enchantments": {
-                  "unbreaking": 10,
-                  "feather_falling": 10
+                  "unbreaking": 10
                 }
               },
               {

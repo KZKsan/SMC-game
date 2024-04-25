@@ -20,6 +20,7 @@ function enderface:gui_layoutes/shop/set_trade_data/single_data/speed_boots
 function enderface:gui_layoutes/shop/set_trade_data/single_data/hard_boots
 function enderface:gui_layoutes/shop/set_trade_data/single_data/fire_boots
 function enderface:gui_layoutes/shop/set_trade_data/single_data/fall_boots
+function enderface:gui_layoutes/shop/set_trade_data/single_data/long_fall_boots
 function enderface:gui_layoutes/shop/set_trade_data/single_data/putuo_boots
 
 function enderface:gui_layoutes/shop/set_trade_data/single_data/shield
