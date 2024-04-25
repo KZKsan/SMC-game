@@ -25,6 +25,22 @@
             "condition": "entity_properties",
             "entity": "this",
             "predicate": {
+                "equipment": {
+                    "mainhand": {
+                        "predicates": {
+                            "custom_data": "{item_functions:{smite_attack:0b}}"
+                        }
+                    }
+                }
+            }
+        } 
+    },
+    {
+        "condition": "inverted",
+        "term": {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
                 "effects": {
                     "weakness": {}
                 }
