@@ -1,7 +1,7 @@
 {
     "criteria": {
         "button1": {
-            "trigger": "item_used_on_block",
+            "trigger": "default_block_use",
             "conditions": {
                 "location": [
                     {
@@ -26,7 +26,7 @@
             }
         },
         "button2": {
-            "trigger": "item_used_on_block",
+            "trigger": "default_block_use",
             "conditions": {
                 "location": [
                     {
@@ -51,7 +51,7 @@
             }
         },
         "button3": {
-            "trigger": "item_used_on_block",
+            "trigger": "default_block_use",
             "conditions": {
                 "location": [
                     {
@@ -76,7 +76,7 @@
             }
         },
         "button4": {
-            "trigger": "item_used_on_block",
+            "trigger": "default_block_use",
             "conditions": {
                 "location": [
                     {
@@ -101,7 +101,7 @@
             }
         },
         "button5": {
-            "trigger": "item_used_on_block",
+            "trigger": "default_block_use",
             "conditions": {
                 "location": [
                     {
