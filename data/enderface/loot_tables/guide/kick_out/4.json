@@ -35,6 +35,10 @@
 								"hide_additional_tooltip": {
 								}
 							}
+						},
+						{
+							"function": "set_custom_data",
+							"tag": "{enderface_item:1b}"
 						}
 					]
 				}
