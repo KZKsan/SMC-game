@@ -20,5 +20,5 @@ data remove storage sco:data stage_generate.data_fetch
 #execute store result storage sco:data stage_generate.data_fetch.seed16 int 1 run random value 0..9
 #execute store result storage sco:data stage_generate.data_fetch.seed17 int 1 run random value 0..9
 #function sco:stage_data/stage/blank_fortress/generate/seed/macro with storage sco:data stage_generate.data_fetch
-execute if predicate 5050 store result storage sco:data stage_generate.seed int 1 run return run random value 1..
+execute if predicate minecraft:5050 store result storage sco:data stage_generate.seed int 1 run return run random value 1..
 execute store result storage sco:data stage_generate.seed int -1 run random value 1..
