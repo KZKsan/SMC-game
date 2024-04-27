@@ -31,14 +31,9 @@
 							"mode": "replace_all"
 						},
 						{
-							"function": "set_custom_data",
-							"tag": "{enderface_item:1b}"
-						},
-						{
 							"function": "set_components",
 							"components": {
-								"minecraft:hide_additional_tooltip": {
-									"hideflag": 32
+								"hide_additional_tooltip": {
 								}
 							}
 						}
