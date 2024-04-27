@@ -7,4 +7,4 @@ loot replace entity @s enderchest.0 loot enderface:guide/enchants/curse_of_the_u
 loot replace entity @s enderchest.1 loot enderface:guide/enchants/flammability
 loot replace entity @s enderchest.2 loot enderface:guide/enchants/vulnerability
 
-item replace entity @s enderchest.26 with barrier{enderface_item:1b,HideFlags:32,click_events:{click_sounds:[{sound:"ui.button.click"}],change_gui:"guide/"},display:{Name:'{"text": ">戻る","italic": false}'}}
+loot replace entity @s enderchest.26 loot enderface:back_gui

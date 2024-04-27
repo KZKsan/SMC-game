@@ -5,27 +5,26 @@
 			"entries": [
 				{
 					"type": "item",
-					"name": "cracked_stone_bricks",
+					"name": "filled_map",
 					"functions": [
 						{
 							"function": "set_name",
 							"name": {
-								"text": "脆弱性",
-								"italic": false,
-								"color": "light_purple"
+								"text": "　",
+								"italic": false
 							}
 						},
 						{
 							"function": "set_lore",
 							"lore": [
 								{
-									"text": "耐久値が通常よりも多く減少する",
-									"color": "white",
+									"text": "準備時間になるとショップに移動します。",
+									"color": "gold",
 									"italic": false
 								},
 								{
-									"text": "未実装",
-									"color": "light_purple",
+									"text": "エンダーチェストを開くとショップを開けます。",
+									"color": "gold",
 									"italic": false
 								}
 							],

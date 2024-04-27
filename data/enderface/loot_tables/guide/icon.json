@@ -5,20 +5,19 @@
 			"entries": [
 				{
 					"type": "item",
-					"name": "emerald",
+					"name": "bookshelf",
 					"functions": [
 						{
 							"function": "set_name",
 							"name": {
-								"text": "・デスマッチ" ,
-								"bold": true,
-								"color": "white",
-								"italic": false
+								"text": ">SCOガイド",
+								"italic": false,
+								"color": "white"
 							}
 						},
 						{
 							"function": "set_custom_data",
-							"tag": "{enderface_item:1b}"
+							"tag": "{click_events:{click_sounds:[{sound:\"ui.button.click\"}],change_gui:\"join_the_game/guide/\"},enderface_item:1b}"
 						}
 					]
 				}

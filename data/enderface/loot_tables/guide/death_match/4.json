@@ -5,7 +5,7 @@
 			"entries": [
 				{
 					"type": "item",
-					"name": "flower_banner_pattern",
+					"name": "filled_map",
 					"functions": [
 						{
 							"function": "set_name",
@@ -18,13 +18,23 @@
 							"lore": [
 								{
 									"text": "狭いステージに移動し、最後の決着をつけます。",
-									"color": "gold"
+									"color": "gold",
+									"italic": false
 								}
-							]
+							],
+							"mode": "replace_all"
 						},
 						{
-							"function": "set_nbt",
-							"tag": "{enderface_item:1b,HideFlags:34}"
+							"function": "set_custom_data",
+							"tag": "{enderface_item:1b}"
+						},
+						{
+							"function": "set_components",
+							"components": {
+								"minecraft:hide_additional_tooltip": {
+									"hideflag": 32
+								}
+							}
 						}
 					]
 				}

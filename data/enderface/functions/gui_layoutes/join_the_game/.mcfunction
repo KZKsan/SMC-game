@@ -10,6 +10,7 @@ loot replace entity @s enderchest.10 loot enderface:sco_game_join/red
 loot replace entity @s enderchest.11 loot enderface:sco_game_join/blue
 execute if data storage sco:config game{can_team_select:0b} run loot replace entity @s enderchest.9 loot enderface:sco_game_join/join
 execute if data storage sco:config game{can_team_select:1b} run loot replace entity @s enderchest.9 loot enderface:sco_game_join/random_team
+loot replace entity @s enderchest.13 loot enderface:guide/icon
 loot replace entity @s enderchest.15 loot enderface:sco_game_join/practice/team_joining
 loot replace entity @s[predicate=!sco:game_join,team=!spectator] enderchest.15 loot enderface:sco_game_join/practice/none
 loot replace entity @s enderchest.17 loot enderface:sco_game_join/spectator
