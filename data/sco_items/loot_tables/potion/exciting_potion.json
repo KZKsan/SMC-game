@@ -18,11 +18,23 @@
                             "function": "set_lore",
                             "lore": [
                                 "短時間身体機能を大幅に向上させる"
-                            ]
+                            ],
+                            "mode": "replace_all"
                         },
                         {
-                            "function": "set_nbt",
-                            "tag": "{CustomPotionColor:14208076,custom_potion_effects:[{amplifier:4b,duration:140,id:\"speed\"}]}"
+                            "function": "set_components",
+                            "components": {
+                                "potion_contents": {
+                                    "custom_color": 14208076,
+                                    "custom_effects": [
+                                        {
+                                            "id": "speed",
+                                            "amplifier": 4,
+                                            "duration": 140
+                                        }
+                                    ]
+                                }
+                            }
                         }
                     ]
                 }

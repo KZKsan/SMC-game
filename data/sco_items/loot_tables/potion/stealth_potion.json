@@ -16,8 +16,29 @@
                             }
                         },
                         {
-                            "function": "set_nbt",
-                            "tag": "{CustomPotionColor:12582399,custom_potion_effects:[{id:\"speed\",amplifier:0b,duration:140},{id:\"glowing\",amplifier:0b,duration:100},{id:\"invisibility\",amplifier:0b,duration:300}]}"
+                            "function": "set_components",
+                            "components": {
+                                "potion_contents": {
+                                    "custom_color": 12582399,
+                                    "custom_effects": [
+                                        {
+                                            "id": "speed",
+                                            "amplifier": 0,
+                                            "duration": 140
+                                        },
+                                        {
+                                            "id": "glowing",
+                                            "amplifier": 0,
+                                            "duration": 100
+                                        },
+                                        {
+                                            "id": "invisibility",
+                                            "amplifier": 0,
+                                            "duration": 300
+                                        }
+                                    ]
+                                }
+                            }
                         }
                     ]
                 }
