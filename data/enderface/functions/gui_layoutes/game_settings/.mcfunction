@@ -9,8 +9,7 @@ function enderface:gui_layoutes/game_settings/other_rules/set {rule_id:"show_ene
 function enderface:gui_layoutes/game_settings/other_rules/set {rule_id:"friendlyfire", rule_name:"フレンドリーファイア", slot:14}
 function enderface:gui_layoutes/game_settings/other_rules/set {rule_id:"can_pickup_arrows", rule_name:"矢の回収", slot:15}
 
-execute if data storage sco:config game{rule:"death_match"} run loot replace entity @s enderchest.0 loot enderface:sco_settings/rule/death_match
-execute if data storage sco:config game{rule:"kick_out"} run loot replace entity @s enderchest.0 loot enderface:sco_settings/rule/kick_out
+function enderface:gui_layoutes/game_settings/rule_settings/icon with storage sco:config game
 loot replace entity @s enderchest.7 loot enderface:sco_settings/announce/settings
 loot replace entity @s enderchest.8 loot enderface:sco_settings/announce/start_game
 

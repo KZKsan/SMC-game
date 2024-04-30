@@ -10,20 +10,10 @@
                         {
                             "function": "set_name",
                             "name": {
-                                "text": ">ゲームルール",
+                                "text": "キックアウト",
+                                "color": "yellow",
                                 "italic": false
                             }
-                        },
-                        {
-                            "function": "set_lore",
-                            "lore": [
-                                {
-                                    "text": "キックアウト",
-                                    "color": "yellow",
-                                    "italic": false
-                                }
-                            ],
-                            "mode": "replace_all"
                         },
                         {
                             "function": "toggle_tooltips",
@@ -33,7 +23,7 @@
                         },
                         {
                             "function": "set_custom_data",
-                            "tag": "{click_events:{click_sounds:[{sound:\"ui.button.click\"}],change_gui:\"game_settings/rule_settings\"},enderface_item:1b}"
+                            "tag": "{enderface_item:1b,click_events:{sco_rule_set:\"kick_out\"}}"
                         }
                     ]
                 }
