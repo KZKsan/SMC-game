@@ -1,5 +1,6 @@
 #>enderface:gui/processing/main
 #@within enderface:gui/check
+
 ## Change gui_name
 execute if data storage enderface:data gui_intaract{click:1b} if data storage enderface:data gui_intaract.Item.components."minecraft:custom_data".click_events.change_gui run data modify storage enderface:data next_gui_name set from storage enderface:data gui_intaract.Item.components."minecraft:custom_data".click_events.change_gui
 ## Back gui
@@ -7,8 +8,10 @@ execute if data storage enderface:data gui_intaract{click:1b} if data storage en
 execute if data storage enderface:data gui_intaract{click:1b} if data storage enderface:data gui_intaract.Item.components."minecraft:custom_data".click_events{back_gui:1b} if data storage enderface:data gui_history[0] run data remove storage enderface:data gui_history[-1]
 ## Click Sounds
 execute if data storage enderface:data gui_intaract{click:1b} if data storage enderface:data gui_intaract.Item.components."minecraft:custom_data".click_events.click_sounds run function enderface:gui/processing/click_sounds
-
+## Page
 execute if data storage enderface:data gui_intaract{click:1b} if data storage enderface:data gui_intaract.Item.components."minecraft:custom_data".click_events.page run function enderface:gui/processing/page_number
+## Setting Button
+execute if data storage enderface:data gui_intaract{click:1b} if data storage enderface:data gui_intaract.Item.components."minecraft:custom_data".click_events.setting_button run function enderface:gui/processing/setting_button/ with storage enderface:data gui_intaract.Item.components."minecraft:custom_data".click_events.setting_button
 ## Other Processing
 #execute if data storage enderface:data {gui_name:"shop/0"} run function enderface:gui/processing/shop/0/main
 execute if data storage enderface:data {gui_name:"shop/reset_item_gui"} run function enderface:gui/processing/shop/0/reset_item_gui/

@@ -2,12 +2,13 @@
 #@within enderface:gui_layoutes/load
 function enderface:gui_layoutes/generic/set_air
 
-#item replace entity @s enderchest.9 with grass_block[item_name='{"text": ">ステージ","italic": false}',custom_data={click_events:{click_sounds:[{sound:"ui.button.click"}],change_gui:"game_settings/stage_select"},enderface_item:1b}]
-function enderface:gui_layoutes/game_settings/other_rules/set {rule_id:"can_team_select", rule_name:"チーム選択", slot:11}
-function enderface:gui_layoutes/game_settings/other_rules/set {rule_id:"show_hp", rule_name:"HPの表示", slot:12}
-function enderface:gui_layoutes/game_settings/other_rules/set {rule_id:"show_enemy_team_name", rule_name:"敵チームの名前の表示", slot:13}
-function enderface:gui_layoutes/game_settings/other_rules/set {rule_id:"friendlyfire", rule_name:"フレンドリーファイア", slot:14}
-function enderface:gui_layoutes/game_settings/other_rules/set {rule_id:"can_pickup_arrows", rule_name:"矢の回収", slot:15}
+
+function enderface:gui_layoutes/game_settings/other_rules/toggle {rule_id:"can_team_select", rule_name:"チーム選択", slot:11}
+function enderface:gui_layoutes/game_settings/other_rules/toggle {rule_id:"show_hp", rule_name:"HPの表示", slot:12}
+function enderface:gui_layoutes/game_settings/other_rules/toggle {rule_id:"show_enemy_team_name", rule_name:"敵チームの名前の表示", slot:13}
+function enderface:gui_layoutes/game_settings/other_rules/toggle {rule_id:"friendlyfire", rule_name:"フレンドリーファイア", slot:14}
+function enderface:gui_layoutes/game_settings/other_rules/toggle {rule_id:"can_pickup_arrows", rule_name:"矢の回収", slot:15}
+function enderface:gui_layoutes/game_settings/other_rules/quad {rule_id:"collision", rule_name:"衝突判定", slot:20, rule_quad_0:"OFF",rule_quad_1:"ON",rule_quad_2:"敵のみ",rule_quad_3:"味方のみ"}
 
 function enderface:gui_layoutes/game_settings/rule_settings/icon with storage sco:config game
 function enderface:gui_layoutes/game_settings/stage_select/icon with storage sco:config
