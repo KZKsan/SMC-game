@@ -40,7 +40,7 @@
                     "color": "#00CCAA",
                     "italic": false
                   },
-                  " A:1, D:1s"
+                  " A:1, D:2s"
                 ],
                 [
                   {
@@ -48,7 +48,7 @@
                     "color": "#00CCAA",
                     "italic": false
                   },
-                  " A:0, D:3s"
+                  " A:0, D:6s"
                 ]
               ],
               "mode": "replace_all"
