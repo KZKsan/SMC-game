@@ -23,6 +23,7 @@ function timer:stop
 function sco:player/team/team_info/off
 scoreboard objectives setdisplay below_name
 function sco:player/team/show_enemy_team_name/true
+function sco:player/team/collision/true
 data remove storage sco:data penalty_area.struct
 data remove storage sco:input game
 fill -64 -55 48 15 -37 127 air
