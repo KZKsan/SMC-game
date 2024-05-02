@@ -27,3 +27,5 @@ function blast_motion/lib
 #>
 #@public
 #declare storage _
+
+function trigonometricf/load
