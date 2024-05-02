@@ -18,7 +18,6 @@
                             "function": "set_components",
                             "components": {
                                 "potion_contents": {
-                                    "custom_color": 2490460,
                                     "custom_effects": [
                                         {
                                             "id": "blindness",

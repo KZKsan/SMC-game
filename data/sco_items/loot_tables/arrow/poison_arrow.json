@@ -41,7 +41,6 @@
                             "function": "set_components",
                             "components": {
                                 "potion_contents": {
-                                    "custom_color": 8889187,
                                     "custom_effects": [
                                         {
                                             "id": "poison",
