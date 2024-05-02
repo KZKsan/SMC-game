@@ -33,7 +33,8 @@
                                             "show_particles": true
                                         }
                                     ]
-                                }
+                                },
+                                "max_stack_size": 4
                             }
                         },
                         {

@@ -18,6 +18,12 @@
                         {
                             "function": "set_potion",
                             "id": "strong_slowness"
+                        },
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "max_stack_size": 4
+                            }
                         }
                     ]
                 }

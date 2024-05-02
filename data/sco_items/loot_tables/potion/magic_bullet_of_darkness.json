@@ -48,7 +48,7 @@
                             "function": "set_components",
                             "components": {
                                 "potion_contents": {
-                                    "custom_color": 14077244,
+                                    "custom_color": 0,
                                     "custom_effects": [
                                         {
                                             "id": "blindness",
@@ -62,6 +62,7 @@
                                         }
                                     ]
                                 },
+                                "max_stack_size": 4,
                                 "hide_additional_tooltip": {}
                             }
                         },

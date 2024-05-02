@@ -17,6 +17,12 @@
                         {
                             "function": "set_potion",
                             "id": "strong_turtle_master"
+                        },
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "max_stack_size": 4
+                            }
                         }
                     ]
                 }

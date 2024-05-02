@@ -42,7 +42,8 @@
                                             "duration": 100
                                         }
                                     ]
-                                }
+                                },
+                                "max_stack_size": 4
                             }
                         }
                     ]

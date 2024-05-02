@@ -31,7 +31,8 @@
                                             "duration": 60
                                         }
                                     ]
-                                }
+                                },
+                                "max_stack_size": 4
                             }
                         }
                     ]

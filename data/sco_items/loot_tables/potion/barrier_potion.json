@@ -26,7 +26,8 @@
                                             "duration": 220
                                         }
                                     ]
-                                }
+                                },
+                                "max_stack_size": 4
                             }
                         }
                     ]
