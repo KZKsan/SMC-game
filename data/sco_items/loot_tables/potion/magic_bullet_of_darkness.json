@@ -24,7 +24,7 @@
                                         "italic": false
                                     },
                                     {
-                                        "text": "（00:03）",
+                                        "text": "（00:08）",
                                         "color": "red",
                                         "italic": false
                                     }
@@ -36,7 +36,7 @@
                                         "italic": false
                                     },
                                     {
-                                        "text": "（00:03）",
+                                        "text": "（00:08）",
                                         "color": "blue",
                                         "italic": false
                                     }
@@ -53,12 +53,12 @@
                                         {
                                             "id": "blindness",
                                             "amplifier": 0,
-                                            "duration": 60
+                                            "duration": 160
                                         },
                                         {
                                             "id": "glowing",
                                             "amplifier": 0,
-                                            "duration": 60
+                                            "duration": 160
                                         }
                                     ]
                                 },
