@@ -42,7 +42,19 @@
                       "italic": false
                     },
                     {
-                      "text": " +0.6",
+                      "text": " +6",
+                      "color": "blue",
+                      "italic": false
+                    }
+                  ],
+                  [
+                    {
+                      "translate": "attribute.name.generic.armor",
+                      "color": "blue",
+                      "italic": false
+                    },
+                    {
+                      "text": " +2",
                       "color": "blue",
                       "italic": false
                     }
@@ -62,8 +74,15 @@
                   },
                   {
                     "attribute": "generic.knockback_resistance",
-                    "name": "composite_bow.kogeneric.knockback_resistance",
+                    "name": "",
                     "amount": 0.6,
+                    "operation": "add_value",
+                    "slot": "hand"
+                  },
+                  {
+                    "attribute": "generic.armor",
+                    "name": "",
+                    "amount": 2,
                     "operation": "add_value",
                     "slot": "hand"
                   }
