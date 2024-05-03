@@ -11,4 +11,20 @@ item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with
 function enderface:gui_layoutes/shop/set_trade_data/wirite_data/buy
 data modify storage enderface:shop sell_count set value {click:1,sneak:4}
 function enderface:gui_layoutes/shop/set_trade_data/wirite_data/sell_count
+function enderface:gui_layoutes/shop/set_trade_data/wirite_data/add_trade
+loot replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 loot sco_items:potion/healing_potion
+function enderface:gui_layoutes/shop/set_trade_data/wirite_data/icon/trade
+function enderface:gui_layoutes/shop/set_trade_data/wirite_data/sell
+item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with iron_helmet
+function enderface:gui_layoutes/shop/set_trade_data/wirite_data/buy
+data modify storage enderface:shop sell_count set value {click:1,sneak:4}
+function enderface:gui_layoutes/shop/set_trade_data/wirite_data/sell_count
+function enderface:gui_layoutes/shop/set_trade_data/wirite_data/add_trade
+loot replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 loot sco_items:potion/healing_potion
+function enderface:gui_layoutes/shop/set_trade_data/wirite_data/icon/trade
+function enderface:gui_layoutes/shop/set_trade_data/wirite_data/sell
+item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with iron_boots
+function enderface:gui_layoutes/shop/set_trade_data/wirite_data/buy
+data modify storage enderface:shop sell_count set value {click:1,sneak:4}
+function enderface:gui_layoutes/shop/set_trade_data/wirite_data/sell_count
 data modify storage enderface:shop trade_data append from storage enderface:shop _
