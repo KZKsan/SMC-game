@@ -25,7 +25,7 @@
                                     },
                                     " ",
                                     {
-                                        "translate": "（00:10）",
+                                        "translate": "（00:20）",
                                         "color": "blue",
                                         "italic": false
                                     }
@@ -42,7 +42,7 @@
                                         {
                                             "id": "glowing",
                                             "amplifier": 0,
-                                            "duration": 200,
+                                            "duration": 400,
                                             "show_particles": true
                                         }
                                     ]
