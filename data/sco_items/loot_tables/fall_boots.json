@@ -23,6 +23,13 @@
                     "amount": 0.01,
                     "operation": "add_multiplied_total",
                     "slot": "feet"
+                  },
+                  {
+                    "attribute": "generic.armor",
+                    "name": "",
+                    "amount": 1,
+                    "operation": "add_value",
+                    "slot": "feet"
                   }
                 ]
               },
