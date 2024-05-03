@@ -16,7 +16,7 @@
 # magic_bullet
     execute as @e[type=potion,tag=!already] if data entity @s Item.components."minecraft:custom_data".item_functions.set_p_vector run function #sco_items:item_functions/set_p_vector/generic
 
-    execute as @e[type=area_effect_cloud,tag=!already,nbt={effects:[{id:"minecraft:glowing",amplifier:49b}]}] run function sco_items:item_functions/others/magic_bullet_of_light
+    execute as @e[type=area_effect_cloud,tag=!already,nbt={potion_contents:{custom_effects:[{id:"minecraft:glowing",amplifier:49b}]}}] run function sco_items:item_functions/others/magic_bullet_of_light
     execute as @e[type=potion,nbt={Item:{components:{"minecraft:custom_data":{item_functions:{mini_healing_potion:1b}}}}}] positioned as @s run function sco_items:item_functions/others/mini_healing_potion
     execute as @e[type=potion,tag=!item_function.alchemy_robe.already] positioned as @s run function sco_items:item_functions/alchemy_robe/set_data
 

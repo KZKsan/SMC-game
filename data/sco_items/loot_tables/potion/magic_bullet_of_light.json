@@ -23,13 +23,37 @@
                                         "color": "blue",
                                         "italic": false
                                     },
-                                    " ",
                                     {
                                         "translate": "（00:10）",
                                         "color": "blue",
                                         "italic": false
                                     }
                                 ],
+                                [
+                                    {
+                                        "translate": "effect.minecraft.slowness",
+                                        "color": "red",
+                                        "italic": false
+                                    },
+                                    {
+                                        "translate": "（00:01）",
+                                        "color": "red",
+                                        "italic": false
+                                    }
+                                ],
+                                [
+                                    {
+                                        "translate": "effect.minecraft.blindness",
+                                        "color": "red",
+                                        "italic": false
+                                    },
+                                    {
+                                        "translate": "（00:03）",
+                                        "color": "red",
+                                        "italic": false
+                                    }
+                                ],
+                                "",
                                 "広範囲のプレイヤーを発光させる。"
                             ],
                             "mode": "replace_all"
@@ -44,6 +68,16 @@
                                             "id": "glowing",
                                             "amplifier": 49,
                                             "duration": 200
+                                        },
+                                        {
+                                            "id": "slowness",
+                                            "amplifier": 0,
+                                            "duration": 20
+                                        },
+                                        {
+                                            "id": "blindness",
+                                            "amplifier": 0,
+                                            "duration": 60
                                         }
                                     ]
                                 },
