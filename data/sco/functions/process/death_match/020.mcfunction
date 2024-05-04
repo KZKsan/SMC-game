@@ -48,6 +48,9 @@ execute as @a[team=spectator,tag=!spectator] run function sco:tp/respawn/
 execute as @a[team=spectator,tag=!spectator] run function sco:player/team/remove_team_tag
 tag @a[team=spectator,tag=!spectator] add rg.block_area
 tag @a[team=spectator,tag=!spectator] add spectator
+execute if score #runtime game matches 1.. as @a[team=red,scores={respawnTime=1}] run function sco:tp/macro with storage sco:data respawn[{name:"shop_red"}]
+execute if score #runtime game matches 1.. as @a[team=blue,scores={respawnTime=1}] run function sco:tp/macro with storage sco:data respawn[{name:"shop_blue"}]
+
 
 #プロセス終了
 execute if score #mst_time timer matches 003001 run function sco:messeges/shop_end
