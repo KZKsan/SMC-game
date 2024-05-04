@@ -23,6 +23,13 @@
                                     "slot": "mainhand",
                                     "amount": 13,
                                     "operation": "add_value"
+                                },
+                                {
+                                    "attribute": "generic.attack_speed",
+                                    "name": "",
+                                    "slot": "mainhand",
+                                    "amount": -2.4,
+                                    "operation": "add_value"
                                 }
                             ]
                         },
@@ -30,7 +37,7 @@
                             "function": "set_enchantments",
                             "enchantments": {
                                 "sharpness": 1,
-                                "smite": 7
+                                "smite": 5
                             }
                         },
                         {
@@ -39,6 +46,16 @@
                                 "max_damage": 1,
                                 "max_stack_size": 1,
                                 "damage": 0
+                            }
+                        },
+                        {
+                            "function": "set_custom_data",
+                            "tag": {
+                                "item_functions": {
+                                    "smite_attack": {
+                                        "min_damage": 2.0
+                                    }
+                                }
                             }
                         }
                     ]

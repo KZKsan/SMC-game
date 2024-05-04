@@ -20,7 +20,7 @@
                   {
                     "attribute": "generic.armor",
                     "name": "",
-                    "amount": 0.2,
+                    "amount": 1.5,
                     "operation": "add_value",
                     "slot": "feet"
                   }

@@ -12,6 +12,7 @@ function enderface:gui_layoutes/shop/set_trade_data/single_data/power_armor
 function enderface:gui_layoutes/shop/set_trade_data/single_data/tyrant_plate
 function enderface:gui_layoutes/shop/set_trade_data/single_data/reaper_robe
 function enderface:gui_layoutes/shop/set_trade_data/single_data/magic_robe
+function enderface:gui_layoutes/shop/set_trade_data/single_data/alchemy_robe
 function enderface:gui_layoutes/shop/set_trade_data/single_data/black_spirit_knight_armor
 function enderface:gui_layoutes/shop/set_trade_data/single_data/zombie_armor
 function enderface:gui_layoutes/shop/set_trade_data/single_data/worker_chestplate
