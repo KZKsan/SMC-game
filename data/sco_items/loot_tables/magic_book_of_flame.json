@@ -55,7 +55,7 @@
                   {
                     "attribute": "player.entity_interaction_range",
                     "name": "",
-                    "amount": 7,
+                    "amount": 5,
                     "operation": "add_value",
                     "slot": "mainhand"
                   }
