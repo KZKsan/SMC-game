@@ -1,0 +1,1 @@
+summon item_display ~ ~ ~ {Tags:[sco-object,rule.domination,particle,glitch_noise],item:{count:1,id:"minecraft:white_stained_glass"},transformation:{left_rotation:[0.0f,0.0f,0.0f,1.0f],right_rotation:[0.0f,0.0f,0.0f,1.0f],scale:[0.125f,0.25f,0.125f],translation:[0.0f,0.0f,0.0f]},interpolation_duration:2}
