@@ -51,7 +51,7 @@
                         },
                         {
                             "function": "set_custom_data",
-                            "tag": "{item_functions:{smite_attack:{min_damage:0.0f}}}"
+                            "tag": "{item_functions:{smite_attack:{min_damage:3.5f}}}"
                         }
                     ]
                 }
