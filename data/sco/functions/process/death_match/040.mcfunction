@@ -22,6 +22,7 @@ effect give @a[predicate=sco:team_join,team=!spectator,predicate=gamemode/as] wa
 effect give @a[predicate=sco:team_join,team=!spectator,predicate=gamemode/as] fire_resistance 1 10 true
 
 #ステージギミック
+execute if score #runtime game matches ..199 run function sco:stage_data/stage_object/
 execute if score #runtime game matches ..199 if data storage sco:data options{gimmick:true} run function sco:stage_data/gimmick
 
 #ゲーム終了

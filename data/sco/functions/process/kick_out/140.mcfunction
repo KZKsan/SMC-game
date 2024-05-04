@@ -25,6 +25,7 @@ execute if score #score_time game matches 1 if score #flag game matches 1 run fu
 execute if score #score_time game matches 1 if score #flag game matches 2 run function sco:player/team/team_info/team_score/winner/blue
 
 #ステージギミック
+execute if score #runtime game matches ..199 run function sco:stage_data/stage_object/
 execute if score #runtime game matches ..199 if data storage sco:data options{gimmick:true} run function sco:stage_data/gimmick
 
 #ゲーム終了
