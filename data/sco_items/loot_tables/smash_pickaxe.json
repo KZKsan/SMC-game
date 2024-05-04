@@ -41,7 +41,7 @@
                         },
                         {
                             "function": "set_custom_data",
-                            "tag": "{itme_functions:{particle:{explode:1b}}}"
+                            "tag": "{item_functions:{particle:{explode:1b}}}"
                         }
                     ]
                 }

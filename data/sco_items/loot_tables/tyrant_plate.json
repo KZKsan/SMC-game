@@ -104,12 +104,6 @@
                             ]
                         },
                         {
-                            "function": "set_enchantments",
-                            "enchantments": {
-                                "binding_curse": 1
-                            }
-                        },
-                        {
                             "function": "set_components",
                             "components": {
                                 "trim": {
