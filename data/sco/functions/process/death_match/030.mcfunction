@@ -7,7 +7,7 @@ execute if score #runtime game matches 1 run function sco:process/death_match/ga
 execute if score #runtime game matches 5 run tellraw @a[predicate=sco:team_join] [{"text": "対戦開始！","bold": true},{"score":{"name": "#m","objective": "timer"},"bold": true},{"text":"分後にサドンデスモードになります。","bold": true}]
 execute if score #runtime game matches 1 run gamemode adventure @a[predicate=sco:team_join,team=!spectator]
 execute if score #runtime game matches 1 run function sco:player/result/reset_scores/all
-execute if score #runtime game matches 1 run effect give @a[predicate=sco:team_join,team=!spectator] regeneration 5 100
+execute if score #runtime game matches 1 run effect give @a[predicate=sco:team_join,team=!spectator] instant_health 100 100
 execute if score #runtime game matches 1 as @a[scores={regione.penalty_area.penalty.time=1..}] run function sco:regine/penalty_area/reset_flag/single
 execute if score #runtime game matches 1 as @a[predicate=sco:team_join,team=!blue] run function sco:tp/respawn/save {name:"stage_red"}
 execute if score #runtime game matches 1 as @a[team=blue] run function sco:tp/respawn/save {name:"stage_blue"}
@@ -44,6 +44,7 @@ execute if score #runtime game matches 5 as @a[predicate=sco:team_join] at @s ru
 #ステージギミック
 execute if score #runtime game matches 3 if data storage sco:data options{reset:true} run function sco:stage_data/reset
 execute if score #runtime game matches 4.. if data storage sco:data options{gimmick:true} run function sco:stage_data/gimmick
+execute if score #mst_time timer matches 010000 run function sco:messeges/1minutes
 
 #プロセス終了
 execute if score #runtime game matches 10 as @a[predicate=sco:team_join,team=!spectator] run function sco:process/death_match/respawn/
