@@ -10,11 +10,11 @@ loot replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 loot
 function enderface:gui_layoutes/shop/set_trade_data/wirite_data/icon/preview
 function enderface:gui_layoutes/shop/set_trade_data/wirite_data/sell
 loot replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 loot sco_items:mana_element
-data modify entity @e[tag=set_trade_data,limit=1,distance=..2] Items[0].Count set value 1b
+data modify entity @e[tag=set_trade_data,limit=1,distance=..2] Items[0].count set value 1
 function enderface:gui_layoutes/shop/set_trade_data/wirite_data/buy
-data modify storage sco:shop sell_count set value {click:1,sneak:1}
+data modify storage enderface:shop sell_count set value {click:1,sneak:4}
 function enderface:gui_layoutes/shop/set_trade_data/wirite_data/sell_count
-data modify storage sco:shop trade_data append from storage sco:shop _
+data modify storage enderface:shop trade_data append from storage enderface:shop _
 
 #>
 #@private
@@ -23,25 +23,25 @@ loot replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 loot
 function enderface:gui_layoutes/shop/set_trade_data/wirite_data/icon/preview
 function enderface:gui_layoutes/shop/set_trade_data/wirite_data/sell
 loot replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 loot sco_items:mana_element
-data modify entity @e[tag=set_trade_data,limit=1,distance=..2] Items[0].Count set value 1b
+data modify entity @e[tag=set_trade_data,limit=1,distance=..2] Items[0].count set value 1
 function enderface:gui_layoutes/shop/set_trade_data/wirite_data/buy
-data modify storage sco:shop sell_count set value {click:1,sneak:1}
+data modify storage enderface:shop sell_count set value {click:1,sneak:4}
 function enderface:gui_layoutes/shop/set_trade_data/wirite_data/sell_count
-data modify storage sco:shop trade_data append from storage sco:shop _
+data modify storage enderface:shop trade_data append from storage enderface:shop _
 
 #>
 #@private
 #declare loot_table sco_items:potion/healing_potion
 loot replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 loot sco_items:potion/healing_potion
+data modify entity @e[tag=set_trade_data,limit=1,distance=..2] Items[0].count set value 2
 function enderface:gui_layoutes/shop/set_trade_data/wirite_data/icon/preview
-loot replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.1 loot sco_items:potion/healing_potion
 function enderface:gui_layoutes/shop/set_trade_data/wirite_data/sell
 loot replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 loot sco_items:mana_element
-data modify entity @e[tag=set_trade_data,limit=1,distance=..2] Items[0].Count set value 2b
+data modify entity @e[tag=set_trade_data,limit=1,distance=..2] Items[0].count set value 2
 function enderface:gui_layoutes/shop/set_trade_data/wirite_data/buy
-data modify storage sco:shop sell_count set value {click:1,sneak:1}
+data modify storage enderface:shop sell_count set value {click:1,sneak:2}
 function enderface:gui_layoutes/shop/set_trade_data/wirite_data/sell_count
-data modify storage sco:shop trade_data append from storage sco:shop _
+data modify storage enderface:shop trade_data append from storage enderface:shop _
 
 #>
 #@private
@@ -50,11 +50,11 @@ loot replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 loot
 function enderface:gui_layoutes/shop/set_trade_data/wirite_data/icon/preview
 function enderface:gui_layoutes/shop/set_trade_data/wirite_data/sell
 loot replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 loot sco_items:mana_element
-data modify entity @e[tag=set_trade_data,limit=1,distance=..2] Items[0].Count set value 1b
+data modify entity @e[tag=set_trade_data,limit=1,distance=..2] Items[0].count set value 1
 function enderface:gui_layoutes/shop/set_trade_data/wirite_data/buy
-data modify storage sco:shop sell_count set value {click:1,sneak:1}
+data modify storage enderface:shop sell_count set value {click:1,sneak:4}
 function enderface:gui_layoutes/shop/set_trade_data/wirite_data/sell_count
-data modify storage sco:shop trade_data append from storage sco:shop _
+data modify storage enderface:shop trade_data append from storage enderface:shop _
 
 #>
 #@private
@@ -63,8 +63,8 @@ loot replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 loot
 function enderface:gui_layoutes/shop/set_trade_data/wirite_data/icon/preview
 function enderface:gui_layoutes/shop/set_trade_data/wirite_data/sell
 loot replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 loot sco_items:mana_element
-data modify entity @e[tag=set_trade_data,limit=1,distance=..2] Items[0].Count set value 2b
+data modify entity @e[tag=set_trade_data,limit=1,distance=..2] Items[0].count set value 2
 function enderface:gui_layoutes/shop/set_trade_data/wirite_data/buy
-data modify storage sco:shop sell_count set value {click:1,sneak:1}
+data modify storage enderface:shop sell_count set value {click:1,sneak:4}
 function enderface:gui_layoutes/shop/set_trade_data/wirite_data/sell_count
-data modify storage sco:shop trade_data append from storage sco:shop _
+data modify storage enderface:shop trade_data append from storage enderface:shop _

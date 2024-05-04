@@ -1,7 +1,7 @@
 #>enderface:gui_layoutes/shop/preview_trade/add_items_icon/sell
 #@within enderface:gui_layoutes/shop/preview_trade/
 loot replace entity @e[tag=gui_layout_item,distance=..2,limit=1] container.0 loot enderface:shop/add_items/sell
-data modify storage _ data_fetch.sell set from storage p-storage _[0].data.preview_trade.trade.tag.trade.sell
+data modify storage _ data_fetch.sell set from storage p-storage _[0].data.preview_trade.trade.components."minecraft:custom_data".trade.sell
 data remove storage _ data_fetch.sell[0]
 
 data remove storage c_str str
@@ -12,7 +12,7 @@ data modify storage c_str str append value '"'
 data modify storage c_str str append value ","
 data modify storage c_str str append value '{"text":"コ のアイテム"}]'
 function c_str/
-data modify entity @e[tag=gui_layout_item,distance=..2,limit=1] Items[0].tag.display.Lore append from storage c_str str[0]
+data modify entity @e[tag=gui_layout_item,distance=..2,limit=1] Items[0].components."minecraft:lore" append from storage c_str str[0]
 item modify entity @e[tag=gui_layout_item,distance=..2,limit=1] container.0 enderface:shop/click_to_others
 
 

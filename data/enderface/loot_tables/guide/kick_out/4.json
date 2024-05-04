@@ -5,7 +5,7 @@
 			"entries": [
 				{
 					"type": "item",
-					"name": "flower_banner_pattern",
+					"name": "filled_map",
 					"functions": [
 						{
 							"function": "set_name",
@@ -17,18 +17,28 @@
 							"function": "set_lore",
 							"lore": [
 								{
-									"text": "復活時、試合開始時の相手を持って復活します。",
-									"color": "gold"
+									"text": "復活時、試合開始時のアイテムを持って復活します。",
+									"color": "gold",
+									"italic": false
 								},
 								{
-									"text": "なお、復活後数秒はしばらくバフがかかります。",
-									"color": "gold"
+									"text": "なお、復活後数秒はしばらく体力にバフがかかります。",
+									"color": "gold",
+									"italic": false
 								}
-							]
+							],
+							"mode": "replace_all"
+						}, 
+						{
+							"function": "set_components",
+							"components": {
+								"hide_additional_tooltip": {
+								}
+							}
 						},
 						{
-							"function": "set_nbt",
-							"tag": "{enderfaceItem:1b,HideFlags:34}"
+							"function": "set_custom_data",
+							"tag": "{enderface_item:1b}"
 						}
 					]
 				}

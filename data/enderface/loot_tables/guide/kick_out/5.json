@@ -5,7 +5,7 @@
 			"entries": [
 				{
 					"type": "item",
-					"name": "flower_banner_pattern",
+					"name": "filled_map",
 					"functions": [
 						{
 							"function": "set_name",
@@ -19,17 +19,27 @@
 							"lore": [
 								{
 									"text": "制限時間時、相手と同じ得点だった場合サドンデスモードに移行します。",
-									"color": "gold"
+									"color": "gold",
+									"italic": false
 								},
 								{
 									"text": "先に1キルが発生したチームの勝利です。",
-									"color": "gold"
+									"color": "gold",
+									"italic": false
 								}
-							]
+							],
+							"mode": "replace_all"
+						}, 
+						{
+							"function": "set_components",
+							"components": {
+								"hide_additional_tooltip": {
+								}
+							}
 						},
 						{
-							"function": "set_nbt",
-							"tag": "{enderfaceItem:1b,HideFlags:32}"
+							"function": "set_custom_data",
+							"tag": "{enderface_item:1b}"
 						}
 					]
 				}

@@ -9,4 +9,4 @@ function enderface:gui_layoutes/shop/set_trade_data/single_data/potion/water_spl
 function enderface:gui_layoutes/shop/set_trade_data/single_data/hidden_cover
 function enderface:gui_layoutes/shop/set_trade_data/single_data/fishing_rod
 
-data modify storage sco:shop others set from storage sco:shop trade_data
+data modify storage enderface:shop others set from storage enderface:shop trade_data

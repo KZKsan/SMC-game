@@ -16,4 +16,8 @@ execute if data storage sco:config game{friendlyfire:false} run tellraw @a [{"te
 execute if data storage sco:config game{friendlyfire:true} run tellraw @a [{"text": "・フレンドリーファイア: "},{"text": "ON","color": "green"}]
 execute if data storage sco:config game{can_pickup_arrows:false} run tellraw @a [{"text": "・矢の回収: "},{"text": "OFF","color": "gray"}]
 execute if data storage sco:config game{can_pickup_arrows:true} run tellraw @a [{"text": "・矢の回収: "},{"text": "ON","color": "green"}]
+execute if data storage sco:config game{collision:0b} run tellraw @a [{"text": "・衝突判定: "},{"text": "OFF","color": "gray"}]
+execute if data storage sco:config game{collision:1b} run tellraw @a [{"text": "・衝突判定: "},{"text": "ON","color": "green"}]
+execute if data storage sco:config game{collision:2b} run tellraw @a [{"text": "・衝突判定: "},{"text": "敵のみ","color": "dark_purple"}]
+execute if data storage sco:config game{collision:3b} run tellraw @a [{"text": "・衝突判定: "},{"text": "味方のみ","color": "light_purple"}]
 tellraw @a "----------------------------"

@@ -18,62 +18,9 @@
                             "function": "set_lore",
                             "lore": [
                                 "圧倒的な攻撃力を誇るが",
-                                "まともに扱える者は限られている",
-                                "",
-                                {
-                                    "translate": "item.modifiers.mainhand",
-                                    "color": "gray",
-                                    "italic": false
-                                },
-                                [
-                                    {
-                                        "translate": "attribute.name.generic.movement_speed",
-                                        "color": "red",
-                                        "italic": false
-                                    },
-                                    {
-                                        "text": " -40%",
-                                        "color": "red",
-                                        "italic": false
-                                    }
-                                ],
-                                [
-                                    {
-                                        "translate": "attribute.name.generic.attack_speed",
-                                        "color": "red",
-                                        "italic": false
-                                    },
-                                    {
-                                        "text": " -90%",
-                                        "color": "red",
-                                        "italic": false
-                                    }
-                                ],
-                                [
-                                    {
-                                        "translate": "attribute.name.generic.attack_damage",
-                                        "color": "blue",
-                                        "italic": false
-                                    },
-                                    {
-                                        "text": " +14",
-                                        "color": "blue",
-                                        "italic": false
-                                    }
-                                ],
-                                [
-                                    {
-                                        "translate": "attribute.name.generic.knockback_resistance",
-                                        "color": "blue",
-                                        "italic": false
-                                    },
-                                    {
-                                        "text": " +0.3",
-                                        "color": "blue",
-                                        "italic": false
-                                    }
-                                ]
-                            ]
+                                "まともに扱える者は限られている"
+                            ],
+                            "mode": "replace_all"
                         },
                         {
                             "function": "set_attributes",
@@ -82,28 +29,28 @@
                                     "attribute": "generic.movement_speed",
                                     "name": "",
                                     "amount": -0.4,
-                                    "operation": "multiply_total",
+                                    "operation": "add_multiplied_total",
                                     "slot": "mainhand"
                                 },
                                 {
                                     "attribute": "generic.attack_speed",
                                     "name": "",
                                     "amount": -0.9,
-                                    "operation": "multiply_base",
+                                    "operation": "add_multiplied_base",
                                     "slot": "mainhand"
                                 },
                                 {
                                     "attribute": "generic.attack_damage",
                                     "name": "",
                                     "amount": 14,
-                                    "operation": "addition",
+                                    "operation": "add_value",
                                     "slot": "mainhand"
                                 },
                                 {
                                     "attribute": "generic.knockback_resistance",
                                     "name": "",
                                     "amount": 0.3,
-                                    "operation": "addition",
+                                    "operation": "add_value",
                                     "slot": "mainhand"
                                 }
                             ]
@@ -116,8 +63,8 @@
                             }
                         },
                         {
-                            "function": "set_nbt",
-                            "tag": "{HideFlags:2,item_functions:{steel_war_hammer:1b}}"
+                            "function": "set_custom_data",
+                            "tag": "{item_functions:{steel_war_hammer:1b}}"
                         }
                     ]
                 }

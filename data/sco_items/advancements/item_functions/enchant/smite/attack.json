@@ -1,41 +1,5020 @@
 {
     "parent": "sco_items:root",
     "criteria": {
-        "attack": {
+        "000": {
             "trigger": "player_hurt_entity",
             "conditions": {
                 "player": [
                     {
-                        "condition": "entity_properties",
-                        "entity": "this",
-                        "predicate": {
-                            "nbt": "{SelectedItem:{tag:{Enchantments:[{id:\"minecraft:smite\"}]}}}"
-                        }
-                    },
-                    {
-                        "condition": "inverted",
-                        "term": {
-                            "condition": "entity_properties",
-                            "entity": "this",
-                            "predicate": {
-                                "effects": {
-                                    "weakness": {}
-                                }
-                            }
-                        }
-                    },
-                    {
-                        "condition": "inverted",
-                        "term": {
-                            "condition": "entity_properties",
-                            "entity": "this",
-                            "predicate": {
-                                "nbt": "{SelectedItem:{tag:{item_functions:{smite_attack:0b}}}}"
-                            }
-                        }
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
                     }
                 ],
                 "damage": {
+                    "dealt": {
+                        "min": 0.00,
+                        "max": 0.10
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "001": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 0.10,
+                        "max": 0.20
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "002": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 0.20,
+                        "max": 0.30
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "003": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 0.30,
+                        "max": 0.40
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "004": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 0.40,
+                        "max": 0.50
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "005": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 0.50,
+                        "max": 0.60
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "006": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 0.60,
+                        "max": 0.70
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "007": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 0.70,
+                        "max": 0.80
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "008": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 0.80,
+                        "max": 0.90
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "009": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 0.90,
+                        "max": 1.00
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "010": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 1.00,
+                        "max": 1.10
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "011": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 1.10,
+                        "max": 1.20
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "012": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 1.20,
+                        "max": 1.30
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "013": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 1.30,
+                        "max": 1.40
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "014": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 1.40,
+                        "max": 1.50
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "015": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 1.50,
+                        "max": 1.60
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "016": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 1.60,
+                        "max": 1.70
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "017": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 1.70,
+                        "max": 1.80
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "018": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 1.80,
+                        "max": 1.90
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "019": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 1.90,
+                        "max": 2.00
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "020": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 2.00,
+                        "max": 2.10
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "021": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 2.10,
+                        "max": 2.20
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "022": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 2.20,
+                        "max": 2.30
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "023": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 2.30,
+                        "max": 2.40
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "024": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 2.40,
+                        "max": 2.50
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "025": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 2.50,
+                        "max": 2.60
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "026": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 2.60,
+                        "max": 2.70
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "027": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 2.70,
+                        "max": 2.80
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "028": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 2.80,
+                        "max": 2.90
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "029": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 2.90,
+                        "max": 3.00
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "030": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 3.00,
+                        "max": 3.10
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "031": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 3.10,
+                        "max": 3.20
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "032": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 3.20,
+                        "max": 3.30
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "033": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 3.30,
+                        "max": 3.40
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "034": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 3.40,
+                        "max": 3.50
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "035": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 3.50,
+                        "max": 3.60
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "036": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 3.60,
+                        "max": 3.70
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "037": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 3.70,
+                        "max": 3.80
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "038": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 3.80,
+                        "max": 3.90
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "039": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 3.90,
+                        "max": 4.00
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "040": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 4.00,
+                        "max": 4.10
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "041": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 4.10,
+                        "max": 4.20
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "042": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 4.20,
+                        "max": 4.30
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "043": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 4.30,
+                        "max": 4.40
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "044": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 4.40,
+                        "max": 4.50
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "045": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 4.50,
+                        "max": 4.60
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "046": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 4.60,
+                        "max": 4.70
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "047": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 4.70,
+                        "max": 4.80
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "048": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 4.80,
+                        "max": 4.90
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "049": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 4.90,
+                        "max": 5.00
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "050": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 5.00,
+                        "max": 5.10
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "051": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 5.10,
+                        "max": 5.20
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "052": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 5.20,
+                        "max": 5.30
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "053": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 5.30,
+                        "max": 5.40
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "054": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 5.40,
+                        "max": 5.50
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "055": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 5.50,
+                        "max": 5.60
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "056": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 5.60,
+                        "max": 5.70
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "057": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 5.70,
+                        "max": 5.80
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "058": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 5.80,
+                        "max": 5.90
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "059": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 5.90,
+                        "max": 6.00
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "060": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 6.00,
+                        "max": 6.10
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "061": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 6.10,
+                        "max": 6.20
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "062": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 6.20,
+                        "max": 6.30
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "063": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 6.30,
+                        "max": 6.40
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "064": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 6.40,
+                        "max": 6.50
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "065": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 6.50,
+                        "max": 6.60
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "066": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 6.60,
+                        "max": 6.70
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "067": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 6.70,
+                        "max": 6.80
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "068": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 6.80,
+                        "max": 6.90
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "069": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 6.90,
+                        "max": 7.00
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "070": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 7.00,
+                        "max": 7.10
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "071": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 7.10,
+                        "max": 7.20
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "072": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 7.20,
+                        "max": 7.30
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "073": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 7.30,
+                        "max": 7.40
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "074": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 7.40,
+                        "max": 7.50
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "075": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 7.50,
+                        "max": 7.60
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "076": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 7.60,
+                        "max": 7.70
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "077": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 7.70,
+                        "max": 7.80
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "078": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 7.80,
+                        "max": 7.90
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "079": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 7.90,
+                        "max": 8.00
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "080": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 8.00,
+                        "max": 8.10
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "081": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 8.10,
+                        "max": 8.20
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "082": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 8.20,
+                        "max": 8.30
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "083": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 8.30,
+                        "max": 8.40
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "084": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 8.40,
+                        "max": 8.50
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "085": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 8.50,
+                        "max": 8.60
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "086": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 8.60,
+                        "max": 8.70
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "087": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 8.70,
+                        "max": 8.80
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "088": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 8.80,
+                        "max": 8.90
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "089": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 8.90,
+                        "max": 9.00
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "090": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 9.00,
+                        "max": 9.10
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "091": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 9.10,
+                        "max": 9.20
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "092": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 9.20,
+                        "max": 9.30
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "093": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 9.30,
+                        "max": 9.40
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "094": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 9.40,
+                        "max": 9.50
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "095": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 9.50,
+                        "max": 9.60
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "096": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 9.60,
+                        "max": 9.70
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "097": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 9.70,
+                        "max": 9.80
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "098": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 9.80,
+                        "max": 9.90
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "099": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 9.90,
+                        "max": 10.00
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "100": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 10.00,
+                        "max": 10.10
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "101": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 10.10,
+                        "max": 10.20
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "102": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 10.20,
+                        "max": 10.30
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "103": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 10.30,
+                        "max": 10.40
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "104": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 10.40,
+                        "max": 10.50
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "105": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 10.50,
+                        "max": 10.60
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "106": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 10.60,
+                        "max": 10.70
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "107": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 10.70,
+                        "max": 10.80
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "108": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 10.80,
+                        "max": 10.90
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "109": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 10.90,
+                        "max": 11.00
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "110": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 11.00,
+                        "max": 11.10
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "111": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 11.10,
+                        "max": 11.20
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "112": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 11.20,
+                        "max": 11.30
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "113": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 11.30,
+                        "max": 11.40
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "114": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 11.40,
+                        "max": 11.50
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "115": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 11.50,
+                        "max": 11.60
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "116": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 11.60,
+                        "max": 11.70
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "117": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 11.70,
+                        "max": 11.80
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "118": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 11.80,
+                        "max": 11.90
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "119": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 11.90,
+                        "max": 12.00
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "120": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 12.00,
+                        "max": 12.10
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "121": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 12.10,
+                        "max": 12.20
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "122": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 12.20,
+                        "max": 12.30
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "123": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 12.30,
+                        "max": 12.40
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "124": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 12.40,
+                        "max": 12.50
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "125": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 12.50,
+                        "max": 12.60
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "126": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 12.60,
+                        "max": 12.70
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "127": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 12.70,
+                        "max": 12.80
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "128": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 12.80,
+                        "max": 12.90
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "129": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 12.90,
+                        "max": 13.00
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "130": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 13.00,
+                        "max": 13.10
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "131": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 13.10,
+                        "max": 13.20
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "132": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 13.20,
+                        "max": 13.30
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "133": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 13.30,
+                        "max": 13.40
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "134": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 13.40,
+                        "max": 13.50
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "135": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 13.50,
+                        "max": 13.60
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "136": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 13.60,
+                        "max": 13.70
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "137": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 13.70,
+                        "max": 13.80
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "138": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 13.80,
+                        "max": 13.90
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "139": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 13.90,
+                        "max": 14.00
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "140": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 14.00,
+                        "max": 14.10
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "141": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 14.10,
+                        "max": 14.20
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "142": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 14.20,
+                        "max": 14.30
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "143": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 14.30,
+                        "max": 14.40
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "144": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 14.40,
+                        "max": 14.50
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "145": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 14.50,
+                        "max": 14.60
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "146": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 14.60,
+                        "max": 14.70
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "147": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 14.70,
+                        "max": 14.80
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "148": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 14.80,
+                        "max": 14.90
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "149": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 14.90,
+                        "max": 15.00
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "150": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 15.00,
+                        "max": 15.10
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "151": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 15.10,
+                        "max": 15.20
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "152": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 15.20,
+                        "max": 15.30
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "153": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 15.30,
+                        "max": 15.40
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "154": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 15.40,
+                        "max": 15.50
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "155": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 15.50,
+                        "max": 15.60
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "156": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 15.60,
+                        "max": 15.70
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "157": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 15.70,
+                        "max": 15.80
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "158": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 15.80,
+                        "max": 15.90
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "159": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 15.90,
+                        "max": 16.00
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "160": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 16.00,
+                        "max": 16.10
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "161": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 16.10,
+                        "max": 16.20
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "162": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 16.20,
+                        "max": 16.30
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "163": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 16.30,
+                        "max": 16.40
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "164": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 16.40,
+                        "max": 16.50
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "165": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 16.50,
+                        "max": 16.60
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "166": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 16.60,
+                        "max": 16.70
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "167": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 16.70,
+                        "max": 16.80
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "168": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 16.80,
+                        "max": 16.90
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "169": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 16.90,
+                        "max": 17.00
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "170": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 17.00,
+                        "max": 17.10
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "171": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 17.10,
+                        "max": 17.20
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "172": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 17.20,
+                        "max": 17.30
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "173": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 17.30,
+                        "max": 17.40
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "174": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 17.40,
+                        "max": 17.50
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "175": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 17.50,
+                        "max": 17.60
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "176": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 17.60,
+                        "max": 17.70
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "177": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 17.70,
+                        "max": 17.80
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "178": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 17.80,
+                        "max": 17.90
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "179": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 17.90,
+                        "max": 18.00
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "180": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 18.00,
+                        "max": 18.10
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "181": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 18.10,
+                        "max": 18.20
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "182": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 18.20,
+                        "max": 18.30
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "183": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 18.30,
+                        "max": 18.40
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "184": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 18.40,
+                        "max": 18.50
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "185": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 18.50,
+                        "max": 18.60
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "186": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 18.60,
+                        "max": 18.70
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "187": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 18.70,
+                        "max": 18.80
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "188": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 18.80,
+                        "max": 18.90
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "189": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 18.90,
+                        "max": 19.00
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "190": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 19.00,
+                        "max": 19.10
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "191": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 19.10,
+                        "max": 19.20
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "192": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 19.20,
+                        "max": 19.30
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "193": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 19.30,
+                        "max": 19.40
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "194": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 19.40,
+                        "max": 19.50
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "195": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 19.50,
+                        "max": 19.60
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "196": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 19.60,
+                        "max": 19.70
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "197": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 19.70,
+                        "max": 19.80
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "198": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 19.80,
+                        "max": 19.90
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "199": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 19.90,
+                        "max": 20.00
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "200": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "sco_items:item_functions/enchant/smite/attack"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 20.00,
+                        "max": 21.00
+                    },
                     "type": {
                         "tags": [
                             {
@@ -48,7 +5027,32 @@
             }
         }
     },
+    "requirements": [
+        [
+            "000","001","002","003","004","005","006","007","008","009",
+            "010","011","012","013","014","015","016","017","018","019",
+            "020","021","022","023","024","025","026","027","028","029",
+            "030","031","032","033","034","035","036","037","038","039",
+            "040","041","042","043","044","045","046","047","048","049",
+            "050","051","052","053","054","055","056","057","058","059",
+            "060","061","062","063","064","065","066","067","068","069",
+            "070","071","072","073","074","075","076","077","078","079",
+            "080","081","082","083","084","085","086","087","088","089",
+            "090","091","092","093","094","095","096","097","098","099",
+            "100","101","102","103","104","105","106","107","108","109",
+            "110","111","112","113","114","115","116","117","118","119",
+            "120","121","122","123","124","125","126","127","128","129",
+            "130","131","132","133","134","135","136","137","138","139",
+            "140","141","142","143","144","145","146","147","148","149",
+            "150","151","152","153","154","155","156","157","158","159",
+            "160","161","162","163","164","165","166","167","168","169",
+            "170","171","172","173","174","175","176","177","178","179",
+            "180","181","182","183","184","185","186","187","188","189",
+            "190","191","192","193","194","195","196","197","198","199",
+            "200"
+        ]
+    ],
     "rewards": {
-        "function": "sco_items:item_functions/enchant/smite/attack"
+        "function": "sco_items:item_functions/enchant/smite/attack/"
     }
 }

@@ -104,12 +104,14 @@ execute unless data storage sco:config game.show_hp run data modify storage sco:
 execute unless data storage sco:config game.show_enemy_team_name run data modify storage sco:config game.show_enemy_team_name set value true
 execute unless data storage sco:config game.can_team_select run data modify storage sco:config game.can_team_select set value 0b
 execute unless data storage sco:config game.can_pickup_arrows run data modify storage sco:config game.can_pickup_arrows set value 0b
+execute unless data storage sco:config game.collision run data modify storage sco:config game.collision set value 1b
 execute unless data storage sco:config game.join run data modify storage sco:config game.join set value 0b
 execute unless data storage sco:config stage run data modify storage sco:config stage set value "sco_random"
 
 #>
 #@public
 #declare storage sco:input
+#declare storage sco:inventory_histories
 
 
 #>

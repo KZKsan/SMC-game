@@ -1,0 +1,10 @@
+[{
+        "function": "set_damage",
+        "damage": {
+            "type": "storage",
+            "storage": "sco_items:data",
+            "path": "using_damage.damage"
+        },
+        "add": true
+    }
+]

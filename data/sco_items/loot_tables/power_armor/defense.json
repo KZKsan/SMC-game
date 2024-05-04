@@ -18,26 +18,19 @@
                         {
                             "function": "set_lore",
                             "lore": [
-                                "着用者の力をアシストする装備",
-                                "",
-                                {
-                                    "translate": "item.modifiers.chest",
-                                    "color": "gray",
-                                    "italic": false
-                                },
-                                [
-                                    {
-                                        "translate": "attribute.name.generic.armor",
-                                        "color": "blue",
-                                        "italic": false
-                                    },
-                                    {
-                                        "text": " +6",
-                                        "color": "blue",
-                                        "italic": false
-                                    }
-                                ]
-                            ]
+                                "着用者の力をアシストする装備"
+                            ],
+                            "mode": "replace_all"
+                        },
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "trim": {
+                                    "material": "gold",
+                                    "pattern": "wayfinder",
+                                    "show_in_tooltip": false
+                                }
+                            }
                         },
                         {
                             "function": "set_attributes",
@@ -45,7 +38,7 @@
                                 {
                                     "slot": "chest",
                                     "amount": 6,
-                                    "operation": "addition",
+                                    "operation": "add_value",
                                     "attribute": "generic.armor",
                                     "name": ""
                                 }
@@ -56,10 +49,6 @@
                             "enchantments": {
                                 "projectile_protection" :3
                             }
-                        },
-                        {
-                            "function": "set_nbt",
-                            "tag": "{item_functions:{},Trim: {material: \"gold\", pattern: \"wayfinder\"},HideFlags:130}"
                         }
                     ]
                 }

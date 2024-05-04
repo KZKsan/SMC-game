@@ -1,34 +1,37 @@
 {
     "pools": [
-        {
-            "rolls": 1,
-            "entries": [
-                {
-                    "type": "item",
-                    "name": "wooden_sword",
-                    "functions": [
-                        {
-                            "function": "set_name",
-                            "name": [
-                                {
-                                    "text": "すごーい剣",
-                                    "italic": false
-                                }
-                            ]
-                        },
-                        {
-                            "function": "set_enchantments",
-                            "enchantments": {
-                                "sharpness": 10
-                            }
-                        },
-                        {
-                            "function": "set_nbt",
-                            "tag": "{Unbreakable:1b,HideFlags:5}"
-                        }
-                    ]
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "item",
+            "name": "wooden_sword",
+            "functions": [
+              {
+                "function": "set_name",
+                "name": [
+                  {
+                    "text": "すごーい剣",
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "function": "set_enchantments",
+                "enchantments": {
+                  "sharpness": 10
                 }
+              },
+              {
+                "function": "set_components",
+                "components": {
+                  "unbreakable": {}
+                }
+              }
             ]
-        }
+          }
+        ]
+      }
     ]
-}
+  }
+  

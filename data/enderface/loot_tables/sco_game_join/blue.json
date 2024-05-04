@@ -1,0 +1,28 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "blue_wool",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": {
+                                "text": "Blueチームに参加",
+                                "color": "blue",
+                                "bold": false,
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "set_custom_data",
+                            "tag": "{enderface_item:1b}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

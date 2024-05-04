@@ -1,0 +1,24 @@
+[
+    {
+        "function": "set_name",
+        "name": {
+            "translate": "enderface.icon.stage_select",
+            "fallback": ">ステージ",
+            "italic": false,
+            "color": "white"
+        }
+    },
+    {
+        "function": "set_custom_data",
+        "tag": {
+            "click_events": {
+                "click_sounds": [
+                    {
+                        "sound": "ui.button.click"
+                    }
+                ],
+                "change_gui": "game_settings/stage_select"
+            }
+        }
+    }
+]

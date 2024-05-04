@@ -11,13 +11,40 @@
                             "function": "set_name",
                             "name": {
                                 "text": "休息のポーション",
-                                "italic": false,
-                                "color": "white"
+                                "color": "white",
+                                "italic": false
                             }
                         },
                         {
-                            "function": "set_nbt",
-                            "tag": "{CustomPotionColor:16756471,custom_potion_effects:[{amplifier:2b,duration:200,id:\"regeneration\"},{amplifier:0b,duration:200,id:\"blindness\"},{amplifier:1b,duration:300,id:\"weakness\"},{amplifier:0b,duration:100,id:\"absorption\"}]}"
+                            "function": "set_components",
+                            "components": {
+                                "potion_contents": {
+                                    "custom_color": 16756471,
+                                    "custom_effects": [
+                                        {
+                                            "id": "regeneration",
+                                            "amplifier": 2,
+                                            "duration": 200
+                                        },
+                                        {
+                                            "id": "blindness",
+                                            "amplifier": 0,
+                                            "duration": 200
+                                        },
+                                        {
+                                            "id": "weakness",
+                                            "amplifier": 1,
+                                            "duration": 300
+                                        },
+                                        {
+                                            "id": "absorption",
+                                            "amplifier": 0,
+                                            "duration": 100
+                                        }
+                                    ]
+                                },
+                                "max_stack_size": 4
+                            }
                         }
                     ]
                 }

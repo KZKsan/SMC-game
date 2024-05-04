@@ -17,8 +17,8 @@
 							}
 						},
 						{
-							"function": "set_nbt",
-							"tag": "{enderfaceItem:1b}"
+							"function": "set_custom_data",
+							"tag": "{enderface_item:1b}"
 						}
 					]
 				}

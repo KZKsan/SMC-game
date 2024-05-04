@@ -16,8 +16,14 @@
                             }
                         },
                         {
-                            "function": "set_nbt",
-                            "tag": "{HideFlags:32,enderfaceItem:1b,click_events:{click_sounds:[{sound:\"ui.button.click\"}],change_gui:\"kit_memory/\"}}"
+                            "function": "set_custom_data",
+                            "tag": "{enderface_item:1b,click_events:{click_sounds:[{sound:\"ui.button.click\"}],change_gui:\"kit_memory/\"}}"
+                        },
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "hide_additional_tooltip": {}
+                            }
                         }
                     ]
                 }

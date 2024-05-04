@@ -4,7 +4,9 @@
             "trigger": "player_interacted_with_entity",
             "conditions": {
                 "item": {
-                    "nbt": "{delete_interaction:1b}"
+                    "predicates": {
+                        "custom_data": "{delete_interaction:1b}"
+                    }
                 },
                 "entity": {
                     "type": "interaction"

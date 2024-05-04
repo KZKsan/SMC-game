@@ -20,13 +20,22 @@
 							"lore": [
 								{
 									"text": "アンデッド特攻が付いた武器からのダメージが増える。",
-									"color": "white"
+									"color": "white",
+									"italic": false
 								}
-							]
+							],
+							"mode": "replace_all"
+						}, 
+						{
+							"function": "set_components",
+							"components": {
+								"hide_additional_tooltip": {
+								}
+							}
 						},
 						{
-							"function": "set_nbt",
-							"tag": "{HideFlags:34,enderfaceItem:1b}"
+							"function": "set_custom_data",
+							"tag": "{enderface_item:1b}"
 						}
 					]
 				}

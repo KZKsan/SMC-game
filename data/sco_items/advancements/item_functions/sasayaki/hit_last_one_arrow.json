@@ -7,7 +7,7 @@
                 "damage": {
                     "type": {
                         "direct_entity": {
-                            "nbt": "{item:{tag:{item_functions:{last_one_arrow:1b}}}}"
+                            "nbt": "{item:{components:{\"minecraft:custom_data\":{item_functions:{last_one_arrow:1b}}}}}"
                         }
                     } 
                 }

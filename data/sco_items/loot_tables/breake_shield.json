@@ -4,11 +4,11 @@
       "rolls": 1,
       "entries": [
         {
-          "type": "minecraft:item",
-          "name": "minecraft:shield",
+          "type": "item",
+          "name": "shield",
           "functions": [
             {
-              "function": "minecraft:set_name",
+              "function": "set_name",
               "name": {
                 "text": "ブレークシールド",
                 "color": "dark_red",
@@ -16,7 +16,7 @@
               }
             },
             {
-              "function": "minecraft:set_lore",
+              "function": "set_lore",
               "lore": [
                 {
                   "text": "内部にブースターを搭載した盾",
@@ -40,7 +40,7 @@
                     "color": "#00CCAA",
                     "italic": false
                   },
-                  " A:1, D:1s"
+                  " A:1, D:2s"
                 ],
                 [
                   {
@@ -48,13 +48,36 @@
                     "color": "#00CCAA",
                     "italic": false
                   },
-                  " A:0, D:3s"
+                  " A:0, D:5s"
                 ]
-              ]
+              ],
+              "mode": "replace_all"
             },
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{HideFlags:34,Damage:306,item_functions:{breake_shield:1b},BlockEntityTag:{Base:14,Patterns:[{Color:7,Pattern:\"ss\"},{Color:7,Pattern:\"bri\"},{Color:7,Pattern:\"gra\"}]}}"
+              "function": "set_components",
+              "components": {
+                "hide_additional_tooltip": {},
+                "damage": 296,
+                "base_color": "red",
+                "banner_patterns": [
+                  {
+                    "pattern": "small_stripes",
+                    "color": "gray"
+                  },
+                  {
+                    "pattern": "bricks",
+                    "color": "gray"
+                  },
+                  {
+                    "pattern": "gradient",
+                    "color": "gray"
+                  }
+                ]
+              }
+            },
+            {
+              "function": "set_custom_data",
+              "tag": "{item_functions:{breake_shield:1b}}"
             }
           ]
         }

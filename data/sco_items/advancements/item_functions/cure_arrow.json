@@ -7,7 +7,7 @@
                 "damage": {
                     "type": {
                         "direct_entity": {
-                            "nbt": "{item:{tag:{item_functions:{cure_arrow:true}}}}"
+                            "nbt": "{item:{components:{\"minecrfat:custom_data\":{item_functions:{cure_arrow:true}}}}}"
                         }
                     } 
                 }

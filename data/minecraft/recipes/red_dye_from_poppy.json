@@ -1,11 +1,10 @@
 {
-    "type": "crafting_shapeless",
-    "ingredients": [
-        {
-            "item": "debug_stick"
-        }
-    ],
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "minecraft:debug_stick"
+    },
     "result": {
-        "item": "debug_stick"
+        "id": "minecraft:debug_stick",
+        "count": 1
     }
 }

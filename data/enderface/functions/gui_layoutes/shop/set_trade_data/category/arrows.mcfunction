@@ -14,4 +14,4 @@ function enderface:gui_layoutes/shop/set_trade_data/single_data/brahmadatta
 function enderface:gui_layoutes/shop/set_trade_data/single_data/arrows_table
 function enderface:gui_layoutes/shop/set_trade_data/single_data/firework_rocket
 
-data modify storage sco:shop arrows set from storage sco:shop trade_data
+data modify storage enderface:shop arrows set from storage enderface:shop trade_data

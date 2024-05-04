@@ -27,4 +27,4 @@ function enderface:gui_layoutes/shop/set_trade_data/single_data/potion/magic_bul
 
 function enderface:gui_layoutes/shop/set_trade_data/single_data/potion/mana_kits
 
-data modify storage sco:shop potions set from storage sco:shop trade_data
+data modify storage enderface:shop potions set from storage enderface:shop trade_data

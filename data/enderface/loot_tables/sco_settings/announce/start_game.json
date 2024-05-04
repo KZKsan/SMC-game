@@ -1,0 +1,43 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "goat_horn",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": {
+                                "text": ">開始アナウンス",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore": [
+                                {
+                                    "text": "ワールド内のプレイヤーに開始を知らせます。",
+                                    "color": "aqua",
+                                    "italic": false
+                                }
+                            ],
+                            "mode": "replace_all"
+                        },
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "hide_additional_tooltip": {}
+                            }
+                        },
+                        {
+                            "function": "set_custom_data",
+                            "tag": "{enderface_item:1b}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

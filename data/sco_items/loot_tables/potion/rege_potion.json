@@ -16,8 +16,20 @@
                             }
                         },
                         {
-                            "function": "set_nbt",
-                            "tag": "{CustomPotionColor:16717000,custom_potion_effects:[{id:\"minecraft:regeneration\",amplifier:0b,duration:220}]}"
+                            "function": "set_components",
+                            "components": {
+                                "potion_contents": {
+                                    "custom_color": 16717000,
+                                    "custom_effects": [
+                                        {
+                                            "id": "regeneration",
+                                            "amplifier": 0,
+                                            "duration": 220
+                                        }
+                                    ]
+                                },
+                                "max_stack_size": 4
+                            }
                         }
                     ]
                 }

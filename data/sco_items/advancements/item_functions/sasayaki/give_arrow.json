@@ -9,7 +9,9 @@
                     "items": [
                         "bow"
                     ],
-                    "nbt": "{item_functions:{sasayaki:1b}}"
+                    "predicates": {
+                        "custom_data": "{item_functions:{sasayaki:1b}}"
+                    }
                 }
             }
         }

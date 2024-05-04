@@ -1,0 +1,32 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "jigsaw",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": {
+                                "text": "ランダム",
+                                "italic": false,
+                                "color": "#55AADD"
+                            }
+                        },
+                        {
+                            "function": "set_custom_data",
+                            "tag": {
+                                "click_events": {
+                                    "set_stage": "sco_random"
+                                },
+                                "enderface_item": true
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

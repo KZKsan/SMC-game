@@ -12,7 +12,7 @@
                 "damage": {
                     "type": {
                         "direct_entity": {
-                            "nbt": "{item:{tag:{Enchantments:[{id:\"minecraft:smite\"}]}}}"
+                            "nbt": "{item:{components:{\"minecraft:custom_data\":{item_functions:{smite_attack:0b}}}}}"
                         }
                     }
                 }

@@ -1,138 +1,79 @@
 {
     "pools": [
-        {
-            "rolls": 1,
-            "entries": [
-                {
-                    "type": "item",
-                    "name": "book",
-                    "functions": [
-                        {
-                            "function": "set_name",
-                            "name": {
-                                "text": "風の魔導書",
-                                "italic": false
-                            }
-                        },
-                        {
-                            "function": "set_lore",
-                            "lore": [
-                                "詠唱すると風の力を得ることができるが風邪になる",
-                                "",
-                                {
-                                    "translate": "item.modifiers.mainhand",
-                                    "color": "gray",
-                                    "italic": false
-                                },
-                                [
-                                    {
-                                        "translate": "attribute.name.generic.movement_speed",
-                                        "color": "blue",
-                                        "italic": false
-                                    },
-                                    {
-                                        "text": " +50%",
-                                        "color": "blue",
-                                        "italic": false
-                                    }
-                                ],
-                                [
-                                    {
-                                        "translate": "attribute.name.generic.attack_speed",
-                                        "color": "red",
-                                        "italic": false
-                                    },
-                                    {
-                                        "text": " -70%",
-                                        "color": "red",
-                                        "italic": false
-                                    }
-                                ],
-                                [
-                                    {
-                                        "translate": "attribute.name.generic.armor",
-                                        "color": "blue",
-                                        "italic": false
-                                    },
-                                    {
-                                        "text": " +3",
-                                        "color": "blue",
-                                        "italic": false
-                                    }
-                                ],
-                                [
-                                    {
-                                        "translate": "attribute.name.generic.armor_toughness",
-                                        "color": "blue",
-                                        "italic": false
-                                    },
-                                    {
-                                        "text": " +2",
-                                        "color": "blue",
-                                        "italic": false
-                                    }
-                                ],
-                                [
-                                    {
-                                        "translate": "attribute.name.generic.knockback_resistance",
-                                        "color": "blue",
-                                        "italic": false
-                                    },
-                                    {
-                                        "text": " +0.5",
-                                        "color": "blue",
-                                        "italic": false
-                                    }
-                                ]
-                            ]
-                        },
-                        {
-                            "function": "set_attributes",
-                            "modifiers": [
-                                {
-                                    "slot": "mainhand",
-                                    "amount": 0.5,
-                                    "operation": "multiply_base",
-                                    "attribute": "generic.movement_speed",
-                                    "name": ""
-                                },
-                                {
-                                    "slot": "mainhand",
-                                    "amount": 3,
-                                    "operation": "addition",
-                                    "attribute": "generic.armor",
-                                    "name": ""
-                                },
-                                {
-                                    "slot": "mainhand",
-                                    "amount": 2,
-                                    "operation": "addition",
-                                    "attribute": "generic.armor_toughness",
-                                    "name": ""
-                                },
-                                {
-                                    "slot": "mainhand",
-                                    "amount": 0.5,
-                                    "operation": "addition",
-                                    "attribute": "generic.knockback_resistance",
-                                    "name": ""
-                                },
-                                {
-                                    "slot": "mainhand",
-                                    "amount": -0.7,
-                                    "operation": "multiply_base",
-                                    "attribute": "generic.attack_speed",
-                                    "name": ""
-                                }
-                            ]
-                        },
-                        {
-                            "function": "set_nbt",
-                            "tag": "{Enchantments:[{id:\"knockback\",lvl:1s},{id:\"sharpness\",lvl:5s}],HideFlags:2}"
-                        }
-                    ]
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "item",
+            "name": "book",
+            "functions": [
+              {
+                "function": "set_name",
+                "name": {
+                  "text": "風の魔導書",
+                  "italic": false
                 }
+              },
+              {
+                "function": "set_lore",
+                "lore": [
+                  "詠唱すると風の力を得ることができるが風邪になる"
+                ],
+                "mode": "replace_all"
+              },
+              {
+                "function": "set_attributes",
+                "modifiers": [
+                  {
+                    "attribute": "generic.movement_speed",
+                    "name": "",
+                    "amount": 0.5,
+                    "operation": "add_multiplied_base",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "attribute": "generic.armor",
+                    "name": "",
+                    "amount": 3,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "attribute": "generic.armor_toughness",
+                    "name": "",
+                    "amount": 2,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "attribute": "generic.knockback_resistance",
+                    "name": "",
+                    "amount": 0.5,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "attribute": "generic.attack_speed",
+                    "name": "",
+                    "amount": -0.7,
+                    "operation": "add_multiplied_base",
+                    "slot": "mainhand"
+                  }
+                ]
+              },
+              {
+                "function": "set_components",
+                "components": {
+                  "enchantments": {
+                    "knockback": 1,
+                    "sharpness": 5
+                  }
+                }
+              }
             ]
-        }
+          }
+        ]
+      }
     ]
-}
+  }
+  

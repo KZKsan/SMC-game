@@ -1,0 +1,33 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "iron_sword",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": {
+                                "text": "デスマッチ",
+                                "color": "red",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "toggle_tooltips",
+                            "toggles": {
+                                "attribute_modifiers": false
+                            }
+                        },
+                        {
+                            "function": "set_custom_data",
+                            "tag": "{enderface_item:1b,click_events:{sco_rule_set:\"death_match\"}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -15,8 +15,25 @@
                             }
                         },
                         {
-                            "function": "set_nbt",
-                            "tag": "{CustomPotionColor:2074589,custom_potion_effects:[{amplifier:5b,duration:60,id:\"slowness\"},{amplifier:5b,duration:60,id:\"resistance\"}]}"
+                            "function": "set_components",
+                            "components": {
+                                "potion_contents": {
+                                    "custom_color": 2074589,
+                                    "custom_effects": [
+                                        {
+                                            "id": "slowness",
+                                            "amplifier": 5,
+                                            "duration": 60
+                                        },
+                                        {
+                                            "id": "resistance",
+                                            "amplifier": 5,
+                                            "duration": 60
+                                        }
+                                    ]
+                                },
+                                "max_stack_size": 4
+                            }
                         }
                     ]
                 }

@@ -1,0 +1,27 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "bookshelf",
+					"functions": [
+						{
+							"function": "set_name",
+							"name": {
+								"text": ">SCOガイド",
+								"italic": false,
+								"color": "white"
+							}
+						},
+						{
+							"function": "set_custom_data",
+							"tag": "{click_events:{click_sounds:[{sound:\"ui.button.click\"}],change_gui:\"join_the_game/guide/\"},enderface_item:1b}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

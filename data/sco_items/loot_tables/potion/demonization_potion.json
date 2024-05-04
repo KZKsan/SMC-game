@@ -15,8 +15,30 @@
                             }
                         },
                         {
-                            "function": "set_nbt",
-                            "tag": "{CustomPotionColor:8397608,custom_potion_effects:[{amplifier:0b,duration:300,id:\"strength\"},{amplifier:0b,duration:300,id:\"wither\"},{amplifier:119b,duration:10,id:\"unluck\"}]}"
+                            "function": "set_components",
+                            "components": {
+                                "potion_contents": {
+                                    "custom_color": 8397608,
+                                    "custom_effects": [
+                                        {
+                                            "id": "wither",
+                                            "amplifier": 0,
+                                            "duration": 300
+                                        },
+                                        {
+                                            "id": "strength",
+                                            "amplifier": 0,
+                                            "duration": 300
+                                        },
+                                        {
+                                            "id": "unluck",
+                                            "amplifier": 119,
+                                            "duration": 10
+                                        }
+                                    ]
+                                },
+                                "max_stack_size": 4
+                            }
                         }
                     ]
                 }

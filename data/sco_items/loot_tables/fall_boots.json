@@ -1,68 +1,64 @@
 {
     "pools": [
-        {
-            "rolls": 1,
-            "entries": [
-                {
-                    "type": "item",
-                    "name": "leather_boots",
-                    "functions": [
-                        {
-                            "function": "set_name",
-                            "name": {
-                                "text": "フォールブーツ",
-                                "italic": false
-                            }
-                        },
-                        {
-                            "function": "set_lore",
-                            "lore": [
-                                "",
-                                {
-                                    "translate": "item.modifiers.feet",
-                                    "color": "gray",
-                                    "italic": false
-                                },
-                                [
-                                    {
-                                        "translate": "attribute.name.generic.movement_speed",
-                                        "color": "blue",
-                                        "italic": false
-                                    },
-                                    {
-                                        "text": " +1%",
-                                        "color": "blue",
-                                        "italic": false
-                                    }
-                                ]
-                            ]
-                        },
-                        {
-                            "function": "set_attributes",
-                            "modifiers": [
-                                {
-                                    "attribute": "generic.movement_speed",
-                                    "name": "",
-                                    "amount": 0.01,
-                                    "operation": "multiply_total",
-                                    "slot": "feet"
-                                }
-                            ]
-                        },
-                        {
-                            "function": "set_enchantments",
-                            "enchantments": {
-                                "unbreaking": 10,
-                                "feather_falling": 4
-                            }
-                        },
-                        {
-                            "function": "set_nbt",
-                            "tag": "{HideFlags:66,display:{color:16777215}}"
-                        }
-                    ]
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "item",
+            "name": "leather_boots",
+            "functions": [
+              {
+                "function": "set_name",
+                "name": {
+                  "text": "フォールブーツ",
+                  "italic": false
                 }
+              },
+              {
+                "function": "set_attributes",
+                "modifiers": [
+                  {
+                    "attribute": "generic.movement_speed",
+                    "name": "",
+                    "amount": 0.01,
+                    "operation": "add_multiplied_total",
+                    "slot": "feet"
+                  },
+                  {
+                    "attribute": "generic.armor",
+                    "name": "",
+                    "amount": 1,
+                    "operation": "add_value",
+                    "slot": "feet"
+                  }
+                ]
+              },
+              {
+                "function": "set_enchantments",
+                "enchantments": {
+                  "unbreaking": 10,
+                  "feather_falling": 3
+                }
+              },
+              {
+                "function": "toggle_tooltips",
+                "toggles": {
+                  "dyed_color": false
+                }
+              },
+              {
+                "function": "set_components",
+                "components": {
+                  "dyed_color": {
+                    "rgb": 16777215,
+                    "show_in_tooltip": false
+                  }
+                }
+              }
             ]
-        }
+          }
+        ]
+      }
     ]
-}
+  }
+  

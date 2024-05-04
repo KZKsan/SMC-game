@@ -1,5 +1,3 @@
 #>enderface:gui/processing/game_settings/rule_settings/set
-#@within enderface:gui/processing/game_settings/rule_settings/
-playsound ui.button.click record @s ~ ~ ~ 0.5 1
-data modify storage sco:config stage set value "sco_random"
-data modify storage sco:data stage_tables.random set value []
+#@within 
+return run data modify storage sco:config game.rule set from storage enderface:data gui_intaract.Item.components."minecraft:custom_data".click_events.sco_rule_set

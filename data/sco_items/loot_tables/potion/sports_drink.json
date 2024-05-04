@@ -19,11 +19,24 @@
                             "function": "set_lore",
                             "lore": [
                                 "ア〇エリアス！"
-                            ]
+                            ],
+                            "mode": "replace_all"
                         },
                         {
-                            "function": "set_nbt",
-                            "tag": "{CustomPotionColor:2077951,custom_potion_effects:[{id:\"minecraft:speed\",amplifier:0b,duration:200}]}"
+                            "function": "set_components",
+                            "components": {
+                                "potion_contents": {
+                                    "custom_color": 2077951,
+                                    "custom_effects": [
+                                        {
+                                            "id": "speed",
+                                            "amplifier": 0,
+                                            "duration": 200
+                                        }
+                                    ]
+                                },
+                                "max_stack_size": 4
+                            }
                         }
                     ]
                 }

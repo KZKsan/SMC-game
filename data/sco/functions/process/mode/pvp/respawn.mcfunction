@@ -5,5 +5,5 @@ effect give @s instant_health 60 0
 effect give @s absorption 5 9
 function sco:process/mode/pvp/tp
 function p-storage/get
-data modify storage _ _ set from storage p-storage _[0].data.inventory_histories[{name:"respawn"}].Items
+data modify storage sco:inventory_histories inventory_data.input set from storage p-storage _[0].data.inventory_histories[{name:"respawn"}].Items
 function sco:player/inventory_histories/return_items/

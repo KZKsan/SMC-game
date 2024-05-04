@@ -2,8 +2,6 @@
 #@within tag/function enderface:set_trade_data
 function enderface:gui_layoutes/shop/set_trade_data/reset_data
 
-
-
 function enderface:gui_layoutes/shop/set_trade_data/single_data/stick
 function enderface:gui_layoutes/shop/set_trade_data/single_data/stone_sword
 function enderface:gui_layoutes/shop/set_trade_data/single_data/shield_breaker
@@ -13,6 +11,7 @@ function enderface:gui_layoutes/shop/set_trade_data/single_data/battle_axe
 function enderface:gui_layoutes/shop/set_trade_data/single_data/smash_pickaxe
 function enderface:gui_layoutes/shop/set_trade_data/single_data/poison_spear
 function enderface:gui_layoutes/shop/set_trade_data/single_data/crystal_sword
+function enderface:gui_layoutes/shop/set_trade_data/single_data/throwing_knife
 function enderface:gui_layoutes/shop/set_trade_data/single_data/leg_scraping_axe
 function enderface:gui_layoutes/shop/set_trade_data/single_data/dimensional_sword
 function enderface:gui_layoutes/shop/set_trade_data/single_data/steel_war_hammer
@@ -28,7 +27,8 @@ function enderface:gui_layoutes/shop/set_trade_data/single_data/reaper_scythe
 function enderface:gui_layoutes/shop/set_trade_data/single_data/magic_book
 function enderface:gui_layoutes/shop/set_trade_data/single_data/magic_book_of_wind
 function enderface:gui_layoutes/shop/set_trade_data/single_data/magic_book_of_flame
+function enderface:gui_layoutes/shop/set_trade_data/single_data/magic_book_of_range
 function enderface:gui_layoutes/shop/set_trade_data/single_data/torch
 
 
-data modify storage sco:shop weapons set from storage sco:shop trade_data
+data modify storage enderface:shop weapons set from storage enderface:shop trade_data

@@ -6,16 +6,19 @@
 ## ここにアイテムのコマンドを作っていく(進捗を使う場合も "sco_items:" で作る)
 
 # arrow
-    execute as @e[type=#arrows,nbt={item:{tag:{item_functions:{no_gravity_arrow:1b}}}},tag=!item_function.no_gravity_arrow] run function sco_items:item_functions/no_gravity_arrow/set_data
-    execute as @e[type=#arrows,nbt={item:{tag:{item_functions:{no_gravity_arrow:1b}}}},tag=item_function.no_gravity_arrow] at @s run function sco_items:item_functions/no_gravity_arrow/
-    execute as @e[type=#arrows,nbt={item:{tag:{item_functions:{no_gravity_arrow:1b}}},inGround:1b}] at @s run function sco_items:item_functions/no_gravity_arrow/hit_block
-    execute as @e[type=#arrows,nbt={item:{tag:{item_functions:{small_arrow:1b}}}},tag=!item_function.small_arrow] run function sco_items:item_functions/small_arrow/set_data
-    execute as @e[type=#arrows,nbt={item:{tag:{Enchantments:[{id:"minecraft:piercing"}]}}},tag=!item_function.piercing_arrow] run function sco_items:item_functions/enchant/piercing/set_nbt
-# magic_bullet
-    execute as @e[type=potion,tag=!already] if data entity @s Item.tag.item_functions.set_p_vector run function #sco_items:item_functions/set_p_vector/generic
+    execute as @e[type=#arrows,nbt={item:{components:{"minecraft:custom_data":{item_functions:{no_gravity_arrow:1b}}}}},tag=!item_function.no_gravity_arrow] run function sco_items:item_functions/no_gravity_arrow/set_data
+    execute as @e[type=#arrows,nbt={item:{components:{"minecraft:custom_data":{item_functions:{no_gravity_arrow:1b}}}}},tag=item_function.no_gravity_arrow] at @s run function sco_items:item_functions/no_gravity_arrow/
+    execute as @e[type=#arrows,nbt={item:{components:{"minecraft:custom_data":{item_functions:{no_gravity_arrow:1b}}}},inGround:1b}] at @s run function sco_items:item_functions/no_gravity_arrow/hit_block
+    execute as @e[type=#arrows,nbt={item:{components:{"minecraft:custom_data":{item_functions:{small_arrow:1b}}}}},tag=!item_function.small_arrow] run function sco_items:item_functions/small_arrow/set_data
+    execute as @e[type=#arrows,tag=!item_function.piercing_arrow] if data entity @s item.components."minecraft:enchantments".levels."minecraft:piercing" run function sco_items:item_functions/enchant/piercing/set_nbt
+    execute as @e[type=#arrows,nbt={item:{components:{"minecraft:custom_data":{item_functions:{safety_arrow:1b}}}}},tag=!item_function.safety_arrow] run function sco_items:item_functions/safety_arrow/set_data
 
-    execute as @e[type=area_effect_cloud,tag=!already,nbt={effects:[{id:"minecraft:glowing",amplifier:49b}]}] run function sco_items:item_functions/others/magic_bullet_of_light
-    execute as @e[type=potion,nbt={Item:{tag:{item_functions:{mini_healing_potion:1b}}}}] positioned as @s run function sco_items:item_functions/others/mini_healing_potion
+# magic_bullet
+    execute as @e[type=potion,tag=!already] if data entity @s Item.components."minecraft:custom_data".item_functions.set_p_vector run function #sco_items:item_functions/set_p_vector/generic
+
+    execute as @e[type=area_effect_cloud,tag=!already,nbt={potion_contents:{custom_effects:[{id:"minecraft:glowing",amplifier:49b}]}}] run function sco_items:item_functions/others/magic_bullet_of_light
+    execute as @e[type=potion,nbt={Item:{components:{"minecraft:custom_data":{item_functions:{mini_healing_potion:1b}}}}}] positioned as @s run function sco_items:item_functions/others/mini_healing_potion
+    execute as @e[type=potion,tag=!item_function.alchemy_robe.already] positioned as @s run function sco_items:item_functions/alchemy_robe/set_data
 
 # custom_effect
 
@@ -32,21 +35,21 @@
     scoreboard players remove @a[scores={crows_sorrow_cooldown=1..}] crows_sorrow_cooldown 1
     execute as @a[scores={crows_sorrow_cooldown=96..100}] at @s run function sco_items:item_functions/crows_sorrow/step/particle
     execute as @a[scores={crows_sorrow_cooldown=96}] run function sco_items:item_functions/crows_sorrow/step/slow
-    tag @a[nbt={OnGround:1b},tag=crows_sorrow_step_jump] remove crows_sorrow_step_jump
-    tag @a[scores={crows_sorrow_cooldown=76..98},nbt={OnGround:1b},tag=!crows_sorrow_step] add crows_sorrow_step
-    tag @a[scores={crows_sorrow_cooldown=76..96},tag=!crows_sorrow_step] add crows_sorrow_step
-    execute as @a[scores={crows_sorrow_cooldown=76..100},nbt={OnGround:0b},tag=crows_sorrow_step,tag=!crows_sorrow_step_jump] at @s unless block ~ ~-1 ~ #crows_sorrow/flying run function sco_items:item_functions/crows_sorrow/step/knockback
     execute as @a[scores={crows_sorrow_cooldown=76}] run function sco_items:item_functions/crows_sorrow/step/reset
 
 # hidden_cover
     execute as @e[tag=hidden_cover] at @s run function sco_items:item_functions/hidden_cover/leaves/
 
 # breeake_shield
-    execute as @a[scores={breake_shield_hit=1..},nbt={SelectedItem:{tag:{item_functions:{breake_shield:1b}}}}] run effect give @s speed 1 1
-    execute as @a[scores={breake_shield_hit=1..},nbt={SelectedItem:{tag:{item_functions:{breake_shield:1b}}}}] run effect give @s strength 3 0
-    execute as @a[scores={breake_shield_hit=1..},nbt={Inventory:[{Slot:-106b,tag:{item_functions:{breake_shield:1b}}}]}] run effect give @s speed 1 1
-    execute as @a[scores={breake_shield_hit=1..},nbt={Inventory:[{Slot:-106b,tag:{item_functions:{breake_shield:1b}}}]}] run effect give @s strength 3 0
+    execute as @a[scores={breake_shield_hit=1..}] if items entity @s weapon.* shield[minecraft:custom_data={item_functions:{breake_shield:1b}}] run effect give @s speed 1 2
+    execute as @a[scores={breake_shield_hit=1..}] if items entity @s weapon.* shield[minecraft:custom_data={item_functions:{breake_shield:1b}}] run effect give @s strength 5 0
+
     scoreboard players set @a breake_shield_hit 0
+
+# cure_arrow
+    scoreboard players remove @a[scores={cure_arrow=1..}] cure_arrow 1
+    scoreboard players reset @a[scores={cure_arrow=..0}] cure_arrow
+    execute as @a[scores={cure_arrow=0..},gamemode=!spectator] run effect clear
 
 # score
     ##lightning_hammer
@@ -59,8 +62,3 @@
 #actionbar
     execute as @a[tag=item_actionbar.end_flag,tag=!item_actionbar] run function sco_items:actionbar/end
     execute as @a[tag=item_actionbar] run function sco_items:actionbar/
-
-# cure_arrow
-    scoreboard players remove @a[scores={cure_arrow=1..}] cure_arrow 1
-    scoreboard players reset @a[scores={cure_arrow=..0}] cure_arrow
-    execute as @a[scores={cure_arrow=0..},gamemode=!spectator] run effect clear

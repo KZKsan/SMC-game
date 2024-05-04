@@ -28,8 +28,8 @@
                             ]
                         },
                         {
-                            "function": "set_nbt",
-                            "tag": "{team_color:1b}"
+                            "function": "set_custom_data",
+                            "tag": "{disable_copy:1b}"
                         }
                     ]
                 }

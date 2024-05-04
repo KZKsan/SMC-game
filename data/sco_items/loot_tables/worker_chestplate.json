@@ -11,8 +11,8 @@
                             "function": "set_name",
                             "name": {
                                 "text": "勤労の服",
-                                "italic": false,
-                                "color": "white"
+                                "color": "white",
+                                "italic": false
                             }
                         },
                         {
@@ -22,74 +22,33 @@
                                     "text": "不死者の呪い",
                                     "color": "red",
                                     "italic": false
-                                },
-                                "",
-                                {
-                                    "translate": "item.modifiers.chest",
-                                    "color": "gray",
-                                    "italic": false
-                                },
-                                [
-                                    {
-                                        "translate": "attribute.name.generic.armor",
-                                        "color": "blue",
-                                        "italic": false
-                                    },
-                                    {
-                                        "text": " +5",
-                                        "color": "blue",
-                                        "italic": false
-                                    }
-                                ],
-                                [
-                                    {
-                                        "translate": "attribute.name.generic.armor_toughness",
-                                        "color": "blue",
-                                        "italic": false
-                                    },
-                                    {
-                                        "text": " +3",
-                                        "color": "blue",
-                                        "italic": false
-                                    }
-                                ],
-                                [
-                                    {
-                                        "translate": "attribute.name.generic.attack_speed",
-                                        "color": "blue",
-                                        "italic": false
-                                    },
-                                    {
-                                        "text": " +60%",
-                                        "color": "blue",
-                                        "italic": false
-                                    }
-                                ]
-                            ]
+                                }
+                            ],
+                            "mode": "replace_all"
                         },
                         {
                             "function": "set_attributes",
                             "modifiers": [
                                 {
-                                    "slot": "chest",
-                                    "amount": 5,
-                                    "operation": "addition",
                                     "attribute": "generic.armor",
-                                    "name": ""
+                                    "name": "",
+                                    "amount": 5,
+                                    "operation": "add_value",
+                                    "slot": "chest"
                                 },
                                 {
-                                    "slot": "chest",
-                                    "amount": 3,
-                                    "operation": "addition",
                                     "attribute": "generic.armor_toughness",
-                                    "name": ""
+                                    "name": "",
+                                    "amount": 3,
+                                    "operation": "add_value",
+                                    "slot": "chest"
                                 },
                                 {
-                                    "slot": "chest",
-                                    "amount": 0.6,
-                                    "operation": "multiply_total",
                                     "attribute": "generic.attack_speed",
-                                    "name": ""
+                                    "name": "",
+                                    "amount": 0.6,
+                                    "operation": "add_multiplied_total",
+                                    "slot": "chest"
                                 }
                             ]
                         },
@@ -100,8 +59,23 @@
                             }
                         },
                         {
-                            "function": "set_nbt",
-                            "tag": "{item_functions:{undead:1b},HideFlags:194,display:{color:4144722},Trim: {material: \"minecraft:iron\", pattern: \"minecraft:vex\"}}"
+                            "function": "set_components",
+                            "components": {
+                                "hide_additional_tooltip": {},
+                                "dyed_color": {
+                                    "rgb": 4144722,
+                                    "show_in_tooltip": false
+                                },
+                                "trim": {
+                                    "material": "iron",
+                                    "pattern": "vex",
+                                    "show_in_tooltip": false
+                                }
+                            }
+                        },
+                        {
+                            "function": "set_custom_data",
+                            "tag": "{item_functions:{undead:1b}}"
                         }
                     ]
                 }

@@ -82,6 +82,8 @@ execute if entity @p[tag=rg.block_area] run function sco:regine/block_area/updat
 ##ステージ範囲外
 execute as @a[tag=rg.penalty_area.penalty,tag=!rg.off,predicate=gamemode/as] at @s if data storage sco:data penalty_area.struct.penalty run function sco:regine/penalty_area/penalty/ with storage sco:data penalty_area.struct
 execute as @a[tag=rg.penalty_area.death,tag=!rg.off,predicate=gamemode/as] at @s if data storage sco:data penalty_area.struct.death run function sco:regine/penalty_area/death/ with storage sco:data penalty_area.struct
+execute as @a[tag=rg.penalty_area.death,tag=!rg.off,predicate=gamemode/as] at @s if block ~ -63 ~ command_block{Command:"rg.penalty_area.death"} run damage @s 1000 sco:outside_border
+
 
 ##ロビー
 place template sco:lobby/farm 14 -53 -74

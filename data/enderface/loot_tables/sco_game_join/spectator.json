@@ -1,0 +1,28 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "ender_pearl",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": {
+                                "text": "観戦",
+                                "color": "#808080",
+                                "bold": false,
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "set_custom_data",
+                            "tag": "{enderface_item:1b}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

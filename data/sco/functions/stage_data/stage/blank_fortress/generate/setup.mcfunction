@@ -1,16 +1,16 @@
 #>sco:stage_data/stage/blank_fortress/generate/setup
 #@within sco:stage_data/stage/blank_fortress/generate/
-data remove storage _ data_fetch
+data remove storage sco:data stage_generate.data_fetch
 fill ~ ~ ~ ~7 ~ ~12 air
 fill ~ ~ ~ ~7 ~ ~3 stone_brick_wall
 fill ~ ~ ~9 ~7 ~ ~12 stone_brick_wall
 fill ~-1 ~-1 ~3 ~8 ~-1 ~9 emerald_block
 fill ~ ~-1 ~4 ~7 ~-1 ~8 air
 fill ~-2 ~2 ~ ~39 ~2 ~29 air
-execute store result storage _ data_fetch.seed1 int 1 run random value 1..2147483647 sco:generate_seed
-execute store result storage _ data_fetch.seed2 int 1 run random value 1..2147483647 sco:generate_seed
-function sco:stage_data/stage/blank_fortress/generate/set_pattern/macro/field with storage _ data_fetch
-data remove storage _ data_fetch
+execute store result storage sco:data stage_generate.data_fetch.seed1 int 1 run random value 1..2147483647 sco:generate_seed
+execute store result storage sco:data stage_generate.data_fetch.seed2 int 1 run random value 1..2147483647 sco:generate_seed
+function sco:stage_data/stage/blank_fortress/generate/set_pattern/macro/field with storage sco:data stage_generate.data_fetch
+data remove storage sco:data stage_generate.data_fetch
 
 scoreboard players set #allow_5_walls _ 1
 scoreboard players set #allow_4_walls _ 1
@@ -19,22 +19,22 @@ scoreboard players set #allow_additional_walls _ 1
 scoreboard players set #generate_count _ 0
 
 execute positioned ^-4 ^ ^ run function sco:stage_data/stage/blank_fortress/generate/set_pos/
-execute positioned ^-4 ^ ^ run function sco:stage_data/stage/blank_fortress/generate/set_pattern/macro/0 with storage _ data_fetch
+execute positioned ^-4 ^ ^ run function sco:stage_data/stage/blank_fortress/generate/set_pattern/macro/0 with storage sco:data stage_generate.data_fetch
 scoreboard players add #generate_count _ 1
 
 
 execute positioned ^-4 ^ ^1 run function sco:stage_data/stage/blank_fortress/generate/set_pos/
-execute positioned ^-4 ^ ^1 run function sco:stage_data/stage/blank_fortress/generate/set_pattern/macro/0 with storage _ data_fetch
+execute positioned ^-4 ^ ^1 run function sco:stage_data/stage/blank_fortress/generate/set_pattern/macro/0 with storage sco:data stage_generate.data_fetch
 scoreboard players add #generate_count _ 1
 
 
 execute positioned ^-4 ^ ^2 run function sco:stage_data/stage/blank_fortress/generate/set_pos/
-execute positioned ^-4 ^ ^2 run function sco:stage_data/stage/blank_fortress/generate/set_pattern/macro/0 with storage _ data_fetch
+execute positioned ^-4 ^ ^2 run function sco:stage_data/stage/blank_fortress/generate/set_pattern/macro/0 with storage sco:data stage_generate.data_fetch
 scoreboard players add #generate_count _ 1
 
 
 execute positioned ^-4 ^ ^3 run function sco:stage_data/stage/blank_fortress/generate/set_pos/
-execute positioned ^-4 ^ ^3 run function sco:stage_data/stage/blank_fortress/generate/set_pattern/macro/2 with storage _ data_fetch
+execute positioned ^-4 ^ ^3 run function sco:stage_data/stage/blank_fortress/generate/set_pattern/macro/2 with storage sco:data stage_generate.data_fetch
 scoreboard players add #generate_count _ 1
 
 

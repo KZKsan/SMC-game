@@ -8,7 +8,13 @@
                         "condition": "entity_properties",
                         "entity": "this",
                         "predicate": {
-                            "nbt": "{Inventory:[{Slot:102b,tag:{item_functions:{show_durability:1b}}}]}"
+                            "equipment": {
+                                "chest": {
+                                    "predicates": {
+                                        "custom_data": "{item_functions:{show_durability:1b}}"
+                                    }
+                                }
+                            }
                         }
                     },
                     {

@@ -9,7 +9,13 @@
                         "condition": "entity_properties",
                         "entity": "this",
                         "predicate": {
-                            "nbt": "{SelectedItem:{tag:{item_functions:{poison_spear:1b}}}}"
+                            "equipment": {
+                                "mainhand": {
+                                    "predicates": {
+                                        "custom_data": "{item_functions:{poison_spear:1b}}"
+                                    }
+                                }
+                            }
                         }
                     }
                 ],

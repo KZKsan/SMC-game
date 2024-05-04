@@ -1,0 +1,102 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "leather_chestplate",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": {
+                                "translate": "item.sco_itmes.alchemy_robe",
+                                "fallback": "錬金ローブ",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore": [
+                                {
+                                    "translate": "item.sco_itmes.alchemy_robe.description.0",
+                                    "fallback": "錬金術師による、特別なローブ。"
+                                },
+                                {
+                                    "translate": "item.sco_itmes.alchemy_robe.description.1",
+                                    "fallback": "複数のポーションを投げられる。"
+                                },
+                                "",
+                                [
+                                    {
+                                        "translate": "effect.minecraft.jump_boost",
+                                        "color": "#00CCAA",
+                                        "italic": false
+                                    },
+                                    " A:1, D:2s"
+                                ]
+                            ],
+                            "mode": "replace_all"
+                        },
+                        {
+                            "function": "set_attributes",
+                            "modifiers": [
+                                {
+                                    "attribute": "generic.armor",
+                                    "name": "",
+                                    "amount": 6,
+                                    "operation": "add_value",
+                                    "slot": "chest"
+                                },
+                                {
+                                    "attribute": "generic.movement_speed",
+                                    "name": "",
+                                    "amount": 0.15,
+                                    "operation": "add_multiplied_total",
+                                    "slot": "chest"
+                                }
+                            ]
+                        },
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "multishot": 1,
+                                "unbreaking": 10
+                            }
+                        },
+                        {
+                            "function": "set_custom_data",
+                            "tag": {
+                                "item_functions": {
+                                    "passive_effects": [
+                                        {
+                                            "id": "jump_boost",
+                                            "duration": 2,
+                                            "amplifier": 1,
+                                            "hide_particle": "false"
+                                        }
+                                    ],
+                                    "alchemy_robe" : true
+                                }
+                            }
+                        },
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "dyed_color": {
+                                    "rgb": 16725558,
+                                    "show_in_tooltip": false
+                                },
+                                "trim": {
+                                    "material": "gold",
+                                    "pattern": "host",
+                                    "show_in_tooltip": false
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

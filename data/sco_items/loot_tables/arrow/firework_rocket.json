@@ -8,8 +8,37 @@
                     "name": "firework_rocket",
                     "functions": [
                         {
-                            "function": "set_nbt",
-                            "tag": "{HideFlags:32,Fireworks:{Flight:1b,Explosions:[{Type:0,Colors:[I;16774912,16757504],FadeColors:[I;65382,65535]}]}}"
+                            "function": "set_components",
+                            "components": {
+                                "fireworks": {
+                                    "flight_duration": 1,
+                                    "explosions": [
+                                        {
+                                            "shape": "small_ball",
+                                            "colors": [
+                                                16774912,
+                                                16757504
+                                            ],
+                                            "fade_colors": [
+                                                65382,
+                                                65535
+                                            ]
+                                        },
+                                        {
+                                            "shape": "small_ball",
+                                            "colors": [
+                                                16774912,
+                                                16757504
+                                            ],
+                                            "fade_colors": [
+                                                65382,
+                                                65535
+                                            ]
+                                        }
+                                    ]
+                                },
+                                "hide_additional_tooltip": {}
+                            }
                         }
                     ]
                 }

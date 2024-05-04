@@ -1,0 +1,23 @@
+[
+    {
+        "function": "set_name",
+        "name": {
+            "translate": "enderface.icon.rule_setting",
+            "fallback": ">ゲームルール",
+            "italic": false
+        }
+    },
+    {
+        "function": "set_custom_data",
+        "tag": {
+            "click_events": {
+                "click_sounds": [
+                    {
+                        "sound":"ui.button.click"
+                    }
+                ],
+            "change_gui":"game_settings/rule_settings"
+            }
+        }
+    }
+]

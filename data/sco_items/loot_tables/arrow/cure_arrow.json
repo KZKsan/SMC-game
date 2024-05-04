@@ -25,13 +25,22 @@
 									"color": "gray",
 									"italic": false
 								},
-								"",
 								"対象のバフ・デバフをキュアする"
-							]
+							],
+							"mode": "replace_all"
 						},
 						{
-							"function": "set_nbt",
-							"tag": "{CustomPotionColor:11393254,item_functions:{cure_arrow:true},HideFlags:32}"
+							"function": "set_components",
+							"components": {
+								"potion_contents": {
+									"custom_color": 11393254
+								},
+								"hide_additional_tooltip" : {}
+							}
+						},
+						{
+							"function": "set_custom_data",
+							"tag": "{item_functions:{cure_arrow:true}}"
 						}
 					]
 				}

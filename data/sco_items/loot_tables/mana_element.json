@@ -16,8 +16,10 @@
                             }
                         },
                         {
-                            "function": "set_nbt",
-                            "tag": "{Enchantments:[{}]}"
+                            "function": "set_components",
+                            "components": {
+                                "enchantment_glint_override": true
+                            }
                         }
                     ]
                 }

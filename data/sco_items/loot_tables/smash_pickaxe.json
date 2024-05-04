@@ -17,26 +17,9 @@
                         {
                             "function": "set_lore",
                             "lore": [
-                                "スマッシュ!",
-                                "",
-                                {
-                                    "translate": "item.modifiers.mainhand",
-                                    "color": "gray",
-                                    "italic": false
-                                },
-                                [
-                                    {
-                                        "translate": "attribute.name.generic.attack_damage",
-                                        "color": "red",
-                                        "italic": false
-                                    },
-                                    {
-                                        "text": " -79%",
-                                        "color": "red",
-                                        "italic": false
-                                    }
-                                ]
-                            ]
+                                "スマッシュ!"
+                            ],
+                            "mode": "replace_all"
                         },
                         {
                             "function": "set_attributes",
@@ -45,7 +28,7 @@
                                     "attribute": "generic.attack_damage",
                                     "name": "",
                                     "amount": -0.79,
-                                    "operation": "multiply_total",
+                                    "operation": "add_multiplied_total",
                                     "slot": "mainhand"
                                 }
                             ]
@@ -57,8 +40,8 @@
                             }
                         },
                         {
-                            "function": "set_nbt",
-                            "tag": "{HideFlags:2,itme_functions:{particle:{explode:1b}}}"
+                            "function": "set_custom_data",
+                            "tag": "{item_functions:{particle:{explode:1b}}}"
                         }
                     ]
                 }

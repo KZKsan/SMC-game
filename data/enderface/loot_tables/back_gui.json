@@ -16,8 +16,8 @@
                             }
                         },
                         {
-                            "function": "set_nbt",
-                            "tag": "{click_events:{click_sounds:[{sound:\"ui.button.click\"}],back_gui:1b},enderfaceItem:1b}"
+                            "function": "set_custom_data",
+                            "tag": "{click_events:{click_sounds:[{sound:\"ui.button.click\"}],back_gui:1b},enderface_item:1b}"
                         }
                     ]
                 }

@@ -1,56 +1,61 @@
 {
-  "pools": [
-    {
-      "rolls": 1,
-      "entries": [
+    "pools": [
         {
-          "type": "minecraft:item",
-          "name": "minecraft:torch",
-          "functions": [
-            {
-              "function": "minecraft:set_lore",
-              "lore": [
+            "rolls": 1,
+            "entries": [
                 {
-                  "text": "10時間かけて強化されたたいまつ",
-                  "color": "white"
-                },
-                {
-                  "text": "先端の温度は3000度以上もある",
-                  "color": "white"
+                    "type": "item",
+                    "name": "torch",
+                    "functions": [
+                        {
+                            "function": "set_lore",
+                            "lore": [
+                                {
+                                    "text": "10時間かけて強化されたたいまつ",
+                                    "color": "white"
+                                },
+                                {
+                                    "text": "先端の温度は3000度以上もある",
+                                    "color": "white"
+                                }
+                            ],
+                            "mode": "replace_all"
+                        },
+                        {
+                            "function": "set_name",
+                            "name": {
+                                "text": "たいまつ Lv: 10",
+                                "color": "gold"
+                            }
+                        },
+                        {
+                            "function": "set_attributes",
+                            "modifiers": [
+                                {
+                                    "attribute": "generic.attack_speed",
+                                    "name": "",
+                                    "amount": -0.8,
+                                    "operation": "add_multiplied_total",
+                                    "id": "0d89ea54-d699-4724-be99-2f88fffed205",
+                                    "slot": "mainhand"
+                                }
+                            ]
+                        },
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "sharpness": 4,
+                                "fire_aspect": 1,
+                                "smite": 3
+                            }
+                        },
+                        {
+                            "function": "set_custom_data",
+                            "tag": "{item_functions:{smite_attack:{min_damage:3.5f}}}"
+                        }
+                    ]
                 }
-              ]
-            },
-            {
-              "function": "minecraft:set_name",
-              "name": {
-                "text": "たいまつ Lv: 10",
-                "color": "gold"
-              }
-            },
-            {
-              "function": "minecraft:set_attributes",
-              "modifiers": [
-                {
-                  "attribute": "minecraft:generic.attack_speed",
-                  "name": "",
-                  "amount": -0.8,
-                  "operation": "multiply_total",
-                  "id": "0d89ea54-d699-4724-be99-2f88fffed205",
-                  "slot": "mainhand"
-                }
-              ]
-            },
-            {
-              "function": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:sharpness": 4,
-                "minecraft:fire_aspect": 1,
-                "minecraft:smite": 3
-              }
-            }
-          ]
+            ]
         }
-      ]
-    }
-  ]
+    ]
 }

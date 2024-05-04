@@ -9,7 +9,7 @@
     #declare score_holder #blank_fortress.cannon.require_fuel
 
 scoreboard players set #blank_fortress.cannon.cooltime stage_object.configs 900
-scoreboard players set #blank_fortress.cannon.require_fuel stage_object.configs 5
+scoreboard players set #blank_fortress.cannon.require_fuel stage_object.configs 4
 
 
 #>
@@ -20,7 +20,7 @@ scoreboard players set #blank_fortress.cannon.require_fuel stage_object.configs 
     #declare score_holder #blank_fortress.thunder.require_fuel
 
 scoreboard players set #blank_fortress.thunder.cooltime stage_object.configs 1200
-scoreboard players set #blank_fortress.thunder.require_fuel stage_object.configs 4
+scoreboard players set #blank_fortress.thunder.require_fuel stage_object.configs 3
 
 
 #>
@@ -31,7 +31,7 @@ scoreboard players set #blank_fortress.thunder.require_fuel stage_object.configs
     #declare score_holder #blank_fortress.power_bullet.require_fuel
 
 scoreboard players set #blank_fortress.power_bullet.cooltime stage_object.configs 900
-scoreboard players set #blank_fortress.power_bullet.require_fuel stage_object.configs 6
+scoreboard players set #blank_fortress.power_bullet.require_fuel stage_object.configs 4
 
 
 #>
@@ -42,7 +42,7 @@ scoreboard players set #blank_fortress.power_bullet.require_fuel stage_object.co
     #declare score_holder #blank_fortress.shield.require_fuel
 
 scoreboard players set #blank_fortress.shield.cooltime stage_object.configs 1200
-scoreboard players set #blank_fortress.shield.require_fuel stage_object.configs 3
+scoreboard players set #blank_fortress.shield.require_fuel stage_object.configs 2
 
 
 #>
@@ -53,7 +53,7 @@ scoreboard players set #blank_fortress.shield.require_fuel stage_object.configs 
     #declare score_holder #blank_fortress.boost.require_fuel
 
 scoreboard players set #blank_fortress.boost.cooltime stage_object.configs 1200
-scoreboard players set #blank_fortress.boost.require_fuel stage_object.configs 3
+scoreboard players set #blank_fortress.boost.require_fuel stage_object.configs 2
 
 
 #>
@@ -61,5 +61,7 @@ scoreboard players set #blank_fortress.boost.require_fuel stage_object.configs 3
 #@within sco:stage_data/stage/blank_fortress/object/pickup_coal/**
 #@private
     #declare score_holder #blank_fortress.pickup_coal.cooltime
+    #declare score_holder #blank_fortress.pickup_coal.last_cooltime
 
 scoreboard players set #blank_fortress.pickup_coal.cooltime stage_object.configs 500
+scoreboard players set #blank_fortress.pickup_coal.last_cooltime stage_object.configs 60

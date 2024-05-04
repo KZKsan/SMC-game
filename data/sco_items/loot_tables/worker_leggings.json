@@ -11,8 +11,8 @@
                             "function": "set_name",
                             "name": {
                                 "text": "勤労のズボン",
-                                "italic": false,
-                                "color": "white"
+                                "color": "white",
+                                "italic": false
                             }
                         },
                         {
@@ -22,74 +22,33 @@
                                     "text": "不死者の呪い",
                                     "color": "red",
                                     "italic": false
-                                },
-                                "",
-                                {
-                                    "translate": "item.modifiers.legs",
-                                    "color": "gray",
-                                    "italic": false
-                                },
-                                [
-                                    {
-                                        "translate": "attribute.name.generic.armor",
-                                        "color": "blue",
-                                        "italic": false
-                                    },
-                                    {
-                                        "text": " +3",
-                                        "color": "blue",
-                                        "italic": false
-                                    }
-                                ],
-                                [
-                                    {
-                                        "translate": "attribute.name.generic.armor_toughness",
-                                        "color": "blue",
-                                        "italic": false
-                                    },
-                                    {
-                                        "text": " +3",
-                                        "color": "blue",
-                                        "italic": false
-                                    }
-                                ],
-                                [
-                                    {
-                                        "translate": "attribute.name.generic.movement_speed",
-                                        "color": "blue",
-                                        "italic": false
-                                    },
-                                    {
-                                        "text": " +50%",
-                                        "color": "blue",
-                                        "italic": false
-                                    }
-                                ]
-                            ]
+                                }
+                            ],
+                            "mode": "replace_all"
                         },
                         {
                             "function": "set_attributes",
                             "modifiers": [
                                 {
-                                    "slot": "legs",
-                                    "amount": 3,
-                                    "operation": "addition",
                                     "attribute": "generic.armor",
-                                    "name": ""
-                                },
-                                {
-                                    "slot": "legs",
+                                    "name": "",
                                     "amount": 3,
-                                    "operation": "addition",
-                                    "attribute": "generic.armor_toughness",
-                                    "name": ""
+                                    "operation": "add_value",
+                                    "slot": "legs"
                                 },
                                 {
-                                    "slot": "legs",
-                                    "amount": 0.5,
-                                    "operation": "multiply_total",
+                                    "attribute": "generic.armor_toughness",
+                                    "name": "",
+                                    "amount": 3,
+                                    "operation": "add_value",
+                                    "slot": "legs"
+                                },
+                                {
                                     "attribute": "generic.movement_speed",
-                                    "name": ""
+                                    "name": "",
+                                    "amount": 0.5,
+                                    "operation": "add_multiplied_total",
+                                    "slot": "legs"
                                 }
                             ]
                         },
@@ -100,8 +59,18 @@
                             }
                         },
                         {
-                            "function": "set_nbt",
-                            "tag": "{item_functions:{undead:1b},HideFlags:66,display:{color:4144722}}"
+                            "function": "set_components",
+                            "components": {
+                                "hide_additional_tooltip": {},
+                                "dyed_color": {
+                                    "rgb": 4144722,
+                                    "show_in_tooltip": false
+                                }
+                            }
+                        },
+                        {
+                            "function": "set_custom_data",
+                            "tag": "{item_functions:{undead:1b}}"
                         }
                     ]
                 }
