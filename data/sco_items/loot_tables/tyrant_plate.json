@@ -69,7 +69,7 @@
                                 {
                                     "attribute": "generic.scale",
                                     "name": "",
-                                    "amount": 1,
+                                    "amount": 0.5,
                                     "operation": "add_value",
                                     "slot": "chest"
                                 },
