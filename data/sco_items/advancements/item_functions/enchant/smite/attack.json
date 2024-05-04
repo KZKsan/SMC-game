@@ -13,7 +13,7 @@
                 "damage": {
                     "dealt": {
                         "min": 0.00,
-                        "max": 0.0999999
+                        "max": 0.10
                     },
                     "type": {
                         "tags": [
@@ -38,7 +38,7 @@
                 "damage": {
                     "dealt": {
                         "min": 0.10,
-                        "max": 0.1999999
+                        "max": 0.20
                     },
                     "type": {
                         "tags": [
@@ -63,7 +63,7 @@
                 "damage": {
                     "dealt": {
                         "min": 0.20,
-                        "max": 0.2999999
+                        "max": 0.30
                     },
                     "type": {
                         "tags": [
@@ -88,7 +88,7 @@
                 "damage": {
                     "dealt": {
                         "min": 0.30,
-                        "max": 0.3999999
+                        "max": 0.40
                     },
                     "type": {
                         "tags": [
@@ -113,7 +113,7 @@
                 "damage": {
                     "dealt": {
                         "min": 0.40,
-                        "max": 0.4999999
+                        "max": 0.50
                     },
                     "type": {
                         "tags": [
@@ -138,7 +138,7 @@
                 "damage": {
                     "dealt": {
                         "min": 0.50,
-                        "max": 0.5999999
+                        "max": 0.60
                     },
                     "type": {
                         "tags": [
@@ -163,7 +163,7 @@
                 "damage": {
                     "dealt": {
                         "min": 0.60,
-                        "max": 0.6999999
+                        "max": 0.70
                     },
                     "type": {
                         "tags": [
@@ -188,7 +188,7 @@
                 "damage": {
                     "dealt": {
                         "min": 0.70,
-                        "max": 0.7999999
+                        "max": 0.80
                     },
                     "type": {
                         "tags": [
@@ -213,7 +213,7 @@
                 "damage": {
                     "dealt": {
                         "min": 0.80,
-                        "max": 0.8999999
+                        "max": 0.90
                     },
                     "type": {
                         "tags": [
@@ -238,7 +238,7 @@
                 "damage": {
                     "dealt": {
                         "min": 0.90,
-                        "max": 0.9999999
+                        "max": 1.00
                     },
                     "type": {
                         "tags": [
@@ -263,7 +263,7 @@
                 "damage": {
                     "dealt": {
                         "min": 1.00,
-                        "max": 1.0999999
+                        "max": 1.10
                     },
                     "type": {
                         "tags": [
@@ -288,7 +288,7 @@
                 "damage": {
                     "dealt": {
                         "min": 1.10,
-                        "max": 1.1999999
+                        "max": 1.20
                     },
                     "type": {
                         "tags": [
@@ -313,7 +313,7 @@
                 "damage": {
                     "dealt": {
                         "min": 1.20,
-                        "max": 1.2999999
+                        "max": 1.30
                     },
                     "type": {
                         "tags": [
@@ -338,7 +338,7 @@
                 "damage": {
                     "dealt": {
                         "min": 1.30,
-                        "max": 1.3999999
+                        "max": 1.40
                     },
                     "type": {
                         "tags": [
@@ -363,7 +363,7 @@
                 "damage": {
                     "dealt": {
                         "min": 1.40,
-                        "max": 1.4999999
+                        "max": 1.50
                     },
                     "type": {
                         "tags": [
@@ -388,7 +388,7 @@
                 "damage": {
                     "dealt": {
                         "min": 1.50,
-                        "max": 1.5999999
+                        "max": 1.60
                     },
                     "type": {
                         "tags": [
@@ -413,7 +413,7 @@
                 "damage": {
                     "dealt": {
                         "min": 1.60,
-                        "max": 1.6999999
+                        "max": 1.70
                     },
                     "type": {
                         "tags": [
@@ -438,7 +438,7 @@
                 "damage": {
                     "dealt": {
                         "min": 1.70,
-                        "max": 1.7999999
+                        "max": 1.80
                     },
                     "type": {
                         "tags": [
@@ -463,7 +463,7 @@
                 "damage": {
                     "dealt": {
                         "min": 1.80,
-                        "max": 1.8999999
+                        "max": 1.90
                     },
                     "type": {
                         "tags": [
@@ -488,7 +488,7 @@
                 "damage": {
                     "dealt": {
                         "min": 1.90,
-                        "max": 1.9999999
+                        "max": 2.00
                     },
                     "type": {
                         "tags": [
@@ -513,7 +513,7 @@
                 "damage": {
                     "dealt": {
                         "min": 2.00,
-                        "max": 2.0999999
+                        "max": 2.10
                     },
                     "type": {
                         "tags": [
@@ -538,7 +538,7 @@
                 "damage": {
                     "dealt": {
                         "min": 2.10,
-                        "max": 2.1999999
+                        "max": 2.20
                     },
                     "type": {
                         "tags": [
@@ -563,7 +563,7 @@
                 "damage": {
                     "dealt": {
                         "min": 2.20,
-                        "max": 2.2999999
+                        "max": 2.30
                     },
                     "type": {
                         "tags": [
@@ -588,7 +588,7 @@
                 "damage": {
                     "dealt": {
                         "min": 2.30,
-                        "max": 2.3999999
+                        "max": 2.40
                     },
                     "type": {
                         "tags": [
@@ -613,7 +613,7 @@
                 "damage": {
                     "dealt": {
                         "min": 2.40,
-                        "max": 2.4999999
+                        "max": 2.50
                     },
                     "type": {
                         "tags": [
@@ -638,7 +638,7 @@
                 "damage": {
                     "dealt": {
                         "min": 2.50,
-                        "max": 2.5999999
+                        "max": 2.60
                     },
                     "type": {
                         "tags": [
@@ -663,7 +663,7 @@
                 "damage": {
                     "dealt": {
                         "min": 2.60,
-                        "max": 2.6999999
+                        "max": 2.70
                     },
                     "type": {
                         "tags": [
@@ -688,7 +688,7 @@
                 "damage": {
                     "dealt": {
                         "min": 2.70,
-                        "max": 2.7999999
+                        "max": 2.80
                     },
                     "type": {
                         "tags": [
@@ -713,7 +713,7 @@
                 "damage": {
                     "dealt": {
                         "min": 2.80,
-                        "max": 2.8999999
+                        "max": 2.90
                     },
                     "type": {
                         "tags": [
@@ -738,7 +738,7 @@
                 "damage": {
                     "dealt": {
                         "min": 2.90,
-                        "max": 2.9999999
+                        "max": 3.00
                     },
                     "type": {
                         "tags": [
@@ -763,7 +763,7 @@
                 "damage": {
                     "dealt": {
                         "min": 3.00,
-                        "max": 3.0999999
+                        "max": 3.10
                     },
                     "type": {
                         "tags": [
@@ -788,7 +788,7 @@
                 "damage": {
                     "dealt": {
                         "min": 3.10,
-                        "max": 3.1999999
+                        "max": 3.20
                     },
                     "type": {
                         "tags": [
@@ -813,7 +813,7 @@
                 "damage": {
                     "dealt": {
                         "min": 3.20,
-                        "max": 3.2999999
+                        "max": 3.30
                     },
                     "type": {
                         "tags": [
@@ -838,7 +838,7 @@
                 "damage": {
                     "dealt": {
                         "min": 3.30,
-                        "max": 3.3999999
+                        "max": 3.40
                     },
                     "type": {
                         "tags": [
@@ -863,7 +863,7 @@
                 "damage": {
                     "dealt": {
                         "min": 3.40,
-                        "max": 3.4999999
+                        "max": 3.50
                     },
                     "type": {
                         "tags": [
@@ -888,7 +888,7 @@
                 "damage": {
                     "dealt": {
                         "min": 3.50,
-                        "max": 3.5999999
+                        "max": 3.60
                     },
                     "type": {
                         "tags": [
@@ -913,7 +913,7 @@
                 "damage": {
                     "dealt": {
                         "min": 3.60,
-                        "max": 3.6999999
+                        "max": 3.70
                     },
                     "type": {
                         "tags": [
@@ -938,7 +938,7 @@
                 "damage": {
                     "dealt": {
                         "min": 3.70,
-                        "max": 3.7999999
+                        "max": 3.80
                     },
                     "type": {
                         "tags": [
@@ -963,7 +963,7 @@
                 "damage": {
                     "dealt": {
                         "min": 3.80,
-                        "max": 3.8999999
+                        "max": 3.90
                     },
                     "type": {
                         "tags": [
@@ -988,7 +988,7 @@
                 "damage": {
                     "dealt": {
                         "min": 3.90,
-                        "max": 3.9999999
+                        "max": 4.00
                     },
                     "type": {
                         "tags": [
@@ -1013,7 +1013,7 @@
                 "damage": {
                     "dealt": {
                         "min": 4.00,
-                        "max": 4.0999999
+                        "max": 4.10
                     },
                     "type": {
                         "tags": [
@@ -1038,7 +1038,7 @@
                 "damage": {
                     "dealt": {
                         "min": 4.10,
-                        "max": 4.1999999
+                        "max": 4.20
                     },
                     "type": {
                         "tags": [
@@ -1063,7 +1063,7 @@
                 "damage": {
                     "dealt": {
                         "min": 4.20,
-                        "max": 4.2999999
+                        "max": 4.30
                     },
                     "type": {
                         "tags": [
@@ -1088,7 +1088,7 @@
                 "damage": {
                     "dealt": {
                         "min": 4.30,
-                        "max": 4.3999999
+                        "max": 4.40
                     },
                     "type": {
                         "tags": [
@@ -1113,7 +1113,7 @@
                 "damage": {
                     "dealt": {
                         "min": 4.40,
-                        "max": 4.4999999
+                        "max": 4.50
                     },
                     "type": {
                         "tags": [
@@ -1138,7 +1138,7 @@
                 "damage": {
                     "dealt": {
                         "min": 4.50,
-                        "max": 4.5999999
+                        "max": 4.60
                     },
                     "type": {
                         "tags": [
@@ -1163,7 +1163,7 @@
                 "damage": {
                     "dealt": {
                         "min": 4.60,
-                        "max": 4.6999999
+                        "max": 4.70
                     },
                     "type": {
                         "tags": [
@@ -1188,7 +1188,7 @@
                 "damage": {
                     "dealt": {
                         "min": 4.70,
-                        "max": 4.7999999
+                        "max": 4.80
                     },
                     "type": {
                         "tags": [
@@ -1213,7 +1213,7 @@
                 "damage": {
                     "dealt": {
                         "min": 4.80,
-                        "max": 4.8999999
+                        "max": 4.90
                     },
                     "type": {
                         "tags": [
@@ -1238,7 +1238,7 @@
                 "damage": {
                     "dealt": {
                         "min": 4.90,
-                        "max": 4.9999999
+                        "max": 5.00
                     },
                     "type": {
                         "tags": [
@@ -1263,7 +1263,7 @@
                 "damage": {
                     "dealt": {
                         "min": 5.00,
-                        "max": 5.0999999
+                        "max": 5.10
                     },
                     "type": {
                         "tags": [
@@ -1288,7 +1288,7 @@
                 "damage": {
                     "dealt": {
                         "min": 5.10,
-                        "max": 5.1999999
+                        "max": 5.20
                     },
                     "type": {
                         "tags": [
@@ -1313,7 +1313,7 @@
                 "damage": {
                     "dealt": {
                         "min": 5.20,
-                        "max": 5.2999999
+                        "max": 5.30
                     },
                     "type": {
                         "tags": [
@@ -1338,7 +1338,7 @@
                 "damage": {
                     "dealt": {
                         "min": 5.30,
-                        "max": 5.3999999
+                        "max": 5.40
                     },
                     "type": {
                         "tags": [
@@ -1363,7 +1363,7 @@
                 "damage": {
                     "dealt": {
                         "min": 5.40,
-                        "max": 5.4999999
+                        "max": 5.50
                     },
                     "type": {
                         "tags": [
@@ -1388,7 +1388,7 @@
                 "damage": {
                     "dealt": {
                         "min": 5.50,
-                        "max": 5.5999999
+                        "max": 5.60
                     },
                     "type": {
                         "tags": [
@@ -1413,7 +1413,7 @@
                 "damage": {
                     "dealt": {
                         "min": 5.60,
-                        "max": 5.6999999
+                        "max": 5.70
                     },
                     "type": {
                         "tags": [
@@ -1438,7 +1438,7 @@
                 "damage": {
                     "dealt": {
                         "min": 5.70,
-                        "max": 5.7999999
+                        "max": 5.80
                     },
                     "type": {
                         "tags": [
@@ -1463,7 +1463,7 @@
                 "damage": {
                     "dealt": {
                         "min": 5.80,
-                        "max": 5.8999999
+                        "max": 5.90
                     },
                     "type": {
                         "tags": [
@@ -1488,7 +1488,7 @@
                 "damage": {
                     "dealt": {
                         "min": 5.90,
-                        "max": 5.9999999
+                        "max": 6.00
                     },
                     "type": {
                         "tags": [
@@ -1513,7 +1513,7 @@
                 "damage": {
                     "dealt": {
                         "min": 6.00,
-                        "max": 6.0999999
+                        "max": 6.10
                     },
                     "type": {
                         "tags": [
@@ -1538,7 +1538,7 @@
                 "damage": {
                     "dealt": {
                         "min": 6.10,
-                        "max": 6.1999999
+                        "max": 6.20
                     },
                     "type": {
                         "tags": [
@@ -1563,7 +1563,7 @@
                 "damage": {
                     "dealt": {
                         "min": 6.20,
-                        "max": 6.2999999
+                        "max": 6.30
                     },
                     "type": {
                         "tags": [
@@ -1588,7 +1588,7 @@
                 "damage": {
                     "dealt": {
                         "min": 6.30,
-                        "max": 6.3999999
+                        "max": 6.40
                     },
                     "type": {
                         "tags": [
@@ -1613,7 +1613,7 @@
                 "damage": {
                     "dealt": {
                         "min": 6.40,
-                        "max": 6.4999999
+                        "max": 6.50
                     },
                     "type": {
                         "tags": [
@@ -1638,7 +1638,7 @@
                 "damage": {
                     "dealt": {
                         "min": 6.50,
-                        "max": 6.5999999
+                        "max": 6.60
                     },
                     "type": {
                         "tags": [
@@ -1663,7 +1663,7 @@
                 "damage": {
                     "dealt": {
                         "min": 6.60,
-                        "max": 6.6999999
+                        "max": 6.70
                     },
                     "type": {
                         "tags": [
@@ -1688,7 +1688,7 @@
                 "damage": {
                     "dealt": {
                         "min": 6.70,
-                        "max": 6.7999999
+                        "max": 6.80
                     },
                     "type": {
                         "tags": [
@@ -1713,7 +1713,7 @@
                 "damage": {
                     "dealt": {
                         "min": 6.80,
-                        "max": 6.8999999
+                        "max": 6.90
                     },
                     "type": {
                         "tags": [
@@ -1738,7 +1738,7 @@
                 "damage": {
                     "dealt": {
                         "min": 6.90,
-                        "max": 6.9999999
+                        "max": 7.00
                     },
                     "type": {
                         "tags": [
@@ -1763,7 +1763,7 @@
                 "damage": {
                     "dealt": {
                         "min": 7.00,
-                        "max": 7.0999999
+                        "max": 7.10
                     },
                     "type": {
                         "tags": [
@@ -1788,7 +1788,7 @@
                 "damage": {
                     "dealt": {
                         "min": 7.10,
-                        "max": 7.1999999
+                        "max": 7.20
                     },
                     "type": {
                         "tags": [
@@ -1813,7 +1813,7 @@
                 "damage": {
                     "dealt": {
                         "min": 7.20,
-                        "max": 7.2999999
+                        "max": 7.30
                     },
                     "type": {
                         "tags": [
@@ -1838,7 +1838,7 @@
                 "damage": {
                     "dealt": {
                         "min": 7.30,
-                        "max": 7.3999999
+                        "max": 7.40
                     },
                     "type": {
                         "tags": [
@@ -1863,7 +1863,7 @@
                 "damage": {
                     "dealt": {
                         "min": 7.40,
-                        "max": 7.4999999
+                        "max": 7.50
                     },
                     "type": {
                         "tags": [
@@ -1888,7 +1888,7 @@
                 "damage": {
                     "dealt": {
                         "min": 7.50,
-                        "max": 7.5999999
+                        "max": 7.60
                     },
                     "type": {
                         "tags": [
@@ -1913,7 +1913,7 @@
                 "damage": {
                     "dealt": {
                         "min": 7.60,
-                        "max": 7.6999999
+                        "max": 7.70
                     },
                     "type": {
                         "tags": [
@@ -1938,7 +1938,7 @@
                 "damage": {
                     "dealt": {
                         "min": 7.70,
-                        "max": 7.7999999
+                        "max": 7.80
                     },
                     "type": {
                         "tags": [
@@ -1963,7 +1963,7 @@
                 "damage": {
                     "dealt": {
                         "min": 7.80,
-                        "max": 7.8999999
+                        "max": 7.90
                     },
                     "type": {
                         "tags": [
@@ -1988,7 +1988,7 @@
                 "damage": {
                     "dealt": {
                         "min": 7.90,
-                        "max": 7.9999999
+                        "max": 8.00
                     },
                     "type": {
                         "tags": [
@@ -2013,7 +2013,7 @@
                 "damage": {
                     "dealt": {
                         "min": 8.00,
-                        "max": 8.0999999
+                        "max": 8.10
                     },
                     "type": {
                         "tags": [
@@ -2038,7 +2038,7 @@
                 "damage": {
                     "dealt": {
                         "min": 8.10,
-                        "max": 8.1999999
+                        "max": 8.20
                     },
                     "type": {
                         "tags": [
@@ -2063,7 +2063,7 @@
                 "damage": {
                     "dealt": {
                         "min": 8.20,
-                        "max": 8.2999999
+                        "max": 8.30
                     },
                     "type": {
                         "tags": [
@@ -2088,7 +2088,7 @@
                 "damage": {
                     "dealt": {
                         "min": 8.30,
-                        "max": 8.3999999
+                        "max": 8.40
                     },
                     "type": {
                         "tags": [
@@ -2113,7 +2113,7 @@
                 "damage": {
                     "dealt": {
                         "min": 8.40,
-                        "max": 8.4999999
+                        "max": 8.50
                     },
                     "type": {
                         "tags": [
@@ -2138,7 +2138,7 @@
                 "damage": {
                     "dealt": {
                         "min": 8.50,
-                        "max": 8.5999999
+                        "max": 8.60
                     },
                     "type": {
                         "tags": [
@@ -2163,7 +2163,7 @@
                 "damage": {
                     "dealt": {
                         "min": 8.60,
-                        "max": 8.6999999
+                        "max": 8.70
                     },
                     "type": {
                         "tags": [
@@ -2188,7 +2188,7 @@
                 "damage": {
                     "dealt": {
                         "min": 8.70,
-                        "max": 8.7999999
+                        "max": 8.80
                     },
                     "type": {
                         "tags": [
@@ -2213,7 +2213,7 @@
                 "damage": {
                     "dealt": {
                         "min": 8.80,
-                        "max": 8.8999999
+                        "max": 8.90
                     },
                     "type": {
                         "tags": [
@@ -2238,7 +2238,7 @@
                 "damage": {
                     "dealt": {
                         "min": 8.90,
-                        "max": 8.9999999
+                        "max": 9.00
                     },
                     "type": {
                         "tags": [
@@ -2263,7 +2263,7 @@
                 "damage": {
                     "dealt": {
                         "min": 9.00,
-                        "max": 9.0999999
+                        "max": 9.10
                     },
                     "type": {
                         "tags": [
@@ -2288,7 +2288,7 @@
                 "damage": {
                     "dealt": {
                         "min": 9.10,
-                        "max": 9.1999999
+                        "max": 9.20
                     },
                     "type": {
                         "tags": [
@@ -2313,7 +2313,7 @@
                 "damage": {
                     "dealt": {
                         "min": 9.20,
-                        "max": 9.2999999
+                        "max": 9.30
                     },
                     "type": {
                         "tags": [
@@ -2338,7 +2338,7 @@
                 "damage": {
                     "dealt": {
                         "min": 9.30,
-                        "max": 9.3999999
+                        "max": 9.40
                     },
                     "type": {
                         "tags": [
@@ -2363,7 +2363,7 @@
                 "damage": {
                     "dealt": {
                         "min": 9.40,
-                        "max": 9.4999999
+                        "max": 9.50
                     },
                     "type": {
                         "tags": [
@@ -2388,7 +2388,7 @@
                 "damage": {
                     "dealt": {
                         "min": 9.50,
-                        "max": 9.5999999
+                        "max": 9.60
                     },
                     "type": {
                         "tags": [
@@ -2413,7 +2413,7 @@
                 "damage": {
                     "dealt": {
                         "min": 9.60,
-                        "max": 9.6999999
+                        "max": 9.70
                     },
                     "type": {
                         "tags": [
@@ -2438,7 +2438,7 @@
                 "damage": {
                     "dealt": {
                         "min": 9.70,
-                        "max": 9.7999999
+                        "max": 9.80
                     },
                     "type": {
                         "tags": [
@@ -2463,7 +2463,7 @@
                 "damage": {
                     "dealt": {
                         "min": 9.80,
-                        "max": 9.8999999
+                        "max": 9.90
                     },
                     "type": {
                         "tags": [
@@ -2488,7 +2488,7 @@
                 "damage": {
                     "dealt": {
                         "min": 9.90,
-                        "max": 9.9999999
+                        "max": 10.00
                     },
                     "type": {
                         "tags": [
@@ -2513,7 +2513,7 @@
                 "damage": {
                     "dealt": {
                         "min": 10.00,
-                        "max": 10.0999999
+                        "max": 10.10
                     },
                     "type": {
                         "tags": [
@@ -2538,7 +2538,7 @@
                 "damage": {
                     "dealt": {
                         "min": 10.10,
-                        "max": 10.1999999
+                        "max": 10.20
                     },
                     "type": {
                         "tags": [
@@ -2563,7 +2563,7 @@
                 "damage": {
                     "dealt": {
                         "min": 10.20,
-                        "max": 10.2999999
+                        "max": 10.30
                     },
                     "type": {
                         "tags": [
@@ -2588,7 +2588,7 @@
                 "damage": {
                     "dealt": {
                         "min": 10.30,
-                        "max": 10.3999999
+                        "max": 10.40
                     },
                     "type": {
                         "tags": [
@@ -2613,7 +2613,7 @@
                 "damage": {
                     "dealt": {
                         "min": 10.40,
-                        "max": 10.4999999
+                        "max": 10.50
                     },
                     "type": {
                         "tags": [
@@ -2638,7 +2638,7 @@
                 "damage": {
                     "dealt": {
                         "min": 10.50,
-                        "max": 10.5999999
+                        "max": 10.60
                     },
                     "type": {
                         "tags": [
@@ -2663,7 +2663,7 @@
                 "damage": {
                     "dealt": {
                         "min": 10.60,
-                        "max": 10.6999999
+                        "max": 10.70
                     },
                     "type": {
                         "tags": [
@@ -2688,7 +2688,7 @@
                 "damage": {
                     "dealt": {
                         "min": 10.70,
-                        "max": 10.7999999
+                        "max": 10.80
                     },
                     "type": {
                         "tags": [
@@ -2713,7 +2713,7 @@
                 "damage": {
                     "dealt": {
                         "min": 10.80,
-                        "max": 10.8999999
+                        "max": 10.90
                     },
                     "type": {
                         "tags": [
@@ -2738,7 +2738,7 @@
                 "damage": {
                     "dealt": {
                         "min": 10.90,
-                        "max": 10.9999999
+                        "max": 11.00
                     },
                     "type": {
                         "tags": [
@@ -2763,7 +2763,7 @@
                 "damage": {
                     "dealt": {
                         "min": 11.00,
-                        "max": 11.0999999
+                        "max": 11.10
                     },
                     "type": {
                         "tags": [
@@ -2788,7 +2788,7 @@
                 "damage": {
                     "dealt": {
                         "min": 11.10,
-                        "max": 11.1999999
+                        "max": 11.20
                     },
                     "type": {
                         "tags": [
@@ -2813,7 +2813,7 @@
                 "damage": {
                     "dealt": {
                         "min": 11.20,
-                        "max": 11.2999999
+                        "max": 11.30
                     },
                     "type": {
                         "tags": [
@@ -2838,7 +2838,7 @@
                 "damage": {
                     "dealt": {
                         "min": 11.30,
-                        "max": 11.3999999
+                        "max": 11.40
                     },
                     "type": {
                         "tags": [
@@ -2863,7 +2863,7 @@
                 "damage": {
                     "dealt": {
                         "min": 11.40,
-                        "max": 11.4999999
+                        "max": 11.50
                     },
                     "type": {
                         "tags": [
@@ -2888,7 +2888,7 @@
                 "damage": {
                     "dealt": {
                         "min": 11.50,
-                        "max": 11.5999999
+                        "max": 11.60
                     },
                     "type": {
                         "tags": [
@@ -2913,7 +2913,7 @@
                 "damage": {
                     "dealt": {
                         "min": 11.60,
-                        "max": 11.6999999
+                        "max": 11.70
                     },
                     "type": {
                         "tags": [
@@ -2938,7 +2938,7 @@
                 "damage": {
                     "dealt": {
                         "min": 11.70,
-                        "max": 11.7999999
+                        "max": 11.80
                     },
                     "type": {
                         "tags": [
@@ -2963,7 +2963,7 @@
                 "damage": {
                     "dealt": {
                         "min": 11.80,
-                        "max": 11.8999999
+                        "max": 11.90
                     },
                     "type": {
                         "tags": [
@@ -2988,7 +2988,7 @@
                 "damage": {
                     "dealt": {
                         "min": 11.90,
-                        "max": 11.9999999
+                        "max": 12.00
                     },
                     "type": {
                         "tags": [
@@ -3013,7 +3013,7 @@
                 "damage": {
                     "dealt": {
                         "min": 12.00,
-                        "max": 12.0999999
+                        "max": 12.10
                     },
                     "type": {
                         "tags": [
@@ -3038,7 +3038,7 @@
                 "damage": {
                     "dealt": {
                         "min": 12.10,
-                        "max": 12.1999999
+                        "max": 12.20
                     },
                     "type": {
                         "tags": [
@@ -3063,7 +3063,7 @@
                 "damage": {
                     "dealt": {
                         "min": 12.20,
-                        "max": 12.2999999
+                        "max": 12.30
                     },
                     "type": {
                         "tags": [
@@ -3088,7 +3088,7 @@
                 "damage": {
                     "dealt": {
                         "min": 12.30,
-                        "max": 12.3999999
+                        "max": 12.40
                     },
                     "type": {
                         "tags": [
@@ -3113,7 +3113,7 @@
                 "damage": {
                     "dealt": {
                         "min": 12.40,
-                        "max": 12.4999999
+                        "max": 12.50
                     },
                     "type": {
                         "tags": [
@@ -3138,7 +3138,7 @@
                 "damage": {
                     "dealt": {
                         "min": 12.50,
-                        "max": 12.5999999
+                        "max": 12.60
                     },
                     "type": {
                         "tags": [
@@ -3163,7 +3163,7 @@
                 "damage": {
                     "dealt": {
                         "min": 12.60,
-                        "max": 12.6999999
+                        "max": 12.70
                     },
                     "type": {
                         "tags": [
@@ -3188,7 +3188,7 @@
                 "damage": {
                     "dealt": {
                         "min": 12.70,
-                        "max": 12.7999999
+                        "max": 12.80
                     },
                     "type": {
                         "tags": [
@@ -3213,7 +3213,7 @@
                 "damage": {
                     "dealt": {
                         "min": 12.80,
-                        "max": 12.8999999
+                        "max": 12.90
                     },
                     "type": {
                         "tags": [
@@ -3238,7 +3238,7 @@
                 "damage": {
                     "dealt": {
                         "min": 12.90,
-                        "max": 12.9999999
+                        "max": 13.00
                     },
                     "type": {
                         "tags": [
@@ -3263,7 +3263,7 @@
                 "damage": {
                     "dealt": {
                         "min": 13.00,
-                        "max": 13.0999999
+                        "max": 13.10
                     },
                     "type": {
                         "tags": [
@@ -3288,7 +3288,7 @@
                 "damage": {
                     "dealt": {
                         "min": 13.10,
-                        "max": 13.1999999
+                        "max": 13.20
                     },
                     "type": {
                         "tags": [
@@ -3313,7 +3313,7 @@
                 "damage": {
                     "dealt": {
                         "min": 13.20,
-                        "max": 13.2999999
+                        "max": 13.30
                     },
                     "type": {
                         "tags": [
@@ -3338,7 +3338,7 @@
                 "damage": {
                     "dealt": {
                         "min": 13.30,
-                        "max": 13.3999999
+                        "max": 13.40
                     },
                     "type": {
                         "tags": [
@@ -3363,7 +3363,7 @@
                 "damage": {
                     "dealt": {
                         "min": 13.40,
-                        "max": 13.4999999
+                        "max": 13.50
                     },
                     "type": {
                         "tags": [
@@ -3388,7 +3388,7 @@
                 "damage": {
                     "dealt": {
                         "min": 13.50,
-                        "max": 13.5999999
+                        "max": 13.60
                     },
                     "type": {
                         "tags": [
@@ -3413,7 +3413,7 @@
                 "damage": {
                     "dealt": {
                         "min": 13.60,
-                        "max": 13.6999999
+                        "max": 13.70
                     },
                     "type": {
                         "tags": [
@@ -3438,7 +3438,7 @@
                 "damage": {
                     "dealt": {
                         "min": 13.70,
-                        "max": 13.7999999
+                        "max": 13.80
                     },
                     "type": {
                         "tags": [
@@ -3463,7 +3463,7 @@
                 "damage": {
                     "dealt": {
                         "min": 13.80,
-                        "max": 13.8999999
+                        "max": 13.90
                     },
                     "type": {
                         "tags": [
@@ -3488,7 +3488,7 @@
                 "damage": {
                     "dealt": {
                         "min": 13.90,
-                        "max": 13.9999999
+                        "max": 14.00
                     },
                     "type": {
                         "tags": [
@@ -3513,7 +3513,7 @@
                 "damage": {
                     "dealt": {
                         "min": 14.00,
-                        "max": 14.0999999
+                        "max": 14.10
                     },
                     "type": {
                         "tags": [
@@ -3538,7 +3538,7 @@
                 "damage": {
                     "dealt": {
                         "min": 14.10,
-                        "max": 14.1999999
+                        "max": 14.20
                     },
                     "type": {
                         "tags": [
@@ -3563,7 +3563,7 @@
                 "damage": {
                     "dealt": {
                         "min": 14.20,
-                        "max": 14.2999999
+                        "max": 14.30
                     },
                     "type": {
                         "tags": [
@@ -3588,7 +3588,7 @@
                 "damage": {
                     "dealt": {
                         "min": 14.30,
-                        "max": 14.3999999
+                        "max": 14.40
                     },
                     "type": {
                         "tags": [
@@ -3613,7 +3613,7 @@
                 "damage": {
                     "dealt": {
                         "min": 14.40,
-                        "max": 14.4999999
+                        "max": 14.50
                     },
                     "type": {
                         "tags": [
@@ -3638,7 +3638,7 @@
                 "damage": {
                     "dealt": {
                         "min": 14.50,
-                        "max": 14.5999999
+                        "max": 14.60
                     },
                     "type": {
                         "tags": [
@@ -3663,7 +3663,7 @@
                 "damage": {
                     "dealt": {
                         "min": 14.60,
-                        "max": 14.6999999
+                        "max": 14.70
                     },
                     "type": {
                         "tags": [
@@ -3688,7 +3688,7 @@
                 "damage": {
                     "dealt": {
                         "min": 14.70,
-                        "max": 14.7999999
+                        "max": 14.80
                     },
                     "type": {
                         "tags": [
@@ -3713,7 +3713,7 @@
                 "damage": {
                     "dealt": {
                         "min": 14.80,
-                        "max": 14.8999999
+                        "max": 14.90
                     },
                     "type": {
                         "tags": [
@@ -3738,7 +3738,7 @@
                 "damage": {
                     "dealt": {
                         "min": 14.90,
-                        "max": 14.9999999
+                        "max": 15.00
                     },
                     "type": {
                         "tags": [
@@ -3763,7 +3763,7 @@
                 "damage": {
                     "dealt": {
                         "min": 15.00,
-                        "max": 15.0999999
+                        "max": 15.10
                     },
                     "type": {
                         "tags": [
@@ -3788,7 +3788,7 @@
                 "damage": {
                     "dealt": {
                         "min": 15.10,
-                        "max": 15.1999999
+                        "max": 15.20
                     },
                     "type": {
                         "tags": [
@@ -3813,7 +3813,7 @@
                 "damage": {
                     "dealt": {
                         "min": 15.20,
-                        "max": 15.2999999
+                        "max": 15.30
                     },
                     "type": {
                         "tags": [
@@ -3838,7 +3838,7 @@
                 "damage": {
                     "dealt": {
                         "min": 15.30,
-                        "max": 15.3999999
+                        "max": 15.40
                     },
                     "type": {
                         "tags": [
@@ -3863,7 +3863,7 @@
                 "damage": {
                     "dealt": {
                         "min": 15.40,
-                        "max": 15.4999999
+                        "max": 15.50
                     },
                     "type": {
                         "tags": [
@@ -3888,7 +3888,7 @@
                 "damage": {
                     "dealt": {
                         "min": 15.50,
-                        "max": 15.5999999
+                        "max": 15.60
                     },
                     "type": {
                         "tags": [
@@ -3913,7 +3913,7 @@
                 "damage": {
                     "dealt": {
                         "min": 15.60,
-                        "max": 15.6999999
+                        "max": 15.70
                     },
                     "type": {
                         "tags": [
@@ -3938,7 +3938,7 @@
                 "damage": {
                     "dealt": {
                         "min": 15.70,
-                        "max": 15.7999999
+                        "max": 15.80
                     },
                     "type": {
                         "tags": [
@@ -3963,7 +3963,7 @@
                 "damage": {
                     "dealt": {
                         "min": 15.80,
-                        "max": 15.8999999
+                        "max": 15.90
                     },
                     "type": {
                         "tags": [
@@ -3988,7 +3988,7 @@
                 "damage": {
                     "dealt": {
                         "min": 15.90,
-                        "max": 15.9999999
+                        "max": 16.00
                     },
                     "type": {
                         "tags": [
@@ -4013,7 +4013,7 @@
                 "damage": {
                     "dealt": {
                         "min": 16.00,
-                        "max": 16.0999999
+                        "max": 16.10
                     },
                     "type": {
                         "tags": [
@@ -4038,7 +4038,7 @@
                 "damage": {
                     "dealt": {
                         "min": 16.10,
-                        "max": 16.1999999
+                        "max": 16.20
                     },
                     "type": {
                         "tags": [
@@ -4063,7 +4063,7 @@
                 "damage": {
                     "dealt": {
                         "min": 16.20,
-                        "max": 16.2999999
+                        "max": 16.30
                     },
                     "type": {
                         "tags": [
@@ -4088,7 +4088,7 @@
                 "damage": {
                     "dealt": {
                         "min": 16.30,
-                        "max": 16.3999999
+                        "max": 16.40
                     },
                     "type": {
                         "tags": [
@@ -4113,7 +4113,7 @@
                 "damage": {
                     "dealt": {
                         "min": 16.40,
-                        "max": 16.4999999
+                        "max": 16.50
                     },
                     "type": {
                         "tags": [
@@ -4138,7 +4138,7 @@
                 "damage": {
                     "dealt": {
                         "min": 16.50,
-                        "max": 16.5999999
+                        "max": 16.60
                     },
                     "type": {
                         "tags": [
@@ -4163,7 +4163,7 @@
                 "damage": {
                     "dealt": {
                         "min": 16.60,
-                        "max": 16.6999999
+                        "max": 16.70
                     },
                     "type": {
                         "tags": [
@@ -4188,7 +4188,7 @@
                 "damage": {
                     "dealt": {
                         "min": 16.70,
-                        "max": 16.7999999
+                        "max": 16.80
                     },
                     "type": {
                         "tags": [
@@ -4213,7 +4213,7 @@
                 "damage": {
                     "dealt": {
                         "min": 16.80,
-                        "max": 16.8999999
+                        "max": 16.90
                     },
                     "type": {
                         "tags": [
@@ -4238,7 +4238,7 @@
                 "damage": {
                     "dealt": {
                         "min": 16.90,
-                        "max": 16.9999999
+                        "max": 17.00
                     },
                     "type": {
                         "tags": [
@@ -4263,7 +4263,7 @@
                 "damage": {
                     "dealt": {
                         "min": 17.00,
-                        "max": 17.0999999
+                        "max": 17.10
                     },
                     "type": {
                         "tags": [
@@ -4288,7 +4288,7 @@
                 "damage": {
                     "dealt": {
                         "min": 17.10,
-                        "max": 17.1999999
+                        "max": 17.20
                     },
                     "type": {
                         "tags": [
@@ -4313,7 +4313,7 @@
                 "damage": {
                     "dealt": {
                         "min": 17.20,
-                        "max": 17.2999999
+                        "max": 17.30
                     },
                     "type": {
                         "tags": [
@@ -4338,7 +4338,7 @@
                 "damage": {
                     "dealt": {
                         "min": 17.30,
-                        "max": 17.3999999
+                        "max": 17.40
                     },
                     "type": {
                         "tags": [
@@ -4363,7 +4363,7 @@
                 "damage": {
                     "dealt": {
                         "min": 17.40,
-                        "max": 17.4999999
+                        "max": 17.50
                     },
                     "type": {
                         "tags": [
@@ -4388,7 +4388,7 @@
                 "damage": {
                     "dealt": {
                         "min": 17.50,
-                        "max": 17.5999999
+                        "max": 17.60
                     },
                     "type": {
                         "tags": [
@@ -4413,7 +4413,7 @@
                 "damage": {
                     "dealt": {
                         "min": 17.60,
-                        "max": 17.6999999
+                        "max": 17.70
                     },
                     "type": {
                         "tags": [
@@ -4438,7 +4438,7 @@
                 "damage": {
                     "dealt": {
                         "min": 17.70,
-                        "max": 17.7999999
+                        "max": 17.80
                     },
                     "type": {
                         "tags": [
@@ -4463,7 +4463,7 @@
                 "damage": {
                     "dealt": {
                         "min": 17.80,
-                        "max": 17.8999999
+                        "max": 17.90
                     },
                     "type": {
                         "tags": [
@@ -4488,7 +4488,7 @@
                 "damage": {
                     "dealt": {
                         "min": 17.90,
-                        "max": 17.9999999
+                        "max": 18.00
                     },
                     "type": {
                         "tags": [
@@ -4513,7 +4513,7 @@
                 "damage": {
                     "dealt": {
                         "min": 18.00,
-                        "max": 18.0999999
+                        "max": 18.10
                     },
                     "type": {
                         "tags": [
@@ -4538,7 +4538,7 @@
                 "damage": {
                     "dealt": {
                         "min": 18.10,
-                        "max": 18.1999999
+                        "max": 18.20
                     },
                     "type": {
                         "tags": [
@@ -4563,7 +4563,7 @@
                 "damage": {
                     "dealt": {
                         "min": 18.20,
-                        "max": 18.2999999
+                        "max": 18.30
                     },
                     "type": {
                         "tags": [
@@ -4588,7 +4588,7 @@
                 "damage": {
                     "dealt": {
                         "min": 18.30,
-                        "max": 18.3999999
+                        "max": 18.40
                     },
                     "type": {
                         "tags": [
@@ -4613,7 +4613,7 @@
                 "damage": {
                     "dealt": {
                         "min": 18.40,
-                        "max": 18.4999999
+                        "max": 18.50
                     },
                     "type": {
                         "tags": [
@@ -4638,7 +4638,7 @@
                 "damage": {
                     "dealt": {
                         "min": 18.50,
-                        "max": 18.5999999
+                        "max": 18.60
                     },
                     "type": {
                         "tags": [
@@ -4663,7 +4663,7 @@
                 "damage": {
                     "dealt": {
                         "min": 18.60,
-                        "max": 18.6999999
+                        "max": 18.70
                     },
                     "type": {
                         "tags": [
@@ -4688,7 +4688,7 @@
                 "damage": {
                     "dealt": {
                         "min": 18.70,
-                        "max": 18.7999999
+                        "max": 18.80
                     },
                     "type": {
                         "tags": [
@@ -4713,7 +4713,7 @@
                 "damage": {
                     "dealt": {
                         "min": 18.80,
-                        "max": 18.8999999
+                        "max": 18.90
                     },
                     "type": {
                         "tags": [
@@ -4738,7 +4738,7 @@
                 "damage": {
                     "dealt": {
                         "min": 18.90,
-                        "max": 18.9999999
+                        "max": 19.00
                     },
                     "type": {
                         "tags": [
@@ -4763,7 +4763,7 @@
                 "damage": {
                     "dealt": {
                         "min": 19.00,
-                        "max": 19.0999999
+                        "max": 19.10
                     },
                     "type": {
                         "tags": [
@@ -4788,7 +4788,7 @@
                 "damage": {
                     "dealt": {
                         "min": 19.10,
-                        "max": 19.1999999
+                        "max": 19.20
                     },
                     "type": {
                         "tags": [
@@ -4813,7 +4813,7 @@
                 "damage": {
                     "dealt": {
                         "min": 19.20,
-                        "max": 19.2999999
+                        "max": 19.30
                     },
                     "type": {
                         "tags": [
@@ -4838,7 +4838,7 @@
                 "damage": {
                     "dealt": {
                         "min": 19.30,
-                        "max": 19.3999999
+                        "max": 19.40
                     },
                     "type": {
                         "tags": [
@@ -4863,7 +4863,7 @@
                 "damage": {
                     "dealt": {
                         "min": 19.40,
-                        "max": 19.4999999
+                        "max": 19.50
                     },
                     "type": {
                         "tags": [
@@ -4888,7 +4888,7 @@
                 "damage": {
                     "dealt": {
                         "min": 19.50,
-                        "max": 19.5999999
+                        "max": 19.60
                     },
                     "type": {
                         "tags": [
@@ -4913,7 +4913,7 @@
                 "damage": {
                     "dealt": {
                         "min": 19.60,
-                        "max": 19.6999999
+                        "max": 19.70
                     },
                     "type": {
                         "tags": [
@@ -4938,7 +4938,7 @@
                 "damage": {
                     "dealt": {
                         "min": 19.70,
-                        "max": 19.7999999
+                        "max": 19.80
                     },
                     "type": {
                         "tags": [
@@ -4963,7 +4963,7 @@
                 "damage": {
                     "dealt": {
                         "min": 19.80,
-                        "max": 19.8999999
+                        "max": 19.90
                     },
                     "type": {
                         "tags": [
@@ -4988,7 +4988,7 @@
                 "damage": {
                     "dealt": {
                         "min": 19.90,
-                        "max": 19.9999999
+                        "max": 20.00
                     },
                     "type": {
                         "tags": [
@@ -5013,7 +5013,7 @@
                 "damage": {
                     "dealt": {
                         "min": 20.00,
-                        "max": 20.9999999
+                        "max": 21.00
                     },
                     "type": {
                         "tags": [
