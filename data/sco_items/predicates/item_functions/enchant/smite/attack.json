@@ -34,17 +34,5 @@
                 }
             }
         } 
-    },
-    {
-        "condition": "inverted",
-        "term": {
-            "condition": "entity_properties",
-            "entity": "this",
-            "predicate": {
-                "effects": {
-                    "weakness": {}
-                }
-            }
-        }
     }
 ]
