@@ -41,10 +41,9 @@
     execute as @e[tag=hidden_cover] at @s run function sco_items:item_functions/hidden_cover/leaves/
 
 # breeake_shield
-    execute as @a[scores={breake_shield_hit=1..},nbt={SelectedItem:{tag:{item_functions:{breake_shield:1b}}}}] run effect give @s speed 1 2
-    execute as @a[scores={breake_shield_hit=1..},nbt={SelectedItem:{tag:{item_functions:{breake_shield:1b}}}}] run effect give @s strength 6 0
-    execute as @a[scores={breake_shield_hit=1..},nbt={Inventory:[{Slot:-106b,tag:{item_functions:{breake_shield:1b}}}]}] run effect give @s speed 1 1
-    execute as @a[scores={breake_shield_hit=1..},nbt={Inventory:[{Slot:-106b,tag:{item_functions:{breake_shield:1b}}}]}] run effect give @s strength 3 0
+    execute as @a[scores={breake_shield_hit=1..}] if items entity @s weapon.* shield[minecraft:custom_data={item_functions:{breake_shield:1b}}] run effect give @s speed 1 2
+    execute as @a[scores={breake_shield_hit=1..}] if items entity @s weapon.* shield[minecraft:custom_data={item_functions:{breake_shield:1b}}] run effect give @s strength 6 0
+
     scoreboard players set @a breake_shield_hit 0
 
 # cure_arrow
