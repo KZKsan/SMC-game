@@ -38,29 +38,29 @@ execute positioned ^-4 ^ ^3 run function sco:stage_data/stage/blank_fortress/gen
 scoreboard players add #generate_count _ 1
 
 
-execute store result score $add_set _ run random value 0..15
-
-execute if score $add_set _ matches 0 positioned ^-4 ^ ^ run function sco:stage_data/stage/blank_fortress/generate/set_pos/
-execute if score $add_set _ matches 0 run scoreboard players add #generate_count _ 1
-
-execute store result score $add_set _ run random value 0..15
-
-
-execute if score $add_set _ matches 0 positioned ^-4 ^ ^1 run function sco:stage_data/stage/blank_fortress/generate/set_pos/
-execute if score $add_set _ matches 0 run scoreboard players add #generate_count _ 1
-
-execute if score $generate_count _ matches ..5 store result score $add_set _ run random value 0..7
-execute if score $generate_count _ matches 6.. store result score $add_set _ run random value 0..15
-
-
-execute if score $add_set _ matches 0 positioned ^-4 ^ ^2 run function sco:stage_data/stage/blank_fortress/generate/set_pos/
-execute if score $add_set _ matches 0 run scoreboard players add #generate_count _ 1
-
-execute if score $generate_count _ matches ..5 store result score $add_set _ run random value 0..7
-execute if score $generate_count _ matches 6.. store result score $add_set _ run random value 0..15
-
-execute if score $add_set _ matches 0 positioned ^-4 ^ ^3 run function sco:stage_data/stage/blank_fortress/generate/set_pos/
-execute if score $add_set _ matches 0 run scoreboard players add #generate_count _ 1
+#execute store result score $add_set _ run random value 0..15
+#
+#execute if score $add_set _ matches 0 positioned ^-4 ^ ^ run function sco:stage_data/stage/blank_fortress/generate/set_pos/
+#execute if score $add_set _ matches 0 run scoreboard players add #generate_count _ 1
+#
+#execute store result score $add_set _ run random value 0..15
+#
+#
+#execute if score $add_set _ matches 0 positioned ^-4 ^ ^1 run function sco:stage_data/stage/blank_fortress/generate/set_pos/
+#execute if score $add_set _ matches 0 run scoreboard players add #generate_count _ 1
+#
+#execute if score $generate_count _ matches ..5 store result score $add_set _ run random value 0..7
+#execute if score $generate_count _ matches 6.. store result score $add_set _ run random value 0..15
+#
+#
+#execute if score $add_set _ matches 0 positioned ^-4 ^ ^2 run function sco:stage_data/stage/blank_fortress/generate/set_pos/
+#execute if score $add_set _ matches 0 run scoreboard players add #generate_count _ 1
+#
+#execute if score $generate_count _ matches ..5 store result score $add_set _ run random value 0..7
+#execute if score $generate_count _ matches 6.. store result score $add_set _ run random value 0..15
+#
+#execute if score $add_set _ matches 0 positioned ^-4 ^ ^3 run function sco:stage_data/stage/blank_fortress/generate/set_pos/
+#execute if score $add_set _ matches 0 run scoreboard players add #generate_count _ 1
 
 
 execute positioned ^-4 ^-1 ^ run function sco:stage_data/stage/blank_fortress/generate/set_field/storage
