@@ -27,6 +27,7 @@ function enderface:gui_layoutes/shop/set_trade_data/single_data/reaper_scythe
 function enderface:gui_layoutes/shop/set_trade_data/single_data/magic_book
 function enderface:gui_layoutes/shop/set_trade_data/single_data/magic_book_of_wind
 function enderface:gui_layoutes/shop/set_trade_data/single_data/magic_book_of_flame
+function enderface:gui_layoutes/shop/set_trade_data/single_data/magic_book_of_range
 function enderface:gui_layoutes/shop/set_trade_data/single_data/torch
 
 
