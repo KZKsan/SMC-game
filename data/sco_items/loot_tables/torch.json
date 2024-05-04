@@ -25,7 +25,8 @@
                             "function": "set_name",
                             "name": {
                                 "text": "たいまつ Lv: 10",
-                                "color": "gold"
+                                "color": "gold",
+                                "italic": false
                             }
                         },
                         {

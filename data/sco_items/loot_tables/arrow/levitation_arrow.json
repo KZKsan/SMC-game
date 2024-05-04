@@ -28,7 +28,7 @@
           "function": "set_name",
           "name": {
             "text": "浮遊の矢",
-            "italic": true
+            "italic": false
           }
         }
       ]
