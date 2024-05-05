@@ -10,7 +10,7 @@
 						{
 							"function": "set_name",
 							"name": {
-								"text": "安全性",
+								"text": "安全",
 								"italic": false,
 								"color": "light_purple"
 							}
