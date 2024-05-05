@@ -38,13 +38,6 @@
                             "function": "set_attributes",
                             "modifiers": [
                                 {
-                                    "attribute": "generic.armor",
-                                    "name": "",
-                                    "amount": 2,
-                                    "operation": "add_value",
-                                    "slot": "chest"
-                                },
-                                {
                                     "attribute": "generic.max_health",
                                     "name": "",
                                     "amount": 80,
@@ -61,7 +54,7 @@
                                 {
                                     "attribute": "generic.movement_speed",
                                     "name": "",
-                                    "amount": -0.4,
+                                    "amount": -0.5,
                                     "operation": "add_multiplied_total",
                                     "slot": "chest"
                                 },
@@ -96,7 +89,7 @@
                                 {
                                     "attribute": "player.entity_interaction_range",
                                     "name": "",
-                                    "amount": 1,
+                                    "amount": 0.5,
                                     "operation": "add_multiplied_base",
                                     "slot": "chest"
                                 }
