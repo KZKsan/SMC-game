@@ -29,3 +29,5 @@ function blast_motion/lib
 #declare storage _
 
 function trigonometricf/load
+
+forceload add 0 0 1 1
