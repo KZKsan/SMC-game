@@ -1,5 +1,6 @@
 #>math/set_entity/marker
 #@within math/**
-kill 1-0-2-0-1
-summon marker 0.0 0.0 0.0 {Tags:[math_entity,marker],UUID:[I;1,2,0,1]}
-#alias entity math_marker 1-0-2-0-1
+kill @e[tag=math_entity,tag=marker,type=marker]
+summon marker 0.0 0.0 0.0 {Tags:[math_entity,marker]}
+
+#alias entity math_marker @e[tag=math_entity,tag=marker,type=marker,limit=1]

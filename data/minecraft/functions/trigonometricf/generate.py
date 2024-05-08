@@ -8,14 +8,14 @@ data.append('\n#>\n#@public\n#declare storage trigonometricf\n')
 
 data.append('data modify storage trigonometricf sin set value [')
 for i in range(359):
-    data.append(str(int(math.sin(math.radians(i))*1000000)))
+    data.append(str('{:.6f}'.format(math.sin(math.radians(i))))+'d')
     data.append(',')
 del data[-1]
 data.append(']\n')
 
 data.append('data modify storage trigonometricf cos set value [')
 for i in range(359):
-    data.append(str(int(math.cos(math.radians(i))*1000000)))
+    data.append(str('{:.6f}'.format(math.cos(math.radians(i))))+'d')
     data.append(',')
 del data[-1]
 data.append(']\n')

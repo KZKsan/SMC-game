@@ -13,4 +13,4 @@ scoreboard players set #i _ 25
 function minecraft:math/sqrt/loop
 data modify storage _ math.output set from storage _ math.sqrt.x
 kill 1-0-2-0-2
-kill 1-0-2-0-1
+kill @e[tag=math_entity,tag=marker,type=marker,limit=1]
