@@ -1,4 +1,4 @@
-#>sco:process/death_match/020
+#>sco:process/domination/220
 #@within sco:main
 execute if score #runtime game matches ..5 run scoreboard players add #runtime game 1
 execute if score #runtime game matches 5 run function sco:messeges/shop
@@ -15,17 +15,17 @@ execute if score #runtime game matches 1 as @a[scores={regione.penalty_area.pena
 
 
 #プロセスID
-execute if score #runtime game matches 1 run scoreboard players set @a[predicate=sco:team_join] processID 20
+execute if score #runtime game matches 1 run scoreboard players set @a[predicate=sco:team_join] processID 220
 
 #切断処理
 execute as @a[team=spectator,scores={leave_game=1..}] run function sco:player/retune_lobby
-execute as @a[predicate=sco:team_join,team=!spectator] if score @s processID matches 11 run clear @s
-execute as @a[predicate=sco:team_join,team=!spectator] if score @s processID matches 11 run function sco_items:kit/default
-execute as @a[team=red] if score @s processID matches 11 run function sco:tp/respawn/save {name:"shop_red"}
-execute as @a[team=blue] if score @s processID matches 11 run function sco:tp/respawn/save {name:"shop_blue"}
-execute as @a[predicate=sco:team_join,team=!spectator] if score @s processID matches 11 run function sco:tp/respawn/
-execute as @a[scores={regione.penalty_area.penalty.time=1..}] if score @s processID matches 11 run function sco:regine/penalty_area/reset_flag/single
-execute as @a[predicate=sco:team_join,team=!spectator] if score @s processID matches 11 run scoreboard players set @s processID 20
+execute as @a[predicate=sco:team_join,team=!spectator] if score @s processID matches 220 run clear @s
+execute as @a[predicate=sco:team_join,team=!spectator] if score @s processID matches 220 run function sco_items:kit/default
+execute as @a[team=red] if score @s processID matches 220 run function sco:tp/respawn/save {name:"shop_red"}
+execute as @a[team=blue] if score @s processID matches 220 run function sco:tp/respawn/save {name:"shop_blue"}
+execute as @a[predicate=sco:team_join,team=!spectator] if score @s processID matches 220 run function sco:tp/respawn/
+execute as @a[scores={regione.penalty_area.penalty.time=1..}] if score @s processID matches 220 run function sco:regine/penalty_area/reset_flag/single
+execute as @a[predicate=sco:team_join,team=!spectator] if score @s processID matches 220 run scoreboard players set @s processID 220
 #rg
 function sco:process/penalty_area/shop
 tag @a[predicate=sco:team_join,team=!spectator,tag=!rg.drop_item] add rg.drop_item
@@ -51,20 +51,17 @@ tag @a[team=spectator,tag=!spectator] add spectator
 execute if score #runtime game matches 1.. as @a[team=red,scores={respawnTime=1}] run function sco:tp/macro with storage sco:data respawn[{name:"shop_red"}]
 execute if score #runtime game matches 1.. as @a[team=blue,scores={respawnTime=1}] run function sco:tp/macro with storage sco:data respawn[{name:"shop_blue"}]
 
-
 #プロセス終了
 execute if score #mst_time timer matches 003001 run function sco:messeges/shop_end
-execute if score #mst_time timer matches 003001 run function sco:messeges/emerald
 execute if score #mst_time timer matches 003001 as @a[predicate=sco:team_join] at @s run playsound block.note_block.bell record @s ~ ~ ~ 0.6 1 1
 execute if score #mst_time timer matches 003003 as @a[predicate=sco:team_join] at @s run playsound block.note_block.bell record @s ~ ~ ~ 0.6 1 1
 execute if score #mst_time timer matches 003005 as @a[predicate=sco:team_join] at @s run playsound block.note_block.bell record @s ~ ~ ~ 0.6 1 1
 execute if score #mst_time timer matches 001501 run function sco:messeges/shop_end
-execute if score #mst_time timer matches 001501 run function sco:messeges/emerald
 execute if score #mst_time timer matches 001501 as @a[predicate=sco:team_join] at @s run playsound block.note_block.bell record @s ~ ~ ~ 0.6 1 1
 execute if score #mst_time timer matches 001503 as @a[predicate=sco:team_join] at @s run playsound block.note_block.bell record @s ~ ~ ~ 0.6 1 1
 execute if score #mst_time timer matches 001505 as @a[predicate=sco:team_join] at @s run playsound block.note_block.bell record @s ~ ~ ~ 0.6 1 1
 
-execute if score #mst_time timer matches -110 run scoreboard players set #process game 30
+execute if score #mst_time timer matches -110 run scoreboard players set #process game 230
 execute if score #mst_time timer matches -110 run scoreboard players set #runtime game 0
 execute if score #mst_time timer matches -110 run data merge storage timer: {time:120,mode:1,name:'{"text":"残り時間 "}'}
 execute if score #mst_time timer matches -110 store result storage timer: time int 1 run scoreboard players get #game_timer game
