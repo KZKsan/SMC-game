@@ -59,6 +59,9 @@
     ##corpse_daemon
     execute as @a[scores={corpse_daemon.cooldown=1..}] run function sco_items:item_functions/corpse_daemon/cooldown/
 
+# smite_attack
+    tag @a[tag=item_function.smite_attack.already] remove item_function.smite_attack.already
+
 #actionbar
     execute as @a[tag=item_actionbar.end_flag,tag=!item_actionbar] run function sco_items:actionbar/end
     execute as @a[tag=item_actionbar] run function sco_items:actionbar/
