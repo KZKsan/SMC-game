@@ -12,9 +12,10 @@
     execute as @e[type=#arrows,nbt={item:{components:{"minecraft:custom_data":{item_functions:{small_arrow:1b}}}}},tag=!item_function.small_arrow] run function sco_items:item_functions/small_arrow/set_data
     execute as @e[type=#arrows,tag=!item_function.piercing_arrow] if data entity @s item.components."minecraft:enchantments".levels."minecraft:piercing" run function sco_items:item_functions/enchant/piercing/set_nbt
     execute as @e[type=#arrows,nbt={item:{components:{"minecraft:custom_data":{item_functions:{safety_arrow:1b}}}}},tag=!item_function.safety_arrow] run function sco_items:item_functions/safety_arrow/set_data
+    execute as @e[type=#arrows,tag=!item_function.set_p_vector.already] if data entity @s item.components."minecraft:custom_data".item_functions.set_p_vector run function #sco_items:item_functions/set_p_vector/arrow
 
 # magic_bullet
-    execute as @e[type=potion,tag=!already] if data entity @s Item.components."minecraft:custom_data".item_functions.set_p_vector run function #sco_items:item_functions/set_p_vector/generic
+    execute as @e[type=potion,tag=!item_function.set_p_vector.already] if data entity @s Item.components."minecraft:custom_data".item_functions.set_p_vector run function #sco_items:item_functions/set_p_vector/generic
 
     execute as @e[type=area_effect_cloud,tag=!already,nbt={potion_contents:{custom_effects:[{id:"minecraft:glowing",amplifier:49b}]}}] run function sco_items:item_functions/others/magic_bullet_of_light
     execute as @e[type=potion,nbt={Item:{components:{"minecraft:custom_data":{item_functions:{mini_healing_potion:1b}}}}}] positioned as @s run function sco_items:item_functions/others/mini_healing_potion

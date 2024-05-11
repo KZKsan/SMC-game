@@ -10,14 +10,38 @@
                         {
                             "function": "set_name",
                             "name": {
-                                "text": "鋼鉄の矢",
+                                "translate": "item.sco_items.steel_arrow",
+                                "fallback": "鋼鉄の矢",
                                 "italic": false
                             }
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore": [
+                                {
+                                    "translate": "item.sco_items.steel_arrow.description.0",
+                                    "fallback": "少し重い。"
+                                }
+                            ],
+                            "mode": "replace_all"
                         },
                         {
                             "function": "set_enchantments",
                             "enchantments": {
                                 "piercing": 1
+                            }
+                        },
+                        {
+                            "function": "set_custom_data",
+                            "tag": {
+                                "item_functions": {
+                                    "set_p_vector": {
+                                        "type" : "multiply",
+                                        "x": 8500,
+                                        "y": 8500,
+                                        "z": 8500
+                                    }
+                                }
                             }
                         },
                         {
