@@ -35,6 +35,7 @@ execute as @a[team=spectator,tag=!spectator] run function sco:player/team/remove
 tag @a[team=spectator,tag=!spectator] add rg.block_area
 tag @a[team=spectator,tag=!spectator] add spectator
 execute if score #runtime game matches 5 as @a[predicate=sco:team_join] at @s run playsound block.note_block.pling record @s ~ ~ ~ 0.5 1
+execute if score #runtime game matches 5 if score #score.kick_out.flag.scored game matches 1 run function sco:process/kick_out/game_flag/score/input
 execute if score #score_time game matches 1.. run scoreboard players remove #score_time game 1
 execute if score #score_time game matches 1 run function sco:player/team/team_info/team_score/empty
 

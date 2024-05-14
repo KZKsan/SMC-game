@@ -50,6 +50,7 @@ execute if score #mst_time timer matches 010000 run function sco:messeges/1minut
 
 #プロセス終了
 execute if score #runtime game matches 10 as @a[predicate=sco:team_join,team=!spectator,scores={respawnTime=1}] run function sco:process/kick_out/respawn/normal
+execute if score #runtime game matches 10 if score #score.kick_out.flag.scored game matches 1 run function sco:process/kick_out/game_flag/score/input
 execute if score #runtime game matches 10 run function sco:process/kick_out/game_flag/winner/scored
 execute if score #runtime game matches 10 if score #flag game matches 0 run function sco:process/kick_out/game_flag/winner/no_player
 execute if score #score_time game matches 1.. run scoreboard players remove #score_time game 1
