@@ -19,13 +19,13 @@ execute if score #runtime game matches 1 run scoreboard players set @a[predicate
 
 #切断処理
 execute as @a[team=spectator,scores={leave_game=1..}] run function sco:player/retune_lobby
-execute as @a[predicate=sco:team_join,team=!spectator] if score @s processID matches 220 run clear @s
-execute as @a[predicate=sco:team_join,team=!spectator] if score @s processID matches 220 run function sco_items:kit/default
-execute as @a[team=red] if score @s processID matches 220 run function sco:tp/respawn/save {name:"shop_red"}
-execute as @a[team=blue] if score @s processID matches 220 run function sco:tp/respawn/save {name:"shop_blue"}
-execute as @a[predicate=sco:team_join,team=!spectator] if score @s processID matches 220 run function sco:tp/respawn/
-execute as @a[scores={regione.penalty_area.penalty.time=1..}] if score @s processID matches 220 run function sco:regine/penalty_area/reset_flag/single
-execute as @a[predicate=sco:team_join,team=!spectator] if score @s processID matches 220 run scoreboard players set @s processID 220
+execute as @a[predicate=sco:team_join,team=!spectator] if score @s processID matches 211 run clear @s
+execute as @a[predicate=sco:team_join,team=!spectator] if score @s processID matches 211 run function sco_items:kit/default
+execute as @a[team=red] if score @s processID matches 211 run function sco:tp/respawn/save {name:"shop_red"}
+execute as @a[team=blue] if score @s processID matches 211 run function sco:tp/respawn/save {name:"shop_blue"}
+execute as @a[predicate=sco:team_join,team=!spectator] if score @s processID matches 211 run function sco:tp/respawn/
+execute as @a[scores={regione.penalty_area.penalty.time=1..}] if score @s processID matches 211 run function sco:regine/penalty_area/reset_flag/single
+execute as @a[predicate=sco:team_join,team=!spectator] if score @s processID matches 211 run scoreboard players set @s processID 220
 #rg
 function sco:process/penalty_area/shop
 tag @a[predicate=sco:team_join,team=!spectator,tag=!rg.drop_item] add rg.drop_item

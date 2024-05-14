@@ -10,8 +10,8 @@ execute if score #runtime game matches 1 as @a[predicate=sco:team_join,team=!spe
 execute if score #runtime game matches 1 run function sco:player/result/reset_scores/all
 execute if score #runtime game matches 1 run effect give @a[predicate=sco:team_join,team=!spectator] instant_health 100 100
 execute if score #runtime game matches 1 as @a[scores={regione.penalty_area.penalty.time=1..}] run function sco:regine/penalty_area/reset_flag/single
-execute if score #runtime game matches 1 as @a[predicate=sco:team_join,team=!blue] run function sco:tp/respawn/save {name:"stage_red"}
-execute if score #runtime game matches 1 as @a[team=blue] run function sco:tp/respawn/save {name:"stage_blue"}
+execute if score #runtime game matches 1 as @a[predicate=sco:team_join,team=!blue] run function sco:tp/respawn/save {name:"shop_red"}
+execute if score #runtime game matches 1 as @a[team=blue] run function sco:tp/respawn/save {name:"shop_blue"}
 #player_count
 execute if score #runtime game matches 1 run function sco:player/team/team_info/team_score/set_display
 execute if score #runtime game matches 1.. run function sco:player/team/team_info/team_score/
@@ -30,7 +30,7 @@ function sco:process/penalty_area/stage
 
 
 #テレポート
-execute if score #runtime game matches 1 as @a[predicate=sco:team_join] run function sco:tp/respawn/
+#execute if score #runtime game matches 1 as @a[predicate=sco:team_join] run function sco:tp/respawn/
 execute if score #runtime game matches 1 as @a[team=spectator] run function sco:regine/block_area/reset_score
 execute as @a[team=spectator,tag=!spectator] run function sco:regine/block_area/reset_score
 execute as @a[team=spectator,tag=!spectator] run function sco:player/team/spectator
@@ -43,6 +43,7 @@ execute if score #runtime game matches 5 as @a[predicate=sco:team_join] at @s ru
 
 
 #ステージギミック
+execute if score #runtime game matches 3 run function sco:stage_data/stage_object/set_match
 execute if score #runtime game matches 3 if data storage sco:data options{reset:true} run function sco:stage_data/reset
 execute if score #runtime game matches 4.. run function sco:stage_data/stage_object/
 execute if score #runtime game matches 4.. if data storage sco:data options{gimmick:true} run function sco:stage_data/gimmick
@@ -54,14 +55,13 @@ execute if score #runtime game matches 4..
 execute if score #runtime game matches 4.. 
 
 #プロセス終了
-execute if score #runtime game matches 10 as @a[predicate=sco:team_join,team=!spectator,scores={respawnTime=1}] run function sco:process/kick_out/respawn/normal
-execute if score #runtime game matches 10 run function sco:process/kick_out/game_flag/winner/scored
-execute if score #runtime game matches 10 if score #flag game matches 0 run function sco:process/kick_out/game_flag/winner/no_player
+#execute if score #runtime game matches 10 as @a[predicate=sco:team_join,team=!spectator,scores={respawnTime=1}] run function sco:process/kick_out/respawn/normal
+#execute if score #runtime game matches 10 run function sco:process/kick_out/game_flag/winner/scored
+execute if score #runtime game matches 10 if score #flag game matches 0 run function sco:process/domination/game_flag/winner/no_player
 execute if score #score_time game matches 1.. run scoreboard players remove #score_time game 1
-execute if score #score_time game matches 1 run function sco:player/team/team_info/team_score/empty
 
 
-execute if score #mst_time timer matches -109 run function
+#execute if score #mst_time timer matches -109 run function 
 
 execute if score #mst_time timer matches -110 run scoreboard players set #process game 231
 execute if score #mst_time timer matches -110 run scoreboard players set #runtime game 0

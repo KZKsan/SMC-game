@@ -118,6 +118,7 @@ execute unless data storage sco:config stage run data modify storage sco:config 
 # reset stage_tables
 function sco:stage_data/stage_tables/death_match
 function sco:stage_data/stage_tables/kick_out
+function sco:stage_data/stage_tables/domination
 
 #生成用予約エリア
 forceload add -64 48 15 127

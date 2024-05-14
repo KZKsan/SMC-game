@@ -10,3 +10,4 @@ scoreboard players set #runtime game 0
 execute if score #process game matches 30..31 run scoreboard players set #process game 40
 execute if score #process game matches 130..131 run scoreboard players set #score_time game 3
 execute if score #process game matches 130..131 run scoreboard players set #process game 140
+execute if score #process game matches 230..231 run scoreboard players set #process game 240
