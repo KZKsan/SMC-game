@@ -25,7 +25,7 @@
                                         "italic": false
                                     },
                                     {
-                                        "translate": "enchantment.level.5",
+                                        "translate": "enchantment.level.4",
                                         "color": "red",
                                         "italic": false
                                     }
@@ -37,6 +37,13 @@
                         {
                             "function": "set_attributes",
                             "modifiers": [
+                                {
+                                    "attribute": "generic.armor",
+                                    "name": "",
+                                    "amount": 2,
+                                    "operation": "add_value",
+                                    "slot": "chest"
+                                },
                                 {
                                     "attribute": "generic.max_health",
                                     "name": "",
@@ -112,7 +119,7 @@
                         },
                         {
                             "function": "set_custom_data",
-                            "tag": "{item_functions:{enchant:[{id:\"flammability\",lvl:5s}]}}"
+                            "tag": "{item_functions:{enchant:[{id:\"flammability\",lvl:4s}]}}"
                         }
                     ]
                 }
