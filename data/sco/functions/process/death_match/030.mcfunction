@@ -49,7 +49,7 @@ execute if score #mst_time timer matches 010000 run function sco:messeges/1minut
 
 #プロセス終了
 execute if score #runtime game matches 10 as @a[predicate=sco:team_join,team=!spectator] run function sco:process/death_match/respawn/
-execute if score #runtime game matches 10 as @a[predicate=sco:team_join,team=!spectator,gamemode=spectator,tag=!rg.block_area] run function sco:regine/block_area/set_score
+execute if score #runtime game matches 10 as @a[predicate=sco:team_join,team=!spectator,gamemode=spectator,tag=!rg.block_area] run function sco:regine/block_area/reset_score
 execute if score #runtime game matches 10 run tag @a[predicate=sco:team_join,team=!spectator,gamemode=spectator,tag=!rg.block_area] add rg.block_area
 execute if score #runtime game matches 10 run function sco:process/death_match/game_flag/winner/
 

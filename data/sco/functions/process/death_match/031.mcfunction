@@ -30,8 +30,8 @@ execute if score #runtime game matches 1.. as @a[predicate=sco:team_join,team=!s
 execute if score #runtime game matches 1.. run tag @a[predicate=sco:team_join,team=!spectator,gamemode=spectator,tag=!rg.block_area] add rg.block_area
 execute if score #runtime game matches 1 as @a[predicate=sco:team_join] run function sco:tp/respawn/
 execute if score #runtime game matches 1 as @a[team=spectator] run function sco:regine/block_area/reset_score
-execute if score #runtime game matches 1 as @a[predicate=sco:team_join,team=!spectator,gamemode=spectator] run function sco:regine/block_area/set_score
-execute as @a[team=spectator,tag=!spectator] run function sco:regine/block_area/set_score
+execute if score #runtime game matches 1 as @a[predicate=sco:team_join,team=!spectator,gamemode=spectator] run function sco:regine/block_area/reset_score
+execute as @a[team=spectator,tag=!spectator] run function sco:regine/block_area/reset_score
 execute as @a[team=spectator,tag=!spectator] run function sco:player/team/spectator
 execute as @a[team=spectator,tag=!spectator] run function sco:tp/respawn/save {name:"sudden_death_red"}
 execute as @a[team=spectator,tag=!spectator] run function sco:tp/respawn/
