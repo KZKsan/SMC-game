@@ -30,6 +30,7 @@ function enderface:gui_layoutes/shop/set_trade_data/single_data/magic_book_of_wi
 function enderface:gui_layoutes/shop/set_trade_data/single_data/magic_book_of_flame
 function enderface:gui_layoutes/shop/set_trade_data/single_data/magic_book_of_range
 function enderface:gui_layoutes/shop/set_trade_data/single_data/torch
+function enderface:gui_layoutes/shop/set_trade_data/single_data/crush_grove
 
 
 data modify storage enderface:shop weapons set from storage enderface:shop trade_data
