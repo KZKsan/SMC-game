@@ -5,36 +5,42 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "splash_potion",
+                    "name": "dragon_breath",
                     "functions": [
                         {
                             "function": "set_name",
                             "name": {
                                 "text": "ミニヒールポーション",
-                                "italic": false
+                                "italic": false,
+                                "color": "white"
                             }
                         },
                         {
                             "function": "set_lore",
                             "lore": [
-                                "高速でHPを3回復する"
+                                "高速でHPを2回復する"
                             ],
                             "mode": "replace_all"
                         },
                         {
                             "function": "set_components",
                             "components": {
-                                "potion_contents": {
-                                    "custom_color": 16719310,
-                                    "custom_effects": [
+                                "max_stack_size": 4,
+                                "food": {
+                                    "nutrition": 0,
+                                    "saturation": 0,
+                                    "can_always_eat": true,
+                                    "eat_seconds": 0.05,
+                                    "effects": [
                                         {
-                                            "id": "regeneration",
-                                            "amplifier": 3,
-                                            "duration": 20
+                                            "effect": {
+                                                "id": "regeneration",
+                                                "amplifier": 5,
+                                                "duration": 2
+                                            }
                                         }
                                     ]
-                                },
-                                "max_stack_size": 4
+                                }
                             }
                         },
                         {
