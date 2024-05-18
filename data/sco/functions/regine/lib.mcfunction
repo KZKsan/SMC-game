@@ -6,6 +6,8 @@
 #declare tag rg.block_area #外に出れないようにする
 #declare tag rg.penalty_area.penalty #ステージ範囲外を有効化する
 #declare tag rg.penalty_area.death #ステージ外即死を有効化する
+#declare tag rg.penalty_respawn #待機時間を経てリスポーンする
+#declare tag rg.barrier_effects #無敵になる
 #declare tag rg.off #各制限を無効にする
 #>
 #@public

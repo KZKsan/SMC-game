@@ -17,6 +17,8 @@ effect clear @a[predicate=sco:team_join]
 
 # function sco:player/result/mvp/text_mvp
 
+function sco:stage_data/stage_object/set_match
+
 execute as @a[predicate=sco:team_join] run function sco:player/retune_lobby
 function sco:stage_data/generic_settings
 function timer:stop

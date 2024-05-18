@@ -93,6 +93,8 @@ execute as @a[tag=rg.penalty_area.penalty,tag=!rg.off,predicate=gamemode/as] at 
 execute as @a[tag=rg.penalty_area.death,tag=!rg.off,predicate=gamemode/as] at @s if data storage sco:data penalty_area.struct.death run function sco:regine/penalty_area/death/ with storage sco:data penalty_area.struct
 execute as @a[tag=rg.penalty_area.death,tag=!rg.off,predicate=gamemode/as] at @s if block ~ -63 ~ command_block{Command:"rg.penalty_area.death"} run damage @s 1000 sco:outside_border
 
+##バリアエフェクト
+execute as @a[predicate=gamemode/as,tag=!rg.off,tag=rg.barrier_effects] run function sco:regine/barrier_effects/
 
 ##ロビー
 place template sco:lobby/farm 14 -53 -74

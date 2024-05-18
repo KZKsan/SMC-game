@@ -10,3 +10,5 @@ data modify storage sco:data penalty_area.input set from storage sco:input penal
 data modify storage sco:data stage_name set from storage sco:input stage_name
 data modify storage sco:data stage_description set from storage sco:input stage_description
 data modify storage sco:data respawn set from storage sco:input respawn
+data modify storage sco:data teleport_point set from storage sco:input teleport_point
+data modify storage sco:data domination set from storage sco:input domination

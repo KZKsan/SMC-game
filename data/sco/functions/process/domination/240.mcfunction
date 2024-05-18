@@ -4,7 +4,7 @@ scoreboard players add #runtime game 1
 function timer:stop
 
 #player_count
-execute if score #runtime game matches 1.. run function sco:player/team/team_info/team_score/
+execute if score #runtime game matches 1.. run function sco:player/team/team_info/domination/
 
 execute as @a[predicate=sco:team_join,team=!spectator,scores={respawnTime=1}] run function sco:process/domination/respawn/end
 execute as @a[predicate=sco:team_join,team=!spectator,gamemode=spectator,tag=!rg.block_area] run function sco:regine/block_area/reset_score
@@ -20,10 +20,14 @@ effect give @a[predicate=sco:team_join,team=!spectator,predicate=gamemode/as] we
 effect give @a[predicate=sco:team_join,team=!spectator,predicate=gamemode/as] water_breathing 1 10 true
 effect give @a[predicate=sco:team_join,team=!spectator,predicate=gamemode/as] fire_resistance 1 10 true
 
+execute if score #runtime game matches 1 if score #flag game matches 1 run function sco:player/team/team_info/domination/winner/red
+execute if score #runtime game matches 1 if score #flag game matches 2 run function sco:player/team/team_info/domination/winner/blue
 
 #ステージギミック
 execute if score #runtime game matches ..199 run function sco:stage_data/stage_object/
 execute if score #runtime game matches ..199 if data storage sco:data options{gimmick:true} run function sco:stage_data/gimmick
+kill @e[type=text_display,tag=beacon.info]
+
 
 #ゲーム終了
 execute if score #runtime game matches 200 as @e[type=#arrows] if function sco:regine/can_pickup_arrows/test run kill

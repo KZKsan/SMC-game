@@ -14,3 +14,19 @@ data modify storage sco:input respawn append value {name:"stage_red",pos:"-367 -
 data modify storage sco:input respawn append value {name:"stage_blue",pos:"-263 -56 -88 110 0"}
 function sco:stage_data/shop/
 function sco:stage_data/sudden_death/
+
+
+#domination
+data modify storage sco:input domination.beacon.set_pos set value []
+data modify storage sco:input domination.beacon.set_pos append value {pos:[-283,-50,-94],num:0}
+data modify storage sco:input domination.beacon.set_pos append value {pos:[-315,-53,-87],num:1}
+data modify storage sco:input domination.beacon.set_pos append value {pos:[-347,-50,-80],num:2}
+
+data modify storage sco:input domination.progress_value set value [0,10,12,15]
+data modify storage sco:input domination.assist_progress_value set value [0,1,20,50]
+data modify storage sco:input domination.capture_value set value [40,20,12,0]
+data modify storage sco:input domination.assist_capture_value set value [0,10,8,0]
+data modify storage sco:input domination.fix_value set value [0,10,5,2]
+data modify storage sco:input domination.progress_time set value 60000
+data modify storage sco:input domination.capture_time set value 4000
+data modify storage sco:input domination.respawn.fixed set value 100

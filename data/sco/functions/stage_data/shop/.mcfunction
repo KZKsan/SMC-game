@@ -7,3 +7,6 @@ data modify storage sco:input penalty_area.input.penalty append value {name:"sho
 data modify storage sco:input penalty_area.input.death append value {name:"shop_blue",1:[-15, -46, 23],2:[-33, -57, 31]}
 data modify storage sco:input respawn append value {name:"shop_red",pos:"-24 -57 19"}
 data modify storage sco:input respawn append value {name:"shop_blue",pos:"-24 -57 25"}
+
+#teleport_point
+data modify storage sco:input teleport_point.set_pos set value ["-31 -57 19","-24 -57 13","-17 -57 19","-31 -57 25","-24 -57 31","-17 -57 25"]
