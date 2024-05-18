@@ -1,0 +1,76 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:dragon_head"
+                }
+            ],
+            "functions": [
+                {
+                    "function": "minecraft:set_name",
+                    "name": {
+                        "text": "粉砕グローブ"
+                    }
+                },
+                {
+                    "function": "minecraft:set_lore",
+                    "lore": [
+                        {
+                            "text": "狂暴なドラゴンをその手に!"
+                        }
+                    ],
+                    "mode": "replace_all"
+                },
+                {
+                    "function": "minecraft:set_components",
+                    "components": {
+                        "minecraft:attribute_modifiers": {
+                            "modifiers": [
+                                {
+                                    "type": "minecraft:generic.attack_damage",
+                                    "uuid": [1990104269,1388265761,-1961129172,-1987245370],
+                                    "name": "crush_grove_damage",
+                                    "amount": 7,
+                                    "operation": "add_value",
+                                    "slot": "mainhand"
+                                },
+                                {
+                                    "type": "minecraft:player.entity_interaction_range",
+                                    "uuid": [1990104269,1388265761,-1961129172,-1987245371],
+                                    "name": "crush_grove_range",
+                                    "amount": -0.5,
+                                    "operation": "add_multiplied_base",
+                                    "slot": "mainhand"
+                                },
+                                {
+                                    "type": "minecraft:generic.jump_strength",
+                                    "uuid": [1990104269,1388265761,-1961129172,-1987245372],
+                                    "name": "crush_grove_jump",
+                                    "amount": -1,
+                                    "operation": "add_multiplied_total"
+                                },
+                                {
+                                    "type": "minecraft:generic.step_height",
+                                    "uuid": [1990104269,1388265761,-1961129172,-1987245373],
+                                    "name": "crush_grove_step",
+                                    "amount": 0.5,
+                                    "operation": "add_value"
+                                },
+                                {
+                                    "type": "minecraft:generic.movement_speed",
+                                    "uuid": [1990104269,1388265761,-1961129172,-1987245374],
+                                    "name": "crush_grove_speed",
+                                    "amount": -0.2,
+                                    "operation": "add_multiplied_base"
+                                }
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}
