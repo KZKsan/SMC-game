@@ -8,7 +8,9 @@ execute if score #red_score game matches 0 run data modify storage sco:data team
 function sco:player/team/team_info/team_score/scored/blue with storage sco:data team_info.score
 
 scoreboard players operation #blue_score game -= #score.kick_out.count.math game
-execute if score #red_score game >= #score.kick_out.count.math game run scoreboard players operation #red_score game += #score.kick_out.count.math game
+scoreboard players set #-1 _ -1
+scoreboard players operation #score.kick_out.count.math game *= #-1 _
+execute if score #red_score game >= #score.kick_out.count.math game run scoreboard players operation #red_score game -= #score.kick_out.count.math game
 execute if score #red_score game < #score.kick_out.count.math game run scoreboard players set #red_score game 0
 scoreboard players set #score_time game 20
 
