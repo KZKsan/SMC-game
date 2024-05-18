@@ -1,0 +1,3 @@
+#>sco:process/domination/object/beacon/info/set/summon
+#@within 
+execute anchored eyes facing entity @e[tag=origin,limit=1] feet positioned ^ ^ ^0.06 run summon text_display ^ ^ ^ {text:'[{"score":{"name": "#", "objective": "_"}},{"text": "%"}]',Tags:[sco-object,beacon.info],billboard:"center",view_range:0.0005f,transformation:{left_rotation:[0.0f,0.0f,0.0f,1.0f],right_rotation:[0.0f,0.0f,0.0f,1.0f],scale:[0.03f,0.03f,0.03f],translation:[0.0f,0.0f,0.0f]}}

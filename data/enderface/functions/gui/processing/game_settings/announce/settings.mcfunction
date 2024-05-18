@@ -4,6 +4,7 @@ execute as @a at @s run playsound item.book.page_turn record @s ~ ~ ~ 1 1
 tellraw @a "----------------------------"
 execute if data storage sco:config game{rule:"death_match"} run tellraw @a [{"text": "ルール: ","bold": true},{"text": "デスマッチ","bold": true,"color": "red"}]
 execute if data storage sco:config game{rule:"kick_out"} run tellraw @a [{"text": "ルール: ","bold": true},{"text": "キックアウト","bold": true,"color": "yellow"}]
+execute if data storage sco:config game{rule:"domination"} run tellraw @a [{"text": "ルール: ","bold": true},{"text": "ドミネーション","bold": true,"color": "dark_purple"}]
 execute if data storage sco:config {stage:"sco_random"} run tellraw @a [{"text": "ステージ: ","bold": true},{"text": "ランダム","color": "green"}]
 execute unless data storage sco:config {stage:"sco_random"} run function sco:stage_data/data_fetch with storage sco:config
 execute unless data storage sco:config {stage:"sco_random"} run tellraw @a [{"text": "ステージ: ","bold": true},{"nbt":"stage_name","storage": "sco:input","interpret": true}]

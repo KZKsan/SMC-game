@@ -18,18 +18,25 @@ execute if score #process game matches 000 run function sco:process/death_match/
 #1.マップ用意
 execute if score #process game matches 010 run function sco:process/death_match/010
 execute if score #process game matches 110 run function sco:process/kick_out/110
+execute if score #process game matches 210 run function sco:process/domination/210
 
 #2.マップ確認
 execute if score #process game matches 011 run function sco:process/death_match/011
 execute if score #process game matches 111 run function sco:process/kick_out/111
+execute if score #process game matches 211 run function sco:process/domination/211
+
 
 #3.ショップ
 execute if score #process game matches 020 run function sco:process/death_match/020
 execute if score #process game matches 120 run function sco:process/kick_out/120
+execute if score #process game matches 220 run function sco:process/domination/220
+
 
 #4.ゲーム
 execute if score #process game matches 030 run function sco:process/death_match/030
 execute if score #process game matches 130 run function sco:process/kick_out/130
+execute if score #process game matches 230 run function sco:process/domination/230
+
 
 #5.サドンデス
 execute if score #process game matches 031 run function sco:process/death_match/031
@@ -38,6 +45,8 @@ execute if score #process game matches 131 run function sco:process/kick_out/131
 #6.終了
 execute if score #process game matches 040 run function sco:process/death_match/040
 execute if score #process game matches 140 run function sco:process/kick_out/140
+execute if score #process game matches 240 run function sco:process/domination/240
+
 
 execute as @a[predicate=sco:practice_join,scores={leave_game=1..}] run function sco:player/retune_lobby
 
@@ -84,6 +93,8 @@ execute as @a[tag=rg.penalty_area.penalty,tag=!rg.off,predicate=gamemode/as] at 
 execute as @a[tag=rg.penalty_area.death,tag=!rg.off,predicate=gamemode/as] at @s if data storage sco:data penalty_area.struct.death run function sco:regine/penalty_area/death/ with storage sco:data penalty_area.struct
 execute as @a[tag=rg.penalty_area.death,tag=!rg.off,predicate=gamemode/as] at @s if block ~ -63 ~ command_block{Command:"rg.penalty_area.death"} run damage @s 1000 sco:outside_border
 
+##バリアエフェクト
+execute as @a[predicate=gamemode/as,tag=!rg.off,tag=rg.barrier_effects] run function sco:regine/barrier_effects/
 
 ##ロビー
 place template sco:lobby/farm 14 -53 -74

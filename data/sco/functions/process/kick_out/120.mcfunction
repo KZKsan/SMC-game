@@ -53,10 +53,12 @@ execute if score #runtime game matches 1.. as @a[team=blue,scores={respawnTime=1
 
 #プロセス終了
 execute if score #mst_time timer matches 003001 run function sco:messeges/shop_end
+execute if score #mst_time timer matches 003001 run function sco:messeges/emerald
 execute if score #mst_time timer matches 003001 as @a[predicate=sco:team_join] at @s run playsound block.note_block.bell record @s ~ ~ ~ 0.6 1 1
 execute if score #mst_time timer matches 003003 as @a[predicate=sco:team_join] at @s run playsound block.note_block.bell record @s ~ ~ ~ 0.6 1 1
 execute if score #mst_time timer matches 003005 as @a[predicate=sco:team_join] at @s run playsound block.note_block.bell record @s ~ ~ ~ 0.6 1 1
 execute if score #mst_time timer matches 001501 run function sco:messeges/shop_end
+execute if score #mst_time timer matches 001501 run function sco:messeges/emerald
 execute if score #mst_time timer matches 001501 as @a[predicate=sco:team_join] at @s run playsound block.note_block.bell record @s ~ ~ ~ 0.6 1 1
 execute if score #mst_time timer matches 001503 as @a[predicate=sco:team_join] at @s run playsound block.note_block.bell record @s ~ ~ ~ 0.6 1 1
 execute if score #mst_time timer matches 001505 as @a[predicate=sco:team_join] at @s run playsound block.note_block.bell record @s ~ ~ ~ 0.6 1 1

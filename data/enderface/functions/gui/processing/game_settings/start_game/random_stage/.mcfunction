@@ -2,6 +2,7 @@
 #@within enderface:gui/processing/game_settings/start_game/
 execute if data storage sco:config game{rule:"death_match"} unless data storage sco:data stage_tables.random[0] run data modify storage sco:data stage_tables.random set from storage sco:data stage_tables.death_match
 execute if data storage sco:config game{rule:"kick_out"} unless data storage sco:data stage_tables.random[0] run data modify storage sco:data stage_tables.random set from storage sco:data stage_tables.kick_out
+execute if data storage sco:config game{rule:"domination"} unless data storage sco:data stage_tables.random[0] run data modify storage sco:data stage_tables.random set from storage sco:data stage_tables.domination
 execute store result score $ranmax _ run data get storage sco:data stage_tables.random
 scoreboard players remove $ranmax _ 1
 scoreboard players set $ranmin _ 0

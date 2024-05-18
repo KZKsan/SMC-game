@@ -2,7 +2,6 @@
 #@within 
 forceload add -625 -304 -784 -225
 kill @e[tag=sco-object,x=-784, y=-63, z=-304,dx=159,dy=63,dz=79]
-function sco:stage_data/stage_object/set_match
 fill -625 -48 -304 -784 -48 -225 light[level=15]
 fill -625 -48 -304 -784 -48 -225 air
 execute positioned -62 -51 48 rotated -90 0 run summon marker ^-4 ^ ^ {Tags:[sco_builder]}

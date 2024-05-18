@@ -41,6 +41,9 @@ scoreboard objectives add stage_object.power_bullet.last_hit_count dummy
 scoreboard objectives add stage_object.configs dummy
 scoreboard objectives add player_speed.x dummy
 scoreboard objectives add player_speed.z dummy
+scoreboard objectives add respawn.penalty dummy
+scoreboard objectives add respawn.fixed dummy
+scoreboard objectives add respawn.wait_time dummy
 #declare score_holder last gameID
 
 scoreboard objectives modify player.HP displayname {"text":"HP","color":"yellow"}
@@ -118,6 +121,7 @@ execute unless data storage sco:config stage run data modify storage sco:config 
 # reset stage_tables
 function sco:stage_data/stage_tables/death_match
 function sco:stage_data/stage_tables/kick_out
+function sco:stage_data/stage_tables/domination
 
 #生成用予約エリア
 forceload add -64 48 15 127

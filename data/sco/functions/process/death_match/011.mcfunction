@@ -35,6 +35,7 @@ execute if score #runtime game matches 1.. as @a[predicate=sco:team_join,scores=
 execute if score #runtime game matches 5 as @a[predicate=sco:team_join] at @s run playsound entity.player.levelup record @s ~ ~ ~ 0.5 1
 
 #ステージギミック
+execute if score #runtime game matches 3 run function sco:stage_data/stage_object/set_match
 execute if score #runtime game matches 3 if data storage sco:data options{generate:true} run function sco:stage_data/generate
 execute if score #runtime game matches 3 unless data storage sco:data options{reset:true} run function sco:stage_data/generic_settings
 execute if score #runtime game matches 3 if data storage sco:data options{reset:true} run function sco:stage_data/reset
