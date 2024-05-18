@@ -33,7 +33,7 @@
                                     "type": "minecraft:generic.attack_damage",
                                     "uuid": [1990104269,1388265761,-1961129172,-1987245370],
                                     "name": "crush_grove_damage",
-                                    "amount": 9,
+                                    "amount": 7.5,
                                     "operation": "add_value",
                                     "slot": "mainhand"
                                 },
