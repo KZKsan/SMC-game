@@ -41,13 +41,6 @@
                 ]
               },
               {
-                "function": "set_enchantments",
-                "enchantments": {
-                  "depth_strider": 1,
-                  "unbreaking": 10
-                }
-              },
-              {
                 "function": "set_components",
                 "components": {
                   "dyed_color": {
