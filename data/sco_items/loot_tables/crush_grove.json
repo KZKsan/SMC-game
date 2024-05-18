@@ -41,7 +41,7 @@
                                     "type": "minecraft:player.entity_interaction_range",
                                     "uuid": [1990104269,1388265761,-1961129172,-1987245371],
                                     "name": "crush_grove_range",
-                                    "amount": -0.55,
+                                    "amount": -0.45,
                                     "operation": "add_multiplied_base",
                                     "slot": "mainhand"
                                 },
