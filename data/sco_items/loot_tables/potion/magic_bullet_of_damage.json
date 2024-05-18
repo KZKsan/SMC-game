@@ -25,7 +25,7 @@
                         {
                             "function": "set_components",
                             "components": {
-                                "max_stack_size": 4
+                                "max_stack_size": 2
                             }
                         }
                     ]
