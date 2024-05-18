@@ -41,6 +41,12 @@
                 ]
               },
               {
+                "function": "set_enchantments",
+                "enchantments": {
+                  "unbreaking": 10
+                }
+              },
+              {
                 "function": "set_components",
                 "components": {
                   "dyed_color": {

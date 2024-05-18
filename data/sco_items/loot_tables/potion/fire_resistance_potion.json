@@ -18,7 +18,7 @@
                             "function": "set_components",
                             "components": {
                                 "potion_contents": {
-                                    "custom_color": 16777215,
+                                    "custom_color": 16753920,
                                     "custom_effects": [
                                         {
                                             "id": "fire_resistance",
