@@ -1,7 +1,7 @@
 #>item/macro/clear/
 #@api
-#@input storage {id:"", count:0, components:{}}
-#@output storage _ item_data{id:"", count:0, components..}
+#@input storage _ item_data:{id:"", count:0, components:{}}
+#@output storage _ item_data:{id:"", count:0, components..}
 
 function item/macro/components_converter
 function item/macro/clear/run with storage _ item_data_str

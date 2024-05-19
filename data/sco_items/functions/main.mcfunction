@@ -15,6 +15,11 @@
     execute as @e[type=#arrows,tag=!item_function.set_p_vector.already] if data entity @s item.components."minecraft:custom_data".item_functions.set_p_vector run function #sco_items:item_functions/set_p_vector/arrow
 
 # magic_bullet
+    #throw_lock
+    scoreboard players remove @a[scores={throw_lock.time=1..}] throw_lock.time 1
+    execute as @e[type=potion,tag=!item_function.throw_lock.already] if data entity @s Item.components."minecraft:custom_data".item_functions.throw_lock run function sco_items:item_functions/throw_lock/
+    execute as @a[scores={throw_lock.time=1..}] run function sco_items:item_functions/throw_lock/actionbar/flag
+    #set_p_vector
     execute as @e[type=potion,tag=!item_function.set_p_vector.already] if data entity @s Item.components."minecraft:custom_data".item_functions.set_p_vector run function #sco_items:item_functions/set_p_vector/generic
 
     execute as @e[type=area_effect_cloud,tag=!already,nbt={potion_contents:{custom_effects:[{id:"minecraft:glowing",amplifier:49b}]}}] run function sco_items:item_functions/others/magic_bullet_of_light

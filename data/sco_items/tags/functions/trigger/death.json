@@ -3,6 +3,7 @@
         "sco_items:item_functions/crows_sorrow/step/score_reset",
         "sco_items:item_functions/lightning_hammer/score_reset",
         "sco_items:item_functions/hidden_cover/reset",
-        "sco_items:item_functions/corpse_daemon/score_reset"
+        "sco_items:item_functions/corpse_daemon/score_reset",
+        "sco_items:item_functions/throw_lock/score_reset"
     ]
 }
