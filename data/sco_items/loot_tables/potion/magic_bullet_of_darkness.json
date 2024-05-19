@@ -40,6 +40,20 @@
                                         "color": "blue",
                                         "italic": false
                                     }
+                                ],
+                                "",
+                                [
+                                    {
+                                        "translate": "sco_items.throw_lock",
+                                        "fallback": "スローロック",
+                                        "color": "red",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": " 3s",
+                                        "color": "red",
+                                        "italic": false
+                                    }
                                 ]
                             ],
                             "mode": "replace_all"
@@ -68,7 +82,15 @@
                         },
                         {
                             "function": "set_custom_data",
-                            "tag": "{item_functions:{set_p_vector:{type:\"set\",vector:\"^ ^ ^2.5\"}}}"
+                            "tag": {
+                                "item_functions": {
+                                    "set_p_vector": {
+                                        "type": "set",
+                                        "vector": "^ ^ ^1.5"
+                                    },
+                                    "throw_lock": 60
+                                }
+                            }
                         }
                     ]
                 }
