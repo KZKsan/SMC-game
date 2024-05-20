@@ -7,7 +7,7 @@ execute if data storage p-storage _[0].data.item_actionbar_flag{hidden_cover:1b}
 execute if data storage p-storage _[0].data.item_actionbar_flag{lightning_hammer:1b} run function sco_items:item_functions/lightning_hammer/actionbar/
 execute if data storage p-storage _[0].data.item_actionbar_flag{corpse_daemon:1b} run function sco_items:item_functions/corpse_daemon/actionbar/
 execute if data storage p-storage _[0].data.item_actionbar_flag{show_durability:["chest"]} run function sco_items:item_functions/show_durability/chest/actionbar
-execute if data storage p-storage _[0].data.item_actionbar_flag{throw_lock:1b} run function sco_items:item_functions/throw_lock/actionbar/
+execute if data storage p-storage _[0].data.item_actionbar_flag{throwing_limit:1b} run function sco_items:item_functions/throwing_limit/actionbar/
 
 data modify storage c_str str set from storage p-storage _[0].data.item_actionbar
 function c_str/

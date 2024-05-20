@@ -7,8 +7,8 @@ scoreboard objectives add crows_sorrow_count dummy
 scoreboard objectives add breake_shield_hit custom:damage_blocked_by_shield
 scoreboard objectives add using_damage_time.chest dummy
 scoreboard objectives add hidden_cover.time dummy
-scoreboard objectives add throw_lock.time dummy
-scoreboard objectives add throw_lock.max_time dummy
+scoreboard objectives add throwing_limit.time dummy
+scoreboard objectives add throwing_limit.max_time dummy
 scoreboard objectives add sneak_moving custom:crouch_one_cm
 scoreboard objectives add moving custom:walk_one_cm
 scoreboard objectives add trigger_death deathCount

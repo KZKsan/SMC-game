@@ -20,8 +20,8 @@
                                 "",
                                 [
                                     {
-                                        "translate": "sco_items.throw_lock",
-                                        "fallback": "スローロック",
+                                        "translate": "sco_items.throwing_limit",
+                                        "fallback": "投げ制限",
                                         "color": "red",
                                         "italic": false
                                     },
@@ -46,7 +46,7 @@
                                         "type": "set",
                                         "vector": "^ ^ ^1.5"
                                     },
-                                    "throw_lock": 60
+                                    "throwing_limit": 60
                                 }
                             }
                         },
