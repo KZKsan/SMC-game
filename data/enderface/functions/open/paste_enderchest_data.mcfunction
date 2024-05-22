@@ -30,5 +30,5 @@ item replace entity @s enderchest.24 from entity @e[predicate=enderface:paste_en
 item replace entity @s enderchest.25 from entity @e[predicate=enderface:paste_enderchest,limit=1] container.25
 item replace entity @s enderchest.26 from entity @e[predicate=enderface:paste_enderchest,limit=1] container.26
 data remove entity @e[predicate=enderface:paste_enderchest,limit=1] Items
-kill @e[predicate=enderface:paste_enderchest,limit=1]
+kill @e[predicate=enderface:paste_enderchest]
 scoreboard players set @s enderface_gui 0
