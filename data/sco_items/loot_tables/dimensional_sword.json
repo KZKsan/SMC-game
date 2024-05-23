@@ -53,7 +53,8 @@
                 "function": "set_enchantments",
                 "enchantments": {
                   "unbreaking": 10,
-                  "sweeping_edge": 3
+                  "sweeping_edge": 3,
+                  "breach": 1
                 }
               },
               {
