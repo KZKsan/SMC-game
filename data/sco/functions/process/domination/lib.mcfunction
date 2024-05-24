@@ -12,3 +12,6 @@
 #declare score_holder #domination.blue_progress
 #declare score_holder #domination.red_progress.display
 #declare score_holder #domination.blue_progress.display
+#declare score_holder #domination.assist_flag
+#declare score_holder #domination.progress_difference
+#declare score_holder #domination.assist_threshold
