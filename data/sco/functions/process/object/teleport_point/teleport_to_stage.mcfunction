@@ -8,4 +8,5 @@ tag @s remove rg.item_function_limit
 tag @s remove rg.shot_projectiles
 tag @s remove rg.barrier_effects
 tag @s add rg.penalty_respawn
+function sco:player/respawn/penalty/reset_score
 function sco:player/save_respawn_item

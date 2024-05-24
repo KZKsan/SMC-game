@@ -3,48 +3,48 @@
 
 #>
 #@internal
-scoreboard objectives add age dummy
-scoreboard objectives add game dummy
-scoreboard objectives add gameID dummy
-scoreboard objectives add processID dummy
-scoreboard objectives add dropped_item dummy
-scoreboard objectives add shot_projectiles dummy
-scoreboard objectives add respawnTime minecraft.custom:minecraft.time_since_death
-scoreboard objectives add leave_game custom:leave_game
-scoreboard objectives add food_level food
-scoreboard objectives add food_saturation_level dummy
-scoreboard objectives add regine.x1 dummy
-scoreboard objectives add regine.x2 dummy
-scoreboard objectives add regine.y1 dummy
-scoreboard objectives add regine.y2 dummy
-scoreboard objectives add regine.z1 dummy
-scoreboard objectives add regine.z2 dummy
-scoreboard objectives add regine.block_area.pos.x dummy
-scoreboard objectives add regine.block_area.pos.y dummy
-scoreboard objectives add regine.block_area.pos.z dummy
-scoreboard objectives add regione.penalty_area.penalty.time dummy
-scoreboard objectives add team_info.red dummy
-scoreboard objectives add team_info.blue dummy
-scoreboard objectives add team_info.spectator dummy
-scoreboard objectives add player.HP health
-scoreboard objectives add stage_object.match.0 dummy
-scoreboard objectives add stage_object.match.1 dummy
-scoreboard objectives add stage_object.match.2 dummy
-scoreboard objectives add stage_object.match.3 dummy
-scoreboard objectives add stage_object.lock dummy
-scoreboard objectives add stage_object.count.0 dummy
-scoreboard objectives add stage_object.count.1 dummy
-scoreboard objectives add stage_object.cooldown dummy
-scoreboard objectives add stage_object.configs dummy
-scoreboard objectives add stage_object.power_bullet.hit_count dummy
-scoreboard objectives add stage_object.power_bullet.last_hit_count dummy
-scoreboard objectives add stage_object.configs dummy
-scoreboard objectives add player_speed.x dummy
-scoreboard objectives add player_speed.z dummy
-scoreboard objectives add respawn.penalty dummy
-scoreboard objectives add respawn.fixed dummy
-scoreboard objectives add respawn.wait_time dummy
-#declare score_holder last gameID
+    scoreboard objectives add age dummy
+    scoreboard objectives add game dummy
+    scoreboard objectives add gameID dummy
+    scoreboard objectives add processID dummy
+    scoreboard objectives add dropped_item dummy
+    scoreboard objectives add shot_projectiles dummy
+    scoreboard objectives add respawnTime minecraft.custom:minecraft.time_since_death
+    scoreboard objectives add leave_game custom:leave_game
+    scoreboard objectives add food_level food
+    scoreboard objectives add food_saturation_level dummy
+    scoreboard objectives add regine.x1 dummy
+    scoreboard objectives add regine.x2 dummy
+    scoreboard objectives add regine.y1 dummy
+    scoreboard objectives add regine.y2 dummy
+    scoreboard objectives add regine.z1 dummy
+    scoreboard objectives add regine.z2 dummy
+    scoreboard objectives add regine.block_area.pos.x dummy
+    scoreboard objectives add regine.block_area.pos.y dummy
+    scoreboard objectives add regine.block_area.pos.z dummy
+    scoreboard objectives add regione.penalty_area.penalty.time dummy
+    scoreboard objectives add team_info.red dummy
+    scoreboard objectives add team_info.blue dummy
+    scoreboard objectives add team_info.spectator dummy
+    scoreboard objectives add player.HP health
+    scoreboard objectives add stage_object.match.0 dummy
+    scoreboard objectives add stage_object.match.1 dummy
+    scoreboard objectives add stage_object.match.2 dummy
+    scoreboard objectives add stage_object.match.3 dummy
+    scoreboard objectives add stage_object.lock dummy
+    scoreboard objectives add stage_object.count.0 dummy
+    scoreboard objectives add stage_object.count.1 dummy
+    scoreboard objectives add stage_object.cooldown dummy
+    scoreboard objectives add stage_object.configs dummy
+    scoreboard objectives add stage_object.power_bullet.hit_count dummy
+    scoreboard objectives add stage_object.power_bullet.last_hit_count dummy
+    scoreboard objectives add stage_object.configs dummy
+    scoreboard objectives add player_speed.x dummy
+    scoreboard objectives add player_speed.z dummy
+    scoreboard objectives add respawn.penalty dummy
+    scoreboard objectives add respawn.fixed dummy
+    scoreboard objectives add respawn.wait_time dummy
+    #declare score_holder last gameID
 
 scoreboard objectives modify player.HP displayname {"text":"HP","color":"yellow"}
 
@@ -52,22 +52,33 @@ execute unless score #process game matches -2147483648..2147483647 run scoreboar
 
 #>
 #@within sco:player/result/**
-scoreboard objectives add score_kill_count playerKillCount
-scoreboard objectives add score_death_count deathCount
-scoreboard objectives add score_damage_dealt custom:damage_dealt
-scoreboard objectives add score_damage_teaken custom:damage_taken
-scoreboard objectives add score_damage_detected dummy
-scoreboard objectives add score_shot_arrows dummy
-scoreboard objectives add score_hit_arrows dummy
-scoreboard objectives add score_hit_rate dummy
-scoreboard objectives add score_jump_count custom:jump
-scoreboard objectives add score_fall_one_cm custom:fall_one_cm
-scoreboard objectives add score_walk_cm custom:walk_one_cm
-scoreboard objectives add score_sprint_cm custom:sprint_one_cm
-scoreboard objectives add score_sneak_time custom:sneak_time
-scoreboard objectives add score_damage_blocked_by_shield custom:damage_blocked_by_shield
-scoreboard objectives add shot_arrow dummy
-scoreboard objectives add can_pickup_arrow dummy
+    scoreboard objectives add score_kill_count playerKillCount
+    scoreboard objectives add score_death_count deathCount
+    scoreboard objectives add score_damage_dealt custom:damage_dealt
+    scoreboard objectives add score_damage_teaken custom:damage_taken
+    scoreboard objectives add score_damage_detected dummy
+    scoreboard objectives add score_shot_arrows dummy
+    scoreboard objectives add score_hit_arrows dummy
+    scoreboard objectives add score_hit_rate dummy
+    scoreboard objectives add score_jump_count custom:jump
+    scoreboard objectives add score_fall_one_cm custom:fall_one_cm
+    scoreboard objectives add score_walk_cm custom:walk_one_cm
+    scoreboard objectives add score_sprint_cm custom:sprint_one_cm
+    scoreboard objectives add score_sneak_time custom:sneak_time
+    scoreboard objectives add score_damage_blocked_by_shield custom:damage_blocked_by_shield
+    scoreboard objectives add shot_arrow dummy
+    scoreboard objectives add can_pickup_arrow dummy
+
+#>
+#@within sco:**
+#@within sco_items:**
+    scoreboard objectives add respawn.penalty.damage_dealt custom:damage_dealt
+    scoreboard objectives add respawn.penalty.kill playerKillCount
+    scoreboard objectives add respawn.penalty.throwing_potion.splash used:splash_potion
+    scoreboard objectives add respawn.penalty.throwing_potion.lingering used:lingering_potion
+    scoreboard objectives add respawn.penalty.drinking_potion used:potion
+
+
 
 data modify storage sco:data mvp_result.score_names set value ["score_jump_count","score_fall_one_cm","score_walk_cm","score_sprint_cm","score_sneak_time","score_damage_blocked_by_shield"]
 data modify storage sco:data mvp_result.text_tables set value [{name:'{"text":"跳王"}',objective:'{"text":"Jump"}'},{name:'{"text":"落王"}',objective:'{"text":"Fall Distance"}'},{name:'{"text":"と金"}',objective:'{"text":"Walk"}'},{name:'{"text":"No.1 ランナー"}',objective:'{"text":"Running"}'},{name:'{"text":"潜伏王"}',objective:'{"text":"Time of Sneak"}'},{name:'{"text":"ブロック王"}',objective:'{"text":"Block Damage with Sheild"}'}]

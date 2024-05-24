@@ -15,3 +15,14 @@ scoreboard players set #domination.red_progress game 0
 scoreboard players set #domination.blue_progress game 0
 scoreboard players set #domination.red_progress.display game 0
 scoreboard players set #domination.blue_progress.display game 0
+
+#respawn penalty
+execute store result score #respawn.max game run data get storage sco:data domination.respawn.max
+execute store result score #respawn.penalty.damage_dealt.div game run data get storage sco:data domination.respawn.penalty.damage_dealt.div
+execute store result score #respawn.penalty.damage_dealt.add_value game run data get storage sco:data domination.respawn.penalty.damage_dealt.add_value
+execute store result score #respawn.penalty.kill.div game run data get storage sco:data domination.respawn.penalty.kill.div
+execute store result score #respawn.penalty.kill.add_value game run data get storage sco:data domination.respawn.penalty.kill.add_value
+execute store result score #respawn.penalty.throwing_potion.div game run data get storage sco:data domination.respawn.penalty.throwing_potion.div
+execute store result score #respawn.penalty.throwing_potion.add_value game run data get storage sco:data domination.respawn.penalty.throwing_potion.add_value
+execute store result score #respawn.penalty.drinking_potion.div game run data get storage sco:data domination.respawn.penalty.drinking_potion.div
+execute store result score #respawn.penalty.drinking_potion.add_value game run data get storage sco:data domination.respawn.penalty.drinking_potion.add_value
