@@ -35,5 +35,8 @@ data modify storage sco:input domination.progress_time set value 60000
 data modify storage sco:input domination.capture_time set value 4000
 ##respawn
 data modify storage sco:input domination.respawn.fixed set value 200
-data modify storage sco:input domination.respawn.fixed set value 200
-data modify storage sco:input domination.respawn.fixed set value 200
+data modify storage sco:input domination.respawn.max set value 400
+data modify storage sco:input domination.respawn.penalty.damage set value {div:150, add_value:20}
+data modify storage sco:input domination.respawn.penalty.kill set value {div:1, add_value:15}
+data modify storage sco:input domination.respawn.penalty.throwing_potion set value {div:1, add_value:10}
+data modify storage sco:input domination.respawn.penalty.drinking_potion set value {div:1, add_value:8}
