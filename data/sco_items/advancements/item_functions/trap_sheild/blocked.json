@@ -1,0 +1,44 @@
+{
+    "criteria": {
+        "blocked": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "entity": [
+                    {
+                        "condition": "any_of",
+                        "terms": [
+                            {
+                                "condition": "entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "equipment": {
+                                        "mainhand": {
+                                            "nbt": "{item_functions:{trap_sheild:1b}}"
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "condition": "entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "equipment": {
+                                        "offhand": {
+                                            "nbt": "{item_functions:{trap_sheild:1b}}"
+                                        }
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "damage": {
+                    "blocked": true
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "sco_items:item_functions/trap_sheild/blocked"
+    }
+}
