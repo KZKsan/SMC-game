@@ -36,7 +36,15 @@
                                     "attribute": "generic.attack_speed",
                                     "name": "",
                                     "amount": -0.8,
-                                    "operation": "add_multiplied_total",
+                                    "operation": "add_multiplied_base",
+                                    "id": "0d89ea54-d699-4724-be99-2f88fffed205",
+                                    "slot": "mainhand"
+                                },
+                                {
+                                    "attribute": "generic.attack_damage",
+                                    "name": "",
+                                    "amount": 3.5,
+                                    "operation": "add_value",
                                     "id": "0d89ea54-d699-4724-be99-2f88fffed205",
                                     "slot": "mainhand"
                                 }
@@ -45,7 +53,6 @@
                         {
                             "function": "set_enchantments",
                             "enchantments": {
-                                "sharpness": 4,
                                 "fire_aspect": 1,
                                 "smite": 3
                             }
