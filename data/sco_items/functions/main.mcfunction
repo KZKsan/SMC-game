@@ -48,9 +48,8 @@
 
 
 # cure_arrow
+    effect clear @a[scores={cure_arrow=1..},gamemode=!spectator]
     scoreboard players remove @a[scores={cure_arrow=1..}] cure_arrow 1
-    scoreboard players reset @a[scores={cure_arrow=..0}] cure_arrow
-    execute as @a[scores={cure_arrow=0..},gamemode=!spectator] run effect clear
 
 # score
     ##lightning_hammer
