@@ -27,7 +27,7 @@
                                     "equipment": {
                                         "offhand": {
                                             "predicates": {
-                                                "custom_data": "{item_functions:{trap_sheild:1b}}"
+                                                "custom_data": "{item_functions:{trap_shield:1b}}"
                                             }
                                         }
                                     }
@@ -43,6 +43,6 @@
         }
     },
     "rewards": {
-        "function": "sco_items:item_functions/trap_sheild/blocked"
+        "function": "sco_items:item_functions/trap_shield/blocked"
     }
 }

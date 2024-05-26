@@ -94,7 +94,7 @@
                         },
                         {
                             "function": "set_custom_data",
-                            "tag": "{item_functions:{trap_sheild:1b}}"
+                            "tag": "{item_functions:{trap_shield:1b}}"
                         }
                     ]
                 }
