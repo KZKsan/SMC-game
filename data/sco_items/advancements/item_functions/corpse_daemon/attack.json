@@ -30,7 +30,8 @@
                                 "expected": true
                             }
                         ]
-                    }
+                    },
+                    "blocked": false
                 }
             }
         }
