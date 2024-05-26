@@ -1,9 +1,9 @@
 {
     "criteria": {
         "blocked": {
-            "trigger": "player_hurt_entity",
+            "trigger": "entity_hurt_player",
             "conditions": {
-                "entity": [
+                "player": [
                     {
                         "condition": "any_of",
                         "terms": [
@@ -14,7 +14,7 @@
                                     "equipment": {
                                         "mainhand": {
                                             "predicates": {
-                                                "custom_data": "{item_functions:{trap_shield:1b}}"
+                                                "custom_data": "{item_functions:{breake_shield:1b}}"
                                             }
                                         }
                                     }
@@ -27,7 +27,7 @@
                                     "equipment": {
                                         "offhand": {
                                             "predicates": {
-                                                "custom_data": "{item_functions:{trap_shield:1b}}"
+                                                "custom_data": "{item_functions:{breake_shield:1b}}"
                                             }
                                         }
                                     }
@@ -43,6 +43,6 @@
         }
     },
     "rewards": {
-        "function": "sco_items:item_functions/trap_shield/blocked"
+        "function": "sco_items:item_functions/breake_shield/blocked"
     }
 }

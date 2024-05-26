@@ -4,7 +4,6 @@
 scoreboard objectives add lightning_hammer_holding_time dummy
 scoreboard objectives add crows_sorrow_cooldown dummy
 scoreboard objectives add crows_sorrow_count dummy
-scoreboard objectives add breake_shield_hit custom:damage_blocked_by_shield
 scoreboard objectives add using_damage_time.chest dummy
 scoreboard objectives add hidden_cover.time dummy
 scoreboard objectives add throwing_limit.time dummy
