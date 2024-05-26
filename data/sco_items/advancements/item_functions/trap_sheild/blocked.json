@@ -13,7 +13,9 @@
                                 "predicate": {
                                     "equipment": {
                                         "mainhand": {
-                                            "nbt": "{item_functions:{trap_sheild:1b}}"
+                                            "predicates": {
+                                                "custom_data": "{item_functions:{trap_sheild:1b}}"
+                                            }
                                         }
                                     }
                                 }
@@ -24,7 +26,9 @@
                                 "predicate": {
                                     "equipment": {
                                         "offhand": {
-                                            "nbt": "{item_functions:{trap_sheild:1b}}"
+                                            "predicates": {
+                                                "custom_data": "{item_functions:{trap_sheild:1b}}"
+                                            }
                                         }
                                     }
                                 }
