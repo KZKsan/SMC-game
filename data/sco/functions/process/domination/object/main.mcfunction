@@ -8,6 +8,8 @@ execute if score #domination.advantage game matches 0 if score #domination.red_c
 
 
 
-kill @e[type=text_display,tag=beacon.info]
+execute as @e[type=text_display,tag=beacon.info,tag=!beacon.info.already] on passengers run kill
+kill @e[type=text_display,tag=beacon.info,tag=!beacon.info.already]
+tag @e[type=text_display,tag=beacon.info,tag=beacon.info.already] remove beacon.info.already
 
 execute as @e[type=item_display,tag=beacon.core] at @s run function sco:process/domination/object/beacon/

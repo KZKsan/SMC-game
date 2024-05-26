@@ -63,7 +63,7 @@ execute if score #runtime game matches 10 if score #flag game matches 0 run func
 #execute if score #runtime game matches 10 if score #flag game matches 0 run function sco:process/domination/game_flag/winner/no_player
 execute if score #score_time game matches 1.. run scoreboard players remove #score_time game 1
 
-tellraw @a {"score":{"name": "#mst_time","objective": "timer"}}
+#tellraw @a {"score":{"name": "#mst_time","objective": "timer"}}
 #execute if score #mst_time timer matches -109 run function 
 execute if score #mst_time timer matches -109 run function sco:process/domination/game_flag/winner/top_progress
 execute if score #mst_time timer matches -109 if score #flag game matches 0 run function sco:process/domination/game_flag/winner/advantage
