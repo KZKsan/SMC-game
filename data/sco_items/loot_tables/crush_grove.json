@@ -4,19 +4,20 @@
             "rolls": 1,
             "entries": [
                 {
-                    "type": "minecraft:item",
-                    "name": "minecraft:dragon_head"
+                    "type": "item",
+                    "name": "dragon_head"
                 }
             ],
             "functions": [
                 {
-                    "function": "minecraft:set_name",
+                    "function": "set_name",
                     "name": {
-                        "text": "粉砕グローブ"
+                        "text": "粉砕グローブ",
+                        "italic": false
                     }
                 },
                 {
-                    "function": "minecraft:set_lore",
+                    "function": "set_lore",
                     "lore": [
                         {
                             "text": "狂暴なドラゴンをその手に!"
@@ -25,20 +26,28 @@
                     "mode": "replace_all"
                 },
                 {
-                    "function": "minecraft:set_components",
+                    "function": "set_components",
                     "components": {
-                        "minecraft:attribute_modifiers": {
+                        "attribute_modifiers": {
                             "modifiers": [
                                 {
-                                    "type": "minecraft:generic.attack_damage",
+                                    "type": "generic.attack_damage",
                                     "uuid": [1990104269,1388265761,-1961129172,-1987245370],
                                     "name": "crush_grove_damage",
-                                    "amount": 7.5,
+                                    "amount": 6.5,
                                     "operation": "add_value",
                                     "slot": "mainhand"
                                 },
                                 {
-                                    "type": "minecraft:player.entity_interaction_range",
+                                    "type": "generic.attack_speed",
+                                    "uuid": [1990104269,1388265761,-1961129172,-1987245370],
+                                    "name": "crush_grove_attack_speed",
+                                    "amount": -0.5,
+                                    "operation": "add_value",
+                                    "slot": "mainhand"
+                                },
+                                {
+                                    "type": "player.entity_interaction_range",
                                     "uuid": [1990104269,1388265761,-1961129172,-1987245371],
                                     "name": "crush_grove_range",
                                     "amount": -0.45,
@@ -46,7 +55,7 @@
                                     "slot": "mainhand"
                                 },
                                 {
-                                    "type": "minecraft:generic.jump_strength",
+                                    "type": "generic.jump_strength",
                                     "uuid": [1990104269,1388265761,-1961129172,-1987245372],
                                     "name": "crush_grove_jump",
                                     "amount": -1,
@@ -54,7 +63,7 @@
                                     "slot": "mainhand"
                                 },
                                 {
-                                    "type": "minecraft:generic.step_height",
+                                    "type": "generic.step_height",
                                     "uuid": [1990104269,1388265761,-1961129172,-1987245373],
                                     "name": "crush_grove_step",
                                     "amount": 0.5,
@@ -62,7 +71,7 @@
                                     "slot": "mainhand"
                                 },
                                 {
-                                    "type": "minecraft:generic.movement_speed",
+                                    "type": "generic.movement_speed",
                                     "uuid": [1990104269,1388265761,-1961129172,-1987245374],
                                     "name": "crush_grove_speed",
                                     "amount": -0.3,
