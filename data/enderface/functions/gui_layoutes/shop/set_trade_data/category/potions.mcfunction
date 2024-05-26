@@ -17,6 +17,7 @@ function enderface:gui_layoutes/shop/set_trade_data/single_data/potion/lingering
 function enderface:gui_layoutes/shop/set_trade_data/single_data/potion/demonization_potion
 function enderface:gui_layoutes/shop/set_trade_data/single_data/potion/madness_potion
 function enderface:gui_layoutes/shop/set_trade_data/single_data/potion/fire_resistance_potion
+function enderface:gui_layoutes/shop/set_trade_data/single_data/potion/lingering_jump_potion
 
 function enderface:gui_layoutes/shop/set_trade_data/single_data/potion/magic_bullet_of_flare
 function enderface:gui_layoutes/shop/set_trade_data/single_data/potion/magic_bullet_of_light
