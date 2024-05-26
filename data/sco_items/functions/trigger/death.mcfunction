@@ -3,5 +3,5 @@
 #@within advancement sco_items:trigger/death
 
 function #sco_items:trigger/death
-scoreboard players reset @s trigger_death
+scoreboard players set @s trigger_death 0
 advancement revoke @s only sco_items:trigger/death
