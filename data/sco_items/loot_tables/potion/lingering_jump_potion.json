@@ -23,7 +23,7 @@
                                         {
                                             "id": "jump_boost",
                                             "amplifier": 3,
-                                            "duration": 10,
+                                            "duration": 60,
                                             "show_particles": true
                                         }
                                     ]
