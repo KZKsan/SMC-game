@@ -10,7 +10,7 @@
                         {
                             "function": "set_name",
                             "name": {
-                                "text": "deep_cave",
+                                "text": "地下空洞",
                                 "italic": false,
                                 "color": "#55AADD"
                             }
