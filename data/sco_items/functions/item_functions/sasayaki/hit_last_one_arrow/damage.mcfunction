@@ -3,4 +3,4 @@
 particle portal ~ ~1 ~ 0.1 0.1 0.1 1 1000
 playsound entity.zombie_villager.cure player @a ~ ~ ~ 0.3 0.5
 #declare damage_type sco_items:item_functions/add_arrow_damage
-damage @s 20 sco_items:item_functions/add_arrow_damage by @e[type=arrow,limit=1,sort=nearest] from @p[tag=origin]
+damage @s 35 arrow by @e[type=arrow,limit=1,sort=nearest] from @p[tag=origin]
