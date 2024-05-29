@@ -13,7 +13,6 @@
     execute as @e[type=#arrows,tag=!item_function.piercing_arrow] if data entity @s item.components."minecraft:enchantments".levels."minecraft:piercing" run function sco_items:item_functions/enchant/piercing/set_nbt
     execute as @e[type=#arrows,nbt={item:{components:{"minecraft:custom_data":{item_functions:{safety_arrow:1b}}}}},tag=!item_function.safety_arrow] run function sco_items:item_functions/safety_arrow/set_data
     execute as @e[type=#arrows,tag=!item_function.set_p_vector.already] if data entity @s item.components."minecraft:custom_data".item_functions.set_p_vector run function #sco_items:item_functions/set_p_vector/arrow
-    execute as @e[type=#arrows,nbt={item:{components:{"minecraft:custom_data":{item_functions:{last_one_arrow:1b}}}}},tag=!item_function.last_one_arrow] run function sco_items:item_functions/sasayaki/set_damage
 
 # magic_bullet
     #throwing_limit
