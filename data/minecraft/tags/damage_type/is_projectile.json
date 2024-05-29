@@ -1,5 +1,6 @@
 {
     "values": [
-        "sco_items:item_functions/enchant/smite/arrow"
+        "sco_items:item_functions/enchant/smite/arrow",
+        "sco_items:item_functions/add_arrow_damage"
     ]
 }
