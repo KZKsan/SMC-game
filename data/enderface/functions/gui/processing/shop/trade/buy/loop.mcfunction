@@ -6,13 +6,13 @@ data modify storage enderface:data latest_inventory set from storage enderface:d
 data modify storage enderface:data now_inventory set value []
 
 ## 購入に必要な数を読み込み
-execute store result score #count _ run data get storage enderface:data shop.trade_data.buy[0].count
+execute store result score #count _ run data get storage enderface:data shop.tmp.buy[0].count
 #scoreboard players set #count _ 0
 
 ## 必要な数あるかをチェック
 execute if score #count _ matches 1.. if data storage enderface:data latest_inventory[0] run function enderface:gui/processing/shop/trade/buy/check
-data remove storage enderface:data shop.trade_data.buy[0]
+data remove storage enderface:data shop.tmp.buy[0]
 execute store success storage enderface:data shop.success byte 1 if score #count _ matches 0
 
 ## ループ
-execute if data storage enderface:data shop{success:1b} if data storage enderface:data shop.trade_data.buy[0] run function enderface:gui/processing/shop/trade/buy/loop
+execute if data storage enderface:data shop{success:1b} if data storage enderface:data shop.tmp.buy[0] run function enderface:gui/processing/shop/trade/buy/loop

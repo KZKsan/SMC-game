@@ -19,7 +19,9 @@ execute store result score # _ run data get storage p-storage _[0].data.page
 execute store result score #line _ run data get storage enderface:shop _
 execute if score # _ matches 1.. run loot replace entity @s enderchest.3 loot enderface:icon/up_arrow
 execute if score #line _ matches 10.. run loot replace entity @s enderchest.21 loot enderface:icon/down_arrow
-execute if data storage p-storage _[0].data.preview_trade run function enderface:gui_layoutes/shop/preview_trade/
+execute if data storage p-storage _[0].data.enderface.shop.preview_trade run function enderface:gui_layoutes/shop/preview_trade/ with storage p-storage _[0].data.enderface.shop.preview_trade
+
+
 
 #item modify entity @s enderchest.0 enderface:shop/click_to_preview
 #item modify entity @s enderchest.1 enderface:shop/click_to_preview

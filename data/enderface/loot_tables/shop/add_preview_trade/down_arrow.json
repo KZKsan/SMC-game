@@ -35,7 +35,7 @@
                         },
                         {
                             "function": "set_custom_data",
-                            "tag": "{enderface_item:1b,click_events:{click_sounds:[{sound:\"ui.button.click\"}]}}"
+                            "tag": "{enderface_item:1b,click_events:{click_sounds:[{sound:\"ui.button.click\"}]},preview_trade_page:0}"
                         },
                         {
                             "function": "set_components",

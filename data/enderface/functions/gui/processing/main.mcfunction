@@ -25,8 +25,9 @@ function enderface:gui/return_item/main
 ## Other Processing 2
 execute if data storage enderface:data {gui_name:"kit_memory/"} run function enderface:gui/processing/kit_memory/
 #
-execute if data storage enderface:data gui_intaract{click:1b} if data storage enderface:data gui_intaract.Item.components."minecraft:custom_data".preview_trade run function enderface:gui/processing/shop/preview_trade/ with storage enderface:data gui_intaract.Item.components."minecraft:custom_data"
-execute if data storage enderface:data gui_intaract{click:1b} if data storage enderface:data gui_intaract.Item.components."minecraft:custom_data".trade run function enderface:gui/processing/shop/trade/
+execute if data storage enderface:data gui_intaract{click:1b} if data storage enderface:data gui_intaract.Item.components."minecraft:custom_data"{preview_trade:1b} run function enderface:gui/processing/shop/preview_trade/
+execute if data storage enderface:data gui_intaract{click:1b} if data storage enderface:data gui_intaract.Item.components."minecraft:custom_data".preview_trade_page run function enderface:gui/processing/shop/preview_trade/page with storage enderface:data gui_intaract.Item.components."minecraft:custom_data"
+execute if data storage enderface:data gui_intaract{click:1b} if data storage enderface:data gui_intaract.Item.components."minecraft:custom_data"{trade:1b} run function enderface:gui/processing/shop/trade/
 #
 ##Reload gui_name
 execute if data storage enderface:data next_gui_name run data modify storage enderface:data gui_history append from storage enderface:data gui_name

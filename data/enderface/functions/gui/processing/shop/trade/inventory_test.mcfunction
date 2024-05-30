@@ -1,6 +1,6 @@
 #>enderface:gui/processing/shop/trade/inventory_test
 #@within enderface:gui/processing/shop/trade/**
-execute store result score #_ _ run data get storage enderface:data gui_intaract.Item.components."minecraft:custom_data".trade.sell
+execute store result score #_ _ run data get storage enderface:data shop.trade.sell
 data modify storage enderface:data shop.inventory set from storage enderface:data now_inventory
 data remove storage enderface:data shop.inventory[{count:0}]
 data remove storage enderface:data shop.inventory[{Slot:100b}]
