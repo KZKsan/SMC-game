@@ -89,6 +89,7 @@ scoreboard objectives add result_mvp dummy
 team add red
 team add blue
 team add random_team
+team add mode.waiting
 team add spectator
 team add mode.practice
 team add mode.pvp
@@ -96,7 +97,8 @@ team add mode.pvp
 team modify red color red
 team modify blue color blue
 team modify spectator color gray
-team modify random_team prefix "[参加中]"
+team modify random_team prefix {"text":"[参加中]","color": "gold"}
+team modify mode.waiting prefix {"text": "[待機中]","color": "dark_purple"}
 team modify mode.practice prefix {"text":"[訓練中]","color": "green"}
 team modify mode.practice friendlyFire false
 team modify mode.pvp prefix {"text":"[戦闘中]","color": "#AA2211"}

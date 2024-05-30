@@ -17,4 +17,7 @@ loot replace entity @s enderchest.8 loot enderface:sco_settings/announce/start_g
 
 loot replace entity @s enderchest.17 loot enderface:sco_settings/start
 
+loot replace entity @s enderchest.26 loot enderface:sco_game_join/waiting
+item modify entity @s[team=mode.waiting] enderchest.26 enderface:selected
+
 data modify storage p-storage _[0].data.page set value 0

@@ -4,6 +4,7 @@ function sco:player/inventory_histories/pop/fetch_load_data {name:"defalut"}
 data remove storage p-storage _[0].data.inventory_histories[{name:"respawn"}]
 data remove storage p-storage _[0].data.respawn
 team leave @s
+team join mode.waiting @s[tag=mode.waiting]
 effect clear @s
 tag @s remove join_red
 tag @s remove join_blue
