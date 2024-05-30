@@ -27,7 +27,7 @@
                                 {
                                     "attribute": "generic.attack_speed",
                                     "name": "",
-                                    "amount": -3.5,
+                                    "amount": -3.4,
                                     "operation": "add_value",
                                     "slot": "mainhand"
                                 }
