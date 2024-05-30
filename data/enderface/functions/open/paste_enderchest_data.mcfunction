@@ -1,6 +1,6 @@
 #>enderface:open/paste_enderchest_data
 #@internal
-summon chest_minecart ~ ~ ~ {Tags:["enderface","set_nbt","paste_enderchest"]}
+summon chest_minecart 0 0 0 {Tags:["enderface","set_nbt","paste_enderchest"]}
 data modify entity @e[predicate=enderface:paste_enderchest,limit=1] Items set from storage p-storage _[0].data.enderchest
 item replace entity @s enderchest.0 from entity @e[predicate=enderface:paste_enderchest,limit=1] container.0
 item replace entity @s enderchest.1 from entity @e[predicate=enderface:paste_enderchest,limit=1] container.1
