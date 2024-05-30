@@ -1,6 +1,6 @@
 #>enderface:gui/check
 #@within enderface:gui/**
-
+function p-storage/get
 ## intaract = 1b(click), 2b(shift + click), 3b(offhand), 4b(throw away), 0b(other)
 execute store success storage enderface:data gui_intaract.intaract byte 3 if items entity @s weapon.offhand *[custom_data~{enderface_item:1b}]
 execute if data storage enderface:data gui_intaract{intaract:0b} store success storage enderface:data gui_intaract.intaract byte 2 if items entity @s inventory.* *[custom_data~{enderface_item:1b}]
