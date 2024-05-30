@@ -9,6 +9,6 @@ function sco_items:kit/default
 tag @s add rg.drop_item
 tag @s add rg.food_limit
 teleport @s 344 -50 -135 0 0
-function p-storage/get
+function sco:gamemode_histories/save
 data modify storage p-storage _[0].data.respawn set value {pos:"344 -50 -135 0 0"}
 execute positioned as @s run playsound entity.player.levelup record @s ~ ~ ~ 0.5 1

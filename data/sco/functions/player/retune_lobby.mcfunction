@@ -22,6 +22,7 @@ scoreboard players reset @s processID
 
 function sco:tp/lobby
 gamemode adventure
+function sco:gamemode_histories/pop
 function sco:player/team/remove_team_tag
 function sco:regine/block_area/reset_score
 function sco:player/result/reset_scores/single
