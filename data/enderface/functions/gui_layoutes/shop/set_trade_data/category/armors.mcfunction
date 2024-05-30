@@ -31,6 +31,7 @@ function enderface:gui_layoutes/shop/set_trade_data/single_data/shield
 function enderface:gui_layoutes/shop/set_trade_data/single_data/iron_shield
 function enderface:gui_layoutes/shop/set_trade_data/single_data/netherite_plating_shield
 function enderface:gui_layoutes/shop/set_trade_data/single_data/breake_shield
+function enderface:gui_layoutes/shop/set_trade_data/single_data/trap_shield
 
 function enderface:gui_layoutes/shop/set_trade_data/single_data/combat_cloth
 

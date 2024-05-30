@@ -37,7 +37,15 @@
                     }
                 ],
                 "damage": {
-                    "blocked": true
+                    "blocked": true,
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
                 }
             }
         }

@@ -25,21 +25,33 @@
                                 },
                                 "",
                                 {
-                                    "text": "手に持ったとき：",
+                                    "text": "攻撃を防いだとき:",
                                     "color": "gray",
                                     "italic": false
                                 },
                                 [
                                     {
-                                        "translate": "attribute.name.generic.movement_speed",
-                                        "color": "red",
+                                        "translate": "effect.minecraft.weakness",
+                                        "color": "#AA0000",
                                         "italic": false
                                     },
+                                    " A:9, D:3s"
+                                ],
+                                [
                                     {
-                                        "text": " -30%",
-                                        "color": "red",
+                                        "translate": "effect.minecraft.mining_fatigue",
+                                        "color": "#AA0000",
                                         "italic": false
-                                    }
+                                    },
+                                    " A:9, D:3s"
+                                ],
+                                [
+                                    {
+                                        "translate": "effect.minecraft.slowness",
+                                        "color": "#AA0000",
+                                        "italic": false
+                                    },
+                                    " A:1, D:3s"
                                 ]
                             ],
                             "mode": "replace_all"
@@ -48,7 +60,7 @@
                             "function": "set_components",
                             "components": {
                                 "hide_additional_tooltip": {},
-                                "damage": 266,
+                                "damage": 286,
                                 "base_color": "light_gray",
                                 "banner_patterns": [
                                     {
@@ -72,24 +84,6 @@
                                         "pattern": "border"
                                     }
                                 ]
-                            }
-                        },
-                        {
-                            "function": "set_attributes",
-                            "modifiers": [
-                                {
-                                    "slot": "hand",
-                                    "name": "",
-                                    "attribute": "generic.movement_speed",
-                                    "operation": "add_multiplied_base",
-                                    "amount": -0.3
-                                }
-                            ]
-                        },
-                        {
-                            "function": "toggle_tooltips",
-                            "toggles": {
-                                "attribute_modifiers": false
                             }
                         },
                         {
