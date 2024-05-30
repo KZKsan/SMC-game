@@ -22,8 +22,8 @@
                                     "custom_effects": [
                                         {
                                             "id": "jump_boost",
-                                            "amplifier": 3,
-                                            "duration": 60,
+                                            "amplifier": 9,
+                                            "duration": 20,
                                             "show_particles": true
                                         }
                                     ]
