@@ -108,7 +108,7 @@ team modify mode.pvp friendlyFire true
 #@public
 #declare storage sco:data
 
-data modify storage sco:data stage_tables.random set value []
+
 
 #>
 #@public
@@ -135,6 +135,8 @@ execute unless data storage sco:config stage run data modify storage sco:config 
 function sco:stage_data/stage_tables/death_match
 function sco:stage_data/stage_tables/kick_out
 function sco:stage_data/stage_tables/domination
+
+function sco:stage_data/stage_tables/random_reset/
 
 #生成用予約エリア
 forceload add -64 48 15 127
