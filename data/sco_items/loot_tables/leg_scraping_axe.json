@@ -37,20 +37,20 @@
                     "attribute": "generic.movement_speed",
                     "name": "",
                     "amount": -0.4,
-                    "operation": "add_multiplied_total",
+                    "operation": "add_multiplied_base",
                     "slot": "mainhand"
                   },
                   {
                     "attribute": "generic.attack_speed",
                     "name": "",
-                    "amount": -0.88,
-                    "operation": "add_multiplied_total",
+                    "amount": -0.80,
+                    "operation": "add_multiplied_base",
                     "slot": "mainhand"
                   },
                   {
                     "attribute": "generic.attack_damage",
                     "name": "",
-                    "amount": 9,
+                    "amount": 7,
                     "operation": "add_value",
                     "slot": "mainhand"
                   }

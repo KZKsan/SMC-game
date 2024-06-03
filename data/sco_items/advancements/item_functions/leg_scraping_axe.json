@@ -21,7 +21,7 @@
                 ],
                 "damage": {
                     "dealt": {
-                        "min": 9.5
+                        "min": 8.0
                     },
                     "type": {
                         "tags": [
