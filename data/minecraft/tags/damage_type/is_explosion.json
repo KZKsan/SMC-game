@@ -1,0 +1,6 @@
+{
+    "values": [
+        "sco_items:add_explosion_damage",
+        "sco_items:add_player_explosion_damage"
+    ]
+}

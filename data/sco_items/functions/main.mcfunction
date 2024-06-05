@@ -6,10 +6,17 @@
 ## ここにアイテムのコマンドを作っていく(進捗を使う場合も "sco_items:" で作る)
 
 # arrow
+    #no_gravity_arrow
     execute as @e[type=#arrows,nbt={item:{components:{"minecraft:custom_data":{item_functions:{no_gravity_arrow:1b}}}}},tag=!item_function.no_gravity_arrow] run function sco_items:item_functions/no_gravity_arrow/set_data
     execute as @e[type=#arrows,nbt={item:{components:{"minecraft:custom_data":{item_functions:{no_gravity_arrow:1b}}}}},tag=item_function.no_gravity_arrow] at @s run function sco_items:item_functions/no_gravity_arrow/
     execute as @e[type=#arrows,nbt={item:{components:{"minecraft:custom_data":{item_functions:{no_gravity_arrow:1b}}}},inGround:1b}] at @s run function sco_items:item_functions/no_gravity_arrow/hit_block
     execute as @e[type=tnt,tag=no_gravity_arrow.bomb] at @s run function sco_items:item_functions/no_gravity_arrow/bomb/
+    #cluster_bomb_arrow
+    execute as @e[type=#arrows,nbt={item:{components:{"minecraft:custom_data":{item_functions:{cluster_bomb_arrow:1b}}}}},tag=!item_function.cluster_bomb_arrow] run function sco_items:item_functions/cluster_bomb_arrow/set_data
+    execute as @e[type=#arrows,nbt={item:{components:{"minecraft:custom_data":{item_functions:{cluster_bomb_arrow:1b}}}}},tag=item_function.cluster_bomb_arrow] at @s run function sco_items:item_functions/cluster_bomb_arrow/
+    execute as @e[type=#arrows,nbt={item:{components:{"minecraft:custom_data":{item_functions:{cluster_bomb_arrow:1b}}}},inGround:1b}] at @s run function sco_items:item_functions/cluster_bomb_arrow/hit_block
+    execute as @e[type=tnt,tag=cluster_bomb_arrow.bomb] at @s run function sco_items:item_functions/cluster_bomb_arrow/bomb/
+
     execute as @e[type=#arrows,nbt={item:{components:{"minecraft:custom_data":{item_functions:{small_arrow:1b}}}}},tag=!item_function.small_arrow] run function sco_items:item_functions/small_arrow/set_data
     execute as @e[type=#arrows,tag=!item_function.piercing_arrow] if data entity @s item.components."minecraft:enchantments".levels."minecraft:piercing" run function sco_items:item_functions/enchant/piercing/set_nbt
     execute as @e[type=#arrows,nbt={item:{components:{"minecraft:custom_data":{item_functions:{safety_arrow:1b}}}}},tag=!item_function.safety_arrow] run function sco_items:item_functions/safety_arrow/set_data
@@ -30,6 +37,7 @@
 # custom_effect
 
     execute as @e[nbt={active_effects:[{id:"minecraft:unluck",amplifier:49b}]}] run function sco_items:item_functions/no_gravity_arrow/hit_entity
+    execute as @e[nbt={active_effects:[{id:"minecraft:unluck",amplifier:50b}]}] run function sco_items:item_functions/cluster_bomb_arrow/hit_entity
     execute as @e[nbt={active_effects:[{id:"minecraft:unluck",amplifier:119b},{id:"minecraft:absorption",amplifier:9b}]}] run effect clear @s absorption
 
     ##不幸の効果はここで消去する    

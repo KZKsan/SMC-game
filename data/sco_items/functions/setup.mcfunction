@@ -37,3 +37,8 @@ scoreboard players set #lightning_hammer.set_cooltime sco_items.configs -80
     #declare score_holder #corpse_daemon.stop_effect_time
 scoreboard players set #corpse_daemon.set_cooltime sco_items.configs 160
 scoreboard players set #corpse_daemon.stop_effect_time sco_items.configs 40
+
+#>
+#@internal
+    #declare damage_type sco_items:add_explosion_damage
+    #declare damage_type sco_items:add_player_explosion_damage
