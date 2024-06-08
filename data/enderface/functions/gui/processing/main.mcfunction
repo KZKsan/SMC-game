@@ -3,9 +3,6 @@
 
 ## Change gui_name
 execute if data storage enderface:data gui_intaract{click:1b} if data storage enderface:data gui_intaract.Item.components."minecraft:custom_data".click_events.change_gui run data modify storage enderface:data next_gui_name set from storage enderface:data gui_intaract.Item.components."minecraft:custom_data".click_events.change_gui
-## Back gui
-execute if data storage enderface:data gui_intaract{click:1b} if data storage enderface:data gui_intaract.Item.components."minecraft:custom_data".click_events{back_gui:1b} if data storage enderface:data gui_history[0] run data modify storage enderface:data gui_name set from storage enderface:data gui_history[-1]
-execute if data storage enderface:data gui_intaract{click:1b} if data storage enderface:data gui_intaract.Item.components."minecraft:custom_data".click_events{back_gui:1b} if data storage enderface:data gui_history[0] run data remove storage enderface:data gui_history[-1]
 ## Click Sounds
 execute if data storage enderface:data gui_intaract{click:1b} if data storage enderface:data gui_intaract.Item.components."minecraft:custom_data".click_events.click_sounds run function enderface:gui/processing/click_sounds
 ## Page
@@ -24,6 +21,10 @@ execute if data storage enderface:data gui_intaract{click:1b} if data storage en
 function enderface:gui/return_item/main
 ## Other Processing 2
 execute if data storage enderface:data {gui_name:"kit_memory/"} run function enderface:gui/processing/kit_memory/
+#
+## Back gui
+execute if data storage enderface:data gui_intaract{click:1b} if data storage enderface:data gui_intaract.Item.components."minecraft:custom_data".click_events{back_gui:1b} if data storage enderface:data gui_history[0] run data modify storage enderface:data gui_name set from storage enderface:data gui_history[-1]
+execute if data storage enderface:data gui_intaract{click:1b} if data storage enderface:data gui_intaract.Item.components."minecraft:custom_data".click_events{back_gui:1b} if data storage enderface:data gui_history[0] run data remove storage enderface:data gui_history[-1]
 #
 execute if data storage enderface:data gui_intaract{click:1b} if data storage enderface:data gui_intaract.Item.components."minecraft:custom_data"{preview_trade:1b} run function enderface:gui/processing/shop/preview_trade/
 execute if data storage enderface:data gui_intaract{click:1b} if data storage enderface:data gui_intaract.Item.components."minecraft:custom_data".preview_trade_page run function enderface:gui/processing/shop/preview_trade/page with storage enderface:data gui_intaract.Item.components."minecraft:custom_data"

@@ -8,6 +8,8 @@ execute unless entity @s[scores={stage_object.count.1=0..}] run scoreboard playe
 #assist
 function sco:process/domination/object/beacon/assist_activator/
 
+
+
 execute if entity @s[tag=!red,tag=!blue] run function sco:process/domination/object/beacon/capture/none_capture
 execute if entity @s[tag=red] run function sco:process/domination/object/beacon/capture/red_capture
 execute if entity @s[tag=blue] run function sco:process/domination/object/beacon/capture/blue_capture
