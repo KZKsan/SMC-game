@@ -1,0 +1,57 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "item",
+            "name": "leather_boots",
+            "functions": [
+              {
+                "function": "set_name",
+                "name": {
+                  "text": "ハードブーツ",
+                  "italic": false
+                }
+              },
+              {
+                "function": "set_attributes",
+                "modifiers": [
+                  {
+                    "attribute": "generic.knockback_resistance",
+                    "id": "sco_items:hard_boots",
+                    "amount": 0.3,
+                    "operation": "add_value",
+                    "slot": "feet"
+                  },
+                  {
+                    "attribute": "generic.armor",
+                    "id": "sco_items:hard_boots",
+                    "amount": 1,
+                    "operation": "add_value",
+                    "slot": "feet"
+                  }
+                ]
+              },
+              {
+                "function": "set_enchantments",
+                "enchantments": {
+                  "unbreaking": 10
+                }
+              },
+              {
+                "function": "set_components",
+                "components": {
+                  "dyed_color": {
+                    "rgb": 3342130,
+                    "show_in_tooltip": false
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

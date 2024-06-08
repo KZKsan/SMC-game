@@ -1,0 +1,88 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "any_of",
+                        "terms": [
+                            {
+                                "condition": "inverted",
+                                "term": {
+                                    "condition": "any_of",
+                                    "terms": [
+                                        {
+                                            "condition": "entity_properties",
+                                            "entity": "this",
+                                            "predicate": {
+                                                "equipment": {
+                                                    "mainhand": {
+                                                        "predicates": {
+                                                            "custom_data": "{item_functions:{hidden_cover:1b}}"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "condition": "entity_properties",
+                                            "entity": "this",
+                                            "predicate": {
+                                                "equipment": {
+                                                    "offhand": {
+                                                        "predicates": {
+                                                            "custom_data": "{item_functions:{hidden_cover:1b}}"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "condition": "entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "flags": {
+                                        "is_sneaking": false
+                                    }
+                                }
+                            },
+                            {
+                                "condition": "entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "nbt": "{Tags:[\"hidden_cover.lock\"]}"
+                                }
+                            },
+                            {
+                                "condition": "entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "type_specific": {
+                                        "type": "player",
+                                        "gamemode": [
+                                            "spectator"
+                                        ]
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "nbt": "{Tags:[\"hidden_cover.run\"]}"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "sco_items:item_functions/hidden_cover/release"
+    }
+}

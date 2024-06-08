@@ -1,0 +1,46 @@
+{
+    "parent": "sco_items:root",
+    "criteria": {
+        "mainhand": {
+            "trigger": "tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "equipment": {
+                                "mainhand": {
+                                    "predicates": {
+                                        "custom_data": "{item_functions:{crows_sorrow:1b}}"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "condition": "inverted",
+                        "term": {
+                            "condition": "entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "type_specific": {
+                                    "type": "player",
+                                    "gamemode": ["spectator"]
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "mainhand"
+        ]
+    ],
+    "rewards": {
+        "function": "sco_items:item_functions/crows_sorrow/holding"
+    }
+}

@@ -1,0 +1,59 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "iron_sword",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": {
+                                "text": "風切りの刃",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "set_attributes",
+                            "modifiers": [
+                                {
+                                    "attribute": "generic.movement_speed",
+                                    "id": "sco_items:wind_blade",
+                                    "amount": 0.2,
+                                    "operation": "add_multiplied_total",
+                                    "slot": "mainhand"
+                                },
+                                {
+                                    "attribute": "generic.attack_speed",
+                                    "id": "sco_items:wind_blade",
+                                    "amount": -0.4,
+                                    "operation": "add_multiplied_total",
+                                    "slot": "mainhand"
+                                },
+                                {
+                                    "attribute": "generic.attack_damage",
+                                    "id": "sco_items:wind_blade",
+                                    "amount": 5,
+                                    "operation": "add_value",
+                                    "slot": "mainhand"
+                                }
+                            ]
+                        },
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "knockback": 1,
+                                "smite": 2
+                            }
+                        },
+                        {
+                            "function": "set_custom_data",
+                            "tag": "{item_functions:{smite_attack:{min_damage:0.0f}}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

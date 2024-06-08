@@ -1,0 +1,129 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "diamond_chestplate",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": {
+                                "text": "タイラントプレート",
+                                "color": "red",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore": [
+                                [
+                                    {
+                                        "text": "可燃性 ",
+                                        "color": "red",
+                                        "italic": false
+                                    },
+                                    {
+                                        "translate": "enchantment.level.4",
+                                        "color": "red",
+                                        "italic": false
+                                    }
+                                ],
+                                "巨体になれる"
+                            ],
+                            "mode": "replace_all"
+                        },
+                        {
+                            "function": "set_attributes",
+                            "modifiers": [
+                                {
+                                    "attribute": "generic.armor",
+                                    "id": "sco_items:tyrant_plate",
+                                    "amount": 2,
+                                    "operation": "add_value",
+                                    "slot": "chest"
+                                },
+                                {
+                                    "attribute": "generic.max_health",
+                                    "id": "sco_items:tyrant_plate",
+                                    "amount": 80,
+                                    "operation": "add_value",
+                                    "slot": "chest"
+                                },
+                                {
+                                    "attribute": "generic.knockback_resistance",
+                                    "id": "sco_items:tyrant_plate",
+                                    "amount": 1,
+                                    "operation": "add_value",
+                                    "slot": "chest"
+                                },
+                                {
+                                    "attribute": "generic.movement_speed",
+                                    "id": "sco_items:tyrant_plate",
+                                    "amount": -0.5,
+                                    "operation": "add_multiplied_total",
+                                    "slot": "chest"
+                                },
+                                {
+                                    "attribute": "generic.scale",
+                                    "id": "sco_items:tyrant_plate",
+                                    "amount": 0.5,
+                                    "operation": "add_value",
+                                    "slot": "chest"
+                                },
+                                {
+                                    "attribute": "generic.jump_strength",
+                                    "id": "sco_items:tyrant_plate",
+                                    "amount": 0.5,
+                                    "operation": "add_multiplied_base",
+                                    "slot": "chest"
+                                },
+                                {
+                                    "attribute": "generic.safe_fall_distance",
+                                    "id": "sco_items:tyrant_plate",
+                                    "amount": 1,
+                                    "operation": "add_multiplied_base",
+                                    "slot": "chest"
+                                },
+                                {
+                                    "attribute": "generic.step_height",
+                                    "id": "sco_items:tyrant_plate",
+                                    "amount": 1,
+                                    "operation": "add_multiplied_base",
+                                    "slot": "chest"
+                                },
+                                {
+                                    "attribute": "player.entity_interaction_range",
+                                    "id": "sco_items:tyrant_plate",
+                                    "amount": 0.5,
+                                    "operation": "add_multiplied_base",
+                                    "slot": "chest"
+                                }
+                            ]
+                        },
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "trim": {
+                                    "material": "emerald",
+                                    "pattern": "silence"
+                                }
+                            }
+                        },
+                        {
+                            "function": "toggle_tooltips",
+                            "toggles": {
+                                "trim": false
+                            }
+                        },
+                        {
+                            "function": "set_custom_data",
+                            "tag": "{item_functions:{enchant:[{id:\"flammability\",lvl:4s}]}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
