@@ -47,16 +47,6 @@
                                 "max_stack_size": 1,
                                 "damage": 0
                             }
-                        },
-                        {
-                            "function": "set_custom_data",
-                            "tag": {
-                                "item_functions": {
-                                    "smite_attack": {
-                                        "min_damage": 4.5
-                                    }
-                                }
-                            }
                         }
                     ]
                 }
