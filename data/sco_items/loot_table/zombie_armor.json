@@ -16,17 +16,6 @@
                             }
                         },
                         {
-                            "function": "set_lore",
-                            "lore": [
-                                {
-                                    "text": "不死者の呪い",
-                                    "color": "red",
-                                    "italic": false
-                                }
-                            ],
-                            "mode": "replace_all"
-                        },
-                        {
                             "function": "set_attributes",
                             "modifiers": [
                                 {
@@ -39,7 +28,7 @@
                                 {
                                     "attribute": "generic.armor_toughness",
                                     "id": "sco_items:zombie_armor",
-                                    "amount": 3,
+                                    "amount": 10,
                                     "operation": "add_value",
                                     "slot": "chest"
                                 },
@@ -63,7 +52,8 @@
                             "function": "set_enchantments",
                             "enchantments": {
                                 "protection": 3,
-                                "unbreaking": 10
+                                "unbreaking": 10,
+                                "sco_items:undead_curse": 1
                             }
                         },
                         {
@@ -74,10 +64,6 @@
                                     "show_in_tooltip": false
                                 }
                             }
-                        },
-                        {
-                            "function": "set_custom_data",
-                            "tag": "{item_functions:{undead:1b}}"
                         }
                     ]
                 }
