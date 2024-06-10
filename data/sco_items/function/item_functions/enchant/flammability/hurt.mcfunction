@@ -1,6 +1,6 @@
 #>sco_items:item_functions/enchant/flammability/hurt
 #@within advancement sco_items:item_functions/enchant/flammability/hurt
-execute unless data entity @s Inventory[{Slot:100b}].components."minecraft:custom_data".item_functions.enchant[{id:"flammability"}] unless data entity @s Inventory[{Slot:101b}].components."minecraft:custom_data".item_functions.enchant[{id:"flammability"}] unless data entity @s Inventory[{Slot:102b}].components."minecraft:custom_data".item_functions.enchant[{id:"flammability"}] unless data entity @s Inventory[{Slot:103b}].components."minecraft:custom_data".item_functions.enchant[{id:"flammability"}] run return run advancement revoke @s only sco_items:item_functions/enchant/flammability/hurt
+execute unless data entity @s Inventory[{Slot:100b}].components."minecraft:enchantments".levels."sco_items:flammability" unless data entity @s Inventory[{Slot:101b}].components."minecraft:enchantments".levels."sco_items:flammability" unless data entity @s Inventory[{Slot:102b}].components."minecraft:enchantments".levels."sco_items:flammability" unless data entity @s Inventory[{Slot:103b}].components."minecraft:enchantments".levels."sco_items:flammability" run return run advancement revoke @s only sco_items:item_functions/enchant/flammability/hurt
 
 #declare damage_type sco_items:item_functions/enchant/flammability/on_fire
 #declare damage_type sco_items:item_functions/enchant/flammability/in_fire
@@ -9,16 +9,16 @@ execute unless data entity @s Inventory[{Slot:100b}].components."minecraft:custo
 
 scoreboard players set #lvl _ 0
 scoreboard players set # _ 0
-execute if data entity @s Inventory[{Slot:100b}].components."minecraft:custom_data".item_functions.enchant[{id:"flammability"}] store result score # _ run data get entity @s Inventory[{Slot:100b}].components."minecraft:custom_data".item_functions.enchant[{id:"flammability"}].lvl
+execute if data entity @s Inventory[{Slot:100b}].components."minecraft:enchantments".levels."sco_items:flammability" store result score # _ run data get entity @s Inventory[{Slot:100b}].components."minecraft:enchantments".levels."sco_items:flammability"
 scoreboard players operation #lvl _ += # _
 scoreboard players set # _ 0
-execute if data entity @s Inventory[{Slot:101b}].components."minecraft:custom_data".item_functions.enchant[{id:"flammability"}] store result score # _ run data get entity @s Inventory[{Slot:101b}].components."minecraft:custom_data".item_functions.enchant[{id:"flammability"}].lvl
+execute if data entity @s Inventory[{Slot:101b}].components."minecraft:enchantments".levels."sco_items:flammability" store result score # _ run data get entity @s Inventory[{Slot:101b}].components."minecraft:enchantments".levels."sco_items:flammability"
 scoreboard players operation #lvl _ += # _
 scoreboard players set # _ 0
-execute if data entity @s Inventory[{Slot:102b}].components."minecraft:custom_data".item_functions.enchant[{id:"flammability"}] store result score # _ run data get entity @s Inventory[{Slot:102b}].components."minecraft:custom_data".item_functions.enchant[{id:"flammability"}].lvl
+execute if data entity @s Inventory[{Slot:102b}].components."minecraft:enchantments".levels."sco_items:flammability" store result score # _ run data get entity @s Inventory[{Slot:102b}].components."minecraft:enchantments".levels."sco_items:flammability"
 scoreboard players operation #lvl _ += # _
 scoreboard players set # _ 0
-execute if data entity @s Inventory[{Slot:103b}].components."minecraft:custom_data".item_functions.enchant[{id:"flammability"}] store result score # _ run data get entity @s Inventory[{Slot:103b}].components."minecraft:custom_data".item_functions.enchant[{id:"flammability"}].lvl
+execute if data entity @s Inventory[{Slot:103b}].components."minecraft:enchantments".levels."sco_items:flammability" store result score # _ run data get entity @s Inventory[{Slot:103b}].components."minecraft:enchantments".levels."sco_items:flammability"
 scoreboard players operation #lvl _ += # _
 data remove storage sco_items:data data_fetch
 execute store result storage sco_items:data data_fetch.damage double 1 run scoreboard players get #lvl _
