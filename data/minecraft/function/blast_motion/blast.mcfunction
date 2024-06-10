@@ -1,5 +1,5 @@
-#>minecraft:blast_motion/blast
-#@within minecraft:blast_motion/
-summon creeper ^ ^ ^-0.01 {Fuse:0s,ExplosionRadius:-1b,Invulnerable:1b,Team:"no_push",Silent:1b,PersistenceRequired:1b}
+#>blast_motion/blast
+#@within blast_motion/
+summon armor_stand ^ ^ ^-1 {Tags:[blast_motion.stand],active_effects:[{id:"wind_charged",amplifier:0,duration:-1}]}
 scoreboard players remove # _ 1
-execute if score # _ matches 1.. run function minecraft:blast_motion/blast
+execute if score # _ matches 1.. run function blast_motion/blast
