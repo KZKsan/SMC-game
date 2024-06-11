@@ -10,7 +10,7 @@
                         {
                             "function": "set_name",
                             "name": {
-                                "text": "メイス",
+                                "translate": "item.minecraft.mace",
                                 "italic": false
                             }
                         }
