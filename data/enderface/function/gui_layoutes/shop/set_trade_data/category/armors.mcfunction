@@ -17,6 +17,7 @@ function enderface:gui_layoutes/shop/set_trade_data/single_data/black_spirit_kni
 function enderface:gui_layoutes/shop/set_trade_data/single_data/zombie_armor
 function enderface:gui_layoutes/shop/set_trade_data/single_data/worker_chestplate
 function enderface:gui_layoutes/shop/set_trade_data/single_data/worker_leggings
+function enderface:gui_layoutes/shop/set_trade_data/single_data/sneak_leggings
 function enderface:gui_layoutes/shop/set_trade_data/single_data/power_boots
 function enderface:gui_layoutes/shop/set_trade_data/single_data/speed_boots
 function enderface:gui_layoutes/shop/set_trade_data/single_data/hard_boots
