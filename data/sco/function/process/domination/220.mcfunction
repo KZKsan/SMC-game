@@ -2,20 +2,8 @@
 #@within sco:main
 execute if score #runtime game matches ..5 run scoreboard players add #runtime game 1
 execute if score #runtime game matches 5 run function sco:messeges/shop
-execute if score #runtime game matches 1 run team join red @a[tag=join_red]
-execute if score #runtime game matches 1 run team join blue @a[tag=join_blue]
-execute if score #runtime game matches 1 run gamemode adventure @a[gamemode=!adventure,predicate=sco:team_join,team=!spectator]
-execute if score #runtime game matches 1 run clear @a[predicate=sco:team_join,team=!spectator] 
-execute if score #runtime game matches 1 as @a[predicate=sco:team_join,team=!spectator] run function sco_items:kit/default
-execute if score #runtime game matches 1 as @a[predicate=sco:team_join,team=!blue] run function sco:tp/respawn/save {name:"shop_red"}
-execute if score #runtime game matches 1 as @a[team=blue] run function sco:tp/respawn/save {name:"shop_blue"}
-execute if score #runtime game matches 1 as @a[team=spectator] run function sco:regine/block_area/reset_score
-execute if score #runtime game matches 1.. run function sco:player/team/team_info/joined_count/
-execute if score #runtime game matches 1 as @a[scores={regione.penalty_area.penalty.time=1..}] run function sco:regine/penalty_area/reset_flag/single
-
-
-#プロセスID
-execute if score #runtime game matches 1 run scoreboard players set @a[predicate=sco:team_join] processID 220
+execute if score #runtime game matches 1 run function sco:process/domination/220/runtime_1
+execute if score #runtime game matches 1.. run function sco:process/domination/220/runtime_1__
 
 #切断処理
 execute as @a[team=spectator,scores={leave_game=1..}] run function sco:player/retune_lobby
@@ -39,17 +27,7 @@ effect give @a[predicate=sco:team_join,team=!spectator,predicate=gamemode/as] wa
 effect give @a[predicate=sco:team_join,team=!spectator,predicate=gamemode/as] fire_resistance 1 10 true
 
 #テレポート
-execute if score #runtime game matches 1 as @a[predicate=sco:team_join] run function sco:tp/respawn/
-execute if score #runtime game matches 1 as @a[team=spectator] run function sco:regine/block_area/reset_score
-execute as @a[team=spectator,tag=!spectator] run function sco:regine/block_area/reset_score
-execute as @a[team=spectator,tag=!spectator] run function sco:player/team/spectator
-execute as @a[team=spectator,tag=!spectator] run function sco:tp/respawn/save {name:"shop_red"}
-execute as @a[team=spectator,tag=!spectator] run function sco:tp/respawn/
-execute as @a[team=spectator,tag=!spectator] run function sco:player/team/remove_team_tag
-tag @a[team=spectator,tag=!spectator] add rg.block_area
-tag @a[team=spectator,tag=!spectator] add spectator
-execute if score #runtime game matches 1.. as @a[team=red,scores={respawnTime=1}] run function sco:tp/macro with storage sco:data respawn[{name:"shop_red"}]
-execute if score #runtime game matches 1.. as @a[team=blue,scores={respawnTime=1}] run function sco:tp/macro with storage sco:data respawn[{name:"shop_blue"}]
+execute as @a[team=spectator,tag=!spectator] run function sco:process/spectator/
 
 #プロセス終了
 execute if score #mst_time timer matches 003001 run function sco:messeges/shop_end
@@ -61,8 +39,4 @@ execute if score #mst_time timer matches 001501 as @a[predicate=sco:team_join] a
 execute if score #mst_time timer matches 001503 as @a[predicate=sco:team_join] at @s run playsound block.note_block.bell record @s ~ ~ ~ 0.6 1 1
 execute if score #mst_time timer matches 001505 as @a[predicate=sco:team_join] at @s run playsound block.note_block.bell record @s ~ ~ ~ 0.6 1 1
 
-execute if score #mst_time timer matches -110 run scoreboard players set #process game 230
-execute if score #mst_time timer matches -110 run scoreboard players set #runtime game 0
-execute if score #mst_time timer matches -110 run data merge storage timer: {time:120,mode:1,name:'{"text":"残り時間 "}'}
-execute if score #mst_time timer matches -110 store result storage timer: time int 1 run scoreboard players get #game_timer game
-execute if score #mst_time timer matches -110 run function timer:input
+execute if score #mst_time timer matches -110 run function sco:process/domination/220/end
