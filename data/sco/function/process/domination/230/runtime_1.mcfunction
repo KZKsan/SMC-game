@@ -15,5 +15,5 @@ execute as @a[team=spectator] run function sco:regine/block_area/reset_score
 tag @a[predicate=sco:team_join,team=!spectator,tag=!rg.barrier_effects] add rg.barrier_effects
 
 #テレポート
-execute as @a[predicate=sco:team_join] run function sco:tp/respawn/
+#execute as @a[predicate=sco:team_join] run function sco:tp/respawn/
 execute as @a[team=spectator] run function sco:regine/block_area/reset_score
