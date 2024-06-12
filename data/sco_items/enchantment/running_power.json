@@ -1,0 +1,153 @@
+{
+    "description": {
+        "translate": "enchantment.sco_items.running_power",
+        "fallback": "ランニングパワー"
+    },
+    "supported_items": "#minecraft:enchantable/leg_armor",
+    "weight": 1,
+    "max_level": 3,
+    "min_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "max_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "anvil_cost": 0,
+    "slots": [
+        "legs"
+    ],
+    "effects": {
+        "minecraft:location_changed": [
+            {
+                "effect": {
+                    "type": "minecraft:all_of",
+                    "effects": [
+                        {
+                            "type": "minecraft:play_sound",
+                            "sound": "minecraft:block.trial_spawner.about_to_spawn_item",
+                            "volume": 0.7,
+                            "pitch": 1.8
+                        },
+                        {
+                            "type": "minecraft:spawn_particles",
+                            "particle": {
+                                "type": "minecraft:white_smoke"
+                            },
+                            "horizontal_position": {
+                                "type": "entity_position",
+                                "scale": 1
+                            },
+                            "vertical_position": {
+                                "type": "in_bounding_box",
+                                "offset": 0.1
+                            },
+                            "horizontal_velocity": {
+                                "movement_scale": -0.2
+                            },
+                            "vertical_velocity": {
+                                "base": 1
+                            },
+                            "speed": 0.01
+                        },
+                        {
+                            "type": "minecraft:damage_item",
+                            "amount": 1
+                        },
+                        {
+                            "type": "minecraft:attribute",
+                            "id": "sco_items:enchantment.running_power",
+                            "attribute": "minecraft:generic.attack_damage",
+                            "amount": {
+                                "type": "minecraft:linear",
+                                "base": 2,
+                                "per_level_above_first": 1
+                            },
+                            "operation": "add_value"
+                        },
+                        {
+                            "type": "minecraft:attribute",
+                            "id": "sco_items:enchantment.running_power",
+                            "attribute": "minecraft:generic.attack_knockback",
+                            "amount": {
+                                "type": "minecraft:linear",
+                                "base": 2,
+                                "per_level_above_first": 1
+                            },
+                            "operation": "add_value"
+                        },
+                        {
+                            "type": "minecraft:attribute",
+                            "id": "sco_items:enchantment.running_power",
+                            "attribute": "minecraft:generic.movement_speed",
+                            "amount": {
+                                "type": "minecraft:linear",
+                                "base": 0.0705,
+                                "per_level_above_first": 0.02
+                            },
+                            "operation": "add_value"
+                        }
+                    ]
+                },
+                "requirements": {
+                    "condition": "minecraft:all_of",
+                    "terms": [
+                        {
+                            "condition": "minecraft:inverted",
+                            "term": {
+                                "condition": "minecraft:entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "vehicle": {}
+                                }
+                            }
+                        },
+                        {
+                            "condition": "minecraft:any_of",
+                            "terms": [
+                                {
+                                    "condition": "minecraft:all_of",
+                                    "terms": [
+                                        {
+                                            "condition": "minecraft:enchantment_active_check",
+                                            "active": true
+                                        },
+                                        {
+                                            "condition": "minecraft:entity_properties",
+                                            "entity": "this",
+                                            "predicate": {
+                                                "flags": {
+                                                    "is_on_ground": true,
+                                                    "is_flying": false
+                                                }
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "condition": "minecraft:all_of",
+                                    "terms": [
+                                        {
+                                            "condition": "minecraft:enchantment_active_check",
+                                            "active": false
+                                        },
+                                        {
+                                            "condition": "minecraft:entity_properties",
+                                            "entity": "this",
+                                            "predicate": {
+                                                "flags": {
+                                                    "is_sprinting": true
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
