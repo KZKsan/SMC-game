@@ -20,18 +20,20 @@ function sco:stage_data/sudden_death/
 ##beacon
 data modify storage sco:input domination.beacon.set_pos set value []
 data modify storage sco:input domination.beacon.set_pos append value {pos:[-283,-50,-94],num:0}
-data modify storage sco:input domination.beacon.set_pos append value {pos:[-315,-53,-87],num:1}
-data modify storage sco:input domination.beacon.set_pos append value {pos:[-347,-50,-80],num:2}
+data modify storage sco:input domination.beacon.set_pos append value {pos:[-301,-40,-99],num:1}
+data modify storage sco:input domination.beacon.set_pos append value {pos:[-315,-53,-87],num:2}
+data modify storage sco:input domination.beacon.set_pos append value {pos:[-329,-40,-75],num:3}
+data modify storage sco:input domination.beacon.set_pos append value {pos:[-347,-50,-80],num:4}
 ##value
-data modify storage sco:input domination.progress_value set value [0,10,15,25]
-data modify storage sco:input domination.assist_progress_value set value [0,1,20,75]
-data modify storage sco:input domination.capture_value set value [40,20,12,0]
-data modify storage sco:input domination.assist_capture_value set value [0,10,8,0]
-data modify storage sco:input domination.fix_value set value [0,10,5,2]
+data modify storage sco:input domination.progress_value set value [0,10,15,20,26,35]
+data modify storage sco:input domination.assist_progress_value set value [0,10,1,30,50,75]
+data modify storage sco:input domination.capture_value set value [40,40,20,20,12,0]
+data modify storage sco:input domination.assist_capture_value set value [0,0,15,10,8,0]
+data modify storage sco:input domination.fix_value set value [0,15,10,10,5,2]
 ##assist threshold
-data modify storage sco:input domination.assist_threshold set value 300
+data modify storage sco:input domination.assist_threshold set value 800
 ##time
-data modify storage sco:input domination.progress_time set value 60000
+data modify storage sco:input domination.progress_time set value 84000
 data modify storage sco:input domination.capture_time set value 4000
 ##respawn
 data modify storage sco:input domination.respawn.fixed set value 200
