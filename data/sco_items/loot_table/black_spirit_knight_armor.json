@@ -1,0 +1,93 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "iron_chestplate",
+          "functions": [
+            {
+              "function": "set_name",
+              "name": {
+                "text": "黒霊騎士の鎧",
+                "color": "dark_purple",
+                "italic": false
+              }
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                "何か不気味な雰囲気をまとう鎧"
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.armor",
+                  "id": "sco_items:black_spirit_knight_armor",
+                  "amount": 10,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "attribute": "generic.armor_toughness",
+                  "id": "sco_items:black_spirit_knight_armor",
+                  "amount": 2,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "attribute": "generic.max_health",
+                  "id": "sco_items:black_spirit_knight_armor",
+                  "amount": 16,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "attribute": "generic.knockback_resistance",
+                  "id": "sco_items:black_spirit_knight_armor",
+                  "amount": 0.5,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "attribute": "generic.movement_speed",
+                  "id": "sco_items:black_spirit_knight_armor",
+                  "amount": -0.1,
+                  "operation": "add_multiplied_total",
+                  "slot": "chest"
+                }
+              ]
+            },
+            {
+              "function": "set_enchantments",
+              "enchantments": {
+                "projectile_protection": 5,
+                "sco_items:undead_curse": 1
+              }
+            },
+            {
+              "function": "toggle_tooltips",
+              "toggles": {
+                "trim": false
+              }
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "trim": {
+                  "material": "netherite",
+                  "pattern": "silence",
+                  "show_in_tooltip": false
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

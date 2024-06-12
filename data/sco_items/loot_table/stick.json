@@ -1,0 +1,52 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "wooden_shovel",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": {
+                                "text": "木の棍棒",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore": [
+                                "無いよりは、なしよりのあり。"
+                            ],
+                            "mode": "replace_all"
+                        },
+                        {
+                            "function": "set_attributes",
+                            "modifiers": [
+                                {
+                                    "attribute": "generic.attack_damage",
+                                    "id": "sco_items:stick",
+                                    "amount": 2,
+                                    "operation": "add_value",
+                                    "slot": "mainhand"
+                                },
+                                {
+                                    "attribute": "generic.attack_speed",
+                                    "id": "sco_items:stick",
+                                    "amount": -0.25,
+                                    "operation": "add_multiplied_total",
+                                    "slot": "mainhand"
+                                }
+                            ]
+                        },
+                        {
+                            "function": "set_custom_data",
+                            "tag": "{itme_functions:{particle:{explode:1b}}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

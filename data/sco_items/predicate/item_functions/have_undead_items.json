@@ -1,0 +1,20 @@
+{
+    "condition": "entity_properties",
+    "entity": "this",
+    "predicate": {
+        "slots": {
+            "armor.*": {
+                "predicates": {
+                    "enchantments": [
+                        {
+                            "enchantments": "sco_items:undead_curse",
+                            "levels": {
+                                "min": 1
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,74 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "netherite_pickaxe",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": {
+                                "text": "鋼鉄の戦鎚",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore": [
+                                "圧倒的な攻撃力を誇るが",
+                                "まともに扱える者は限られている"
+                            ],
+                            "mode": "replace_all"
+                        },
+                        {
+                            "function": "set_attributes",
+                            "modifiers": [
+                                {
+                                    "attribute": "generic.movement_speed",
+                                    "id": "sco_items:steel_war_hammer",
+                                    "amount": -0.4,
+                                    "operation": "add_multiplied_total",
+                                    "slot": "mainhand"
+                                },
+                                {
+                                    "attribute": "generic.attack_speed",
+                                    "id": "sco_items:steel_war_hammer",
+                                    "amount": -0.9,
+                                    "operation": "add_multiplied_base",
+                                    "slot": "mainhand"
+                                },
+                                {
+                                    "attribute": "generic.attack_damage",
+                                    "id": "sco_items:steel_war_hammer",
+                                    "amount": 14,
+                                    "operation": "add_value",
+                                    "slot": "mainhand"
+                                },
+                                {
+                                    "attribute": "generic.knockback_resistance",
+                                    "id": "sco_items:steel_war_hammer",
+                                    "amount": 0.3,
+                                    "operation": "add_value",
+                                    "slot": "mainhand"
+                                }
+                            ]
+                        },
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "knockback": 2,
+                                "unbreaking": 3
+                            }
+                        },
+                        {
+                            "function": "set_custom_data",
+                            "tag": "{item_functions:{steel_war_hammer:1b}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

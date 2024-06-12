@@ -1,0 +1,58 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "iron_chestplate",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": {
+                                "text": "パワーアーマー[Defense]",
+                                "italic": false,
+                                "color": "yellow"
+                            }
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore": [
+                                "着用者の力をアシストする装備"
+                            ],
+                            "mode": "replace_all"
+                        },
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "trim": {
+                                    "material": "gold",
+                                    "pattern": "wayfinder",
+                                    "show_in_tooltip": false
+                                }
+                            }
+                        },
+                        {
+                            "function": "set_attributes",
+                            "modifiers": [
+                                {
+                                    "slot": "chest",
+                                    "amount": 6,
+                                    "operation": "add_value",
+                                    "attribute": "generic.armor",
+                                    "id": "sco_items:power_armor.defense"
+                                }
+                            ]
+                        },
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "projectile_protection" :3
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

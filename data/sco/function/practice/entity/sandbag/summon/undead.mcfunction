@@ -1,0 +1,3 @@
+#>sco:practice/entity/sandbag/summon/undead
+#@private
+summon creeper ~ ~-0.5 ~ {Rotation:[0f,0f],DeathLootTable:"empty",PersistenceRequired:1b,NoAI:1b,Health:800f,Tags:["sandbag"],attributes:[{id:"generic.max_health",base:1000d},{id:"generic.armor",base:0},{id:"generic.knockback_resistance",base:20}],ArmorItems:[{},{},{},{id:"skeleton_skull",count:1,components:{"minecraft:enchantments":{levels:{"sco_items:undead_curse":1}}}}],Passengers:[{id:"item_display",Tags:[sandbag.display,set_nbt],item:{id:"skeleton_skull",count:1},item_display:"head",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,-0.073f,0f],scale:[1f,1f,1f]}}]}

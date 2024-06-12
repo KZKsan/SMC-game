@@ -1,0 +1,66 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "leather_leggings",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": {
+                                "text": "勤労のズボン",
+                                "color": "white",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "set_attributes",
+                            "modifiers": [
+                                {
+                                    "attribute": "generic.armor",
+                                    "id": "sco_items:worker_leggings",
+                                    "amount": 3,
+                                    "operation": "add_value",
+                                    "slot": "legs"
+                                },
+                                {
+                                    "attribute": "generic.armor_toughness",
+                                    "id": "sco_items:worker_leggings",
+                                    "amount": 8,
+                                    "operation": "add_value",
+                                    "slot": "legs"
+                                },
+                                {
+                                    "attribute": "generic.movement_speed",
+                                    "id": "sco_items:worker_leggings",
+                                    "amount": 0.5,
+                                    "operation": "add_multiplied_total",
+                                    "slot": "legs"
+                                }
+                            ]
+                        },
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "unbreaking": 10,
+                                "sco_items:undead_curse": 1
+                            }
+                        },
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "hide_additional_tooltip": {},
+                                "dyed_color": {
+                                    "rgb": 4144722,
+                                    "show_in_tooltip": false
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

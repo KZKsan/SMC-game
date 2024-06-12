@@ -1,0 +1,40 @@
+{
+    "criteria": {
+        "chest": {
+            "trigger": "tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "equipment": {
+                                "chest": {
+                                    "predicates": {
+                                        "custom_data": "{item_functions:{show_durability:1b}}"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "condition": "inverted",
+                        "term": {
+                            "condition": "entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "type_specific": {
+                                    "type": "player",
+                                    "gamemode": ["spectator"]
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "sco_items:item_functions/show_durability/chest/"
+    }
+}
