@@ -17,6 +17,8 @@ tag @s remove rg.penalty_area.penalty
 tag @s remove rg.penalty_area.death
 tag @s remove rg.penalty_respawn
 tag @s remove rg.barrier_effects
+tag @s remove beacon.capture_area.already
+tag @s remove beacon.capture_area.sound
 execute unless score last gameID matches -2147483648..2147483647 run scoreboard players reset @s gameID
 execute if score last gameID matches -2147483648..2147483647 run scoreboard players operation @s gameID = last gameID
 scoreboard players reset @s processID
