@@ -1,0 +1,17 @@
+{
+    "values": [
+        "mangrove_planks",
+        "mangrove_slab",
+        "mangrove_stairs",
+        "mangrove_pressure_plate",
+        "mangrove_button",
+        "mangrove_fence",
+        "mangrove_fence_gate",
+        "mangrove_door",
+        "mangrove_trapdoor",
+        "mangrove_sign",
+        "mangrove_wall_sign",
+        "mangrove_wall_hanging_sign",
+        "mangrove_hanging_sign"
+    ]
+}

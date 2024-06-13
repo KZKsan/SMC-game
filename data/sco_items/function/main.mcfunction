@@ -53,7 +53,7 @@
     execute as @a[scores={crows_sorrow_cooldown=76}] run function sco_items:item_functions/crows_sorrow/step/reset
 
 # hidden_cover
-    execute as @e[tag=hidden_cover] at @s run function sco_items:item_functions/hidden_cover/leaves/
+    execute as @e[tag=hidden_cover,tag=marker] at @s run function sco_items:item_functions/hidden_cover/leaves/
 
 
 # cure_arrow

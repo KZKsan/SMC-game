@@ -1,0 +1,17 @@
+{
+    "values": [
+        "jungle_planks",
+        "jungle_slab",
+        "jungle_stairs",
+        "jungle_pressure_plate",
+        "jungle_button",
+        "jungle_fence",
+        "jungle_fence_gate",
+        "jungle_door",
+        "jungle_trapdoor",
+        "jungle_sign",
+        "jungle_wall_sign",
+        "jungle_wall_hanging_sign",
+        "jungle_hanging_sign"
+    ]
+}

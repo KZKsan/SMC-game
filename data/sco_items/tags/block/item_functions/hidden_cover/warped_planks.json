@@ -1,0 +1,17 @@
+{
+    "values": [
+        "warped_planks",
+        "warped_slab",
+        "warped_stairs",
+        "warped_pressure_plate",
+        "warped_button",
+        "warped_fence",
+        "warped_fence_gate",
+        "warped_door",
+        "warped_trapdoor",
+        "warped_sign",
+        "warped_wall_sign",
+        "warped_wall_hanging_sign",
+        "warped_hanging_sign"
+    ]
+}

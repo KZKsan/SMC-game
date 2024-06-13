@@ -1,0 +1,17 @@
+{
+    "values": [
+        "spruce_planks",
+        "spruce_slab",
+        "spruce_stairs",
+        "spruce_pressure_plate",
+        "spruce_button",
+        "spruce_fence",
+        "spruce_fence_gate",
+        "spruce_door",
+        "spruce_trapdoor",
+        "spruce_sign",
+        "spruce_wall_sign",
+        "spruce_wall_hanging_sign",
+        "spruce_hanging_sign"
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "values": [
+        "acacia_planks",
+        "acacia_slab",
+        "acacia_stairs",
+        "acacia_pressure_plate",
+        "acacia_button",
+        "acacia_fence",
+        "acacia_fence_gate",
+        "acacia_door",
+        "acacia_trapdoor",
+        "acacia_sign",
+        "acacia_wall_sign",
+        "acacia_wall_hanging_sign",
+        "acacia_hanging_sign"
+    ]
+}

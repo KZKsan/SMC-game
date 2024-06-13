@@ -2,6 +2,8 @@
     "values": [
         "stone",
         "stone_slab",
-        "stone_stairs"
+        "stone_stairs",
+        "stone_pressure_plate",
+        "stone_button"
     ]
 }

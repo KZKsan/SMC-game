@@ -1,0 +1,17 @@
+{
+    "values": [
+        "oak_planks",
+        "oak_slab",
+        "oak_stairs",
+        "oak_pressure_plate",
+        "oak_button",
+        "oak_fence",
+        "oak_fence_gate",
+        "oak_door",
+        "oak_trapdoor",
+        "oak_sign",
+        "oak_wall_sign",
+        "oak_wall_hanging_sign",
+        "oak_hanging_sign"
+    ]
+}
