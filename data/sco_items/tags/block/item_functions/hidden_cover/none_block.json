@@ -1,7 +1,5 @@
 {
     "values": [
-        "#stairs",
-        "#slabs",
         "#flower_pots",
         "#flowers",
         "#fire",
@@ -29,7 +27,6 @@
         "ender_chest",
         "chest",
         "trapped_chest",
-        "#walls",
         "lantern",
         "soul_lantern",
         "lily_pad",
