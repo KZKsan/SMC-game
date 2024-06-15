@@ -84,7 +84,7 @@
                                         "italic": false
                                     },
                                     {
-                                        "text": " 3s",
+                                        "text": " 1.5s",
                                         "color": "red",
                                         "italic": false
                                     }
@@ -136,7 +136,7 @@
                                         "type": "set",
                                         "vector": "^ ^ ^1.5"
                                     },
-                                    "throwing_limit": 60
+                                    "throwing_limit": 30
                                 }
                             }
                         }
