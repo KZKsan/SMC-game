@@ -11,6 +11,7 @@ execute as @a[predicate=sco:team_join,team=!spectator] store result score @s res
 function sco:player/team/team_info/domination/set_display
 execute as @a[team=spectator] run function sco:tp/respawn/
 execute as @a[team=spectator] run function sco:regine/block_area/reset_score
+kill @a[team=spectator]
 
 tag @a[predicate=sco:team_join,team=!spectator,tag=!rg.barrier_effects] add rg.barrier_effects
 

@@ -23,8 +23,8 @@ execute as @a[team=spectator,tag=!spectator] run function sco:process/spectator/
 
 
 #ステージギミック
-execute if score #runtime game matches 3 run function sco:process/domination/230/runtime_3
-execute if score #runtime game matches 4.. run function sco:process/domination/230/runtime_4__
+execute if score #runtime game matches 8 run function sco:process/domination/230/runtime_3
+execute if score #runtime game matches 9.. run function sco:process/domination/230/runtime_4__
 execute if score #mst_time timer matches 010000 run function sco:messeges/1minutes
 
 #プロセス終了
