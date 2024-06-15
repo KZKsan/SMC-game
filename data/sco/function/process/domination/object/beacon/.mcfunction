@@ -1,7 +1,6 @@
 #>sco:process/domination/object/beacon/
 #@within sco:process/domination/object/main
 
-execute if entity @s[tag=load_pos] run function sco:process/domination/object/beacon/set/load_pos with entity @s item.components."minecraft:custom_data"
 
 execute unless entity @s[scores={stage_object.count.1=0..}] run scoreboard players set @s stage_object.count.1 0
 

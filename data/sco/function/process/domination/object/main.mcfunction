@@ -7,7 +7,7 @@ execute if score #domination.advantage game matches 1 if score #domination.red_c
 execute if score #domination.advantage game matches 0 if score #domination.red_capture_count game < #domination.blue_capture_count game run scoreboard players set #domination.advantage game 1
 
 
-
+execute as @e[type=marker,tag=load_pos,tag=beacon.set_point] run function sco:process/domination/object/beacon/set/load_pos with entity @s data
 execute as @e[type=item_display,tag=beacon.core] at @s run function sco:process/domination/object/beacon/
 execute as @a[tag=beacon.capture_area.sound,tag=!beacon.capture_area.already] at @s run function sco:process/domination/object/beacon/capture/sound/outside
 tag @a[tag=beacon.capture_area.already] remove beacon.capture_area.already
