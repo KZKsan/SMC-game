@@ -67,6 +67,8 @@
     execute as @a[scores={lightning_hammer_holding_time=..-1}] run function sco_items:item_functions/lightning_hammer/actionbar/flag
     ##corpse_daemon
     execute as @a[scores={corpse_daemon.cooldown=1..}] run function sco_items:item_functions/corpse_daemon/cooldown/
+    ##wind_mace
+    execute as @a[scores={wind_mace.cooldown=1..}] run function sco_items:item_functions/wind_mace/cooldown
 
 # smite_attack
     tag @a[tag=item_function.smite_attack.already] remove item_function.smite_attack.already

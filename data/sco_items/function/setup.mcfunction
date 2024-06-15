@@ -13,6 +13,7 @@ scoreboard objectives add moving custom:walk_one_cm
 scoreboard objectives add trigger_death deathCount
 scoreboard objectives add cure_arrow dummy
 scoreboard objectives add corpse_daemon.cooldown dummy
+scoreboard objectives add wind_mace.cooldown dummy
 scoreboard objectives add sco_items.configs dummy
 
 #>
@@ -37,6 +38,12 @@ scoreboard players set #lightning_hammer.set_cooltime sco_items.configs -80
     #declare score_holder #corpse_daemon.stop_effect_time
 scoreboard players set #corpse_daemon.set_cooltime sco_items.configs 160
 scoreboard players set #corpse_daemon.stop_effect_time sco_items.configs 40
+
+#>
+#@wihtin sco_items:item_functions/wind_mace/**
+    #declare score_holder #wind_mace.set_cooltime
+scoreboard players set #wind_mace.set_cooltime sco_items.configs 40
+
 
 #>
 #@internal

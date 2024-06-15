@@ -18,7 +18,7 @@
                         {
                             "function": "set_enchantments",
                             "enchantments": {
-                                "wind_burst": 1
+                                "density": 1
                             }
                         },
                         {
