@@ -55,7 +55,7 @@
                   {
                     "attribute": "player.entity_interaction_range",
                     "id": "sco_items:magic_book_of_flame",
-                    "amount": 5,
+                    "amount": 2,
                     "operation": "add_value",
                     "slot": "mainhand"
                   }
