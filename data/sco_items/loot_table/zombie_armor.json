@@ -28,7 +28,7 @@
                                 {
                                     "attribute": "generic.armor_toughness",
                                     "id": "sco_items:zombie_armor",
-                                    "amount": 10,
+                                    "amount": 5,
                                     "operation": "add_value",
                                     "slot": "chest"
                                 },
