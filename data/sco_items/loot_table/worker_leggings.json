@@ -28,7 +28,7 @@
                                 {
                                     "attribute": "generic.armor_toughness",
                                     "id": "sco_items:worker_leggings",
-                                    "amount": 8,
+                                    "amount": 3,
                                     "operation": "add_value",
                                     "slot": "legs"
                                 },

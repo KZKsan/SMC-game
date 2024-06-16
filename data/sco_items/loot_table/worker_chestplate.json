@@ -28,7 +28,7 @@
                                 {
                                     "attribute": "generic.armor_toughness",
                                     "id": "sco_items:worker_chestplate",
-                                    "amount": 8,
+                                    "amount": 5,
                                     "operation": "add_value",
                                     "slot": "chest"
                                 },
