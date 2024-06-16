@@ -58,13 +58,6 @@
                     "amount": 1,
                     "operation": "add_value",
                     "slot": "mainhand"
-                  },
-                  {
-                    "attribute": "",
-                    "id": "sco_items:magic_book_of_flame",
-                    "amount": 1,
-                    "operation": "add_value",
-                    "slot": "mainhand"
                   }
                 ]
               },
