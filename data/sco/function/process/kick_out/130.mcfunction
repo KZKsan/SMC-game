@@ -29,6 +29,7 @@ execute if score #mst_time timer matches 010000 run function sco:messeges/1minut
 #判定
 execute if score #runtime game matches 10 run function sco:process/kick_out/130/runtime_10
 execute if score #score_time game matches 1.. run scoreboard players remove #score_time game 1
+execute if score #score_time game matches 1 run function sco:player/team/team_info/team_score/empty
 
 #end
 execute if score #mst_time timer matches -109 run function sco:process/kick_out/game_flag/winner/top

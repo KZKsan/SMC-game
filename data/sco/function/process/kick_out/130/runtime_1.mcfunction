@@ -11,7 +11,7 @@ execute as @a[team=blue] run function sco:tp/respawn/save {name:"stage_blue"}
 
 #score
 function sco:player/team/team_info/team_score/set_display
-function sco:player/team/team_info/team_score/empty
+
 
 #テレポート
 execute as @a[predicate=sco:team_join] run function sco:tp/respawn/
