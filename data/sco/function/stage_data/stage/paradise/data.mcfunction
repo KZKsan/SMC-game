@@ -27,8 +27,8 @@ data modify storage sco:input domination.beacon.set_pos append value {pos:[-347,
 ##value
 data modify storage sco:input domination.progress_value set value [0,10,15,20,26,35]
 data modify storage sco:input domination.assist_progress_value set value [0,10,1,30,50,75]
-data modify storage sco:input domination.capture_value set value [40,40,20,20,12,0]
-data modify storage sco:input domination.assist_capture_value set value [0,0,15,10,8,0]
+data modify storage sco:input domination.capture_value set value [20,20,10,10,8,0]
+data modify storage sco:input domination.assist_capture_value set value [35,35,25,15,12,0]
 data modify storage sco:input domination.fix_value set value [0,15,10,10,5,2]
 ##assist threshold
 data modify storage sco:input domination.assist_threshold set value 800
@@ -38,6 +38,7 @@ data modify storage sco:input domination.capture_time set value 4000
 ##respawn
 data modify storage sco:input domination.respawn.fixed set value 200
 data modify storage sco:input domination.respawn.max set value 400
+data modify storage sco:input domination.respawn.assist set value -125
 data modify storage sco:input domination.respawn.penalty.damage_dealt set value {div:150, add_value:20}
 data modify storage sco:input domination.respawn.penalty.kill set value {div:1, add_value:15}
 data modify storage sco:input domination.respawn.penalty.throwing_potion set value {div:1, add_value:10}

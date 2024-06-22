@@ -18,6 +18,7 @@ scoreboard players set #domination.blue_progress.display game 0
 
 #respawn penalty
 execute store result score #respawn.max game run data get storage sco:data domination.respawn.max
+execute store result score #respawn.assist game run data get storage sco:data domination.respawn.assist
 execute store result score #respawn.penalty.damage_dealt.div game run data get storage sco:data domination.respawn.penalty.damage_dealt.div
 execute store result score #respawn.penalty.damage_dealt.add_value game run data get storage sco:data domination.respawn.penalty.damage_dealt.add_value
 execute store result score #respawn.penalty.kill.div game run data get storage sco:data domination.respawn.penalty.kill.div
