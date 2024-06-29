@@ -1,0 +1,33 @@
+{
+    "description": {
+        "translate": "enchantment.minecraft.weapon",
+        "fallback": "武器化"
+    },
+    "supported_items": "minecraft:blaze_rod",
+    "weight": 5,
+    "max_level": 1,
+    "min_cost": {
+        "base": 5,
+        "per_level_above_first": 8
+    },
+    "max_cost": {
+        "base": 55,
+        "per_level_above_first": 8
+    },
+    "anvil_cost": 2,
+    "slots": [
+        "mainhand"
+    ],
+    "effects": {
+        "minecraft:post_attack": [
+            {
+                "enchanted": "attacker",
+                "affected": "attacker",
+                "effect": {
+                    "type": "damage_item",
+                    "amount": 1
+                }
+            }
+        ]
+    }
+}
