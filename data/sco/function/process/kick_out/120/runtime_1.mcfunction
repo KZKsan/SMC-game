@@ -3,7 +3,7 @@
 team join red @a[tag=join_red]
 team join blue @a[tag=join_blue]
 gamemode adventure @a[gamemode=!adventure,predicate=sco:team_join,team=!spectator]
-clear @a[predicate=sco:team_join,team=!spectator] 
+clear @a[predicate=sco:team_join,team=!spectator]
 execute as @a[predicate=sco:team_join,team=!spectator] run function sco_items:kit/default
 execute as @a[predicate=sco:team_join,team=!blue] run function sco:tp/respawn/save {name:"shop_red"}
 execute as @a[team=blue] run function sco:tp/respawn/save {name:"shop_blue"}

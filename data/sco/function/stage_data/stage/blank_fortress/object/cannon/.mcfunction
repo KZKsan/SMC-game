@@ -32,7 +32,7 @@ execute if entity @s[scores={stage_object.count.0=48}] run particle firework ~ ~
 execute if entity @s[scores={stage_object.count.0=48}] run particle cloud ~ ~5 ~ 0.8 0.3 0.8 0.01 60 force @a[distance=..60]
 execute if entity @s[scores={stage_object.count.0=48}] run playsound entity.generic.explode record @a ~ ~ ~ 1 1.5
 execute if entity @s[scores={stage_object.count.0=47}] run playsound entity.wither.shoot record @a ~ ~ ~ 1 0.8
-execute if entity @s[scores={stage_object.count.0=50}] positioned ~ ~7 ~ as @a[predicate=gamemode/as,distance=..2] run damage @s 200 sco:explosion 
+execute if entity @s[scores={stage_object.count.0=50}] positioned ~ ~7 ~ as @a[predicate=gamemode/as,distance=..2] run damage @s 200 sco:explosion
 
 
 

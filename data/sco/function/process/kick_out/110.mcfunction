@@ -5,7 +5,7 @@ function sco:game_id/set
 
 #チーム振り分け
 execute as @a[team=random_team] run function sco:player/random_team
-execute if entity @p[team=mode.waiting] run function sco:player/join_waiting 
+execute if entity @p[team=mode.waiting] run function sco:player/join_waiting
 tag @a[team=red] add join_red
 tag @a[team=blue] add join_blue
 experience set @a 0 levels
