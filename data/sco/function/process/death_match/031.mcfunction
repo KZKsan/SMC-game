@@ -1,7 +1,7 @@
 #>sco:process/death_match/031
 #@within sco:main
 #if (runtime >= 0) runtime++;
-execute if score #runtime game matches 0..6 run scoreboard players add #runtime game 1
+execute if score #runtime game matches 0..5 run scoreboard players add #runtime game 1
 #初期化
 execute if score #runtime game matches 1 run function sco:process/death_match/031/runtime_1
 execute if score #runtime game matches 1.. run function sco:process/death_match/031/runtime_1__
