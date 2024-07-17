@@ -1,0 +1,34 @@
+{
+    "criteria": {
+        "attack": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "slots": {
+                                "weapon.mainhand": {
+                                    "predicates": {
+                                        "custom_data": {
+                                            "item_functions": {
+                                                "shield_stan": true
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "damage": {
+                    "blocked": true
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "sco_items:item_functions/shield_stun/attack"
+    }
+}
