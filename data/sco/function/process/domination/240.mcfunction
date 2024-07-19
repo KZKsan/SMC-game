@@ -30,5 +30,6 @@ kill @e[type=text_display,tag=beacon.info]
 
 
 #ゲーム終了
+execute if score #runtime game matches 100 run function sco:player/result/mvp/text_mvp
 execute if score #runtime game matches 200 as @e[type=#arrows] if function sco:regine/can_pickup_arrows/test run kill
 execute if score #runtime game matches 200 run function sco:process/end
