@@ -136,6 +136,7 @@ function sco:stage_data/stage_tables/death_match
 function sco:stage_data/stage_tables/kick_out
 function sco:stage_data/stage_tables/domination
 function sco:stage_data/stage_tables/escalation
+function sco:stage_data/stage_tables/end_gate
 
 function sco:stage_data/stage_tables/random_reset/
 

@@ -10,7 +10,8 @@
                         {
                             "function": "set_name",
                             "name": {
-                                "text": "キックアウト",
+                                "translate": "sco.rule.kick_out",
+                                "fallback": "キックアウト",
                                 "color": "yellow",
                                 "italic": false
                             }

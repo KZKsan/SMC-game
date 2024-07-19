@@ -10,7 +10,8 @@
                         {
                             "function": "set_name",
                             "name": {
-                                "text": "デスマッチ",
+                                "translate": "sco.rule.death_match",
+                                "fallback": "デスマッチ",
                                 "color": "red",
                                 "italic": false
                             }
