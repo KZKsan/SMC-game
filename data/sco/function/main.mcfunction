@@ -19,33 +19,42 @@ execute if score #process game matches 000 run function sco:process/death_match/
 execute if score #process game matches 010 run function sco:process/death_match/010
 execute if score #process game matches 110 run function sco:process/kick_out/110
 execute if score #process game matches 210 run function sco:process/domination/210
+execute if score #process game matches 410 run function sco:process/escalation/410
 
 #2.マップ確認
 execute if score #process game matches 011 run function sco:process/death_match/011
 execute if score #process game matches 111 run function sco:process/kick_out/111
 execute if score #process game matches 211 run function sco:process/domination/211
+execute if score #process game matches 411 run function sco:process/escalation/411
 
 
 #3.ショップ
 execute if score #process game matches 020 run function sco:process/death_match/020
 execute if score #process game matches 120 run function sco:process/kick_out/120
 execute if score #process game matches 220 run function sco:process/domination/220
+execute if score #process game matches 420 run function sco:process/escalation/420
+execute if score #process game matches 421 run function sco:process/escalation/421
 
 
 #4.ゲーム
 execute if score #process game matches 030 run function sco:process/death_match/030
 execute if score #process game matches 130 run function sco:process/kick_out/130
 execute if score #process game matches 230 run function sco:process/domination/230
+execute if score #process game matches 430 run function sco:process/escalation/430
+execute if score #process game matches 432 run function sco:process/escalation/432
 
 
 #5.サドンデス
 execute if score #process game matches 031 run function sco:process/death_match/031
 execute if score #process game matches 131 run function sco:process/kick_out/131
+execute if score #process game matches 431 run function sco:process/escalation/431
 
 #6.終了
 execute if score #process game matches 040 run function sco:process/death_match/040
 execute if score #process game matches 140 run function sco:process/kick_out/140
 execute if score #process game matches 240 run function sco:process/domination/240
+execute if score #process game matches 441 run function sco:process/escalation/441
+execute if score #process game matches 440 run function sco:process/escalation/440
 
 
 execute as @a[predicate=sco:practice_join,scores={leave_game=1..}] run function sco:player/retune_lobby

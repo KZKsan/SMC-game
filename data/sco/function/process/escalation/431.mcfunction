@@ -1,11 +1,11 @@
-#>sco:process/escalation/430
+#>sco:process/escalation/431
 #@within sco:main
 #if (runtime >= 0) runtime++;
 execute if score #runtime game matches 0..6 run scoreboard players add #runtime game 1
 #初期化
-execute if score #runtime game matches 1 run function sco:process/escalation/430/runtime_1
-execute if score #runtime game matches 1.. run function sco:process/escalation/430/runtime_1__
-execute if score #runtime game matches 5 run function sco:process/escalation/430/runtime_5
+execute if score #runtime game matches 1 run function sco:process/escalation/431/runtime_1
+execute if score #runtime game matches 1.. run function sco:process/escalation/431/runtime_1__
+execute if score #runtime game matches 5 run function sco:process/escalation/431/runtime_5
 
 
 #切断処理

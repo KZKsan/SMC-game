@@ -1,6 +1,6 @@
 #>sco:process/escalation/432/runtime_1
 #@within sco:process/escalation/432
-function sco:process/escalation/game_reset
+scoreboard players set #flag game 0
 gamemode adventure @a[predicate=sco:team_join,team=!spectator]
 function sco:player/result/reset_scores/all
 effect give @a[predicate=sco:team_join,team=!spectator] instant_health 100 100

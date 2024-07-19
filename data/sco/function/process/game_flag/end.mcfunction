@@ -11,3 +11,4 @@ execute if score #process game matches 30..31 run scoreboard players set #proces
 execute if score #process game matches 130..131 run scoreboard players set #score_time game 3
 execute if score #process game matches 130..131 run scoreboard players set #process game 140
 execute if score #process game matches 230..231 run scoreboard players set #process game 240
+execute if score #process game matches 441 run scoreboard players set #process game 440

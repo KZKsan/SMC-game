@@ -8,7 +8,7 @@ execute if score #runtime game matches 5 run function sco:messeges/shop
 #切断処理
 execute as @a[team=spectator,scores={leave_game=1..}] run function sco:player/retune_lobby
 execute as @a[predicate=sco:team_join,team=!spectator] if score @s processID matches 411 run clear @s
-execute as @a[predicate=sco:team_join,team=!spectator] if score @s processID matches 411 run function sco_items:kit/default
+execute as @a[predicate=sco:team_join,team=!spectator] if score @s processID matches 411 run function sco_items:kit/escalation/lvl1/0
 execute as @a[team=red] if score @s processID matches 411 run function sco:tp/respawn/save {name:"shop_red"}
 execute as @a[team=blue] if score @s processID matches 411 run function sco:tp/respawn/save {name:"shop_blue"}
 execute as @a[predicate=sco:team_join,team=!spectator] if score @s processID matches 411 run function sco:tp/respawn/
