@@ -3,6 +3,7 @@
 function sco:process/domination/game_reset
 gamemode adventure @a[predicate=sco:team_join,team=!spectator]
 function sco:player/result/reset_scores/all
+function sco:player/result/total/reset/all
 execute as @a[scores={regione.penalty_area.penalty.time=1..}] run function sco:regine/penalty_area/reset_flag/single
 execute as @a[team=red] run function sco:tp/respawn/save {name:"shop_red"}
 execute as @a[team=spectator] run function sco:tp/respawn/save {name:"stage_red"}

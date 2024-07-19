@@ -29,4 +29,5 @@ function sco:gamemode_histories/pop
 function sco:player/team/remove_team_tag
 function sco:regine/block_area/reset_score
 function sco:player/result/reset_scores/single
+function sco:player/result/total/reset/single
 function sco:regine/penalty_area/reset_flag/single
