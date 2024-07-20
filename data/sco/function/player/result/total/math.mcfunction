@@ -1,5 +1,5 @@
 #>sco:player/result/total/math
-#@publicz
+#@public
 scoreboard players operation @s score_kill_count.total += @s score_kill_count
 scoreboard players operation @s score_death_count.total += @s score_death_count
 scoreboard players operation @s score_damage_dealt.total += @s score_damage_dealt
