@@ -20,7 +20,7 @@
                   {
                     "attribute": "generic.attack_speed",
                     "id": "sco_items:rapier",
-                    "amount": 2.7,
+                    "amount": 2,
                     "operation": "add_value",
                     "slot": "mainhand"
                   },
