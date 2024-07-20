@@ -32,6 +32,10 @@
                     "slot": "mainhand"
                   }
                 ]
+              },
+              {
+                "function": "set_custom_data",
+                "tag": "{itme_functions:{shield_stan:1b}}"
               }
             ]
           }
