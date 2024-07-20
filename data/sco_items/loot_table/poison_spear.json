@@ -53,7 +53,7 @@
                 {
                   "attribute": "player.entity_interaction_range",
                   "id": "sco_items:poison_spear",
-                  "amount": 2,
+                  "amount": 0.75,
                   "operation": "add_value",
                   "slot": "mainhand"
                 }
