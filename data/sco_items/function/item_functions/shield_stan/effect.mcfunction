@@ -6,6 +6,6 @@ playsound block.anvil.place player @a ~ ~ ~ 0.7 0.5
 particle electric_spark ~ ~ ~ 0 0 0 0.8 5
 
 # effect
-effect give @s slowness 3 1
-effect give @s weakness 3 9
-effect give @s mining_fatigue 3 9
+#effect give @s slowness 3 1
+effect give @s weakness 1 9
+effect give @s mining_fatigue 1 9

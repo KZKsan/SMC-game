@@ -8,14 +8,10 @@
                         "condition": "entity_properties",
                         "entity": "this",
                         "predicate": {
-                            "slots": {
-                                "weapon.mainhand": {
+                            "equipment": {
+                                "mainhand": {
                                     "predicates": {
-                                        "custom_data": {
-                                            "item_functions": {
-                                                "shield_stan": true
-                                            }
-                                        }
+                                        "custom_data": "{item_functions:{shield_stan:1b}}"
                                     }
                                 }
                             }
@@ -29,6 +25,6 @@
         }
     },
     "rewards": {
-        "function": "sco_items:item_functions/shield_stun/attack"
+        "function": "sco_items:item_functions/shield_stan/attack"
     }
 }
