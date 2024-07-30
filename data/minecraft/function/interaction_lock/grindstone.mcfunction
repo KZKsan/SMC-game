@@ -1,0 +1,29 @@
+#>interaction_lock/grindstone
+#@api
+execute positioned ~-1 ~00 ~-1 align y if block ~ ~ ~ grindstone run summon interaction ~ ~-0.00001 ~ {width:1.00002f,height:1.00002f,Tags:[interaction_lock,grindstone]}
+execute positioned ~00 ~00 ~-1 align y if block ~ ~ ~ grindstone run summon interaction ~ ~-0.00001 ~ {width:1.00002f,height:1.00002f,Tags:[interaction_lock,grindstone]}
+execute positioned ~01 ~00 ~-1 align y if block ~ ~ ~ grindstone run summon interaction ~ ~-0.00001 ~ {width:1.00002f,height:1.00002f,Tags:[interaction_lock,grindstone]}
+execute positioned ~-1 ~00 ~00 align y if block ~ ~ ~ grindstone run summon interaction ~ ~-0.00001 ~ {width:1.00002f,height:1.00002f,Tags:[interaction_lock,grindstone]}
+execute positioned ~00 ~00 ~00 align y if block ~ ~ ~ grindstone run summon interaction ~ ~-0.00001 ~ {width:1.00002f,height:1.00002f,Tags:[interaction_lock,grindstone]}
+execute positioned ~01 ~00 ~00 align y if block ~ ~ ~ grindstone run summon interaction ~ ~-0.00001 ~ {width:1.00002f,height:1.00002f,Tags:[interaction_lock,grindstone]}
+execute positioned ~-1 ~00 ~01 align y if block ~ ~ ~ grindstone run summon interaction ~ ~-0.00001 ~ {width:1.00002f,height:1.00002f,Tags:[interaction_lock,grindstone]}
+execute positioned ~00 ~00 ~01 align y if block ~ ~ ~ grindstone run summon interaction ~ ~-0.00001 ~ {width:1.00002f,height:1.00002f,Tags:[interaction_lock,grindstone]}
+execute positioned ~01 ~00 ~01 align y if block ~ ~ ~ grindstone run summon interaction ~ ~-0.00001 ~ {width:1.00002f,height:1.00002f,Tags:[interaction_lock,grindstone]}
+execute positioned ~-1 ~-1 ~-1 align y if block ~ ~ ~ grindstone run summon interaction ~ ~-0.00001 ~ {width:1.00002f,height:1.00002f,Tags:[interaction_lock,grindstone]}
+execute positioned ~00 ~-1 ~-1 align y if block ~ ~ ~ grindstone run summon interaction ~ ~-0.00001 ~ {width:1.00002f,height:1.00002f,Tags:[interaction_lock,grindstone]}
+execute positioned ~01 ~-1 ~-1 align y if block ~ ~ ~ grindstone run summon interaction ~ ~-0.00001 ~ {width:1.00002f,height:1.00002f,Tags:[interaction_lock,grindstone]}
+execute positioned ~-1 ~-1 ~00 align y if block ~ ~ ~ grindstone run summon interaction ~ ~-0.00001 ~ {width:1.00002f,height:1.00002f,Tags:[interaction_lock,grindstone]}
+execute positioned ~00 ~-1 ~00 align y if block ~ ~ ~ grindstone run summon interaction ~ ~-0.00001 ~ {width:1.00002f,height:1.00002f,Tags:[interaction_lock,grindstone]}
+execute positioned ~01 ~-1 ~00 align y if block ~ ~ ~ grindstone run summon interaction ~ ~-0.00001 ~ {width:1.00002f,height:1.00002f,Tags:[interaction_lock,grindstone]}
+execute positioned ~-1 ~-1 ~01 align y if block ~ ~ ~ grindstone run summon interaction ~ ~-0.00001 ~ {width:1.00002f,height:1.00002f,Tags:[interaction_lock,grindstone]}
+execute positioned ~00 ~-1 ~01 align y if block ~ ~ ~ grindstone run summon interaction ~ ~-0.00001 ~ {width:1.00002f,height:1.00002f,Tags:[interaction_lock,grindstone]}
+execute positioned ~01 ~-1 ~01 align y if block ~ ~ ~ grindstone run summon interaction ~ ~-0.00001 ~ {width:1.00002f,height:1.00002f,Tags:[interaction_lock,grindstone]}
+execute positioned ~-1 ~01 ~-1 align y if block ~ ~ ~ grindstone run summon interaction ~ ~-0.00001 ~ {width:1.00002f,height:1.00002f,Tags:[interaction_lock,grindstone]}
+execute positioned ~00 ~01 ~-1 align y if block ~ ~ ~ grindstone run summon interaction ~ ~-0.00001 ~ {width:1.00002f,height:1.00002f,Tags:[interaction_lock,grindstone]}
+execute positioned ~01 ~01 ~-1 align y if block ~ ~ ~ grindstone run summon interaction ~ ~-0.00001 ~ {width:1.00002f,height:1.00002f,Tags:[interaction_lock,grindstone]}
+execute positioned ~-1 ~01 ~00 align y if block ~ ~ ~ grindstone run summon interaction ~ ~-0.00001 ~ {width:1.00002f,height:1.00002f,Tags:[interaction_lock,grindstone]}
+execute positioned ~00 ~01 ~00 align y if block ~ ~ ~ grindstone run summon interaction ~ ~-0.00001 ~ {width:1.00002f,height:1.00002f,Tags:[interaction_lock,grindstone]}
+execute positioned ~01 ~01 ~00 align y if block ~ ~ ~ grindstone run summon interaction ~ ~-0.00001 ~ {width:1.00002f,height:1.00002f,Tags:[interaction_lock,grindstone]}
+execute positioned ~-1 ~01 ~01 align y if block ~ ~ ~ grindstone run summon interaction ~ ~-0.00001 ~ {width:1.00002f,height:1.00002f,Tags:[interaction_lock,grindstone]}
+execute positioned ~00 ~01 ~01 align y if block ~ ~ ~ grindstone run summon interaction ~ ~-0.00001 ~ {width:1.00002f,height:1.00002f,Tags:[interaction_lock,grindstone]}
+execute positioned ~01 ~01 ~01 align y if block ~ ~ ~ grindstone run summon interaction ~ ~-0.00001 ~ {width:1.00002f,height:1.00002f,Tags:[interaction_lock,grindstone]}
