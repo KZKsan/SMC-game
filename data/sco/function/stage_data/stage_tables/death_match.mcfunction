@@ -10,4 +10,5 @@ data modify storage _ _ append value "centrifuge"
 data modify storage _ _ append value "deep_cave"
 data modify storage _ _ append value "endroll"
 data modify storage _ _ append value "blank_fortress"
+data modify storage _ _ append value "desert_mountains"
 data modify storage sco:data stage_tables.death_match set from storage _ _

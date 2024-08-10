@@ -7,3 +7,4 @@ execute if data storage sco:data {stage:"centrifuge"} run function sco:stage_dat
 execute if data storage sco:data {stage:"deep_cave"} run function sco:stage_data/stage/deep_cave/reset
 execute if data storage sco:data {stage:"endroll"} run function sco:stage_data/stage/endroll/reset
 execute if data storage sco:data {stage:"blank_fortress"} run function sco:stage_data/stage/blank_fortress/reset
+execute if data storage sco:data {stage:"desert_mountains"} run function sco:stage_data/stage/desert_mountains/reset
