@@ -7,6 +7,6 @@
 #declare score_holder #additional_timer
 
 scoreboard players set #stage_timer game 15
-scoreboard players set #shop_timer game 150
+scoreboard players set #shop_timer game 105
 scoreboard players set #game_timer game 180
 scoreboard players set #additional_timer game 9999999
