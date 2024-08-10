@@ -29,7 +29,7 @@
                                 {
                                     "attribute": "generic.attack_damage",
                                     "id": "sco_item:magic_book_of_range",
-                                    "amount": -0.4,
+                                    "amount": -0.2,
                                     "operation": "add_multiplied_total",
                                     "slot": "offhand"
                                 },
