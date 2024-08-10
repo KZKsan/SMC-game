@@ -11,4 +11,5 @@ data modify storage _ _ append value "deep_cave"
 data modify storage _ _ append value "endroll"
 data modify storage _ _ append value "blank_fortress"
 data modify storage _ _ append value "desert_mountains"
+data modify storage _ _ append value "water_temple"
 data modify storage sco:data stage_tables.kick_out set from storage _ _

@@ -1,0 +1,27 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "quartz_pillar",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": {
+                                "text": "水の神殿",
+                                "italic": false,
+                                "color": "#55AADD"
+                            }
+                        },
+                        {
+                            "function": "set_custom_data",
+                            "tag": "{enderface_item:true}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
