@@ -22,7 +22,7 @@ function enderface:gui_layoutes/shop/set_trade_data/wirite_data/add_trade
 item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with grass_block 10
 function enderface:gui_layoutes/shop/set_trade_data/wirite_data/icon/trade
 function enderface:gui_layoutes/shop/set_trade_data/wirite_data/sell
-item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with iron_sword[damage=10] 1
+#loot replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 loot sco_items:iron_sword[damage=10] 1
 item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.1 with diamond 10
 
 function enderface:gui_layoutes/shop/set_trade_data/wirite_data/buy

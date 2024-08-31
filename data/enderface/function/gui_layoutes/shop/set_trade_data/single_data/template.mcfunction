@@ -5,7 +5,7 @@ item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with
 function enderface:gui_layoutes/shop/set_trade_data/wirite_data/icon/preview
 item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with diamond_pickaxe 1
 function enderface:gui_layoutes/shop/set_trade_data/wirite_data/sell
-item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with iron_sword 1
+loot replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 loot sco_items:iron_sword
 item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.1 with diamond 5
 function enderface:gui_layoutes/shop/set_trade_data/wirite_data/buy
 data modify storage enderface:shop sell_count set value {click:1,sneak:1}

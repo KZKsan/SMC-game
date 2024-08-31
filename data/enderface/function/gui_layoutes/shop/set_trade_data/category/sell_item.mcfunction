@@ -64,7 +64,7 @@ data modify storage enderface:shop sell_count set value {click:1,sneak:1}
 function enderface:gui_layoutes/shop/set_trade_data/wirite_data/sell_count
 data modify storage enderface:shop trade_data append from storage enderface:shop _
 
-item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with iron_sword
+loot replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 loot sco_items:iron_sword
 function enderface:gui_layoutes/shop/set_trade_data/wirite_data/icon/preview
 function enderface:gui_layoutes/shop/set_trade_data/wirite_data/buy
 item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with emerald 3
@@ -87,7 +87,7 @@ data modify storage enderface:shop trade_data append from storage enderface:shop
 loot replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 loot sco_items:all_items
 data modify entity @e[tag=set_trade_data,limit=1,distance=..2] Items[0].count set value 19b
 function enderface:gui_layoutes/shop/set_trade_data/wirite_data/icon/preview
-item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 with iron_sword
+loot replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.0 loot sco_items:iron_sword
 loot replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.1 loot sco_items:shield
 item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.2 with iron_helmet
 item replace entity @e[tag=set_trade_data,limit=1,distance=..2] container.3 with iron_chestplate
