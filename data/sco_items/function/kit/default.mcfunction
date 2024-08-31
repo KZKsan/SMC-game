@@ -1,6 +1,6 @@
 #>sco_items:kit/default
 #@api
-give @s iron_sword
+loot give @s loot sco_items:iron_sword
 give @s bow
 give @s iron_helmet
 give @s iron_chestplate
