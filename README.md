@@ -162,7 +162,9 @@ data modify entity @e[predicate=marker_storage,limit=1] data.page set value 0
 > :アイテム名および説明文をリソースパックにより翻訳できるように定義
 
 ・アイテム名：
-  `item.sco_items.(name)`
+`item.sco_items.(name)`
 
 ・説明文：
-  `item.sco_items.(name).description.(number)`
+`item.sco_items.(name).description.(number)`
+
+・手に持ったとき：`item.modifiers.hand`
