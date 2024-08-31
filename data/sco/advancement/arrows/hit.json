@@ -8,7 +8,8 @@
                         "direct_entity": {
                             "type": "#arrows"
                         }
-                    }
+                    },
+                    "blocked": false
                 }
             }
         }
