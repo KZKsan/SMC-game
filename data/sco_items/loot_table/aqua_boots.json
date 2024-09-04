@@ -10,7 +10,7 @@
 						{
 							"function": "set_name",
 							"name": {
-								"translate": "item.sco_itmes.aqua_boots",
+								"translate": "item.sco_items.aqua_boots",
 								"fallback": "アクアブーツ",
 								"italic": false
 							}

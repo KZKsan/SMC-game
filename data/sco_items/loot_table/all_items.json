@@ -10,7 +10,7 @@
                         {
                             "function": "set_name",
                             "name": {
-                                "translate": "item.sco_itmes.all_items",
+                                "translate": "item.sco_items.all_items",
                                 "fallback": "全売り",
                                 "italic": false,
                                 "color": "green"
@@ -20,7 +20,7 @@
                             "function": "set_lore",
                             "lore": [
                                 {
-                                    "translate": "item.sco_itmes.all_items.description.0",
+                                    "translate": "item.sco_items.all_items.description.0",
                                     "fallback": "初期配布アイテムを全て売る。",
                                     "italic": false,
                                     "color": "white"
