@@ -1,0 +1,43 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "filled_map",
+					"functions": [
+						{
+							"function": "set_name",
+							"name": {
+								"text": "　"
+							}
+						},
+						{
+							"function": "set_lore",
+							"lore": [
+								{
+									"text": "勝利条件は「ポイントを一定量獲得」です。",
+									"color": "gold",
+									"italic": false
+								}
+							],
+							"mode": "replace_all"
+						}, 
+						{
+							"function": "set_components",
+							"components": {
+								"hide_additional_tooltip": {
+								}
+							}
+						},
+						{
+							"function": "set_custom_data",
+							"tag": "{enderface_item:1b}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
