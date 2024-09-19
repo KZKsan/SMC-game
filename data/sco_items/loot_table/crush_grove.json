@@ -45,7 +45,7 @@
                         {
                             "attribute": "player.entity_interaction_range",
                             "id": "sco_items:crush_grove",
-                            "amount": -0.45,
+                            "amount": -0.70,
                             "operation": "add_multiplied_base",
                             "slot": "mainhand"
                         },
