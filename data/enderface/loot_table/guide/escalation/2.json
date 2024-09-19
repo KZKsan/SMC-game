@@ -5,27 +5,20 @@
 			"entries": [
 				{
 					"type": "item",
-					"name": "cracked_stone_bricks",
+					"name": "filled_map",
 					"functions": [
 						{
 							"function": "set_name",
 							"name": {
-								"text": "脆弱性",
-								"italic": false,
-								"color": "light_purple"
+								"text": "　"
 							}
 						},
 						{
 							"function": "set_lore",
 							"lore": [
 								{
-									"text": "耐久値が通常よりも多く減少する",
-									"color": "white",
-									"italic": false
-								},
-								{
-									"text": "未実装",
-									"color": "light_purple",
+									"text": "勝利条件は「3ゲーム取ること」です。",
+									"color": "gold",
 									"italic": false
 								}
 							],

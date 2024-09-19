@@ -17,6 +17,7 @@ execute if data storage enderface:data {gui_name:"join_the_game/guide/"} run fun
 execute if data storage enderface:data {gui_name:"join_the_game/guide/death_match/"} run function enderface:gui_layoutes/guide_book/battle/death_match
 execute if data storage enderface:data {gui_name:"join_the_game/guide/kick_out/"} run function enderface:gui_layoutes/guide_book/battle/kick_out
 execute if data storage enderface:data {gui_name:"join_the_game/guide/domination/"} run function enderface:gui_layoutes/guide_book/battle/domination
+execute if data storage enderface:data {gui_name:"join_the_game/guide/escalation/"} run function enderface:gui_layoutes/guide_book/battle/escalation
 execute if data storage enderface:data {gui_name:"join_the_game/guide/shop/"} run function enderface:gui_layoutes/guide_book/shop/0
 execute if data storage enderface:data {gui_name:"join_the_game/guide/enchants/"} run function enderface:gui_layoutes/guide_book/enchants/0
 execute if data storage enderface:data {gui_name:"game_settings/"} run function enderface:gui_layoutes/game_settings/
