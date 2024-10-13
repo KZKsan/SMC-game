@@ -6,6 +6,7 @@ function sco_items:item_functions/hidden_cover/leaves/block/
 execute as @n[type=item_display,tag=hidden_cover,tag=marker,tag=set_data] run data modify entity @s item.components."minecraft:custom_data".Owner set from entity @p[tag=origin] UUID
 execute as @e[type=block_display,tag=hidden_cover,tag=set_data] run data modify entity @s block_state.Name set from entity @n[type=item_display,tag=hidden_cover,tag=!disable_copy,tag=marker,tag=set_data] item.id
 execute if entity @n[type=item_display,tag=hidden_cover,tag=disable_copy,tag=marker,tag=set_data] as @e[type=block_display,tag=hidden_cover,tag=set_data] run data modify entity @s block_state.Name set value "moss_block"
+execute if entity @n[type=item_display,tag=hidden_cover,tag=grass_block,tag=marker,tag=set_data] as @e[type=block_display,tag=hidden_cover,tag=set_data,tag=top] run data modify entity @s block_state.Name set value "grass_block"
 tag @s remove origin
 tag @e[tag=set_data] remove set_data
 playsound block.moss.place block @a ~ ~ ~ 1 1
