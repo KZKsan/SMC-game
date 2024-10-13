@@ -22,7 +22,7 @@
             "selectionRanges": true,
             "signatures": true
         },
-        "gameVersion": "1.21",
+        "gameVersion": "1.21.1",
         "language": "Default",
         "permissionLevel": 2,
         "plugins": [],
@@ -122,6 +122,8 @@
     },
     "snippet": {
         "executeIfScoreSet": "execute if score ${1:score_holder} ${2:objective} = ${1:score_holder} ${2:objective} $0",
-        "summonAec": "summon minecraft:area_effect_cloud ~ ~ ~ {Age: -2147483648, Duration: -1, WaitTime: -2147483648, Tags: [\"${1:tag}\"]}"
+        "summonAec": "summon minecraft:area_effect_cloud ~ ~ ~ {Age: -2147483648, Duration: -1, WaitTime: -2147483648, Tags: [\"${1:tag}\"]}",
+        "CheckStorageNBT": "tellraw @s {\"storage\": \"${1:storage}\" \"nbt\":\"${2:nbt}\"}",
+        "CheckEntityNBT": "tellraw @s {\"entity\": \"${1:entity}\" \"nbt\":\"${2:nbt}\"}"
     }
 }
