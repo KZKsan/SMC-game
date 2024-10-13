@@ -8,9 +8,9 @@
                         "condition": "location_check",
                         "predicate": {
                             "position": {
-                                "x": 370.5,
-                                "y": -49.5,
-                                "z": -120.5
+                                "x": 385.5,
+                                "y": -46.5,
+                                "z": -119.5
                             },
                             "block": {
                                 "blocks": [
