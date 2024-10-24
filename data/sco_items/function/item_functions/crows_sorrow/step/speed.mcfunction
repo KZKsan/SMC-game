@@ -1,7 +1,7 @@
 #>sco_items:item_functions/crows_sorrow/step/speed
 #@within sco_items:item_functions/crows_sorrow/holding
 function sco_items:item_functions/crows_sorrow/step/reset
-scoreboard players set @s crows_sorrow_cooldown 100
+scoreboard players operation @s crows_sorrow_cooldown = #crows_sorrow.set_cooltime sco_items.configs
 scoreboard players add @s crows_sorrow_count 1
 attribute @s generic.movement_speed modifier add sco_items:item_functions.crows_sorrow.step 10 add_multiplied_base
 attribute @s generic.knockback_resistance modifier add sco_items:item_functions.crows_sorrow.step 1 add_value
