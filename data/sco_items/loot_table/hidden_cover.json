@@ -23,9 +23,7 @@
                                     "fallback": "手に持って[%s]で、身を潜めることができる。",
                                     "with": [
                                         {
-                                            "keybind": "key.sneak",
-                                            "color": "white",
-                                            "italic": false
+                                            "keybind": "key.sneak"
                                         }
                                     ]
                                 }
