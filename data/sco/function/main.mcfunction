@@ -76,7 +76,7 @@ function sco:process/mode/practice/
 function sco:process/mode/pvp/
 
 ##アイテムドロップ制限
-execute at @a as @e[type=item,tag=,distance=..6] unless score @s dropped_item matches 0 run function sco:regine/item_drop/
+execute as @e[type=item,tag=] at @s unless score @s dropped_item matches 0 run function sco:regine/item_drop/
 
 ##飛翔体
 execute as @e[type=#projectiles] unless score @s shot_projectiles matches 0 run function sco:regine/shot_projectiles/

@@ -25,6 +25,24 @@ scoreboard objectives add sco_items.configs dummy
 #declare tag item_function.
 
 #>
+#@wihtin sco_items:item_functions/crows_sorrow/**
+    #declare score_holder #crows_sorrow.blink_count
+    #declare score_holder #crows_sorrow.set_cooltime
+    #declare score_holder #crows_sorrow.reset_time
+    #declare score_holder #crows_sorrow.set_slow
+    #declare score_holder #crows_sorrow.can_blink
+    #declare score_holder #crows_sorrow.can_blink.offset
+scoreboard players set #crows_sorrow.blink_count sco_items.configs 2
+scoreboard players set #crows_sorrow.set_cooltime sco_items.configs 100
+scoreboard players set #crows_sorrow.set_slow sco_items.configs 96
+scoreboard players set #crows_sorrow.reset_time sco_items.configs 76
+scoreboard players set #crows_sorrow.can_blink sco_items.configs 95
+scoreboard players operation #crows_sorrow.can_blink.offset sco_items.configs = #crows_sorrow.set_cooltime sco_items.configs
+scoreboard players operation #crows_sorrow.can_blink.offset sco_items.configs -= #crows_sorrow.can_blink sco_items.configs
+
+
+
+#>
 #@wihtin sco_items:item_functions/lightning_hammer/**
     #declare score_holder #lightning_hammer.charge_time
     #declare score_holder #lightning_hammer.set_cooltime

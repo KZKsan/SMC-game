@@ -5,25 +5,25 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "golden_axe",
+                    "name": "netherite_upgrade_smithing_template",
                     "functions": [
                         {
                             "function": "set_name",
                             "name": {
-                                "text": ">キックアウト",
+                                "text": ">エスカレーション",
                                 "italic": false,
                                 "color": "aqua"
                             }
                         },
                         {
-                            "function": "toggle_tooltips",
-                            "toggles": {
-                                "attribute_modifiers": false
+                            "function": "set_components",
+                            "components": {
+                                "hide_additional_tooltip": {}
                             }
                         },
                         {
                             "function": "set_custom_data",
-                            "tag": "{enderface_item:1b,click_events:{click_sounds:[{sound:\"ui.button.click\"}],change_gui:\"join_the_game/guide/kick_out/\"}}"
+                            "tag": "{enderface_item:1b,click_events:{click_sounds:[{sound:\"ui.button.click\"}],change_gui:\"join_the_game/guide/escalation/\"}}"
                         }
                     ]
                 }

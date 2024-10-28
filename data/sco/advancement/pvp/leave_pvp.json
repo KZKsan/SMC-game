@@ -8,9 +8,109 @@
                         "condition": "location_check",
                         "predicate": {
                             "position": {
-                                "x": 374.5,
-                                "y": -50.5,
-                                "z": -120.5
+                                "x": 489.5,
+                                "y": -43.5,
+                                "z": -167.5
+                            },
+                            "block": {
+                                "blocks": [
+                                    "stone_button"
+                                ],
+                                "state": {
+                                    "powered": "true"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "button2": {
+            "trigger": "default_block_use",
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "location_check",
+                        "predicate": {
+                            "position": {
+                                "x": 473.5,
+                                "y": -43.5,
+                                "z": -181.5
+                            },
+                            "block": {
+                                "blocks": [
+                                    "stone_button"
+                                ],
+                                "state": {
+                                    "powered": "true"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "button3": {
+            "trigger": "default_block_use",
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "location_check",
+                        "predicate": {
+                            "position": {
+                                "x": 505.5,
+                                "y": -43.5,
+                                "z": -153.5
+                            },
+                            "block": {
+                                "blocks": [
+                                    "stone_button"
+                                ],
+                                "state": {
+                                    "powered": "true"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "button4": {
+            "trigger": "default_block_use",
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "location_check",
+                        "predicate": {
+                            "position": {
+                                "x": 473.5,
+                                "y": -35.5,
+                                "z": -153.5
+                            },
+                            "block": {
+                                "blocks": [
+                                    "stone_button"
+                                ],
+                                "state": {
+                                    "powered": "true"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "button5": {
+            "trigger": "default_block_use",
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "location_check",
+                        "predicate": {
+                            "position": {
+                                "x": 505.5,
+                                "y": -35.5,
+                                "z": -181.5
                             },
                             "block": {
                                 "blocks": [
@@ -28,7 +128,7 @@
     },
     "requirements": [
         [
-            "button1"
+            "button1","button2","button3","button4","button5"
         ]
     ],
     "rewards": {
