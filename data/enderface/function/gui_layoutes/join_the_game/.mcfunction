@@ -3,9 +3,11 @@
 
 function enderface:gui_layoutes/generic/set_air
 
-execute if entity @s[predicate=sneaking,tag=gm] run data modify storage enderface:data gui_name set value "game_settings/"
-execute if entity @s[predicate=sneaking,tag=gm] run return 0
-
+execute if data storage sco:config game{gm_mode:1b} if entity @s[predicate=sneaking,tag=gm] run data modify storage enderface:data gui_name set value "game_settings/"
+execute if data storage sco:config game{gm_mode:1b} if entity @s[predicate=sneaking,tag=gm] run return 0
+execute if data storage sco:config game{gm_mode:1b} if entity @s[predicate=sneaking,tag=!gm] run tellraw @s [{"translate": "message.sco.error.no_gm","fallback": "ゲーム設定の権限がありません。","color": "red"},{"text": "\n/tag @s add gm","clickEvent": {"action":"suggest_command","value": "/tag @s add gm"},"hoverEvent": {"action": "show_text","contents": {"translate": "message.sco.input_command","fallback": "コマンドを入力"}}}]
+execute if data storage sco:config game{gm_mode:0b} if entity @s[predicate=sneaking] run data modify storage enderface:data gui_name set value "game_settings/"
+execute if data storage sco:config game{gm_mode:0b} if entity @s[predicate=sneaking] run return 0
 loot replace entity @s enderchest.10 loot enderface:sco_game_join/red
 loot replace entity @s enderchest.11 loot enderface:sco_game_join/blue
 execute if data storage sco:config game{can_team_select:0b} run loot replace entity @s enderchest.9 loot enderface:sco_game_join/join

@@ -9,6 +9,7 @@ function enderface:gui_layoutes/game_settings/other_rules/toggle {rule_id:"show_
 function enderface:gui_layoutes/game_settings/other_rules/toggle {rule_id:"friendlyfire", rule_name:"フレンドリーファイア", slot:14}
 function enderface:gui_layoutes/game_settings/other_rules/toggle {rule_id:"can_pickup_arrows", rule_name:"矢の回収", slot:15}
 function enderface:gui_layoutes/game_settings/other_rules/quad {rule_id:"collision", rule_name:"衝突判定", slot:20, rule_quad_0:"OFF",rule_quad_1:"ON",rule_quad_2:"敵のみ",rule_quad_3:"味方のみ"}
+function enderface:gui_layoutes/game_settings/other_rules/toggle {rule_id:"gm_mode", rule_name:"GM有効", slot:21}
 
 function enderface:gui_layoutes/game_settings/rule_settings/icon with storage sco:config game
 function enderface:gui_layoutes/game_settings/stage_select/icon with storage sco:config
