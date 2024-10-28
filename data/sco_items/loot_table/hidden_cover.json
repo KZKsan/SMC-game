@@ -20,7 +20,14 @@
                             "lore": [
                                 {
                                     "translate": "item.sco_items.hidden_cover.description.0",
-                                    "fallback": "身を潜めることができる。"
+                                    "fallback": "手に持って[%s]で、身を潜めることができる。",
+                                    "with": [
+                                        {
+                                            "keybind": "key.sneak",
+                                            "color": "white",
+                                            "italic": false
+                                        }
+                                    ]
                                 }
                             ],
                             "mode": "replace_all"
