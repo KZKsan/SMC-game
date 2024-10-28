@@ -9,7 +9,9 @@ tellraw @a[predicate=sco:practice_join] {"text": "!! 訓練所にいる間は参
 tellraw @s "----------------------------"
 execute store result score # _ if entity @a[predicate=sco:game_join]
 execute store result score #_ _ if entity @a[team=spectator]
-execute store result score #__ _ if entity @a[predicate=!sco:game_join,team=!spectator]
+execute store result score #__ _ if entity @a[predicate=!sco:game_join,team=!spectator,team=!mode.waiting]
 execute store result score #___ _ if entity @a
-tellraw @s [{"text": "参加中:","color": "gold"},{"score":{"name": "#", "objective": "_"},"bold": true,"color": "white"}," ",{"text": "観戦中:","color": "gray","bold": false},{"score":{"name": "#_", "objective": "_"},"bold": true,"color": "white"}," ",{"text": "未参加:","color": "dark_red","bold": false},{"score":{"name": "#__", "objective": "_"},"bold": true,"color": "white"}," ",{"text": "全体:","color": "white","bold": false},{"score":{"name": "#___", "objective": "_"},"bold": true,"color": "white"}]
+execute store result score #____ _ if entity @a[team=mode.waiting]
+execute unless entity @p[team=mode.waiting] run tellraw @s [{"text": "参加中:","color": "gold"},{"score":{"name": "#", "objective": "_"},"bold": true,"color": "white"}," ",{"text": "観戦中:","color": "gray","bold": false},{"score":{"name": "#_", "objective": "_"},"bold": true,"color": "white"}," ",{"text": "未参加:","color": "dark_red","bold": false},{"score":{"name": "#__", "objective": "_"},"bold": true,"color": "white"}," ",{"text": "全体:","color": "white","bold": false},{"score":{"name": "#___", "objective": "_"},"bold": true,"color": "white"}]
+execute if entity @p[team=mode.waiting] run tellraw @s [{"text": "参加中:","color": "gold"},{"score":{"name": "#", "objective": "_"},"bold": true,"color": "white"}," ",{"text": "観戦中:","color": "gray","bold": false},{"score":{"name": "#_", "objective": "_"},"bold": true,"color": "white"}," ",{"text": "未参加:","color": "dark_red","bold": false},{"score":{"name": "#__", "objective": "_"},"bold": true,"color": "white"}," ",{"text": "全体:","color": "white","bold": false},{"score":{"name": "#___", "objective": "_"},"bold": true,"color": "white"}," ",{"text": "待機中:","color": "dark_purple","bold": false},{"score":{"name": "#____", "objective": "_"},"bold": true,"color": "white"}]
 tellraw @a "----------------------------"
