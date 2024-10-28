@@ -27,7 +27,9 @@
 				{
 					"function": "set_name",
 					"name": {
-						"text": "浮遊の矢",
+						"translate": "item.sco_items.levitation_arrow",
+						"fallback": "浮遊の矢",
+						"color": "white",
 						"italic": false
 					}
 				}

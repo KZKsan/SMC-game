@@ -47,7 +47,7 @@
 								],
 								"",
 								{
-									"text": "手に持ったとき：",
+									"translate": "item.modifiers.hand",
 									"color": "gray",
 									"italic": false
 								},
