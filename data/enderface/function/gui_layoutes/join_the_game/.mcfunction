@@ -17,6 +17,7 @@ loot replace entity @s enderchest.15 loot enderface:sco_game_join/practice/team_
 loot replace entity @s[predicate=!sco:game_join,team=!spectator] enderchest.15 loot enderface:sco_game_join/practice/none
 loot replace entity @s enderchest.17 loot enderface:sco_game_join/spectator
 
+execute if data storage sco:config game{gm_mode:0b} run loot replace entity @s enderchest.26 loot enderface:sco_game_join/game_setting
 
 execute if data storage sco:config game{can_team_select:0b} run item modify entity @s[predicate=sco:game_join] enderchest.9 enderface:selected
 execute if data storage sco:config game{can_team_select:1b} run item modify entity @s[team=random_team] enderchest.9 enderface:selected
