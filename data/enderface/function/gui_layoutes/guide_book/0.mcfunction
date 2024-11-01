@@ -9,5 +9,6 @@ loot replace entity @s enderchest.2 loot enderface:guide/domination/icon
 loot replace entity @s enderchest.3 loot enderface:guide/escalation/icon
 loot replace entity @s enderchest.4 loot enderface:guide/shop/icon
 loot replace entity @s enderchest.5 loot enderface:guide/enchants/icon
+loot replace entity @s enderchest.18 loot enderface:guide/credit/icon
 
 loot replace entity @s enderchest.26 loot enderface:back_gui

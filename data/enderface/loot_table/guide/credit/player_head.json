@@ -1,0 +1,23 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "player_head",
+                    "functions": [
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "profile": {
+                                    "name": "KZK1945"
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

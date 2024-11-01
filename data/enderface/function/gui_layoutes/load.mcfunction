@@ -20,6 +20,7 @@ execute if data storage enderface:data {gui_name:"join_the_game/guide/domination
 execute if data storage enderface:data {gui_name:"join_the_game/guide/escalation/"} run function enderface:gui_layoutes/guide_book/battle/escalation
 execute if data storage enderface:data {gui_name:"join_the_game/guide/shop/"} run function enderface:gui_layoutes/guide_book/shop/0
 execute if data storage enderface:data {gui_name:"join_the_game/guide/enchants/"} run function enderface:gui_layoutes/guide_book/enchants/0
+execute if data storage enderface:data {gui_name:"join_the_game/guide/credit/"} run function enderface:gui_layoutes/guide_book/credit/0
 execute if data storage enderface:data {gui_name:"game_settings/"} run function enderface:gui_layoutes/game_settings/
 execute if data storage enderface:data {gui_name:"game_settings/stage_select"} run function enderface:gui_layoutes/game_settings/stage_select/
 execute if data storage enderface:data {gui_name:"game_settings/rule_settings"} run function enderface:gui_layoutes/game_settings/rule_settings/
