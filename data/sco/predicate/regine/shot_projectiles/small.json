@@ -8,7 +8,8 @@
                 "type": [
                     "arrow",
                     "spectral_arrow",
-                    "trident"
+                    "trident",
+                    "wind_charge"
                 ]
             }
         }
