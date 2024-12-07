@@ -10,18 +10,18 @@
                         {
                             "function": "set_name",
                             "name": {
-                                "translate": "sco.guide.shop.gui.type_0",
-                                "fallback": ">ショップカテゴリ選択",
+                                "translate": "sco.guide.shop.gui.items.item1",
+                                "fallback": ">売却アイテムの選択",
                                 "italic": false,
-                                "color": "#0fdd00"
+                                "color": "white"
                             }
                         },
                         {
                             "function": "set_lore",
                             "lore": [
                                 {
-                                    "translate": "sco.guide.shop.gui.type_0.description.0",
-                                    "fallback": "[%s]で取引GUIを開く",
+                                    "translate": "sco.guide.shop.gui.items.item1.description.0",
+                                    "fallback": "[%s]で売却するアイテムを選択",
                                     "with": [
                                         {
                                             "keybind": "key.attack",
@@ -33,20 +33,6 @@
                                 }
                             ],
                             "mode": "replace_all"
-                        },
-                        {
-                            "function": "set_custom_data",
-                            "tag": {
-                                "enderface_item":true,
-                                "click_events": {
-                                    "click_sounds": [
-                                        {
-                                            "sound":"ui.button.click"
-                                        }
-                                    ],
-                                    "change_gui":"join_the_game/guide/shop/gui/type_0"
-                                }
-                            }
                         },
                         {
                             "function": "toggle_tooltips",

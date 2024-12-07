@@ -8,6 +8,10 @@ loot replace entity @s enderchest.1 loot enderface:guide/shop/gui/type_1
 
 loot replace entity @s enderchest.8 loot enderface:guide/shop/gui/reset_item
 
+loot replace entity @s enderchest.18 loot enderface:guide/shop/gui/type_sell
+
+loot replace entity @s enderchest.22 loot enderface:guide/shop/gui/kit_memory
+
 #loot replace entity @s enderchest.1 loot enderface:guide/shop/1
 #loot replace entity @s enderchest.10 loot enderface:guide/shop/2
 #loot replace entity @s enderchest.11 loot enderface:guide/shop/3

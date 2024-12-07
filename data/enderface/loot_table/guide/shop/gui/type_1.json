@@ -21,7 +21,7 @@
                             "lore": [
                                 {
                                     "translate": "sco.guide.shop.gui.type_0.description.0",
-                                    "fallback": "[%s]でカテゴリを開く",
+                                    "fallback": "[%s]で取引GUIを開く",
                                     "with": [
                                         {
                                             "keybind": "key.attack",

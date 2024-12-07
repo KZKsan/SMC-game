@@ -5,23 +5,23 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "iron_sword",
+                    "name": "emerald",
                     "functions": [
                         {
                             "function": "set_name",
                             "name": {
-                                "translate": "sco.guide.shop.gui.type_0",
-                                "fallback": ">ショップカテゴリ選択",
+                                "translate": "sco.guide.shop.gui.type_sell",
+                                "fallback": ">売却",
                                 "italic": false,
-                                "color": "#0fdd00"
+                                "color": "#00DD00"
                             }
                         },
                         {
                             "function": "set_lore",
                             "lore": [
                                 {
-                                    "translate": "sco.guide.shop.gui.type_0.description.0",
-                                    "fallback": "[%s]で取引GUIを開く",
+                                    "translate": "sco.guide.shop.gui.type_sell.description.0",
+                                    "fallback": "[%s]でアイテムの売却GUIを開く",
                                     "with": [
                                         {
                                             "keybind": "key.attack",
@@ -37,14 +37,14 @@
                         {
                             "function": "set_custom_data",
                             "tag": {
-                                "enderface_item":true,
+                                "enderface_item": true,
                                 "click_events": {
                                     "click_sounds": [
                                         {
-                                            "sound":"ui.button.click"
+                                            "sound": "ui.button.click"
                                         }
                                     ],
-                                    "change_gui":"join_the_game/guide/shop/gui/type_0"
+                                    "change_gui": "join_the_game/guide/shop/gui/type_sell"
                                 }
                             }
                         },
