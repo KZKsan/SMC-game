@@ -76,6 +76,12 @@
     scoreboard players add @a[scores={trishula.used=1,trishula.used_time=0..9}] trishula.used_time 1
     execute as @a[scores={trishula.used=0,trishula.used_time=10}] run function sco_items:item_functions/trishula/effect
     scoreboard players set @a[scores={trishula.used=0}] trishula.used_time 0
+    ##potion
+    execute as @a unless score @s potion.used matches -2147483648..2147483647 run scoreboard players set @s potion.used 0
+    execute as @a unless score @s potion.used_time matches -2147483648..2147483647 run scoreboard players set @s potion.used_time 0
+    scoreboard players remove @a[scores={potion.used=1..}] potion.used 1
+    scoreboard players add @a[scores={potion.used=1}] potion.used_time 1
+    scoreboard players set @a[scores={potion.used=0}] potion.used_time 0
 
 # smite_attack
     tag @a[tag=item_function.smite_attack.already] remove item_function.smite_attack.already

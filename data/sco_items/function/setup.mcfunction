@@ -17,6 +17,8 @@ scoreboard objectives add wind_mace.cooldown dummy
 scoreboard objectives add sco_items.configs dummy
 scoreboard objectives add trishula.used dummy
 scoreboard objectives add trishula.used_time dummy
+scoreboard objectives add potion.used dummy
+scoreboard objectives add potion.used_time dummy
 
 #>
 #@internal
